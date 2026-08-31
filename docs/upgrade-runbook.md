@@ -46,7 +46,7 @@ python3 scripts/generate_version_file_catalog.py <version>
 建议跑：
 
 ```bash
-python3 /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py \
+python3 ~/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py \
   /absolute/path/to/libmetasec_ml.so \
   --out versions/<version>/metasec_so_identity.md
 ```
@@ -129,7 +129,7 @@ unidbg/unidbg-android/src/test/resources/metasec/350101/
 真机采集：
 
 ```bash
-cd /Users/freeman/project/douyin/dyidre
+cd /path/to/dyidre
 probes/<version>/run_metasec_probe_<version>.sh true-env 90 req01_env
 ```
 
@@ -256,7 +256,7 @@ X-Soter
 最后把稳定锚点同步到：
 
 ```text
-/Users/freeman/.codex/skills/metasec-so-recognizer/references/known-<version>.md
+~/.codex/skills/metasec-so-recognizer/references/known-<version>.md
 ```
 
 这样下一次升级可以直接继承。

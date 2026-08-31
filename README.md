@@ -2,17 +2,13 @@
 
 `dyidre` 是 Douyin `libmetasec_ml.so` 的动态逆向/版本迭代工作区。
 
-它原名 `pixel6_boot`，最早是 Pixel6 boot/rootfs/rustFrida 调试产物目录；现在改成更准确的名字：
-
 ```text
 dyidre = DouYin ID Reverse Engineering
 ```
 
 这里不直接替代 `unidbg`、`IDA`、`rustFrida`、`eDBG`。它的角色是把这些工具产生的证据、脚本、结构体、VM decode、C 还原代码串在一起，形成可复跑的版本升级流程。
 
-路径说明：GitHub 仓库根目录就是 `dyidre`；如果你在本机上级工作区
-`/Users/freeman/project/douyin` 里执行命令，文档里的 `scripts/...` 可以写成
-`dyidre/scripts/...`，`versions/...` 可以写成 `dyidre/versions/...`。
+路径说明：GitHub 仓库根目录就是 `dyidre`，本文档默认所有路径都从仓库根目录开始写。若在包含 `dyidre/`、`unidbg/` 等同级目录的总工作区执行命令，给路径加上 `dyidre/` 前缀即可。
 
 ## 先看什么
 
@@ -21,7 +17,7 @@ dyidre = DouYin ID Reverse Engineering
 1. 先跑 unidbg 强基准：
 
    ```bash
-   cd /Users/freeman/project/douyin/unidbg
+   cd ../unidbg
    scripts/metasec-350101-req01-baseline.sh
    ```
 
@@ -59,7 +55,16 @@ dyidre = DouYin ID Reverse Engineering
    docs/reusable-probes-stackplz-edbg.md
    ```
 
-6. 提交前检查：
+6. 设备侧工具/payload：
+
+   ```text
+   tools/README.md
+   tools/runtime_payloads/README.md
+   ```
+
+   这里放已经验证过、后续版本可复用的 `rustfrida`、`wxshadow.kpm`、`hide-so.kpm`、`embed*.so`。新版本升级时先复用这些工具，不要重新从聊天记录里找散落文件。
+
+7. 提交前检查：
 
    ```text
    docs/pre-commit-checklist.md
@@ -68,7 +73,7 @@ dyidre = DouYin ID Reverse Engineering
 
    推荐安装 `githooks/pre-commit`，这样每次 `git commit` 自动同步 `.apk/.so/.i64` 本体和 manifest，确保 APK 来源、SO、IDA 数据库改动都有提交记录。
 
-7. 新版本升级照着：
+8. 新版本升级照着：
 
    ```text
    docs/upgrade-runbook.md
@@ -102,6 +107,7 @@ versions/350101/c_recovery_suite_350101.md
 | `probes/350101/` | 350101 真机采集脚本：rustFrida/GumTrace/jnitrace/stackplz runner | 新版本复制到 `probes/<version>/` 后改 offset |
 | `probes/common/` | 与版本无关的辅助脚本，例如弹窗处理 | 可跨版本复用 |
 | `materials/` | 每个版本的 `.apk/.so/.i64` 本体和材料 manifest | 提交前必须同步本体并更新 manifest |
+| `tools/` | 设备侧可复用工具和 payload：rustFrida、KPM、embed so | 用 Git LFS 提交；升级版本直接复用 |
 | `scripts/` | 本地后处理/索引脚本 | 保留，可复跑 |
 | `skills/` | 本目录内使用过的分析脚本；部分已沉淀到个人 skill | 保留脚本源码 |
 | `runs/350101/true_env_xmedusa/` | 真机环境采集快照，`latest -> 20260831_214509` 是当前对齐来源 | 只保留当前基准批次 |
@@ -146,6 +152,18 @@ probes/350101/metasec_probe_350101.js
 probes/350101/run_metasec_probe_350101.sh
 ```
 
+设备侧工具本体在：
+
+```text
+tools/runtime_payloads/
+```
+
+用法见：
+
+```text
+tools/README.md
+```
+
 按 mode 选择用途：
 
 ```bash
@@ -188,11 +206,10 @@ IDA 是最终静态落点，但不能反过来当唯一真相。
 
 已经做过的清理：
 
-- 顶层目录从 `pixel6_boot` 改成 `dyidre`；
-- 文档/脚本里的维护性引用已改成 `dyidre`；
+- 顶层目录统一成 `dyidre`，公开文档使用仓库内相对路径；
 - 两个 1GB 级 GumTrace raw log 移到 `_archive/large_raw_traces/`；
-- Pixel6 boot/APatch 镜像移到 `_archive/device_boot_images/`；
-- rustFrida/kpm/embed payload 移到 `_archive/runtime_payloads/`；
+- 设备启动/APatch 镜像移到 `_archive/device_boot_images/`；
+- rustFrida/kpm/embed payload 已从历史归档提升到 `tools/runtime_payloads/`，正式随仓库保存；
 - `__pycache__`、`.last_*`、`current_*_ts.txt` 等可再生瞬态文件移到 `_archive/deleted_reproducible_20260831/`。
 
 没直接物理删除大证据，因为这些 trace 以后定位“为什么当时判断成这样”还可能救命。确认不需要后，再删 `_archive/large_raw_traces/` 即可释放约 2.1G。

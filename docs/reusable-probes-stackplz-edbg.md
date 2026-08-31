@@ -5,9 +5,17 @@
 350101 当前唯一用户入口：
 
 ```text
-dyidre/probes/350101/metasec_probe_350101.js
-dyidre/probes/350101/run_metasec_probe_350101.sh
+probes/350101/metasec_probe_350101.js
+probes/350101/run_metasec_probe_350101.sh
 ```
+
+设备侧工具/payload 放在：
+
+```text
+tools/runtime_payloads/
+```
+
+第一次接手先把 `rustfrida` 推到手机，再运行本页里的 runner；KPM 和 embed so 的用途见 `tools/README.md`。
 
 ## 一句话分工
 
@@ -61,29 +69,29 @@ RF/Frida mode 找地址和值
 Host 上运行：
 
 ```bash
-cd /Users/freeman/project/douyin
-dyidre/probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
+cd /path/to/dyidre
+probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
 ```
 
 例子：
 
 ```bash
-dyidre/probes/350101/run_metasec_probe_350101.sh counter-one 60 req01_count
-dyidre/probes/350101/run_metasec_probe_350101.sh true-env 90 req01_env
-dyidre/probes/350101/run_metasec_probe_350101.sh jnitrace 180 jni01
-dyidre/probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
+probes/350101/run_metasec_probe_350101.sh counter-one 60 req01_count
+probes/350101/run_metasec_probe_350101.sh true-env 90 req01_env
+probes/350101/run_metasec_probe_350101.sh jnitrace 180 jni01
+probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
 ```
 
 输出自动归档：
 
 | mode | 输出目录 |
 |---|---|
-| `true-env` | `dyidre/runs/350101/true_env_xmedusa/<tag>/` |
-| `jnitrace` | `dyidre/runs/350101/jnitrace/<tag>/` |
-| `gum-exevm` / `gum-http` | `dyidre/runs/350101/gumtrace/<tag>/` |
-| `artcheck` | `dyidre/runs/350101/maps_artmethod/<tag>/` |
-| `stackplz-bridge` | `dyidre/runs/350101/edbg_stackplz/<tag>/` |
-| 其他 | `dyidre/runs/350101/entrydump/<tag>/` |
+| `true-env` | `runs/350101/true_env_xmedusa/<tag>/` |
+| `jnitrace` | `runs/350101/jnitrace/<tag>/` |
+| `gum-exevm` / `gum-http` | `runs/350101/gumtrace/<tag>/` |
+| `artcheck` | `runs/350101/maps_artmethod/<tag>/` |
+| `stackplz-bridge` | `runs/350101/edbg_stackplz/<tag>/` |
+| 其他 | `runs/350101/entrydump/<tag>/` |
 
 每个 run 目录至少有：
 
@@ -115,7 +123,7 @@ xmedusa_*.raw.bin / *.b64
 启动 RF RPC：
 
 ```bash
-dyidre/probes/350101/run_metasec_probe_350101.sh rpc
+probes/350101/run_metasec_probe_350101.sh rpc
 ```
 
 检查：
@@ -166,13 +174,13 @@ host curl
 启动 RF RPC：
 
 ```bash
-dyidre/probes/350101/run_metasec_probe_350101.sh rpc
+probes/350101/run_metasec_probe_350101.sh rpc
 ```
 
 启动 stackplz RPC：
 
 ```bash
-adb push dyidre/probes/350101/run_stackplz_hwbrk_rpc.sh /data/local/tmp/
+adb push probes/350101/run_stackplz_hwbrk_rpc.sh /data/local/tmp/
 adb shell "su -c 'chmod +x /data/local/tmp/run_stackplz_hwbrk_rpc.sh'"
 adb shell "su -c '/data/local/tmp/run_stackplz_hwbrk_rpc.sh req01 41718'"
 ```
@@ -214,7 +222,7 @@ curl -s -X POST http://127.0.0.1:19191/rpc/0/stackplzbreakmodule \
 拉回后放：
 
 ```text
-dyidre/runs/350101/edbg_stackplz/<run_id>/
+runs/350101/edbg_stackplz/<run_id>/
 ```
 
 350101 已实测链路：
@@ -236,7 +244,7 @@ Backtrace 里能看到 0x1716d0 -> 0x14a4e4 -> 0x14dcf4 一类签名路径
 如果已经知道 App uid 和 so 绝对路径，可以不用 RF bridge：
 
 ```bash
-adb push dyidre/probes/350101/run_stackplz_offset_test.sh /data/local/tmp/
+adb push probes/350101/run_stackplz_offset_test.sh /data/local/tmp/
 adb shell "su -c 'chmod +x /data/local/tmp/run_stackplz_offset_test.sh'"
 adb shell "su -c '/data/local/tmp/run_stackplz_offset_test.sh <uid> <absolute-lib-path> 0x4cc10 req01_4cc10'"
 ```
@@ -287,9 +295,9 @@ mode=true-env 拿 F8 输出 buffer 地址/长度
 以 `370401` 为例：
 
 ```bash
-cp -R dyidre/probes/350101 dyidre/probes/370401
-mkdir -p dyidre/runs/370401/{entrydump,gumtrace,jnitrace,true_env_xmedusa,edbg_stackplz,control}
-mkdir -p dyidre/versions/370401
+cp -R probes/350101 probes/370401
+mkdir -p runs/370401/{entrydump,gumtrace,jnitrace,true_env_xmedusa,edbg_stackplz,control}
+mkdir -p versions/370401
 ```
 
 然后修改：
@@ -328,6 +336,6 @@ mkdir -p dyidre/versions/370401
 历史细节见：
 
 ```text
-dyidre/versions/350101/stackplz_rf_rpc_bridge_350101.md
-dyidre/versions/350101/edbg_assist_plan_350101.md
+versions/350101/stackplz_rf_rpc_bridge_350101.md
+versions/350101/edbg_assist_plan_350101.md
 ```

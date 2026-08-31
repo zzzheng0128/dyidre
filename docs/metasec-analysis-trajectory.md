@@ -36,12 +36,12 @@ SO 身份
 
 | 目录 | 放什么 | 怎么用 |
 |---|---|---|
-| `dyidre/docs/` | 跨版本流程、工具链、升级规则 | 新版本先读这里 |
-| `dyidre/probes/<version>/` | 真机采集脚本 | 复制上一版，改 offset 和版本号 |
-| `dyidre/runs/<version>/` | 真机采集原始证据 | 每次采集一个 run_id，不覆盖 |
-| `dyidre/versions/<version>/` | 分析结论、结构体、VM decode、C oracle | 新版本主工作区 |
-| `unidbg/unidbg-android/src/test/resources/metasec/<version>/` | 固定基准输入 | 放 `s1/s2/baseline.properties` |
-| `unidbg/scripts/metasec-<version>-*.sh` | unidbg 一键回归 | 验证是否复现 |
+| `docs/` | 跨版本流程、工具链、升级规则 | 新版本先读这里 |
+| `probes/<version>/` | 真机采集脚本 | 复制上一版，改 offset 和版本号 |
+| `runs/<version>/` | 真机采集原始证据 | 每次采集一个 run_id，不覆盖 |
+| `versions/<version>/` | 分析结论、结构体、VM decode、C oracle | 新版本主工作区 |
+| `../unidbg/unidbg-android/src/test/resources/metasec/<version>/` | 固定基准输入 | 放 `s1/s2/baseline.properties` |
+| `../unidbg/scripts/metasec-<version>-*.sh` | unidbg 一键回归 | 验证是否复现 |
 
 一句话：`runs` 放证据，`versions` 放结论，`unidbg resources` 放可复跑输入。
 
@@ -51,7 +51,7 @@ SO 身份
 
 | 350101 里已有的东西 | 37xx 怎么用 |
 |---|---|
-| `dyidre/materials/350101/` | 照同样格式保存 37xx 的 `source.apk/libmetasec_ml.so/libmetasec_ml.so.i64/materials_manifest.md`，先确认材料身份。 |
+| `materials/350101/` | 照同样格式保存 37xx 的 `source.apk/libmetasec_ml.so/libmetasec_ml.so.i64/materials_manifest.md`，先确认材料身份。 |
 | `metasec_so_identity.md` | 对 37xx 跑 SO probe，比较 size/hash/build-id/string anchors，判断是小改、重排还是大换代。 |
 | `analysis_trajectory_350101.md` | 复制成 37xx 分析轨迹，每完成一层就替换证据和结论。 |
 | `probes/350101/metasec_probe_350101.js` | 复制到 `probes/37xxxx/`，只改 offset 表和输出版本号；采集方式继续复用。 |
@@ -66,14 +66,14 @@ SO 身份
 37xx 的最小落地目标：
 
 ```text
-dyidre/versions/37xxxx/README.md
-dyidre/versions/37xxxx/FILE_CATALOG.md
-dyidre/versions/37xxxx/metasec_so_identity.md
-dyidre/versions/37xxxx/analysis_trajectory_37xxxx.md
-dyidre/materials/37xxxx/source.apk
-dyidre/materials/37xxxx/libmetasec_ml.so
-dyidre/materials/37xxxx/libmetasec_ml.so.i64
-unidbg/unidbg-android/src/test/resources/metasec/37xxxx/
+versions/37xxxx/README.md
+versions/37xxxx/FILE_CATALOG.md
+versions/37xxxx/metasec_so_identity.md
+versions/37xxxx/analysis_trajectory_37xxxx.md
+materials/37xxxx/source.apk
+materials/37xxxx/libmetasec_ml.so
+materials/37xxxx/libmetasec_ml.so.i64
+../unidbg/unidbg-android/src/test/resources/metasec/37xxxx/
 ```
 
 做到这些，后面再继续补 VM/CF/C oracle，不会变成一堆散文件。
@@ -110,10 +110,10 @@ Java / HTTP 请求
 配套证据：
 
 ```text
-dyidre/versions/350101/x_headers_generation_350101.md
-dyidre/versions/350101/exeVMInner_x_headers_350101.md
-dyidre/versions/350101/managed_vm_recovery_350101.md
-dyidre/versions/350101/algorithm_validation_350101.md
+versions/350101/x_headers_generation_350101.md
+versions/350101/exeVMInner_x_headers_350101.md
+versions/350101/managed_vm_recovery_350101.md
+versions/350101/algorithm_validation_350101.md
 ```
 
 ## 现在实际有几层 VM
@@ -147,16 +147,16 @@ buildSignedHttpHeadersInner
 新版本先建这些目录：
 
 ```text
-dyidre/versions/<version>/README.md
-dyidre/runs/<version>/README.md
-dyidre/probes/<version>/README.md
-unidbg/unidbg-android/src/test/resources/metasec/<version>/README.md
+versions/<version>/README.md
+runs/<version>/README.md
+probes/<version>/README.md
+../unidbg/unidbg-android/src/test/resources/metasec/<version>/README.md
 ```
 
 然后复制上一版 probe：
 
 ```bash
-cp -R dyidre/probes/350101 dyidre/probes/<version>
+cp -R probes/350101 probes/<version>
 ```
 
 必须修改：
@@ -171,7 +171,7 @@ cp -R dyidre/probes/350101 dyidre/probes/<version>
 同时把新版本材料加入自动同步表：
 
 ```text
-dyidre/materials/materials_sources.tsv
+materials/materials_sources.tsv
 ```
 
 格式：
@@ -180,7 +180,7 @@ dyidre/materials/materials_sources.tsv
 <version>	<so_path>	<ida_i64_path>	<apk_path>
 ```
 
-安装过 `dyidre/githooks/pre-commit` 后，每次提交都会自动复制 `.apk/.so/.i64` 到 `dyidre/materials/<version>/` 并更新 manifest。
+安装过 `githooks/pre-commit` 后，每次提交都会自动复制 `.apk/.so/.i64` 到 `materials/<version>/` 并更新 manifest。
 
 ## 第 1 步：确认 SO 身份
 
@@ -189,9 +189,9 @@ dyidre/materials/materials_sources.tsv
 命令：
 
 ```bash
-python3 /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py \
+python3 ~/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py \
   /absolute/path/to/libmetasec_ml.so \
-  --out dyidre/versions/<version>/metasec_so_identity.md
+  --out versions/<version>/metasec_so_identity.md
 ```
 
 必须记录：
@@ -209,7 +209,7 @@ python3 /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_so_pr
 - `metasec_so_identity.md` 存在；
 - 能说明这个 so 从哪个 APK/设备来；
 - 后面所有 offset 都明确是这个 so 的 offset。
-- 提交前同步了 `dyidre/materials/<version>/libmetasec_ml.so`、`dyidre/materials/<version>/libmetasec_ml.so.i64` 和 `materials_manifest.md`，让 SO 与 IDA 数据库本体都有提交记录。
+- 提交前同步了 `materials/<version>/libmetasec_ml.so`、`materials/<version>/libmetasec_ml.so.i64` 和 `materials_manifest.md`，让 SO 与 IDA 数据库本体都有提交记录。
 
 ## 第 2 步：找 HTTP/sign 入口
 
@@ -242,16 +242,16 @@ python3 /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_so_pr
 命令：
 
 ```bash
-cd /Users/freeman/project/douyin
-dyidre/probes/<version>/run_metasec_probe_<version>.sh counter-one 60 req01_count
-dyidre/probes/<version>/run_metasec_probe_<version>.sh true-env 90 req01_env
-dyidre/probes/<version>/run_metasec_probe_<version>.sh xheader 90 req01_xhdr
+cd /path/to/dyidre
+probes/<version>/run_metasec_probe_<version>.sh counter-one 60 req01_count
+probes/<version>/run_metasec_probe_<version>.sh true-env 90 req01_env
+probes/<version>/run_metasec_probe_<version>.sh xheader 90 req01_xhdr
 ```
 
 如果要补 JNI 环境：
 
 ```bash
-dyidre/probes/<version>/run_metasec_probe_<version>.sh jnitrace 180 req01_jni
+probes/<version>/run_metasec_probe_<version>.sh jnitrace 180 req01_jni
 ```
 
 必须保存：
@@ -282,18 +282,18 @@ unidbg/unidbg-android/src/test/resources/metasec/350101/
 真机采完后解析：
 
 ```bash
-python3 dyidre/scripts/extract_true_env_xmedusa.py \
-  dyidre/runs/<version>/true_env_xmedusa/<run_id> \
+python3 scripts/extract_true_env_xmedusa.py \
+  runs/<version>/true_env_xmedusa/<run_id> \
   --version <version>
 ```
 
 再索引：
 
 ```bash
-python3 dyidre/scripts/index_true_env_runs.py \
-  --root dyidre/runs/<version>/true_env_xmedusa \
-  --out-md dyidre/runs/<version>/true_env_xmedusa/RUNS.md \
-  --out-json dyidre/runs/<version>/true_env_xmedusa/runs_manifest.json
+python3 scripts/index_true_env_runs.py \
+  --root runs/<version>/true_env_xmedusa \
+  --out-md runs/<version>/true_env_xmedusa/RUNS.md \
+  --out-json runs/<version>/true_env_xmedusa/runs_manifest.json
 ```
 
 要同步到 unidbg 的常见项：
@@ -332,7 +332,7 @@ unidbg/scripts/metasec-<version>-req01-baseline.sh
 通过标准：
 
 ```bash
-cd /Users/freeman/project/douyin/unidbg
+cd ../unidbg
 scripts/metasec-<version>-req01-baseline.sh
 ```
 
@@ -447,7 +447,7 @@ ctx+0x3c0..0x500 scratch/output buffer
 结构文件：
 
 ```text
-dyidre/versions/350101/metasec_structs_350_all.h
+versions/350101/metasec_structs_350_all.h
 ```
 
 命名规则：
@@ -481,15 +481,15 @@ dyidre/versions/350101/metasec_structs_350_all.h
 decoder：
 
 ```bash
-python3 /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py ...
+python3 ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py ...
 ```
 
 结果放：
 
 ```text
-dyidre/versions/<version>/managed_vm_decode*/
-dyidre/versions/<version>/managed_vm_recovery_<version>.md
-dyidre/versions/<version>/managed_vm_program_lift_<version>.md
+versions/<version>/managed_vm_decode*/
+versions/<version>/managed_vm_recovery_<version>.md
+versions/<version>/managed_vm_program_lift_<version>.md
 ```
 
 CF helper 恢复顺序：
@@ -528,8 +528,8 @@ F5 X-Argus pack concat/base64
 真机追踪：
 
 ```bash
-dyidre/probes/<version>/run_metasec_probe_<version>.sh gum-exevm 90 req01_gum_exevm
-dyidre/probes/<version>/run_metasec_probe_<version>.sh native-vmp 90 req01_native_vmp
+probes/<version>/run_metasec_probe_<version>.sh gum-exevm 90 req01_gum_exevm
+probes/<version>/run_metasec_probe_<version>.sh native-vmp 90 req01_native_vmp
 ```
 
 通过标准：
@@ -571,10 +571,10 @@ fixed signer 与 unidbg deterministic baseline 完全一致
 350101 入口：
 
 ```text
-dyidre/versions/350101/c_recovery_suite_350101.md
-dyidre/versions/350101/run_recovered_c_oracles_350101.sh
-dyidre/versions/350101/metasec_350101_fixed_signer.c
-dyidre/versions/350101/x_headers_algorithms_350101.c
+versions/350101/c_recovery_suite_350101.md
+versions/350101/run_recovered_c_oracles_350101.sh
+versions/350101/metasec_350101_fixed_signer.c
+versions/350101/x_headers_algorithms_350101.c
 ```
 
 ## 第 12 步：IDA 落库
@@ -593,9 +593,9 @@ IDA 只落证据确定的东西。
 350101 脚本和记录：
 
 ```text
-dyidre/skills/ida_apply_metasec_struct_evidence.py
-dyidre/versions/350101/ida_rename_update_350101_20260831.md
-dyidre/versions/350101/metasec_structs_350_all.h
+skills/ida_apply_metasec_struct_evidence.py
+versions/350101/ida_rename_update_350101_20260831.md
+versions/350101/metasec_structs_350_all.h
 ```
 
 注释风格：
@@ -610,7 +610,7 @@ dyidre/versions/350101/metasec_structs_350_all.h
 IDA 落库后必须同步材料状态：
 
 ```bash
-dyidre/scripts/sync_metasec_materials.sh <version> <so_path> <ida_i64_path> <apk_path>
+scripts/sync_metasec_materials.sh <version> <so_path> <ida_i64_path> <apk_path>
 ```
 
 原因很简单：`.i64` 是分析材料本身。改了函数名、结构体、中文注释却不更新 `.i64`/manifest，后面升级版本会不知道当前报告到底对应哪份 IDA 数据库。

@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 """
-生成 dyidre/versions/<version>/FILE_CATALOG.md。
+生成 versions/<version>/FILE_CATALOG.md。
 
 这个脚本解决交接里的一个小但很要命的问题：
 目录里文件越来越多，后来的人不知道每个文件怎么来的、用哪个脚本生成、
 后面升级版本时还能不能复用。
 
 用法：
-  python3 dyidre/scripts/generate_version_file_catalog.py 350101
-  python3 dyidre/scripts/generate_version_file_catalog.py 350101 --stdout
+  python3 scripts/generate_version_file_catalog.py 350101
+  python3 scripts/generate_version_file_catalog.py 350101 --stdout
 
 说明：
   - 脚本按文件名/目录名模式做归类；
@@ -62,7 +62,7 @@ IMPORTANT: dict[str, FileMeta] = {
     "FILE_CATALOG.md": FileMeta(
         "交接清单",
         "目录扫描生成",
-        "dyidre/scripts/generate_version_file_catalog.py",
+        "scripts/generate_version_file_catalog.py",
         "说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。",
     ),
     "analysis_trajectory_350101.md": FileMeta(
@@ -74,31 +74,31 @@ IMPORTANT: dict[str, FileMeta] = {
     "summary.json": FileMeta(
         "结构证据",
         "entrydump/read-write trace 聚合",
-        "dyidre/skills/metasec_struct_infer.py",
+        "skills/metasec_struct_infer.py",
         "机器可读结构证据，供结构提升、IDA 注释和后续脚本复用。",
     ),
     "x0_evidence.md": FileMeta(
         "结构证据",
         "X0/ctx 读写证据聚合",
-        "dyidre/skills/metasec_struct_infer.py",
+        "skills/metasec_struct_infer.py",
         "按 offset 看 ctx 字段证据，升级时对照字段是否漂移。",
     ),
     "x0_struct.h": FileMeta(
         "结构草稿",
         "X0/ctx offset 自动骨架",
-        "dyidre/skills/metasec_struct_infer.py",
+        "skills/metasec_struct_infer.py",
         "早期稀疏结构草稿；不直接当最终结构。",
     ),
     "x0_promote_plan.md": FileMeta(
         "结构提升",
         "summary.json 二次整理",
-        "dyidre/skills/metasec_struct_promote.py",
+        "skills/metasec_struct_promote.py",
         "说明哪些字段可提升、哪些字段继续观察。",
     ),
     "x0_tail_timeline.md": FileMeta(
         "结构时间线",
         "ctx 尾部 scratch/output 写入时间线",
-        "dyidre/skills/metasec_struct_infer.py",
+        "skills/metasec_struct_infer.py",
         "追 ctx+0x3c0..0x500 一类输出/scratch 区。",
     ),
     "metasec_ctx350_draft.h": FileMeta(
@@ -116,13 +116,13 @@ IMPORTANT: dict[str, FileMeta] = {
     "metasec_so_identity.md": FileMeta(
         "SO 身份",
         "原始 SO hash/build-id/string anchors",
-        "/Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py",
+        "~/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py",
         "确认分析结论对应哪份 SO；升级版本第一步对照它。",
     ),
     "real_vs_unidbg_entry_shape.md": FileMeta(
         "入口 ABI",
         "真机 entrydump + unidbg entrydump",
-        "dyidre/skills/metasec_entrydump_compare.py",
+        "skills/metasec_entrydump_compare.py",
         "确认 X0-X5/X8 参数形态一致，避免 unidbg 输入偏掉。",
     ),
     "req01_app_log_s1s2_unidbg_sync_350101.md": FileMeta(
@@ -248,13 +248,13 @@ IMPORTANT: dict[str, FileMeta] = {
     "managed_cf_table_sign_350101.md": FileMeta(
         "CF 表",
         "sign module CF 注册表抽取",
-        "/Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py",
+        "~/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py",
         "新版本快速对齐 CF index/name/callsite。",
     ),
     "managed_sign_cf_table_350101.md": FileMeta(
         "CF 表",
         "sign module CF 注册表抽取",
-        "/Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py",
+        "~/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py",
         "unidbg focused probe 的 callsite 来源。",
     ),
     "exeVMInner_x_headers_350101.md": FileMeta(
@@ -272,7 +272,7 @@ IMPORTANT: dict[str, FileMeta] = {
     "ida_rename_update_350101_20260831.md": FileMeta(
         "IDA 落库",
         "IDA rename/prototype/comment 记录",
-        "dyidre/skills/ida_apply_metasec_struct_evidence.py + ida-pro-mcp",
+        "skills/ida_apply_metasec_struct_evidence.py + ida-pro-mcp",
         "说明哪些名字/中文注释已经写回 IDA。",
     ),
     "edbg_assist_plan_350101.md": FileMeta(
@@ -300,7 +300,7 @@ def classify(rel: str, path: Path) -> FileMeta:
             return FileMeta(
                 "managed VM decode 目录",
                 "managed program dump 解码结果",
-                "/Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py",
+                "~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py",
                 "升级时对照 F 程序 opcode/linear.c/unknown 统计。",
             )
         if rel == "vm_lift_1f7860":
@@ -314,7 +314,7 @@ def classify(rel: str, path: Path) -> FileMeta:
             return FileMeta(
                 "指令路径 diff 目录",
                 "真机 GumTrace/instrseq 与 unidbg instrseq 对比",
-                "dyidre/skills/metasec_instrseq_diff.py",
+                "skills/metasec_instrseq_diff.py",
                 "判断 raw PC 差异是否影响算法主线。",
             )
         if re.fullmatch(r"(one|multi)_request_compare_\d+", rel):
@@ -367,7 +367,7 @@ def classify(rel: str, path: Path) -> FileMeta:
         return FileMeta(
             "路径 diff 报告",
             "真机 vs unidbg 指令/语义路径对比",
-            "dyidre/skills/metasec_instrseq_diff.py + 人工整理",
+            "skills/metasec_instrseq_diff.py + 人工整理",
             "确认差异是否只是 helper 级别。",
         )
 
@@ -429,7 +429,7 @@ def classify(rel: str, path: Path) -> FileMeta:
         return FileMeta(
             "机器可读证据",
             "probe/unidbg/后处理脚本输出",
-            "对应 probe 或 dyidre/scripts 后处理",
+            "对应 probe 或 scripts 后处理",
             "给后续脚本、对比和报告复用。",
         )
 
@@ -548,7 +548,7 @@ def render(version: str, version_dir: Path, items: list[tuple[str, Path, FileMet
     lines.append(f"python3 scripts/generate_version_file_catalog.py {version}")
     lines.append("```")
     lines.append("")
-    lines.append("如果你是在上级工作区 `/Users/freeman/project/douyin` 执行，则把命令前面加 `dyidre/`。")
+    lines.append("如果你是在包含 `dyidre/` 的上级工作区执行，则把命令前面加 `dyidre/`。")
     lines.append("")
     lines.append("版本目录：")
     lines.append("")
@@ -598,7 +598,7 @@ def render(version: str, version_dir: Path, items: list[tuple[str, Path, FileMet
     lines.append("- 新增文件时，先让本脚本生成默认分类。")
     lines.append("- 如果出现 `未分类`，说明这个文件的来源/用途还没沉淀，提交前要补分类规则或在版本 README 里解释。")
     lines.append("- 脚本生成的清单不是替代分析报告；重点报告仍然要在正文里记录证据、命令和结论。")
-    lines.append("- 大型真机 raw log 不放在版本目录，放 `dyidre/runs/<version>/` 或 `_archive/`。")
+    lines.append("- 大型真机 raw log 不放在版本目录，放 `runs/<version>/` 或 `_archive/`。")
     lines.append("")
     return "\n".join(lines)
 

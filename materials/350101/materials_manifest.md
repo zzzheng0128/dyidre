@@ -22,9 +22,9 @@ scripts/update_materials_manifest.sh --check --apk materials/350101/source.apk 3
 
 | role | path | size | mtime | sha256 |
 |---|---|---:|---|---|
-| raw SO | `/Users/freeman/project/douyin/dyidre/materials/350101/libmetasec_ml.so` | 2864144 | 2025-10-16 13:45:07 +0800 | `2416637ae9c5b0fe34cbd2cb4c09a29ee3b33ca416b344a3e999c3c95730cc76` |
-| IDA i64 | `/Users/freeman/project/douyin/dyidre/materials/350101/libmetasec_ml.so.i64` | 50665840 | 2026-08-31 10:07:09 +0800 | `7b5767b2485575dc7a8230db8b5139fefc7b5f4333cd29b9fa8026ddda7a5a74` |
-| APK | `/Users/freeman/project/douyin/dyidre/materials/350101/source.apk` | 313325639 | 2025-10-16 13:45:07 +0800 | `dda27904ade84d335591af62e09c6100c25bc66f3613a462e3a0874f33313a10` |
+| raw SO | `materials/350101/libmetasec_ml.so` | 2864144 | 2025-10-16 13:45:07 +0800 | `2416637ae9c5b0fe34cbd2cb4c09a29ee3b33ca416b344a3e999c3c95730cc76` |
+| IDA i64 | `materials/350101/libmetasec_ml.so.i64` | 50665840 | 2026-08-31 10:07:09 +0800 | `7b5767b2485575dc7a8230db8b5139fefc7b5f4333cd29b9fa8026ddda7a5a74` |
+| APK | `materials/350101/source.apk` | 313325639 | 2025-10-16 13:45:07 +0800 | `dda27904ade84d335591af62e09c6100c25bc66f3613a462e3a0874f33313a10` |
 
 ## SO 信息
 

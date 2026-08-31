@@ -2,7 +2,7 @@
 # dyidre 350101 统一真机采集入口。
 #
 # 用法：
-#   dyidre/probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
+#   probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
 #
 # 常用 mode：
 #   rpc              启动 RF RPC 常驻 session。要反复注入小探针或配合 stackplz 时先用它。
@@ -18,7 +18,7 @@
 #   artcheck         ArtMethod/maps 检测面检查。
 #
 # 输出：
-#   dyidre/runs/350101/<kind>/<tag>/
+#   runs/350101/<kind>/<tag>/
 #
 # 注意：
 #   - counter/branch/stackplz-bridge 需要 RPC；本脚本会自动加 --rpc-port。
@@ -28,8 +28,24 @@
 set -euo pipefail
 
 # Host/设备基础配置。升级新版本时，优先只改 VERSION 和脚本名。
-ROOT="${DYIDRE_PROJECT_ROOT:-/Users/freeman/project/douyin}"
-ADB="${ADB:-/Users/freeman/Library/Android/sdk/platform-tools/adb}"
+#
+# 路径不要写死到某台机器。脚本位于：
+#   <dyidre>/probes/350101/run_metasec_probe_350101.sh
+# 所以向上两级就是仓库根目录。确实有特殊布局时，再用 DYIDRE_ROOT 覆盖。
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+DYIDRE_ROOT="${DYIDRE_ROOT:-$(cd "$SCRIPT_DIR/../.." && pwd)}"
+
+# adb 默认从 PATH 找；如果本机没有放 PATH，再保留 Android SDK 常见路径兜底。
+if [ -z "${ADB:-}" ]; then
+  if command -v adb >/dev/null 2>&1; then
+    ADB="$(command -v adb)"
+  elif [ -x "$HOME/Library/Android/sdk/platform-tools/adb" ]; then
+    ADB="$HOME/Library/Android/sdk/platform-tools/adb"
+  else
+    ADB="adb"
+  fi
+fi
+
 PKG="${PKG:-com.ss.android.ugc.aweme}"
 RF_REMOTE="${RF_REMOTE:-/data/local/tmp/rustfrida}"
 RPC_PORT="${RPC_PORT:-19191}"
@@ -39,8 +55,8 @@ print_usage() {
   # 只打印用法，不碰设备。避免不带参数时误启动 RF/抖音。
   cat <<'EOF'
 用法：
-  dyidre/probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
-  DRY_RUN=1 dyidre/probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
+  probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
+  DRY_RUN=1 probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
 
 常用 mode：
   rpc              启动 RF RPC 常驻 session
@@ -140,8 +156,8 @@ fi
 MODE_SAFE="$(printf '%s' "$MODE" | tr -c 'A-Za-z0-9_.-' '_')"
 
 # 统一 JS 是源码；SCRIPT_REMOTE 是本次运行推到手机的 runtime JS。
-SCRIPT_LOCAL="$ROOT/dyidre/probes/$VERSION/metasec_probe_${VERSION}.js"
-DEVICE_RPC_RUNNER="$ROOT/dyidre/probes/$VERSION/run_rf_rpc_persistent.sh"
+SCRIPT_LOCAL="$DYIDRE_ROOT/probes/$VERSION/metasec_probe_${VERSION}.js"
+DEVICE_RPC_RUNNER="$DYIDRE_ROOT/probes/$VERSION/run_rf_rpc_persistent.sh"
 SCRIPT_REMOTE="/data/local/tmp/metasec_probe_${VERSION}_${MODE_SAFE}_${TAG}.js"
 RUNTIME_LOCAL="$(mktemp "${TMPDIR:-/tmp}/metasec_probe_${VERSION}_${MODE_SAFE}.XXXXXX.js")"
 RF_STDIN=""
@@ -183,7 +199,7 @@ run_kind_for_mode() {
 }
 
 RUN_KIND="$(run_kind_for_mode "$MODE")"
-RUN_ROOT="$ROOT/dyidre/runs/$VERSION/$RUN_KIND"
+RUN_ROOT="$DYIDRE_ROOT/runs/$VERSION/$RUN_KIND"
 OUT_DIR="$RUN_ROOT/$TAG"
 mkdir -p "$OUT_DIR"
 
@@ -213,7 +229,7 @@ cp "$RUNTIME_LOCAL" "$OUT_DIR/runtime_${MODE_SAFE}.js"
   printf '| seconds | `%s` |\n' "$RUN_SECONDS"
   printf '| tag | `%s` |\n' "$TAG"
   printf '| package | `%s` |\n' "$PKG"
-  printf '| script | `dyidre/probes/%s/metasec_probe_%s.js` |\n' "$VERSION" "$VERSION"
+  printf '| script | `probes/%s/metasec_probe_%s.js` |\n' "$VERSION" "$VERSION"
   printf '| runtime js | `runtime_%s.js` |\n' "$MODE_SAFE"
   printf '| output kind | `%s` |\n' "$RUN_KIND"
   printf '\n## 说明\n\n'
@@ -376,8 +392,8 @@ pull_if_exists "/data/data/${PKG}/gumtrace_getHttpHeadVerify_${VERSION}_full_onc
 if [ "$MODE" = "true-env" ] || [ "$MODE" = "trueenv" ] || [ "$MODE" = "env" ]; then
 # true-env 是后续 unidbg 同步环境的基准，需要立刻抽取 summary/bin/b64 并刷新 RUNS 索引。
   if [ -s "$OUT_DIR/true_env_xmedusa_${VERSION}.log" ]; then
-    python3 "$ROOT/dyidre/scripts/extract_true_env_xmedusa.py" "$OUT_DIR" --version "$VERSION" --force
-    python3 "$ROOT/dyidre/scripts/index_true_env_runs.py" \
+    python3 "$DYIDRE_ROOT/scripts/extract_true_env_xmedusa.py" "$OUT_DIR" --version "$VERSION" --force
+    python3 "$DYIDRE_ROOT/scripts/index_true_env_runs.py" \
       --root "$RUN_ROOT" \
       --out-md "$RUN_ROOT/RUNS.md" \
       --out-json "$RUN_ROOT/runs_manifest.json"

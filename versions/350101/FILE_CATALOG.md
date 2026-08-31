@@ -16,7 +16,7 @@
 python3 scripts/generate_version_file_catalog.py 350101
 ```
 
-如果你是在上级工作区 `/Users/freeman/project/douyin` 执行，则把命令前面加 `dyidre/`。
+如果你是在包含 `dyidre/` 的上级工作区执行，则把命令前面加 `dyidre/`。
 
 版本目录：
 
@@ -105,7 +105,7 @@ versions/350101
 
 | path | size | 分类 | 怎么来 | 生成脚本/流程 | 后续用途 |
 |---|---:|---|---|---|---|
-| `FILE_CATALOG.md` | 90.6K | 交接清单 | 目录扫描生成 | dyidre/scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
+| `FILE_CATALOG.md` | 90.3K | 交接清单 | 目录扫描生成 | scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
 | `README.md` | 23.3K | 入口文档 | 人工整理 | 手工维护 | 接手 350101 先读，快速知道当前结论和核心文件。 |
 | `algorithm_validation_350101.md` | 6.1K | 算法验收 | C oracle + unidbg deterministic replay | run_recovered_c_oracles_350101.sh + unidbg baseline | 提交前确认算法是否仍然 byte-exact。 |
 | `analysis_trajectory_350101.md` | 10.0K | 分析轨迹 | 350101 实际分析过程沉淀 | 人工维护 | 后续升级版本复制成 analysis_trajectory_<version>.md，逐项替换证据。 |
@@ -155,28 +155,28 @@ versions/350101
 | `f8_x_medusa_mutation_watch_350101.md` | 13.2K | X-Medusa 报告 | F8/F12/source-work/watch/oracle | true-env/f8-watch/metasec_f12_bitpack_oracle.py + 人工整理 | 恢复 X-Medusa final pack 和 source-work。 |
 | `fixed_s1_s2_signer_350101.md` | 5.1K | 固定请求 signer | C fixed signer 验证说明 | 人工整理 | 说明只输入 s1/s2 + fixed env 生成完整 header 的验收口径。 |
 | `flat_dispatch_350101.md` | 6.7K | 控制流混淆 | IDA/GumTrace 分析 | 人工整理 | 识别 flattened dispatcher，避免误判成算法主线。 |
-| `ida_rename_update_350101_20260831.md` | 5.7K | IDA 落库 | IDA rename/prototype/comment 记录 | dyidre/skills/ida_apply_metasec_struct_evidence.py + ida-pro-mcp | 说明哪些名字/中文注释已经写回 IDA。 |
-| `instr_diff_350101/` | - | 指令路径 diff 目录 | 真机 GumTrace/instrseq 与 unidbg instrseq 对比 | dyidre/skills/metasec_instrseq_diff.py | 判断 raw PC 差异是否影响算法主线。 |
-| `instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md` | 8.9K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `instr_diff_350101/managed_blr_target_diff_350101_req01.md` | 3.3K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `ida_rename_update_350101_20260831.md` | 5.7K | IDA 落库 | IDA rename/prototype/comment 记录 | skills/ida_apply_metasec_struct_evidence.py + ida-pro-mcp | 说明哪些名字/中文注释已经写回 IDA。 |
+| `instr_diff_350101/` | - | 指令路径 diff 目录 | 真机 GumTrace/instrseq 与 unidbg instrseq 对比 | skills/metasec_instrseq_diff.py | 判断 raw PC 差异是否影响算法主线。 |
+| `instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md` | 8.9K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/managed_blr_target_diff_350101_req01.md` | 3.3K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
 | `instr_diff_350101/true350101_req01_managed_blr_seq.tsv` | 27.6K | 路径序列 | 真机/unidbg 指令或 BLR/CF 序列 | GumTrace/unidbg trace 后处理 | 给 diff 报告提供原始序列。 |
 | `instr_diff_350101/true350101_req01_managed_blr_seq_with_index.tsv` | 38.1K | 路径序列 | 真机/unidbg 指令或 BLR/CF 序列 | GumTrace/unidbg trace 后处理 | 给 diff 报告提供原始序列。 |
-| `instr_diff_350101/true350101_req01_vs_unidbg_true_req01_full_fuzzy.md` | 217.4K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `instr_diff_350101/true350101_req01_vs_unidbg_true_req01_fuzzy.md` | 181.1K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `instr_diff_350101/true350101_vs_unidbg_req01_fuzzy.md` | 59.7K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `instr_diff_350101/true_gumtrace_hwm_url.txt` | 836 | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `instr_diff_350101/true_vs_unidbg_149cbc_firstdiff.md` | 4.1K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `instr_diff_350101/true_vs_unidbg_149cbc_fuzzy.md` | 32.7K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `instr_diff_350101/true_vs_unidbg_fixedtime_149cbc_firstdiff.md` | 11.4K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/true350101_req01_vs_unidbg_true_req01_full_fuzzy.md` | 217.4K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/true350101_req01_vs_unidbg_true_req01_fuzzy.md` | 181.1K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/true350101_vs_unidbg_req01_fuzzy.md` | 59.7K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/true_gumtrace_hwm_url.txt` | 836 | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/true_vs_unidbg_149cbc_firstdiff.md` | 4.1K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/true_vs_unidbg_149cbc_fuzzy.md` | 32.7K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/true_vs_unidbg_fixedtime_149cbc_firstdiff.md` | 11.4K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
 | `instr_diff_350101/unidbg350101_req01_managed_blr_seq.tsv` | 97.0K | 路径序列 | 真机/unidbg 指令或 BLR/CF 序列 | GumTrace/unidbg trace 后处理 | 给 diff 报告提供原始序列。 |
-| `instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md` | 5.2K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | dyidre/skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
+| `instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md` | 5.2K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
 | `managed_cf_recovered_350.c` | 26.7K | CF C lift | 高价值 CF helper 伪 C | 人工维护 | 把 VM callback 原语变成可读 C。 |
 | `managed_cf_semantics_350101.md` | 20.6K | CF 语义 | CF trace + IDA 分析 | 人工整理 | 说明 CFxx helper 各自做什么。 |
-| `managed_cf_table_sign_350101.md` | 4.5K | CF 表 | sign module CF 注册表抽取 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py | 新版本快速对齐 CF index/name/callsite。 |
-| `managed_cf_trace_summary.json` | 9.8K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 dyidre/scripts 后处理 | 给后续脚本、对比和报告复用。 |
-| `managed_sign_cf_table_350101.md` | 4.4K | CF 表 | sign module CF 注册表抽取 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py | unidbg focused probe 的 callsite 来源。 |
+| `managed_cf_table_sign_350101.md` | 4.5K | CF 表 | sign module CF 注册表抽取 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py | 新版本快速对齐 CF index/name/callsite。 |
+| `managed_cf_trace_summary.json` | 9.8K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
+| `managed_sign_cf_table_350101.md` | 4.4K | CF 表 | sign module CF 注册表抽取 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py | unidbg focused probe 的 callsite 来源。 |
 | `managed_vm_boot_350101.md` | 13.2K | managed VM | .init_array/module build 静态分析 + unidbg dump | 人工整理 | 解释 managed module/F 程序怎么启动。 |
-| `managed_vm_decode/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode/F13_350101_F13_0x5d2000_0xe70.decoded.asm` | 13.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode/F13_350101_F13_0x5d2000_0xe70.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode/F13_350101_F13_0x5d2000_0xe70.linear.c` | 19.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -193,7 +193,7 @@ versions/350101
 | `managed_vm_decode/F8_350101_F8_0x882000_0x21870.decoded.stats.md` | 2.8K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode/F8_350101_F8_0x882000_0x21870.linear.c` | 728.7K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode/managed_vm_decode_summary.md` | 2.0K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_adapters_350101/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_adapters_350101/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_adapters_350101/F22_350101_F22_0x5e1400_0x1e0.decoded.asm` | 1.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_adapters_350101/F22_350101_F22_0x5e1400_0x1e0.decoded.stats.md` | 486 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_adapters_350101/F22_350101_F22_0x5e1400_0x1e0.linear.c` | 3.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -213,12 +213,12 @@ versions/350101
 | `managed_vm_decode_adapters_350101/F48_350101_F48_0x62f600_0x648.decoded.stats.md` | 947 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_adapters_350101/F48_350101_F48_0x62f600_0x648.linear.c` | 8.1K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_adapters_350101/managed_vm_decode_summary.md` | 3.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_f12/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_f12/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_f12/F12_350101_F12_0x5d0000_0xf48.decoded.asm` | 13.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_f12/F12_350101_F12_0x5d0000_0xf48.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f12/F12_350101_F12_0x5d0000_0xf48.linear.c` | 20.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_f12/managed_vm_decode_summary.md` | 760 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_f16_f17_f18/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_f16_f17_f18/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_f16_f17_f18/F16_350101_F16_0x5e1600_0x1f8.decoded.asm` | 1.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_f16_f17_f18/F16_350101_F16_0x5e1600_0x1f8.decoded.stats.md` | 719 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f16_f17_f18/F16_350101_F16_0x5e1600_0x1f8.linear.c` | 2.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -229,12 +229,12 @@ versions/350101
 | `managed_vm_decode_f16_f17_f18/F18_350101_F18_0x72c000_0x4680.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f16_f17_f18/F18_350101_F18_0x72c000_0x4680.linear.c` | 95.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_f16_f17_f18/managed_vm_decode_summary.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_f19/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_f19/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_f19/F19_350101_F19_0x8af000_0x4200.decoded.asm` | 54.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_f19/F19_350101_F19_0x8af000_0x4200.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f19/F19_350101_F19_0x8af000_0x4200.linear.c` | 89.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_f19/managed_vm_decode_summary.md` | 2.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_f20_f40_f43_46/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_f20_f40_f43_46/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_f20_f40_f43_46/F20_350101_F20_0x879000_0x4200.decoded.asm` | 54.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_f20_f40_f43_46/F20_350101_F20_0x879000_0x4200.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f20_f40_f43_46/F20_350101_F20_0x879000_0x4200.linear.c` | 89.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -254,12 +254,12 @@ versions/350101
 | `managed_vm_decode_f20_f40_f43_46/F46_350101_F46_0x87e000_0xe70.decoded.stats.md` | 933 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f20_f40_f43_46/F46_350101_F46_0x87e000_0xe70.linear.c` | 18.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_f20_f40_f43_46/managed_vm_decode_summary.md` | 3.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_f21/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_f21/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_f21/F21_350101_F21_0x8aa000_0x4680.decoded.asm` | 57.5K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_f21/F21_350101_F21_0x8aa000_0x4680.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f21/F21_350101_F21_0x8aa000_0x4680.linear.c` | 95.1K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_f21/managed_vm_decode_summary.md` | 2.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_f30_f42/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_f30_f42/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_f30_f42/F30_350101_F30_0x5e2000_0x1f8.decoded.asm` | 1.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_f30_f42/F30_350101_F30_0x5e2000_0x1f8.decoded.stats.md` | 1.0K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f30_f42/F30_350101_F30_0x5e2000_0x1f8.linear.c` | 2.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -267,7 +267,7 @@ versions/350101
 | `managed_vm_decode_f30_f42/F42_350101_F42_0x60cb00_0x408.decoded.stats.md` | 732 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f30_f42/F42_350101_F42_0x60cb00_0x408.linear.c` | 5.6K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_f30_f42/managed_vm_decode_summary.md` | 903 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_f32_family/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_f32_family/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_f32_family/F32_350101_F32_0x62e800_0x648.decoded.asm` | 5.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_f32_family/F32_350101_F32_0x62e800_0x648.decoded.stats.md` | 947 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f32_family/F32_350101_F32_0x62e800_0x648.linear.c` | 8.1K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -287,7 +287,7 @@ versions/350101
 | `managed_vm_decode_f32_family/F38_350101_F38_0x7bf000_0xe70.decoded.stats.md` | 933 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_f32_family/F38_350101_F38_0x7bf000_0xe70.linear.c` | 18.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_f32_family/managed_vm_decode_summary.md` | 3.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_roundfamilies_350101/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_roundfamilies_350101/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_roundfamilies_350101/F24_350101_F24_0x62fd00_0x678.decoded.asm` | 5.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_roundfamilies_350101/F24_350101_F24_0x62fd00_0x678.decoded.stats.md` | 1022 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_roundfamilies_350101/F24_350101_F24_0x62fd00_0x678.linear.c` | 8.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -331,7 +331,7 @@ versions/350101
 | `managed_vm_decode_roundfamilies_350101/F54_350101_F54_0x87f000_0xe70.decoded.stats.md` | 933 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_roundfamilies_350101/F54_350101_F54_0x87f000_0xe70.linear.c` | 18.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_roundfamilies_350101/managed_vm_decode_summary.md` | 6.0K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_sourcework_350101/` | - | managed VM decode 目录 | managed program dump 解码结果 | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_sourcework_350101/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_sourcework_350101/F16_350101_F16_0x5e1600_0x1f8.decoded.asm` | 1.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_sourcework_350101/F16_350101_F16_0x5e1600_0x1f8.decoded.stats.md` | 719 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_sourcework_350101/F16_350101_F16_0x5e1600_0x1f8.linear.c` | 2.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -456,7 +456,7 @@ versions/350101
 | `metasec_350101_recovered_c.h` | 12.9K | C oracle 接口 | 手工整理公共接口 | 人工维护 | 多个 recovered C 文件共享的头文件。 |
 | `metasec_350101_recovered_c_suite.c` | 7.3K | C oracle suite | 统一测试入口 | 人工维护 | 把各 CF/header oracle 串起来做回归。 |
 | `metasec_ctx350_draft.h` | 5.0K | 结构体 | 动态证据 + IDA 静态访问人工合并 | 人工维护 | 导入 IDA/对照新版本 ctx 布局。 |
-| `metasec_so_identity.md` | 709 | SO 身份 | 原始 SO hash/build-id/string anchors | /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py | 确认分析结论对应哪份 SO；升级版本第一步对照它。 |
+| `metasec_so_identity.md` | 709 | SO 身份 | 原始 SO hash/build-id/string anchors | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py | 确认分析结论对应哪份 SO；升级版本第一步对照它。 |
 | `metasec_structs_350_all.h` | 56.2K | 结构体 | 334 旧结构 + 350101 动态证据修正 | 人工维护 | 当前结构总快照，IDA Local Types 和 unidbg 注释参考。 |
 | `multi_request_compare_350101/` | - | 请求对比目录 | 真机 counter + unidbg one/multi request 对比 | counter-one/counter-multi probe + unidbg baseline | 判断单请求/多请求路径是否稳定。 |
 | `multi_request_compare_350101/README.md` | 5.9K | 请求对比证据 | 真机请求与 unidbg 请求对比 | counter probe + unidbg baseline | 定位路径/值差异是否随请求变化。 |
@@ -481,7 +481,7 @@ versions/350101
 | `one_request_compare_350101/README.md` | 2.8K | 请求对比证据 | 真机请求与 unidbg 请求对比 | counter probe + unidbg baseline | 定位路径/值差异是否随请求变化。 |
 | `one_request_compare_350101/true_s1.txt` | 160 | 请求向量 | 真机单请求/多请求样本里的 s1/s2 | counter-one/counter-multi probe + 人工固化 | 升级版本时复跑同类请求，判断算法是否只对一条样本偶然成立。 |
 | `one_request_compare_350101/true_s2.txt` | 1.2K | 请求向量 | 真机单请求/多请求样本里的 s1/s2 | counter-one/counter-multi probe + 人工固化 | 升级版本时复跑同类请求，判断算法是否只对一条样本偶然成立。 |
-| `real_vs_unidbg_entry_shape.md` | 5.3K | 入口 ABI | 真机 entrydump + unidbg entrydump | dyidre/skills/metasec_entrydump_compare.py | 确认 X0-X5/X8 参数形态一致，避免 unidbg 输入偏掉。 |
+| `real_vs_unidbg_entry_shape.md` | 5.3K | 入口 ABI | 真机 entrydump + unidbg entrydump | skills/metasec_entrydump_compare.py | 确认 X0-X5/X8 参数形态一致，避免 unidbg 输入偏掉。 |
 | `recovery_process_350101.md` | 20.7K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `req01_app_log_s1s2_unidbg_sync_350101.md` | 3.5K | 请求基准 | 真机 request01 s1/s2 同步到 unidbg | 人工整理 + unidbg baseline | 说明固定请求怎么来的，后续算法验证都用这一组。 |
 | `run_recovered_c_oracles_350101.sh` | 3.9K | C oracle runner | 统一编译/运行脚本 | 人工维护 | 提交前跑它确认 C 还原没坏。 |
@@ -495,9 +495,9 @@ versions/350101
 | `source_work_vector_selfcheck_350101.c` | 12.5K | C 代码 | 人工整理 | 人工维护 | 算法 lift 或说明性伪 C。 |
 | `source_work_vectors_350101.md` | 6.0K | source-work 报告 | managed VM source-work family trace/lift | metasec_workarea_timeline.py + decoder + 人工整理 | 恢复 F18/F19/F20/F21 family 和嵌套变换。 |
 | `stackplz_rf_rpc_bridge_350101.md` | 4.2K | eDBG/stackplz | RF RPC + stackplz bridge 实测记录 | stackplz-bridge probe | 后续按 module+offset 下硬断点的模板。 |
-| `summary.json` | 99.1K | 结构证据 | entrydump/read-write trace 聚合 | dyidre/skills/metasec_struct_infer.py | 机器可读结构证据，供结构提升、IDA 注释和后续脚本复用。 |
-| `true_device_branch_probe_350101_latest.json` | 980 | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 dyidre/scripts 后处理 | 给后续脚本、对比和报告复用。 |
-| `true_device_one_request_count_350101_latest.json` | 4.2K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 dyidre/scripts 后处理 | 给后续脚本、对比和报告复用。 |
+| `summary.json` | 99.1K | 结构证据 | entrydump/read-write trace 聚合 | skills/metasec_struct_infer.py | 机器可读结构证据，供结构提升、IDA 注释和后续脚本复用。 |
+| `true_device_branch_probe_350101_latest.json` | 980 | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
+| `true_device_one_request_count_350101_latest.json` | 4.2K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `true_env_sync_350101_214509.md` | 7.5K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `true_request_vectors/` | - | 真机请求向量 | 从真机 app log/request dump 固化的 s1/s2 | 人工整理 + unidbg sync 脚本 | 固定算法输入，避免每次换请求造成假差异。 |
 | `true_request_vectors/req01_app_log_true_meta.json` | 352 | 请求向量 | 真机 request01 s1/s2 和同步结果 | 人工整理 + unidbg aligned run | 固定后续算法验证输入。 |
@@ -512,10 +512,10 @@ versions/350101
 | `vm_lift_1f7860/gumtrace_1f7860_3pages.vmtrace.asm` | 1.6M | native VMP 证据 | GumTrace raw/slice/asm | gum-exevm/native-vmp probe | 支撑 native VMP lift。 |
 | `vm_lift_1f7860/gumtrace_1f7860_slice.log` | 34.7M | native VMP 证据 | GumTrace raw/slice/asm | gum-exevm/native-vmp probe | 支撑 native VMP lift。 |
 | `vm_lift_1f7860/native_vmp_1f7860_recovered.c` | 8.2K | native VMP C lift | vmCode=0x1f7860 人工恢复 | GumTrace 切片 + IDA 分析 | 复现 native material builder。 |
-| `x0_evidence.md` | 31.8K | 结构证据 | X0/ctx 读写证据聚合 | dyidre/skills/metasec_struct_infer.py | 按 offset 看 ctx 字段证据，升级时对照字段是否漂移。 |
-| `x0_promote_plan.md` | 5.5K | 结构提升 | summary.json 二次整理 | dyidre/skills/metasec_struct_promote.py | 说明哪些字段可提升、哪些字段继续观察。 |
-| `x0_struct.h` | 1.9K | 结构草稿 | X0/ctx offset 自动骨架 | dyidre/skills/metasec_struct_infer.py | 早期稀疏结构草稿；不直接当最终结构。 |
-| `x0_tail_timeline.md` | 3.3K | 结构时间线 | ctx 尾部 scratch/output 写入时间线 | dyidre/skills/metasec_struct_infer.py | 追 ctx+0x3c0..0x500 一类输出/scratch 区。 |
+| `x0_evidence.md` | 31.8K | 结构证据 | X0/ctx 读写证据聚合 | skills/metasec_struct_infer.py | 按 offset 看 ctx 字段证据，升级时对照字段是否漂移。 |
+| `x0_promote_plan.md` | 5.5K | 结构提升 | summary.json 二次整理 | skills/metasec_struct_promote.py | 说明哪些字段可提升、哪些字段继续观察。 |
+| `x0_struct.h` | 1.9K | 结构草稿 | X0/ctx offset 自动骨架 | skills/metasec_struct_infer.py | 早期稀疏结构草稿；不直接当最终结构。 |
+| `x0_tail_timeline.md` | 3.3K | 结构时间线 | ctx 尾部 scratch/output 写入时间线 | skills/metasec_struct_infer.py | 追 ctx+0x3c0..0x500 一类输出/scratch 区。 |
 | `x_argus_medusa_material_350101.md` | 19.0K | X-Argus 报告 | F5/CF pack/watch/oracle | metasec_argus_*_report.py + 人工整理 | 恢复 X-Argus pack、加密、base64 链路。 |
 | `x_argus_pack_350101.md` | 2.3K | X-Argus 报告 | F5/CF pack/watch/oracle | metasec_argus_*_report.py + 人工整理 | 恢复 X-Argus pack、加密、base64 链路。 |
 | `x_argus_pack_350101_cf44_input.bin` | 194 | 二进制向量 | 从 trace/log 提取的 raw pack、CF 输入或 header bytes | metasec_*_report.py / true-env / 人工提取 | C oracle 的 byte-exact 测试向量。 |
@@ -530,5 +530,5 @@ versions/350101
 - 新增文件时，先让本脚本生成默认分类。
 - 如果出现 `未分类`，说明这个文件的来源/用途还没沉淀，提交前要补分类规则或在版本 README 里解释。
 - 脚本生成的清单不是替代分析报告；重点报告仍然要在正文里记录证据、命令和结论。
-- 大型真机 raw log 不放在版本目录，放 `dyidre/runs/<version>/` 或 `_archive/`。
+- 大型真机 raw log 不放在版本目录，放 `runs/<version>/` 或 `_archive/`。
 

@@ -21,7 +21,7 @@ MetaSec 分析很依赖版本一致性。只提交脚本和文档，但 `.apk`�
 推荐安装 pre-commit hook，让每次 `git commit` 自动同步：
 
 ```bash
-cd /Users/freeman/project/douyin/dyidre
+cd /path/to/dyidre
 git init
 scripts/install_pre_commit_hook.sh
 ```
@@ -41,7 +41,7 @@ materials/materials_sources.tsv
 如果要手动同步，以 350101 为例：
 
 ```bash
-cd /Users/freeman/project/douyin/dyidre
+cd /path/to/dyidre
 scripts/sync_metasec_materials.sh 350101 \
   douyin_35_0_0/libmetasec_ml.so \
   douyin_35_0_0/libmetasec_ml.so.i64 \

@@ -4,7 +4,7 @@
 This script is intentionally boring and deterministic: it does not parse or
 transform the heavy trace payload.  Its job is to keep the handoff layer clean:
 
-  dyidre/runs/<version>/true_env_xmedusa/<run_id>/
+  runs/<version>/true_env_xmedusa/<run_id>/
 
 For each run it records which files exist, whether a summary is present, and
 whether the run is complete enough to serve as a baseline.  The real evidence
@@ -159,7 +159,7 @@ def write_markdown(manifest: dict[str, Any], out: Path) -> None:
     latest = manifest.get("latest") or "未设置"
     lines.append(f"# {version} {run_kind} 批次索引")
     lines.append("")
-    lines.append("这个文件由 `dyidre/scripts/index_true_env_runs.py` 生成。")
+    lines.append("这个文件由 `scripts/index_true_env_runs.py` 生成。")
     lines.append("它只做索引，不替代原始证据；真实日志、bin、b64、tar 仍以各 run 目录为准。")
     lines.append("")
     lines.append(f"- 当前版本：`{version}`")
@@ -183,10 +183,10 @@ def write_markdown(manifest: dict[str, Any], out: Path) -> None:
     lines.append("|---|---|---|")
     lines.append("| `rustfrida_console.log` | `run_metasec_probe_<version>.sh true-env ...` 的 host tee | RF spawn/attach 输出，判断注入是否卡住或崩溃。 |")
     lines.append("| `true_env_xmedusa_<version>.log` | `metasec_probe_<version>.js mode=true-env` 写到 App 私有目录后由 host 拉回 | 原始真机事件流，是所有后处理的源头。 |")
-    lines.append("| `true_env_xmedusa_summary.json` | `dyidre/scripts/extract_true_env_xmedusa.py` 从原始 log 归一化 | 机器可读摘要，喂给 unidbg baseline 和差异分析。 |")
+    lines.append("| `true_env_xmedusa_summary.json` | `scripts/extract_true_env_xmedusa.py` 从原始 log 归一化 | 机器可读摘要，喂给 unidbg baseline 和差异分析。 |")
     lines.append("| `metasec_app_files_snapshot.tar` | true-env 后处理 | App 私有文件快照，用于同步 `.msdata`、`.msf3_*` 等环境状态。 |")
     lines.append("| `rootfs_app_files_manifest.json` | true-env 后处理 | 记录哪些 App 文件进入 unidbg rootfs。 |")
-    lines.append("| `f8_*` / `xmedusa_*` | `dyidre/scripts/extract_true_env_xmedusa.py` | F8 入参、token、stub、lastF8、emit bytes/b64，专门追 `X-Medusa` 值级差异。 |")
+    lines.append("| `f8_*` / `xmedusa_*` | `scripts/extract_true_env_xmedusa.py` | F8 入参、token、stub、lastF8、emit bytes/b64，专门追 `X-Medusa` 值级差异。 |")
     lines.append("")
     lines.append("## 判断规则")
     lines.append("")
@@ -203,8 +203,8 @@ def main() -> int:
     parser.add_argument(
         "--root",
         type=Path,
-        default=Path("dyidre/runs/350101/true_env_xmedusa"),
-        help="run root, usually dyidre/runs/<version>/true_env_xmedusa",
+        default=Path("runs/350101/true_env_xmedusa"),
+        help="run root, usually runs/<version>/true_env_xmedusa",
     )
     parser.add_argument("--out-json", type=Path, help="write machine-readable manifest")
     parser.add_argument("--out-md", type=Path, help="write markdown index")

@@ -5,7 +5,7 @@
 ## 主目录
 
 ```text
-dyidre/versions/350101/
+versions/350101/
 ```
 
 这是当前 350101 的主工作目录。
@@ -13,13 +13,13 @@ dyidre/versions/350101/
 更完整、可复跑的版本内文件清单已经沉淀到：
 
 ```text
-dyidre/versions/350101/FILE_CATALOG.md
+versions/350101/FILE_CATALOG.md
 ```
 
 更新命令：
 
 ```bash
-python3 dyidre/scripts/generate_version_file_catalog.py 350101
+python3 scripts/generate_version_file_catalog.py 350101
 ```
 
 ## 核心报告
@@ -96,7 +96,7 @@ python3 dyidre/scripts/generate_version_file_catalog.py 350101
 Frida/RF JS、stackplz、eDBG 的复用说明统一看：
 
 ```text
-dyidre/docs/reusable-probes-stackplz-edbg.md
+docs/reusable-probes-stackplz-edbg.md
 ```
 
 | 路径 | 来源 | 作用 |
@@ -129,15 +129,15 @@ dyidre/docs/reusable-probes-stackplz-edbg.md
 | 路径 | 内容 | 为什么不放顶层 |
 |---|---|---|
 | `_archive/large_raw_traces/` | 1GB 级 full GumTrace raw log | 只在深度复盘时需要 |
-| `_archive/device_boot_images/` | Pixel6 boot/APatch 镜像 | 和签名算法无直接关系 |
-| `_archive/runtime_payloads/` | `rustfrida`、`*.kpm`、`embed*.so` | 属于设备运行 payload，不是分析报告 |
+| `_archive/device_boot_images/` | 设备启动/APatch 镜像 | 和签名算法无直接关系 |
+| `tools/runtime_payloads/` | `rustfrida`、`*.kpm`、`embed*.so` | 设备运行工具，后续版本直接复用 |
 | `_archive/deleted_reproducible_20260831/` | pycache、时间戳、`.last_*` | 可再生垃圾，先归档未硬删 |
 
 确认磁盘要瘦身时，优先删除：
 
 ```text
-dyidre/_archive/large_raw_traces/
-dyidre/_archive/device_boot_images/
+_archive/large_raw_traces/
+_archive/device_boot_images/
 ```
 
 核心报告和 C oracle 不建议删。

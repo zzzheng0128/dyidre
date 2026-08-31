@@ -3,7 +3,7 @@
 
 Input directory convention:
 
-  dyidre/runs/<version>/true_env_xmedusa/<run_id>/
+  runs/<version>/true_env_xmedusa/<run_id>/
     true_env_xmedusa_<version>.log
 
 Generated artifacts:
@@ -367,7 +367,7 @@ def infer_version(run_dir: Path, explicit: str | None) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("run_dir", type=Path, help="dyidre/runs/<version>/true_env_xmedusa/<run_id>")
+    parser.add_argument("run_dir", type=Path, help="runs/<version>/true_env_xmedusa/<run_id>")
     parser.add_argument("--version", help="version id, inferred from run path when omitted")
     parser.add_argument("--force", action="store_true", help="overwrite existing extracted files and summary")
     parser.add_argument("--dry-run", action="store_true", help="parse and report, do not write")

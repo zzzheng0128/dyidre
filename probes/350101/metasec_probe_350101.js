@@ -1,6 +1,6 @@
 // Douyin 350101 统一 MetaSec probe。
 //
-// 这是 dyidre/probes/350101 下唯一面向使用者的 Frida/rustFrida JS 入口。
+// 这是 probes/350101 下唯一面向使用者的 Frida/rustFrida JS 入口。
 // 以前那些单功能脚本已经合并成 mode，避免后续版本迭代时选错脚本。
 //
 // 加载前可以在 runtime JS 头部写入配置：
@@ -11,10 +11,10 @@
 //     -H 'Content-Type: application/json' -d '["counter-one"]'
 //
 // 推荐从 host 侧统一 runner 启动：
-//   dyidre/probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
+//   probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
 //
 // 输出约定：
-//   原始 console/log 都放到 dyidre/runs/350101/<kind>/<run_id>/，不要堆在 probes 目录。
+//   原始 console/log 都放到 runs/350101/<kind>/<run_id>/，不要堆在 probes 目录。
 
 // ===== mode: counter-one / 单请求计数 =====
 // 历史来源：metasec_one_request_counter_350.js
@@ -1237,10 +1237,10 @@ function __dyidre_mode_true_env() {
 //   - capture emitted X-Medusa value at 0x14A53C
 //
 // Preferred run path:
-//   dyidre/probes/350101/run_metasec_probe_350101.sh true-env 90 <run_id>
+//   probes/350101/run_metasec_probe_350101.sh true-env 90 <run_id>
 //
 // Output convention:
-//   dyidre/runs/350101/true_env_xmedusa/<timestamp>/
+//   runs/350101/true_env_xmedusa/<timestamp>/
 //
 // This JS writes the raw in-app log:
 //   /data/user/0/com.ss.android.ugc.aweme/files/true_env_xmedusa_350101.log
@@ -2418,7 +2418,7 @@ function __dyidre_mode_xheader() {
 //   libmetasec_ml.so + 0x11fc30  treeMapPut_350(map, key_memblock, value_memblock)
 //
 // Run example:
-//   dyidre/probes/350101/run_metasec_probe_350101.sh xheader 90 xhdr01
+//   probes/350101/run_metasec_probe_350101.sh xheader 90 xhdr01
 //
 // Interesting callsites:
 //   0x14A2B0 -> observed X-Argus
@@ -2796,10 +2796,10 @@ function __dyidre_mode_native_vmp() {
 //   Verify whether real device execution of:
 //     0x12564C -> 0x124DD4 -> 0x4CC10(exeVMInner, vmCode=0x1F7860)
 //   produces the mssdk material object recovered in:
-//     dyidre/versions/350101/vm_lift_1f7860/native_vmp_1f7860_recovered.c
+//     versions/350101/vm_lift_1f7860/native_vmp_1f7860_recovered.c
 //
 // Run example:
-//   dyidre/probes/350101/run_metasec_probe_350101.sh native-vmp 90 vmp01
+//   probes/350101/run_metasec_probe_350101.sh native-vmp 90 vmp01
 
 var TARGET_MODULE = "libmetasec_ml.so";
 

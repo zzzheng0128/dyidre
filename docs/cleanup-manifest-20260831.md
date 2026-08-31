@@ -2,17 +2,13 @@
 
 ## 做了什么
 
-1. 目录重命名：
+1. 目录命名统一：
 
    ```text
-   pixel6_boot -> dyidre
+   顶层工作区名称统一为 dyidre
    ```
 
-2. 文档/脚本里的维护性路径引用：
-
-   ```text
-   pixel6_boot -> dyidre
-   ```
+2. 文档/脚本里的维护性路径引用已改为仓库内相对路径。
 
 3. 新增统一入口：
 
@@ -38,15 +34,15 @@
    dyidre/_archive/device_boot_images/apatch_patched_11224_0.13.3_rtqe.img
    ```
 
-6. 归档运行 payload：
+6. 运行 payload 从历史归档提升为正式工具目录：
 
    ```text
-   dyidre/_archive/runtime_payloads/rustfrida
-   dyidre/_archive/runtime_payloads/embed1.so
-   dyidre/_archive/runtime_payloads/embed2.so
-   dyidre/_archive/runtime_payloads/embed3.so
-   dyidre/_archive/runtime_payloads/hide-so.kpm
-   dyidre/_archive/runtime_payloads/wxshadow.kpm
+   tools/runtime_payloads/rustfrida
+   tools/runtime_payloads/embed1.so
+   tools/runtime_payloads/embed2.so
+   tools/runtime_payloads/embed3.so
+   tools/runtime_payloads/hide-so.kpm
+   tools/runtime_payloads/wxshadow.kpm
    ```
 
 7. 归档可再生瞬态文件：

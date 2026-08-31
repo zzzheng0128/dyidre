@@ -1,4 +1,4 @@
 # version	so_path	ida_i64_path	apk_path
-# 提交前 hook 会读取这个表，自动同步每个版本的 SO/i64/APK 本体到 dyidre/materials/<version>/。
+# 提交前 hook 会读取这个表，自动同步每个版本的 SO/i64/APK 本体到 materials/<version>/。
 # 新版本照着加一行即可。路径相对仓库根目录。
 350101	douyin_35_0_0/libmetasec_ml.so	douyin_35_0_0/libmetasec_ml.so.i64	douyin_35_0_0/dy351_vivo.apk

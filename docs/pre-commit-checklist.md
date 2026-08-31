@@ -7,7 +7,7 @@
 推荐安装 hook，这样每次 `git commit` 时会自动同步 `.apk/.so/.i64` 本体、manifest 和版本目录 `FILE_CATALOG.md`，不需要手动跑同步脚本。
 
 ```bash
-cd /Users/freeman/project/douyin/dyidre
+cd /path/to/dyidre
 git init
 scripts/install_pre_commit_hook.sh
 ```
@@ -36,7 +36,7 @@ materials/materials_sources.tsv
 DYIDRE_SKIP_MATERIALS_SYNC=1 git commit -m "..."
 ```
 
-注意：如果你在上级 `/Users/freeman/project/douyin` 建 monorepo，也可以运行 `dyidre/scripts/install_pre_commit_hook.sh`；hook 会自动识别 `dyidre/` 子目录布局。
+注意：如果你在包含 `dyidre/` 的上级 monorepo 执行，也可以运行 `dyidre/scripts/install_pre_commit_hook.sh`；hook 会自动识别 `dyidre/` 子目录布局。
 
 如果 `versions/<version>/` 存在，hook 还会自动执行：
 
@@ -51,7 +51,7 @@ python3 scripts/generate_version_file_catalog.py <version>
 如果还没安装 hook，或者想手动同步，执行：
 
 ```bash
-cd /Users/freeman/project/douyin/dyidre
+cd /path/to/dyidre
 scripts/sync_metasec_materials.sh 350101 \
   douyin_35_0_0/libmetasec_ml.so \
   douyin_35_0_0/libmetasec_ml.so.i64 \
@@ -90,7 +90,7 @@ scripts/update_materials_manifest.sh --check \
 ## 3. 如果换过 SO，重新跑身份识别
 
 ```bash
-python3 /Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py \
+python3 ~/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py \
   /absolute/path/to/libmetasec_ml.so \
   --out versions/<version>/metasec_so_identity.md
 ```
@@ -106,7 +106,7 @@ scripts/sync_metasec_materials.sh <version> <so_path> <ida_i64_path> <apk_path>
 350101：
 
 ```bash
-cd /Users/freeman/project/douyin/unidbg
+cd ../unidbg
 scripts/metasec-350101-req01-baseline.sh
 ```
 

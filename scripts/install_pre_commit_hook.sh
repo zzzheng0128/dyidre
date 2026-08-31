@@ -4,7 +4,7 @@ set -euo pipefail
 # 安装 dyidre 的 git pre-commit hook。
 #
 # 用法：
-#   cd /Users/freeman/project/douyin/dyidre
+#   cd /path/to/dyidre
 #   git init                         # 如果这里还不是 git 仓库
 #   scripts/install_pre_commit_hook.sh
 #
@@ -17,11 +17,11 @@ usage:
   install_pre_commit_hook.sh [repo_root]
 
 examples:
-  cd /Users/freeman/project/douyin/dyidre
+  cd /path/to/dyidre
   git init
   scripts/install_pre_commit_hook.sh
 
-  scripts/install_pre_commit_hook.sh /Users/freeman/project/douyin/dyidre
+  scripts/install_pre_commit_hook.sh /path/to/dyidre
 EOF
 }
 

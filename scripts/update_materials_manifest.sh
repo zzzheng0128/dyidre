@@ -205,7 +205,7 @@ emit_manifest() {
   if [[ -n "$apk_abs" ]]; then
     apk_cmd_update=" --apk ${display_apk_path}"
     apk_cmd_check=" --apk ${display_apk_path}"
-    apk_row="| APK | \`${apk_abs}\` | $(file_size "$apk_abs") | $(file_mtime "$apk_abs") | \`$(sha256_file "$apk_abs")\` |"
+    apk_row="| APK | \`${display_apk_path}\` | $(file_size "$apk_abs") | $(file_mtime "$apk_abs") | \`$(sha256_file "$apk_abs")\` |"
     embedded_paths="$(apk_embedded_so_paths "$apk_abs")"
     embedded_first="$(apk_first_embedded_so_path "$apk_abs")"
     embedded_sha="$(apk_embedded_so_sha256 "$apk_abs" "$embedded_first")"
@@ -255,8 +255,8 @@ scripts/update_materials_manifest.sh --check${apk_cmd_check} ${version} \\
 
 | role | path | size | mtime | sha256 |
 |---|---|---:|---|---|
-| raw SO | \`${so_abs}\` | $(file_size "$so_abs") | $(file_mtime "$so_abs") | \`$(sha256_file "$so_abs")\` |
-| IDA i64 | \`${i64_abs}\` | $(file_size "$i64_abs") | $(file_mtime "$i64_abs") | \`$(sha256_file "$i64_abs")\` |
+| raw SO | \`${display_so_path}\` | $(file_size "$so_abs") | $(file_mtime "$so_abs") | \`$(sha256_file "$so_abs")\` |
+| IDA i64 | \`${display_i64_path}\` | $(file_size "$i64_abs") | $(file_mtime "$i64_abs") | \`$(sha256_file "$i64_abs")\` |
 ${apk_row}
 
 ## SO 信息

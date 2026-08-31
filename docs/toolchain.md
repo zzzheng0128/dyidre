@@ -49,10 +49,23 @@ rustFrida 的作用是从真实 App 进程里拿“不可猜”的数据。
 Frida/RF 分析 JS 和 stackplz/eDBG 的具体复用方式，统一看：
 
 ```text
-dyidre/docs/reusable-probes-stackplz-edbg.md
+docs/reusable-probes-stackplz-edbg.md
 ```
 
 以后新增版本时，优先复制 `probes/350101/`，改统一 JS 的 offset 表和 runner 版本号，不要重新写一套 jnitrace/gumtrace/watch 脚本。
+
+设备侧工具本体随本仓库保存：
+
+```text
+tools/runtime_payloads/
+```
+
+第一次接手或换手机时先看：
+
+```text
+tools/README.md
+tools/runtime_payloads/README.md
+```
 
 ## 2. unidbg：可重复复现和回归
 
@@ -71,7 +84,7 @@ unidbg/scripts/metasec-350101-req01-baseline.sh
 | 输入 | 来源 |
 |---|---|
 | `s1/s2` | 真机 request01，已复制到 `unidbg-android/src/test/resources/metasec/350101/` |
-| rootfs/app files | `dyidre/runs/<version>/true_env_xmedusa/<timestamp>/` 采集后同步 |
+| rootfs/app files | `runs/<version>/true_env_xmedusa/<timestamp>/` 采集后同步 |
 | fixed pid/tid/time/random | `baseline.properties` 和 true-env summary |
 | `MS.b` 行为 | jnitrace + true-env + unidbg stub |
 | 函数 offset/profile | IDA + GumTrace + dyidre 报告 |
@@ -122,8 +135,8 @@ RF JS 找到 module base / offset / buffer 地址
 相关文档：
 
 ```text
-dyidre/versions/350101/edbg_assist_plan_350101.md
-dyidre/versions/350101/stackplz_rf_rpc_bridge_350101.md
+versions/350101/edbg_assist_plan_350101.md
+versions/350101/stackplz_rf_rpc_bridge_350101.md
 ```
 
 ## 4. IDA：把证据变成可读工程
@@ -139,9 +152,9 @@ IDA 负责沉淀命名、原型、结构体和注释。
 当前落库入口：
 
 ```text
-dyidre/skills/ida_apply_metasec_struct_evidence.py
-dyidre/versions/350101/metasec_structs_350_all.h
-dyidre/versions/350101/ida_rename_update_350101_20260831.md
+skills/ida_apply_metasec_struct_evidence.py
+versions/350101/metasec_structs_350_all.h
+versions/350101/ida_rename_update_350101_20260831.md
 ```
 
 ## 5. C oracle：算法验收
@@ -151,9 +164,9 @@ C oracle 是最终从“看懂”走向“还原”的验收层。
 当前关键入口：
 
 ```text
-dyidre/versions/350101/run_recovered_c_oracles_350101.sh
-dyidre/versions/350101/metasec_350101_fixed_signer.c
-dyidre/versions/350101/x_headers_algorithms_350101.c
+versions/350101/run_recovered_c_oracles_350101.sh
+versions/350101/metasec_350101_fixed_signer.c
+versions/350101/x_headers_algorithms_350101.c
 ```
 
 判断标准：
@@ -173,15 +186,15 @@ dyidre/versions/350101/x_headers_algorithms_350101.c
 每次提交前，除了代码、文档、unidbg baseline，也要同步分析材料本体。推荐安装 pre-commit hook 自动做：
 
 ```bash
-cd /Users/freeman/project/douyin
+cd /path/to/dyidre
 git init
-dyidre/scripts/install_pre_commit_hook.sh
+scripts/install_pre_commit_hook.sh
 ```
 
 安装后每次 `git commit` 会读取：
 
 ```text
-dyidre/materials/materials_sources.tsv
+materials/materials_sources.tsv
 ```
 
 并自动把 `.apk/.so/.i64/materials_manifest.md` 同步、`git add` 到本次提交。
@@ -189,28 +202,28 @@ dyidre/materials/materials_sources.tsv
 手动同步命令仍然保留：
 
 ```bash
-cd /Users/freeman/project/douyin
-dyidre/scripts/sync_metasec_materials.sh 350101 \
+cd /path/to/dyidre
+scripts/sync_metasec_materials.sh 350101 \
   douyin_35_0_0/libmetasec_ml.so \
   douyin_35_0_0/libmetasec_ml.so.i64 \
   douyin_35_0_0/dy351_vivo.apk
 ```
 
-这个命令会复制 `.apk/.so/.i64` 到 `dyidre/materials/<version>/`，然后更新 manifest。尤其是 IDA 里改过函数名、结构体、原型、中文注释后，必须保存 `.i64` 并重新跑一次。
+这个命令会复制 `.apk/.so/.i64` 到 `materials/<version>/`，然后更新 manifest。尤其是 IDA 里改过函数名、结构体、原型、中文注释后，必须保存 `.i64` 并重新跑一次。
 
 提交前可以用 check 模式防止忘记更新：
 
 ```bash
-dyidre/scripts/update_materials_manifest.sh --check \
-  --apk dyidre/materials/350101/source.apk \
+scripts/update_materials_manifest.sh --check \
+  --apk materials/350101/source.apk \
   350101 \
-  dyidre/materials/350101/libmetasec_ml.so \
-  dyidre/materials/350101/libmetasec_ml.so.i64
+  materials/350101/libmetasec_ml.so \
+  materials/350101/libmetasec_ml.so.i64
 ```
 
 完整清单看：
 
 ```text
-dyidre/docs/pre-commit-checklist.md
-dyidre/materials/README.md
+docs/pre-commit-checklist.md
+materials/README.md
 ```

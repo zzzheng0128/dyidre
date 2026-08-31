@@ -23,14 +23,15 @@ Douyin 37.4.0 -> 370401
 ## 标准目录
 
 ```text
-dyidre/
+./
   versions/<version>/                 # 该版本的分析结论入口
   runs/<version>/<run_kind>/<run_id>/  # 该版本的真机采集证据
   probes/<version>/                    # 该版本的真机采集脚本
   probes/common/                       # 跨版本辅助脚本
+  tools/                               # 设备侧 RF/KPM/embed payload
   docs/                               # 跨版本说明和升级流程
 
-unidbg/
+../unidbg/
   unidbg-android/src/test/resources/metasec/<version>/  # 该版本固定基准输入
   scripts/metasec-<version>-req01-baseline.sh            # 该版本回归脚本
 ```
@@ -38,13 +39,13 @@ unidbg/
 当前 350101：
 
 ```text
-dyidre/versions/350101/
-dyidre/materials/350101/source.apk
-dyidre/materials/350101/libmetasec_ml.so
-dyidre/materials/350101/libmetasec_ml.so.i64
-dyidre/runs/350101/true_env_xmedusa/latest -> 20260831_214509
-dyidre/probes/350101/
-unidbg/unidbg-android/src/test/resources/metasec/350101/
+versions/350101/
+materials/350101/source.apk
+materials/350101/libmetasec_ml.so
+materials/350101/libmetasec_ml.so.i64
+runs/350101/true_env_xmedusa/latest -> 20260831_214509
+probes/350101/
+../unidbg/unidbg-android/src/test/resources/metasec/350101/
 ```
 
 ## 新版本最小骨架
@@ -52,12 +53,12 @@ unidbg/unidbg-android/src/test/resources/metasec/350101/
 新增 `<version>` 时，先建这些：
 
 ```text
-dyidre/versions/<version>/README.md
-dyidre/versions/<version>/metasec_so_identity.md
-dyidre/runs/<version>/README.md
-dyidre/runs/<version>/true_env_xmedusa/
-dyidre/probes/<version>/README.md
-unidbg/unidbg-android/src/test/resources/metasec/<version>/README.md
+versions/<version>/README.md
+versions/<version>/metasec_so_identity.md
+runs/<version>/README.md
+runs/<version>/true_env_xmedusa/
+probes/<version>/README.md
+../unidbg/unidbg-android/src/test/resources/metasec/<version>/README.md
 ```
 
 然后再补：
@@ -81,22 +82,23 @@ YYYYMMDD_HHMMSS
 例如：
 
 ```text
-dyidre/runs/350101/true_env_xmedusa/20260831_214509/
+runs/350101/true_env_xmedusa/20260831_214509/
 ```
 
 每类采集下可以有一个 `latest` 符号链接，指向当前推荐基准：
 
 ```text
-dyidre/runs/350101/true_env_xmedusa/latest -> 20260831_214509
+runs/350101/true_env_xmedusa/latest -> 20260831_214509
 ```
 
 ## 文件归属规则
 
 | 文件类型 | 放哪里 |
 |---|---|
-| 真机原始日志、console、dump、bin、b64、tar | `dyidre/runs/<version>/<run_kind>/<run_id>/` |
-| 分析结论、结构体、C oracle、VM decode | `dyidre/versions/<version>/` |
-| 跨版本流程、工具链说明 | `dyidre/docs/` |
+| 真机原始日志、console、dump、bin、b64、tar | `runs/<version>/<run_kind>/<run_id>/` |
+| 分析结论、结构体、C oracle、VM decode | `versions/<version>/` |
+| 跨版本流程、工具链说明 | `docs/` |
+| 设备侧工具/payload | `tools/` |
 | unidbg 固定输入和 expected 值 | `unidbg/unidbg-android/src/test/resources/metasec/<version>/` |
 | unidbg 一键回归脚本 | `unidbg/scripts/metasec-<version>-*.sh` |
 

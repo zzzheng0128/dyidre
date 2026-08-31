@@ -5,8 +5,8 @@
 通用工具链说明：
 
 ```text
-dyidre/docs/metasec-analysis-trajectory.md
-dyidre/docs/reusable-probes-stackplz-edbg.md
+docs/metasec-analysis-trajectory.md
+docs/reusable-probes-stackplz-edbg.md
 ```
 
 如果不知道该先跑哪个 mode，先看 `metasec-analysis-trajectory.md` 的“第 3 步：抓一条真机基准请求”和“第 7 步：再追值级差异”。
@@ -20,6 +20,35 @@ dyidre/docs/reusable-probes-stackplz-edbg.md
 | `run_rf_rpc_persistent.sh` | 设备侧 RF RPC 常驻 runner。被 `mode=rpc` 使用，也可手工用 | Android device |
 | `run_stackplz_hwbrk_rpc.sh` | 设备侧 stackplz dev RPC runner | Android device |
 | `run_stackplz_offset_test.sh` | 设备侧 stackplz standalone offset 栈采样 | Android device |
+
+## 先部署工具
+
+runner 默认调用设备上的：
+
+```text
+/data/local/tmp/rustfrida
+```
+
+仓库里已经保存了一份可复用工具：
+
+```bash
+adb push tools/runtime_payloads/rustfrida /data/local/tmp/rustfrida
+adb shell "su -c 'chmod 755 /data/local/tmp/rustfrida'"
+```
+
+如果要测试 wxshadow/hide-so，再按需推：
+
+```bash
+adb push tools/runtime_payloads/wxshadow.kpm /data/local/tmp/wxshadow.kpm
+adb push tools/runtime_payloads/hide-so.kpm /data/local/tmp/hide-so.kpm
+```
+
+工具说明见：
+
+```text
+tools/README.md
+tools/runtime_payloads/README.md
+```
 
 ## 先用哪个 mode
 
@@ -52,28 +81,28 @@ counter-one
 在 host 上运行：
 
 ```bash
-cd /Users/freeman/project/douyin
-dyidre/probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
+cd /path/to/dyidre
+probes/350101/run_metasec_probe_350101.sh <mode> [seconds] [tag]
 ```
 
 只想测试脚本参数、mode 白名单、runtime 生成，不想碰手机时：
 
 ```bash
-DRY_RUN=1 dyidre/probes/350101/run_metasec_probe_350101.sh counter-one 1 dryrun
+DRY_RUN=1 probes/350101/run_metasec_probe_350101.sh counter-one 1 dryrun
 ```
 
-`DRY_RUN=1` 只在 `dyidre/runs/350101/.../<tag>/` 生成 `runtime_*.js` 和 `README.md`，不会 `adb push`，也不会启动 rustFrida。
+`DRY_RUN=1` 只在 `runs/350101/.../<tag>/` 生成 `runtime_*.js` 和 `README.md`，不会 `adb push`，也不会启动 rustFrida。
 
 输出目录自动选择：
 
 | mode | 输出目录 |
 |---|---|
-| `true-env` | `dyidre/runs/350101/true_env_xmedusa/<tag>/` |
-| `jnitrace` | `dyidre/runs/350101/jnitrace/<tag>/` |
-| `gum-exevm` / `gum-http` | `dyidre/runs/350101/gumtrace/<tag>/` |
-| `artcheck` | `dyidre/runs/350101/maps_artmethod/<tag>/` |
-| `stackplz-bridge` | `dyidre/runs/350101/edbg_stackplz/<tag>/` |
-| 其他 | `dyidre/runs/350101/entrydump/<tag>/` |
+| `true-env` | `runs/350101/true_env_xmedusa/<tag>/` |
+| `jnitrace` | `runs/350101/jnitrace/<tag>/` |
+| `gum-exevm` / `gum-http` | `runs/350101/gumtrace/<tag>/` |
+| `artcheck` | `runs/350101/maps_artmethod/<tag>/` |
+| `stackplz-bridge` | `runs/350101/edbg_stackplz/<tag>/` |
+| 其他 | `runs/350101/entrydump/<tag>/` |
 
 每个 run 目录会自动放：
 
@@ -106,7 +135,7 @@ f8_*.bin / xmedusa_*.raw.bin / *.b64
 启动 RF RPC：
 
 ```bash
-dyidre/probes/350101/run_metasec_probe_350101.sh rpc
+probes/350101/run_metasec_probe_350101.sh rpc
 ```
 
 检查：
@@ -147,13 +176,13 @@ curl -s -X POST http://127.0.0.1:19191/rpc/0/metaprobeinstall \
 先启动 RF RPC：
 
 ```bash
-dyidre/probes/350101/run_metasec_probe_350101.sh rpc
+probes/350101/run_metasec_probe_350101.sh rpc
 ```
 
 再启动 stackplz RPC：
 
 ```bash
-adb push dyidre/probes/350101/run_stackplz_hwbrk_rpc.sh /data/local/tmp/
+adb push probes/350101/run_stackplz_hwbrk_rpc.sh /data/local/tmp/
 adb shell "su -c 'chmod +x /data/local/tmp/run_stackplz_hwbrk_rpc.sh'"
 adb shell "su -c '/data/local/tmp/run_stackplz_hwbrk_rpc.sh req01 41718'"
 ```
@@ -184,13 +213,13 @@ curl -s -X POST http://127.0.0.1:19191/rpc/0/stackplzbreakmodule \
 拉回后放：
 
 ```text
-dyidre/runs/350101/edbg_stackplz/<run_id>/
+runs/350101/edbg_stackplz/<run_id>/
 ```
 
 已验证例子：
 
 ```bash
-RPC_PORT=19212 dyidre/probes/350101/run_metasec_probe_350101.sh stackplz-bridge 1 smoke_stackplz_bridge_20260901
+RPC_PORT=19212 probes/350101/run_metasec_probe_350101.sh stackplz-bridge 1 smoke_stackplz_bridge_20260901
 adb shell "su -c '/data/local/tmp/run_stackplz_hwbrk_rpc.sh smoke_stackplz_bridge_20260901 41718'"
 curl -s -X POST http://127.0.0.1:19212/rpc/0/stackplzbreakmodule \
   -H 'Content-Type: application/json' \
@@ -210,7 +239,7 @@ stackplz log 出现 libmetasec_ml.so + 0x4cc10 的 regs/backtrace
 如果已经知道 App uid 和 so 绝对路径，可以不用 RF bridge：
 
 ```bash
-adb push dyidre/probes/350101/run_stackplz_offset_test.sh /data/local/tmp/
+adb push probes/350101/run_stackplz_offset_test.sh /data/local/tmp/
 adb shell "su -c 'chmod +x /data/local/tmp/run_stackplz_offset_test.sh'"
 adb shell "su -c '/data/local/tmp/run_stackplz_offset_test.sh <uid> <absolute-lib-path> 0x4cc10 req01_4cc10'"
 ```
@@ -256,18 +285,18 @@ StackMod hook info:libmetasec_ml.so + 0x4cc10
 保留的可参考成功目录：
 
 ```text
-dyidre/runs/350101/entrydump/smoke_counter_one_recheck_20260901/
-dyidre/runs/350101/entrydump/smoke_counter_multi_20260901/
-dyidre/runs/350101/entrydump/smoke_branch_clean_20260901/
-dyidre/runs/350101/entrydump/smoke_xheader_ok_20260901/
-dyidre/runs/350101/entrydump/smoke_native_vmp_fixed_20260901/
-dyidre/runs/350101/true_env_xmedusa/smoke_true_env_20260901/
-dyidre/runs/350101/jnitrace/smoke_jnitrace_20260901/
-dyidre/runs/350101/gumtrace/smoke_gum_exevm_20260901/
-dyidre/runs/350101/gumtrace/smoke_gum_http_20260901/
-dyidre/runs/350101/maps_artmethod/smoke_artcheck_20260901/
-dyidre/runs/350101/edbg_stackplz/smoke_stackplz_bridge_20260901/
-dyidre/runs/350101/edbg_stackplz/smoke_offset_4cc10_20260901/
+runs/350101/entrydump/smoke_counter_one_recheck_20260901/
+runs/350101/entrydump/smoke_counter_multi_20260901/
+runs/350101/entrydump/smoke_branch_clean_20260901/
+runs/350101/entrydump/smoke_xheader_ok_20260901/
+runs/350101/entrydump/smoke_native_vmp_fixed_20260901/
+runs/350101/true_env_xmedusa/smoke_true_env_20260901/
+runs/350101/jnitrace/smoke_jnitrace_20260901/
+runs/350101/gumtrace/smoke_gum_exevm_20260901/
+runs/350101/gumtrace/smoke_gum_http_20260901/
+runs/350101/maps_artmethod/smoke_artcheck_20260901/
+runs/350101/edbg_stackplz/smoke_stackplz_bridge_20260901/
+runs/350101/edbg_stackplz/smoke_offset_4cc10_20260901/
 ```
 
 失败判断：
