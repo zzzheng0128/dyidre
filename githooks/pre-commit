@@ -1,0 +1,123 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# dyidre MetaSec pre-commit hook
+#
+# 作用：
+# - 每次 git commit 前，自动同步 materials_sources.tsv 里配置的 `.so/.i64/.apk`；
+# - 重新生成 materials/<version>/materials_manifest.md；
+# - 重新生成 versions/<version>/FILE_CATALOG.md；
+# - 自动 git add 同步后的材料文件，让 `.i64` 本体变化进入本次提交。
+#
+# 如果临时不想执行：
+#   DYIDRE_SKIP_MATERIALS_SYNC=1 git commit ...
+
+if [[ "${DYIDRE_SKIP_MATERIALS_SYNC:-0}" == "1" ]]; then
+  echo "[dyidre pre-commit] skip materials sync by DYIDRE_SKIP_MATERIALS_SYNC=1"
+  exit 0
+fi
+
+repo_root="$(git rev-parse --show-toplevel 2>/dev/null || true)"
+if [[ -z "$repo_root" ]]; then
+  echo "[dyidre pre-commit] not inside git repo, skip"
+  exit 0
+fi
+
+cd "$repo_root"
+
+if [[ -d "materials" && -d "versions" && -d "scripts" ]]; then
+  # dyidre 独立仓库布局：README.md、materials/、versions/ 在仓库根目录。
+  project_prefix=""
+elif [[ -d "dyidre/materials" && -d "dyidre/versions" && -d "dyidre/scripts" ]]; then
+  # 上级 monorepo 布局：dyidre/ 是仓库里的一个子目录。
+  project_prefix="dyidre/"
+else
+  echo "[dyidre pre-commit] cannot find dyidre layout under $repo_root" >&2
+  exit 1
+fi
+
+config="${project_prefix}materials/materials_sources.tsv"
+sync_script="${project_prefix}scripts/sync_metasec_materials.sh"
+check_script="${project_prefix}scripts/update_materials_manifest.sh"
+catalog_script="${project_prefix}scripts/generate_version_file_catalog.py"
+
+if [[ ! -f "$config" ]]; then
+  echo "[dyidre pre-commit] missing $config, skip"
+  exit 0
+fi
+
+if [[ ! -x "$sync_script" ]]; then
+  echo "[dyidre pre-commit] missing executable $sync_script" >&2
+  exit 1
+fi
+
+if [[ ! -x "$check_script" ]]; then
+  echo "[dyidre pre-commit] missing executable $check_script" >&2
+  exit 1
+fi
+
+if [[ ! -f "$catalog_script" ]]; then
+  echo "[dyidre pre-commit] missing $catalog_script" >&2
+  exit 1
+fi
+
+if ! command -v python3 >/dev/null 2>&1; then
+  echo "[dyidre pre-commit] python3 not found, cannot refresh version catalog" >&2
+  exit 1
+fi
+
+echo "[dyidre pre-commit] syncing MetaSec materials..."
+
+while IFS=$'\t' read -r version so_path i64_path apk_path extra; do
+  # 跳过空行和注释。
+  [[ -z "${version:-}" ]] && continue
+  [[ "$version" == \#* ]] && continue
+
+  if [[ -n "${extra:-}" ]]; then
+    echo "[dyidre pre-commit] bad line in $config: too many columns for version=$version" >&2
+    exit 1
+  fi
+
+  if [[ -z "${so_path:-}" || -z "${i64_path:-}" ]]; then
+    echo "[dyidre pre-commit] bad line in $config: version=$version missing path" >&2
+    exit 1
+  fi
+
+  if [[ -n "${apk_path:-}" ]]; then
+    "$sync_script" "$version" "$so_path" "$i64_path" "$apk_path"
+  else
+    "$sync_script" "$version" "$so_path" "$i64_path"
+  fi
+
+  git add \
+    "${project_prefix}materials/${version}/libmetasec_ml.so" \
+    "${project_prefix}materials/${version}/libmetasec_ml.so.i64" \
+    "${project_prefix}materials/${version}/materials_manifest.md"
+
+  if [[ -n "${apk_path:-}" ]]; then
+    git add "${project_prefix}materials/${version}/source.apk"
+  fi
+
+  if [[ -n "${apk_path:-}" ]]; then
+    "$check_script" --check --apk "${project_prefix}materials/${version}/source.apk" "$version" \
+      "${project_prefix}materials/${version}/libmetasec_ml.so" \
+      "${project_prefix}materials/${version}/libmetasec_ml.so.i64"
+  else
+    "$check_script" --check "$version" \
+      "${project_prefix}materials/${version}/libmetasec_ml.so" \
+      "${project_prefix}materials/${version}/libmetasec_ml.so.i64"
+  fi
+
+  # 版本分析目录存在时，自动刷新文件来源/生成脚本/后续用途清单。
+  # 这样 37xx/38xx 新增报告、向量、C oracle 后，交接文档不会落后。
+  if [[ -d "${project_prefix}versions/${version}" ]]; then
+    python3 "$catalog_script" "$version"
+    git add "${project_prefix}versions/${version}/FILE_CATALOG.md"
+  fi
+done < "$config"
+
+git add \
+  "${project_prefix}materials/materials_sources.tsv" \
+  "${project_prefix}.gitattributes"
+
+echo "[dyidre pre-commit] materials synced and staged"

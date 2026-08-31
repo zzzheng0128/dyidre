@@ -10,6 +10,10 @@ dyidre = DouYin ID Reverse Engineering
 
 这里不直接替代 `unidbg`、`IDA`、`rustFrida`、`eDBG`。它的角色是把这些工具产生的证据、脚本、结构体、VM decode、C 还原代码串在一起，形成可复跑的版本升级流程。
 
+路径说明：GitHub 仓库根目录就是 `dyidre`；如果你在本机上级工作区
+`/Users/freeman/project/douyin` 里执行命令，文档里的 `scripts/...` 可以写成
+`dyidre/scripts/...`，`versions/...` 可以写成 `dyidre/versions/...`。
+
 ## 先看什么
 
 如果只是接手当前 350101：
@@ -24,7 +28,7 @@ dyidre = DouYin ID Reverse Engineering
 2. 再看 350101 主分析目录：
 
    ```text
-   dyidre/versions/350101/
+   versions/350101/
    ```
 
    这是 350101 的主分析目录。
@@ -32,13 +36,13 @@ dyidre = DouYin ID Reverse Engineering
 3. 再看版本目录规范：
 
    ```text
-   dyidre/docs/version-layout.md
+   docs/version-layout.md
    ```
 
 4. 再看 `libmetasec_ml.so` 分析主轨迹：
 
    ```text
-   dyidre/docs/metasec-analysis-trajectory.md
+   docs/metasec-analysis-trajectory.md
    ```
 
    这份文档记录从 SO 身份、真机采证、unidbg 复现、VM/CF 还原到 IDA 落库的完整路线。后面升级版本先按它走。
@@ -46,28 +50,28 @@ dyidre = DouYin ID Reverse Engineering
 5. 再看工具链关系：
 
    ```text
-   dyidre/docs/toolchain.md
+   docs/toolchain.md
    ```
 
    Frida/RF JS、stackplz、eDBG 的复用手册：
 
    ```text
-   dyidre/docs/reusable-probes-stackplz-edbg.md
+   docs/reusable-probes-stackplz-edbg.md
    ```
 
 6. 提交前检查：
 
    ```text
-   dyidre/docs/pre-commit-checklist.md
-   dyidre/materials/README.md
+   docs/pre-commit-checklist.md
+   materials/README.md
    ```
 
-   推荐安装 `dyidre/githooks/pre-commit`，这样每次 `git commit` 自动同步 `.apk/.so/.i64` 本体和 manifest，确保 APK 来源、SO、IDA 数据库改动都有提交记录。
+   推荐安装 `githooks/pre-commit`，这样每次 `git commit` 自动同步 `.apk/.so/.i64` 本体和 manifest，确保 APK 来源、SO、IDA 数据库改动都有提交记录。
 
 7. 新版本升级照着：
 
    ```text
-   dyidre/docs/upgrade-runbook.md
+   docs/upgrade-runbook.md
    unidbg/docs/metasec-upgrade-template.md
    ```
 
@@ -85,8 +89,8 @@ dyidre = DouYin ID Reverse Engineering
 
 ```text
 unidbg/scripts/metasec-350101-req01-baseline.sh
-dyidre/versions/350101/algorithm_validation_350101.md
-dyidre/versions/350101/c_recovery_suite_350101.md
+versions/350101/algorithm_validation_350101.md
+versions/350101/c_recovery_suite_350101.md
 ```
 
 ## 目录地图
@@ -138,17 +142,17 @@ rustFrida 是真机采集主力，主要负责：
 常用脚本统一到一个入口：
 
 ```text
-dyidre/probes/350101/metasec_probe_350101.js
-dyidre/probes/350101/run_metasec_probe_350101.sh
+probes/350101/metasec_probe_350101.js
+probes/350101/run_metasec_probe_350101.sh
 ```
 
 按 mode 选择用途：
 
 ```bash
-dyidre/probes/350101/run_metasec_probe_350101.sh counter-one 60 req01_count
-dyidre/probes/350101/run_metasec_probe_350101.sh true-env 90 req01_env
-dyidre/probes/350101/run_metasec_probe_350101.sh jnitrace 180 jni01
-dyidre/probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
+probes/350101/run_metasec_probe_350101.sh counter-one 60 req01_count
+probes/350101/run_metasec_probe_350101.sh true-env 90 req01_env
+probes/350101/run_metasec_probe_350101.sh jnitrace 180 jni01
+probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
 ```
 
 ## 和 eDBG / stackplz 的配合

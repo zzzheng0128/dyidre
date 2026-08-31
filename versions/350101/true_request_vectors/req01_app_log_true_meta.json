@@ -1,0 +1,9 @@
+{
+  "source": "dyidre/versions/350101/true_device_one_request_count_350101_latest.json",
+  "s1_file": "dyidre/versions/350101/true_request_vectors/req01_app_log_true_s1.txt",
+  "s2_file": "dyidre/versions/350101/true_request_vectors/req01_app_log_true_s2.txt",
+  "s1_len": 160,
+  "s1_fnv1a": "0xee81bf8e",
+  "s2_len": 1277,
+  "s2_fnv1a": "0x758aefd4"
+}

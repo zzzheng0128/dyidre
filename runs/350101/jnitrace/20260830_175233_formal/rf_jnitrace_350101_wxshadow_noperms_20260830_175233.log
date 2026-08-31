@@ -1,0 +1,259 @@
+
+ ╔══════════════════════════════════════╗
+ ║        rustFrida v0.1.0             ║
+ ║    ARM64 Dynamic Instrumentation    ║
+ ╚══════════════════════════════════════╝
+
+[*] Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[*] 正在修补 SELinux 策略...
+[*] 找到 1 个新 zygote 进程
+[→] 正在注入 zymbiote 到 zygote64 (pid=863)...
+[✓] Zymbiote 注入成功: zygote64 (pid=863)
+[*] 正在启动应用 com.ss.android.ugc.aweme...
+[*] 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[✓] 收到 spawn hello: pid=28296, ppid=863, package=com.ss.android.ugc.aweme
+[*] 正在向子进程 28296 注入 agent...
+[*] 正在附加到进程 PID: 28296 (Frida-style bootstrapper)
+[✓] 成功附加到进程 28303，等待 SIGSTOP...
+[✓] 进程已停止，可以操作寄存器
+[✓] bootstrapper 完成: libc API 已解析
+[✓] 已分离目标进程
+[✓] Loader: agent 加载成功
+[*] 等待 agent 连接... (最长 10s)
+[✓] Agent 已连接
+[*] 子进程暂停中，准备加载脚本
+[*] 加载脚本: /data/local/tmp/metasec_jnitrace_spawn_early_wxshadow_lite.js
+[*] 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[*] 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555883 Java.setStealth(WXSHADOW) ok, native stealth=1
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555883 install target=libmetasec_ml.so
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555883 libart.so base=0x72a524a000
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555884 hook FindClass[6] @ 0x72a5984520 via fixed-libart-offset stealth=WXSHADOW
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555885 hook GetStaticMethodID[113] @ 0x72a58629bc via fixed-libart-offset stealth=WXSHADOW
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555886 hook RegisterNatives[215] @ 0x72a585fb78 via fixed-libart-offset stealth=WXSHADOW
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555887 hook NewStringUTF[167] @ 0x72a5af6e98 via fixed-libart-offset stealth=WXSHADOW
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555888 hook GetStringUTFChars[169] @ 0x72a5981de4 via fixed-libart-offset stealth=WXSHADOW
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555888 installed
+[→] 正在恢复子进程 28296...
+[✓] 子进程 28296 已恢复运行
+[*] spawn 已恢复，启动 Java worker 作为后续 Java 操作执行线程
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083555892 expand JNI table from env=0xb4000072f726d430 table=0x72a5c69520
+[agent] [java worker] starting
+[agent] [JS] [module] libart.so range: 0x72a524a000-0x72a5e4d000, path: Some("/apex/com.android.art/lib64/libart.so")
+[agent] [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=616
+[agent] [JS] [java worker] helper class loaded
+[agent] [JS] [java worker] nativeLoop registered
+[agent] [JS] [java worker] thread object created
+[agent] [JS] [java worker] calling Thread.start
+[agent] [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[agent] [java worker] ready
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556236 0x12f608 FindClass "com/bytedance/mobsec/metasec/ml/MS" => 0x7557d1fc05
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556236 0x12f938 RegisterNatives <class 0x7557d1fc0d> count=0
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556237 0x12fa08 GetStaticMethodID com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; = 0x71c06fa3d8
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556281 0x132630 FindClass "java/lang/Integer" => 0x7557d1fc01
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556283 0x1326fc GetStaticMethodID <class 0x322a>->valueOf(I)Ljava/lang/Integer; = 0x711932e0
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556334 0x5d73c NewStringUTF "v04.09.05"
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556335 0x131fe0 FindClass "java/lang/Long" => 0x7557d1fc05
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556343 0x132824 FindClass "java/lang/Boolean" => 0x7557d1fc01
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556343 0x1328f0 GetStaticMethodID <class 0x3bca>->valueOf(Z)Ljava/lang/Boolean; = 0x71162010
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556344 0x131de8 FindClass "java/lang/Long" => 0x7557d1fc01
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083556345 0x131ea4 GetStaticMethodID <class 0x3bea>->valueOf(J)Ljava/lang/Long; = 0x71193a88
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564836 0x5d27c GetStaticMethodID <class 0x31e6>->a(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; = 0x71c06fa3b8
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564873 0x12e900 NewStringUTF "{
+	"sdk_aid":	"3019",
+	"device_id":	"4087336283154583",
+	"host_aid":	"1128",
+	"channel":	"",
+	"sdk_version":	"v04.09.05-ml-android",
+	"app_version":	"35.1.0",
+	"update_version_code":	"35.1.0",
+	"package_name":	"com.ss.android.ugc.aweme",
+	"configURLs":	["https...<len=594>"
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564889 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564890 0x131b24 REQ#1 cost_ms=10 src=NewStringUTF host=vcs.zijieapi.com path=/vc/setting qs=version_name=35.1.0&version_code=350101&aid=1128 len=192 h=6d2f3d6c
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564891 0x131b24 REQ#2 cost_ms=6 src=NewStringUTF host=api3-normal-c.amemv.com path=/service/settings/v3/ qs=aid=1128 len=186 h=18c0476e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564895 0x131b24 REQ#3 cost_ms=12 src=NewStringUTF host=api3-normal-c.amemv.com path=/aweme/v1/im/platform/config/global/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083556928&ts=1788083556 len=813 h=9d8592a3
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564934 0x131b24 REQ#4 cost_ms=3 src=NewStringUTF host=api3-normal-c.amemv.com path=/aweme/v1/im/conversation/floating_bar/configs qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083556928&ts=1788083556 len=754 h=9b39746b
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564938 0x131b24 REQ#5 cost_ms=4 src=NewStringUTF host=i.snssdk.com path=/api/neptune/v3/sdk/PackLiveSDK qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083556935&ts=1788083556 len=1231 h=9ecc534e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564970 0x131b24 REQ#6 cost_ms=9 src=NewStringUTF host=api3-normal-c.amemv.com path=/aweme/growth/get_customs_certs/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083556976&ts=1788083556 len=795 h=74f1f426
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564975 0x131b24 REQ#7 cost_ms=6 src=NewStringUTF host=webcast.amemv.com path=/webcast/v2/tab/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557013&ts=1788083557 len=1221 h=71f87985
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564985 0x131b24 REQ#8 cost_ms=15 src=NewStringUTF host=api3-normal-c.amemv.com path=/aweme/v1/addiction/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557143&ts=1788083557 len=767 h=c98df37e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083564996 0x131b24 REQ#9 cost_ms=5 src=NewStringUTF host=api3-core-c.amemv.com path=/aweme/v2/feed/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083556827&ts=1788083556 len=1864 h=56c31b6a
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565000 0x131b24 REQ#10 cost_ms=7 src=NewStringUTF host=security.snssdk.com path=/passport/ticket_guard/get_client_cert/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557172&ts=1788083557 len=836 h=bad90607
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565012 0x131b24 REQ#11 cost_ms=16 src=NewStringUTF host=api3-normal-c.amemv.com path=/aweme/v1/im/resources/emoji/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557337&ts=1788083557 len=737 h=25a1041c
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565031 0x131b24 REQ#12 cost_ms=14 src=NewStringUTF host=api3-normal-c.amemv.com path=/service/settings/v3/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557300&ts=1788083557 len=797 h=63095713
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565040 0x131b24 REQ#13 cost_ms=6 src=NewStringUTF host=api3-normal-c.amemv.com path=/tfe/api/request_combine/v1/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557344&ts=1788083557 len=814 h=47d1c4e4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565041 0x131b24 REQ#14 cost_ms=26 src=NewStringUTF host=api3-normal-c.amemv.com path=/passport/account/info/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557531&ts=1788083557 len=961 h=63e2ccb0
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565043 0x131b24 REQ#15 cost_ms=14 src=NewStringUTF host=api3-normal-c.amemv.com path=/service/settings/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083557573&ts=1788083558 len=783 h=ca83cc73
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565043 0x131b24 REQ#16 cost_ms=3 src=NewStringUTF host=is.snssdk.com path=/service/settings/v3/ qs=aid=1128&version_code=35.1.0&update_version_code=35109900 len=278 h=d0ef3bde
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565044 0x131b24 REQ#17 cost_ms=7 src=NewStringUTF host=api3-normal-c.amemv.com path=/aweme/homepage/combine/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083558027&ts=1788083558 len=750 h=f6391a48
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565044 0x131b24 REQ#18 cost_ms=6 src=NewStringUTF host=tnc3-bjlgy.zijieapi.com path=/get_domains/v5/ qs=aid=1128&version_code=350100&update_version_code=35109900&version_name=35.1.0&manifest_version_code=350101 len=469 h=2eb72dc3
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565045 0x131b24 REQ#19 cost_ms=20 src=NewStringUTF host=api5-core.amemv.com path=/aweme/v2/feed/ qs=_rticket=1788083559334&ts=1788083559&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=2252 h=0f011f65
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565054 0x131b24 REQ#20 cost_ms=7 src=NewStringUTF host=api5-platform-m.amemv.com path=/aweme/homepage/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083559679&ts=1788083560 len=733 h=1614c713
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565074 0x131b24 REQ#21 cost_ms=31 src=NewStringUTF host=lf3-cdn-tos.douyinstatic.com path=/obj/aweme-server-static-resource/offline_recommend_music_list qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083559870&ts=1788083560 len=795 h=28f67b4e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565084 0x131b24 REQ#22 cost_ms=16 src=NewStringUTF host=api.toutiaoapi.com path=/luckycat/activity/phone_score/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083560128&ts=1788083560 len=946 h=4a73f6cb
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565087 0x131b24 REQ#23 cost_ms=29 src=NewStringUTF host=api5-platform-m.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788083560234&ts=1788083560&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=732 h=e497cd3c
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565091 0x131b24 REQ#24 cost_ms=28 src=NewStringUTF host=api5-normal.amemv.com path=/aweme/v1/privacy-policy-statistics/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083560525&ts=1788083560 len=749 h=4270cd16
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565092 0x131b24 REQ#25 cost_ms=28 src=NewStringUTF host=api5-normal.amemv.com path=/aweme/v1/privacy-policy-statistics/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083560534&ts=1788083561 len=749 h=7e92e78d
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565096 0x131b24 REQ#26 cost_ms=27 src=NewStringUTF host=klink.amemv.com path=/service/2/device_register/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083563926&ts=1788083564 len=830 h=7d989070
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565128 0x131b24 REQ#27 cost_ms=26 src=NewStringUTF host=api5-normal.amemv.com path=/cloudpush/pull/psort/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083564851&ts=1788083565 len=847 h=9728d663
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565165 0x131b24 REQ#28 cost_ms=26 src=NewStringUTF host=log.snssdk.com path=/service/3/device_sdk/stats_collect/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083563481&ts=1788083563 len=790 h=be9e3391
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565183 0x131b24 REQ#29 cost_ms=14 src=NewStringUTF host=polaris5-normal.zijieapi.com path=/luckycat/activity/settings/get_static_settings/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083563275&ts=1788083563 len=989 h=3f0a8a2a
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565205 0x131b24 REQ#30 cost_ms=18 src=NewStringUTF host=polaris5-normal.zijieapi.com path=/luckycat/crossover/v:version/general_get_time_token/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083563028&ts=1788083563 len=1004 h=40383944
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565221 0x131b24 REQ#31 cost_ms=12 src=NewStringUTF host=polaris5-normal.zijieapi.com path=/luckycat/activity/apply_token/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083564963&ts=1788083565 len=1100 h=bbf959b3
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565224 REQ_SUMMARY total=32 unique=29 suppressed=1 top=api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=3,api3-normal-c.amemv.com/service/settings/v3/=2,vcs.zijieapi.com/vc/setting=1,api3-normal-c.amemv.com/aweme/v1/im/platform/config/global/=1,api3-normal-c.amemv.com/aweme/v1/im/conversation/floating_bar/configs=1
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565264 0x131b24 REQ#34 cost_ms=7 src=NewStringUTF host=api5-platform-m.amemv.com path=/aweme/homepage/component/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565232&ts=1788083565 len=991 h=f2314d20
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565637 0x131b24 REQ#35 cost_ms=15 src=NewStringUTF host=api5-normal-hl.amemv.com path=/aweme/v2/material/sort/continue/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565504&ts=1788083565 len=858 h=e1b666d4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083565971 0x131b24 REQ#36 cost_ms=67 src=NewStringUTF host=api5-normal-lf.amemv.com path=/passport/login/panel_theme/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565684&ts=1788083565 len=946 h=3ddf25b2
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566012 0x131b24 REQ#37 cost_ms=31 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083564053&ts=1788083564 len=736 h=18c0d496
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566100 0x131b24 REQ#38 cost_ms=57 src=NewStringUTF host=api5-normal-lf.amemv.com path=/activity/carrier_flow/mobile/get_sign_post/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083564173&ts=1788083564 len=753 h=904a4c4b
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566188 0x131b24 REQ#39 cost_ms=74 src=NewStringUTF host=saveu5-normal-hl.zijieapi.com path=/api/plugin/config/v3/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565715&ts=1788083565 len=908 h=6f7f502d
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566229 0x131b24 REQ#40 cost_ms=27 src=NewStringUTF host=api5-normal-zb.amemv.com path=/%2Faweme%2Fv2%2Fmaterial%2Fcontinue%2F qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565665&ts=1788083565 len=864 h=7433c8a4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566285 0x131b24 REQ#41 cost_ms=44 src=NewStringUTF host=api5-platform-lf.amemv.com path=/aweme/homepage/render/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565655&ts=1788083565 len=952 h=17e73991
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566296 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/sdi/get_token?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&...<len=335>"
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566352 0x131b24 REQ#42 cost_ms=41 src=NewStringUTF host=polaris5-normal-hl.zijieapi.com path=/luckycat/crossover/v:version/ack_install/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565588&ts=1788083565 len=1172 h=28965823
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566412 0x131b24 REQ#43 cost_ms=55 src=NewStringUTF host=polaris5-normal-hl.zijieapi.com path=/luckycat/activity/refresh_act_id/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565617&ts=1788083565 len=1184 h=66b88ebe
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566429 0x131b24 REQ#44 cost_ms=12 src=NewStringUTF host=api5-platform-lf.amemv.com path=/aweme/v1/addiction/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565987&ts=1788083566 len=886 h=b185fbd7
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566446 0x131b24 REQ#45 cost_ms=10 src=NewStringUTF host=api5-normal-lf.amemv.com path=/passport/general/login_guiding_strategy/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565808&ts=1788083565 len=1080 h=77e00e3e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566471 0x131b24 REQ#46 cost_ms=18 src=NewStringUTF host=search3-search-hl.amemv.com path=/aweme/v1/search/vtag/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083565827&ts=1788083566 len=850 h=e57e90e4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566494 0x131b24 REQ#47 cost_ms=12 src=NewStringUTF host=api5-normal-lf.amemv.com path=/tfe/api/request_combine/v1/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083566261&ts=1788083566 len=931 h=0f8d4828
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566512 0x131b24 REQ#48 cost_ms=11 src=NewStringUTF host=mssdk3-normal-lf.zijieapi.com path=/sdi/get_token qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=2 len=342 h=a9643035
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566672 0x131b24 REQ#49 cost_ms=21 src=NewStringUTF host=api5-core-hl.amemv.com path=/aweme/v2/feed/ qs=_rticket=1788083566339&ts=1788083566&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=2914 h=62b20465
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083566928 0x132260 FindClass "java/lang/Integer" => 0x75453a6629
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083567118 0x131b24 REQ#50 cost_ms=25 src=NewStringUTF host=polaris5-normal-hl.zijieapi.com path=/luckycat/activity/settings/get_dynamic_settings/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083567006&ts=1788083567 len=1179 h=98e5d797
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083567194 0x131b24 REQ#51 cost_ms=59 src=NewStringUTF host=api5-normal-zb.amemv.com path=/gkx/api/settings/v3 qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083566930&ts=1788083567 len=845 h=73f90861
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083567307 0x131b24 REQ#52 cost_ms=9 src=NewStringUTF host=api5-normal-lf.amemv.com path=/location/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083567187&ts=1788083567 len=865 h=b3c47f1f
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083567621 0x131b24 REQ#53 cost_ms=65 src=NewStringUTF host=abtest3-misc-hl.zijieapi.com path=/common qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083567148&ts=1788083567 len=863 h=682d5187
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083567782 0x131b24 REQ#54 cost_ms=12 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/log_settings/ qs=aid=1128 len=145 h=943da766
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083568048 0x131b24 REQ#55 cost_ms=25 src=NewStringUTF host=api5-normal-zb.amemv.com path=/gkx/api/resource/v7/coldstart qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083567702&ts=1788083567 len=855 h=409bca75
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083568159 0x131b24 REQ#56 cost_ms=23 src=NewStringUTF host=abtest3-misc-hl.zijieapi.com path=/common qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083568023&ts=1788083568 len=888 h=b5041b88
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083568200 0x131b24 REQ#57 cost_ms=26 src=NewStringUTF host=api5-normal-hl.amemv.com path=/api/ad/v1/splash/stock/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083567886&ts=1788083568 len=1069 h=507213f1
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083568235 0x131b24 REQ#58 cost_ms=10 src=NewStringUTF host=polaris5-normal-hl.zijieapi.com path=/luckycat/crossover/v:version/ack_install/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083567794&ts=1788083568 len=1395 h=6a3f899f
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083568332 0x131b24 REQ#59 cost_ms=1 src=NewStringUTF host=klink5-lf.amemv.com path=/service/2/app_alert_check/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083568083&ts=1788083568 len=1845 h=71774967
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083568923 0x131b24 REQ#60 cost_ms=34 src=NewStringUTF host=relation.zijieapi.com path=/cross/pseudo_code_wifi qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083568624&ts=1788083568 len=845 h=c367c4b7
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083569513 0x131b24 REQ#61 cost_ms=19 src=NewStringUTF host=api5-normal-lf.amemv.com path=/activity/carrier_flow/query_flow/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083569119&ts=1788083569 len=1030 h=5450a06a
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083569779 0x131b24 REQ#62 cost_ms=31 src=NewStringUTF host=api5-platform-lf.amemv.com path=/aweme/v1/danmaku/conf/get/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083569590&ts=1788083569 len=868 h=52f940e1
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083570387 0x131b24 REQ#63 cost_ms=81 src=NewStringUTF host=mssdk3-normal-lf.zijieapi.com path=/sdi/get_token qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=2 len=342 h=a9643035
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083570610 0x131b24 REQ#64 cost_ms=25 src=NewStringUTF host=api5-normal-lf.amemv.com path=/aweme/v2/player/settings qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083570462&ts=1788083570 len=850 h=a4f3e3a3
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083570957 0x131b24 REQ#65 cost_ms=34 src=NewStringUTF host=api5-normal-lf.amemv.com path=/aweme/v2/player/settings qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083570811&ts=1788083570 len=879 h=76f2d8e0
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083573437 0x131b24 REQ#66 cost_ms=4 src=NewStringUTF host=relation.zijieapi.com path=/uaid/verification qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083573388&ts=1788083573 len=903 h=c18f80db
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083576102 0x131b24 REQ#67 cost_ms=26 src=NewStringUTF host=log-hl.snssdk.com path=/service/3/device_sdk/stats_collect/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083575996&ts=1788083576 len=909 h=440d91a2
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083576407 0x132440 FindClass "java/lang/Boolean" => 0x75453a6609
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083578400 0x131b24 REQ#68 cost_ms=14 src=NewStringUTF host=log-hl.snssdk.com path=/service/2/device_sdk/kite/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083578327&ts=1788083578 len=889 h=716ab0b0
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083578809 0x131b24 REQ#69 cost_ms=15 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/log_settings/ qs=aid=1128 len=160 h=4fa0e150
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083578999 0x131b24 REQ#70 cost_ms=17 src=NewStringUTF host=log-hl.snssdk.com path=/service/2/device_sdk/kite/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083578878&ts=1788083578 len=845 h=bd625d52
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083579213 0x131b24 REQ#71 cost_ms=9 src=NewStringUTF host=api5-normal-lf.amemv.com path=/cloudpush/update_sender/ qs=update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&manifest_version_code=350101&_rticket=1788083579156&ts=1788083579 len=1194 h=609827d4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083579225 0x131b24 REQ#72 cost_ms=8 src=NewStringUTF host=api5-normal-lf.amemv.com path=/check_version/v7/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083579161&ts=1788083579 len=955 h=5e56271f
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083579345 0x131b24 REQ#73 cost_ms=11 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083579296&ts=1788083579 len=852 h=2d76026d
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083580459 0x131b24 REQ#76 cost_ms=13 src=NewStringUTF host=api5-social-m-zjg.amemv.com path=/aweme/ug/general/cold_start qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083580203&ts=1788083580 len=1159 h=eba092cd
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083580954 0x131b24 REQ#77 cost_ms=21 src=NewStringUTF host=api5-normal-lf.amemv.com path=/service/1/update_token/ qs=update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&manifest_version_code=350101&_rticket=1788083580707&ts=1788083581 len=1237 h=6e867df9
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083581153 0x131b24 REQ#78 cost_ms=25 src=NewStringUTF host=api5-normal-hl.amemv.com path=/api/ad/splash/aweme/v14/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083580963&ts=1788083581 len=1023 h=035fcb4e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083581252 0x131b24 REQ#79 cost_ms=20 src=NewStringUTF host=api5-normal-hl.amemv.com path=/aweme/v2/undertaking/settings/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083580962&ts=1788083581 len=1060 h=e550abf4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083581824 0x131b24 REQ#80 cost_ms=35 src=NewStringUTF host=saveu5-normal-hl.zijieapi.com path=/api/plugin/config/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083581484&ts=1788083581 len=867 h=d4e6b73d
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083586815 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083586963 0x131b24 REQ#81 cost_ms=11 src=NewStringUTF host=mssdk3-normal-lf.zijieapi.com path=/ri/report qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=3 len=338 h=96a8b117
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083590148 0x131b24 REQ#82 cost_ms=53 src=NewStringUTF host=mon0-misc-lf.amemv.com path=/monitor/collect/zstd_dict/ qs=manifest_version_code=350101&_rticket=1788083578948&update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&ts=1788083579 len=1007 h=4c0ee0ba
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083590297 0x131b24 REQ#83 cost_ms=35 src=NewStringUTF host=mon0-misc-lf.amemv.com path=/monitor/collect/c/cloudcontrol/get qs=manifest_version_code=350101&_rticket=1788083578948&update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&ts=1788083579 len=881 h=d06e4d88
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083590956 0x131b24 REQ#84 cost_ms=36 src=NewStringUTF host=ecom5-normal-hl.ecombdapi.com path=/aweme/v2/commerce/bff/cold_start qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083590623&ts=1788083591 len=875 h=08dfa233
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083592357 0x131b24 REQ#85 cost_ms=15 src=NewStringUTF host=api5-normal-lf.amemv.com path=/api/neptune/v3/sdk/PackLiveSDK qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083592312&ts=1788083592 len=1356 h=f7b3e156
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083593125 0x131b24 REQ#86 cost_ms=9 src=NewStringUTF host=mssdk3-normal-lf.zijieapi.com path=/ri/report qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=3 len=338 h=96a8b117
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083593972 0x131b24 REQ#87 cost_ms=22 src=NewStringUTF host=ib.snssdk.com path=/service/1/app_notice_status/ qs=update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&manifest_version_code=350101&_rticket=1788083593898&ts=1788083594 len=1155 h=ad0499c8
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083595993 0x131b24 REQ#88 cost_ms=18 src=NewStringUTF host=api5-normal-zb.amemv.com path=/gkx/api/resource/v7/coldstart qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083595840&ts=1788083596 len=850 h=49caa72d
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083596226 0x131b24 REQ#89 cost_ms=37 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/strategy/setting/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083595933&ts=1788083596 len=1375 h=38c7afeb
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083596955 0x131b24 REQ#90 cost_ms=46 src=NewStringUTF host=security.snssdk.com path=/passport/ticket_guard/verify_pub_key/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083596515&ts=1788083596 len=946 h=0049f34f
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083598088 0x131b24 REQ#91 cost_ms=19 src=NewStringUTF host=ecom5-normal-hl.ecombdapi.com path=/aweme/v2/commerce/bubble/trigger qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083597828&ts=1788083598 len=858 h=7d56acda
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083598353 REQ_SUMMARY total=92 unique=76 suppressed=5 top=api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4,log0-misc-lf.amemv.com/service/2/app_log/=4,mssdk3-normal-lf.zijieapi.com/ri/report=3,api3-normal-c.amemv.com/service/settings/v3/=2,polaris5-normal-hl.zijieapi.com/luckycat/crossover/v:version/ack_install/=2
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083598722 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/pilvinen/v1/sseelfk/haku?lc_id=1588093228&aid=1128&app_id=1128&sdk_id=&sub_aid=&sdk_version=v04.09.05-ml-android&sdk_ver_code=67699968&app_version=35.1.0&os_platform=android&cpu_width=64&iid=3313280560987770&did=4087336283154583&bd_...<len=404>"
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083598977 0x131b24 REQ#93 cost_ms=10 src=NewStringUTF host=mssdk3-normal-lf.zijieapi.com path=/pilvinen/v1/sseelfk/haku qs=lc_id=1588093228&aid=1128&sdk_ver_code=67699968&region_type=ml&mode=2 len=409 h=f2948c37
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083601018 0x131b24 REQ#95 cost_ms=26 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/strategy/feature/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083600804&ts=1788083601 len=1403 h=244561e8
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083601098 0x131b24 REQ#96 cost_ms=18 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/strategy/rule/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083600787&ts=1788083601 len=1389 h=dfe05435
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083604437 0x131b24 REQ#97 cost_ms=10 src=NewStringUTF host=api5-normal-lf.amemv.com path=/privacy/setting/change qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083604390&ts=1788083604 len=843 h=2da83189
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083605065 0x131b24 REQ#99 cost_ms=21 src=NewStringUTF host=api5-normal-lf.amemv.com path=/privacy/setting/change qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083604992&ts=1788083605 len=843 h=69bf8466
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083607460 0x131b24 REQ#100 cost_ms=16 src=NewStringUTF host=abtest3-misc-hl.zijieapi.com path=/common qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083607405&ts=1788083607 len=831 h=d53c1526
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083610509 0x131b24 REQ#101 cost_ms=8 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083610459&ts=1788083610 len=847 h=7b68ad06
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083618363 0x131b24 REQ#103 cost_ms=21 src=NewStringUTF host=api5-platform-lf.amemv.com path=/aweme/v1/danmaku/activity/get/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083618305&ts=1788083618 len=853 h=d21d7a1c
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083621357 0x131b24 REQ#105 cost_ms=20 src=NewStringUTF host=api5-normal-hl.amemv.com path=/service/settings/v2/ qs=aid=1128&update_version_code=35109900 len=557 h=60e73a1e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083626338 0x131b24 REQ#107 cost_ms=8 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/v2/tab/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&ts=1788083625 len=834 h=656df4be
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083630516 REQ_SUMMARY total=108 unique=83 suppressed=11 top=log0-misc-lf.amemv.com/service/2/app_log/=9,mssdk3-normal-lf.zijieapi.com/ri/report=5,api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4,abtest3-misc-hl.zijieapi.com/common=3,api3-normal-c.amemv.com/service/settings/v3/=2
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083635072 0x131b24 REQ#109 cost_ms=9 src=NewStringUTF host=i.snssdk.com path=/api/ad/v1/scheme/query/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083635018&ts=1788083635 len=852 h=67ada4d7
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083635415 0x131b24 REQ#110 cost_ms=28 src=NewStringUTF host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/score qs=aid=1128&update_version_code=35109900 len=312 h=fd5c5dce
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083635460 0x131b24 REQ#111 cost_ms=31 src=NewStringUTF host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/strategy/meta qs=aid=1128&update_version_code=35109900 len=320 h=61728dc1
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083635532 0x131b24 REQ#112 cost_ms=27 src=NewStringUTF host=api5-normal-lf.amemv.com path=/bytebench/api/task/group qs=update_version_code=35109900&aid=1128 len=256 h=a91ca832
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083635619 0x131b24 REQ#113 cost_ms=22 src=NewStringUTF host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/strategy/batch/v2 qs=aid=1128&update_version_code=35109900 len=333 h=1c895dbb
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083635828 0x131b24 REQ#114 cost_ms=28 src=NewStringUTF host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/strategy/batch/v2 qs=aid=1128&update_version_code=35109900 len=333 h=1c895dbb
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083636227 0x131b24 REQ#117 cost_ms=4 src=NewStringUTF host=i.snssdk.com path=/api/ad/v1/scheme/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083636177&ts=1788083636 len=833 h=cf77d9e5
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083641159 0x131b24 REQ#121 cost_ms=11 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083640774&ts=1788083641 len=847 h=d49985ef
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083642136 0x131b24 REQ#122 cost_ms=34 src=NewStringUTF host=api5-normal-lf.amemv.com path=/aweme/v1/past_memory/entrance/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083641651&ts=1788083642 len=851 h=57d6fd7c
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083644688 0x131b24 REQ#123 cost_ms=41 src=NewStringUTF host=api5-normal-lf.amemv.com path=/effect/api/v3/effects qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083644402&ts=1788083644 len=1065 h=34928998
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083646579 0x131b24 REQ#124 cost_ms=31 src=NewStringUTF host=api5-normal-lf.amemv.com path=/model/api/arithmetics qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083646229&ts=1788083646 len=1048 h=ef6a4711
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083647633 0x131b24 REQ#125 cost_ms=28 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/trace/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083647481&ts=1788083647 len=868 h=a6f9432f
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083650853 0x131b24 REQ#126 cost_ms=43 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/trace/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083650489&ts=1788083650 len=868 h=d253cddf
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083660532 REQ_SUMMARY total=131 unique=93 suppressed=21 top=log0-misc-lf.amemv.com/service/2/app_log/=12,api5-normal-lf.amemv.com/bytebench/api/sdk/device/strategy/batch/v2=7,mssdk3-normal-lf.zijieapi.com/ri/report=5,webcast26-normal-c-lf.amemv.com/webcast/trace/report/=5,api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083665685 0x131b24 REQ#134 cost_ms=21 src=NewStringUTF host=api5-normal-lf.amemv.com path=/privacy/setting/change qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083665640&ts=1788083666 len=843 h=802984b4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083670536 0x131b24 REQ#137 cost_ms=20 src=NewStringUTF host=applog.snssdk.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083670469&ts=1788083670 len=842 h=edb4a084
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083687685 0x131b24 REQ#139 cost_ms=5 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/distribution/check_user_live_status/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&ts=1788083687 len=655 h=9a0bfd55
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083688142 0x131b24 REQ#140 cost_ms=59 src=NewStringUTF host=api5-platform-hl.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788083687864&ts=1788083688&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=844 h=c7a0ca6e
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083690625 0x131b24 REQ#141 cost_ms=7 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083690501&ts=1788083690 len=847 h=d654c630
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083690972 0x131b24 REQ#142 cost_ms=13 src=NewStringUTF host=webcast26-normal-c-lf.amemv.com path=/webcast/trace/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083690879&ts=1788083690 len=868 h=2be653c0
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083692193 0x131b24 REQ#143 cost_ms=19 src=NewStringUTF host=search3-search-hl.amemv.com path=/aweme/v1/search/vtag/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083691839&ts=1788083691 len=845 h=1125ae28
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083693950 REQ_SUMMARY total=144 unique=96 suppressed=27 top=log0-misc-lf.amemv.com/service/2/app_log/=13,webcast26-normal-c-lf.amemv.com/webcast/trace/report/=12,api5-normal-lf.amemv.com/bytebench/api/sdk/device/strategy/batch/v2=7,mssdk3-normal-lf.zijieapi.com/ri/report=5,api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083695474 0x131b24 REQ#145 cost_ms=11 src=NewStringUTF host=api5-normal-lf.amemv.com path=/location/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083695335&ts=1788083695 len=860 h=8cb0d8bc
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083696646 0x131b24 REQ#146 cost_ms=40 src=NewStringUTF host=api5-platform-hl.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788083696380&ts=1788083696&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=844 h=8403ff84
+[agent] [JS] [metasec-jni-wxshadow-lite] 1788083730595 0x131b24 REQ#152 cost_ms=12 src=NewStringUTF host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788083730496&ts=1788083730 len=847 h=3079c575
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null
+[agent] [JS] [Interceptor onEnter] null
+[agent] [JS] [Interceptor onLeave] null

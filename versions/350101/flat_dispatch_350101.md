@@ -1,0 +1,209 @@
+# 350.101 shared flatten dispatch table
+
+This note records the shared flattened-control dispatch table used by several
+managed CF/native helpers in `douyin_35_0_0/libmetasec_ml.so`.
+
+## Result
+
+- table VA: `0x29F420`
+- file offset: `0x29E420`
+- section: `.data`
+- `.text` range: `0x33C20..0x1DD858`
+- inferred pointer entries: `0x8E` / `142`
+- first non-code qword: index `0x8E`
+
+Important correction: this table is not digest-only. It is a shared flatten
+dispatch table. Current xrefs prove usage by:
+
+- `0x16B748 flattenedTransform_CF01_350`
+- `0x16BEB0 flattenedTransform_CF02_350`
+- `0x16C65C flattenedMemBlockTransform_CF03_350`
+- `0x16CCD8 shortHeaderTransform32_flattened_CF48_350`
+- `0x16D86C sm3Compress_flattenedBlocks_350`
+- `0x16E794 flattenedMemBlockTransform_tail_350`
+- `0x16E8FC flattenedScratchSeed_350`
+
+## Why IDA shows short functions
+
+IDA currently cuts each helper at the prelude ending in `BR Xn`. The real
+micro-blocks are the table targets after that indirect branch. For example,
+`sm3Compress_flattenedBlocks_350` starts at `0x16D86C`, but its normal
+first table target is `0x16D9DC`; the decompiler only sees the dispatcher
+prelude unless the flattened CFG is reconstructed.
+
+【中文】所以伪代码短不是函数真的短，而是控制流被平坦化：函数头只负责初始化状态、算出 index、从 `0x29F420` 取目标，然后 `BR Xn` 跳到微块。后续要恢复算法，必须按表项/状态变量把微块串起来。
+
+## Initial entry indices
+
+| helper | dispatch site | normal index | fallback / special index | evidence |
+|---|---:|---:|---:|---|
+| CF01 | `0x16B83C -> 0x16B870` | `0x00` | `0x18` | writes sentinel then compares it back |
+| CF02 | `0x16BFA8 -> 0x16BFE0` | `0x2C` | `0x21` | sentinel compare controls `CSEL` |
+| CF03 | `0x16C73C -> 0x16C740` | `0x3D` | `0x51` | prelude sets `X9=0`, so `0x51` is unreachable here unless patched/state altered |
+| CF48 | `0x16CD20 -> 0x16CD28` | `0x58` | `0x54` | `slot4/X0 != NULL` chooses `0x58`; null chooses `0x54` |
+| CF61 | `0x16D9B8 -> 0x16D9D8` | `0x77` | `0x76` | writes sentinel then `CINC` produces `0x77` in normal path |
+
+## Reproduce
+
+```bash
+/Users/freeman/.codex/skills/metasec-so-recognizer/scripts/metasec_flat_dispatch_probe.py \
+  douyin_35_0_0/libmetasec_ml.so \
+  --table-va 0x29F420 \
+  --known-index 0x00:CF01-normal \
+  --known-index 0x18:CF01-fallback \
+  --known-index 0x21:CF02-fallback \
+  --known-index 0x2c:CF02-normal \
+  --known-index 0x3d:CF03-normal \
+  --known-index 0x51:CF03-fallback \
+  --known-index 0x54:CF48-null-slot4 \
+  --known-index 0x58:CF48-normal \
+  --known-index 0x76:CF61-fallback \
+  --known-index 0x77:CF61-normal
+```
+
+## Table entries
+
+| index | target | note |
+|---:|---:|---|
+| `0x00` | `0x16BB40` | CF01 normal |
+| `0x01` | `0x16B9D0` |  |
+| `0x02` | `0x16BE28` |  |
+| `0x03` | `0x16B984` |  |
+| `0x04` | `0x16BA88` |  |
+| `0x05` | `0x16BDF0` |  |
+| `0x06` | `0x16BC88` |  |
+| `0x07` | `0x16BBD4` |  |
+| `0x08` | `0x16BABC` |  |
+| `0x09` | `0x16BCDC` |  |
+| `0x0A` | `0x16BD30` |  |
+| `0x0B` | `0x16BE88` |  |
+| `0x0C` | `0x16BBF4` |  |
+| `0x0D` | `0x16BC0C` |  |
+| `0x0E` | `0x16BD64` |  |
+| `0x0F` | `0x16BA5C` |  |
+| `0x10` | `0x16BC3C` |  |
+| `0x11` | `0x16B8B0` |  |
+| `0x12` | `0x16BCBC` |  |
+| `0x13` | `0x16B894` |  |
+| `0x14` | `0x16BB0C` |  |
+| `0x15` | `0x16BB60` |  |
+| `0x16` | `0x16BE58` |  |
+| `0x17` | `0x16BB80` |  |
+| `0x18` | `0x16B874` | CF01 fallback |
+| `0x19` | `0x16BC5C` |  |
+| `0x1A` | `0x16B9F0` |  |
+| `0x1B` | `0x16B964` |  |
+| `0x1C` | `0x16BD00` |  |
+| `0x1D` | `0x16B944` |  |
+| `0x1E` | `0x16C0F8` |  |
+| `0x1F` | `0x16C1D8` |  |
+| `0x20` | `0x16C634` |  |
+| `0x21` | `0x16BFE4` | CF02 fallback |
+| `0x22` | `0x16C204` |  |
+| `0x23` | `0x16C2E8` |  |
+| `0x24` | `0x16C398` |  |
+| `0x25` | `0x16C590` |  |
+| `0x26` | `0x16C380` |  |
+| `0x27` | `0x16C0BC` |  |
+| `0x28` | `0x16C5CC` |  |
+| `0x29` | `0x16C500` |  |
+| `0x2A` | `0x16C024` |  |
+| `0x2B` | `0x16C4C8` |  |
+| `0x2C` | `0x16C2C8` | CF02 normal |
+| `0x2D` | `0x16C004` |  |
+| `0x2E` | `0x16C600` |  |
+| `0x2F` | `0x16C23C` |  |
+| `0x30` | `0x16C450` |  |
+| `0x31` | `0x16C148` |  |
+| `0x32` | `0x16C3CC` |  |
+| `0x33` | `0x16C470` |  |
+| `0x34` | `0x16C290` |  |
+| `0x35` | `0x16C360` |  |
+| `0x36` | `0x16C0DC` |  |
+| `0x37` | `0x16C418` |  |
+| `0x38` | `0x16C494` |  |
+| `0x39` | `0x16C308` |  |
+| `0x3A` | `0x16C3EC` |  |
+| `0x3B` | `0x16C168` |  |
+| `0x3C` | `0x16CB28` |  |
+| `0x3D` | `0x16C744` | CF03 normal |
+| `0x3E` | `0x16CA00` |  |
+| `0x3F` | `0x16C8E8` |  |
+| `0x40` | `0x16C86C` |  |
+| `0x41` | `0x16C83C` |  |
+| `0x42` | `0x16C9A8` |  |
+| `0x43` | `0x16C998` |  |
+| `0x44` | `0x16C8B8` |  |
+| `0x45` | `0x16C8DC` |  |
+| `0x46` | `0x16C770` |  |
+| `0x47` | `0x16CAD8` |  |
+| `0x48` | `0x16CA50` |  |
+| `0x49` | `0x16C954` |  |
+| `0x4A` | `0x16C918` |  |
+| `0x4B` | `0x16C85C` |  |
+| `0x4C` | `0x16C764` |  |
+| `0x4D` | `0x16CB44` |  |
+| `0x4E` | `0x16C7BC` |  |
+| `0x4F` | `0x16CAFC` |  |
+| `0x50` | `0x16C7D8` |  |
+| `0x51` | `0x16C7FC` | CF03 fallback |
+| `0x52` | `0x16C984` |  |
+| `0x53` | `0x16C9F4` |  |
+| `0x54` | `0x16CE14` | CF48 null slot4 |
+| `0x55` | `0x16CDCC` |  |
+| `0x56` | `0x16CE0C` |  |
+| `0x57` | `0x16CD68` |  |
+| `0x58` | `0x16CD2C` | CF48 normal |
+| `0x59` | `0x16CDE4` |  |
+| `0x5A` | `0x16CD90` |  |
+| `0x5B` | `0x16CE04` |  |
+| `0x5C` | `0x16E074` |  |
+| `0x5D` | `0x16DF70` |  |
+| `0x5E` | `0x16DAA4` |  |
+| `0x5F` | `0x16DE10` |  |
+| `0x60` | `0x16D9FC` |  |
+| `0x61` | `0x16DC68` |  |
+| `0x62` | `0x16DCE4` |  |
+| `0x63` | `0x16E2FC` |  |
+| `0x64` | `0x16DC88` |  |
+| `0x65` | `0x16DFE4` |  |
+| `0x66` | `0x16DAD8` |  |
+| `0x67` | `0x16E474` |  |
+| `0x68` | `0x16DDDC` |  |
+| `0x69` | `0x16DEA0` |  |
+| `0x6A` | `0x16DB18` |  |
+| `0x6B` | `0x16DFC4` |  |
+| `0x6C` | `0x16DE68` |  |
+| `0x6D` | `0x16E278` |  |
+| `0x6E` | `0x16DC14` |  |
+| `0x6F` | `0x16E190` |  |
+| `0x70` | `0x16E170` |  |
+| `0x71` | `0x16E3E4` |  |
+| `0x72` | `0x16DC34` |  |
+| `0x73` | `0x16E094` |  |
+| `0x74` | `0x16E2AC` |  |
+| `0x75` | `0x16DDBC` |  |
+| `0x76` | `0x16DFA4` | CF61 fallback |
+| `0x77` | `0x16D9DC` | CF61 normal |
+| `0x78` | `0x16DBF4` |  |
+| `0x79` | `0x16E228` |  |
+| `0x7A` | `0x16DAF8` |  |
+| `0x7B` | `0x16DED4` |  |
+| `0x7C` | `0x16DE34` |  |
+| `0x7D` | `0x16DF08` |  |
+| `0x7E` | `0x16E440` |  |
+| `0x7F` | `0x16DF3C` |  |
+| `0x80` | `0x16DCB0` |  |
+| `0x81` | `0x16E004` |  |
+| `0x82` | `0x16DA3C` |  |
+| `0x83` | `0x16DA1C` |  |
+| `0x84` | `0x16E208` |  |
+| `0x85` | `0x16E054` |  |
+| `0x86` | `0x16E860` | tail helper cluster |
+| `0x87` | `0x16E8C4` | tail helper cluster |
+| `0x88` | `0x16E88C` | tail helper cluster |
+| `0x89` | `0x16E8B0` | tail helper cluster |
+| `0x8A` | `0x16E960` | scratch seed cluster |
+| `0x8B` | `0x16E9B4` | scratch seed cluster |
+| `0x8C` | `0x16EA00` | scratch seed cluster |
+| `0x8D` | `0x16E988` | scratch seed cluster |

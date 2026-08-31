@@ -1,0 +1,119 @@
+03:20:36 StackMod	hook info:libmetasec_ml.so + 0x4cc10
+03:20:36 start 1 modules
+03:20:39 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ce940","x0":"0x7109d09670","x1":"0x710e0ce948","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72aa248","x21":"0x709","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7f9c0","x4":"0x710e0ce950","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+03:20:39 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf664c","pc":"0x7109b69c10","sp":"0x710e0cea20","x0":"0x7109d09af0","x1":"0x710e0cea28","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7fa00","x20":"0x74a72aa248","x21":"0x76b","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7fa20","x4":"0x710e0cea30","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:39 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ceb40","x0":"0x7109d09670","x1":"0x710e0ceb48","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72a5e78","x21":"0x20b3","x22":"0xaaaaaaaaaaaaaaab","x23":"0x2a45","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf000","x3":"0x7109d7f9c0","x4":"0x710e0ceb50","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cefe0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:39 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0ce870","x0":"0x7109d14860","x1":"0x710e0ce870","x10":"0x710e0cf020","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1050","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x165a","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf040","x3":"0x7109d8c300","x4":"0x710e0ce890","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0cf090","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:40 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ce940","x0":"0x7109d09670","x1":"0x710e0ce948","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72aa248","x21":"0x709","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7f9c0","x4":"0x710e0ce950","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:40 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0ce870","x0":"0x7109d14860","x1":"0x710e0ce870","x10":"0x710e0cf020","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1050","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x165a","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf040","x3":"0x7109d8c300","x4":"0x710e0ce890","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0cf090","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:40 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf664c","pc":"0x7109b69c10","sp":"0x710e0cea20","x0":"0x7109d09af0","x1":"0x710e0cea28","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7fa00","x20":"0x74a72aa248","x21":"0x76b","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7fa20","x4":"0x710e0cea30","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:40 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ceb40","x0":"0x7109d09670","x1":"0x710e0ceb48","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72a5e78","x21":"0x20b3","x22":"0xaaaaaaaaaaaaaaab","x23":"0x2a45","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf000","x3":"0x7109d7f9c0","x4":"0x710e0ceb50","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cefe0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:49 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0d00b0","x0":"0x7109d14860","x1":"0x710e0d00b0","x10":"0x710e0d0860","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1060","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x205","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0d0880","x3":"0x7109d8c300","x4":"0x710e0d00d0","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0d08d0","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:49 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0d00b0","x0":"0x7109d14860","x1":"0x710e0d00b0","x10":"0x710e0d0860","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1048","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x205","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0d0880","x3":"0x7109d8c300","x4":"0x710e0d00d0","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0d08d0","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ce940","x0":"0x7109d09670","x1":"0x710e0ce948","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72aa248","x21":"0x709","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7f9c0","x4":"0x710e0ce950","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf664c","pc":"0x7109b69c10","sp":"0x710e0cea20","x0":"0x7109d09af0","x1":"0x710e0cea28","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7fa00","x20":"0x74a72aa248","x21":"0x76b","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7fa20","x4":"0x710e0cea30","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ceb40","x0":"0x7109d09670","x1":"0x710e0ceb48","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72a5e78","x21":"0x20b3","x22":"0xaaaaaaaaaaaaaaab","x23":"0x2a45","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf000","x3":"0x7109d7f9c0","x4":"0x710e0ceb50","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cefe0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0ce870","x0":"0x7109d14860","x1":"0x710e0ce870","x10":"0x710e0cf020","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1050","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x165a","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf040","x3":"0x7109d8c300","x4":"0x710e0ce890","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0cf090","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ce940","x0":"0x7109d09670","x1":"0x710e0ce948","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72aa248","x21":"0x709","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7f9c0","x4":"0x710e0ce950","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf664c","pc":"0x7109b69c10","sp":"0x710e0cea20","x0":"0x7109d09af0","x1":"0x710e0cea28","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7fa00","x20":"0x74a72aa248","x21":"0x76b","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7fa20","x4":"0x710e0cea30","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ceb40","x0":"0x7109d09670","x1":"0x710e0ceb48","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72a5e78","x21":"0x20b3","x22":"0xaaaaaaaaaaaaaaab","x23":"0x2a45","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf000","x3":"0x7109d7f9c0","x4":"0x710e0ceb50","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cefe0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0ce870","x0":"0x7109d14860","x1":"0x710e0ce870","x10":"0x710e0cf020","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1050","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x165a","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf040","x3":"0x7109d8c300","x4":"0x710e0ce890","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0cf090","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ce940","x0":"0x7109d09670","x1":"0x710e0ce948","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72aa248","x21":"0x709","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7f9c0","x4":"0x710e0ce950","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf664c","pc":"0x7109b69c10","sp":"0x710e0cea20","x0":"0x7109d09af0","x1":"0x710e0cea28","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7fa00","x20":"0x74a72aa248","x21":"0x76b","x22":"0xaaaaaaaaaaaaaaab","x23":"0x929","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cee00","x3":"0x7109d7fa20","x4":"0x710e0cea30","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cede0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109bf65cc","pc":"0x7109b69c10","sp":"0x710e0ceb40","x0":"0x7109d09670","x1":"0x710e0ceb48","x10":"0x7109bf6980","x11":"0x1d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109c73750","x17":"0x524","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d7f980","x20":"0x74a72a5e78","x21":"0x20b3","x22":"0xaaaaaaaaaaaaaaab","x23":"0x2a45","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf000","x3":"0x7109d7f9c0","x4":"0x710e0ceb50","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x6a11f09702dd1d43","x9":"0x710e0cefe0"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:50 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0ce870","x0":"0x7109d14860","x1":"0x710e0ce870","x10":"0x710e0cf020","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1050","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x165a","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0cf040","x3":"0x7109d8c300","x4":"0x710e0ce890","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0cf090","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:52 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0d00b0","x0":"0x7109d14860","x1":"0x710e0d00b0","x10":"0x710e0d0860","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1060","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x205","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0d0880","x3":"0x7109d8c300","x4":"0x710e0d00d0","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0d08d0","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+
+03:20:52 [17322|17469|ChromiumNet0], Regs:
+{"lr":"0x7109c41e34","pc":"0x7109b69c10","sp":"0x710e0d00b0","x0":"0x7109d14860","x1":"0x710e0d00b0","x10":"0x710e0d0860","x11":"0x443d","x12":"0x210","x13":"0x7109d20606","x14":"0x7109c73794","x15":"0x10c","x16":"0x7109d99758","x17":"0x75402f30e0","x18":"0x70f64d8000","x19":"0x710e0d1a40","x2":"0x7109d8c2e0","x20":"0x72a73c1048","x21":"0x73a727f7c0","x22":"0x710e0d1a40","x23":"0x205","x24":"0x10","x25":"0x7109c726fc","x26":"0x7109c7533c","x27":"0x29d","x28":"0x1","x29":"0x710e0d0880","x3":"0x7109d8c300","x4":"0x710e0d00d0","x5":"0xe9","x6":"0xc0","x7":"0xa1af286c","x8":"0x710e0d08d0","x9":"0x7109c42b24"}
+Stackinfo:
+  #00 pc 000000000004cc10  /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+

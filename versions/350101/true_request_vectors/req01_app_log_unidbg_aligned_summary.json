@@ -1,0 +1,134 @@
+{
+  "version": "350101",
+  "request": "req01_app_log_true",
+  "inputs": {
+    "s1_file": "/Users/freeman/project/douyin/dyidre/versions/350101/true_request_vectors/req01_app_log_true_s1.txt",
+    "s2_file": "/Users/freeman/project/douyin/dyidre/versions/350101/true_request_vectors/req01_app_log_true_s2.txt",
+    "s1_len": 160,
+    "s1_fnv1a": "0xee81bf8e",
+    "s2_len": 1277,
+    "s2_fnv1a": "0x758aefd4",
+    "x_ss_req_ticket": "1788148652047",
+    "x_ss_stub": "55B07E238D109942CF70C9B46FA98D6E"
+  },
+  "fixed_env": {
+    "rootfs": "unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930",
+    "backend": "unicorn2",
+    "fixedPid": 13556,
+    "fixedTid": 13710,
+    "fixedCurrentTimeMillis": 1788148652047,
+    "fixedElapsedRealtime": 183397757,
+    "fixedElapsedRealtimeNanos": 183397757386512,
+    "fixedMonotonicNanos": 183397708672197,
+    "fixedBoottimeNanos": 183397757386512,
+    "fixedRandomSeed": "0x350101",
+    "alignTrueDeviceHttpRuntime": true
+  },
+  "true_device": {
+    "counts": {
+      "http_entry_149ca8": 1,
+      "nativeStage1_14a1ac": 1,
+      "nativeStage2_14a1fc": 1,
+      "managedF8_14a4e0": 1,
+      "exeVMInner_4cc10": 4,
+      "nativeVmpSelectMaterial_12564c": 1,
+      "nativeVmpBuildMaterial_124dd4": 1,
+      "managedF13_14a588": 1
+    },
+    "exe_vmcode": {
+      "0x1ec670": 2,
+      "0x1ecaf0": 1,
+      "0x1f7860": 1
+    },
+    "exe_lr": {
+      "0xd95cc": 2,
+      "0xd964c": 1,
+      "0x124e34": 1
+    },
+    "started_ms": 1788148651836,
+    "stopped_ms": 1788148652064,
+    "elapsed_ms": 228
+  },
+  "unidbg": {
+    "log": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_true_req01_app_log_aligned_dump_unicorn2_20260831.log",
+    "counts": {
+      "http_entry_149ca8": 1,
+      "nativeStage1_14a1ac": 1,
+      "nativeStage2_14a1fc": 1,
+      "managedF8_14a4e0": 1,
+      "exeVMInner_4cc10": 4,
+      "nativeVmpSelectMaterial_12564c": 1,
+      "nativeVmpBuildMaterial_124dd4": 1,
+      "managedF13_14a588": 1
+    },
+    "exe_vmcode": {
+      "0x1ec670": 2,
+      "0x1ecaf0": 1,
+      "0x1f7860": 1
+    },
+    "exe_lr": {
+      "0xd95cc": 2,
+      "0xd964c": 1,
+      "0x124e34": 1
+    },
+    "headers": {
+      "X-Argus": {
+        "len": 8,
+        "sha1": "d397ef0bebcd16a35fc32eb319041bac56807695",
+        "preview": "rPuUag=="
+      },
+      "X-Gorgon": {
+        "len": 52,
+        "sha1": "9092fe5eafa102a6b390022ce11b2de2a7b909f8",
+        "preview": "8404607d0800498ff92b00819e77aaf662ba8280638401a36e57"
+      },
+      "X-Helios": {
+        "len": 48,
+        "sha1": "38e18aebdaaa35c896622f419e284812e8fed090",
+        "preview": "mCYsIdWAgnGmqmfExII45WeIXpbRiE21VGwlubqQHfEAtdKz"
+      },
+      "X-Khronos": {
+        "len": 10,
+        "sha1": "a160d77301a3d4e31116f5f8ba8cf4ff9ceb15ae",
+        "preview": "1788148652"
+      },
+      "X-Ladon": {
+        "len": 8,
+        "sha1": "d2cb4c05547d2fef883e264a952331b448a2bae3",
+        "preview": "apT7rA=="
+      },
+      "X-Medusa": {
+        "len": 984,
+        "sha1": "19fca4739bbe2d013545839141ec67466c8c3031",
+        "preview": "qfuUaoGw26Dljpkpk046Ro6WWDwKyAABPDVbaChKgQ8JGCyRnyXcqq43gHwQF12FYdyppvlIRtW+olBCpiAB/BS7nY8RcpnOI2EVKpK8JlCnw75qQFO83EYs..."
+      },
+      "X-Soter": {
+        "len": 120,
+        "sha1": "c8cb4a7e8f18e34468af3c4e72d76fbb34f52115",
+        "preview": "AAEAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      }
+    },
+    "x_medusa_decoded": {
+      "base64_len": 984,
+      "decoded_len": 737,
+      "decoded_sha1": "7a450688cbb6702500ff4d553f1518493fed789d",
+      "decoded_b18": "0x3c",
+      "decoded_first64_hex": "a9 fb 94 6a 81 b0 db a0 e5 8e 99 29 93 4e 3a 46 8e 96 58 3c 0a c8 00 01 3c 35 5b 68 28 4a 81 0f 09 18 2c 91 9f 25 dc aa ae 37 80 7c 10 17 5d 85 61 dc a9 a6 f9 48 46 d5 be a2 50 42 a6 20 01 fc"
+    },
+    "xmedusa_watch": [
+      {
+        "label": "lastF8.out_value",
+        "summary": "base64_len=0x3d8 decoded_len=0x2e1 sha1=7a450688cbb6702500ff4d553f1518493fed789d b18=0x3c first64=a9 fb 94 6a 81 b0 db a0 e5 8e 99 29 93 4e 3a 46 8e 96 58 3c 0a c8 00 01 3c 35 5b 68 28 4a 81 0f 09 18 2c 91 9f 25 dc aa ae 37 80 7c 10 17 5d 85 61 dc a9 a6 f9 48 46 d5 be a2 50 42 a6 20 01 fc"
+      },
+      {
+        "label": "emit.value",
+        "summary": "base64_len=0x3d8 decoded_len=0x2e1 sha1=7a450688cbb6702500ff4d553f1518493fed789d b18=0x3c first64=a9 fb 94 6a 81 b0 db a0 e5 8e 99 29 93 4e 3a 46 8e 96 58 3c 0a c8 00 01 3c 35 5b 68 28 4a 81 0f 09 18 2c 91 9f 25 dc aa ae 37 80 7c 10 17 5d 85 61 dc a9 a6 f9 48 46 d5 be a2 50 42 a6 20 01 fc"
+      }
+    ]
+  },
+  "diff": {
+    "counts": {},
+    "exe_vmcode": {},
+    "exe_lr": {}
+  }
+}

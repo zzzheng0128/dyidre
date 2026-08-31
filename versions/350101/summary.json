@@ -1,0 +1,4749 @@
+{
+  "x0": {
+    "reg": "x0",
+    "entry_addr": "0x7327278780",
+    "max_access_end": "0x500",
+    "rows": [
+      {
+        "offset": 0,
+        "name": "ops_or_vtable",
+        "qword": "0x00000070f418dc50",
+        "access": "",
+        "sizes": "",
+        "count": 0,
+        "pcs": [],
+        "sample_values": [],
+        "nested_ascii": ".c..p....d..p....0..p...d0..p...x...p.......p...p...p.......p..."
+      },
+      {
+        "offset": 8,
+        "name": "ptr_008",
+        "qword": "0x0000007347343f90",
+        "access": "R",
+        "sizes": "8",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x14a004 (1)",
+          "libmetasec_ml.so+0x14a0c0 (1)"
+        ],
+        "sample_values": [
+          "0x000000001284c960",
+          "0x000000001284c960"
+        ],
+        "nested_ascii": "P...p....h..p....h..p....h..p....H4Gs....p4Gs.........U........."
+      },
+      {
+        "offset": 16,
+        "name": "msdata_node",
+        "qword": "0x00000074472b13f0",
+        "access": "",
+        "sizes": "",
+        "count": 0,
+        "pcs": [],
+        "sample_values": [],
+        "nested_ascii": ".................q...............msf3_...........q.............."
+      },
+      {
+        "offset": 24,
+        "name": "ptr_018",
+        "qword": "0x00000072f72bfe10",
+        "access": "",
+        "sizes": "",
+        "count": 0,
+        "pcs": [],
+        "sample_values": [],
+        "nested_ascii": "x...p.....5.s....\\t+Gt....Q4Gs.....+Gt...@.5.s...p.+Gt...`.5.s..."
+      },
+      {
+        "offset": 32,
+        "name": "ptr_020",
+        "qword": "0x00000074472b1270",
+        "access": "",
+        "sizes": "",
+        "count": 0,
+        "pcs": [],
+        "sample_values": [],
+        "nested_ascii": "....k.................[..........................A....Y........."
+      },
+      {
+        "offset": 40,
+        "name": "ptr_028",
+        "qword": "0x0000007347345f90",
+        "access": "",
+        "sizes": "",
+        "count": 0,
+        "pcs": [],
+        "sample_values": [],
+        "nested_ascii": "x...p..........................................................."
+      },
+      {
+        "offset": 48,
+        "name": "ptr_030",
+        "qword": "0x00000073472f3f10",
+        "access": "",
+        "sizes": "",
+        "count": 0,
+        "pcs": [],
+        "sample_values": [],
+        "nested_ascii": "X...p...P.(.t....2/Gs.....(Gt...p.(Gt..................C........"
+      },
+      {
+        "offset": 56,
+        "name": "ptr_038",
+        "qword": "0x00000074472b1150",
+        "access": "",
+        "sizes": "",
+        "count": 0,
+        "pcs": [],
+        "sample_values": [],
+        "nested_ascii": "....... .S....>.................p.+Gt.....+Gt....A.............."
+      },
+      {
+        "offset": 480,
+        "name": "field_1e0",
+        "qword": "",
+        "access": "R",
+        "sizes": "8",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x14a0ec (1)"
+        ],
+        "sample_values": [
+          "0x00000000122618b0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 576,
+        "name": "field_240",
+        "qword": "",
+        "access": "RW",
+        "sizes": "8",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x47930 (1)",
+          "libmetasec_ml.so+0x47c78 (1)"
+        ],
+        "sample_values": [
+          "0x0000000000000000",
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 584,
+        "name": "field_248",
+        "qword": "",
+        "access": "W",
+        "sizes": "8",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x4ac04 (1)",
+          "libmetasec_ml.so+0x47c84 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x125d7b30"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 600,
+        "name": "field_258",
+        "qword": "",
+        "access": "R",
+        "sizes": "8",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x74028 (1)"
+        ],
+        "sample_values": [
+          "0x0000000012629a40"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 608,
+        "name": "flag_260",
+        "qword": "",
+        "access": "RW",
+        "sizes": "1",
+        "count": 3,
+        "pcs": [
+          "libmetasec_ml.so+0x7480c (1)",
+          "libmetasec_ml.so+0x74020 (1)",
+          "libmetasec_ml.so+0x7419c (1)"
+        ],
+        "sample_values": [
+          "0x00",
+          "0x1",
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 960,
+        "name": "encode_buf_3c0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c784 (1)",
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libc.so+0x1c294 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x8",
+          "0xd7265746f532d58"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 961,
+        "name": "encode_buf_3c1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0x404012d2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 962,
+        "name": "encode_buf_3c2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117edc (1)"
+        ],
+        "sample_values": [
+          "0x8080a4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 963,
+        "name": "encode_buf_3c3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ef4 (1)"
+        ],
+        "sample_values": [
+          "0x10180"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 964,
+        "name": "encode_buf_3c4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f04 (1)"
+        ],
+        "sample_values": [
+          "0x282"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 965,
+        "name": "encode_buf_3c5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 966,
+        "name": "encode_buf_3c6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x10"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 967,
+        "name": "encode_buf_3c7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 968,
+        "name": "encode_buf_3c8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c784 (1)",
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libc.so+0x1c294 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x18",
+          "0x416741414541410a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 969,
+        "name": "encode_buf_3c9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0xeda420bc"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 970,
+        "name": "encode_buf_3ca",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117edc (1)"
+        ],
+        "sample_values": [
+          "0x1db48c1"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 971,
+        "name": "encode_buf_3cb",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ef4 (1)"
+        ],
+        "sample_values": [
+          "0x3b690"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 972,
+        "name": "encode_buf_3cc",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f04 (1)"
+        ],
+        "sample_values": [
+          "0x7ed"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 973,
+        "name": "encode_buf_3cd",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0xe"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 974,
+        "name": "encode_buf_3ce",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b18 (1)"
+        ],
+        "sample_values": [
+          "0x20",
+          "0x22"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 975,
+        "name": "encode_buf_3cf",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 976,
+        "name": "encode_buf_3d0",
+        "qword": "",
+        "access": "W",
+        "sizes": "4,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c788 (1)",
+          "libc.so+0x1c1c0 (1)",
+          "libc.so+0x1c29c (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x38323131",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 980,
+        "name": "encode_buf_3d4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b18 (1)"
+        ],
+        "sample_values": [
+          "0x28",
+          "0x2a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 981,
+        "name": "encode_buf_3d5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0xf"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 982,
+        "name": "encode_buf_3d6",
+        "qword": "",
+        "access": "W",
+        "sizes": "8",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c1b4 (1)"
+        ],
+        "sample_values": [
+          "0x3036353633373933"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 984,
+        "name": "encode_buf_3d8",
+        "qword": "",
+        "access": "W",
+        "sizes": "8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c788 (1)",
+          "libc.so+0x1c29c (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 990,
+        "name": "encode_buf_3de",
+        "qword": "",
+        "access": "W",
+        "sizes": "4",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c1c0 (1)"
+        ],
+        "sample_values": [
+          "0x33303238"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 992,
+        "name": "encode_buf_3e0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c78c (1)",
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c2a4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 993,
+        "name": "encode_buf_3e1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 994,
+        "name": "encode_buf_3e2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,2",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1cc (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x3034"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 995,
+        "name": "encode_buf_3e3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 996,
+        "name": "encode_buf_3e4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1d8 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x30"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 997,
+        "name": "encode_buf_3e5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b18 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x30",
+          "0x32"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 998,
+        "name": "encode_buf_3e6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0xa"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 999,
+        "name": "encode_buf_3e7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1b4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x3233393038383531"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1000,
+        "name": "encode_buf_3e8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c78c (1)",
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c2a4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1001,
+        "name": "encode_buf_3e9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1002,
+        "name": "encode_buf_3ea",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1003,
+        "name": "encode_buf_3eb",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1004,
+        "name": "encode_buf_3ec",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1005,
+        "name": "encode_buf_3ed",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1006,
+        "name": "encode_buf_3ee",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1007,
+        "name": "encode_buf_3ef",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,2",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1cc (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x3832"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1008,
+        "name": "encode_buf_3f0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c794 (1)",
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c2ac (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1009,
+        "name": "encode_buf_3f1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b18 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x38",
+          "0x3a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1010,
+        "name": "encode_buf_3f2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1011,
+        "name": "encode_buf_3f3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,4",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1c0 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x312e3533"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1012,
+        "name": "encode_buf_3f4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1013,
+        "name": "encode_buf_3f5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1014,
+        "name": "encode_buf_3f6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1015,
+        "name": "encode_buf_3f7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,2",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1cc (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x302e"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1016,
+        "name": "encode_buf_3f8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c794 (1)",
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c2ac (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1017,
+        "name": "encode_buf_3f9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b18 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x40",
+          "0x42"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1018,
+        "name": "encode_buf_3fa",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x14"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1019,
+        "name": "encode_buf_3fb",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c18c (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x302e39302e343076"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1020,
+        "name": "encode_buf_3fc",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1021,
+        "name": "encode_buf_3fd",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1022,
+        "name": "encode_buf_3fe",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1023,
+        "name": "encode_buf_3ff",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1a4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x6c6d2d35302e3930"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1024,
+        "name": "encode_buf_400",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c2bc (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1025,
+        "name": "encode_buf_401",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1026,
+        "name": "encode_buf_402",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1027,
+        "name": "encode_buf_403",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c18c (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x646e612d6c6d2d35"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1028,
+        "name": "encode_buf_404",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1029,
+        "name": "encode_buf_405",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1030,
+        "name": "encode_buf_406",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1031,
+        "name": "encode_buf_407",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1a4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x64696f72646e612d"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1032,
+        "name": "encode_buf_408",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c2bc (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1033,
+        "name": "encode_buf_409",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1034,
+        "name": "encode_buf_40a",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1035,
+        "name": "encode_buf_40b",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1036,
+        "name": "encode_buf_40c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1037,
+        "name": "encode_buf_40d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1038,
+        "name": "encode_buf_40e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1039,
+        "name": "encode_buf_40f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x48"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1040,
+        "name": "encode_buf_410",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117ec8 (1)",
+          "libc.so+0x1c2c0 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x8120a80",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1041,
+        "name": "encode_buf_411",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117edc (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x102494"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1042,
+        "name": "encode_buf_412",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117ef4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x20c8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1043,
+        "name": "encode_buf_413",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x40"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1044,
+        "name": "encode_buf_414",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b60 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x50",
+          "0x52"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1045,
+        "name": "encode_buf_415",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1046,
+        "name": "encode_buf_416",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c1b4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1047,
+        "name": "encode_buf_417",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1048,
+        "name": "encode_buf_418",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libc.so+0x1c2c0 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1049,
+        "name": "encode_buf_419",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1050,
+        "name": "encode_buf_41a",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1051,
+        "name": "encode_buf_41b",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1052,
+        "name": "encode_buf_41c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1053,
+        "name": "encode_buf_41d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1054,
+        "name": "encode_buf_41e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x60"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1055,
+        "name": "encode_buf_41f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c7a8 (1)",
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0xd5284582"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1056,
+        "name": "encode_buf_420",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c680 (1)",
+          "libmetasec_ml.so+0x117edc (1)",
+          "libc.so+0x1c2c4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x1aa508b",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1057,
+        "name": "encode_buf_421",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ef4 (1)"
+        ],
+        "sample_values": [
+          "0x354a1"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1058,
+        "name": "encode_buf_422",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f04 (1)"
+        ],
+        "sample_values": [
+          "0x6a9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1059,
+        "name": "encode_buf_423",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0xd"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1060,
+        "name": "encode_buf_424",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b60 (1)"
+        ],
+        "sample_values": [
+          "0x68",
+          "0x6a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1061,
+        "name": "encode_buf_425",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1062,
+        "name": "encode_buf_426",
+        "qword": "",
+        "access": "W",
+        "sizes": "4",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c1c0 (1)"
+        ],
+        "sample_values": [
+          "0x6f4703cf"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1064,
+        "name": "encode_buf_428",
+        "qword": "",
+        "access": "W",
+        "sizes": "8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c680 (1)",
+          "libc.so+0x1c2c4 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1066,
+        "name": "encode_buf_42a",
+        "qword": "",
+        "access": "W",
+        "sizes": "2",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c1cc (1)"
+        ],
+        "sample_values": [
+          "0x963b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1068,
+        "name": "encode_buf_42c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116b60 (1)"
+        ],
+        "sample_values": [
+          "0x70",
+          "0x72"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1069,
+        "name": "encode_buf_42d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1070,
+        "name": "encode_buf_42e",
+        "qword": "",
+        "access": "W",
+        "sizes": "4",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c1c0 (1)"
+        ],
+        "sample_values": [
+          "0x8a57081f"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1072,
+        "name": "encode_buf_430",
+        "qword": "",
+        "access": "W",
+        "sizes": "8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c684 (1)",
+          "libc.so+0x1c2c8 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1073,
+        "name": "encode_buf_431",
+        "qword": "",
+        "access": "W",
+        "sizes": "8",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c1a4 (1)"
+        ],
+        "sample_values": [
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1074,
+        "name": "encode_buf_432",
+        "qword": "",
+        "access": "W",
+        "sizes": "2",
+        "count": 1,
+        "pcs": [
+          "libc.so+0x1c1cc (1)"
+        ],
+        "sample_values": [
+          "0x5b51"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1076,
+        "name": "encode_buf_434",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x116ba0 (1)"
+        ],
+        "sample_values": [
+          "0x78",
+          "0x7a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1077,
+        "name": "encode_buf_435",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0xa"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1078,
+        "name": "encode_buf_436",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1079,
+        "name": "encode_buf_437",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1080,
+        "name": "encode_buf_438",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 3,
+        "pcs": [
+          "libc.so+0x1c684 (1)",
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libc.so+0x1c2c8 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x10",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1081,
+        "name": "encode_buf_439",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x117ec8 (1)",
+          "libc.so+0x1c1a4 (1)"
+        ],
+        "sample_values": [
+          "0x1530be",
+          "0x4141414141414141"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1082,
+        "name": "encode_buf_43a",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117edc (1)"
+        ],
+        "sample_values": [
+          "0x2ae1"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1083,
+        "name": "encode_buf_43b",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x54"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1084,
+        "name": "encode_buf_43c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x18"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1085,
+        "name": "encode_buf_43d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0x1530be"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1086,
+        "name": "encode_buf_43e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117edc (1)"
+        ],
+        "sample_values": [
+          "0x2ae1"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1087,
+        "name": "encode_buf_43f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x54"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1088,
+        "name": "encode_buf_440",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c688 (1)",
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x88"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1089,
+        "name": "encode_buf_441",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 3,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)",
+          "libmetasec_ml.so+0x10b6e0 (1)",
+          "libmetasec_ml.so+0x10b990 (1)"
+        ],
+        "sample_values": [
+          "0x1",
+          "0x0",
+          "0xd"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1090,
+        "name": "encode_buf_442",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c694 (1)",
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0xd5284582"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1091,
+        "name": "encode_buf_443",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117edc (1)"
+        ],
+        "sample_values": [
+          "0x1aa508b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1092,
+        "name": "encode_buf_444",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ef4 (1)"
+        ],
+        "sample_values": [
+          "0x354a1"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1093,
+        "name": "encode_buf_445",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f04 (1)"
+        ],
+        "sample_values": [
+          "0x6a9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1094,
+        "name": "encode_buf_446",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0xd"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1095,
+        "name": "encode_buf_447",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x117ec8 (1)",
+          "libmetasec_ml.so+0x116b18 (1)"
+        ],
+        "sample_values": [
+          "0xa0",
+          "0xa2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1096,
+        "name": "encode_buf_448",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c688 (1)",
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x1"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1097,
+        "name": "encode_buf_449",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1098,
+        "name": "encode_buf_44a",
+        "qword": "",
+        "access": "W",
+        "sizes": "4,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c694 (1)",
+          "libc.so+0x1c1c0 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x656e6f6e"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1102,
+        "name": "encode_buf_44e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0xa8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1103,
+        "name": "encode_buf_44f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x1"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1104,
+        "name": "encode_buf_450",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117ec8 (1)"
+        ],
+        "sample_values": [
+          "0x2e2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1105,
+        "name": "encode_buf_451",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x117f30 (1)"
+        ],
+        "sample_values": [
+          "0x5"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1106,
+        "name": "encode_buf_452",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x10b584 (1)"
+        ],
+        "sample_values": [
+          "0x0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1120,
+        "name": "encode_buf_460",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c294 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x210048280a4d208",
+          "0x6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1121,
+        "name": "encode_buf_461",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xe7"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1122,
+        "name": "encode_buf_462",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x51"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1123,
+        "name": "encode_buf_463",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x8a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1124,
+        "name": "encode_buf_464",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x47"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1125,
+        "name": "encode_buf_465",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xc8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1126,
+        "name": "encode_buf_466",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x24"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1127,
+        "name": "encode_buf_467",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1128,
+        "name": "encode_buf_468",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c294 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x4220eed90c1bc18",
+          "0x59"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1129,
+        "name": "encode_buf_469",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x89"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1130,
+        "name": "encode_buf_46a",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa5"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1131,
+        "name": "encode_buf_46b",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x75"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1132,
+        "name": "encode_buf_46c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1133,
+        "name": "encode_buf_46d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xbd"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1134,
+        "name": "encode_buf_46e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x67"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1135,
+        "name": "encode_buf_46f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x11"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1136,
+        "name": "encode_buf_470",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c29c (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x39330f2a38323131",
+          "0xb2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1137,
+        "name": "encode_buf_471",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1138,
+        "name": "encode_buf_472",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb7"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1139,
+        "name": "encode_buf_473",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x36"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1140,
+        "name": "encode_buf_474",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1141,
+        "name": "encode_buf_475",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1142,
+        "name": "encode_buf_476",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x28"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1143,
+        "name": "encode_buf_477",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1144,
+        "name": "encode_buf_478",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c29c (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3238303635363337",
+          "0xfa"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1145,
+        "name": "encode_buf_479",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1146,
+        "name": "encode_buf_47a",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xf6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1147,
+        "name": "encode_buf_47b",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xea"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1148,
+        "name": "encode_buf_47c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x71"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1149,
+        "name": "encode_buf_47d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1150,
+        "name": "encode_buf_47e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xe6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1151,
+        "name": "encode_buf_47f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x67"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1152,
+        "name": "encode_buf_480",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2a4 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x310a323030343330",
+          "0xf3"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1153,
+        "name": "encode_buf_481",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1154,
+        "name": "encode_buf_482",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1155,
+        "name": "encode_buf_483",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xe4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1156,
+        "name": "encode_buf_484",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x50"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1157,
+        "name": "encode_buf_485",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xc7"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1158,
+        "name": "encode_buf_486",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1159,
+        "name": "encode_buf_487",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x7b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1160,
+        "name": "encode_buf_488",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2a4 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3232333930383835",
+          "0xe"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1161,
+        "name": "encode_buf_489",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xc4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1162,
+        "name": "encode_buf_48a",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x22"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1163,
+        "name": "encode_buf_48b",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xad"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1164,
+        "name": "encode_buf_48c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xbe"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1165,
+        "name": "encode_buf_48d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xc2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1166,
+        "name": "encode_buf_48e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x90"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1167,
+        "name": "encode_buf_48f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1168,
+        "name": "encode_buf_490",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2ac (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x2e312e3533063a38",
+          "0x19"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1169,
+        "name": "encode_buf_491",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x52"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1170,
+        "name": "encode_buf_492",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x4c"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1171,
+        "name": "encode_buf_493",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3f"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1172,
+        "name": "encode_buf_494",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xde"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1173,
+        "name": "encode_buf_495",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xad"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1174,
+        "name": "encode_buf_496",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x8a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1175,
+        "name": "encode_buf_497",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1176,
+        "name": "encode_buf_498",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2ac (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x302e343076144230",
+          "0x46"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1177,
+        "name": "encode_buf_499",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x96"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1178,
+        "name": "encode_buf_49a",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x47"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1179,
+        "name": "encode_buf_49b",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x76"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1180,
+        "name": "encode_buf_49c",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1181,
+        "name": "encode_buf_49d",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xca"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1182,
+        "name": "encode_buf_49e",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x39"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1183,
+        "name": "encode_buf_49f",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x79"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1184,
+        "name": "encode_buf_4a0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2bc (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x2d6c6d2d35302e39",
+          "0xdb"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1185,
+        "name": "encode_buf_4a1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x2d"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1186,
+        "name": "encode_buf_4a2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x23"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1187,
+        "name": "encode_buf_4a3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x52"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1188,
+        "name": "encode_buf_4a4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x33"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1189,
+        "name": "encode_buf_4a5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xf"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1190,
+        "name": "encode_buf_4a6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xf4"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1191,
+        "name": "encode_buf_4a7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xe7"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1192,
+        "name": "encode_buf_4a8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2bc (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x4864696f72646e61",
+          "0xdf"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1193,
+        "name": "encode_buf_4a9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1194,
+        "name": "encode_buf_4aa",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd3"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1195,
+        "name": "encode_buf_4ab",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xae"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1196,
+        "name": "encode_buf_4ac",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1197,
+        "name": "encode_buf_4ad",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x63"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1198,
+        "name": "encode_buf_4ae",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xee"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1199,
+        "name": "encode_buf_4af",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x9b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1200,
+        "name": "encode_buf_4b0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2c0 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x8085240c89480",
+          "0x23"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1201,
+        "name": "encode_buf_4b1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1202,
+        "name": "encode_buf_4b2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1203,
+        "name": "encode_buf_4b3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1204,
+        "name": "encode_buf_4b4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1205,
+        "name": "encode_buf_4b5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x5e"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1206,
+        "name": "encode_buf_4b6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x19"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1207,
+        "name": "encode_buf_4b7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1208,
+        "name": "encode_buf_4b8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2c0 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x8260000000000000",
+          "0x6d"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1209,
+        "name": "encode_buf_4b9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa2"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1210,
+        "name": "encode_buf_4ba",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x74"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1211,
+        "name": "encode_buf_4bb",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1212,
+        "name": "encode_buf_4bc",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x67"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1213,
+        "name": "encode_buf_4bd",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x57"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1214,
+        "name": "encode_buf_4be",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x21"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1215,
+        "name": "encode_buf_4bf",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa5"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1216,
+        "name": "encode_buf_4c0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2c4 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3cf066a0da9a18b",
+          "0x18"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1217,
+        "name": "encode_buf_4c1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x81"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1218,
+        "name": "encode_buf_4c2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x47"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1219,
+        "name": "encode_buf_4c3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xf0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1220,
+        "name": "encode_buf_4c4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x73"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1221,
+        "name": "encode_buf_4c5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x9b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1222,
+        "name": "encode_buf_4c6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x52"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1223,
+        "name": "encode_buf_4c7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x56"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1224,
+        "name": "encode_buf_4c8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2c4 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x81f0672963b6f47",
+          "0xbb"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1225,
+        "name": "encode_buf_4c9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x94"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1226,
+        "name": "encode_buf_4ca",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x52"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1227,
+        "name": "encode_buf_4cb",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x7a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1228,
+        "name": "encode_buf_4cc",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x6f"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1229,
+        "name": "encode_buf_4cd",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x69"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1230,
+        "name": "encode_buf_4ce",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3e"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1231,
+        "name": "encode_buf_4cf",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1232,
+        "name": "encode_buf_4d0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2c8 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x2080a7a5b518a57",
+          "0x2b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1233,
+        "name": "encode_buf_4d1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x37"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1234,
+        "name": "encode_buf_4d2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x8c"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1235,
+        "name": "encode_buf_4d3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xad"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1236,
+        "name": "encode_buf_4d4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x94"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1237,
+        "name": "encode_buf_4d5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x6f"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1238,
+        "name": "encode_buf_4d6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x93"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1239,
+        "name": "encode_buf_4d7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x6b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1240,
+        "name": "encode_buf_4d8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c2c8 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x54e1be1854e1be10",
+          "0x41"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1241,
+        "name": "encode_buf_4d9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x57"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1242,
+        "name": "encode_buf_4da",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x81"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1243,
+        "name": "encode_buf_4db",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1244,
+        "name": "encode_buf_4dc",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb5"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1245,
+        "name": "encode_buf_4dd",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x43"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1246,
+        "name": "encode_buf_4de",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x8a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1247,
+        "name": "encode_buf_4df",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xe9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1248,
+        "name": "encode_buf_4e0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c18c (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa20da9a18b820188",
+          "0x3a"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1249,
+        "name": "encode_buf_4e1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa7"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1250,
+        "name": "encode_buf_4e2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c1a4 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x401a20da9a18b82",
+          "0x16"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1251,
+        "name": "encode_buf_4e3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd5"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1252,
+        "name": "encode_buf_4e4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x24"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1253,
+        "name": "encode_buf_4e5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xdf"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1254,
+        "name": "encode_buf_4e6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xcf"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1255,
+        "name": "encode_buf_4e7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xcc"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1256,
+        "name": "encode_buf_4e8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c18c (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x1a8656e6f6e0401",
+          "0x22"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1257,
+        "name": "encode_buf_4e9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x31"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1258,
+        "name": "encode_buf_4ea",
+        "qword": "",
+        "access": "W",
+        "sizes": "1,8",
+        "count": 2,
+        "pcs": [
+          "libc.so+0x1c1a4 (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x5e201a8656e6f6e",
+          "0x87"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1259,
+        "name": "encode_buf_4eb",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xea"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1260,
+        "name": "encode_buf_4ec",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x13"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1261,
+        "name": "encode_buf_4ed",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xa6"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1262,
+        "name": "encode_buf_4ee",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x2c"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1263,
+        "name": "encode_buf_4ef",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x97"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1264,
+        "name": "encode_buf_4f0",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x9b"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1265,
+        "name": "encode_buf_4f1",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x40"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1266,
+        "name": "encode_buf_4f2",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 2,
+        "pcs": [
+          "libmetasec_ml.so+0x10b4fc (1)",
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x0",
+          "0x16"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1267,
+        "name": "encode_buf_4f3",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xbf"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1268,
+        "name": "encode_buf_4f4",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xde"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1269,
+        "name": "encode_buf_4f5",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xde"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1270,
+        "name": "encode_buf_4f6",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x80"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1271,
+        "name": "encode_buf_4f7",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x3e"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1272,
+        "name": "encode_buf_4f8",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x27"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1273,
+        "name": "encode_buf_4f9",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x56"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1274,
+        "name": "encode_buf_4fa",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xf9"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1275,
+        "name": "encode_buf_4fb",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x47"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1276,
+        "name": "encode_buf_4fc",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xb0"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1277,
+        "name": "encode_buf_4fd",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0xd8"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1278,
+        "name": "encode_buf_4fe",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x58"
+        ],
+        "nested_ascii": ""
+      },
+      {
+        "offset": 1279,
+        "name": "encode_buf_4ff",
+        "qword": "",
+        "access": "W",
+        "sizes": "1",
+        "count": 1,
+        "pcs": [
+          "libmetasec_ml.so+0x138560 (1)"
+        ],
+        "sample_values": [
+          "0x28"
+        ],
+        "nested_ascii": ""
+      }
+    ]
+  },
+  "req01_app_log_true_s1s2_baseline": {
+    "report": "dyidre/versions/350101/req01_app_log_s1s2_unidbg_sync_350101.md",
+    "summary_json": "dyidre/versions/350101/true_request_vectors/req01_app_log_unidbg_aligned_summary.json",
+    "rerun_script": "dyidre/versions/350101/true_request_vectors/run_req01_app_log_aligned_unidbg_350101.sh",
+    "status": "aligned",
+    "required_knob": "-Dmetasec.alignTrueDeviceHttpRuntime=true",
+    "true_counts": {
+      "http_entry_149ca8": 1,
+      "nativeStage1_14a1ac": 1,
+      "nativeStage2_14a1fc": 1,
+      "managedF8_14a4e0": 1,
+      "exeVMInner_4cc10": 4,
+      "nativeVmpSelectMaterial_12564c": 1,
+      "nativeVmpBuildMaterial_124dd4": 1,
+      "managedF13_14a588": 1
+    },
+    "unidbg_counts": {
+      "http_entry_149ca8": 1,
+      "nativeStage1_14a1ac": 1,
+      "nativeStage2_14a1fc": 1,
+      "managedF8_14a4e0": 1,
+      "exeVMInner_4cc10": 4,
+      "nativeVmpSelectMaterial_12564c": 1,
+      "nativeVmpBuildMaterial_124dd4": 1,
+      "managedF13_14a588": 1
+    },
+    "true_exe_vmcode": {
+      "0x1ec670": 2,
+      "0x1ecaf0": 1,
+      "0x1f7860": 1
+    },
+    "unidbg_exe_vmcode": {
+      "0x1ec670": 2,
+      "0x1ecaf0": 1,
+      "0x1f7860": 1
+    },
+    "fixed_env": {
+      "rootfs": "unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930",
+      "backend": "unicorn2",
+      "fixedPid": 13556,
+      "fixedTid": 13710,
+      "fixedCurrentTimeMillis": 1788148652047,
+      "fixedElapsedRealtime": 183397757,
+      "fixedElapsedRealtimeNanos": 183397757386512,
+      "fixedMonotonicNanos": 183397708672197,
+      "fixedBoottimeNanos": 183397757386512,
+      "fixedRandomSeed": "0x350101",
+      "alignTrueDeviceHttpRuntime": true
+    }
+  }
+}

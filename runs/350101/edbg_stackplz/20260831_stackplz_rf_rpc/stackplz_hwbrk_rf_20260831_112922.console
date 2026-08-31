@@ -1,0 +1,114 @@
+rpc mode, listen path:127.0.0.1:41718
+Server waiting for client...
+Client connected.
+Received message: {"brk_pid":-1,"brk_len":4,"brk_type":"x","brk_addr":"0x7102a62c10"}
+resp -> {"status":"ok","msg":"register breakpoint success"}
+[29967|30109] event_addr:0x7102a62c10 hit_count:1, Regs:
+[x0=0x7102c0d860,x1=0x71094300b0,x2=0x7102c852e0,x3=0x7102c85300,x4=0x71094300d0,x5=0xe9,x6=0xc0,x7=0xa1af286c,x8=0x71094308d0,x9=0x7102b3bb24,x10=0x7109430860,x11=0x759d,x12=0x210,x13=0x7102c19606,x14=0x7102b6c794,x15=0x10c,x16=0x7102c92758,x17=0x75402f30e0,x18=0x70ef704000,x19=0x7109431a40,x20=0x72a74510f0,x21=0x73a7287320,x22=0x7109431a40,x23=0x205,x24=0x10,x25=0x7102b6b6fc,x26=0x7102b6e33c,x27=0x29d,x28=0x1,x29=0x7109430880,lr=0x7102b3ae34,sp=0x71094300b0,pc=0x7102a62c10]
+Backtrace:
+	0x7102a62c10 <libmetasec_ml.so + 0x4cc10>
+	0x7102b3ae34 <libmetasec_ml.so + 0x124e34>
+	0x7102b3b6ac <libmetasec_ml.so + 0x1256ac>
+	0x7102b852e0 <libmetasec_ml.so + 0x16f2e0>
+	0x7102b70b44 <libmetasec_ml.so + 0x15ab44>
+	0x7102b6d0f0 <libmetasec_ml.so + 0x1570f0>
+	0x7102b6a598 <libmetasec_ml.so + 0x154598>
+	0x7102b6a460 <libmetasec_ml.so + 0x154460>
+	0x7102b87770 <libmetasec_ml.so + 0x171770>
+	0x7102b67a4c <libmetasec_ml.so + 0x151a4c>
+	0x7102b67030 <libmetasec_ml.so + 0x151030>
+	0x7102b64764 <libmetasec_ml.so + 0x14e764>
+	0x7102b64a6c <libmetasec_ml.so + 0x14ea6c>
+	0x710c2aaad4 <libsscronet.so + 0x4a5ad4>
+	0x710c01109c <libsscronet.so + 0x20c09c>
+	0x710c0160c8 <libsscronet.so + 0x2110c8>
+	0x710c0ebe58 <libsscronet.so + 0x2e6e58>
+	0x710c0f9eb0 <libsscronet.so + 0x2f4eb0>
+	0x710c128d24 <libsscronet.so + 0x323d24>
+	0x710c0fa480 <libsscronet.so + 0x2f5480>
+	0x710c0e2c9c <libsscronet.so + 0x2ddc9c>
+	0x710c10fd50 <libsscronet.so + 0x30ad50>
+[29967|30109] event_addr:0x7102a62c10 hit_count:2, Regs:
+[x0=0x7102c0d860,x1=0x71094300b0,x2=0x7102c852e0,x3=0x7102c85300,x4=0x71094300d0,x5=0xe9,x6=0xc0,x7=0xa1af286c,x8=0x71094308d0,x9=0x7102b3bb24,x10=0x7109430860,x11=0x759d,x12=0x210,x13=0x7102c19606,x14=0x7102b6c794,x15=0x10c,x16=0x7102c92758,x17=0x75402f30e0,x18=0x70ef704000,x19=0x7109431a40,x20=0x72a74510d8,x21=0x73a7287320,x22=0x7109431a40,x23=0x205,x24=0x10,x25=0x7102b6b6fc,x26=0x7102b6e33c,x27=0x29d,x28=0x1,x29=0x7109430880,lr=0x7102b3ae34,sp=0x71094300b0,pc=0x7102a62c10]
+Backtrace:
+	0x7102a62c10 <libmetasec_ml.so + 0x4cc10>
+	0x7102b3ae34 <libmetasec_ml.so + 0x124e34>
+	0x7102b3b6ac <libmetasec_ml.so + 0x1256ac>
+	0x7102b852e0 <libmetasec_ml.so + 0x16f2e0>
+	0x7102b70b44 <libmetasec_ml.so + 0x15ab44>
+	0x7102b6d0f0 <libmetasec_ml.so + 0x1570f0>
+	0x7102b6a598 <libmetasec_ml.so + 0x154598>
+	0x7102b6a460 <libmetasec_ml.so + 0x154460>
+	0x7102b87770 <libmetasec_ml.so + 0x171770>
+	0x7102b67a4c <libmetasec_ml.so + 0x151a4c>
+	0x7102b67030 <libmetasec_ml.so + 0x151030>
+	0x7102b64764 <libmetasec_ml.so + 0x14e764>
+	0x7102b64a6c <libmetasec_ml.so + 0x14ea6c>
+	0x710c2aaad4 <libsscronet.so + 0x4a5ad4>
+	0x710c01109c <libsscronet.so + 0x20c09c>
+	0x710c0160c8 <libsscronet.so + 0x2110c8>
+	0x710c0ebe58 <libsscronet.so + 0x2e6e58>
+	0x710c0f9eb0 <libsscronet.so + 0x2f4eb0>
+	0x710c128d24 <libsscronet.so + 0x323d24>
+	0x710c0fa480 <libsscronet.so + 0x2f5480>
+	0x710c0e2c9c <libsscronet.so + 0x2ddc9c>
+	0x710c10fd50 <libsscronet.so + 0x30ad50>
+Client connected.
+Received message: {"brk_pid":29967,"brk_len":4,"brk_type":"x","brk_addr":"0x7102a62c10"}
+resp -> {"status":"ok","msg":"register breakpoint success"}
+Client connected.
+Received message: {"brk_pid":29967,"brk_len":4,"brk_type":"x","brk_addr":"0x7102b5fca8"}
+resp -> {"status":"ok","msg":"register breakpoint success"}
+[29967|30109] event_addr:0x7102a62c10 hit_count:3, Regs:
+[x0=0x7102c0d860,x1=0x71094300b0,x2=0x7102c852e0,x3=0x7102c85300,x4=0x71094300d0,x5=0xe9,x6=0xc0,x7=0xa1af286c,x8=0x71094308d0,x9=0x7102b3bb24,x10=0x7109430860,x11=0x759d,x12=0x210,x13=0x7102c19606,x14=0x7102b6c794,x15=0x10c,x16=0x7102c92758,x17=0x75402f30e0,x18=0x70ef704000,x19=0x7109431a40,x20=0x72a74510f0,x21=0x73a7287320,x22=0x7109431a40,x23=0x205,x24=0x10,x25=0x7102b6b6fc,x26=0x7102b6e33c,x27=0x29d,x28=0x1,x29=0x7109430880,lr=0x7102b3ae34,sp=0x71094300b0,pc=0x7102a62c10]
+Backtrace:
+	0x7102a62c10 <libmetasec_ml.so + 0x4cc10>
+	0x7102b3ae34 <libmetasec_ml.so + 0x124e34>
+	0x7102b3b6ac <libmetasec_ml.so + 0x1256ac>
+	0x7102b852e0 <libmetasec_ml.so + 0x16f2e0>
+	0x7102b70b44 <libmetasec_ml.so + 0x15ab44>
+	0x7102b6d0f0 <libmetasec_ml.so + 0x1570f0>
+	0x7102b6a598 <libmetasec_ml.so + 0x154598>
+	0x7102b6a460 <libmetasec_ml.so + 0x154460>
+	0x7102b87770 <libmetasec_ml.so + 0x171770>
+	0x7102b67a4c <libmetasec_ml.so + 0x151a4c>
+	0x7102b67030 <libmetasec_ml.so + 0x151030>
+	0x7102b64764 <libmetasec_ml.so + 0x14e764>
+	0x7102b64a6c <libmetasec_ml.so + 0x14ea6c>
+	0x710c2aaad4 <libsscronet.so + 0x4a5ad4>
+	0x710c01109c <libsscronet.so + 0x20c09c>
+	0x710c0160c8 <libsscronet.so + 0x2110c8>
+	0x710c0ebe58 <libsscronet.so + 0x2e6e58>
+	0x710c0f9eb0 <libsscronet.so + 0x2f4eb0>
+	0x710c128d24 <libsscronet.so + 0x323d24>
+	0x710c0fa480 <libsscronet.so + 0x2f5480>
+	0x710c0e2c9c <libsscronet.so + 0x2ddc9c>
+	0x710c10fd50 <libsscronet.so + 0x30ad50>
+[29967|30109] event_addr:0x7102a62c10 hit_count:4, Regs:
+[x0=0x7102c0d860,x1=0x71094300b0,x2=0x7102c852e0,x3=0x7102c85300,x4=0x71094300d0,x5=0xe9,x6=0xc0,x7=0xa1af286c,x8=0x71094308d0,x9=0x7102b3bb24,x10=0x7109430860,x11=0x759d,x12=0x210,x13=0x7102c19606,x14=0x7102b6c794,x15=0x10c,x16=0x7102c92758,x17=0x75402f30e0,x18=0x70ef704000,x19=0x7109431a40,x20=0x72a74510d8,x21=0x73a7287320,x22=0x7109431a40,x23=0x205,x24=0x10,x25=0x7102b6b6fc,x26=0x7102b6e33c,x27=0x29d,x28=0x1,x29=0x7109430880,lr=0x7102b3ae34,sp=0x71094300b0,pc=0x7102a62c10]
+Backtrace:
+	0x7102a62c10 <libmetasec_ml.so + 0x4cc10>
+	0x7102b3ae34 <libmetasec_ml.so + 0x124e34>
+	0x7102b3b6ac <libmetasec_ml.so + 0x1256ac>
+	0x7102b852e0 <libmetasec_ml.so + 0x16f2e0>
+	0x7102b70b44 <libmetasec_ml.so + 0x15ab44>
+	0x7102b6d0f0 <libmetasec_ml.so + 0x1570f0>
+	0x7102b6a598 <libmetasec_ml.so + 0x154598>
+	0x7102b6a460 <libmetasec_ml.so + 0x154460>
+	0x7102b87770 <libmetasec_ml.so + 0x171770>
+	0x7102b67a4c <libmetasec_ml.so + 0x151a4c>
+	0x7102b67030 <libmetasec_ml.so + 0x151030>
+	0x7102b64764 <libmetasec_ml.so + 0x14e764>
+	0x7102b64a6c <libmetasec_ml.so + 0x14ea6c>
+	0x710c2aaad4 <libsscronet.so + 0x4a5ad4>
+	0x710c01109c <libsscronet.so + 0x20c09c>
+	0x710c0160c8 <libsscronet.so + 0x2110c8>
+	0x710c0ebe58 <libsscronet.so + 0x2e6e58>
+	0x710c0f9eb0 <libsscronet.so + 0x2f4eb0>
+	0x710c128d24 <libsscronet.so + 0x323d24>
+	0x710c0fa480 <libsscronet.so + 0x2f5480>
+	0x710c0e2c9c <libsscronet.so + 0x2ddc9c>
+	0x710c10fd50 <libsscronet.so + 0x30ad50>
+
+Received Ctrl+C, shutting down...
+Error accepting: accept tcp4 127.0.0.1:41718: use of closed network connection

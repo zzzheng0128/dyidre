@@ -1,0 +1,907 @@
+{
+  "source_log": "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/true_env_xmedusa_350101.log",
+  "run_id": "20260831_214509",
+  "module": {
+    "name": "libmetasec_ml.so",
+    "base": 485528666112,
+    "size": 2867200,
+    "path": "/data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so"
+  },
+  "script_env": {
+    "Process.id": 13556,
+    "Process.tid": 13571,
+    "getpid": 13556,
+    "gettid": 0,
+    "syscall_gettid": 13571,
+    "getppid": 863,
+    "uid": 10280,
+    "euid": 10280
+  },
+  "install_env": {
+    "Process.id": 13556,
+    "Process.tid": 13626,
+    "getpid": 13556,
+    "gettid": 13626,
+    "syscall_gettid": 13626,
+    "getppid": 863,
+    "uid": 10280,
+    "euid": 10280
+  },
+  "http_entries": [
+    {
+      "index": 1,
+      "off": 1350824,
+      "regs": {
+        "x0": 494578166048,
+        "x1": 485440706208,
+        "x2": 485440706192,
+        "x3": 485440706176,
+        "x4": 369,
+        "x5": 485440706160,
+        "x8": 485440706488,
+        "lr": 485530021964,
+        "sp": 485440705984
+      },
+      "clocks": {
+        "REALTIME": {
+          "clock": "REALTIME",
+          "rc": 0,
+          "sec": 1788183915,
+          "nsec": 4015344,
+          "nanos": 1788183915004015344,
+          "millis": 1788183915004
+        },
+        "MONOTONIC": {
+          "clock": "MONOTONIC",
+          "rc": 0,
+          "sec": 218660,
+          "nsec": 681579301,
+          "nanos": 218660681579301,
+          "millis": 218660681
+        },
+        "BOOTTIME": {
+          "clock": "BOOTTIME",
+          "rc": 0,
+          "sec": 218660,
+          "nsec": 739270748,
+          "nanos": 218660739270748,
+          "millis": 218660739
+        }
+      },
+      "args": {
+        "x_ss_stub": {
+          "mem": {
+            "p": 485440706176,
+            "mem_len": 1194080304,
+            "src_len": 116,
+            "body": 496459336496,
+            "sane": true
+          },
+          "body": {
+            "len": 116,
+            "dump": 116,
+            "fnv1a": "0bbae3fc",
+            "ascii": "....q...}...|.......t...D.............4;............q.............&7t..................6...........................'"
+          },
+          "body_hex": "f0 aa e9 0b 71 00 00 00 7d 07 00 00 7c 07 00 00 10 a3 2e 07 74 00 00 00 44 00 00 00 00 00 00 00 02 81 01 00 00 00 34 3b 00 00 00 00 00 00 00 00 f0 aa e9 0b 71 00 00 00 ad 00 00 00 ac 00 00 00 d0 fa 26 37 74 00 00 00 00 00 00 00 00 00 00 00 02 00 02 00 00 00 05 36 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 e0 05 2e 27"
+        },
+        "url": {
+          "mem": {
+            "p": 485440706192,
+            "mem_len": 1194092016,
+            "src_len": 116,
+            "body": 493773368528,
+            "sane": true
+          },
+          "body": {
+            "len": 116,
+            "dump": 116,
+            "fnv1a": "ad4bc7ba",
+            "ascii": "xp..q.....D.s.....*Gt.....<Gs.....*Gt.....D.s.....*Gt...p.D.s.....*Gt.....D.s...0.*Gt...0.D.s.....*Gt...........0.D."
+          },
+          "body_hex": "78 70 ea 0b 71 00 00 00 f0 af 44 97 73 00 00 00 b0 b2 2a 47 74 00 00 00 d0 bd 3c 47 73 00 00 00 90 b6 2a 47 74 00 00 00 a0 9f 44 97 73 00 00 00 90 b5 2a 47 74 00 00 00 70 ba 44 97 73 00 00 00 10 d2 2a 47 74 00 00 00 10 a2 44 97 73 00 00 00 30 b7 2a 47 74 00 00 00 30 a3 44 97 73 00 00 00 f0 b6 2a 47 74 00 00 00 00 00 00 00 ff ff ff ff 30 ac 44 97"
+        }
+      },
+      "env": {
+        "Process.id": 13556,
+        "Process.tid": 13710,
+        "getpid": 13556,
+        "gettid": 13710,
+        "syscall_gettid": 13710,
+        "getppid": 863,
+        "uid": 10280,
+        "euid": 10280
+      }
+    },
+    {
+      "index": 2,
+      "off": 1350824,
+      "regs": {
+        "x0": 494578166048,
+        "x1": 485440706208,
+        "x2": 485440706192,
+        "x3": 485440706176,
+        "x4": 369,
+        "x5": 485440706160,
+        "x8": 485440706488,
+        "lr": 485530021964,
+        "sp": 485440705984
+      },
+      "clocks": {
+        "REALTIME": {
+          "clock": "REALTIME",
+          "rc": 0,
+          "sec": 1788183916,
+          "nsec": 343304651,
+          "nanos": 1788183916343304651,
+          "millis": 1788183916343
+        },
+        "MONOTONIC": {
+          "clock": "MONOTONIC",
+          "rc": 0,
+          "sec": 218662,
+          "nsec": 18800046,
+          "nanos": 218662018800046,
+          "millis": 218662018
+        },
+        "BOOTTIME": {
+          "clock": "BOOTTIME",
+          "rc": 0,
+          "sec": 218662,
+          "nsec": 77971799,
+          "nanos": 218662077971799,
+          "millis": 218662077
+        }
+      },
+      "args": {
+        "x_ss_stub": {
+          "mem": {
+            "p": 485440706176,
+            "mem_len": 1194078288,
+            "src_len": 116,
+            "body": 496457574416,
+            "sane": true
+          },
+          "body": {
+            "len": 116,
+            "dump": 116,
+            "fnv1a": "3c0bde58",
+            "ascii": "....q...C...B.....4gs....m.......................]..v6...>.pU.~.....e\\nUmask:\\t007.......P........0K-.s....`&ws....\\F."
+          },
+          "body_hex": "f0 aa e9 0b 71 00 00 00 43 03 00 00 42 03 00 00 10 f3 34 67 73 00 00 00 00 6d 00 00 00 00 00 00 02 81 01 00 00 00 bf 13 00 00 00 00 00 00 00 00 00 5d b2 cd 76 36 e1 c9 d1 3e cf 70 55 e6 7e 9c 01 00 00 00 65 0a 55 6d 61 73 6b 3a 09 30 30 37 02 81 01 00 00 00 14 50 00 00 00 00 00 00 00 00 30 4b 2d 97 73 00 00 00 10 60 26 77 73 00 00 b4 00 5c 46 87"
+        },
+        "url": {
+          "mem": {
+            "p": 485440706192,
+            "mem_len": 1194077520,
+            "src_len": 116,
+            "body": 493773368528,
+            "sane": true
+          },
+          "body": {
+            "len": 116,
+            "dump": 116,
+            "fnv1a": "ad4bc7ba",
+            "ascii": "xp..q.....D.s.....*Gt.....<Gs.....*Gt.....D.s.....*Gt...p.D.s.....*Gt.....D.s...0.*Gt...0.D.s.....*Gt...........0.D."
+          },
+          "body_hex": "78 70 ea 0b 71 00 00 00 f0 af 44 97 73 00 00 00 b0 b2 2a 47 74 00 00 00 d0 bd 3c 47 73 00 00 00 90 b6 2a 47 74 00 00 00 a0 9f 44 97 73 00 00 00 90 b5 2a 47 74 00 00 00 70 ba 44 97 73 00 00 00 10 d2 2a 47 74 00 00 00 10 a2 44 97 73 00 00 00 30 b7 2a 47 74 00 00 00 30 a3 44 97 73 00 00 00 f0 b6 2a 47 74 00 00 00 00 00 00 00 ff ff ff ff 30 ac 44 97"
+        }
+      },
+      "env": {
+        "Process.id": 13556,
+        "Process.tid": 13710,
+        "getpid": 13556,
+        "gettid": 13710,
+        "syscall_gettid": 13710,
+        "getppid": 863,
+        "uid": 10280,
+        "euid": 10280
+      }
+    }
+  ],
+  "f8_entries": [
+    {
+      "index": 1,
+      "off": 1352928,
+      "regs": {
+        "x0": 485440705696,
+        "x1": 496459334536,
+        "x2": 10,
+        "x3": 16,
+        "x4": 485531282700,
+        "x5": 499410035226,
+        "x8": 1,
+        "lr": 485530019004,
+        "sp": 485440705264
+      },
+      "clocks": {
+        "REALTIME": {
+          "clock": "REALTIME",
+          "rc": 0,
+          "sec": 1788183915,
+          "nsec": 398475386,
+          "nanos": 1788183915398475386,
+          "millis": 1788183915398
+        },
+        "MONOTONIC": {
+          "clock": "MONOTONIC",
+          "rc": 0,
+          "sec": 218661,
+          "nsec": 59672197,
+          "nanos": 218661059672197,
+          "millis": 218661059
+        },
+        "BOOTTIME": {
+          "clock": "BOOTTIME",
+          "rc": 0,
+          "sec": 218661,
+          "nsec": 108386512,
+          "nanos": 218661108386512,
+          "millis": 218661108
+        }
+      },
+      "inputs": {
+        "x_ss_stub": {
+          "mem": {
+            "p": 496459330688,
+            "mem_len": 32,
+            "src_len": 16,
+            "body": 496459332608,
+            "sane": true
+          },
+          "body": {
+            "len": 16,
+            "dump": 16,
+            "fnv1a": "c789c39c",
+            "ascii": "...=....>.g\\t.\\r.."
+          },
+          "body_hex": "06 be f9 3d cc 86 86 8d 3e c4 67 09 91 0d 07 8d"
+        },
+        "url_or_path": {
+          "mem": {
+            "p": 485440705488,
+            "mem_len": 2048,
+            "src_len": 1870,
+            "body": 498336606832,
+            "sane": true
+          },
+          "body": {
+            "len": 1870,
+            "dump": 1870,
+            "fnv1a": "82199be3",
+            "ascii": "type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_item_num=0&last_ad_show_interval=-1&action_mask=-1&action_mask_detail=%7B%7D&action_mask_info=%7B%7D&teen_protector_vote_aweme_count=0&last_teen_protector_vote_aweme_interval=0&sp=-1&is_order_flow=0&user_avatar_shrink=96_96&screen_type=1&pitaya_type=0&location_permission=false&font_category=2&feed_recommend_req_index=1&audio_value=0&launch_times=24&recent_gids_first_time=null&play_style=0&filter_live_cell=false&from_push=0&show_unread_entrance=0&danmaku_switch_status=0&elder_mode=0&need_hotlist_card=false&life_card_accept=0&nearby_extra_data=%7B%22nearby_tab_name%22%3A%22%E5%90%8C%E5%9F%8E%22%2C%22groupon_tab_name%22%3A%22%E5%9B%A2%E8%B4%AD%22%2C%22has_groupon_tab%22%3Atrue%2C%22groupon_tab_index%22%3A5%7D&klink_egdi=AAIquJZZoZ2VNo6Bem7kHF5vqtqxbSgzDrv5k1Y1tWtLGkMr0Dr4-duM&_rticket=1788183914554&mcc_mnc=46000&first_launch_timestamp=1788084050&last_deeplink_update_version_code=0&is_preinstall=0&need_personal_recommend=1&is_android_fold=0&ts=1788183914&error_monitor_info=%5B%5D&splash_cid=-3&splash_type=-1&local_cache=7678878427689022193&download_sdk_info=%7B%7D&ug_ab_params=%7B%7D&ug_custom_key=%7B%22widget_install_status%22%3A%220%22%7D&ac=wifi&aid=1128&appTheme=light&app_name=aweme&app_type=normal&cdid=99f93d80-81b5-4d3e-bff0-19c28ac94e23&channel=vivo_1128_64&cpu_support64=true&device_brand=google&device_id=4087336283154583&device_platform=android&device_type=Pixel+6&dpi=420&host_abi=arm64-v8a&iid=3313280560987770&is_android_pad=0&is_guest_mode=0&language=zh&manifest_version_code=350101&minor_status=0&os=android&os_api=35&os_version=15&package=com.ss.android.ugc.aweme&resolution=1080*2209&ssmix=a&update_version_code=35109900&version_code=350100&version_name=35.1.0"
+          }
+        },
+        "aux_ref_mem": {
+          "mem": {
+            "p": 496457574032,
+            "mem_len": 9,
+            "src_len": 8,
+            "body": 499410236688,
+            "sane": true
+          },
+          "body": {
+            "len": 8,
+            "dump": 8,
+            "fnv1a": "9be17165",
+            "ascii": "........"
+          },
+          "body_hex": "00 00 00 00 00 00 00 00"
+        },
+        "token_block": {
+          "mem": {
+            "p": 485440705408,
+            "mem_len": 32,
+            "src_len": 25,
+            "body": 496457574416,
+            "sane": true
+          },
+          "body": {
+            "len": 25,
+            "dump": 25,
+            "fnv1a": "49e75132",
+            "ascii": "AZ-bfveVPeFr5Ac_8CQdogyUs"
+          },
+          "body_hex": "41 5a 2d 62 66 76 65 56 50 65 46 72 35 41 63 5f 38 43 51 64 6f 67 79 55 73"
+        }
+      },
+      "env": {
+        "Process.id": 13556,
+        "Process.tid": 13710,
+        "getpid": 13556,
+        "gettid": 13710,
+        "syscall_gettid": 13710,
+        "getppid": 863,
+        "uid": 10280,
+        "euid": 10280
+      },
+      "pack": {
+        "ptr": 485440705696,
+        "seed": 1788183916,
+        "type": 369,
+        "mode": 0,
+        "final": 1,
+        "out_key_ptr_ptr": 485440705480,
+        "out_value_ptr_ptr": 485440705472,
+        "qwords": {
+          "+0x0": 1788183916,
+          "+0x8": 493773368528,
+          "+0x10": 496459330688,
+          "+0x18": 485440705488,
+          "+0x20": 496457574032,
+          "+0x28": 485440705408,
+          "+0x30": 0,
+          "+0x38": 0,
+          "+0x40": 485331304817,
+          "+0x48": 485440705480,
+          "+0x50": 485440705472,
+          "+0x58": 4294967296,
+          "+0x60": 485531167472
+        },
+        "raw70": {
+          "fnv1a": "8b3ad14c",
+          "hex": "6c 85 95 6a 00 00 00 00 d0 ac 2f f7 72 00 00 00 80 34 48 97 73 00 00 00 d0 53 85 06 71 00 00 00 90 66 2d 97 73 00 00 00 80 53 85 06 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 01 00 00 71 00 00 00 c8 53 85 06 71 00 00 00 c0 53 85 06 71 00 00 00 00 00 00 00 01 00 00 00 f0 aa e9 0b 71 00 00 00 0a 00 00 00 09 00 00 00",
+          "sha1": "21a3c6e0dc7eadd3a26b0a10b68b2f7b7b6993ce"
+        }
+      }
+    },
+    {
+      "index": 2,
+      "off": 1352928,
+      "regs": {
+        "x0": 485440705696,
+        "x1": 496457569240,
+        "x2": 10,
+        "x3": 16,
+        "x4": 485531282700,
+        "x5": 499410296378,
+        "x8": 1,
+        "lr": 485530019004,
+        "sp": 485440705264
+      },
+      "clocks": {
+        "REALTIME": {
+          "clock": "REALTIME",
+          "rc": 0,
+          "sec": 1788183916,
+          "nsec": 775716923,
+          "nanos": 1788183916775716923,
+          "millis": 1788183916775
+        },
+        "MONOTONIC": {
+          "clock": "MONOTONIC",
+          "rc": 0,
+          "sec": 218662,
+          "nsec": 445170936,
+          "nanos": 218662445170936,
+          "millis": 218662445
+        },
+        "BOOTTIME": {
+          "clock": "BOOTTIME",
+          "rc": 0,
+          "sec": 218662,
+          "nsec": 503705645,
+          "nanos": 218662503705645,
+          "millis": 218662503
+        }
+      },
+      "inputs": {
+        "x_ss_stub": {
+          "mem": {
+            "p": 496457567696,
+            "mem_len": 32,
+            "src_len": 16,
+            "body": 496457568128,
+            "sane": true
+          },
+          "body": {
+            "len": 16,
+            "dump": 16,
+            "fnv1a": "69691905",
+            "ascii": "................"
+          },
+          "body_hex": "00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00"
+        },
+        "url_or_path": {
+          "mem": {
+            "p": 485440705488,
+            "mem_len": 1024,
+            "src_len": 787,
+            "body": 495652783360,
+            "sane": true
+          },
+          "body": {
+            "len": 787,
+            "dump": 787,
+            "fnv1a": "e054a7ea",
+            "ascii": "klink_egdi=AAIquJZZoZ2VNo6Bem7kHF5vqtqxbSgzDrv5k1Y1tWtLGkMr0Dr4-duM&iid=3313280560987770&device_id=4087336283154583&ac=wifi&channel=vivo_1128_64&aid=1128&app_name=aweme&version_code=350100&version_name=35.1.0&device_platform=android&os=android&ssmix=a&device_type=Pixel+6&device_brand=google&language=zh&os_api=35&os_version=15&manifest_version_code=350101&resolution=1080*2209&dpi=420&update_version_code=35109900&_rticket=1788183914576&package=com.ss.android.ugc.aweme&mcc_mnc=46000&first_launch_timestamp=1788084050&last_deeplink_update_version_code=0&cpu_support64=true&host_abi=arm64-v8a&is_guest_mode=0&app_type=normal&minor_status=0&appTheme=light&is_preinstall=0&need_personal_recommend=1&is_android_pad=0&is_android_fold=0&ts=1788183914&cdid=99f93d80-81b5-4d3e-bff0-19c28ac94e23"
+          }
+        },
+        "aux_ref_mem": {
+          "mem": {
+            "p": 496457565680,
+            "mem_len": 9,
+            "src_len": 8,
+            "body": 499410281616,
+            "sane": true
+          },
+          "body": {
+            "len": 8,
+            "dump": 8,
+            "fnv1a": "9be17165",
+            "ascii": "........"
+          },
+          "body_hex": "00 00 00 00 00 00 00 00"
+        },
+        "token_block": {
+          "mem": {
+            "p": 485440705408,
+            "mem_len": 32,
+            "src_len": 25,
+            "body": 496457567072,
+            "sane": true
+          },
+          "body": {
+            "len": 25,
+            "dump": 25,
+            "fnv1a": "49e75132",
+            "ascii": "AZ-bfveVPeFr5Ac_8CQdogyUs"
+          },
+          "body_hex": "41 5a 2d 62 66 76 65 56 50 65 46 72 35 41 63 5f 38 43 51 64 6f 67 79 55 73"
+        }
+      },
+      "env": {
+        "Process.id": 13556,
+        "Process.tid": 13710,
+        "getpid": 13556,
+        "gettid": 13710,
+        "syscall_gettid": 13710,
+        "getppid": 863,
+        "uid": 10280,
+        "euid": 10280
+      },
+      "pack": {
+        "ptr": 485440705696,
+        "seed": 1788183917,
+        "type": 369,
+        "mode": 0,
+        "final": 1,
+        "out_key_ptr_ptr": 485440705480,
+        "out_value_ptr_ptr": 485440705472,
+        "qwords": {
+          "+0x0": 1788183917,
+          "+0x8": 493773368528,
+          "+0x10": 496457567696,
+          "+0x18": 485440705488,
+          "+0x20": 496457565680,
+          "+0x28": 485440705408,
+          "+0x30": 0,
+          "+0x38": 0,
+          "+0x40": 485331304817,
+          "+0x48": 485440705480,
+          "+0x50": 485440705472,
+          "+0x58": 4294967296,
+          "+0x60": 485531167472
+        },
+        "raw70": {
+          "fnv1a": "16f26f52",
+          "hex": "6d 85 95 6a 00 00 00 00 d0 ac 2f f7 72 00 00 00 d0 4d 2d 97 73 00 00 00 d0 53 85 06 71 00 00 00 f0 45 2d 97 73 00 00 00 80 53 85 06 71 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 71 01 00 00 71 00 00 00 c8 53 85 06 71 00 00 00 c0 53 85 06 71 00 00 00 00 00 00 00 01 00 00 00 f0 aa e9 0b 71 00 00 00 0a 00 00 00 09 00 00 00",
+          "sha1": "6ca1554ddeeda70c713bd165ee3dfdbd0d492020"
+        }
+      }
+    }
+  ],
+  "xmedusa_events": [
+    {
+      "index": 1,
+      "off": 1353020,
+      "regs": {
+        "x0": 495115052816,
+        "x1": 496457573504,
+        "x2": 496457572880,
+        "x3": 495652975248,
+        "x4": 495652966501,
+        "x5": 495652975333,
+        "x8": 0,
+        "lr": 485530019120,
+        "sp": 485440705264
+      },
+      "clocks": {
+        "REALTIME": {
+          "clock": "REALTIME",
+          "rc": 0,
+          "sec": 1788183915,
+          "nsec": 887609542,
+          "nanos": 1788183915887609542,
+          "millis": 1788183915887
+        },
+        "MONOTONIC": {
+          "clock": "MONOTONIC",
+          "rc": 0,
+          "sec": 218661,
+          "nsec": 557212643,
+          "nanos": 218661557212643,
+          "millis": 218661557
+        },
+        "BOOTTIME": {
+          "clock": "BOOTTIME",
+          "rc": 0,
+          "sec": 218661,
+          "nsec": 612892249,
+          "nanos": 218661612892249,
+          "millis": 218661612
+        }
+      },
+      "lastF8": {
+        "pack": {
+          "ptr": 485440705696,
+          "seed": 1788183916,
+          "type": 369,
+          "mode": 0,
+          "final": 1,
+          "out_key_ptr_ptr": 485440705480,
+          "out_value_ptr_ptr": 485440705472
+        },
+        "out_key": "X-Medusa",
+        "out_value": {
+          "base64_len": 980,
+          "base64": "aYWVakHO2qAl8JgpUzA7Rk7oWTxSrwABL3WLIFMRgVYLWJpHsXPIRyG2AQEzp6UV/wDUTazuwQznaTTiWxKG07MLsCbtCKs+3fQATyQWAvIXnbyFz4DuD5Vc6R74y1fpRC8rPvWRApo2Y5+dtaX2nhmn4jU9Puc0nWVJFeH7K5Fx+mC9Tp/ENG91VQd0VXTfJD++5BsWlcs2iO3KJ5UUU2+XaboQj/TlWE3m2Xai2i5tXt11NK0YBEMJZk63mZXiaHwjgCMfz/8LWl7+J0uhzemlDZ6WUwIpQd9zvIaIfrAoKKNCgYk8+yu57V/5XQtLdxgMU5YeG9hlHi604Z7py5Ro4k8lD9wLrqhcU199Uqh0zqRjpMVwC24G9S/8AdVuuZ+DMu2D/dk2EV1n0CMGFiOOfHP3x43C8wK1cpuw8X37rjIdWZ6iYdjAIMCu8pPGgAqOyLNcBWcrJk6uwEs6bW1h3ebqWqmSTyS2TSZ5c2vJL4RF2AeeiR5gl+V4KxOqz6CqFk6b8LC6loq+1KoTk32ASqmM/HxeEfCc6PFmqX9A6h8Sh5axpq8EfwrFkfZ/mtukzXgPQ1sTBQjnn8cfHgrA7kMYM5+6olJ38cDy9SD11l9Unm1LttAAiEAuJKWA0+bMCBnd25LSGPiCH/zYNc27ofEuor1fXa26BNZY6zPvbw14aPVW8cMQQ+s3+P0t40K6e6KBEf0PoO9uqfJktrH8uDhhjV1EEGMhbvqzeP7I36m7eOWOd4H6e4HN9q4j9qA5AV6iU8uL4KC4/HkL6Bn70T4WQcRHRbg/HaBOM01QcMprtmfoJchhCHqxjaxgUJX15xf+1YWOw2OYze+O379dfW/rlCO3O4jCmZKPXKcC7M9dif7oi5NrGgHEUB5aQ1Q0+fWMjSrb1jDQLkjYROWqcCQ1a+KbywWtzAAGyEHvQWIQJv78fsXP1EMDvygWA1VvvGqA//yvgP/8r2oW",
+          "decoded": {
+            "len": 735,
+            "sha1": "cd33f951ca0c4704ce2e7455ba641a5e2f251395",
+            "sha256": "0717297afa7e0767dad1a8f3c7ea05a963aa19a74ba0fdc80c6790dce62f600b",
+            "fnv1a": "28135d76",
+            "b18": 47,
+            "first64_hex": "69 85 95 6a 41 ce da a0 25 f0 98 29 53 30 3b 46 4e e8 59 3c 52 af 00 01 2f 75 8b 20 53 11 81 56 0b 58 9a 47 b1 73 c8 47 21 b6 01 01 33 a7 a5 15 ff 00 d4 4d ac ee c1 0c e7 69 34 e2 5b 12 86 d3"
+          }
+        }
+      },
+      "emit": {
+        "key": "X-Medusa",
+        "value": {
+          "base64_len": 980,
+          "base64": "aYWVakHO2qAl8JgpUzA7Rk7oWTxSrwABL3WLIFMRgVYLWJpHsXPIRyG2AQEzp6UV/wDUTazuwQznaTTiWxKG07MLsCbtCKs+3fQATyQWAvIXnbyFz4DuD5Vc6R74y1fpRC8rPvWRApo2Y5+dtaX2nhmn4jU9Puc0nWVJFeH7K5Fx+mC9Tp/ENG91VQd0VXTfJD++5BsWlcs2iO3KJ5UUU2+XaboQj/TlWE3m2Xai2i5tXt11NK0YBEMJZk63mZXiaHwjgCMfz/8LWl7+J0uhzemlDZ6WUwIpQd9zvIaIfrAoKKNCgYk8+yu57V/5XQtLdxgMU5YeG9hlHi604Z7py5Ro4k8lD9wLrqhcU199Uqh0zqRjpMVwC24G9S/8AdVuuZ+DMu2D/dk2EV1n0CMGFiOOfHP3x43C8wK1cpuw8X37rjIdWZ6iYdjAIMCu8pPGgAqOyLNcBWcrJk6uwEs6bW1h3ebqWqmSTyS2TSZ5c2vJL4RF2AeeiR5gl+V4KxOqz6CqFk6b8LC6loq+1KoTk32ASqmM/HxeEfCc6PFmqX9A6h8Sh5axpq8EfwrFkfZ/mtukzXgPQ1sTBQjnn8cfHgrA7kMYM5+6olJ38cDy9SD11l9Unm1LttAAiEAuJKWA0+bMCBnd25LSGPiCH/zYNc27ofEuor1fXa26BNZY6zPvbw14aPVW8cMQQ+s3+P0t40K6e6KBEf0PoO9uqfJktrH8uDhhjV1EEGMhbvqzeP7I36m7eOWOd4H6e4HN9q4j9qA5AV6iU8uL4KC4/HkL6Bn70T4WQcRHRbg/HaBOM01QcMprtmfoJchhCHqxjaxgUJX15xf+1YWOw2OYze+O379dfW/rlCO3O4jCmZKPXKcC7M9dif7oi5NrGgHEUB5aQ1Q0+fWMjSrb1jDQLkjYROWqcCQ1a+KbywWtzAAGyEHvQWIQJv78fsXP1EMDvygWA1VvvGqA//yvgP/8r2oW",
+          "decoded": {
+            "len": 735,
+            "sha1": "cd33f951ca0c4704ce2e7455ba641a5e2f251395",
+            "sha256": "0717297afa7e0767dad1a8f3c7ea05a963aa19a74ba0fdc80c6790dce62f600b",
+            "fnv1a": "28135d76",
+            "b18": 47,
+            "first64_hex": "69 85 95 6a 41 ce da a0 25 f0 98 29 53 30 3b 46 4e e8 59 3c 52 af 00 01 2f 75 8b 20 53 11 81 56 0b 58 9a 47 b1 73 c8 47 21 b6 01 01 33 a7 a5 15 ff 00 d4 4d ac ee c1 0c e7 69 34 e2 5b 12 86 d3"
+          }
+        }
+      },
+      "env": {
+        "Process.id": 13556,
+        "Process.tid": 13710,
+        "getpid": 13556,
+        "gettid": 13710,
+        "syscall_gettid": 13710,
+        "getppid": 863,
+        "uid": 10280,
+        "euid": 10280
+      }
+    },
+    {
+      "index": 2,
+      "off": 1353020,
+      "regs": {
+        "x0": 495116578832,
+        "x1": 496457564240,
+        "x2": 496457564720,
+        "x3": 495652774320,
+        "x4": 495652777725,
+        "x5": 495652774413,
+        "x8": 0,
+        "lr": 485530019120,
+        "sp": 485440705264
+      },
+      "clocks": {
+        "REALTIME": {
+          "clock": "REALTIME",
+          "rc": 0,
+          "sec": 1788183917,
+          "nsec": 392120122,
+          "nanos": 1788183917392120122,
+          "millis": 1788183917392
+        },
+        "MONOTONIC": {
+          "clock": "MONOTONIC",
+          "rc": 0,
+          "sec": 218663,
+          "nsec": 84431557,
+          "nanos": 218663084431557,
+          "millis": 218663084
+        },
+        "BOOTTIME": {
+          "clock": "BOOTTIME",
+          "rc": 0,
+          "sec": 218663,
+          "nsec": 157807655,
+          "nanos": 218663157807655,
+          "millis": 218663157
+        }
+      },
+      "lastF8": {
+        "pack": {
+          "ptr": 485440705696,
+          "seed": 1788183917,
+          "type": 369,
+          "mode": 0,
+          "final": 1,
+          "out_key_ptr_ptr": 485440705480,
+          "out_value_ptr_ptr": 485440705472
+        },
+        "out_key": "X-Medusa",
+        "out_value": {
+          "base64_len": 988,
+          "base64": "aIWVakDO2qAk8JgpUjA7Rk/oWTwxPQABgXUb9yNMAUIFGPlNIYdow6iYF9/KsCsPNEGHJdW/Z7hwehK8E7Hkpa3bsOQxQMqTJZDK7mmvx45Ah7cKZlYeslJJGTKJdGQ5qHMl9HVPMzRyupDlJ7t7LgTdvC8d2x5Oy9/pECtcpjrEc8u+M2mo4TkLPtSLRd36ouyuxAHa/lEvkArKJ5DzThkVV2eXvtzgx2UfbHC3RGvtdk/8cO6pfl20cn/5qj1Q6UWUOJ5qOGM8Mt8Tu9pernhFi+e7rZmeVidwWrQT6pV+gOnoyGr1LpkyZlPQy3uWy0590sE1uQpmzY8U/xoAIj/I3Dfk+nVgRaMKnAv6lhYGxobuApX7h/VqnMAAdQV3951e9GzJ65w4QsAiSRC5WnoNJDlnY8h0LzgrExqVdRU+gwcRIt/fg2KDj3gZ72HBxFK/8eXJjAodj143FPKVvkllgFNIxD/XZw4wPh1vzQOKPmI95ix2ON/6s4ZhrNtBXkH2Hux2igdfi1MZjocXRhNDP8NErjZAkbWloFxA0ooIoHXmL4ZGq4TM6+1fMNexlUr+IT/CPWvIX6AN0gFJpmf4e56iFTs13gfNfSjnSrB/NwQ72K40EN45J09jfzMDowjJrs9x23Z7316L+XopU2OD9zzbjg+5lCVa4vc/99UhS3y10ZWCNTUOU+7fiOmVRMNI+uyKX04OkqrFD1YoNz2MsQOjeETvQJ6OaL6fsgKXZ41YWbvClS7lneZmSDUpgdIAqZma8lOo7ZhgbLHXetR6WEmxOVLolhO9yiq/IeSKt5EXB/1wc2k8ivUBeFQ70p84cuVflzKUAp4XUuyfFFZqzPBVaM25ogev9tITCux03yeU2Tx/qvnLogrUqVIJidNKbV+Ok7DT9TO8YuaVY/UP8MRoL1S4QGvabI2dkL0tpmWFbfQwX9fYt753dwL9iVPG3XJo2kwVav/7L2r/+y+aCw==",
+          "decoded": {
+            "len": 739,
+            "sha1": "c34311ada7870c8a82749c69de42051614b899b6",
+            "sha256": "fefaee22a57037a8b31ba91f16b2b016eeb7bd93d2ba6127df7bdfd58cbfdca8",
+            "fnv1a": "2f503ac5",
+            "b18": 129,
+            "first64_hex": "68 85 95 6a 40 ce da a0 24 f0 98 29 52 30 3b 46 4f e8 59 3c 31 3d 00 01 81 75 1b f7 23 4c 01 42 05 18 f9 4d 21 87 68 c3 a8 98 17 df ca b0 2b 0f 34 41 87 25 d5 bf 67 b8 70 7a 12 bc 13 b1 e4 a5"
+          }
+        }
+      },
+      "emit": {
+        "key": "X-Medusa",
+        "value": {
+          "base64_len": 988,
+          "base64": "aIWVakDO2qAk8JgpUjA7Rk/oWTwxPQABgXUb9yNMAUIFGPlNIYdow6iYF9/KsCsPNEGHJdW/Z7hwehK8E7Hkpa3bsOQxQMqTJZDK7mmvx45Ah7cKZlYeslJJGTKJdGQ5qHMl9HVPMzRyupDlJ7t7LgTdvC8d2x5Oy9/pECtcpjrEc8u+M2mo4TkLPtSLRd36ouyuxAHa/lEvkArKJ5DzThkVV2eXvtzgx2UfbHC3RGvtdk/8cO6pfl20cn/5qj1Q6UWUOJ5qOGM8Mt8Tu9pernhFi+e7rZmeVidwWrQT6pV+gOnoyGr1LpkyZlPQy3uWy0590sE1uQpmzY8U/xoAIj/I3Dfk+nVgRaMKnAv6lhYGxobuApX7h/VqnMAAdQV3951e9GzJ65w4QsAiSRC5WnoNJDlnY8h0LzgrExqVdRU+gwcRIt/fg2KDj3gZ72HBxFK/8eXJjAodj143FPKVvkllgFNIxD/XZw4wPh1vzQOKPmI95ix2ON/6s4ZhrNtBXkH2Hux2igdfi1MZjocXRhNDP8NErjZAkbWloFxA0ooIoHXmL4ZGq4TM6+1fMNexlUr+IT/CPWvIX6AN0gFJpmf4e56iFTs13gfNfSjnSrB/NwQ72K40EN45J09jfzMDowjJrs9x23Z7316L+XopU2OD9zzbjg+5lCVa4vc/99UhS3y10ZWCNTUOU+7fiOmVRMNI+uyKX04OkqrFD1YoNz2MsQOjeETvQJ6OaL6fsgKXZ41YWbvClS7lneZmSDUpgdIAqZma8lOo7ZhgbLHXetR6WEmxOVLolhO9yiq/IeSKt5EXB/1wc2k8ivUBeFQ70p84cuVflzKUAp4XUuyfFFZqzPBVaM25ogev9tITCux03yeU2Tx/qvnLogrUqVIJidNKbV+Ok7DT9TO8YuaVY/UP8MRoL1S4QGvabI2dkL0tpmWFbfQwX9fYt753dwL9iVPG3XJo2kwVav/7L2r/+y+aCw==",
+          "decoded": {
+            "len": 739,
+            "sha1": "c34311ada7870c8a82749c69de42051614b899b6",
+            "sha256": "fefaee22a57037a8b31ba91f16b2b016eeb7bd93d2ba6127df7bdfd58cbfdca8",
+            "fnv1a": "2f503ac5",
+            "b18": 129,
+            "first64_hex": "68 85 95 6a 40 ce da a0 24 f0 98 29 52 30 3b 46 4f e8 59 3c 31 3d 00 01 81 75 1b f7 23 4c 01 42 05 18 f9 4d 21 87 68 c3 a8 98 17 df ca b0 2b 0f 34 41 87 25 d5 bf 67 b8 70 7a 12 bc 13 b1 e4 a5"
+          }
+        }
+      },
+      "env": {
+        "Process.id": 13556,
+        "Process.tid": 13710,
+        "getpid": 13556,
+        "gettid": 13710,
+        "syscall_gettid": 13710,
+        "getppid": 863,
+        "uid": 10280,
+        "euid": 10280
+      }
+    }
+  ],
+  "getrandom_events": [
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "3d e3 a8 73 7b c4 e1 6e 39 27 10 c6 f0 19 91 17",
+      "fnv1a": "13014b99"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "4a 99 86 5d a2 73 c4 de 83 16 d4 b9 7c 1d 50 64",
+      "fnv1a": "427e6505"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "44 de 12 4e 8f 37 9f 6a f5 b2 c1 11 71 ba 6b 0c",
+      "fnv1a": "621e8ba9"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "a0 c5 8b 87 05 ed 5e cc 6e 34 0d bc 3b 5d 30 a6",
+      "fnv1a": "38995f1d"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "79 a6 86 ca 20 54 38 90 e0 c6 70 90 74 c9 74 e3",
+      "fnv1a": "cf5c29c6"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "23 47 14 5a 0d f2 b7 b7 64 5a df f9 71 31 84 d5",
+      "fnv1a": "b553cf33"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "94 34 75 50 52 32 3c 3c 5b 8d 40 48 51 85 72 42",
+      "fnv1a": "edaa05ce"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "69 25 dd 6c 58 0a 42 38 9d 70 d7 d0 18 34 87 c1",
+      "fnv1a": "93c15ecc"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "2a 71 97 c0 8a e0 a3 ad 16 b5 d3 19 1d c4 cb 4b",
+      "fnv1a": "64ab1cbf"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "d7 ea 03 e2 c4 8c d6 c4 ea 2c b5 71 82 d6 84 69",
+      "fnv1a": "32439404"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "8b 76 61 04 dc 81 cc 40 ca 3b fc 20 2f 3a 77 33",
+      "fnv1a": "f5adab62"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "8e 8e 66 12 7c 85 96 7f e1 3d 4b 80 4e 2f 2f 2a",
+      "fnv1a": "e6834566"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "20 2b ff bf 0d 7e 1f bf 32 91 cc bf 79 e7 29 96",
+      "fnv1a": "d7d2aa94"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "38 63 7c 4f 44 f0 e4 c1 c8 f4 ee 00 a0 a1 e1 09",
+      "fnv1a": "0ddf9e85"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "a8 ec af 67 6c f4 16 31 8a 36 9f dd 29 d3 83 c4",
+      "fnv1a": "ae8cec99"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "89 2e 7b b4 62 86 3b 6a f0 b6 55 a7 aa ed 69 0b",
+      "fnv1a": "f54dc8ff"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "13 46 d0 b8 53 d5 19 44 09 1f e0 83 3a 4f 43 04",
+      "fnv1a": "00726594"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "e5 56 c5 05 a6 b4 b4 97 3c 27 d2 ec 67 b2 93 83",
+      "fnv1a": "871cc5f7"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "0f 43 e3 6b 7a 32 40 1f dd 1f 66 7f ac cc 51 75",
+      "fnv1a": "01cb4ee5"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "2a 8a b7 34 61 44 b6 ac 05 4e 79 54 41 17 d6 5d",
+      "fnv1a": "01759d46"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "f4 5c b2 cd 76 36 e1 c9 d1 3e cf 70 55 e6 7e 9c",
+      "fnv1a": "6eca518b"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "46 8a f9 23 2e 28 1d 46 a5 54 48 29 ae 1e 06 16",
+      "fnv1a": "6595f8d6"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "ce 91 dd e8 a7 4d c8 de eb 81 81 7b 3c 3f 00 0e",
+      "fnv1a": "d6a9c954"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "93 36 a2 24 1b 7c 39 cf 1f 31 ba 88 97 93 14 c1",
+      "fnv1a": "b98df39e"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "fb ec f6 76 43 e9 a1 a7 e8 d3 dd 12 37 2c 94 56",
+      "fnv1a": "7b3732a5"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "6a db 29 d9 a2 53 b4 96 56 6f 82 5a 19 ea b8 48",
+      "fnv1a": "09379a4d"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "0a d8 ff 06 1c a5 42 b2 94 9a fa 02 eb 51 5b 37",
+      "fnv1a": "33633ead"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "ea 23 57 8a 7a d3 06 01 f5 01 93 a9 a6 fe dc b7",
+      "fnv1a": "f298c87e"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "19 45 00 91 79 95 8c 29 4e aa b9 99 a5 6d 0d 70",
+      "fnv1a": "3ba8cef4"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "35 2a d7 5f 52 e3 1c f3 1a 6c 7c c7 c4 a5 37 63",
+      "fnv1a": "4d62b414"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "f9 dc bd 42 ec e6 20 ef 8b a5 9d 02 1a b1 fc 64",
+      "fnv1a": "bafd7086"
+    },
+    {
+      "ret": 16,
+      "requested": 16,
+      "first_hex": "ad 76 c2 12 6d 43 af 7c e3 79 c0 6a 98 e9 ee 91",
+      "fnv1a": "fc5699b9"
+    }
+  ],
+  "extracted_files": [
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_pack_raw70_event_01.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_x_ss_stub_event_01.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_url_or_path_event_01.txt",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_aux_ref_mem_event_01.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_token_block_event_01.txt",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_token_block_event_01.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_lastF8_event_01.b64",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_lastF8_event_01.raw.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_emit_event_01.b64",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_emit_event_01.raw.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_pack_raw70_event_02.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_x_ss_stub_event_02.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_url_or_path_event_02.txt",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_aux_ref_mem_event_02.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_token_block_event_02.txt",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/f8_token_block_event_02.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_lastF8_event_02.b64",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_lastF8_event_02.raw.bin",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_emit_event_02.b64",
+    "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/xmedusa_emit_event_02.raw.bin"
+  ],
+  "counts": {
+    "http_entries": 2,
+    "f8_entries": 2,
+    "xmedusa_events": 2,
+    "getrandom_events": 32
+  },
+  "unidbg_suggested_fixed_env_from_f8_event_1": {
+    "fixedCurrentTimeMillis": 1788183915398,
+    "fixedElapsedRealtime": 218661108,
+    "fixedElapsedRealtimeNanos": 218661108386512,
+    "fixedMonotonicNanos": 218661059672197,
+    "fixedPid": 13556,
+    "fixedTid": 13710,
+    "fixedSeed": 1788183916
+  }
+}

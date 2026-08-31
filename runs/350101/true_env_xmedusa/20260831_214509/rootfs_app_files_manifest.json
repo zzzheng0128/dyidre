@@ -1,0 +1,139 @@
+{
+  "rootfs": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_trueenv_20260831_214509",
+  "appfiles": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_trueenv_20260831_214509/data/user/0/com.ss.android.ugc.aweme/files",
+  "file_count": 22,
+  "files": [
+    {
+      "path": ".mc_imp",
+      "size": 964,
+      "sha1": "27e37ddd2d9880be8f3a7a83a9993f371239195b",
+      "sha256": "e6b5a070136b7fd1ddf3a5ec6a51fb5495427297fc009e29bd1b98fb9d3d356b"
+    },
+    {
+      "path": ".msdata/.ms",
+      "size": 0,
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msf3_18942e0a8835406640db421a854dc5eeb5cb2026",
+      "size": 40,
+      "sha1": "33878766a24283fa8b95a3f1cfec6169fd8daa00",
+      "sha256": "a9b5e30061192ab052d7d7c727ebd40deb374f1073d44cbd010757b076d8bf76"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msf3_2d380627968775a593c3e8b8d72b10a47c3cddbe",
+      "size": 116,
+      "sha1": "8afe6ed27381ebcb4fb1a9188bfe23575e258ec8",
+      "sha256": "10ec99fa88356e0ca8d2b41f35c7d81fbc0848026e9c74103f94d424c449f62a"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msf3_6fcd8907538d237434167eb88c22ce2492e97161",
+      "size": 8,
+      "sha1": "99acf3463520829ae1846d15a57759d59a958824",
+      "sha256": "53ea40519f306ee8b03b41e6c510d917adcb384972f338d581fb5f956a8a023a"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msf3_a2c1fbad8731da75423eb57599985db945e7c6da",
+      "size": 12,
+      "sha1": "2ec596e6aa7a53cdcf51b71ff979075da4c8a649",
+      "sha256": "783f15dc3807cc478788f5c9b8058dacd0c0054f7c7333ba5ba10124d0f70e7d"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msf3_dbbb89b204134a1cfdf05fa9b4a681c06052ae21",
+      "size": 16,
+      "sha1": "cf0f024b886a8f47a5fb701532438672af4a6725",
+      "sha256": "348afe48601cd80c680bb507198ab12cf45211f49f13afeca1a24b6b7f67123d"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msf3_e091743a88dfbc4b61028d6ef838de143f278c61",
+      "size": 168,
+      "sha1": "1fdcdf2ee87187f585fea01d6ae123976e6067ed",
+      "sha256": "02c5107ebe2daf0b09d60a6f502adbdbcf76c472524e85309fc73e3f108f09a1"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msf3_fce7d408bfb0e915d002539a7abd511a745391bb",
+      "size": 8,
+      "sha1": "c20dfc96c7973b1954b19bca86636bda92c5db8c",
+      "sha256": "ae2b21339b99fe31caeace4a388620c8141e2f11ab8970a4c1728b1d06f35162"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msfs_a27c9590f849a233578fe59080a95524e510f402",
+      "size": 53,
+      "sha1": "1e9926aeeedd194fef764d243d9f56690523206c",
+      "sha256": "95198556458dba7d72e661e819d12f9089d2d816e84249bad210d44a908ad894"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd",
+      "size": 317,
+      "sha1": "fe8a33e8369406df4434099f052b1fffe82efd84",
+      "sha256": "0edefcfa363454f172b3c8ef31f9b037911aa8c7c1f8a8d0f93c6627eb90d6fa"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811",
+      "size": 118,
+      "sha1": "82590482691b5b48ac635f25403ce01910d4f59f",
+      "sha256": "a63edce8875861339f433e4f205befd7f20aa013807a2565b19ca3414ce8481e"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.mss_2fc7f1452374b6e341d67717f032abbe0da0f4a6",
+      "size": 71,
+      "sha1": "37f52ed17addc3fd030c607b54d04cdbb3544020",
+      "sha256": "2c098890f13b1d2d6b98a8f05f5df57e82de6743b7fabd25e1aa2660f1f18b33"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.mss_442656d8b09bcb0a6e6ee93f4b7b1e09ea93796b",
+      "size": 177951,
+      "sha1": "ecb12a4c89084f25ab68866dd3c572c5d273f26a",
+      "sha256": "9a6adb5d115b1f61cd281e9f1ab3df82b4eca227ea30ab4f517b40fda250df5c"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.mss_64750e04a9a148327d6c1be46d348587266888df",
+      "size": 464,
+      "sha1": "ce34b66c34e0025e0c7fdf7fe9e966ba41d24d3a",
+      "sha256": "249e7e4516c7d946f02aaa72652991f1642a824cb37601eda57364f11a3a5d7d"
+    },
+    {
+      "path": ".msdata/mssdk/ml/.mss_9b8ed9956d7e60469912dd239a0251f93cd1e80d",
+      "size": 741,
+      "sha1": "616676174e0cb802e1f15957496e9c8621b92d7d",
+      "sha256": "c567799c4dc0153eb2d301391d1e9ba7249a58d2932d711291ea729b92f51a4d"
+    },
+    {
+      "path": "hostcache_sync_v1",
+      "size": 3251,
+      "sha1": "c1602080ed4223891c502ab74757ea2455d7444b",
+      "sha256": "1b1e68a80f51a3aff4b3887cfa18c263002dc9ba92aee57cb5def6249ffa6cd6"
+    },
+    {
+      "path": "hostcache_v1",
+      "size": 9050,
+      "sha1": "5a0ffbe0141cb7f99af75000366486a237203f0e",
+      "sha256": "1803f47d74782f8a05e511fb3bcf7ba76ae85834098e0220b784b2d370fc5c17"
+    },
+    {
+      "path": "sdk_com.ss.android.ugc.aweme:smp_seq_num.txt",
+      "size": 8,
+      "sha1": "5a64fcd72ca371f93220b8154c07a77506940db6",
+      "sha256": "1b8d0103e3a8d9ce8bda3bff71225be4b5bb18830466ae94f517321b7ecc6f94"
+    },
+    {
+      "path": "sdk_com.ss.android.ugc.aweme_seq_num.txt",
+      "size": 8,
+      "sha1": "970b474a52ae0f35b3ca031670bfeff762df563e",
+      "sha256": "aa2c9c9d7bebc4b1665647aaaf6b028742ba8fabfcd5636643ec69849dac3054"
+    },
+    {
+      "path": "server.json",
+      "size": 454134,
+      "sha1": "bd92951bb08678ac27bd0512f299a49f74299bd2",
+      "sha256": "f5c6df0935c8e171a21a4f3ed8d1f6c385e07f776628d60ff6cd71f932bfa314"
+    },
+    {
+      "path": "tt_net_config.config",
+      "size": 517,
+      "sha1": "5b349448096e34c10d6dc7fa883b18f8c24938d3",
+      "sha256": "4367530c9ae1e5688585d606dde597b4810cea3e871b67e2e88f088a448157ae"
+    }
+  ]
+}

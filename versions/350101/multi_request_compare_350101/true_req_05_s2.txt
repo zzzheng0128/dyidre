@@ -1,0 +1,24 @@
+cookie
+passport_csrf_token=f4bfca23b3b6372058f0d3e483e75b2f; passport_csrf_token_default=f4bfca23b3b6372058f0d3e483e75b2f; store-region=cn-gd; store-region-src=did; install_id=3313280560987770; ttreq=1$c81461faf57a61acb8a10ed4241b3fda74922320; odin_tt=b2089fd7de963d689e50496e324c9570e5245fbb4147a9529403e4ad3868191b304dc1ec9da07869f2ad5664dabc8a24ac5f029fb7c782ac994492c9d6bee3a4f4075a095109355fced591b55f1019c0
+x-tt-dt
+AAAQURXRMLKBVQ44LOQE4CEHKI72IIAUWE5DVLKVFRFTAPUR5OJNMXV5LN5WRWJGSD3P7W7WJGCLWPGLU2CGSI67UT7JZOQA3CJJ34ET3GF2PK5WM67TITD4TLKFEVBZQKSM5YZ2SJJL42X6WOK3Y6Y
+activity_now_client
+1788149988276
+x-ss-req-ticket
+1788149987496
+x-vc-bdturing-sdk-version
+4.0.1.cn
+x-tt-store-region
+cn-gd
+x-tt-store-region-src
+did
+x-tt-request-tag
+s=0;p=0
+x-ss-dp
+1128
+x-tt-trace-id
+00-560b7ade0de8569233c2897b6d500468-560b7ade0de85692-01
+user-agent
+com.ss.android.ugc.aweme/350101 (Linux; U; Android 15; zh_CN_#Hans; Pixel 6; Build/BP1A.250305.019; Cronet/TTNetVersion:c8d69725 2025-06-17 QuicVersion:af615fde 2025-06-13)
+accept-encoding
+gzip, deflate, br

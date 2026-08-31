@@ -1,0 +1,10 @@
+08-30 17:55:36.411 28296  1521 F libc    : Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 1521 (InstallPlugin-5), pid 28296 (droid.ugc.aweme)
+08-30 17:55:37.197  1564  1564 F DEBUG   : Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+08-30 17:55:37.197  1564  1564 F DEBUG   : Cmdline: com.ss.android.ugc.aweme
+08-30 17:55:37.197  1564  1564 F DEBUG   : pid: 28296, tid: 1521, name: InstallPlugin-5  >>> com.ss.android.ugc.aweme <<<
+08-30 17:55:37.197  1564  1564 F DEBUG   : signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000000
+08-30 17:55:37.197  1564  1564 F DEBUG   : Cause: null pointer dereference
+08-30 17:55:37.197  1564  1564 F DEBUG   : backtrace:
+08-30 17:55:37.197  1564  1564 F DEBUG   :       #00 pc 0000000000000000  <unknown>
+08-30 17:55:37.417   863   863 I Zygote  : Process 28296 exited due to signal 11 (Segmentation fault)
+08-30 17:55:37.439  1715  1818 W ActivityManager: setHasOverlayUi called on unknown pid: 28296

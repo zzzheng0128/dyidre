@@ -1,0 +1,5 @@
+rpc mode, listen path:127.0.0.1:41718
+Server waiting for client...
+Client connected.
+Received message: {"brk_pid":29967,"brk_len":4,"brk_type":"x","brk_addr":"0x7102b70b44"}
+resp -> {"status":"ok","msg":"register breakpoint success"}

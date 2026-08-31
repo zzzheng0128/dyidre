@@ -1,0 +1,384 @@
+
+ ╔══════════════════════════════════════╗
+ ║        rustFrida v0.1.0             ║
+ ║    ARM64 Dynamic Instrumentation    ║
+ ╚══════════════════════════════════════╝
+
+[*] Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[*] 正在修补 SELinux 策略...
+[*] 找到 1 个新 zygote 进程
+[→] 正在注入 zymbiote 到 zygote64 (pid=863)...
+[✓] Zymbiote 注入成功: zygote64 (pid=863)
+[*] 正在启动应用 com.ss.android.ugc.aweme...
+[*] 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[✓] 收到 spawn hello: pid=5457, ppid=863, package=com.ss.android.ugc.aweme
+[*] 正在向子进程 5457 注入 agent...
+[*] 正在附加到进程 PID: 5457 (Frida-style bootstrapper)
+[✓] 成功附加到进程 5491，等待 SIGSTOP...
+[✓] 进程已停止，可以操作寄存器
+[✓] bootstrapper 完成: libc API 已解析
+[✓] 已分离目标进程
+[✓] Loader: agent 加载成功
+[*] 等待 agent 连接... (最长 10s)
+[✓] Agent 已连接
+[*] 子进程暂停中，准备加载脚本
+[*] 加载脚本: /data/local/tmp/metasec_jnitrace_newstring_only_wxshadow.js
+[*] 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[*] 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[agent] [JS] [metasec-newstring-only] 1788084050105 Java.setStealth(WXSHADOW) ok
+[agent] [JS] [metasec-newstring-only] 1788084050105 hook NewStringUTF @0x72a5af6e98 libart_base=0x72a524a000 stealth=WXSHADOW only
+[agent] [JS] [metasec-newstring-only] 1788084050106 installed
+[→] 正在恢复子进程 5457...
+[✓] 子进程 5457 已恢复运行
+[*] spawn 已恢复，启动 Java worker 作为后续 Java 操作执行线程
+[agent] [java worker] starting
+[agent] [JS] [module] libart.so range: 0x72a524a000-0x72a5e4d000, path: Some("/apex/com.android.art/lib64/libart.so")
+[agent] [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=616
+[agent] [JS] [java worker] helper class loaded
+[agent] [JS] [java worker] nativeLoop registered
+[agent] [JS] [java worker] thread object created
+[agent] [JS] [java worker] calling Thread.start
+[agent] [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[agent] [java worker] ready
+[agent] [JS] [metasec-newstring-only] 1788084050455 0x5d73c NewStringUTF "v04.09.05"
+[agent] [JS] [metasec-newstring-only] 1788084057343 0x12e900 NewStringUTF "{
+	"sdk_aid":	"3019",
+	"device_id":	"4087336283154583",
+	"host_aid":	"1128",
+	"channel":	"",
+	"sdk_version":	"v04.09.05-ml-android",
+	"app_version":	"35.1.0",
+	"update_version_code":	"35.1.0",
+	"package_name":	"com.ss.android.ugc.aweme",
+	"configURLs":	["https...<len=594>"
+[agent] [JS] [metasec-newstring-only] 1788084057347 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057352 0x131b24 REQ#1 cost_ms=4 host=vcs.zijieapi.com path=/vc/setting qs=version_name=35.1.0&version_code=350101&aid=1128 len=192 h=6d2f3d6c
+[agent] [JS] [metasec-newstring-only] 1788084057352 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057354 0x131b24 REQ#2 cost_ms=8 host=api3-normal-c.amemv.com path=/aweme/v1/im/platform/config/global/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084050739&ts=1788084050 len=813 h=d62022c9
+[agent] [JS] [metasec-newstring-only] 1788084057357 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057358 0x131b24 REQ#3 cost_ms=21 host=api3-normal-c.amemv.com path=/aweme/v1/im/conversation/floating_bar/configs qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084050730&ts=1788084050 len=754 h=b3539c80
+[agent] [JS] [metasec-newstring-only] 1788084057360 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057361 0x131b24 REQ#4 cost_ms=8 host=api3-normal-c.amemv.com path=/service/settings/v3/ qs=aid=1128 len=186 h=18c0476e
+[agent] [JS] [metasec-newstring-only] 1788084057361 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057363 0x131b24 REQ#5 cost_ms=24 host=api3-normal-c.amemv.com path=/aweme/growth/get_customs_certs/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084050778&ts=1788084050 len=795 h=7c9e1234
+[agent] [JS] [metasec-newstring-only] 1788084057365 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057366 0x131b24 REQ#6 cost_ms=14 host=api3-normal-c.amemv.com path=/aweme/v1/addiction/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084050913&ts=1788084050 len=767 h=5a08a62d
+[agent] [JS] [metasec-newstring-only] 1788084057366 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057368 0x131b24 REQ#7 cost_ms=10 host=api3-core-c.amemv.com path=/aweme/v2/feed/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084050713&ts=1788084050 len=1864 h=62d365d2
+[agent] [JS] [metasec-newstring-only] 1788084057369 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057381 0x131b24 REQ#8 cost_ms=4 host=security.snssdk.com path=/passport/ticket_guard/get_client_cert/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084050930&ts=1788084050 len=836 h=1cbef631
+[agent] [JS] [metasec-newstring-only] 1788084057383 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057386 0x131b24 REQ#9 cost_ms=12 host=api3-normal-c.amemv.com path=/aweme/v1/im/resources/emoji/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051028&ts=1788084051 len=737 h=47d01a81
+[agent] [JS] [metasec-newstring-only] 1788084057386 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057386 0x131b24 REQ#10 cost_ms=22 host=api3-normal-c.amemv.com path=/service/settings/v3/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051037&ts=1788084051 len=797 h=2f520244
+[agent] [JS] [metasec-newstring-only] 1788084057388 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057397 0x131b24 REQ#11 cost_ms=8 host=api3-normal-c.amemv.com path=/service/settings/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051136&ts=1788084051 len=783 h=db0f8773
+[agent] [JS] [metasec-newstring-only] 1788084057397 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057397 0x131b24 REQ#12 cost_ms=5 host=i.snssdk.com path=/api/neptune/v3/sdk/PackLiveSDK qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051230&ts=1788084051 len=1231 h=d2b93dc3
+[agent] [JS] [metasec-newstring-only] 1788084057398 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057402 0x131b24 REQ#13 cost_ms=2 host=api3-normal-c.amemv.com path=/passport/account/info/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051231&ts=1788084051 len=961 h=1c9f5153
+[agent] [JS] [metasec-newstring-only] 1788084057407 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057411 0x131b24 REQ#14 cost_ms=6 host=webcast.amemv.com path=/webcast/v2/tab/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051267&ts=1788084051 len=1221 h=141ef6e3
+[agent] [JS] [metasec-newstring-only] 1788084057411 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057412 0x131b24 REQ#15 cost_ms=3 host=api3-normal-c.amemv.com path=/tfe/api/request_combine/v1/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051273&ts=1788084051 len=814 h=0db094e5
+[agent] [JS] [metasec-newstring-only] 1788084057413 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057415 0x131b24 REQ#16 cost_ms=4 host=api3-normal-c.amemv.com path=/aweme/homepage/combine/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051319&ts=1788084051 len=750 h=54ce9e54
+[agent] [JS] [metasec-newstring-only] 1788084057429 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057429 0x131b24 REQ#17 cost_ms=5 host=is.snssdk.com path=/service/settings/v3/ qs=aid=1128&version_code=35.1.0&update_version_code=35109900 len=278 h=d0ef3bde
+[agent] [JS] [metasec-newstring-only] 1788084057429 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057430 0x131b24 REQ#18 cost_ms=4 host=tnc3-bjlgy.zijieapi.com path=/get_domains/v5/ qs=aid=1128&version_code=350100&update_version_code=35109900&version_name=35.1.0&manifest_version_code=350101 len=469 h=2eb72dc3
+[agent] [JS] [metasec-newstring-only] 1788084057430 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057431 0x131b24 REQ#19 cost_ms=10 host=api3-core-c.amemv.com path=/aweme/v2/feed/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084051967&ts=1788084052 len=2359 h=842932ef
+[agent] [JS] [metasec-newstring-only] 1788084057436 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057436 0x131b24 REQ#20 cost_ms=3 host=api5-platform-m.amemv.com path=/aweme/homepage/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084052207&ts=1788084052 len=733 h=b702b3d4
+[agent] [JS] [metasec-newstring-only] 1788084057437 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057438 0x131b24 REQ#21 cost_ms=11 host=api5-platform-m.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788084052351&ts=1788084052&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=732 h=0f1e02f6
+[agent] [JS] [metasec-newstring-only] 1788084057439 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057439 0x131b24 REQ#22 cost_ms=5 host=lf3-cdn-tos.douyinstatic.com path=/obj/aweme-server-static-resource/offline_recommend_music_list qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084052818&ts=1788084053 len=795 h=f450fb41
+[agent] [JS] [metasec-newstring-only] 1788084057439 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057440 0x131b24 REQ#23 cost_ms=16 host=api.toutiaoapi.com path=/luckycat/activity/phone_score/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084052869&ts=1788084053 len=946 h=1e53ecfe
+[agent] [JS] [metasec-newstring-only] 1788084057440 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057441 0x131b24 REQ#24 cost_ms=4 host=api5-normal.amemv.com path=/aweme/v1/privacy-policy-statistics/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084052907&ts=1788084053 len=749 h=be4136a3
+[agent] [JS] [metasec-newstring-only] 1788084057441 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057441 0x131b24 REQ#25 cost_ms=15 host=api5-normal.amemv.com path=/aweme/v1/privacy-policy-statistics/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084052899&ts=1788084053 len=749 h=4543f33b
+[agent] [JS] [metasec-newstring-only] 1788084057441 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057442 0x131b24 REQ#26 cost_ms=19 host=klink.amemv.com path=/service/2/device_register/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084056082&ts=1788084055 len=830 h=91e663e7
+[agent] [JS] [metasec-newstring-only] 1788084057459 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057460 0x131b24 REQ#27 cost_ms=17 host=polaris5-normal.zijieapi.com path=/luckycat/crossover/v:version/general_get_time_token/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084055736&ts=1788084055 len=1004 h=569762ba
+[agent] [JS] [metasec-newstring-only] 1788084057475 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057476 0x131b24 REQ#28 cost_ms=12 host=polaris5-normal.zijieapi.com path=/luckycat/activity/settings/get_static_settings/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084055739&ts=1788084055 len=989 h=cb0da9c3
+[agent] [JS] [metasec-newstring-only] 1788084057488 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057490 0x131b24 REQ#29 cost_ms=8 host=polaris5-normal.zijieapi.com path=/luckycat/activity/apply_token/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057245&ts=1788084057 len=1100 h=1677c00c
+[agent] [JS] [metasec-newstring-only] 1788084057506 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057506 0x131b24 REQ#30 cost_ms=8 host=log.snssdk.com path=/service/3/device_sdk/stats_collect/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084055867&ts=1788084055 len=790 h=5e3cc8f0
+[agent] [JS] [metasec-newstring-only] 1788084057512 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057512 REQ_SUMMARY total=31 unique=27 suppressed=1 top=api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=3,api3-normal-c.amemv.com/service/settings/v3/=2,api3-core-c.amemv.com/aweme/v2/feed/=2,vcs.zijieapi.com/vc/setting=1,api3-normal-c.amemv.com/aweme/v1/im/platform/config/global/=1
+[agent] [JS] [metasec-newstring-only] 1788084057517 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057527 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057527 0x131b24 REQ#33 cost_ms=4 host=api5-platform-m.amemv.com path=/aweme/homepage/component/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057488&ts=1788084057 len=986 h=805491a0
+[agent] [JS] [metasec-newstring-only] 1788084057859 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057861 0x131b24 REQ#34 cost_ms=3 host=polaris5-normal-hl.zijieapi.com path=/luckycat/crossover/v:version/ack_install/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057815&ts=1788084058 len=1172 h=0d76ab48
+[agent] [JS] [metasec-newstring-only] 1788084057921 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057923 0x131b24 REQ#35 cost_ms=55 host=polaris5-normal-hl.zijieapi.com path=/luckycat/activity/refresh_act_id/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057816&ts=1788084058 len=1184 h=d80dac09
+[agent] [JS] [metasec-newstring-only] 1788084057943 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/sdi/get_token?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&...<len=335>"
+[agent] [JS] [metasec-newstring-only] 1788084057957 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057957 0x131b24 REQ#36 cost_ms=17 host=api5-normal-lf.amemv.com path=/passport/login/panel_theme/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057840&ts=1788084058 len=941 h=fdee6648
+[agent] [JS] [metasec-newstring-only] 1788084057969 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057970 0x131b24 REQ#37 cost_ms=8 host=api5-normal-zb.amemv.com path=/%2Faweme%2Fv2%2Fmaterial%2Fcontinue%2F qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057838&ts=1788084058 len=859 h=24187242
+[agent] [JS] [metasec-newstring-only] 1788084057975 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057975 0x131b24 REQ#38 cost_ms=4 host=saveu5-normal-hl.zijieapi.com path=/api/plugin/config/v3/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057844&ts=1788084058 len=903 h=66b59ff0
+[agent] [JS] [metasec-newstring-only] 1788084057982 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057983 0x131b24 REQ#39 cost_ms=5 host=api5-platform-lf.amemv.com path=/aweme/homepage/render/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057830&ts=1788084058 len=947 h=c2d058ae
+[agent] [JS] [metasec-newstring-only] 1788084057990 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057991 0x131b24 REQ#40 cost_ms=4 host=api5-normal-lf.amemv.com path=/activity/carrier_flow/mobile/get_sign_post/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084056077&ts=1788084055 len=753 h=7a00d015
+[agent] [JS] [metasec-newstring-only] 1788084057997 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084057998 0x131b24 REQ#41 cost_ms=5 host=api5-normal-hl.amemv.com path=/aweme/v2/material/sort/continue/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057860&ts=1788084058 len=853 h=6c173a13
+[agent] [JS] [metasec-newstring-only] 1788084058003 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058004 0x131b24 REQ#42 cost_ms=4 host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084056217&ts=1788084056 len=736 h=95a8439c
+[agent] [JS] [metasec-newstring-only] 1788084058020 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058020 0x131b24 REQ#43 cost_ms=14 host=api5-normal-lf.amemv.com path=/tfe/api/request_combine/v1/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057888&ts=1788084058 len=926 h=ff0104d9
+[agent] [JS] [metasec-newstring-only] 1788084058029 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058029 0x131b24 REQ#44 cost_ms=4 host=api5-normal-lf.amemv.com path=/passport/general/login_guiding_strategy/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057876&ts=1788084058 len=1075 h=bc263379
+[agent] [JS] [metasec-newstring-only] 1788084058037 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058037 0x131b24 REQ#45 cost_ms=6 host=api5-platform-lf.amemv.com path=/aweme/v1/addiction/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057896&ts=1788084058 len=881 h=a0c5d55b
+[agent] [JS] [metasec-newstring-only] 1788084058047 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058049 0x131b24 REQ#46 cost_ms=6 host=mssdk3-normal-lf.zijieapi.com path=/sdi/get_token qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=2 len=342 h=a9643035
+[agent] [JS] [metasec-newstring-only] 1788084058059 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058060 0x131b24 REQ#47 cost_ms=6 host=api5-core-hl.amemv.com path=/aweme/v2/feed/ qs=_rticket=1788084057893&ts=1788084058&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=2709 h=091e3adf
+[agent] [JS] [metasec-newstring-only] 1788084058072 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058072 0x131b24 REQ#48 cost_ms=9 host=api5-normal-lf.amemv.com path=/cloudpush/pull/psort/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084057959&ts=1788084058 len=845 h=1248af8c
+[agent] [JS] [metasec-newstring-only] 1788084058128 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058129 0x131b24 REQ#49 cost_ms=10 host=abtest3-misc-hl.zijieapi.com path=/common qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084058079&ts=1788084058 len=883 h=5047fe40
+[agent] [JS] [metasec-newstring-only] 1788084058657 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058657 0x131b24 REQ#50 cost_ms=26 host=log0-misc-lf.amemv.com path=/service/2/log_settings/ qs=aid=1128 len=145 h=943da766
+[agent] [JS] [metasec-newstring-only] 1788084058721 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058723 0x131b24 REQ#51 cost_ms=20 host=search3-search-hl.amemv.com path=/aweme/v1/search/vtag/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084058436&ts=1788084058 len=845 h=6dc9c31a
+[agent] [JS] [metasec-newstring-only] 1788084058806 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058807 0x131b24 REQ#52 cost_ms=9 host=api5-normal-zb.amemv.com path=/gkx/api/settings/v3 qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084058648&ts=1788084058 len=840 h=cc4c3945
+[agent] [JS] [metasec-newstring-only] 1788084058988 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084058988 0x131b24 REQ#53 cost_ms=13 host=api5-normal-lf.amemv.com path=/location/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084058917&ts=1788084058 len=860 h=f26aacd5
+[agent] [JS] [metasec-newstring-only] 1788084059296 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084059296 0x131b24 REQ#54 cost_ms=8 host=polaris5-normal-hl.zijieapi.com path=/luckycat/crossover/v:version/ack_install/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084059189&ts=1788084058 len=1395 h=bf13e0c4
+[agent] [JS] [metasec-newstring-only] 1788084059411 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084059418 0x131b24 REQ#55 cost_ms=26 host=polaris5-normal-hl.zijieapi.com path=/luckycat/activity/settings/get_dynamic_settings/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084059330&ts=1788084058 len=1402 h=bcdb63b7
+[agent] [JS] [metasec-newstring-only] 1788084059462 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084059464 0x131b24 REQ#56 cost_ms=14 host=api5-normal-lf.amemv.com path=/activity/carrier_flow/mobile/get_sign_post/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084059319&ts=1788084058 len=864 h=4927b0f3
+[agent] [JS] [metasec-newstring-only] 1788084060009 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084060010 0x131b24 REQ#57 cost_ms=106 host=api5-normal-zb.amemv.com path=/gkx/api/resource/v7/coldstart qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084059713&ts=1788084059 len=850 h=b50d303a
+[agent] [JS] [metasec-newstring-only] 1788084060050 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084060053 0x131b24 REQ#58 cost_ms=35 host=api5-normal-hl.amemv.com path=/api/ad/v1/splash/stock/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084059961&ts=1788084059 len=1064 h=48e5fca1
+[agent] [JS] [metasec-newstring-only] 1788084060075 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084060076 0x131b24 REQ#59 cost_ms=20 host=log0-misc-lf.amemv.com path=/service/2/log_settings/ qs=aid=1128 len=160 h=4fa0e150
+[agent] [JS] [metasec-newstring-only] 1788084060436 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084060440 0x131b24 REQ#60 cost_ms=24 host=api5-normal-lf.amemv.com path=/cloudpush/update_sender/ qs=update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&manifest_version_code=350101&_rticket=1788084060356&ts=1788084059 len=1189 h=0328407c
+[agent] [JS] [metasec-newstring-only] 1788084060509 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084060511 0x131b24 REQ#61 cost_ms=17 host=api5-normal-zb.amemv.com path=/gkx/api/resource/v7/coldstart qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084060457&ts=1788084060 len=850 h=b0464d6b
+[agent] [JS] [metasec-newstring-only] 1788084060574 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084060576 0x131b24 REQ#62 cost_ms=24 host=api5-normal-zb.amemv.com path=/gkx/api/settings/v3 qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084060492&ts=1788084060 len=840 h=bf04a822
+[agent] [JS] [metasec-newstring-only] 1788084061023 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084061029 0x131b24 REQ#63 cost_ms=120 host=klink5-lf.amemv.com path=/service/2/app_alert_check/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084060804&ts=1788084060 len=1840 h=513dd74c
+[agent] [JS] [metasec-newstring-only] 1788084061176 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084061176 0x131b24 REQ#64 cost_ms=15 host=abtest3-misc-hl.zijieapi.com path=/common qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084060946&ts=1788084060 len=883 h=def8142f
+[agent] [JS] [metasec-newstring-only] 1788084061952 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/sdi/get_token?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&...<len=335>"
+[agent] [JS] [metasec-newstring-only] 1788084062104 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084062105 0x131b24 REQ#65 cost_ms=46 host=mssdk3-normal-lf.zijieapi.com path=/sdi/get_token qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=2 len=342 h=a9643035
+[agent] [JS] [metasec-newstring-only] 1788084062168 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084062169 0x131b24 REQ#66 cost_ms=17 host=saveu5-normal-hl.zijieapi.com path=/api/plugin/config/v2/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084062088&ts=1788084061 len=867 h=29ddaf29
+[agent] [JS] [metasec-newstring-only] 1788084062447 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084062456 0x131b24 REQ#67 cost_ms=21 host=api5-normal-lf.amemv.com path=/service/1/update_token/ qs=update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&manifest_version_code=350101&_rticket=1788084062276&ts=1788084061 len=1237 h=8149fd95
+[agent] [JS] [metasec-newstring-only] 1788084062583 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084062602 0x131b24 REQ#68 cost_ms=92 host=api5-platform-lf.amemv.com path=/aweme/v1/danmaku/conf/get/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084062410&ts=1788084061 len=863 h=5478d106
+[agent] [JS] [metasec-newstring-only] 1788084065358 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084065359 0x131b24 REQ#69 cost_ms=12 host=api5-normal-lf.amemv.com path=/aweme/v2/player/settings qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084065325&ts=1788084065 len=845 h=f1ba2898
+[agent] [JS] [metasec-newstring-only] 1788084065461 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084065462 0x131b24 REQ#70 cost_ms=3 host=api5-normal-lf.amemv.com path=/aweme/v2/player/settings qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084065439&ts=1788084065 len=874 h=7adc6cdf
+[agent] [JS] [metasec-newstring-only] 1788084068117 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084068120 0x131b24 REQ#71 cost_ms=13 host=log-hl.snssdk.com path=/service/3/device_sdk/stats_collect/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084068083&ts=1788084068 len=904 h=5da4ea88
+[agent] [JS] [metasec-newstring-only] 1788084070606 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084070608 0x131b24 REQ#72 cost_ms=14 host=mon0-misc-lf.amemv.com path=/monitor/collect/zstd_dict/ qs=manifest_version_code=350101&_rticket=1788084060345&update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&ts=1788084059 len=1007 h=b23222c1
+[agent] [JS] [metasec-newstring-only] 1788084070618 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084070624 0x131b24 REQ#73 cost_ms=7 host=mon0-misc-lf.amemv.com path=/monitor/collect/c/cloudcontrol/get qs=manifest_version_code=350101&_rticket=1788084060345&update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&ts=1788084059 len=881 h=b1cb2fd1
+[agent] [JS] [metasec-newstring-only] 1788084071571 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084071572 0x131b24 REQ#74 cost_ms=6 host=api5-normal-lf.amemv.com path=/api/neptune/v3/sdk/PackLiveSDK qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084071544&ts=1788084071 len=1358 h=358b7b03
+[agent] [JS] [metasec-newstring-only] 1788084071779 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084071780 0x131b24 REQ#75 cost_ms=11 host=api5-normal-lf.amemv.com path=/check_version/v7/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084071754&ts=1788084072 len=950 h=ebd2a463
+[agent] [JS] [metasec-newstring-only] 1788084071887 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084071888 0x131b24 REQ#76 cost_ms=8 host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084071868&ts=1788084072 len=847 h=c3c0ed62
+[agent] [JS] [metasec-newstring-only] 1788084072081 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084072569 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084072571 0x131b24 REQ#78 cost_ms=14 host=api5-social-m-zjg.amemv.com path=/aweme/ug/general/cold_start qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084072539&ts=1788084072 len=1154 h=1b9b7a1b
+[agent] [JS] [metasec-newstring-only] 1788084072899 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084072902 0x131b24 REQ#79 cost_ms=3 host=api5-normal-hl.amemv.com path=/aweme/v2/undertaking/settings/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084072872&ts=1788084073 len=1060 h=c0b1348b
+[agent] [JS] [metasec-newstring-only] 1788084072912 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084072913 0x131b24 REQ#80 cost_ms=7 host=api5-normal-hl.amemv.com path=/api/ad/splash/aweme/v14/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084072883&ts=1788084073 len=1023 h=baa9be32
+[agent] [JS] [metasec-newstring-only] 1788084073995 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"
+[agent] [JS] [metasec-newstring-only] 1788084074008 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084074009 0x131b24 REQ#81 cost_ms=6 host=mssdk3-normal-lf.zijieapi.com path=/ri/report qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=3 len=338 h=96a8b117
+[agent] [JS] [metasec-newstring-only] 1788084075228 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084075229 0x131b24 REQ#82 cost_ms=41 host=ib.snssdk.com path=/service/1/app_notice_status/ qs=update_version_code=35109900&version_code=350100&version_name=35.1.0&aid=1128&manifest_version_code=350101&_rticket=1788084075139&ts=1788084074 len=1155 h=ccb297da
+[agent] [JS] [metasec-newstring-only] 1788084076155 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"
+[agent] [JS] [metasec-newstring-only] 1788084076175 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084076177 0x131b24 REQ#83 cost_ms=12 host=mssdk3-normal-lf.zijieapi.com path=/ri/report qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=3 len=338 h=96a8b117
+[agent] [JS] [metasec-newstring-only] 1788084078400 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"
+[agent] [JS] [metasec-newstring-only] 1788084078413 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084078564 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/pilvinen/v1/sseelfk/haku?lc_id=1588093228&aid=1128&app_id=1128&sdk_id=&sub_aid=&sdk_version=v04.09.05-ml-android&sdk_ver_code=67699968&app_version=35.1.0&os_platform=android&cpu_width=64&iid=3313280560987770&did=4087336283154583&bd_...<len=403>"
+[agent] [JS] [metasec-newstring-only] 1788084078591 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084078592 0x131b24 REQ#85 cost_ms=16 host=mssdk3-normal-lf.zijieapi.com path=/pilvinen/v1/sseelfk/haku qs=lc_id=1588093228&aid=1128&sdk_ver_code=67699968&region_type=ml&mode=2 len=408 h=2d400982
+[agent] [JS] [metasec-newstring-only] 1788084082285 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084083108 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084083110 0x131b24 REQ#87 cost_ms=22 host=ecom5-normal-hl.ecombdapi.com path=/aweme/v2/commerce/bff/cold_start qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084083052&ts=1788084082 len=875 h=f0cd3e26
+[agent] [JS] [metasec-newstring-only] 1788084087968 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084087971 0x131b24 REQ#88 cost_ms=15 host=api5-normal-hl.amemv.com path=/aweme/v1/series/aweme/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084087926&ts=1788084087 len=1695 h=15530fe0
+[agent] [JS] [metasec-newstring-only] 1788084088297 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084088303 0x131b24 REQ#89 cost_ms=5 host=webcast26-normal-c-lf.amemv.com path=/webcast/strategy/setting/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084088268&ts=1788084088 len=1377 h=d2f143b3
+[agent] [JS] [metasec-newstring-only] 1788084089431 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084089437 0x131b24 REQ#90 cost_ms=13 host=security.snssdk.com path=/passport/ticket_guard/verify_pub_key/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084089383&ts=1788084088 len=946 h=1d690368
+[agent] [JS] [metasec-newstring-only] 1788084090310 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084090312 0x131b24 REQ#91 cost_ms=16 host=ecom5-normal-hl.ecombdapi.com path=/aweme/v2/commerce/bubble/trigger qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084090275&ts=1788084089 len=858 h=3413b364
+[agent] [JS] [metasec-newstring-only] 1788084090491 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"
+[agent] [JS] [metasec-newstring-only] 1788084090514 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084090516 REQ_SUMMARY total=92 unique=73 suppressed=6 top=api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4,log0-misc-lf.amemv.com/service/2/app_log/=4,mssdk3-normal-lf.zijieapi.com/ri/report=4,api3-normal-c.amemv.com/service/settings/v3/=2,api3-core-c.amemv.com/aweme/v2/feed/=2
+[agent] [JS] [metasec-newstring-only] 1788084092280 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084093296 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084093300 0x131b24 REQ#94 cost_ms=19 host=webcast26-normal-c-lf.amemv.com path=/webcast/strategy/rule/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084093198&ts=1788084092 len=1389 h=4aa46e01
+[agent] [JS] [metasec-newstring-only] 1788084093313 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084093315 0x131b24 REQ#95 cost_ms=10 host=webcast26-normal-c-lf.amemv.com path=/webcast/strategy/feature/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084093199&ts=1788084092 len=1403 h=73a370a5
+[agent] [JS] [metasec-newstring-only] 1788084097201 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084097203 0x131b24 REQ#96 cost_ms=17 host=api5-normal-lf.amemv.com path=/privacy/setting/change qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084097167&ts=1788084097 len=843 h=ba4fd528
+[agent] [JS] [metasec-newstring-only] 1788084097787 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084097788 0x131b24 REQ#97 cost_ms=8 host=api5-normal-lf.amemv.com path=/privacy/setting/change qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084097767&ts=1788084098 len=843 h=f6db8d03
+[agent] [JS] [metasec-newstring-only] 1788084098052 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084098054 0x131b24 REQ#98 cost_ms=21 host=api5-platform-hl.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788084098001&ts=1788084098&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=844 h=301141e3
+[agent] [JS] [metasec-newstring-only] 1788084100200 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084100204 0x131b24 REQ#99 cost_ms=17 host=abtest3-misc-hl.zijieapi.com path=/common qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084100169&ts=1788084099 len=831 h=f061ada7
+[agent] [JS] [metasec-newstring-only] 1788084102290 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084102291 0x131b24 REQ#100 cost_ms=4 host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084102268&ts=1788084102 len=847 h=c4088e17
+[agent] [JS] [metasec-newstring-only] 1788084104960 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"
+[agent] [JS] [metasec-newstring-only] 1788084104980 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084111104 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084111106 0x131b24 REQ#102 cost_ms=8 host=api5-platform-lf.amemv.com path=/aweme/v1/danmaku/activity/get/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084111077&ts=1788084110 len=853 h=a37b20fe
+[agent] [JS] [metasec-newstring-only] 1788084112258 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084115428 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084115432 0x131b24 REQ#104 cost_ms=24 host=api5-normal-hl.amemv.com path=/service/settings/v2/ qs=aid=1128&update_version_code=35109900 len=557 h=1fd7deed
+[agent] [JS] [metasec-newstring-only] 1788084115722 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084118437 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084118440 0x131b24 REQ#106 cost_ms=13 host=webcast26-normal-c-lf.amemv.com path=/webcast/v2/tab/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&ts=1788084118 len=834 h=15817efc
+[agent] [JS] [metasec-newstring-only] 1788084122282 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084122283 REQ_SUMMARY total=107 unique=80 suppressed=11 top=log0-misc-lf.amemv.com/service/2/app_log/=9,mssdk3-normal-lf.zijieapi.com/ri/report=5,api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4,abtest3-misc-hl.zijieapi.com/common=3,api3-normal-c.amemv.com/service/settings/v3/=2
+[agent] [JS] [metasec-newstring-only] 1788084124922 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084124924 0x131b24 REQ#108 cost_ms=5 host=relation.zijieapi.com path=/uaid/verification qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084124907&ts=1788084125 len=898 h=746e790e
+[agent] [JS] [metasec-newstring-only] 1788084127767 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084127770 0x131b24 REQ#109 cost_ms=19 host=i.snssdk.com path=/api/ad/v1/scheme/query/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084127729&ts=1788084128 len=852 h=abd9c63a
+[agent] [JS] [metasec-newstring-only] 1788084128044 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084128045 0x131b24 REQ#110 cost_ms=7 host=i.snssdk.com path=/api/ad/v1/scheme/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084128002&ts=1788084128 len=833 h=60382c4f
+[agent] [JS] [metasec-newstring-only] 1788084129075 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129075 0x131b24 REQ#111 cost_ms=21 host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/score qs=aid=1128&update_version_code=35109900 len=295 h=e53f3d71
+[agent] [JS] [metasec-newstring-only] 1788084129089 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129090 0x131b24 REQ#112 cost_ms=9 host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/strategy/meta qs=aid=1128&update_version_code=35109900 len=303 h=606b5ddc
+[agent] [JS] [metasec-newstring-only] 1788084129103 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129104 0x131b24 REQ#113 cost_ms=8 host=api5-normal-lf.amemv.com path=/bytebench/api/task/group qs=update_version_code=35109900&aid=1128 len=239 h=e97d19cb
+[agent] [JS] [metasec-newstring-only] 1788084129222 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129223 0x131b24 REQ#114 cost_ms=16 host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/strategy/batch/v2 qs=aid=1128&update_version_code=35109900 len=316 h=dcc41dbc
+[agent] [JS] [metasec-newstring-only] 1788084129398 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129399 0x131b24 REQ#115 cost_ms=9 host=api5-normal-lf.amemv.com path=/bytebench/api/sdk/device/strategy/batch/v2 qs=aid=1128&update_version_code=35109900 len=316 h=dcc41dbc
+[agent] [JS] [metasec-newstring-only] 1788084129536 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129666 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129778 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129890 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129925 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084129926 0x131b24 REQ#120 cost_ms=5 host=log-hl.snssdk.com path=/service/2/device_sdk/kite/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084129905&ts=1788084130 len=884 h=7bfd21b9
+[agent] [JS] [metasec-newstring-only] 1788084130010 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084130247 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084130249 0x131b24 REQ#122 cost_ms=10 host=log-hl.snssdk.com path=/service/2/device_sdk/kite/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084130227&ts=1788084130 len=840 h=ccca685b
+[agent] [JS] [metasec-newstring-only] 1788084131163 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084131165 0x131b24 REQ#123 cost_ms=7 host=api5-platform-hl.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788084131131&ts=1788084131&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=844 h=8fc5426f
+[agent] [JS] [metasec-newstring-only] 1788084132316 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084132317 0x131b24 REQ#124 cost_ms=10 host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084132279&ts=1788084132 len=847 h=9cf8e617
+[agent] [JS] [metasec-newstring-only] 1788084135189 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084135195 0x131b24 REQ#125 cost_ms=22 host=api5-normal-lf.amemv.com path=/aweme/v1/past_memory/entrance/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084135141&ts=1788084134 len=851 h=72922753
+[agent] [JS] [metasec-newstring-only] 1788084135557 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084135560 0x131b24 REQ#126 cost_ms=15 host=api5-normal-lf.amemv.com path=/effect/api/v3/effects qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084135526&ts=1788084135 len=1065 h=dcc701a8
+[agent] [JS] [metasec-newstring-only] 1788084135905 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084135909 0x131b24 REQ#127 cost_ms=19 host=api5-normal-lf.amemv.com path=/model/api/arithmetics qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084135859&ts=1788084135 len=1048 h=eba05fad
+[agent] [JS] [metasec-newstring-only] 1788084140884 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084140887 0x131b24 REQ#128 cost_ms=17 host=webcast26-normal-c-lf.amemv.com path=/webcast/trace/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084140845&ts=1788084140 len=868 h=6c509ce2
+[agent] [JS] [metasec-newstring-only] 1788084142269 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084143884 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084143886 0x131b24 REQ#130 cost_ms=17 host=webcast26-normal-c-lf.amemv.com path=/webcast/trace/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084143854&ts=1788084143 len=868 h=4f5f29de
+[agent] [JS] [metasec-newstring-only] 1788084146917 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084149920 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084152238 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084152893 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084152894 REQ_SUMMARY total=134 unique=92 suppressed=21 top=log0-misc-lf.amemv.com/service/2/app_log/=12,api5-normal-lf.amemv.com/bytebench/api/sdk/device/strategy/batch/v2=7,mssdk3-normal-lf.zijieapi.com/ri/report=5,webcast26-normal-c-lf.amemv.com/webcast/trace/report/=5,api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4
+[agent] [JS] [metasec-newstring-only] 1788084155928 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084156207 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084159247 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084159387 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084159389 0x131b24 REQ#138 cost_ms=12 host=api5-normal-lf.amemv.com path=/privacy/setting/change qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084159356&ts=1788084159 len=843 h=3b0d0944
+[agent] [JS] [metasec-newstring-only] 1788084162241 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084162244 0x131b24 REQ#139 cost_ms=13 host=applog.snssdk.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084162204&ts=1788084161 len=842 h=7a9e694d
+[agent] [JS] [metasec-newstring-only] 1788084165225 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084168215 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084171204 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084172253 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084172255 0x131b24 REQ#143 cost_ms=8 host=applog.snssdk.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084172206&ts=1788084171 len=842 h=1566d2b5
+[agent] [JS] [metasec-newstring-only] 1788084174245 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084174248 0x131b24 REQ#144 cost_ms=18 host=webcast26-normal-c-lf.amemv.com path=/webcast/trace/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084174186&ts=1788084173 len=868 h=19125c07
+[agent] [JS] [metasec-newstring-only] 1788084177221 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084182243 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084182244 0x131b24 REQ#146 cost_ms=10 host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084182206&ts=1788084181 len=847 h=7e2341ce
+[agent] [JS] [metasec-newstring-only] 1788084184466 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084184467 0x131b24 REQ#147 cost_ms=18 host=webcast26-normal-c-lf.amemv.com path=/webcast/distribution/check_user_live_status/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&ts=1788084184 len=655 h=f148c846
+[agent] [JS] [metasec-newstring-only] 1788084184756 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084184756 0x131b24 REQ#148 cost_ms=12 host=api5-platform-hl.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788084184678&ts=1788084185&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=844 h=48e00fb0
+[agent] [JS] [metasec-newstring-only] 1788084186249 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084186251 REQ_SUMMARY total=149 unique=94 suppressed=29 top=webcast26-normal-c-lf.amemv.com/webcast/trace/report/=14,log0-misc-lf.amemv.com/service/2/app_log/=13,api5-normal-lf.amemv.com/bytebench/api/sdk/device/strategy/batch/v2=7,mssdk3-normal-lf.zijieapi.com/ri/report=5,api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4
+[agent] [JS] [metasec-newstring-only] 1788084186270 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084189276 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084192288 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084192314 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084202248 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084212263 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084212267 0x131b24 REQ#155 cost_ms=25 host=log0-misc-lf.amemv.com path=/service/2/app_log/ qs=version_code=350100&aid=1128&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084212214&ts=1788084212 len=847 h=088cc6fc
+[agent] [JS] [metasec-newstring-only] 1788084222278 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084222279 REQ_SUMMARY total=156 unique=94 suppressed=35 top=log0-misc-lf.amemv.com/service/2/app_log/=17,webcast26-normal-c-lf.amemv.com/webcast/trace/report/=17,api5-normal-lf.amemv.com/bytebench/api/sdk/device/strategy/batch/v2=7,mssdk3-normal-lf.zijieapi.com/ri/report=5,api5-normal.amemv.com/aweme/v1/privacy-policy-statistics/report/=4
+[agent] [JS] [metasec-newstring-only] 1788084224370 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084224371 0x131b24 REQ#157 cost_ms=24 host=api5-core-hl.amemv.com path=/aweme/v2/feed/ qs=_rticket=1788084224298&ts=1788084224&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=3002 h=79c9ca9e
+[agent] [JS] [metasec-newstring-only] 1788084226968 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084226970 0x131b24 REQ#158 cost_ms=22 host=api5-normal-lf.amemv.com path=/location/info/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084226929&ts=1788084227 len=860 h=8b71a349
+[agent] [JS] [metasec-newstring-only] 1788084227208 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084227210 0x131b24 REQ#159 cost_ms=22 host=api5-platform-hl.amemv.com path=/aweme/v1/aweme/stats/ qs=_rticket=1788084227119&ts=1788084227&aid=1128&manifest_version_code=350101&update_version_code=35109900&version_code=350100&version_name=35.1.0 len=844 h=1f61c2a9
+[agent] [JS] [metasec-newstring-only] 1788084228306 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084228308 0x131b24 REQ#160 cost_ms=14 host=webcast26-normal-c-lf.amemv.com path=/webcast/trace/report/ qs=aid=1128&version_code=350100&version_name=35.1.0&manifest_version_code=350101&update_version_code=35109900&_rticket=1788084228284&ts=1788084228 len=868 h=33711ea5
+[agent] [JS] [metasec-newstring-only] 1788084231316 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084232268 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084237324 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/mscc/common_setting?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd...<len=341>"
+[agent] [JS] [metasec-newstring-only] 1788084237351 0x12e210 NewStringUTF "http_reqsign"
+[agent] [JS] [metasec-newstring-only] 1788084237352 0x131b24 REQ#163 cost_ms=7 host=mssdk3-normal-lf.zijieapi.com path=/mscc/common_setting qs=lc_id=1588093228&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&region_type=ml&mode=2 len=348 h=43e8f853
+[agent] [JS] [metasec-newstring-only] 1788084657325 0x12ed84 NewStringUTF "https://mssdk.bytedance.com/common_config/v1/info?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&...<len=343>"
+[*] 退出交互模式
+[*] 已发送 shutdown，等待 agent 主动断开连接...
+[agent] [agent] 收到 shutdown，开始退出清理
+[agent] [agent] [quickjs] cleanup start (managed-safe unload) (+0ms, total 0ms)
+[agent] [agent] [quickjs] phase0 stop_java_worker (+5ms, total 5ms)
+[agent] [agent] [quickjs] phase1 cut_java_hooks (+0ms, total 5ms)
+[agent] [agent] [quickjs] phase1 cut_native_hooks (+0ms, total 6ms)
+[agent] [agent] [quickjs] phase1 cut_art_controller_routing (+0ms, total 7ms)
+[agent] [JS] [drain] start, callback_in_flight=0, exec_in_flight=0
+[agent] [JS] [drain] done, callback_in_flight=0, exec_in_flight=0 after 0ms (1 rounds)
+[agent] [agent] [quickjs] phase2 drain_thunk_in_flight (+1ms, total 8ms)
+[agent] [agent] [quickjs] phase3 cut_art_controller_walkstack_guards (+0ms, total 8ms)
+[agent] [agent] [recompiler] release_all: snapshot 0 recomp range(s) for caller-side munmap (release_ok=0 fail=0)
+[agent] [agent] [quickjs] phase3 release_all_recomp (+2ms, total 11ms)
+[agent] [agent] [quickjs] phase3 free_art_controller_state (+0ms, total 11ms)
+[agent] [agent] [quickjs] phase3 free_java_hooks (+0ms, total 12ms)
+[agent] [agent] [quickjs] phase3 free_native_hooks (+0ms, total 12ms)
+[agent] [agent] [quickjs] phase3 shutdown_qbdi_helper (+0ms, total 13ms)
+[agent] [agent] [quickjs] phase3 detach_jni_thread (+0ms, total 13ms)
+[agent] [agent] [quickjs] phase3 cleanup_engine (+9ms, total 23ms)
+[agent] [agent] [quickjs] cleanup done (managed-safe unload, executable pools retained, walkstack guards removed, total 24ms)
+[agent] [agent] 退出清理完成，准备关闭 socket
+[✓] 成功附加到进程 5491，等待 SIGSTOP...
+[✓] 进程已停止，可以操作寄存器
+[*] 正在还原 zygote 863 的 patch...
+[✓] Zygote 863 patch 已还原

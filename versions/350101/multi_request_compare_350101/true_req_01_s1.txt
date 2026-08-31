@@ -1,0 +1,1 @@
+https://vcs-lf.zijieapi.com/vc/setting?app_name=aweme&version_name=35.1.0&app_version=35.1.0&channel=vivo_1128_64&sdk_version=4.0.1.cn&version_code=350101&device_platform=android&lang=zh&aid=1128

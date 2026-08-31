@@ -1,0 +1,176 @@
+
+ ╔══════════════════════════════════════╗
+ ║        rustFrida v0.1.0             ║
+ ║    ARM64 Dynamic Instrumentation    ║
+ ╚══════════════════════════════════════╝
+
+[*] Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[*] 正在修补 SELinux 策略...
+[→] 当前 SELinux domain: shell
+[→] 策略大小: 999270 bytes
+[→] SELinux 策略版本: 30, MLS: true
+[→] 解析 5 个 commons
+[→] 解析 107 个 classes
+[→] 解析 2782 个 types
+[→] avtab: 54217 条目, offset 0x27030
+[→] avtab 范围: 0x27030..0xCCC22 (678898 bytes)
+[→] 规则变更: 新增 0, 修改 0
+[→] 所有规则已存在，无需修补
+[→] Zymbiote socket 名称: rustfrida-zymbiote-46f79c18fb75c3da38444d7fa0d581d5
+[→] 跳过 32 位进程 zygote (pid=864)
+[*] 找到 1 个新 zygote 进程
+[→] 正在注入 zymbiote 到 zygote64 (pid=863)...
+[→] Payload 写入位置: 0x754dfee000 (backing: /system/lib64/libstagefright.so +0x1ea000)
+[→] libc.so 基址: 0x7540282000, 路径: /apex/com.android.runtime/lib64/bionic/libc.so
+[→] libc 函数地址已解析
+[→] setArgV0 地址: 0x75410bdc00
+[→] selinux_android_setcontext 地址: 0x7547aa3a40
+[→] ZymbioteContext: ctx_base=0xef8, payload_len=0xfe0
+[→] build_payload: prop_remap=0 (PROP_PROFILE_DIR=None)
+[→] Payload 构建完成: 4064 bytes
+[→] 搜索 4 个 boot heap 区域查找 setArgV0 指针
+[→] setArgV0 指针位置: 0x71e950d8 (原始值 0x75410bdc00)
+[→] payload 写入范围: [0x754dfee000,0x754dfeefe0) len=4064 vma=[0x754de97000,0x754dfef000) perms=r-xp page_size=0x1000
+[→] Payload 写入完成
+[→] setArgV0 指针已替换: 0x75410bdc00 → 0x754dfee0e8
+[→] setcontext GOT 已替换: 0x75411a25f8
+[✓] Zymbiote 注入成功: zygote64 (pid=863)
+[→] 主进程解析: com.ss.android.ugc.aweme 使用默认包进程
+[*] 正在启动应用 com.ss.android.ugc.aweme...
+[→] 正在停止应用 com.ss.android.ugc.aweme...
+[→] Launch activity: com.ss.android.ugc.aweme/.splash.SplashActivity
+[*] 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[→] Zymbiote hello: pid=7863, ppid=863, package=com.ss.android.ugc.aweme
+[✓] 收到 spawn hello: pid=7863, ppid=863, package=com.ss.android.ugc.aweme
+[*] 正在向子进程 7863 注入 agent...
+[*] 正在附加到进程 PID: 7863 (Frida-style bootstrapper)
+[→] 注入线程候选: tid=7870 comm=FinalizerWatchd wchan=futex_wait_queue
+[→] 选择工作线程执行注入: tid=7870
+[✓] 成功附加到进程 7870，等待 SIGSTOP...
+[✓] 进程已停止，可以操作寄存器
+[→] stop-the-world: 已暂停 7 个其他线程
+[→] code-swap 区域: 0x75647c4000 (8797 bytes)
+[→] bootstrapper Phase 1: mmap 分配...
+[→] bootstrapper 分配 RWX 区域: 0x756302d000 (32768 bytes)
+[→] code-swap 区域已恢复
+[→] bootstrapper 写入完成 (8797 bytes)
+[→] 调用 bootstrapper Phase 2...
+[✓] bootstrapper 完成: libc API 已解析
+[→] rtld_flavor: 5
+[→] platform bases: libc=0x7540282000, linker=0x756477d000
+[→] ctrlfds: [82, 83]
+[→] agent linker: 自解析 ELF/重定位/外部符号，不调用 dlopen/dlsym
+[→] loader thread: raw clone，不调用 libc pthread
+[→] pidfd_getfd: pid=7863 target_fd=82 → host_fd=9
+[→] 已提取 ctrl fd: target 82 → host 9
+[→] StringTable 写入: 0x75630312d0
+[→] loader 写入完成 (14275 bytes)
+[→] 调用 loader...
+[→] 分离前寄存器: PC=0x754030795c SP=0x726b1b0ce0 LR=0x72a579fa88 FP(x29)=0x726b1b0d50 x19=0x7387282820
+[✓] 已分离目标进程
+[→] Loader worker tid: 7872
+[→] memfd SELinux label → u:object_r:tmpfs:s0:c24,c257,c512,c768
+[→] agent SO fd 已发送 (4022584 bytes, padded 4210688)
+[→] REPL socketpair fd 已发送
+[→] Loader: link: start
+[→] Loader: link: elf mapped
+[→] Loader: link: load segments mapped
+[→] Loader: link: dynamic parsed
+[→] Loader: link: resolver built
+[→] Loader: link: rela applied
+[→] Loader: link: plt rela applied
+[→] Loader: link: relro protected
+[→] Loader: link: init done
+[→] Loader: worker: agent linked
+[→] Loader: worker: exports resolved
+[→] Loader: worker: repl fd received
+[✓] Loader: agent 加载成功
+[*] 等待 agent 连接... (最长 10s)
+[✓] Agent 已连接
+[*] 子进程暂停中，准备加载脚本
+[*] 加载脚本: /data/local/tmp/gumtrace_getHttpHeadVerify_350_entrydump.js
+[*] 脚本发送到 raw clone TLS JS worker 执行
+[agent] [JS] [module] file read failed for /memfd:jit-zygote-cache, trying memory at 0x54000000
+[agent] [JS] [module] file read failed for /memfd:jit-cache, trying memory at 0x58000000
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] waiting for libmetasec_ml.so
+[agent] [JS] [hook_engine] hook_mmap_near_range: OK at 0x7559a38000 for target 0x7559a49100 (range=±134217728, gap#0 step=1)
+=> undefined
+[→] 正在恢复子进程 7863...
+[→] 等待子进程 7863 关闭 socket...
+[→] 等待子进程 7863 SIGSTOP...
+[→] 子进程 7863 已停止
+[→] 还原子进程 7863 payload at 0x754dfee000 (4064 bytes)
+[→] 还原子进程 7863 setArgV0 指针 at 0x71e950d8
+[→] 还原子进程 7863 setcontext GOT at 0x75411a25f8
+[✓] 子进程 7863 已恢复运行
+[*] spawn 已恢复，启动 Java worker 作为后续 Java 操作执行线程
+[agent] [java worker] starting
+[agent] [JS] [java executor] installing Java-thread executor hooks without JNIEnv (symbol/self-parse)
+[agent] [JS] [java executor] MessageQueue JNI table: nativePollOnce=0x75410a9e30, nativeWake=0x75410a9ea0
+[agent] [JS] [hook_engine] hook_mmap_near_range: OK at 0x75411a9000 for target 0x75410a9e30 (range=±134217728, gap#0 step=1)
+[agent] [JS] [java executor] MessageQueue loop hook installed: poll=0x75410a9e30, hook=0x75410a9e30, wake=0x75410a9ea0
+[agent] [JS] [java executor] main epoll wake fd observed: epoll=86, eventfd=85
+[agent] [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a72b53c0
+[agent] [JS] [module] libart.so range: 0x72a524a000-0x72a5e4d000, path: Some("/apex/com.android.art/lib64/libart.so")
+[agent] [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=616
+[agent] [JS] [java worker] helper class loaded
+[agent] [JS] [java worker] nativeLoop registered
+[agent] [JS] [java worker] thread object created
+[agent] [JS] [java worker] calling Thread.start
+[agent] [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[agent] [JS] [java executor] MessageQueue drained 1 raw-clone task(s)
+[agent] [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a72b53c0
+[agent] [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a72b53c0
+[agent] [java worker] ready
+[agent] [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a72b53c0
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] dlopen loaded: /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libmetasec_ml.so
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] module base=0x7100050000 target=0x7100199ca8 offset=0x149ca8
+[agent] [JS] [hook_engine] hook_mmap_near_range: OK at 0x7100319000 for target 0x7100199ca8 (range=±134217728, gap#0 step=1)
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] installed GumTrace gate hook
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] hit target; x0(cookie_http)=0x7327285eb0 x1(json_list)=0x70f07cc6a0 x2(url)=0x70f07cc690 x3(x_ss_stub)=0x70f07cc680 x4/type=0x171 x5(tree_map)=0x70f07cc670 x8(sig_tree)=485071046584 lr=485332987980
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] ---- 0x149ca8 args begin ----
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] x0=0x7327285eb0 range=0x732725a000-0x73272da000 rw- [anon:scudo:primary]
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] x1=0x70f07cc6a0 range=0x70f06d7000-0x70f07d2000 rw- [anon:stack_and_tls:8100]
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] x2=0x70f07cc690 range=0x70f06d7000-0x70f07d2000 rw- [anon:stack_and_tls:8100]
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] x3=0x70f07cc680 range=0x70f06d7000-0x70f07d2000 rw- [anon:stack_and_tls:8100]
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] x4=0x171 range=unmapped
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] x5=0x70f07cc670 range=0x70f06d7000-0x70f07d2000 rw- [anon:stack_and_tls:8100]
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] x8=0x485071046584 range=unmapped
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] lr=485332987980 sp=485071046080
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] [entry-dump] ---- 0x149ca8 args end ----
+[agent] [JS] [linker api] linker64 base=0x756477d000, path=/apex/com.android.runtime/bin/linker64
+[agent] [JS] [linker api] found 7 symbols in one pass
+[agent] [JS] [linker api]   __dl___loader_dlvsym=0x75647fc5b0
+[agent] [JS] [linker api]   __dl_g_dl_mutex=0x7564904ba8
+[agent] [JS] [linker api]   __dl___loader_dlopen=0x75647fd670
+[agent] [JS] [linker api]   __loader_android_dlopen_ext=0x75647fc5a0
+[agent] [JS] [linker api]   __dl___loader_android_dlopen_ext=0x75647fc5a0
+[agent] [JS] [linker api]   __dl__ZNK6soinfo12get_realpathEv=0x75648784c0
+[agent] [JS] [linker api]   __dl__Z15solist_get_headv=0x75647c8670
+[agent] [JS] [linker api] unrestricted API: dlopen=0x75647fd670, dlsym=0x75647fc5b0, trusted_caller=0x75647fd670
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] Module.load ok: {"name":"libGumTrace.so","base":"0x70b8e35000","size":12283904,"path":"/data/local/tmp/libGumTrace.so"}
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] exports init=0x70b96d9720 run=0x70b96da284 unrun=0x70b96da2e4
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] trace started
+[→] Zymbiote hello: pid=8309, ppid=863, package=com.google.assistant.hubui:search
+[→] 未找到 com.google.assistant.hubui:search 的 spawn 请求，放行 pid=8309
+[→] 还原子进程 8309 payload at 0x754dfee000 (4064 bytes)
+[→] 还原子进程 8309 setArgV0 指针 at 0x71e950d8
+[→] 还原子进程 8309 setcontext GOT at 0x75411a25f8
+[→] Zymbiote hello: pid=8344, ppid=863, package=com.google.android.gm
+[→] 未找到 com.google.android.gm 的 spawn 请求，放行 pid=8344
+[→] 还原子进程 8344 payload at 0x754dfee000 (4064 bytes)
+[→] 还原子进程 8344 setArgV0 指针 at 0x71e950d8
+[→] 还原子进程 8344 setcontext GOT at 0x75411a25f8
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] leave target ret=0x0
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] trace stopped, file=/data/data/com.ss.android.ugc.aweme/gumtrace_getHttpHeadVerify_350.log
+[agent] [JS] [gumtrace-getHttpHeadVerify-350] detached target hook
+[→] Zymbiote hello: pid=8956, ppid=863, package=com.google.android.gm
+[→] 未找到 com.google.android.gm 的 spawn 请求，放行 pid=8956
+[→] 还原子进程 8956 payload at 0x754dfee000 (4064 bytes)
+[→] 还原子进程 8956 setArgV0 指针 at 0x71e950d8
+[→] 还原子进程 8956 setcontext GOT at 0x75411a25f8
+[→] Zymbiote hello: pid=9016, ppid=863, package=com.google.android.apps.pixel.dcservice
+[→] 未找到 com.google.android.apps.pixel.dcservice 的 spawn 请求，放行 pid=9016
+[→] 还原子进程 9016 payload at 0x754dfee000 (4064 bytes)
+[→] 还原子进程 9016 setArgV0 指针 at 0x71e950d8
+[→] 还原子进程 9016 setcontext GOT at 0x75411a25f8

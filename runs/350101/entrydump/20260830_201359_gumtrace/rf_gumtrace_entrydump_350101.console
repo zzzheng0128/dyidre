@@ -1,0 +1,164 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在修补 SELinux 策略...
+[1m[36m [→][0m 当前 SELinux domain: shell
+[1m[36m [→][0m 策略大小: 999270 bytes
+[1m[36m [→][0m SELinux 策略版本: 30, MLS: true
+[1m[36m [→][0m 解析 5 个 commons
+[1m[36m [→][0m 解析 107 个 classes
+[1m[36m [→][0m 解析 2782 个 types
+[1m[36m [→][0m avtab: 54217 条目, offset 0x27030
+[1m[36m [→][0m avtab 范围: 0x27030..0xCCC22 (678898 bytes)
+[1m[36m [→][0m 规则变更: 新增 0, 修改 0
+[1m[36m [→][0m 所有规则已存在，无需修补
+[1m[36m [→][0m Zymbiote socket 名称: rustfrida-zymbiote-2e3fc04190bc334a8e44fe98a21a6c67
+[1m[36m [→][0m 跳过 32 位进程 zygote (pid=864)
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=863)...
+[1m[36m [→][0m Payload 写入位置: 0x754dfee000 (backing: /system/lib64/libstagefright.so +0x1ea000)
+[1m[36m [→][0m libc.so 基址: 0x7540282000, 路径: /apex/com.android.runtime/lib64/bionic/libc.so
+[1m[36m [→][0m libc 函数地址已解析
+[1m[36m [→][0m setArgV0 地址: 0x75410bdc00
+[1m[36m [→][0m selinux_android_setcontext 地址: 0x7547aa3a40
+[1m[36m [→][0m ZymbioteContext: ctx_base=0xef8, payload_len=0xfe0
+[1m[36m [→][0m build_payload: prop_remap=0 (PROP_PROFILE_DIR=None)
+[1m[36m [→][0m Payload 构建完成: 4064 bytes
+[1m[36m [→][0m 搜索 4 个 boot heap 区域查找 setArgV0 指针
+[1m[36m [→][0m setArgV0 指针位置: 0x71e950d8 (原始值 0x75410bdc00)
+[1m[36m [→][0m payload 写入范围: [0x754dfee000,0x754dfeefe0) len=4064 vma=[0x754de97000,0x754dfef000) perms=r-xp page_size=0x1000
+[1m[36m [→][0m Payload 写入完成
+[1m[36m [→][0m setArgV0 指针已替换: 0x75410bdc00 → 0x754dfee0e8
+[1m[36m [→][0m setcontext GOT 已替换: 0x75411a25f8
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=863)
+[1m[36m [→][0m 主进程解析: com.ss.android.ugc.aweme 使用默认包进程
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[36m [→][0m 正在停止应用 com.ss.android.ugc.aweme...
+[1m[36m [→][0m Launch activity: com.ss.android.ugc.aweme/.splash.SplashActivity
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[36m [→][0m Zymbiote hello: pid=6600, ppid=863, package=com.ss.android.ugc.aweme
+[1m[32m [✓][0m 收到 spawn hello: pid=6600, ppid=863, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 6600 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 6600 (Frida-style bootstrapper)
+[1m[36m [→][0m 注入线程候选: tid=6640 comm=FinalizerWatchd wchan=futex_wait_queue
+[1m[36m [→][0m 选择工作线程执行注入: tid=6640
+[1m[32m [✓][0m 成功附加到进程 6640，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[36m [→][0m stop-the-world: 已暂停 7 个其他线程
+[1m[36m [→][0m code-swap 区域: 0x75647c4000 (8797 bytes)
+[1m[36m [→][0m bootstrapper Phase 1: mmap 分配...
+[1m[36m [→][0m bootstrapper 分配 RWX 区域: 0x756302d000 (32768 bytes)
+[1m[36m [→][0m code-swap 区域已恢复
+[1m[36m [→][0m bootstrapper 写入完成 (8797 bytes)
+[1m[36m [→][0m 调用 bootstrapper Phase 2...
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[36m [→][0m rtld_flavor: 5
+[1m[36m [→][0m platform bases: libc=0x7540282000, linker=0x756477d000
+[1m[36m [→][0m ctrlfds: [82, 83]
+[1m[36m [→][0m agent linker: 自解析 ELF/重定位/外部符号，不调用 dlopen/dlsym
+[1m[36m [→][0m loader thread: raw clone，不调用 libc pthread
+[1m[36m [→][0m pidfd_getfd: pid=6600 target_fd=82 → host_fd=9
+[1m[36m [→][0m 已提取 ctrl fd: target 82 → host 9
+[1m[36m [→][0m StringTable 写入: 0x75630312d0
+[1m[36m [→][0m loader 写入完成 (14275 bytes)
+[1m[36m [→][0m 调用 loader...
+[1m[36m [→][0m 分离前寄存器: PC=0x754030795c SP=0x726b1b0e90 LR=0x72a5474224 FP(x29)=0x726b1b0ea0 x19=0x73972a6390
+[1m[32m [✓][0m 已分离目标进程
+[1m[36m [→][0m Loader worker tid: 6645
+[1m[36m [→][0m memfd SELinux label → u:object_r:tmpfs:s0:c24,c257,c512,c768
+[1m[36m [→][0m agent SO fd 已发送 (4022584 bytes, padded 4210688)
+[1m[36m [→][0m REPL socketpair fd 已发送
+[1m[36m [→][0m Loader: link: start
+[1m[36m [→][0m Loader: link: elf mapped
+[1m[36m [→][0m Loader: link: load segments mapped
+[1m[36m [→][0m Loader: link: dynamic parsed
+[1m[36m [→][0m Loader: link: resolver built
+[1m[36m [→][0m Loader: link: rela applied
+[1m[36m [→][0m Loader: link: plt rela applied
+[1m[36m [→][0m Loader: link: relro protected
+[1m[36m [→][0m Loader: link: init done
+[1m[36m [→][0m Loader: worker: agent linked
+[1m[36m [→][0m Loader: worker: exports resolved
+[1m[36m [→][0m Loader: worker: repl fd received
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 10s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/gumtrace_getHttpHeadVerify_350_entrydump.js
+[1m[34m [*][0m 脚本发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [module] file read failed for /memfd:jit-zygote-cache, trying memory at 0x54000000
+[1m[35m [agent][0m [JS] [module] file read failed for /memfd:jit-cache, trying memory at 0x58000000
+[1m[36m [→][0m Zymbiote hello: pid=6666, ppid=863, package=com.ss.android.ugc.aweme:smp
+[1m[36m [→][0m 未找到 com.ss.android.ugc.aweme:smp 的 spawn 请求，放行 pid=6666
+[1m[36m [→][0m 还原子进程 6666 payload at 0x754dfee000 (4064 bytes)
+[1m[36m [→][0m 还原子进程 6666 setArgV0 指针 at 0x71e950d8
+[1m[36m [→][0m 还原子进程 6666 setcontext GOT at 0x75411a25f8
+[1m[36m [→][0m Zymbiote hello: pid=6922, ppid=863, package=com.google.android.apps.docs
+[1m[36m [→][0m 未找到 com.google.android.apps.docs 的 spawn 请求，放行 pid=6922
+[1m[36m [→][0m 还原子进程 6922 payload at 0x754dfee000 (4064 bytes)
+[1m[36m [→][0m 还原子进程 6922 setArgV0 指针 at 0x71e950d8
+[1m[36m [→][0m 还原子进程 6922 setcontext GOT at 0x75411a25f8
+[1m[35m [agent][0m [JS] [gumtrace-getHttpHeadVerify-350] waiting for libmetasec_ml.so
+[1m[35m [agent][0m [JS] [hook_engine] hook_mmap_near_range: OK at 0x7559a38000 for target 0x7559a49100 (range=±134217728, gap#0 step=1)
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 6600...
+[1m[36m [→][0m 等待子进程 6600 关闭 socket...
+[1m[36m [→][0m 等待子进程 6600 SIGSTOP...
+[1m[36m [→][0m 子进程 6600 已停止
+[1m[36m [→][0m 还原子进程 6600 payload at 0x754dfee000 (4064 bytes)
+[1m[36m [→][0m 还原子进程 6600 setArgV0 指针 at 0x71e950d8
+[1m[36m [→][0m 还原子进程 6600 setcontext GOT at 0x75411a25f8
+[1m[32m [✓][0m 子进程 6600 已恢复运行
+[1m[34m [*][0m spawn 已恢复，启动 Java worker 作为后续 Java 操作执行线程
+[1m[35m [agent][0m [java worker] starting
+[1m[35m [agent][0m [JS] [java executor] installing Java-thread executor hooks without JNIEnv (symbol/self-parse)
+[1m[35m [agent][0m [JS] [java executor] MessageQueue JNI table: nativePollOnce=0x75410a9e30, nativeWake=0x75410a9ea0
+[1m[35m [agent][0m [JS] [hook_engine] hook_mmap_near_range: OK at 0x75411a9000 for target 0x75410a9e30 (range=±134217728, gap#0 step=1)
+[1m[35m [agent][0m [JS] [java executor] MessageQueue loop hook installed: poll=0x75410a9e30, hook=0x75410a9e30, wake=0x75410a9ea0
+[1m[35m [agent][0m [JS] [java executor] main epoll wake fd observed: epoll=87, eventfd=86
+[1m[36m [→][0m Zymbiote hello: pid=7026, ppid=863, package=com.google.android.apps.maps
+[1m[36m [→][0m 未找到 com.google.android.apps.maps 的 spawn 请求，放行 pid=7026
+[1m[36m [→][0m 还原子进程 7026 payload at 0x754dfee000 (4064 bytes)
+[1m[36m [→][0m 还原子进程 7026 setArgV0 指针 at 0x71e950d8
+[1m[36m [→][0m 还原子进程 7026 setcontext GOT at 0x75411a25f8
+[1m[35m [agent][0m [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a7306810
+[1m[35m [agent][0m [JS] [module] libart.so range: 0x72a524a000-0x72a5e4d000, path: Some("/apex/com.android.art/lib64/libart.so")
+[1m[35m [agent][0m [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a7307b70
+[1m[35m [agent][0m [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=616
+[1m[35m [agent][0m [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a7307b70
+[1m[35m [agent][0m [JS] [java worker] helper class loaded
+[1m[35m [agent][0m [JS] [java worker] nativeLoop registered
+[1m[35m [agent][0m [JS] [java worker] thread object created
+[1m[35m [agent][0m [JS] [java worker] calling Thread.start
+[1m[35m [agent][0m [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[1m[35m [agent][0m [JS] [java executor] MessageQueue drained 1 raw-clone task(s)
+[1m[35m [agent][0m [JS] [java executor] skip invalid MessageQueue ptr at poll: 0x74a7306810
+[1m[35m [agent][0m [java worker] ready
+  [2m输入 help 查看命令，exit 退出[0m
+rustfrida> [1m[34m [*][0m 退出交互模式
+[1m[34m [*][0m 已发送 shutdown，等待 agent 主动断开连接...
+[1m[35m [agent][0m [agent] 收到 shutdown，开始退出清理
+[1m[35m [agent][0m [JS] [java executor] MessageQueue loop hook removed: 0x75410a9e30
+[1m[35m [agent][0m [agent] [quickjs] cleanup start (managed-safe unload) (+0ms, total 0ms)
+[1m[35m [agent][0m [agent] [quickjs] phase0 stop_java_worker (+5ms, total 5ms)
+[1m[35m [agent][0m [agent] [quickjs] phase1 cut_java_hooks (+0ms, total 5ms)
+[1m[35m [agent][0m [agent] [quickjs] phase1 cut_native_hooks (+104ms, total 110ms)
+[1m[35m [agent][0m [agent] [quickjs] phase1 cut_art_controller_routing (+1ms, total 111ms)
+[1m[35m [agent][0m [JS] [drain] start, callback_in_flight=0, exec_in_flight=0
+[1m[35m [agent][0m [JS] [drain] done, callback_in_flight=0, exec_in_flight=0 after 0ms (1 rounds)
+[1m[35m [agent][0m [agent] [quickjs] phase2 drain_thunk_in_flight (+0ms, total 111ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 cut_art_controller_walkstack_guards (+0ms, total 111ms)
+[1m[35m [agent][0m [agent] [recompiler] release_all: snapshot 0 recomp range(s) for caller-side munmap (release_ok=0 fail=0)
+[1m[35m [agent][0m [agent] [quickjs] phase3 release_all_recomp (+0ms, total 111ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 free_art_controller_state (+0ms, total 111ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 free_java_hooks (+0ms, total 111ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 free_native_hooks (+0ms, total 111ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 shutdown_qbdi_helper (+0ms, total 111ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 detach_jni_thread (+0ms, total 111ms)
+[1m[34m [*][0m 正在还原 zygote 863 的 patch...
+[1m[33m [!][0m agent 清理等待超过 1s，已返回交互；目标内资源保留，跳过 loader 残留清理
+[1m[32m [✓][0m Zygote 863 patch 已还原

@@ -1,0 +1,22 @@
+
+ ╔══════════════════════════════════════╗
+ ║        rustFrida v0.1.0             ║
+ ║    ARM64 Dynamic Instrumentation    ║
+ ╚══════════════════════════════════════╝
+
+[*] 正在修补 SELinux 策略...
+[*] 正在附加到进程 PID: 30966 (Frida-style bootstrapper)
+[✓] 成功附加到进程 30973，等待 SIGSTOP...
+[✓] 进程已停止，可以操作寄存器
+[✓] bootstrapper 完成: libc API 已解析
+[✓] 已分离目标进程
+[✓] Loader: agent 加载成功
+[*] 等待 agent 连接... (最长 5s)
+[✓] Agent 已连接
+[*] 加载脚本: /data/local/tmp/artmethod_maps_check.js
+[*] 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[*] 检测到 Java 脚本，发送到 Java worker 执行
+[agent] [java worker] starting
+[agent] [JS] [module] libart.so range: 0x70c4400000-0x72a5e4d000, path: Some("/apex/com.android.art/lib64/libart.so")
+[✗] 等待 Java worker 初始化超时(35s)
+[✗] Agent 连接已断开，请重新注入

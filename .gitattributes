@@ -1,0 +1,6 @@
+# MetaSec 原始材料是二进制，APK 超过 GitHub 普通文件 100MB 限制。
+# 用 Git LFS 保留提交历史，同时避免普通 git 对大二进制做 diff。
+materials/**/*.apk filter=lfs diff=lfs merge=lfs -text
+materials/**/*.so filter=lfs diff=lfs merge=lfs -text
+materials/**/*.i64 filter=lfs diff=lfs merge=lfs -text
+materials/**/*.idb filter=lfs diff=lfs merge=lfs -text
