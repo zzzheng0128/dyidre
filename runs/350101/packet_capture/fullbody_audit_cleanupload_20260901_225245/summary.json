@@ -1,0 +1,9 @@
+{
+  "run_dir": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/fullbody_audit_cleanupload_20260901_225245",
+  "remote_js": "/data/local/tmp/rfpkt350_fullbody_fullbody_audit_cleanupload_20260901_225245.js",
+  "seconds": 150,
+  "packet_b64": 15,
+  "uploaded": 15,
+  "upload_failed": 0,
+  "process_rc": 0
+}

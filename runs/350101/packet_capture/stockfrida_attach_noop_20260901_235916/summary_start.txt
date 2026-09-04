@@ -1,0 +1,3 @@
+run_dir=/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/stockfrida_attach_noop_20260901_235916
+pid_before=12641
+pid_after=12641

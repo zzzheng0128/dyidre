@@ -1,0 +1,28 @@
+[ 8526.187345] logd: logdr: UID=2000 GID=2000 PID=30825 b tail=0 logMask=99 pid=0 start=0ns deadline=0ns
+[ 8526.234404] [+] KP I commit_common_su: pid: 30835, tgid: 30835, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 8526.234469] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 8526.801208] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 8526.806080] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 8526.807361] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 8527.729650] exynos-pcie-rc 11920000.pcie: Updated MSI Control Addr: 0x00000000f6200000
+[ 8527.730944] logbuffer_pcie0: [ 9780] OC Initial Status check: 0x5FC(0xf0)
+
+[ 8527.731505] exynos-pcie-rc 11920000.pcie: AFC cal mode set to restart
+[ 8527.762328] logbuffer_pcie0: [ 9781] D state: 0, LTSSM: 0
+[ 8527.762651] logbuffer_pcie0: [ 9782] L0(0x11)
+[ 8527.804841] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 8527.807895] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 8527.812177] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 8528.671390] [09:09:50.757844][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 0 ret:0
+[ 8528.812103] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 8528.817609] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 8528.818563] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 8528.967544] logbuffer_pcie1: [ 9783] OC Initial Status check: 0x5FC(0xf0)
+
+[ 8528.967747] exynos-pcie-rc 14520000.pcie: AFC cal mode set to restart
+[ 8529.000782] logbuffer_pcie1: [ 9784] D state: 0, LTSSM: 0
+[ 8529.001088] logbuffer_pcie1: [ 9785] L0(0x11)
+[ 8529.005148] pcieh 0001:01:00.0: enabling device (0000 -> 0002)
+[ 8529.005604] [09:09:51.092058][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 1 ret:0
+[ 8529.391470] [+] KP I commit_common_su: pid: 30849, tgid: 30849, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 8529.391552] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0

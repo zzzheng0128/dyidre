@@ -117,6 +117,29 @@ typedef struct ManagedBinding350 {
 0x2C5A80 = sign F54
 ```
 
+The two later modules use adjacent but independent exported-F tables:
+
+```text
+0x2C5258 = second module; 0x2C5260 = second F0; 0x2C5268 = second F1;
+           0x2C5310 = second F22
+0x2C5AC8 = child module;  0x2C5AD0 = child F0;  0x2C5B00 = child F6
+```
+
+`Sign6MetaSecBase`'s opt-in descriptor/body dumper defaults to the sign
+table at `0x2C58D0`.  To inspect a post-`JNI_OnLoad` child-table descriptor,
+set `-Dmetasec.managedProgramTableOffset=0x2c5ad0` together with (for example)
+`-Dmetasec.managedProgramList=6`.  This is a diagnostic table selector only:
+a dumped body still needs its own import/write analysis and must not be
+substituted for the same-numbered sign-module F program.
+
+`0x5e` must be decoded against that selected module table as well.  In the
+primary sign table its targets are the CF callback surface used by the
+standalone host runtime.  In the second/child tables,
+`sub_15AB1C @ 0x15AB1C` indexes the module-local program array and invokes the
+target on the same managed frame; e.g. second F1's 40 calls and child F6's
+F0/import calls are **not** globally numbered CF calls.  The offline runtime
+therefore exposes this choice as `Program.call_abi` / `--call-abi`.
+
 HTTP 请求主线里目前能直接看到：
 
 ```text

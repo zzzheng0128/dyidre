@@ -1,0 +1,27 @@
+{
+  "name": "dyidre",
+  "version": "1.0.0",
+  "description": "`dyidre` 是 Douyin `libmetasec_ml.so` 的动态逆向/版本迭代工作区。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zzzheng0128/dyidre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zzzheng0128/dyidre/issues"
+  },
+  "homepage": "https://github.com/zzzheng0128/dyidre#readme",
+  "devDependencies": {
+    "@types/frida-gum": "^17.3.1"
+  }
+}

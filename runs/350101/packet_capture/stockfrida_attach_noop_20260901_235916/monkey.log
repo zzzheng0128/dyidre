@@ -1,0 +1,15 @@
+  bash arg: -p
+  bash arg: com.ss.android.ugc.aweme
+  bash arg: -c
+  bash arg: android.intent.category.LAUNCHER
+  bash arg: 1
+args: [-p, com.ss.android.ugc.aweme, -c, android.intent.category.LAUNCHER, 1]
+ arg: "-p"
+ arg: "com.ss.android.ugc.aweme"
+ arg: "-c"
+ arg: "android.intent.category.LAUNCHER"
+ arg: "1"
+data="com.ss.android.ugc.aweme"
+data="android.intent.category.LAUNCHER"
+Events injected: 1
+## Network stats: elapsed time=23ms (0ms mobile, 0ms wifi, 23ms not connected)

@@ -1,0 +1,208 @@
+{
+  "schema": "dyidre.native_vmp_runtime_350101.static_span.v1",
+  "scope": "explicit caller-bounded static VM-code span; not a dynamic trace, reachability proof, or ABI validation",
+  "file_offset": "0x1ec670",
+  "vm_code_start": "0x1ec670",
+  "vm_code_end": "0x1ecaf0",
+  "byte_count": 1152,
+  "word_count": 288,
+  "code_sha256": "5607efcf6d14020dea2095e3f09a8b6bb171cc89ced34c291fd5df1cbe48284a",
+  "implemented_words": 288,
+  "unsupported_words": 0,
+  "opcode_coverage": [
+    {
+      "op": "0x01",
+      "count": 4,
+      "name": "LD32S",
+      "implemented": true,
+      "implemented_word_count": 4,
+      "unsupported_word_count": 0,
+      "evidence": "dst = *(int32_t *)(src + simm16), static handler +0x55714"
+    },
+    {
+      "op": "0x0b",
+      "count": 2,
+      "name": "ST32_MASKED_L",
+      "implemented": true,
+      "implemented_word_count": 2,
+      "unsupported_word_count": 0,
+      "evidence": "alignment-dependent masked u32 store, static handler +0x5685C"
+    },
+    {
+      "op": "0x0d",
+      "count": 1,
+      "name": "JMP_ABS26",
+      "implemented": true,
+      "implemented_word_count": 1,
+      "unsupported_word_count": 0,
+      "evidence": "pc = vm_base + target26*4, static handler +0x53540"
+    },
+    {
+      "op": "0x0f",
+      "count": 25,
+      "name": "ADD64_IMM",
+      "implemented": true,
+      "implemented_word_count": 25,
+      "unsupported_word_count": 0,
+      "evidence": "dst = src + simm16, static handler +0x52984"
+    },
+    {
+      "op": "0x10",
+      "count": 4,
+      "name": "ST8",
+      "implemented": true,
+      "implemented_word_count": 4,
+      "unsupported_word_count": 0,
+      "evidence": "*(u8 *)(base + simm16) = value.u8, static handler +0x56B00"
+    },
+    {
+      "op": "0x11",
+      "count": 70,
+      "name": "SUBOP_DISPATCH",
+      "implemented": true,
+      "implemented_word_count": 70,
+      "unsupported_word_count": 0,
+      "evidence": "handler +0x4CE54 dispatches on bits11:6; no unified op11 semantic"
+    },
+    {
+      "op": "0x13",
+      "count": 3,
+      "name": "ST64_MASKED_L",
+      "implemented": true,
+      "implemented_word_count": 3,
+      "unsupported_word_count": 0,
+      "evidence": "alignment-dependent masked u64 store, static handler +0x55FD4"
+    },
+    {
+      "op": "0x14",
+      "count": 8,
+      "name": "BNE",
+      "implemented": true,
+      "implemented_word_count": 8,
+      "unsupported_word_count": 0,
+      "evidence": "if (lhs != rhs) pc = pc + 4 + simm16*4, static handler +0x54020"
+    },
+    {
+      "op": "0x16",
+      "count": 4,
+      "name": "ST32",
+      "implemented": true,
+      "implemented_word_count": 4,
+      "unsupported_word_count": 0,
+      "evidence": "*(u32 *)(base + simm16) = value.u32, static handler +0x56E70"
+    },
+    {
+      "op": "0x18",
+      "count": 70,
+      "name": "LD64",
+      "implemented": true,
+      "implemented_word_count": 70,
+      "unsupported_word_count": 0,
+      "evidence": "dst = *(uint64_t *)(src + simm16), static handler +0x54A1C"
+    },
+    {
+      "op": "0x1a",
+      "count": 53,
+      "name": "ST64",
+      "implemented": true,
+      "implemented_word_count": 53,
+      "unsupported_word_count": 0,
+      "evidence": "*(uint64_t *)(base + simm16) = value, static handler +0x561B4"
+    },
+    {
+      "op": "0x2d",
+      "count": 2,
+      "name": "BEQ",
+      "implemented": true,
+      "implemented_word_count": 2,
+      "unsupported_word_count": 0,
+      "evidence": "if (lhs == rhs) pc = pc + 4 + simm16*4, static handler +0x53DB0"
+    },
+    {
+      "op": "0x2e",
+      "count": 2,
+      "name": "ST32_MASKED_R",
+      "implemented": true,
+      "implemented_word_count": 2,
+      "unsupported_word_count": 0,
+      "evidence": "alignment-dependent masked u32 store, static handler +0x565E0"
+    },
+    {
+      "op": "0x30",
+      "count": 15,
+      "name": "OR64_IMM",
+      "implemented": true,
+      "implemented_word_count": 15,
+      "unsupported_word_count": 0,
+      "evidence": "dst = src | imm16, static handler +0x5332C"
+    },
+    {
+      "op": "0x34",
+      "count": 14,
+      "name": "MOV32HI_S",
+      "implemented": true,
+      "implemented_word_count": 14,
+      "unsupported_word_count": 0,
+      "evidence": "dst = sign_extend32(imm16 << 16), static handler +0x531E4"
+    },
+    {
+      "op": "0x3b",
+      "count": 8,
+      "name": "ADD32S_IMM",
+      "implemented": true,
+      "implemented_word_count": 8,
+      "unsupported_word_count": 0,
+      "evidence": "dst = sign_extend32(src) + simm16, static handler +0x52D04"
+    },
+    {
+      "op": "0x3e",
+      "count": 3,
+      "name": "ST64_MASKED_R",
+      "implemented": true,
+      "implemented_word_count": 3,
+      "unsupported_word_count": 0,
+      "evidence": "alignment-dependent masked u64 store, static handler +0x55D20"
+    }
+  ],
+  "unsupported_opcodes": [],
+  "op11_subopcode_coverage": [
+    {
+      "selector": "0x0e",
+      "count": 28,
+      "name": "ADD64_REG",
+      "implemented": true,
+      "evidence": "dst = left + right, handler +0x4E0BC"
+    },
+    {
+      "selector": "0x17",
+      "count": 6,
+      "name": "SLL64",
+      "implemented": true,
+      "evidence": "dst = src << encoded_shift, handler +0x4CF20"
+    },
+    {
+      "selector": "0x1e",
+      "count": 1,
+      "name": "JMP_REG",
+      "implemented": true,
+      "evidence": "pc = target register on normal VM path, handler +0x4F860"
+    },
+    {
+      "selector": "0x2c",
+      "count": 25,
+      "name": "OR64_REG",
+      "implemented": true,
+      "evidence": "dst = left | right, handler +0x4F500"
+    },
+    {
+      "selector": "0x32",
+      "count": 10,
+      "name": "CALL_REG",
+      "implemented": true,
+      "evidence": "link = pc+4; pc = target register on normal VM path, handler +0x4F830"
+    }
+  ],
+  "unsupported_op11_selectors": [],
+  "source_image": "dyidre/materials/350101/libmetasec_ml.so",
+  "source_image_sha256": "2416637ae9c5b0fe34cbd2cb4c09a29ee3b33ca416b344a3e999c3c95730cc76"
+}

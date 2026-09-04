@@ -1,0 +1,53 @@
+
+ ╔══════════════════════════════════════╗
+ ║        rustFrida v0.1.0             ║
+ ║    ARM64 Dynamic Instrumentation    ║
+ ╚══════════════════════════════════════╝
+
+[*] Spawn-only 诊断: 只启动并恢复 com.ss.android.ugc.aweme
+[*] 正在修补 SELinux 策略...
+[→] 当前 SELinux domain: magisk
+[→] 策略大小: 1014493 bytes
+[→] SELinux 策略版本: 30, MLS: true
+[→] 解析 5 个 commons
+[→] 解析 107 个 classes
+[→] 解析 2784 个 types
+[→] avtab: 55321 条目, offset 0x27565
+[→] avtab 范围: 0x27565..0xD0751 (692716 bytes)
+[→] 规则变更: 新增 0, 修改 0
+[→] 所有规则已存在，无需修补
+[→] Zymbiote socket 名称: rustfrida-zymbiote-e23abac5de0e1433118a6c544bb42003
+[→] 跳过 32 位进程 zygote (pid=870)
+[*] 找到 1 个新 zygote 进程
+[→] 正在注入 zymbiote 到 zygote64 (pid=869)...
+[→] Payload 写入位置: 0x7b61dee000 (backing: /system/lib64/libstagefright.so +0x1ea000)
+[→] libc.so 基址: 0x7b51904000, 路径: /apex/com.android.runtime/lib64/bionic/libc.so
+[→] libc 函数地址已解析
+[→] setArgV0 地址: 0x7b41efac00
+[→] selinux_android_setcontext 地址: 0x7b4a870a40
+[→] ZymbioteContext: ctx_base=0xee8, payload_len=0xfd0
+[→] build_payload: prop_remap=0 (PROP_PROFILE_DIR=None)
+[→] Payload 构建完成: 4048 bytes
+[→] 搜索 4 个 boot heap 区域查找 setArgV0 指针
+[→] setArgV0 指针位置: 0x705f30d8 (原始值 0x7b41efac00)
+[→] payload 写入范围: [0x7b61dee000,0x7b61deefd0) len=4048 vma=[0x7b61c97000,0x7b61def000) perms=r-xp page_size=0x1000
+[→] payload backup: using backing file original bytes
+[→] Payload 写入完成
+[→] setArgV0 指针已替换: 0x7b41efac00 → 0x7b61dee10c
+[→] setcontext GOT 已替换: 0x7b41fdf5f8
+[✓] Zymbiote 注入成功: zygote64 (pid=869)
+[→] 主进程解析: com.ss.android.ugc.aweme 使用默认包进程
+[*] 正在启动应用 com.ss.android.ugc.aweme...
+[→] 正在停止应用 com.ss.android.ugc.aweme...
+[→] Launch activity: com.ss.android.ugc.aweme/.splash.SplashActivity
+[*] 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[→] Zymbiote hello: pid=3521, ppid=869, package=com.ss.android.ugc.aweme
+[✓] 收到 spawn hello: pid=3521, ppid=869, package=com.ss.android.ugc.aweme
+[→] 正在恢复子进程 3521...
+[→] 等待子进程 3521 关闭 socket...
+[→] 等待子进程 3521 SIGSTOP...
+[→] 子进程 3521 已停止
+[→] 还原子进程 3521 payload at 0x7b61dee000 (4048 bytes)
+[→] 还原子进程 3521 setArgV0 指针 at 0x705f30d8
+[→] 还原子进程 3521 setcontext GOT at 0x7b41fdf5f8
+[✓] 子进程 3521 已恢复运行

@@ -6,7 +6,7 @@
 
 ```text
 真机采证
-  rustFrida / GumTrace / jnitrace / eDBG / stackplz
+  eCapture / rustFrida / GumTrace / jnitrace / eDBG / stackplz
         |
         v
 dyidre 证据归档
@@ -65,6 +65,59 @@ tools/runtime_payloads/
 ```text
 tools/README.md
 tools/runtime_payloads/README.md
+```
+
+## 1.5 eCapture：网络明文基准
+
+eCapture 现在作为网络抓包主方案，负责回答：
+
+```text
+真实请求 path/host 是什么？
+服务端返回了什么？
+HTTP/2 头和 X-* header 在网络层长什么样？
+```
+
+它和 RF `ssl` mode 的核心区别是：eCapture 不注入目标进程，而是在内核侧用 eBPF uprobe 观察
+`libttboringssl.so!SSL_read/SSL_write`。这条链路更适合做“抓包基准”，不是用来追
+`libmetasec_ml.so` 内部结构体。
+
+350101 入口：
+
+```bash
+# 先手动打开抖音，确认页面正常后再采集；默认不自动拉起 App。
+probes/350101/run_ecapture_tls_350101.sh text 60 req01_ecap
+```
+
+输出：
+
+```text
+runs/350101/ecapture/<tag>/
+```
+
+关键文件：
+
+| 文件 | 用途 |
+|---|---|
+| `ecapture_command.txt` | 记录 pid、实际 mapped `libttboringssl.so`、完整命令 |
+| `ecapture_events.log` | eCapture text 明文事件 |
+| `ecapture_summary.md/json` | 从事件中抽取 HTTP/2 path、host、X-* header、TLS READ/WRITE 数量 |
+| `http2_decode.md/json` | text 模式下离线切 HTTP/2 frame；安装 `requirements-http2.txt` 后可解 HPACK header |
+| `capture.pcapng` | pcap 模式输出，可交给 Wireshark |
+| `pcap_summary.md/json` | pcap 模式下统计 TCP/UDP、TCP/443、UDP/443，优先判断有没有 QUIC/HTTP3 |
+
+使用边界：
+
+- Pixel6 5.10 优先；Pixel5 4.19/arm64 不满足 eCapture 官方 arm64 5.5+ 要求；
+- `--libssl` 必须指向目标进程 maps 里的真实 `libttboringssl.so` 路径；
+- 采集窗口里要触发业务请求；只抓到 `TLS_READ/TLS_WRITE` 小帧但没有 path/host 时，多半只是 HTTP/2 控制帧；
+- 判断 QUIC 不看 `HTTP/2` 字符串，先看 pcap 里有没有 `UDP/443`；没有 `UDP/443` 基本就不是 QUIC/HTTP3 样本；
+- raw log 可能包含 token/cookie/设备标识，公开提交前先脱敏；
+- 如果只有网络明文需求，先用 eCapture；如果要追 `s1/s2`、JNI、VM、slot/buffer，回到 RF/unidbg。
+
+pcap 有包但 `http2/http` 解不出来时，优先按这里排：
+
+```text
+docs/ecapture-boringssl-offset-troubleshooting.md
 ```
 
 ## 2. unidbg：可重复复现和回归

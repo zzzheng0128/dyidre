@@ -1,0 +1,4 @@
+HUP	pre_clean=0	ready=0	gone=1	post_clean=0	cleanup_seen=1	bad=0
+TERM	pre_clean=0	ready=0	gone=1	post_clean=0	cleanup_seen=1	bad=1
+INT	pre_clean=0	ready=0	gone=1	post_clean=0	cleanup_seen=1	bad=0
+QUIT	pre_clean=0	ready=0	gone=1	post_clean=0	cleanup_seen=1	bad=0

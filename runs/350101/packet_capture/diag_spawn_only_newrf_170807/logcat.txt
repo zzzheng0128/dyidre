@@ -1,0 +1,111 @@
+--------- beginning of main
+09-01 17:08:07.306 I/EuiccGoogle( 2919): [2] EuiccServiceImpl.onCreate: onCreate Single-SIM mode: simCardState is 11
+09-01 17:08:07.307 I/EuiccGoogle( 2919): [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_supported_countries, type=string, partnerResId = 0
+09-01 17:08:07.307 I/EuiccGoogle( 2919): [2] Partner.getResourceEntry$ar$ds$ar$class_merging$ar$class_merging: Partner app=com.google.android.euiccoverlay, Resource name=esim_unsupported_countries, type=string, partnerResId = 2131689520
+09-01 17:08:07.311 I/EuiccGoogle( 2919): [2] PhenotypeUpdatedReceiver.setPsimConversionSupportedCarriers: pSIM conversion feature is not enabled
+09-01 17:08:07.311 D/EuiccConnector( 2434): handleMessage: E msg.what=4
+09-01 17:08:07.311 D/EuiccConnector( 2434): processMsg: DisconnectedState
+09-01 17:08:07.311 D/EuiccConnector( 2434): transitionTo: destState=ConnectedState
+09-01 17:08:07.311 D/EuiccConnector( 2434): handleMessage: new destination call exit/enter
+09-01 17:08:07.311 D/EuiccConnector( 2434): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=1,curStateInfo: state=DisconnectedState,active=true,parent=null
+09-01 17:08:07.311 D/EuiccConnector( 2434): moveTempStackToStateStack: i=0,j=1
+09-01 17:08:07.312 D/EuiccConnector( 2434): moveTempStackToStateStack: X mStateStackTop=1,startingIndex=1,Top=ConnectedState
+09-01 17:08:07.312 D/EuiccConnector( 2434): invokeEnterMethods: ConnectedState
+09-01 17:08:07.312 D/EuiccConnector( 2434): moveDeferredMessageAtFrontOfQueue; what=103
+09-01 17:08:07.312 D/EuiccConnector( 2434): handleMessage: X
+09-01 17:08:07.312 D/EuiccConnector( 2434): handleMessage: E msg.what=103
+09-01 17:08:07.312 D/EuiccConnector( 2434): processMsg: ConnectedState
+09-01 17:08:07.312 D/EuiccConnector( 2434): handleMessage: X
+09-01 17:08:07.313 I/EuiccGoogle( 2919): [119] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = -1
+09-01 17:08:07.319 W/EuiccGoogle( 2919): [119] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId=-1. No eUICC is active. Return null.
+09-01 17:08:07.320 D/EuiccConnector( 2434): handleMessage: E msg.what=6
+09-01 17:08:07.320 D/EuiccConnector( 2434): processMsg: ConnectedState
+09-01 17:08:07.320 D/EuiccConnector( 2434): handleMessage: X
+09-01 17:08:08.282 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 17:08:08.285 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 17:08:08.557 D/TrafficStats( 2508): tagSocket(198) with statsTag=0x4008100, statsUid=-1
+--------- beginning of system
+09-01 17:08:08.802 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 30257
+09-01 17:08:08.805 W/ProcessStats( 1816): Tracking association SourceState{2790a83 com.google.android.googlequicksearchbox:search/10169 ImpBg #21047} whose proc state 6 is better than process ProcessState{9ea3ce3 com.google.android.inputmethod.latin/10201 pkg=com.google.android.inputmethod.latin} proc state 15 (19 skipped)
+09-01 17:08:08.807 I/AppsFilter( 1816): interaction: PackageSetting{d3b9adc com.google.android.microdroid.empty_payload/10259} -> PackageSetting{8095834 com.ss.android.ugc.aweme/10281} BLOCKED
+09-01 17:08:08.838 D/CarrierSvcBindHelper( 2434): onHandleForceStop: [com.ss.android.ugc.aweme]
+09-01 17:08:08.842 D/EuiccConnector( 2434): handleMessage: E msg.what=1
+09-01 17:08:08.842 D/EuiccConnector( 2434): processMsg: ConnectedState
+09-01 17:08:08.842 D/EuiccConnector( 2434): processMsg: DisconnectedState
+09-01 17:08:08.843 D/CarrierSvcBindHelper( 2434): No carrier app for: 0
+09-01 17:08:08.844 D/EuiccConnector( 2434): handleMessage: X
+09-01 17:08:08.897 W/ActivityTaskManager( 1816): callingPackage for (uid=0, pid=30264) has no WPC
+09-01 17:08:08.899 V/GrammaticalInflectionUtils( 1816): AttributionSource: android.content.AttributionSource@c05f661d does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-01 17:08:08.900 W/OptProp ( 1816): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+09-01 17:08:08.900 W/OptProp ( 1816): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+09-01 17:08:08.906 W/OptProp ( 1816): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+09-01 17:08:08.907 D/ActivityTaskManager( 1816): Temporarily retain top process state for launching app
+09-01 17:08:08.909 I/AppsFilter( 1816): interaction: PackageSetting{d3b9adc com.google.android.microdroid.empty_payload/10259} -> PackageSetting{332bac7 com.ss.android.ugc.aweme/10281} BLOCKED
+09-01 17:08:08.911 I/ActivityTaskManager( 1816): START u0 {flg=0x10000000 cmp=com.ss.android.ugc.aweme/.splash.SplashActivity} with LAUNCH_SINGLE_TOP from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+09-01 17:08:08.912 V/WindowManagerShell( 2139): Transition requested (#34): android.os.BinderProxy@56898b TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=220 effectiveUid=10281 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.ss.android.ugc.aweme/.splash.SplashActivity } baseActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} topActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} origActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity} realActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} numActivities=1 lastActiveTime=8426817 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@f431a68} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{60e1e81 com.ss.android.ugc.aweme.splash.SplashActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=true locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 692 - 804, 1772) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 34 }
+09-01 17:08:08.912 D/ShellSplitScreen( 2139): logExit: no-op, mLoggerSessionId is null
+09-01 17:08:08.912 V/GrammaticalInflectionUtils( 1816): AttributionSource: android.content.AttributionSource@c05f661d does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-01 17:08:08.915 I/BpBinder(  592): onLastStrongRef automatically unlinking death recipients: 
+09-01 17:08:08.928 D/Zygote  (  882): Forked child process 30271
+09-01 17:08:08.929 I/ActivityManager( 1816): Start proc 30271:com.ss.android.ugc.aweme/u0a281 for top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 17:08:08.934 I/libc    (30271): SetHeapTaggingLevel: tag level set to 0
+--------- beginning of crash
+09-01 17:08:08.941 F/libc    (30271): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 30271 (main), pid 30271 (main)
+09-01 17:08:08.992 I/crash_dump64(30275): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 17:08:08.992 I/tombstoned(  660): received crash request for pid 30271
+09-01 17:08:08.993 I/crash_dump64(30275): performing dump of process 30271 (target tid = 30271)
+09-01 17:08:09.054 F/DEBUG   (30275): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 17:08:09.054 F/DEBUG   (30275): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 17:08:09.054 F/DEBUG   (30275): Revision: 'MP1.0'
+09-01 17:08:09.054 F/DEBUG   (30275): ABI: 'arm64'
+09-01 17:08:09.054 F/DEBUG   (30275): Timestamp: 2026-09-01 17:08:08.999527999+0800
+09-01 17:08:09.044 I/crash_dump64(30275): type=1400 audit(0.0:125126): avc:  denied  { read } for  name="framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 17:08:09.054 F/DEBUG   (30275): Process uptime: 1s
+09-01 17:08:09.054 F/DEBUG   (30275): Cmdline: zygote64
+09-01 17:08:09.054 F/DEBUG   (30275): pid: 30271, tid: 30271, name: main  >>> zygote64 <<<
+09-01 17:08:09.054 F/DEBUG   (30275): uid: 10281
+09-01 17:08:09.054 F/DEBUG   (30275): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 17:08:09.054 F/DEBUG   (30275): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000000
+09-01 17:08:09.054 F/DEBUG   (30275): Cause: null pointer dereference
+09-01 17:08:09.054 F/DEBUG   (30275):     x0  0000000000000000  x1  000000000000763f  x2  0000000000000013  x3  0000000000000000
+09-01 17:08:09.054 F/DEBUG   (30275):     x4  0000000000000010  x5  0000000000000010  x6  0000000000000010  x7  7f7f7f7f7f7f7f7f
+09-01 17:08:09.054 F/DEBUG   (30275):     x8  000000000000763f  x9  0000000000003d5f  x10 0000000000000030  x11 0000000029d5578d
+09-01 17:08:09.054 F/DEBUG   (30275):     x12 0000000000019002  x13 000000007fffffff  x14 00000000001b57b0  x15 0000003048ab47e3
+09-01 17:08:09.054 F/DEBUG   (30275):     x16 00000070fe7feee8  x17 00000070fe7e90a8  x18 000000711814c000  x19 0000000000000000
+09-01 17:08:09.054 F/DEBUG   (30275):     x20 00000070fe7eff38  x21 00000070fe7ef000  x22 00000070fe7eff38  x23 00000071182f33a0
+09-01 17:08:09.054 F/DEBUG   (30275):     x24 b400006fdca77950  x25 00000070f489a513  x26 0000000000000000  x27 0000000000000000
+09-01 17:08:09.054 F/DEBUG   (30275):     x28 0000007fcb51b8b0  x29 0000007fcb516510
+09-01 17:08:09.054 F/DEBUG   (30275):     lr  00000070fe7ef0d0  sp  0000007fcb516500  pc  00000070fe7e4b6c  pst 0000000000001000
+09-01 17:08:09.044 I/crash_dump64(30275): type=1400 audit(0.0:125127): avc:  denied  { open } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 17:08:09.044 I/crash_dump64(30275): type=1400 audit(0.0:125128): avc:  denied  { getattr } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 17:08:09.054 F/DEBUG   (30275): 2 total frames
+09-01 17:08:09.054 F/DEBUG   (30275): backtrace:
+09-01 17:08:09.054 F/DEBUG   (30275):       #00 pc 00000000001dfb6c  /system/lib64/libstagefright.so (ABGRToUVJRow_NEON.cfi+28) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 17:08:09.054 F/DEBUG   (30275):       #01 pc 00000000001ea0cc  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 17:08:09.044 I/crash_dump64(30275): type=1400 audit(0.0:125129): avc:  denied  { map } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 17:08:09.048 I/crash_dump64(30275): type=1400 audit(0.0:125130): avc:  denied  { read } for  name="product@overlay@PixelConfigOverlay2021.apk@idmap" dev="dm-56" ino=564 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 17:08:09.060 E/tombstoned(  660): Tombstone written to: tombstone_31
+09-01 17:08:09.062 I/DropBoxManagerService( 1816): add tag=data_app_native_crash isTagEnabled=true flags=0x2
+09-01 17:08:09.065 I/DropBoxManagerService( 1816): add tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS isTagEnabled=true flags=0x4
+09-01 17:08:09.073 I/Zygote  (  882): Process 30271 exited due to signal 11 (Segmentation fault)
+09-01 17:08:09.079 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_31 to DropBox (SYSTEM_TOMBSTONE)
+09-01 17:08:09.080 I/DropBoxManagerService( 1816): add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+09-01 17:08:09.279 W/FirebaseInstanceId(27552): Token retrieval failed: SERVICE_NOT_AVAILABLE. Will retry token retrieval
+09-01 17:08:09.284 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 17:08:09.286 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 17:08:09.351 W/fegh    ( 2508): Empty content. Thus might mean that the settings are not synced down.
+09-01 17:08:09.355 D/BoundBrokerSvc( 3136): onBind: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+09-01 17:08:09.355 D/BoundBrokerSvc( 3136): Loading bound service for intent: Intent { act=com.google.android.gms.semanticlocationhistory.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.GmsApiService }
+09-01 17:08:09.385 W/LogErrorOperation( 2508): onLogError callback failed.
+09-01 17:08:09.388 W/LogErrorOperation( 2508): onLogError callback failed.
+09-01 17:08:09.406 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 17:08:09.406 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 17:08:09.406 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 17:08:10.287 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 17:08:10.296 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 17:08:10.881 D/TrafficStats(27552): tagSocket(152) with statsTag=0x8003, statsUid=-1
+09-01 17:08:11.295 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 17:08:11.304 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 17:08:12.302 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 17:08:12.312 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 17:08:12.668 D/TrafficStats( 3770): tagSocket(5) with statsTag=0x8003, statsUid=-1

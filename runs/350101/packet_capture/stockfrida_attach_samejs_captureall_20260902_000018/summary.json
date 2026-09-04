@@ -1,0 +1,12 @@
+{
+  "run_dir": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/stockfrida_attach_samejs_captureall_20260902_000018",
+  "engine": "frida",
+  "frida_attach": true,
+  "runtime_js": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/stockfrida_attach_samejs_captureall_20260902_000018/runtime_url_jn_packet_fullbody_350101.js",
+  "remote_js": "",
+  "seconds": 120,
+  "packet_b64": 84,
+  "uploaded": 84,
+  "upload_failed": 0,
+  "process_rc": 0
+}

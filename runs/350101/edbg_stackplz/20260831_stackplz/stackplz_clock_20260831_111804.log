@@ -1,6 +1,0 @@
-03:18:05 StackMod	hook info:libc.so + clock_gettime
-03:18:05 StackMod	module Run failed, [skip it]. error:couldn't start bootstrap manager error:1 error occurred:
-	* error:opening uprobe: creating perf_uprobe PMU: token :0x7b930: opening perf event: invalid argument , isRet:false, opts:&{0 0 0 0 0  false }, {UID:, EbpfFuncName:probe_stack}
-
-, probes activation validation failed .
-03:18:05 No runnable modules, Exit(1)

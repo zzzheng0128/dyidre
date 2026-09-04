@@ -1,0 +1,63 @@
+# target process monitor
+# package=com.ss.android.ugc.aweme interval=1s
+# started_at=2026-09-01 15:22:01
+[2026-09-01 15:22:01] pids=<none>
+[2026-09-01 15:22:02] pids=<none>
+[2026-09-01 15:22:04] pids=27813
+  ps: u0_a281      27813   882   38965260 918028 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[27813]: Name:	droid.ugc.aweme
+  status[27813]: State:	R (running)
+  status[27813]: Tgid:	27813
+  status[27813]: Pid:	27813
+  status[27813]: PPid:	882
+  status[27813]: TracerPid:	0
+  status[27813]: VmHWM:	  920092 kB
+  status[27813]: VmRSS:	  915200 kB
+  status[27813]: Threads:	225
+[2026-09-01 15:22:04] EVENT first_seen pids=27813
+[2026-09-01 15:22:06] pids=27813
+  ps: u0_a281      27813   882   39359796 908580 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[27813]: Name:	droid.ugc.aweme
+  status[27813]: State:	R (running)
+  status[27813]: Tgid:	27813
+  status[27813]: Pid:	27813
+  status[27813]: PPid:	882
+  status[27813]: TracerPid:	0
+  status[27813]: VmHWM:	  945772 kB
+  status[27813]: VmRSS:	  937976 kB
+  status[27813]: Threads:	241
+[2026-09-01 15:22:08] pids=<none>
+[2026-09-01 15:22:08] EVENT pid_change old=27813 new=<none>
+[2026-09-01 15:22:08] EVENT disappeared
+[2026-09-01 15:22:10] pids=<none>
+[2026-09-01 15:22:10] EVENT disappeared
+[2026-09-01 15:22:12] pids=<none>
+[2026-09-01 15:22:12] EVENT disappeared
+[2026-09-01 15:22:13] pids=<none>
+[2026-09-01 15:22:13] EVENT disappeared
+[2026-09-01 15:22:15] pids=<none>
+[2026-09-01 15:22:15] EVENT disappeared
+[2026-09-01 15:22:16] pids=<none>
+[2026-09-01 15:22:16] EVENT disappeared
+[2026-09-01 15:22:18] pids=<none>
+[2026-09-01 15:22:18] EVENT disappeared
+[2026-09-01 15:22:20] pids=<none>
+[2026-09-01 15:22:20] EVENT disappeared
+[2026-09-01 15:22:21] pids=<none>
+[2026-09-01 15:22:21] EVENT disappeared
+[2026-09-01 15:22:23] pids=<none>
+[2026-09-01 15:22:23] EVENT disappeared
+[2026-09-01 15:22:24] pids=<none>
+[2026-09-01 15:22:24] EVENT disappeared
+[2026-09-01 15:22:26] pids=<none>
+[2026-09-01 15:22:26] EVENT disappeared
+[2026-09-01 15:22:28] pids=<none>
+[2026-09-01 15:22:28] EVENT disappeared
+[2026-09-01 15:22:29] pids=<none>
+[2026-09-01 15:22:29] EVENT disappeared
+[2026-09-01 15:22:31] pids=<none>
+[2026-09-01 15:22:31] EVENT disappeared
+[2026-09-01 15:22:32] pids=<none>
+[2026-09-01 15:22:32] EVENT disappeared
+[2026-09-01 15:22:34] pids=<none>
+[2026-09-01 15:22:34] EVENT disappeared

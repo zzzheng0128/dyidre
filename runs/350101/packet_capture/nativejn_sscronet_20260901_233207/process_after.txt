@@ -1,0 +1,2 @@
+27193
+u0_a281      27193   869   38054164 443712 do_freezer_trap     0 S com.ss.android.ugc.aweme

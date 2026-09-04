@@ -1,0 +1,94 @@
+{
+  "schema": "dyidre.metasec.vmp-entry-uprobe-summary.v1",
+  "version": "350.101",
+  "source_log": "dyidre/versions/350101/vmp_handler_log/vmp_entry_350101.log",
+  "entry": {
+    "name": "exeVMInner_350",
+    "offset": "0x4cc10"
+  },
+  "accepted_events": 145,
+  "module_base_consistent": true,
+  "observed_module_base": "0x6c070d0000",
+  "vm_code_caller_pairs": [
+    {
+      "vm_code_offset": "0x1f7860",
+      "caller_offset": "0x124e34",
+      "count": 55
+    },
+    {
+      "vm_code_offset": "0x1ec670",
+      "caller_offset": "0xd95cc",
+      "count": 54
+    },
+    {
+      "vm_code_offset": "0x1ecaf0",
+      "caller_offset": "0xd964c",
+      "count": 27
+    },
+    {
+      "vm_code_offset": "0x1f6670",
+      "caller_offset": "0x11999c",
+      "count": 8
+    },
+    {
+      "vm_code_offset": "0x201800",
+      "caller_offset": "0x12acf8",
+      "count": 1
+    }
+  ],
+  "known_wrapper_abi_validation_350": {
+    "source": "analyze_vmp_entry_uprobes.py --validate-known-wrapper-abi-350",
+    "closed_wrapper_events": 136,
+    "closed_wrapper_counts": [
+      {
+        "name": "material_1f7860",
+        "count": 55
+      },
+      {
+        "name": "small_1ec670",
+        "count": 54
+      },
+      {
+        "name": "small_1ecaf0",
+        "count": 27
+      }
+    ],
+    "unclosed_entry_events": 9,
+    "unclosed_entry_pairs": [
+      {
+        "vm_code_offset": "0x1f6670",
+        "caller_offset": "0x11999c",
+        "count": 8
+      },
+      {
+        "vm_code_offset": "0x201800",
+        "caller_offset": "0x12acf8",
+        "count": 1
+      }
+    ],
+    "invalid_register_events": 0,
+    "invalid_register_records": {},
+    "proves": [
+      "closed events match one canonical wrapper's PC/LR/X0/X2/X3 module-relative and X1/X4 stack-relative relations"
+    ],
+    "does_not_prove": [
+      "pParam memory contents or lifecycle",
+      "funBridge callback targets or behavior",
+      "VMP output values or program semantics"
+    ]
+  },
+  "evidence_boundary": {
+    "level": "entry-only",
+    "proves": [
+      "exeVMInner entry was reached",
+      "entry-time X0 vmCode and LR caller offsets",
+      "observed pair counts in this capture"
+    ],
+    "does_not_prove": [
+      "VM program length or reachability",
+      "opcode or handler semantics",
+      "complete opcode coverage",
+      "equivalence in another build"
+    ]
+  }
+}

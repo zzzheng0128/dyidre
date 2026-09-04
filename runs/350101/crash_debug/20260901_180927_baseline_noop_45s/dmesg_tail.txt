@@ -1,0 +1,400 @@
+[12136.071522] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.073323] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.073600] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.074554] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.074800] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.075067] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.075350] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.075580] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.075846] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.076071] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.076323] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12136.679242] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12136.680771] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12136.681142] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12137.104586] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12137.118527] s5p-mfc mfc: [c:0] mfc_open:492: NORMAL instance is opened [0:1]
+[12137.121978] mfc-core 1c8d0000.MFC-0: mfc_core_run_init_hw:109: [F/W] MFC normal v14020100, 24yy 07mm 22dd (D)
+[12137.122298] s5p-mfc mfc: [c:0] mfc_open:517: MFC open completed [0:1] version = 220715
+[12137.129499] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_out_mplane:730: [STREAM] Dec src codec(0): H264 Encoded Stream
+[12137.132824] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_cap_mplane:696: [FRAME] dec dst pixelformat : 4:2:0 2 Planes Y/CbCr single
+[12137.133886] s5p-mfc mfc: [c:0] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 720, h: 1056
+[12137.134078] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12137.136558] s5p-mfc mfc: [c:0] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12137.680440] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12137.682133] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12137.682277] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12138.683920] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12138.685516] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12138.685968] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12138.714063] KP packages.list rename: dentry_path_raw failed
+[12138.714103] KP packages.list rename: dentry_path_raw failed
+[12138.722445] KP packages.list rename: dentry_path_raw failed
+[12138.722460] KP packages.list rename: dentry_path_raw failed
+[12138.730424] KP packages.list rename: dentry_path_raw failed
+[12138.730442] KP packages.list rename: dentry_path_raw failed
+[12138.953595] KP packages.list rename: dentry_path_raw failed
+[12138.953629] KP packages.list rename: dentry_path_raw failed
+[12139.224515] type=1400 audit(1788257401.308:215368): avc:  denied  { add_name } for  comm="binder:879_3" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=dir permissive=1
+[12139.224613] type=1400 audit(1788257401.308:215369): avc:  denied  { create } for  comm="binder:879_3" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[12139.307873] KP packages.list rename: dentry_path_raw failed
+[12139.307889] KP packages.list rename: dentry_path_raw failed
+[12139.490303] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[12139.554793] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12139.562600] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12139.562642] mfc-core 1c8d0000.MFC-0: mfc_core_nal_q_stop_if_started:574: [NALQ] stop NAL QUEUE during get hwlock
+[12139.562784] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 9
+[12139.562924] s5p-mfc mfc: [c:0] mfc_core_instance_dpb_flush:891: try to DPB flush
+[12139.567185] s5p-mfc mfc: [c:0] mfc_release:577: MFC driver release is called [0:1], is_drm(0)
+[12139.568083] mfc-core 1c8d0000.MFC-0: mfc_core_mfc_off:181: MFC h/w state: 6
+[12139.568345] s5p-mfc mfc: mfc_release:656: mfc driver release finished [0:0]
+[12139.569365] s5p-mfc mfc: [c:0] mfc_open:492: NORMAL instance is opened [0:1]
+[12139.575575] mfc-core 1c8d0000.MFC-0: mfc_core_run_init_hw:109: [F/W] MFC normal v14020100, 24yy 07mm 22dd (D)
+[12139.575697] s5p-mfc mfc: [c:0] mfc_open:517: MFC open completed [0:1] version = 220715
+[12139.685645] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12139.686751] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12139.686883] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12139.750218] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_out_mplane:730: [STREAM] Dec src codec(0): H264 Encoded Stream
+[12139.753491] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_cap_mplane:696: [FRAME] dec dst pixelformat : 4:2:0 2 Planes Y/CbCr single
+[12139.754215] s5p-mfc mfc: [c:0] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 720, h: 960
+[12139.754362] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12139.757097] s5p-mfc mfc: [c:0] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12140.177512] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12140.177566] mfc-core 1c8d0000.MFC-0: mfc_core_nal_q_stop_if_started:574: [NALQ] stop NAL QUEUE during get hwlock
+[12140.177796] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 9
+[12140.178106] s5p-mfc mfc: [c:0] mfc_core_instance_dpb_flush:891: try to DPB flush
+[12140.183974] s5p-mfc mfc: [c:0] mfc_release:577: MFC driver release is called [0:1], is_drm(0)
+[12140.185068] mfc-core 1c8d0000.MFC-0: mfc_core_mfc_off:181: MFC h/w state: 6
+[12140.185316] s5p-mfc mfc: mfc_release:656: mfc driver release finished [0:0]
+[12140.192048] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12140.207184] s5p-mfc mfc: [c:0] mfc_open:492: NORMAL instance is opened [0:1]
+[12140.210560] mfc-core 1c8d0000.MFC-0: mfc_core_run_init_hw:109: [F/W] MFC normal v14020100, 24yy 07mm 22dd (D)
+[12140.210837] s5p-mfc mfc: [c:0] mfc_open:517: MFC open completed [0:1] version = 220715
+[12140.686867] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12140.688325] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12140.688465] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12140.777248] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_out_mplane:730: [STREAM] Dec src codec(0): H264 Encoded Stream
+[12140.780700] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_cap_mplane:696: [FRAME] dec dst pixelformat : 4:2:0 2 Planes Y/CbCr single
+[12140.783073] s5p-mfc mfc: [c:0] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 720, h: 960
+[12140.783245] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12140.785329] s5p-mfc mfc: [c:0] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12141.064491] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12141.064535] mfc-core 1c8d0000.MFC-0: mfc_core_nal_q_stop_if_started:574: [NALQ] stop NAL QUEUE during get hwlock
+[12141.064737] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 9
+[12141.064911] s5p-mfc mfc: [c:0] mfc_core_instance_dpb_flush:891: try to DPB flush
+[12141.068695] s5p-mfc mfc: [c:0] mfc_release:577: MFC driver release is called [0:1], is_drm(0)
+[12141.069580] mfc-core 1c8d0000.MFC-0: mfc_core_mfc_off:181: MFC h/w state: 6
+[12141.069839] s5p-mfc mfc: mfc_release:656: mfc driver release finished [0:0]
+[12141.548958] KP packages.list rename: dentry_path_raw failed
+[12141.548985] KP packages.list rename: dentry_path_raw failed
+[12141.581699] KP packages.list rename: dentry_path_raw failed
+[12141.581721] KP packages.list rename: dentry_path_raw failed
+[12141.688482] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12141.689431] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12141.689560] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12142.285439] KP packages.list rename: dentry_path_raw failed
+[12142.285471] KP packages.list rename: dentry_path_raw failed
+[12142.646115] audit: audit_lost=212109 audit_rate_limit=5 audit_backlog_limit=64
+[12142.646128] audit: rate limit exceeded
+[12142.661111] type=1400 audit(1788257404.728:215370): avc:  denied  { open } for  comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=79 scontext=u:r:shell:s0 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1
+[12142.661281] type=1400 audit(1788257404.728:215371): avc:  denied  { getattr } for  comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=79 scontext=u:r:shell:s0 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1
+[12142.661342] type=1400 audit(1788257404.728:215372): avc:  denied  { map } for  comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=79 scontext=u:r:shell:s0 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1
+[12142.661402] type=1400 audit(1788257404.728:215373): avc:  denied  { open } for  comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=81 scontext=u:r:shell:s0 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1
+[12142.661460] type=1400 audit(1788257404.728:215374): avc:  denied  { getattr } for  comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=81 scontext=u:r:shell:s0 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1
+[12142.661519] type=1400 audit(1788257404.728:215375): avc:  denied  { map } for  comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=81 scontext=u:r:shell:s0 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1
+[12142.661577] type=1400 audit(1788257404.728:215376): avc:  denied  { open } for  comm="getprop" path="/dev/__properties__/u:object_r:adaptive_haptics_prop:s0" dev="tmpfs" ino=82 scontext=u:r:shell:s0 tcontext=u:object_r:adaptive_haptics_prop:s0 tclass=file permissive=1
+[12142.661636] type=1400 audit(1788257404.728:215377): avc:  denied  { getattr } for  comm="getprop" path="/dev/__properties__/u:object_r:adaptive_haptics_prop:s0" dev="tmpfs" ino=82 scontext=u:r:shell:s0 tcontext=u:object_r:adaptive_haptics_prop:s0 tclass=file permissive=1
+[12142.691475] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12142.693146] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12142.693550] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12142.696733] KP packages.list rename: dentry_path_raw failed
+[12142.696773] KP packages.list rename: dentry_path_raw failed
+[12142.705904] KP packages.list rename: dentry_path_raw failed
+[12142.705944] KP packages.list rename: dentry_path_raw failed
+[12143.332486] KP packages.list rename: dentry_path_raw failed
+[12143.332506] KP packages.list rename: dentry_path_raw failed
+[12143.349338] KP packages.list rename: dentry_path_raw failed
+[12143.349354] KP packages.list rename: dentry_path_raw failed
+[12143.454539] KP packages.list rename: dentry_path_raw failed
+[12143.454559] KP packages.list rename: dentry_path_raw failed
+[12143.472448] KP packages.list rename: dentry_path_raw failed
+[12143.472463] KP packages.list rename: dentry_path_raw failed
+[12143.499504] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[12143.641882] alsa: alsa-aoc cmd [output] id 0x00c9, size 10, cntr 417
+[12143.642186] alsa: The hr_timer was still in use...
+[12143.642380] alsa: aoc_path_put: set ep 1 hw_id 0x6 enable 0 chip 000000007e72f514
+[12143.642386] alsa: unbind: src:1 - sink:0!
+[12143.642391] alsa: alsa-aoc cmd [output] id 0x010f, size 11, cntr 418
+[12143.692669] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12143.694039] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12143.694631] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12143.753445] KP packages.list rename: dentry_path_raw failed
+[12143.753465] KP packages.list rename: dentry_path_raw failed
+[12143.824799] KP packages.list rename: dentry_path_raw failed
+[12143.824818] KP packages.list rename: dentry_path_raw failed
+[12143.830437] KP packages.list rename: dentry_path_raw failed
+[12143.830456] KP packages.list rename: dentry_path_raw failed
+[12143.965251] KP packages.list rename: dentry_path_raw failed
+[12143.965284] KP packages.list rename: dentry_path_raw failed
+[12144.695511] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12144.696595] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12144.696705] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12144.766789] KP packages.list rename: dentry_path_raw failed
+[12144.766807] KP packages.list rename: dentry_path_raw failed
+[12144.807121] type=1400 audit(1788257406.888:216108): avc:  denied  { create } for  comm="binder:879_3" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[12144.913525] KP packages.list rename: dentry_path_raw failed
+[12144.913565] KP packages.list rename: dentry_path_raw failed
+[12145.088768] alsa: aoc_path_put: set ep 1 hw_id 0x6 enable 1 chip 000000007e72f514
+[12145.088788] alsa: bind: src:1 - sink:0!
+[12145.088809] alsa: alsa-aoc cmd [output] id 0x010f, size 11, cntr 419
+[12145.090898] alsa: alsa-aoc cmd [output] id 0x00ce, size 28, cntr 420
+[12145.095072] alsa: alsa-aoc cmd [output] id 0x00c9, size 10, cntr 421
+[12145.138170] KP packages.list rename: dentry_path_raw failed
+[12145.138205] KP packages.list rename: dentry_path_raw failed
+[12145.286730] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[12145.408550] KP packages.list rename: dentry_path_raw failed
+[12145.408565] KP packages.list rename: dentry_path_raw failed
+[12145.427339] KP packages.list rename: dentry_path_raw failed
+[12145.427356] KP packages.list rename: dentry_path_raw failed
+[12145.457701] KP packages.list rename: dentry_path_raw failed
+[12145.457739] KP packages.list rename: dentry_path_raw failed
+[12145.464787] KP packages.list rename: dentry_path_raw failed
+[12145.464824] KP packages.list rename: dentry_path_raw failed
+[12145.633497] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[12145.696822] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12145.698597] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12145.699497] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12145.758768] KP packages.list rename: dentry_path_raw failed
+[12145.758806] KP packages.list rename: dentry_path_raw failed
+[12145.854991] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[12146.073606] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.074077] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.075219] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.075549] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.076201] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.076602] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.076998] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.077394] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.077794] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.078310] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.078813] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.079343] servicemanager: Caller(pid=2301,uid=10242,sid=u:r:pixelsystemservice_app:s0:c242,c256,c512,c768) Found android.frameworks.stats.IStats/default in framework VINTF manifest.
+[12146.214066] KP packages.list rename: dentry_path_raw failed
+[12146.214079] KP packages.list rename: dentry_path_raw failed
+[12146.216235] KP packages.list rename: dentry_path_raw failed
+[12146.216250] KP packages.list rename: dentry_path_raw failed
+[12146.381277] KP packages.list rename: dentry_path_raw failed
+[12146.381295] KP packages.list rename: dentry_path_raw failed
+[12146.386031] KP packages.list rename: dentry_path_raw failed
+[12146.386051] KP packages.list rename: dentry_path_raw failed
+[12146.513677] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12146.527352] s5p-mfc mfc: [c:0] mfc_open:492: NORMAL instance is opened [0:1]
+[12146.530228] mfc-core 1c8d0000.MFC-0: mfc_core_run_init_hw:109: [F/W] MFC normal v14020100, 24yy 07mm 22dd (D)
+[12146.530372] s5p-mfc mfc: [c:0] mfc_open:517: MFC open completed [0:1] version = 220715
+[12146.536127] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_out_mplane:730: [STREAM] Dec src codec(0): H264 Encoded Stream
+[12146.536263] KP packages.list rename: dentry_path_raw failed
+[12146.536272] KP packages.list rename: dentry_path_raw failed
+[12146.539499] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_cap_mplane:696: [FRAME] dec dst pixelformat : 4:2:0 2 Planes Y/CbCr single
+[12146.540298] s5p-mfc mfc: [c:0] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 720, h: 960
+[12146.540521] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12146.542307] s5p-mfc mfc: [c:0] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12146.698170] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12146.700000] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12146.700403] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12146.947255] KP packages.list rename: dentry_path_raw failed
+[12146.947314] KP packages.list rename: dentry_path_raw failed
+[12146.986199] KP packages.list rename: dentry_path_raw failed
+[12146.986225] KP packages.list rename: dentry_path_raw failed
+[12147.135524] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12147.135603] mfc-core 1c8d0000.MFC-0: mfc_core_nal_q_stop_if_started:574: [NALQ] stop NAL QUEUE during get hwlock
+[12147.135825] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 9
+[12147.135958] s5p-mfc mfc: [c:0] mfc_core_instance_dpb_flush:891: try to DPB flush
+[12147.136280] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12147.139676] s5p-mfc mfc: [c:0] mfc_release:577: MFC driver release is called [0:1], is_drm(0)
+[12147.140605] mfc-core 1c8d0000.MFC-0: mfc_core_mfc_off:181: MFC h/w state: 6
+[12147.140783] s5p-mfc mfc: mfc_release:656: mfc driver release finished [0:0]
+[12147.149483] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12147.485693] KP packages.list rename: dentry_path_raw failed
+[12147.485722] KP packages.list rename: dentry_path_raw failed
+[12147.486624] KP packages.list rename: dentry_path_raw failed
+[12147.486635] KP packages.list rename: dentry_path_raw failed
+[12147.491294] KP packages.list rename: dentry_path_raw failed
+[12147.491311] KP packages.list rename: dentry_path_raw failed
+[12147.700124] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12147.702189] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12147.702406] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12148.231139] KP packages.list rename: dentry_path_raw failed
+[12148.231163] KP packages.list rename: dentry_path_raw failed
+[12148.260391] KP packages.list rename: dentry_path_raw failed
+[12148.260460] KP packages.list rename: dentry_path_raw failed
+[12148.276743] alsa: alsa-aoc cmd [output] id 0x00c9, size 10, cntr 422
+[12148.277504] alsa: The hr_timer was still in use...
+[12148.278139] alsa: aoc_path_put: set ep 1 hw_id 0x6 enable 0 chip 000000007e72f514
+[12148.278183] alsa: unbind: src:1 - sink:0!
+[12148.278243] alsa: alsa-aoc cmd [output] id 0x010f, size 11, cntr 423
+[12148.287022] KP packages.list rename: dentry_path_raw failed
+[12148.287105] KP packages.list rename: dentry_path_raw failed
+[12148.498650] KP packages.list rename: dentry_path_raw failed
+[12148.498682] KP packages.list rename: dentry_path_raw failed
+[12148.642423] KP packages.list rename: dentry_path_raw failed
+[12148.642453] KP packages.list rename: dentry_path_raw failed
+[12148.701548] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12148.704253] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12148.704827] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12148.898552] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[12149.024770] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[12149.150762] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12149.177936] s5p-mfc mfc: [c:0] mfc_open:492: NORMAL instance is opened [0:1]
+[12149.180630] mfc-core 1c8d0000.MFC-0: mfc_core_run_init_hw:109: [F/W] MFC normal v14020100, 24yy 07mm 22dd (D)
+[12149.180756] s5p-mfc mfc: [c:0] mfc_open:517: MFC open completed [0:1] version = 220715
+[12149.229579] KP packages.list rename: dentry_path_raw failed
+[12149.229591] KP packages.list rename: dentry_path_raw failed
+[12149.255634] KP packages.list rename: dentry_path_raw failed
+[12149.255649] KP packages.list rename: dentry_path_raw failed
+[12149.269209] KP packages.list rename: dentry_path_raw failed
+[12149.269223] KP packages.list rename: dentry_path_raw failed
+[12149.270326] KP packages.list rename: dentry_path_raw failed
+[12149.270335] KP packages.list rename: dentry_path_raw failed
+[12149.273773] KP packages.list rename: dentry_path_raw failed
+[12149.273787] KP packages.list rename: dentry_path_raw failed
+[12149.276299] KP packages.list rename: dentry_path_raw failed
+[12149.277097] KP packages.list rename: dentry_path_raw failed
+[12149.322653] KP packages.list rename: dentry_path_raw failed
+[12149.323664] KP packages.list rename: dentry_path_raw failed
+[12149.379016] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_out_mplane:730: [STREAM] Dec src codec(17): HEVC Encoded Stream
+[12149.382712] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_cap_mplane:696: [FRAME] dec dst pixelformat : 4:2:0 2 Planes Y/CbCr single
+[12149.383866] s5p-mfc mfc: [c:0] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 1088, h: 1920
+[12149.384015] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12149.386283] s5p-mfc mfc: [c:0] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12149.400031] type=1400 audit(1788257411.480:216109): avc:  denied  { getattr } for  comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=1
+[12149.532826] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12149.543397] s5p-mfc mfc: [c:1] mfc_open:492: NORMAL instance is opened [0:2]
+[12149.543489] mfc-core 1c8d0000.MFC-0: mfc_core_nal_q_stop_if_started:574: [NALQ] stop NAL QUEUE during get hwlock
+[12149.543680] s5p-mfc mfc: [c:1] mfc_open:517: MFC open completed [0:2] version = 220715
+[12149.602612] KP packages.list rename: dentry_path_raw failed
+[12149.602626] KP packages.list rename: dentry_path_raw failed
+[12149.646558] KP packages.list rename: dentry_path_raw failed
+[12149.646575] KP packages.list rename: dentry_path_raw failed
+[12149.650673] cpif: pcie_send_ap2cp_irq: Reserve doorbell interrupt: PCI not powered on
+[12149.655094] exynos-pcie-rc 11920000.pcie: Updated MSI Control Addr: 0x00000000f6200000
+[12149.656128] logbuffer_pcie0: [13305] OC Initial Status check: 0x5FC(0xf0)
+
+[12149.656229] exynos-pcie-rc 11920000.pcie: AFC cal mode set to restart
+[12149.656989] KP packages.list rename: dentry_path_raw failed
+[12149.657001] KP packages.list rename: dentry_path_raw failed
+[12149.686099] logbuffer_pcie0: [13306] D state: 0, LTSSM: 0
+[12149.687189] logbuffer_pcie0: [13307] L0(0x11)
+[12149.702342] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12149.703099] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12149.703241] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12149.744875] KP packages.list rename: dentry_path_raw failed
+[12149.744915] KP packages.list rename: dentry_path_raw failed
+[12149.753086] s5p-mfc mfc: [c:1] mfc_dec_s_fmt_vid_out_mplane:730: [STREAM] Dec src codec(17): HEVC Encoded Stream
+[12149.753964] s5p-mfc mfc: [c:1] mfc_dec_s_fmt_vid_cap_mplane:696: [FRAME] dec dst pixelformat : 4:2:0 2 Planes Y/CbCr single
+[12149.754754] s5p-mfc mfc: [c:1] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 1088, h: 1920
+[12149.754983] s5p-mfc mfc: [c:1] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12149.756755] s5p-mfc mfc: [c:1] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12149.778563] alsa: aoc_path_put: set ep 1 hw_id 0x6 enable 1 chip 000000007e72f514
+[12149.778588] alsa: bind: src:1 - sink:0!
+[12149.778599] alsa: alsa-aoc cmd [output] id 0x010f, size 11, cntr 424
+[12149.779376] alsa: alsa-aoc cmd [output] id 0x00ce, size 28, cntr 425
+[12149.779912] alsa: alsa-aoc cmd [output] id 0x00c9, size 10, cntr 426
+[12149.789110] KP packages.list rename: dentry_path_raw failed
+[12149.789123] KP packages.list rename: dentry_path_raw failed
+[12149.816880] exynos-pcie-rc 11920000.pcie: Updated MSI Control Addr: 0x00000000f6200000
+[12149.817918] logbuffer_pcie0: [13308] OC Initial Status check: 0x5FC(0xf0)
+
+[12149.818056] exynos-pcie-rc 11920000.pcie: AFC cal mode set to restart
+[12149.826619] KP packages.list rename: dentry_path_raw failed
+[12149.826632] KP packages.list rename: dentry_path_raw failed
+[12149.847690] logbuffer_pcie0: [13309] D state: 0, LTSSM: 0
+[12149.847801] logbuffer_pcie0: [13310] L0(0x11)
+[12149.892293] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12149.892333] mfc-core 1c8d0000.MFC-0: mfc_core_nal_q_stop_if_started:574: [NALQ] stop NAL QUEUE during get hwlock
+[12149.892496] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 9
+[12149.892678] s5p-mfc mfc: [c:0] mfc_core_instance_dpb_flush:891: try to DPB flush
+[12149.897589] s5p-mfc mfc: [c:0] mfc_release:577: MFC driver release is called [0:2], is_drm(0)
+[12149.898392] s5p-mfc mfc: mfc_release:656: mfc driver release finished [0:1]
+[12149.904223] KP packages.list rename: dentry_path_raw failed
+[12149.904288] KP packages.list rename: dentry_path_raw failed
+[12149.927897] s5p-mfc mfc: [c:1] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12149.946207] KP packages.list rename: dentry_path_raw failed
+[12149.946224] KP packages.list rename: dentry_path_raw failed
+[12150.000163] KP packages.list rename: dentry_path_raw failed
+[12150.000312] KP packages.list rename: dentry_path_raw failed
+[12150.010985] KP packages.list rename: dentry_path_raw failed
+[12150.011004] KP packages.list rename: dentry_path_raw failed
+[12150.025223] KP packages.list rename: dentry_path_raw failed
+[12150.025245] KP packages.list rename: dentry_path_raw failed
+[12150.045384] KP packages.list rename: dentry_path_raw failed
+[12150.045409] KP packages.list rename: dentry_path_raw failed
+[12150.046076] KP packages.list rename: dentry_path_raw failed
+[12150.046084] KP packages.list rename: dentry_path_raw failed
+[12150.141200] KP packages.list rename: dentry_path_raw failed
+[12150.141238] KP packages.list rename: dentry_path_raw failed
+[12150.264516] type=1400 audit(1788257412.348:216110): avc:  denied  { add_name } for  comm="binder:879_3" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=dir permissive=1
+[12150.264635] type=1400 audit(1788257412.348:216111): avc:  denied  { create } for  comm="binder:879_3" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[12150.504987] KP packages.list rename: dentry_path_raw failed
+[12150.505025] KP packages.list rename: dentry_path_raw failed
+[12150.521519] KP packages.list rename: dentry_path_raw failed
+[12150.521558] KP packages.list rename: dentry_path_raw failed
+[12150.541232] KP packages.list rename: dentry_path_raw failed
+[12150.541270] KP packages.list rename: dentry_path_raw failed
+[12150.595225] s5p-mfc mfc: [c:1] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12150.595277] mfc-core 1c8d0000.MFC-0: mfc_core_nal_q_stop_if_started:574: [NALQ] stop NAL QUEUE during get hwlock
+[12150.595528] s5p-mfc mfc: [c:1] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 9
+[12150.595695] s5p-mfc mfc: [c:1] mfc_core_instance_dpb_flush:891: try to DPB flush
+[12150.601297] s5p-mfc mfc: [c:1] mfc_release:577: MFC driver release is called [0:1], is_drm(0)
+[12150.602041] mfc-core 1c8d0000.MFC-0: mfc_core_mfc_off:181: MFC h/w state: 6
+[12150.602220] s5p-mfc mfc: mfc_release:656: mfc driver release finished [0:0]
+[12150.703709] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12150.707545] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12150.710466] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12150.969664] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12150.986771] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12151.001678] servicemanager: Caller(pid=10559,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.media.c2.IComponentStore/default in device VINTF manifest.
+[12151.018434] s5p-mfc mfc: [c:0] mfc_open:492: NORMAL instance is opened [0:1]
+[12151.022969] mfc-core 1c8d0000.MFC-0: mfc_core_run_init_hw:109: [F/W] MFC normal v14020100, 24yy 07mm 22dd (D)
+[12151.023215] s5p-mfc mfc: [c:0] mfc_open:517: MFC open completed [0:1] version = 220715
+[12151.029478] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_out_mplane:730: [STREAM] Dec src codec(0): H264 Encoded Stream
+[12151.033369] s5p-mfc mfc: [c:0] mfc_dec_s_fmt_vid_cap_mplane:696: [FRAME] dec dst pixelformat : 4:2:0 2 Planes Y/CbCr single
+[12151.034402] s5p-mfc mfc: [c:0] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 720, h: 1312
+[12151.034588] s5p-mfc mfc: [c:0] mfc_dec_stop_streaming:309: dec stop_streaming is called, type : 10
+[12151.034608] s5p-mfc mfc: [c:0] mfc_core_instance_csd_parsing:966: try to special parsing! (before NAL_START)
+[12151.034917] s5p-mfc mfc: [c:0] __mfc_handle_seq_dec:1553: [STREAM] resolution w: 720, h: 1312
+[12151.037546] s5p-mfc mfc: [c:0] __mfc_nal_q_just_run:697: [NALQ] start NAL QUEUE
+[12151.306325] type=1400 audit(1788257413.388:216112): avc:  denied  { getattr } for  comm="TRThread_0" name="/" dev="dmabuf" ino=1 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=1 app=com.ss.android.ugc.aweme
+[12151.451427] KP packages.list rename: dentry_path_raw failed
+[12151.451442] KP packages.list rename: dentry_path_raw failed
+[12151.546060] hs_clock_store: exynos-dsim[0]: hs_clock_store: hs clock 1120, apply now: 0
+[12151.589264] KP packages.list rename: dentry_path_raw failed
+[12151.589281] KP packages.list rename: dentry_path_raw failed
+[12151.704917] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12151.705886] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12151.706200] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12151.754054] KP packages.list rename: dentry_path_raw failed
+[12151.754074] KP packages.list rename: dentry_path_raw failed
+[12151.766045] KP packages.list rename: dentry_path_raw failed
+[12151.766086] KP packages.list rename: dentry_path_raw failed
+[12151.841603] KP packages.list rename: dentry_path_raw failed
+[12151.841632] KP packages.list rename: dentry_path_raw failed
+[12151.966082] KP packages.list rename: dentry_path_raw failed
+[12151.966118] KP packages.list rename: dentry_path_raw failed
+[12152.091409] type=1400 audit(1788257414.176:216113): avc:  denied  { getattr } for  comm="TRThread_0" name="/" dev="dmabuf" ino=1 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=1 app=com.ss.android.ugc.aweme
+[12152.282540] KP packages.list rename: dentry_path_raw failed
+[12152.282586] KP packages.list rename: dentry_path_raw failed
+[12152.289306] KP packages.list rename: dentry_path_raw failed
+[12152.289340] KP packages.list rename: dentry_path_raw failed
+[12152.723556] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[12152.724860] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[12152.726935] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[12152.742074] type=1400 audit(1788257414.824:216114): avc:  denied  { add_name } for  comm="binder:879_3" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=dir permissive=1
+[12152.745167] KP packages.list rename: dentry_path_raw failed
+[12152.745184] KP packages.list rename: dentry_path_raw failed
+[12152.813971] KP packages.list rename: dentry_path_raw failed
+[12152.814013] KP packages.list rename: dentry_path_raw failed
+[12152.957053] logd: logdr: UID=2000 GID=2000 PID=12191 n tail=3000 logMask=99 pid=0 start=0ns deadline=0ns
+[12152.993370] KP packages.list rename: dentry_path_raw failed
+[12152.993385] KP packages.list rename: dentry_path_raw failed
+[12153.012821] [+] KP I commit_common_su: pid: 12216, tgid: 12216, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[12153.013021] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0

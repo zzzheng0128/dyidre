@@ -1,0 +1,507 @@
+[  968.717169] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  968.719152] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  968.719536] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  968.740682] [+] KP I commit_common_su: pid: 14158, tgid: 14158, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  968.740758] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  968.859570] [07:03:50.945994][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 0 ret:0
+[  968.955505] binder: 1816:4503 ioctl 400c620e 6c4febc2fc returned -11
+[  968.960076] logbuffer_pcie1: [  999] OC Initial Status check: 0x5FC(0xf0)
+
+[  968.960184] exynos-pcie-rc 14520000.pcie: AFC cal mode set to restart
+[  968.971560] binder: 1816:4503 ioctl 400c620e 6c4febc2fc returned -11
+[  968.987498] binder: 1816:4503 ioctl 400c620e 6c4febc2fc returned -11
+[  968.992417] logbuffer_pcie1: [ 1000] D state: 0, LTSSM: 0
+[  968.993016] logbuffer_pcie1: [ 1001] L0(0x11)
+[  968.996293] pcieh 0001:01:00.0: enabling device (0000 -> 0002)
+[  968.996492] [07:03:51.082920][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 1 ret:0
+[  969.003455] binder: 1816:4503 ioctl 400c620e 6c4febc2fc returned -11
+[  969.057580] [+] KP I commit_common_su: pid: 14174, tgid: 14174, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  969.057651] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  969.139838] binder: undelivered transaction 334835, process died.
+[  969.139868] binder: undelivered transaction 352122, process died.
+[  969.139878] binder: undelivered transaction 352123, process died.
+[  969.139886] binder: undelivered transaction 352125, process died.
+[  969.140822] binder: undelivered transaction 275797, process died.
+[  969.140840] binder: undelivered transaction 352126, process died.
+[  969.140849] binder: undelivered transaction 352127, process died.
+[  969.231019] binder: undelivered transaction 334837, process died.
+[  969.231579] binder: undelivered transaction 352129, process died.
+[  969.232612] binder: undelivered transaction 275827, process died.
+[  969.575416] [+] KP I commit_common_su: pid: 14181, tgid: 14181, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  969.575527] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  969.579243] [+] KP I commit_common_su: pid: 14184, tgid: 14184, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  969.579298] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  969.584201] [+] KP I commit_common_su: pid: 14185, tgid: 14185, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  969.584248] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  969.586536] logd: logdr: UID=2000 GID=2000 PID=14175 b tail=0 logMask=99 pid=0 start=0ns deadline=0ns
+[  969.719580] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  969.720696] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  969.720955] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  969.729084] [+] KP I commit_common_su: pid: 14192, tgid: 14192, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  969.729122] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  969.746854] [07:03:51.833282][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 0 ret:0
+[  969.809690] logbuffer_pcie1: [ 1002] OC Initial Status check: 0x5FC(0xf0)
+
+[  969.809762] exynos-pcie-rc 14520000.pcie: AFC cal mode set to restart
+[  969.842246] logbuffer_pcie1: [ 1003] D state: 0, LTSSM: 0
+[  969.842334] logbuffer_pcie1: [ 1004] RCVRY LOCK(0xd)
+[  969.845468] pcieh 0001:01:00.0: enabling device (0000 -> 0002)
+[  969.845609] [07:03:51.932039][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 1 ret:0
+[  970.593915] [07:03:52.680344][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 0 ret:0
+[  970.664719] logbuffer_pcie1: [ 1005] OC Initial Status check: 0x5FC(0xf0)
+
+[  970.664818] exynos-pcie-rc 14520000.pcie: AFC cal mode set to restart
+[  970.720314] logbuffer_pcie1: [ 1006] D state: 0, LTSSM: 0
+[  970.722044] logbuffer_pcie1: [ 1007] L0(0x11)
+[  970.725840] pcieh 0001:01:00.0: enabling device (0000 -> 0002)
+[  970.726104] [07:03:52.812528][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 1 ret:0
+[  970.726770] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  970.728719] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  970.729519] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  970.772694] exynos-decon[0]: update decon bts config for mode: 1080x2400x60(60)
+[  970.774068] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[  970.834990] type=1400 audit(1788246232.912:16129): avc:  denied  { read write } for  comm="wwb-loader" path=2F6D656D66643A7777625F736F202864656C6574656429 dev="tmpfs" ino=4399 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:tmpfs:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  970.835218] type=1400 audit(1788246232.912:16130): avc:  denied  { map } for  comm="wwb-loader" path=2F6D656D66643A7777625F736F202864656C6574656429 dev="tmpfs" ino=4399 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:tmpfs:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  970.835285] type=1400 audit(1788246232.912:16131): avc:  denied  { execute } for  comm="wwb-loader" path=2F6D656D66643A7777625F736F202864656C6574656429 dev="tmpfs" ino=4399 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:tmpfs:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  971.073419] type=1400 audit(1788246233.156:16132): avc:  denied  { setopt } for  comm="wwb-js" scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:magisk:s0 tclass=unix_stream_socket permissive=1 app=com.ss.android.ugc.aweme
+[  971.155484] [+] KP I commit_common_su: pid: 14242, tgid: 14242, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  971.155618] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  971.535328] type=1400 audit(1788246233.612:16133): avc:  denied  { getattr } for  comm="#TransmitThread" path="/data/media" dev="dm-56" ino=137 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:media_userdir_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  971.615576] audit: audit_lost=15815 audit_rate_limit=5 audit_backlog_limit=64
+[  971.615587] audit: rate limit exceeded
+[  971.729866] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  971.730840] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  971.733484] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  971.790387] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[  971.935400] type=1400 audit(1788246234.020:16139): avc:  denied  { read } for  comm="Thread-5" name="arp" dev="proc" ino=4026532015 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  971.935544] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[  971.937228] type=1400 audit(1788246234.020:16140): avc:  denied  { open } for  comm="Thread-5" path="/proc/14216/net/arp" dev="proc" ino=4026532015 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  971.937386] type=1400 audit(1788246234.020:16141): avc:  denied  { getattr } for  comm="Thread-5" path="/proc/14216/net/arp" dev="proc" ino=4026532015 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  971.939491] servicemanager: Caller(pid=14216,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+[  971.940694] servicemanager: Caller(pid=14216,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+[  971.942101] servicemanager: Caller(pid=14216,uid=10281,sid=u:r:untrusted_app:s0:c25,c257,c512,c768) Found mapper/pixel in device VINTF manifest.
+[  971.956024] SELinux: avc:  denied  { find } for pid=14445 uid=10281 name=window scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:window_service:s0 tclass=service_manager permissive=1
+[  972.124802] type=1400 audit(1788246234.188:16142): avc:  denied  { getattr } for  comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=1
+[  972.142154] cs35l41 spi13.0: cs35l41_bp_current_limit_put: value 1700
+[  972.142196] cs35l41 spi13.1: cs35l41_bp_current_limit_put: value 1900
+[  972.142315] alsa: aoc_path_put: set ep 8 hw_id 0x7 enable 1 chip 000000007e72f514
+[  972.142504] cs35l41 spi13.0: cs35l41_exit_hibernate: hibernate state 0
+[  972.142512] cs35l41 spi13.1: cs35l41_exit_hibernate: hibernate state 0
+[  972.142753] alsa: be_prepare: dai TDM_0_TX id 0xc0000007
+[  972.142891] alsa: aoc_path_put: set ep 1 hw_id 0x6 enable 1 chip 000000007e72f514
+[  972.142897] alsa: bind: src:1 - sink:0!
+[  972.142903] alsa: alsa-aoc cmd [output] id 0x010f, size 11, cntr 101
+[  972.143655] cs35l41 spi13.0: cs35l41_exit_hibernate: hibernate state 0
+[  972.143661] cs35l41 spi13.1: cs35l41_exit_hibernate: hibernate state 0
+[  972.144014] alsa: be_prepare: dai TDM_0_RX id 0x80000006
+[  972.144041] cs35l41 spi13.0: cs35l41_hibernate event 0x1 hibernate state 0
+[  972.144046] cs35l41 spi13.0: cs35l41_exit_hibernate: hibernate state 0
+[  972.144049] cs35l41 spi13.1: cs35l41_hibernate event 0x1 hibernate state 0
+[  972.144052] cs35l41 spi13.1: cs35l41_exit_hibernate: hibernate state 0
+[  972.146539] cs35l41 spi13.0: main amp event 2
+[  972.147806] cs35l41 spi13.1: main amp event 2
+[  972.149012] alsa: alsa-aoc cmd [output] id 0x00ce, size 28, cntr 102
+[  972.152663] alsa: alsa-aoc cmd [output] id 0x00c9, size 10, cntr 103
+[  972.447580] [+] KP I commit_common_su: pid: 14490, tgid: 14490, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  972.447716] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  972.538958] [+] KP I commit_common_su: pid: 14494, tgid: 14494, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  972.539047] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  972.732778] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  972.734504] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  972.734649] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  973.195647] type=1400 audit(1788246235.280:16143): avc:  granted  { execute } for  comm="#tp-default-696" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libCepEngine.so" dev="dm-56" ino=49117 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  973.199998] type=1400 audit(1788246235.284:16144): avc:  granted  { execute } for  comm="#tp-default-696" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libCepAST.so" dev="dm-56" ino=49006 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  973.204644] type=1400 audit(1788246235.288:16145): avc:  granted  { execute } for  comm="#tp-default-696" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libCepFast.so" dev="dm-56" ino=48792 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  973.204834] type=1400 audit(1788246235.288:16146): avc:  granted  { execute } for  comm="#tp-default-696" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libfast_engine.so" dev="dm-56" ino=45600 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  973.233249] type=1400 audit(1788246235.316:16147): avc:  granted  { execute } for  comm="#tp-default-696" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libPitayaBdComponent.so" dev="dm-56" ino=48725 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  973.243637] type=1400 audit(1788246235.328:16148): avc:  granted  { execute } for  comm="#tp-default-696" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libAndroidPitayaCore.so" dev="dm-56" ino=48914 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  973.253457] audit: audit_lost=15820 audit_rate_limit=5 audit_backlog_limit=64
+[  973.253492] audit: rate limit exceeded
+[  973.674493] [+] KP I commit_common_su: pid: 14518, tgid: 14518, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  973.674604] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  973.734397] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  973.735581] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  973.735835] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  974.284878] [+] KP I commit_common_su: pid: 14526, tgid: 14526, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  974.285010] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  974.375055] [+] KP I commit_common_su: pid: 14555, tgid: 14555, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  974.375149] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  974.451294] type=1400 audit(1788246236.532:16151): avc:  granted  { execute } for  comm="TuringVerifyThr" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libBDPythonVM.so" dev="dm-56" ino=40747 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  974.452375] type=1400 audit(1788246236.536:16152): avc:  granted  { execute } for  comm="TuringVerifyThr" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libpythonA.so" dev="dm-56" ino=48993 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  974.464134] type=1400 audit(1788246236.544:16153): avc:  granted  { execute } for  comm="TuringVerifyThr" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libByteAINN.so" dev="dm-56" ino=51052 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  974.464265] type=1400 audit(1788246236.548:16154): avc:  granted  { execute } for  comm="TuringVerifyThr" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libbytedt.so" dev="dm-56" ino=58690 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  974.464328] type=1400 audit(1788246236.548:16155): avc:  granted  { execute } for  comm="TuringVerifyThr" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.bytedance.aweme.smart_client_plugin/version-35109020/lib/libByteAIDT.so" dev="dm-56" ino=42376 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  974.468810] audit: audit_lost=15822 audit_rate_limit=5 audit_backlog_limit=64
+[  974.468834] audit: rate limit exceeded
+[  974.736689] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  974.738134] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  974.738332] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  975.539262] [+] KP I commit_common_su: pid: 14584, tgid: 14584, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  975.539336] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  975.587671] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  975.737799] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  975.739011] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  975.739179] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  975.808005] type=1400 audit(1788246237.892:16161): avc:  denied  { add_name } for  comm="binder:879_4" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=dir permissive=1
+[  975.808253] type=1400 audit(1788246237.892:16162): avc:  denied  { create } for  comm="binder:879_4" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[  976.153678] [+] KP I commit_common_su: pid: 14593, tgid: 14593, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  976.154081] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  976.266382] [+] KP I commit_common_su: pid: 14597, tgid: 14597, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  976.266520] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  976.636528] type=1400 audit(1788246238.720:16163): avc:  granted  { execute } for  comm="#tp-io-998" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.ss.android.ugc.aweme.videocache_v2/version-35109037/lib/libavmdlp2pv2.so" dev="dm-56" ino=56507 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  976.739937] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  976.742048] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  976.743795] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  977.427072] [+] KP I commit_common_su: pid: 14612, tgid: 14612, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  977.427237] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  977.741908] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  977.742872] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  977.743333] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  977.998444] [+] KP I commit_common_su: pid: 14617, tgid: 14617, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  977.998547] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  978.096847] [+] KP I commit_common_su: pid: 14621, tgid: 14621, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  978.096922] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  978.388203] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  978.744242] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  978.746482] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  978.746921] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  979.036917] binder_debug: 3 callbacks suppressed
+[  979.036935] binder: 3280:2508 cannot find target node
+[  979.037073] binder: 2508:3280 transaction async to 0:0 failed 359103/29189/-22, size 232-0 line 3361
+[  979.258430] [+] KP I commit_common_su: pid: 14643, tgid: 14643, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  979.258548] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  979.389315] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  979.462944] binder: release 14029:14080 transaction 350916 out, still active
+[  979.462975] binder: undelivered TRANSACTION_COMPLETE
+[  979.746997] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  979.749027] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  979.749405] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  979.877613] [+] KP I commit_common_su: pid: 14650, tgid: 14650, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  979.877685] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  979.983933] [+] KP I commit_common_su: pid: 14656, tgid: 14656, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  979.984019] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  980.311489] type=1400 audit(1788246242.396:16164): avc:  denied  { add_name } for  comm="binder:879_4" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=dir permissive=1
+[  980.311614] type=1400 audit(1788246242.396:16165): avc:  denied  { create } for  comm="binder:879_4" name="globalAlert" scontext=u:r:netd:s0 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1
+[  980.680899] KP packages.list rename: dentry_path_raw failed
+[  980.751545] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  980.752884] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  980.753276] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  981.153617] [+] KP I commit_common_su: pid: 14684, tgid: 14684, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  981.153720] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  981.733314] [+] KP I commit_common_su: pid: 14687, tgid: 14687, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  981.733398] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  981.753263] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  981.754266] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  981.754692] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  981.801337] [+] KP I commit_common_su: pid: 14692, tgid: 14692, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  981.801435] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  981.954197] KP packages.list rename: dentry_path_raw failed
+[  982.022392] KP packages.list rename: dentry_path_raw failed
+[  982.320599] type=1400 audit(1788246244.400:16166): avc:  denied  { getattr } for  comm="RenderEngine" name="/" dev="dmabuf" ino=1 scontext=u:r:surfaceflinger:s0 tcontext=u:object_r:unlabeled:s0 tclass=filesystem permissive=1
+[  982.454458] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[  982.758218] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  982.761376] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  982.762079] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  982.971976] [+] KP I commit_common_su: pid: 14702, tgid: 14702, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  982.972074] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  983.569520] [+] KP I commit_common_su: pid: 14708, tgid: 14708, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  983.569751] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  983.660943] [+] KP I commit_common_su: pid: 14712, tgid: 14712, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  983.661082] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  983.760673] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  983.762940] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  983.763398] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  984.602645] type=1400 audit(1788246246.684:16167): avc:  granted  { execute } for  comm="WTO_LynxInitTas" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.ss.android.ugc.aweme.v8/version-351090200/lib/libv8_libfull.cr.so" dev="dm-56" ino=47339 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  984.603998] type=1400 audit(1788246246.684:16168): avc:  granted  { execute } for  comm="WTO_LynxInitTas" path="/data/data/com.ss.android.ugc.aweme/files/plugins/com.ss.android.ugc.aweme.vmsdk_plugin/version-351090200/lib/libnapi_v8.so" dev="dm-56" ino=47690 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file app=com.ss.android.ugc.aweme
+[  984.763267] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  984.765154] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  984.765489] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  984.844666] [+] KP I commit_common_su: pid: 14726, tgid: 14726, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  984.844732] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  985.428596] max1720x i2c-max1720x_fg: 0x524D 06:63FC FF:62F2 1F:0872 05:0872 10:0873 35:0873 23:085F 4C:08CD 4D:08E9 45:00E6 46:1576 0C:0000 3D:1408 28:263E 39:0E02 29:C623 0F:0872 4A:0862 09:DBF2 0A:FFF1 38:0D0F 17:C877 CC:4326000
+[  985.428869] google,charger google,charger: chg_psy_changed name=maxfg evt=0
+[  985.450189] healthd: battery l=100 v=4398 t=36.9 h=2 st=5 c=-625 fc=4286000 cc=513 chg=u
+[  985.456124] servicemanager: Caller(pid=2139,uid=10234,sid=u:r:platform_app:s0:c512,c768) Found vendor.google.google_battery.IGoogleBattery/default in device VINTF manifest.
+[  985.457799] KP packages.list rename: dentry_path_raw failed
+[  985.459178] google,battery google,battery: force full charged at cycle 513
+[  985.461006] KP packages.list rename: dentry_path_raw failed
+[  985.463563] [+] KP I commit_common_su: pid: 14743, tgid: 14743, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  985.463616] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  985.465866] KP packages.list rename: dentry_path_raw failed
+[  985.471876] KP packages.list rename: dentry_path_raw failed
+[  985.484288] KP packages.list rename: dentry_path_raw failed
+[  985.527980] KP packages.list rename: dentry_path_raw failed
+[  985.529070] [+] KP I commit_common_su: pid: 14748, tgid: 14748, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  985.529133] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  985.765348] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  985.766788] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  985.767049] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  986.676642] [+] KP I commit_common_su: pid: 14757, tgid: 14757, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  986.676710] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  986.767323] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  986.768581] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  986.768760] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  986.907071] binder: 3174:2508 reply target not found
+[  986.907221] binder: 2508:3174 transaction reply to 0:0 failed 361931/29189/0, size 72-0 line 3290
+[  986.907249] binder: send failed reply for transaction 350916, target dead
+[  987.296238] [+] KP I commit_common_su: pid: 14761, tgid: 14761, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  987.296364] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  987.374045] [+] KP I commit_common_su: pid: 14765, tgid: 14765, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  987.374178] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  987.773313] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  987.777112] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  987.777652] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  988.132294] google,charger google,charger: chg_psy_changed name=maxfg evt=0
+[  988.154995] healthd: battery l=100 v=4400 t=36.9 h=2 st=5 c=-8750 fc=4286000 cc=513 chg=u
+[  988.164955] servicemanager: Caller(pid=2139,uid=10234,sid=u:r:platform_app:s0:c512,c768) Found vendor.google.google_battery.IGoogleBattery/default in device VINTF manifest.
+[  988.175311] google,battery google,battery: force full charged at cycle 513
+[  988.555930] [+] KP I commit_common_su: pid: 14811, tgid: 14811, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  988.556051] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  988.571386] audit: audit_lost=15827 audit_rate_limit=5 audit_backlog_limit=64
+[  988.571397] audit: rate limit exceeded
+[  988.576865] type=1400 audit(1788246250.652:16169): avc:  denied  { open } for  comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=79 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  988.577049] type=1400 audit(1788246250.656:16170): avc:  denied  { getattr } for  comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=79 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  988.577113] type=1400 audit(1788246250.656:16171): avc:  denied  { map } for  comm="getprop" path="/dev/__properties__/u:object_r:aac_drc_prop:s0" dev="tmpfs" ino=79 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:aac_drc_prop:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  988.577173] type=1400 audit(1788246250.656:16172): avc:  denied  { open } for  comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=81 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  988.577239] type=1400 audit(1788246250.656:16173): avc:  denied  { getattr } for  comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=81 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  988.577299] type=1400 audit(1788246250.656:16174): avc:  denied  { map } for  comm="getprop" path="/dev/__properties__/u:object_r:ab_update_gki_prop:s0" dev="tmpfs" ino=81 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:ab_update_gki_prop:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  988.577357] type=1400 audit(1788246250.656:16175): avc:  denied  { open } for  comm="getprop" path="/dev/__properties__/u:object_r:adaptive_haptics_prop:s0" dev="tmpfs" ino=82 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:adaptive_haptics_prop:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  988.775932] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  988.776600] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  988.776737] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  989.163298] KP packages.list rename: dentry_path_raw failed
+[  989.169247] KP packages.list rename: dentry_path_raw failed
+[  989.169600] [+] KP I commit_common_su: pid: 15027, tgid: 15027, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  989.169644] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  989.206825] [+] KP I commit_common_su: pid: 15037, tgid: 15037, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  989.206857] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  989.493825] KP packages.list rename: dentry_path_raw failed
+[  989.580489] audit: audit_lost=17923 audit_rate_limit=5 audit_backlog_limit=64
+[  989.580500] audit: rate limit exceeded
+[  989.601215] type=1400 audit(1788246251.660:18272): avc:  denied  { getattr } for  comm="ps" path="/proc/5811" dev="proc" ino=204038 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:untrusted_app:s0:c183,c256,c512,c768 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  989.602346] type=1400 audit(1788246251.660:18273): avc:  denied  { search } for  comm="ps" name="5811" dev="proc" ino=204038 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:untrusted_app:s0:c183,c256,c512,c768 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  989.602440] type=1400 audit(1788246251.660:18274): avc:  denied  { read } for  comm="ps" name="stat" dev="proc" ino=206731 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:untrusted_app:s0:c183,c256,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  989.602503] type=1400 audit(1788246251.664:18275): avc:  denied  { getattr } for  comm="ps" path="/proc/5985" dev="proc" ino=204040 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:turbo_adapter:s0:c240,c256,c512,c768 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  989.602623] type=1400 audit(1788246251.664:18276): avc:  denied  { search } for  comm="ps" name="5985" dev="proc" ino=204040 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:turbo_adapter:s0:c240,c256,c512,c768 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  989.777815] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  989.779718] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  989.781630] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  990.426725] [+] KP I commit_common_su: pid: 15288, tgid: 15288, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  990.426848] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  990.587315] audit: audit_lost=18805 audit_rate_limit=5 audit_backlog_limit=64
+[  990.587329] audit: rate limit exceeded
+[  990.590767] type=1400 audit(1788246252.668:19159): avc:  denied  { getattr } for  comm="ps" path="/proc/1130" dev="proc" ino=203898 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:hal_neuralnetworks_darwinn:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  990.590966] type=1400 audit(1788246252.668:19160): avc:  denied  { search } for  comm="ps" name="1130" dev="proc" ino=203898 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:hal_neuralnetworks_darwinn:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  990.592330] type=1400 audit(1788246252.668:19161): avc:  denied  { getattr } for  comm="ps" path="/proc/1170" dev="proc" ino=203900 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:pktrouter:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  990.592457] type=1400 audit(1788246252.668:19162): avc:  denied  { search } for  comm="ps" name="1170" dev="proc" ino=203900 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:pktrouter:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  990.592531] type=1400 audit(1788246252.672:19163): avc:  denied  { getattr } for  comm="ps" path="/proc/1180" dev="proc" ino=203901 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:cameraserver:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  990.779781] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  990.781135] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  990.781585] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  991.122100] [+] KP I commit_common_su: pid: 15315, tgid: 15315, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  991.122179] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  991.200565] [+] KP I commit_common_su: pid: 15319, tgid: 15319, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  991.200680] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  991.781657] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  991.783854] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  991.784351] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  992.121552] type=1400 audit(1788246254.200:19408): avc:  denied  { bind } for  comm="ip" scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tclass=netlink_route_socket permissive=1 bug=b/155595000 app=com.ss.android.ugc.aweme
+[  992.171129] type=1400 audit(1788246254.252:19409): avc:  denied  { read } for  comm="Thread-10" name="cache" dev="dm-10" ino=18 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:cache_file:s0 tclass=lnk_file permissive=1 app=com.ss.android.ugc.aweme
+[  992.171390] type=1400 audit(1788246254.252:19410): avc:  denied  { search } for  comm="Thread-10" name="vendor" dev="tmpfs" ino=2 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  992.171963] type=1400 audit(1788246254.252:19411): avc:  denied  { search } for  comm="Thread-10" name="/" dev="sda1" ino=2 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  992.205626] audit: audit_lost=19049 audit_rate_limit=5 audit_backlog_limit=64
+[  992.205642] audit: rate limit exceeded
+[  992.212439] type=1400 audit(1788246254.288:19412): avc:  denied  { getattr } for  comm="mount" path="/mnt/vendor/persist" dev="sda1" ino=2 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  992.397242] [+] KP I commit_common_su: pid: 15346, tgid: 15346, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  992.397293] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  992.783370] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  992.784761] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  992.785187] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  992.987046] [+] KP I commit_common_su: pid: 15350, tgid: 15350, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  992.987266] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  993.097370] [+] KP I commit_common_su: pid: 15354, tgid: 15354, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  993.097498] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  993.198772] [07:04:15.285198][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 0 ret:0
+[  993.221914] logbuffer_pcie1: [ 1008] OC Initial Status check: 0x5FC(0xf0)
+
+[  993.222062] exynos-pcie-rc 14520000.pcie: AFC cal mode set to restart
+[  993.254603] logbuffer_pcie1: [ 1009] D state: 0, LTSSM: 0
+[  993.255315] logbuffer_pcie1: [ 1010] L0(0x11)
+[  993.258924] pcieh 0001:01:00.0: enabling device (0000 -> 0002)
+[  993.259562] [07:04:15.345989][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 1 ret:0
+[  993.787728] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  993.790109] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  993.790401] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  994.049684] audit: audit_lost=19074 audit_rate_limit=5 audit_backlog_limit=64
+[  994.049707] type=1400 audit(1788246256.132:19438): avc:  denied  { read } for  comm="Thread-10" name="version" dev="proc" ino=4026532005 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_version:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  994.049711] audit: rate limit exceeded
+[  994.049887] type=1400 audit(1788246256.132:19439): avc:  denied  { open } for  comm="Thread-10" path="/proc/version" dev="proc" ino=4026532005 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_version:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  994.050884] type=1400 audit(1788246256.132:19440): avc:  denied  { getattr } for  comm="Thread-10" path="/proc/version" dev="proc" ino=4026532005 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_version:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  994.051408] type=1400 audit(1788246256.132:19441): avc:  denied  { read } for  comm="Thread-10" name="misc" dev="proc" ino=4026531980 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_misc:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  994.051490] type=1400 audit(1788246256.132:19442): avc:  denied  { open } for  comm="Thread-10" path="/proc/misc" dev="proc" ino=4026531980 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_misc:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  994.110841] KP packages.list rename: dentry_path_raw failed
+[  994.123512] KP packages.list rename: dentry_path_raw failed
+[  994.127306] KP packages.list rename: dentry_path_raw failed
+[  994.144433] KP packages.list rename: dentry_path_raw failed
+[  994.149508] KP packages.list rename: dentry_path_raw failed
+[  994.153761] KP packages.list rename: dentry_path_raw failed
+[  994.179367] KP packages.list rename: dentry_path_raw failed
+[  994.220124] servicemanager: Isolated app with UID 99001 requested 'network_management', but the service is not allowed for isolated apps.
+[  994.228983] servicemanager: Isolated app with UID 99001 requested 'connectivity', but the service is not allowed for isolated apps.
+[  994.232315] [+] KP I commit_common_su: pid: 15406, tgid: 15406, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  994.232393] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  994.238019] servicemanager: Isolated app with UID 99001 requested 'content_capture', but the service is not allowed for isolated apps.
+[  994.789076] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  994.790670] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  994.791041] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  994.848989] wxshadow: trying to scan mm->context.id offset...
+[  994.849000] wxshadow: init process mm=ffffff800c477800
+[  994.849003] wxshadow: scanning for vdso (ELF magic) in mm=ffffff800c477800, pgd_offset=0x38
+[  994.849006] wxshadow: search range: [0x138, 0x438)
+[  994.849011] wxshadow:   [0x138] uaddr=0x7fcc654800 -> magic=02 00 00 00 
+[  994.849014] wxshadow:   [0x140] uaddr=0x7fcc654ec5 -> magic=2f 73 79 73 
+[  994.849016] wxshadow:   [0x148] uaddr=0x7fcc654ee3 -> magic=50 41 54 48 
+[  994.849018] wxshadow:   [0x150] uaddr=0x7fcc654ee3 -> magic=50 41 54 48 
+[  994.849020] wxshadow:   [0x158] uaddr=0x7fcc654fe7 -> magic=2f 73 79 73 
+[  994.849022] wxshadow:   [0x160] uaddr=0x21 -> PA failed
+[  994.849025] wxshadow:   [0x168] uaddr=0x7fae01c000 -> magic=7f 45 4c 46 ** ELF FOUND **
+[  994.849027] wxshadow: === VDSO FOUND at mm+0x168, vdso_addr=0x7fae01c000 ===
+[  994.849029] wxshadow: mm_context_id_offset = 0x160 (vdso method)
+[  994.849032] wxshadow: [patch] addr=70f49cee30 len=12
+[  994.849054] wxshadow: created page for mm=ffffff8006d09c00 addr=70f49ce000
+[  994.849063] wxshadow: [switch] get_user_pte failed for addr=70f49ce000
+[  994.849113] wxshadow: [patch] addr=70f49cee30 len=12
+[  994.849118] wxshadow: created page for mm=ffffff8006d09c00 addr=70f49ce000
+[  994.849122] wxshadow: [switch] get_user_pte failed for addr=70f49ce000
+[  994.859227] wxshadow: [patch] addr=70f49cee30 len=12
+[  994.859258] wxshadow: created page for mm=ffffff8006d09c00 addr=70f49ce000
+[  994.859272] wxshadow: [switch] get_user_pte failed for addr=70f49ce000
+[  994.859293] wxshadow: [patch] addr=70f49cee30 len=12
+[  994.859298] wxshadow: created page for mm=ffffff8006d09c00 addr=70f49ce000
+[  994.859302] wxshadow: [switch] get_user_pte failed for addr=70f49ce000
+[  994.872372] [+] KP I commit_common_su: pid: 15442, tgid: 15442, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  994.872422] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  994.936320] [+] KP I commit_common_su: pid: 15446, tgid: 15446, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  994.936383] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  995.122796] type=1400 audit(1788246257.204:20067): avc:  denied  { read } for  comm="Thread-10" name="cache" dev="dm-10" ino=18 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:cache_file:s0 tclass=lnk_file permissive=1 app=com.ss.android.ugc.aweme
+[  995.123022] type=1400 audit(1788246257.204:20068): avc:  denied  { search } for  comm="Thread-10" name="vendor" dev="tmpfs" ino=2 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  995.124156] type=1400 audit(1788246257.204:20069): avc:  denied  { search } for  comm="Thread-10" name="/" dev="sda1" ino=2 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  995.124305] type=1400 audit(1788246257.204:20070): avc:  denied  { search } for  comm="Thread-10" name="vendor" dev="tmpfs" ino=2 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:mnt_vendor_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  995.162304] audit: audit_lost=19698 audit_rate_limit=5 audit_backlog_limit=64
+[  995.162327] audit: rate limit exceeded
+[  995.176184] type=1400 audit(1788246257.244:20071): avc:  denied  { getattr } for  comm="mount" path="/mnt/vendor/persist" dev="sda1" ino=2 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:persist_file:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  995.792152] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  995.793363] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  995.793609] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  996.082053] [+] KP I commit_common_su: pid: 15488, tgid: 15488, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  996.082116] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  996.353954] type=1400 audit(1788246258.436:20111): avc:  denied  { getattr } for  comm="Thread-10" path="/proc/14216/net/arp" dev="proc" ino=4026532015 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:proc_net:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  996.354127] type=1400 audit(1788246258.436:20112): avc:  denied  { search } for  comm="Thread-10" name="net" dev="sysfs" ino=27489 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:sysfs_net:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  996.363659] audit: audit_lost=19737 audit_rate_limit=5 audit_backlog_limit=64
+[  996.363669] audit: rate limit exceeded
+[  996.363746] type=1400 audit(1788246258.448:20113): avc:  denied  { search } for  comm="Thread-10" name="1" dev="proc" ino=21207 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:init:s0 tclass=dir permissive=1 app=com.ss.android.ugc.aweme
+[  996.363904] type=1400 audit(1788246258.448:20114): avc:  denied  { read } for  comm="Thread-10" name="cmdline" dev="proc" ino=202403 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  996.363986] type=1400 audit(1788246258.448:20115): avc:  denied  { open } for  comm="Thread-10" path="/proc/1/cmdline" dev="proc" ino=202403 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:r:init:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+[  996.765550] [+] KP I commit_common_su: pid: 15512, tgid: 15512, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  996.765625] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  996.793794] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  996.794931] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  996.795221] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  996.821120] [+] KP I commit_common_su: pid: 15518, tgid: 15518, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  996.821169] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  997.047737] KP packages.list rename: dentry_path_raw failed
+[  997.796725] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  997.800414] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  997.802809] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  997.946523] [+] KP I commit_common_su: pid: 15528, tgid: 15528, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  997.946659] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  998.607694] [+] KP I commit_common_su: pid: 15531, tgid: 15531, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  998.607837] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  998.703631] [+] KP I commit_common_su: pid: 15535, tgid: 15535, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  998.703693] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[  998.802151] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  998.804010] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  998.804329] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  998.948020] [07:04:21.034446][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 0 ret:0
+[  998.988224] logbuffer_pcie1: [ 1011] OC Initial Status check: 0x5FC(0xf0)
+
+[  998.988366] exynos-pcie-rc 14520000.pcie: AFC cal mode set to restart
+[  999.019935] logbuffer_pcie1: [ 1012] D state: 0, LTSSM: 0
+[  999.021617] logbuffer_pcie1: [ 1013] L0(0x11)
+[  999.025042] pcieh 0001:01:00.0: enabling device (0000 -> 0002)
+[  999.025299] [07:04:21.111727][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 1 ret:0
+[  999.128088] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  999.130862] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  999.133238] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  999.398662] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  999.716356] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[  999.808782] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[  999.812590] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[  999.813069] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[  999.909828] [+] KP I commit_common_su: pid: 15567, tgid: 15567, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[  999.909936] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1000.542748] [+] KP I commit_common_su: pid: 15570, tgid: 15570, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1000.542868] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1000.617124] [+] KP I commit_common_su: pid: 15574, tgid: 15574, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1000.617183] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1000.811736] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 1000.813310] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 1000.813747] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 1001.599795] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1001.601330] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1001.729357] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1001.801524] [+] KP I commit_common_su: pid: 15584, tgid: 15584, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1001.801629] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1001.813332] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 1001.815054] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 1001.816112] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 1001.885075] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1001.892171] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1002.304174] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1002.373649] binder: release 14944:14985 transaction 365214 out, still active
+[ 1002.373678] binder: undelivered TRANSACTION_COMPLETE
+[ 1002.373688] binder: release 14944:14986 transaction 365215 out, still active
+[ 1002.373697] binder: undelivered TRANSACTION_COMPLETE
+[ 1002.441201] [+] KP I commit_common_su: pid: 15590, tgid: 15590, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1002.441280] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1002.517050] [+] KP I commit_common_su: pid: 15594, tgid: 15594, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1002.517110] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1002.602383] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1002.613551] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1002.682350] binder: release 6445:14941 transaction 364370 out, still active
+[ 1002.682395] binder: undelivered TRANSACTION_COMPLETE
+[ 1002.692762] binder: release 7847:14954 transaction 365454 out, still active
+[ 1002.692875] binder: undelivered TRANSACTION_COMPLETE
+[ 1002.730452] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1002.809974] binder: release 9603:14939 transaction 364302 out, still active
+[ 1002.810012] binder: undelivered TRANSACTION_COMPLETE
+[ 1002.814939] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 1002.816894] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 1002.817923] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 1002.887453] binder: 1816:1974 ioctl 400c620e 6cdec20f3c returned -11
+[ 1002.995628] exynos-decon[0]: update decon bts config for mode: 1080x2400x90(90)
+[ 1003.435395] [07:04:25.521819][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 0 ret:0
+[ 1003.465350] logbuffer_pcie1: [ 1014] OC Initial Status check: 0x5FC(0xf0)
+
+[ 1003.465497] exynos-pcie-rc 14520000.pcie: AFC cal mode set to restart
+[ 1003.497880] logbuffer_pcie1: [ 1015] D state: 0, LTSSM: 0
+[ 1003.505747] logbuffer_pcie1: [ 1016] L0(0x11)
+[ 1003.509435] pcieh 0001:01:00.0: enabling device (0000 -> 0002)
+[ 1003.509757] [07:04:25.596185][dhd][wlan]dhd_plat_l1ss_ctrl: Control L1ss RC side 1 ret:0
+[ 1003.704388] [+] KP I commit_common_su: pid: 15602, tgid: 15602, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1003.704460] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1003.818533] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 1003.819697] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 1003.819902] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 1004.308263] [+] KP I commit_common_su: pid: 15607, tgid: 15607, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1004.308401] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1004.419626] [+] KP I commit_common_su: pid: 15611, tgid: 15611, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1004.419733] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1004.820056] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 1004.821921] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 1004.822090] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+[ 1005.590696] [+] KP I commit_common_su: pid: 15619, tgid: 15619, to_uid: 0, sctx: u:r:magisk:s0, via_hook: 0
+[ 1005.590776] [+] KP I handle_before_execve: call apd uid: 2000, to_uid: 0, sctx: u:r:magisk:s0, cplen: 14, 0
+[ 1005.821787] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Since 'android.hardware.biometrics.fingerprint.IFingerprint/default' could not be found trying to start it as a lazy AIDL service. (if it's not configured to be a lazy service, it may be stuck starting or still starting).
+[ 1005.822854] init: Control message: Could not find 'aidl/android.hardware.biometrics.fingerprint.IFingerprint/default' for ctl.interface_start from pid: 528 (/system/bin/servicemanager)
+[ 1005.823158] servicemanager: Caller(pid=1816,uid=1000,sid=u:r:system_server:s0) Tried to start aidl service android.hardware.biometrics.fingerprint.IFingerprint/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.

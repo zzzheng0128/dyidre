@@ -1,0 +1,852 @@
+09-01 19:35:55.521 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 32453
+09-01 19:35:55.654 I/ActivityManager( 1816): Start proc 32464:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 19:36:10.327 I/WindowManager( 1816): ANR in Window{bdeab62 u0 com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}. Reason:Input dispatching timed out (bdeab62 com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity is not responding. Waited 5002ms for MotionEvent).
+09-01 19:36:10.448 I/tombstoned(  660): registered intercept for pid 32464 and type kDebuggerdJavaBacktrace
+09-01 19:36:10.792 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:11.293 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:11.794 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:12.558 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:13.059 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:13.560 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:13.787 I/tombstoned(  660): received crash request for pid 32464
+09-01 19:36:13.787 I/tombstoned(  660): found intercept fd 512 for pid 32464 and type kDebuggerdJavaBacktrace
+09-01 19:36:13.787 I/droid.ugc.aweme(32464): Wrote stack traces to tombstoned
+09-01 19:36:13.788 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:13.939 I/tombstoned(  660): registered intercept for pid 1816 and type kDebuggerdJavaBacktrace
+09-01 19:36:14.061 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:14.562 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:15.063 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:15.361 I/tombstoned(  660): received crash request for pid 1816
+09-01 19:36:15.361 I/tombstoned(  660): found intercept fd 512 for pid 1816 and type kDebuggerdJavaBacktrace
+09-01 19:36:15.362 I/system_server( 1816): Wrote stack traces to tombstoned
+09-01 19:36:15.362 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:15.466 I/tombstoned(  660): registered intercept for pid 3089 and type kDebuggerdJavaBacktrace
+09-01 19:36:15.546 I/tombstoned(  660): received crash request for pid 3089
+09-01 19:36:15.546 I/tombstoned(  660): found intercept fd 512 for pid 3089 and type kDebuggerdJavaBacktrace
+09-01 19:36:15.546 I/malpowermanager( 3089): Wrote stack traces to tombstoned
+09-01 19:36:15.547 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:15.564 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:15.647 I/tombstoned(  660): registered intercept for pid 3069 and type kDebuggerdJavaBacktrace
+09-01 19:36:15.708 I/tombstoned(  660): received crash request for pid 3069
+09-01 19:36:15.708 I/tombstoned(  660): found intercept fd 512 for pid 3069 and type kDebuggerdJavaBacktrace
+09-01 19:36:15.709 I/RestartDetector( 3069): Wrote stack traces to tombstoned
+09-01 19:36:15.709 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:15.823 I/tombstoned(  660): registered intercept for pid 3053 and type kDebuggerdJavaBacktrace
+09-01 19:36:15.906 I/tombstoned(  660): received crash request for pid 3053
+09-01 19:36:15.906 I/tombstoned(  660): found intercept fd 512 for pid 3053 and type kDebuggerdJavaBacktrace
+09-01 19:36:15.906 I/libnfc_nci( 3053): Wrote stack traces to tombstoned
+09-01 19:36:15.906 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:16.024 I/tombstoned(  660): registered intercept for pid 2434 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.065 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:16.191 I/tombstoned(  660): received crash request for pid 2434
+09-01 19:36:16.191 I/tombstoned(  660): found intercept fd 512 for pid 2434 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.191 I/m.android.phone( 2434): Wrote stack traces to tombstoned
+09-01 19:36:16.191 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:16.291 I/tombstoned(  660): registered intercept for pid 2420 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.356 I/tombstoned(  660): received crash request for pid 2420
+09-01 19:36:16.356 I/tombstoned(  660): found intercept fd 512 for pid 2420 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.356 I/elephony.oemril( 2420): Wrote stack traces to tombstoned
+09-01 19:36:16.356 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:16.454 I/tombstoned(  660): registered intercept for pid 2407 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.506 I/tombstoned(  660): received crash request for pid 2407
+09-01 19:36:16.506 I/tombstoned(  660): found intercept fd 512 for pid 2407 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.506 I/snetworkmonitor( 2407): Wrote stack traces to tombstoned
+09-01 19:36:16.507 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:16.566 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:16.606 I/tombstoned(  660): registered intercept for pid 2400 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.736 I/tombstoned(  660): received crash request for pid 2400
+09-01 19:36:16.736 I/tombstoned(  660): found intercept fd 512 for pid 2400 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.737 I/nnon.imsservice( 2400): Wrote stack traces to tombstoned
+09-01 19:36:16.737 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:16.837 I/tombstoned(  660): registered intercept for pid 2373 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.919 I/tombstoned(  660): received crash request for pid 2373
+09-01 19:36:16.919 I/tombstoned(  660): found intercept fd 512 for pid 2373 and type kDebuggerdJavaBacktrace
+09-01 19:36:16.919 I/nnon.rcsservice( 2373): Wrote stack traces to tombstoned
+09-01 19:36:16.919 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:17.015 I/tombstoned(  660): registered intercept for pid 2351 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.068 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:17.076 I/tombstoned(  660): received crash request for pid 2351
+09-01 19:36:17.076 I/tombstoned(  660): found intercept fd 512 for pid 2351 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.076 I/mrilhookservice( 2351): Wrote stack traces to tombstoned
+09-01 19:36:17.076 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:17.194 I/tombstoned(  660): registered intercept for pid 2365 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.252 I/tombstoned(  660): received crash request for pid 2365
+09-01 19:36:17.252 I/tombstoned(  660): found intercept fd 512 for pid 2365 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.253 I/com.android.se( 2365): Wrote stack traces to tombstoned
+09-01 19:36:17.253 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:17.367 I/tombstoned(  660): registered intercept for pid 2345 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.427 I/tombstoned(  660): received crash request for pid 2345
+09-01 19:36:17.427 I/tombstoned(  660): found intercept fd 512 for pid 2345 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.427 I/oid.grilservice( 2345): Wrote stack traces to tombstoned
+09-01 19:36:17.427 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:17.526 I/tombstoned(  660): registered intercept for pid 2317 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.568 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:17.595 I/tombstoned(  660): received crash request for pid 2317
+09-01 19:36:17.595 I/tombstoned(  660): found intercept fd 512 for pid 2317 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.596 I/camera.services( 2317): Wrote stack traces to tombstoned
+09-01 19:36:17.596 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:17.697 I/tombstoned(  660): registered intercept for pid 2308 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.753 I/tombstoned(  660): received crash request for pid 2308
+09-01 19:36:17.753 I/tombstoned(  660): found intercept fd 512 for pid 2308 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.753 I/id.hbmsvmanager( 2308): Wrote stack traces to tombstoned
+09-01 19:36:17.753 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:17.851 I/tombstoned(  660): registered intercept for pid 2301 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.936 I/tombstoned(  660): received crash request for pid 2301
+09-01 19:36:17.936 I/tombstoned(  660): found intercept fd 512 for pid 2301 and type kDebuggerdJavaBacktrace
+09-01 19:36:17.936 I/elsystemservice( 2301): Wrote stack traces to tombstoned
+09-01 19:36:17.936 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:18.036 I/tombstoned(  660): registered intercept for pid 2260 and type kDebuggerdJavaBacktrace
+09-01 19:36:18.069 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:18.146 I/tombstoned(  660): received crash request for pid 2260
+09-01 19:36:18.146 I/tombstoned(  660): found intercept fd 512 for pid 2260 and type kDebuggerdJavaBacktrace
+09-01 19:36:18.146 I/networksservice( 2260): Wrote stack traces to tombstoned
+09-01 19:36:18.146 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:18.245 I/tombstoned(  660): registered intercept for pid 2225 and type kDebuggerdJavaBacktrace
+09-01 19:36:18.328 I/tombstoned(  660): received crash request for pid 2225
+09-01 19:36:18.329 I/tombstoned(  660): found intercept fd 512 for pid 2225 and type kDebuggerdJavaBacktrace
+09-01 19:36:18.329 I/rkstack.process( 2225): Wrote stack traces to tombstoned
+09-01 19:36:18.329 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:18.429 I/tombstoned(  660): registered intercept for pid 2139 and type kDebuggerdJavaBacktrace
+09-01 19:36:18.570 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:18.927 I/tombstoned(  660): received crash request for pid 2139
+09-01 19:36:18.927 I/tombstoned(  660): found intercept fd 512 for pid 2139 and type kDebuggerdJavaBacktrace
+09-01 19:36:18.927 I/ndroid.systemui( 2139): Wrote stack traces to tombstoned
+09-01 19:36:18.927 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:19.072 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:19.573 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:20.074 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:20.575 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:21.076 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:21.577 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:22.078 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:22.579 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:23.080 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:23.582 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:24.083 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:24.583 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:25.084 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:25.585 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:26.085 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:26.587 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:26.634 I/tombstoned(  660): registered intercept for pid 2616 and type kDebuggerdJavaBacktrace
+09-01 19:36:27.027 I/tombstoned(  660): received crash request for pid 2616
+09-01 19:36:27.027 I/tombstoned(  660): found intercept fd 512 for pid 2616 and type kDebuggerdJavaBacktrace
+09-01 19:36:27.027 I/s.nexuslauncher( 2616): Wrote stack traces to tombstoned
+09-01 19:36:27.027 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:27.088 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:27.131 I/tombstoned(  660): registered intercept for pid 2758 and type kDebuggerdJavaBacktrace
+09-01 19:36:27.277 I/tombstoned(  660): received crash request for pid 2758
+09-01 19:36:27.277 I/tombstoned(  660): found intercept fd 512 for pid 2758 and type kDebuggerdJavaBacktrace
+09-01 19:36:27.278 I/e.android.iwlan( 2758): Wrote stack traces to tombstoned
+09-01 19:36:27.278 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 19:36:27.588 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:28.089 W/ActivityManager( 1816): Missing app error report, app = com.ss.android.ugc.aweme crashing = false notResponding = true
+09-01 19:36:28.506 E/ActivityManager( 1816): ANR in com.ss.android.ugc.aweme (com.ss.android.ugc.aweme/.splash.SplashActivity)
+09-01 19:36:28.506 E/ActivityManager( 1816): Reason: Input dispatching timed out (bdeab62 com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity is not responding. Waited 5002ms for MotionEvent).
+09-01 19:36:28.506 E/ActivityManager( 1816): Parent: com.ss.android.ugc.aweme/.splash.SplashActivity
+09-01 19:36:28.506 E/ActivityManager( 1816):   170% 32464/com.ss.android.ugc.aweme: 147% user + 22% kernel / faults: 16640 minor 2 major
+09-01 19:36:28.506 E/ActivityManager( 1816):   155% 32464/com.ss.android.ugc.aweme: 142% user + 13% kernel / faults: 691 minor
+09-01 19:36:28.506 E/ActivityManager( 1816):   0% 660/tombstoned: 0% user + 0% kernel
+09-01 19:36:28.507 D/ActivityManager( 1816): Completed ANR of com.ss.android.ugc.aweme in 18173ms, latency 5ms
+09-01 19:37:11.332 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 1002
+09-01 19:37:11.335 I/ActivityManager( 1816): Killing 32464:com.ss.android.ugc.aweme/u0a281 (adj 0): stop com.ss.android.ugc.aweme due to from pid 1002
+09-01 19:37:11.458 V/ActivityManager( 1816): Got obituary of 32464:com.ss.android.ugc.aweme
+09-01 19:45:35.483 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 19:45:35.495 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 19:45:42.590 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 6334
+09-01 19:45:42.693 I/ActivityManager( 1816): Start proc 6362:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 19:45:43.264 I/ActivityManager( 1816): Start proc 6822:com.ss.android.ugc.aweme:push/u0a281 for service {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.process.KeepPushLaunchService}
+09-01 19:45:49.312 I/ActivityManager( 1816): Start proc 7453:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i27 for  {com.ss.android.ugc.aweme/org.chromium.content.app.SandboxedProcessService0:0}
+09-01 19:47:37.730 W/ActivityManager( 1816): pid 6362 com.ss.android.ugc.aweme sent binder code 1598837584 with flags 2 to frozen apps and got error -74
+09-01 19:47:41.621 F/libc    ( 6362): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 9103 (Looper-V1), pid 6362 (droid.ugc.aweme)
+09-01 19:47:41.924 I/crash_dump64( 9178): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 19:47:41.925 I/tombstoned(  660): received crash request for pid 9103
+09-01 19:47:41.929 I/crash_dump64( 9178): performing dump of process 6362 (target tid = 9103)
+09-01 19:47:41.955 F/libc    ( 6362): Crash due to signal: failed to wait for crash_dump helper: No child processes
+09-01 19:47:42.212 I/crash_dump64( 9178): type=1400 audit(0.0:333536): avc:  denied  { getattr } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47756 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:47:42.212 I/crash_dump64( 9178): type=1400 audit(0.0:333537): avc:  denied  { map } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47756 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:47:42.228 I/crash_dump64( 9178): type=1400 audit(0.0:333538): avc:  denied  { read } for  name="libwebviewchromium64.relro" dev="dm-56" ino=62480 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:shared_relro_file:s0:c13,c260,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:47:42.330 F/DEBUG   ( 9178): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 19:47:42.330 F/DEBUG   ( 9178): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 19:47:42.330 F/DEBUG   ( 9178): Revision: 'MP1.0'
+09-01 19:47:42.330 F/DEBUG   ( 9178): ABI: 'arm64'
+09-01 19:47:42.330 F/DEBUG   ( 9178): Timestamp: 2026-09-01 19:47:41.983093749+0800
+09-01 19:47:42.330 F/DEBUG   ( 9178): Process uptime: 120s
+09-01 19:47:42.330 F/DEBUG   ( 9178): Cmdline: com.ss.android.ugc.aweme
+09-01 19:47:42.331 F/DEBUG   ( 9178): pid: 6362, tid: 9103, name: Looper-V1  >>> com.ss.android.ugc.aweme <<<
+09-01 19:47:42.331 F/DEBUG   ( 9178): uid: 10281
+09-01 19:47:42.331 F/DEBUG   ( 9178): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 19:47:42.331 F/DEBUG   ( 9178): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 19:47:42.331 F/DEBUG   ( 9178): Cause: null pointer dereference
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x0  0000006fecc64ae0  x1  0000006c1e40cdf0  x2  0000000000000034  x3  0000000000000010
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x4  0000000000000000  x5  0000006c1e40cdf6  x6  00000000736c6166  x7  0000006c1e40cd40
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x8  0000000000000030  x9  0200006fecc64ae0  x10 00000000fc8924e8  x11 0000000000034000
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 000000671bc0c000  x19 0000006c1e40cf78
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x20 0000006c1e40cdf0  x21 0000000000000034  x22 0000006fecc64ae0  x23 0000000000000034
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x24 0000006c1e40cfc0  x25 0000006c1e40cdf0  x26 0000006c1e40cf70  x27 0000000000000000
+09-01 19:47:42.331 F/DEBUG   ( 9178):     x28 0000006c1e40ea40  x29 0000006c1e40cd80
+09-01 19:47:42.331 F/DEBUG   ( 9178):     lr  00000070fe7a85c0  sp  0000006c1e40cd80  pc  00000070fe7ef180  pst 0000000000001000
+09-01 19:47:42.331 F/DEBUG   ( 9178): 28 total frames
+09-01 19:47:42.331 F/DEBUG   ( 9178): backtrace:
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #17 pc 00000000001a27bc  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #18 pc 00000000001a0018  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #19 pc 000000000019eb0c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 19:47:42.331 F/DEBUG   ( 9178):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 19:47:42.403 E/tombstoned(  660): Tombstone written to: tombstone_05
+09-01 19:47:42.525 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 6362) has died: fg  TOP 
+09-01 19:47:42.587 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_05 to DropBox (SYSTEM_TOMBSTONE)
+09-01 19:48:07.683 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 19:48:07.685 I/ActivityManager( 1816): Killing 6822:com.ss.android.ugc.aweme:push/u0a281 (adj 500): stop com.ss.android.ugc.aweme due to clear data
+09-01 19:48:07.699 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 19:48:07.890 V/ActivityManager( 1816): Got obituary of 6822:com.ss.android.ugc.aweme:push
+09-01 19:48:12.893 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 9511
+09-01 19:48:12.990 I/ActivityManager( 1816): Start proc 9529:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 19:48:19.198 I/ActivityManager( 1816): Start proc 10034:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i28 for  {com.ss.android.ugc.aweme/org.chromium.content.app.SandboxedProcessService0:0}
+09-01 19:50:33.483 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 19:50:33.486 I/ActivityManager( 1816): Killing 9529:com.ss.android.ugc.aweme/u0a281 (adj 0): stop com.ss.android.ugc.aweme due to clear data
+09-01 19:50:33.515 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 19:50:33.669 V/ActivityManager( 1816): Got obituary of 9529:com.ss.android.ugc.aweme
+09-01 19:50:38.555 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 11575
+09-01 19:50:38.688 I/ActivityManager( 1816): Start proc 11587:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 19:50:44.996 I/ActivityManager( 1816): Start proc 12138:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i29 for  {com.ss.android.ugc.aweme/org.chromium.content.app.SandboxedProcessService0:0}
+09-01 19:54:07.478 W/ActivityManager( 1816): pid 11587 com.ss.android.ugc.aweme sent binder code 1598837584 with flags 2 to frozen apps and got error -74
+09-01 19:54:08.729 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 19:54:08.735 I/ActivityManager( 1816): Killing 11587:com.ss.android.ugc.aweme/u0a281 (adj 101): stop com.ss.android.ugc.aweme due to clear data
+09-01 19:54:08.760 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 19:54:09.023 V/ActivityManager( 1816): Got obituary of 11587:com.ss.android.ugc.aweme
+09-01 19:54:13.817 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 13670
+09-01 19:54:13.909 I/ActivityManager( 1816): Start proc 13681:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 19:54:20.713 I/ActivityManager( 1816): Start proc 14250:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i30 for  {com.ss.android.ugc.aweme/org.chromium.content.app.SandboxedProcessService0:0}
+09-01 19:54:44.093 W/ActivityManager( 1816): pid 13681 com.ss.android.ugc.aweme sent binder code 1598837584 with flags 2 to frozen apps and got error -74
+09-01 19:54:55.141 W/ActivityManager( 1816): pid 13681 com.ss.android.ugc.aweme sent binder code 1598837584 with flags 2 to frozen apps and got error -74
+09-01 19:56:29.243 F/libc    (13681): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 17195 (Looper-V4), pid 13681 (droid.ugc.aweme)
+09-01 19:56:29.540 I/crash_dump64(17251): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 19:56:29.541 I/tombstoned(  660): received crash request for pid 17195
+09-01 19:56:29.542 I/crash_dump64(17251): performing dump of process 13681 (target tid = 17195)
+09-01 19:56:29.571 F/libc    (13681): Crash due to signal: failed to wait for crash_dump helper: No child processes
+09-01 19:56:29.812 I/crash_dump64(17251): type=1400 audit(0.0:348210): avc:  denied  { getattr } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=63655 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:56:29.812 I/crash_dump64(17251): type=1400 audit(0.0:348211): avc:  denied  { map } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=63655 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:56:29.820 I/crash_dump64(17251): type=1400 audit(0.0:348212): avc:  denied  { read } for  name="libwebviewchromium64.relro" dev="dm-56" ino=62480 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:shared_relro_file:s0:c13,c260,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:56:29.929 F/DEBUG   (17251): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 19:56:29.929 F/DEBUG   (17251): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 19:56:29.929 F/DEBUG   (17251): Revision: 'MP1.0'
+09-01 19:56:29.929 F/DEBUG   (17251): ABI: 'arm64'
+09-01 19:56:29.929 F/DEBUG   (17251): Timestamp: 2026-09-01 19:56:29.598659559+0800
+09-01 19:56:29.929 F/DEBUG   (17251): Process uptime: 137s
+09-01 19:56:29.929 F/DEBUG   (17251): Cmdline: com.ss.android.ugc.aweme
+09-01 19:56:29.929 F/DEBUG   (17251): pid: 13681, tid: 17195, name: Looper-V4  >>> com.ss.android.ugc.aweme <<<
+09-01 19:56:29.929 F/DEBUG   (17251): uid: 10281
+09-01 19:56:29.929 F/DEBUG   (17251): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 19:56:29.929 F/DEBUG   (17251): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 19:56:29.929 F/DEBUG   (17251): Cause: null pointer dereference
+09-01 19:56:29.929 F/DEBUG   (17251):     x0  0000006fecc72f00  x1  0000006e15d93fe0  x2  0000000000000034  x3  0000000000000010
+09-01 19:56:29.929 F/DEBUG   (17251):     x4  0000000000000000  x5  0000006e15d93fe6  x6  00000000736c6166  x7  0000006e15d93f30
+09-01 19:56:29.929 F/DEBUG   (17251):     x8  0000000000000030  x9  0200006fecc72f00  x10 00000000cfc8a924  x11 0000000000034000
+09-01 19:56:29.929 F/DEBUG   (17251):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 19:56:29.929 F/DEBUG   (17251):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 0000006767064000  x19 0000006e15d94168
+09-01 19:56:29.929 F/DEBUG   (17251):     x20 0000006e15d93fe0  x21 0000000000000034  x22 0000006fecc72f00  x23 0000000000000034
+09-01 19:56:29.929 F/DEBUG   (17251):     x24 0000006e15d941b0  x25 0000006e15d93fe0  x26 0000006e15d94160  x27 0000000000000000
+09-01 19:56:29.929 F/DEBUG   (17251):     x28 0000006e15d95a40  x29 0000006e15d93f70
+09-01 19:56:29.929 F/DEBUG   (17251):     lr  00000070fe7a85c0  sp  0000006e15d93f70  pc  00000070fe7ef180  pst 0000000000001000
+09-01 19:56:29.929 F/DEBUG   (17251): 28 total frames
+09-01 19:56:29.929 F/DEBUG   (17251): backtrace:
+09-01 19:56:29.929 F/DEBUG   (17251):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:56:29.929 F/DEBUG   (17251):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:56:29.929 F/DEBUG   (17251):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:56:29.929 F/DEBUG   (17251):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:56:29.929 F/DEBUG   (17251):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:56:29.929 F/DEBUG   (17251):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 19:56:29.929 F/DEBUG   (17251):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 19:56:29.929 F/DEBUG   (17251):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 19:56:29.929 F/DEBUG   (17251):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 19:56:29.929 F/DEBUG   (17251):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 19:56:29.929 F/DEBUG   (17251):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 19:56:29.929 F/DEBUG   (17251):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 19:56:29.929 F/DEBUG   (17251):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 19:56:29.929 F/DEBUG   (17251):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 19:56:29.929 F/DEBUG   (17251):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 19:56:29.929 F/DEBUG   (17251):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 19:56:29.929 F/DEBUG   (17251):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #17 pc 00000000001bf388  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #18 pc 00000000001af69c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #19 pc 00000000001ae980  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 19:56:29.929 F/DEBUG   (17251):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 19:56:29.929 F/DEBUG   (17251):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 19:56:29.989 E/tombstoned(  660): Tombstone written to: tombstone_06
+09-01 19:56:30.141 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 13681) has died: fg  TOP 
+09-01 19:56:30.197 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_06 to DropBox (SYSTEM_TOMBSTONE)
+09-01 19:59:11.723 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 19:59:11.738 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 19:59:16.814 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 17780
+09-01 19:59:16.913 I/ActivityManager( 1816): Start proc 17791:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 19:59:23.317 I/ActivityManager( 1816): Start proc 18350:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i31 for  {com.ss.android.ugc.aweme/org.chromium.content.app.SandboxedProcessService0:0}
+09-01 20:00:34.875 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 20:00:34.882 I/ActivityManager( 1816): Killing 17791:com.ss.android.ugc.aweme/u0a281 (adj 0): stop com.ss.android.ugc.aweme due to clear data
+09-01 20:00:34.929 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 20:00:34.985 V/ActivityManager( 1816): Got obituary of 17791:com.ss.android.ugc.aweme
+09-01 20:00:37.735 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 19055
+09-01 20:00:37.824 I/ActivityManager( 1816): Start proc 19067:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:00:39.614 F/libc    (19067): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 19067 (main), pid 19067 (main)
+09-01 20:00:39.642 E/DEBUG   (19083): failed to readlink /proc/19067/fd/3: No such file or directory
+09-01 20:00:39.665 I/crash_dump64(19083): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:00:39.666 I/tombstoned(  660): received crash request for pid 19067
+09-01 20:00:39.667 I/crash_dump64(19083): performing dump of process 19067 (target tid = 19067)
+09-01 20:00:39.676 F/libc    (19067): Crash due to signal: failed to wait for crash_dump helper: No child processes
+09-01 20:00:39.736 F/DEBUG   (19083): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:00:39.736 F/DEBUG   (19083): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:00:39.736 F/DEBUG   (19083): Revision: 'MP1.0'
+09-01 20:00:39.736 F/DEBUG   (19083): ABI: 'arm64'
+09-01 20:00:39.736 F/DEBUG   (19083): Timestamp: 2026-09-01 20:00:39.672052829+0800
+09-01 20:00:39.736 F/DEBUG   (19083): Process uptime: 3s
+09-01 20:00:39.736 F/DEBUG   (19083): Cmdline: zygote64
+09-01 20:00:39.736 F/DEBUG   (19083): pid: 19067, tid: 19067, name: main  >>> zygote64 <<<
+09-01 20:00:39.736 F/DEBUG   (19083): uid: 10281
+09-01 20:00:39.736 F/DEBUG   (19083): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:00:39.736 F/DEBUG   (19083): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000000
+09-01 20:00:39.736 F/DEBUG   (19083): Cause: null pointer dereference
+09-01 20:00:39.736 F/DEBUG   (19083):     x0  0000000000000000  x1  0000000000004a7b  x2  0000000000000013  x3  0000000000000000
+09-01 20:00:39.736 F/DEBUG   (19083):     x4  0000000000000010  x5  0000000000000010  x6  0000000000000010  x7  7f7f7f7f7f7f7f7f
+09-01 20:00:39.736 F/DEBUG   (19083):     x8  0000000000004a7b  x9  0000000000003d5f  x10 0000000000000030  x11 0000000029d5578d
+09-01 20:00:39.736 F/DEBUG   (19083):     x12 0000000000019002  x13 000000007fffffff  x14 00000000004cae0a  x15 0000006b802f6277
+09-01 20:00:39.736 F/DEBUG   (19083):     x16 00000070fe7feee8  x17 00000070fe7e90a8  x18 000000711814c000  x19 0000000000000000
+09-01 20:00:39.736 F/DEBUG   (19083):     x20 00000070fe7eff38  x21 00000070fe7ef000  x22 00000070fe7eff38  x23 00000071182f33a0
+09-01 20:00:39.736 F/DEBUG   (19083):     x24 b400006fdca77950  x25 00000070f489a513  x26 0000000000000000  x27 0000000000000000
+09-01 20:00:39.736 F/DEBUG   (19083):     x28 0000007fcb51b8b0  x29 0000007fcb516510
+09-01 20:00:39.736 F/DEBUG   (19083):     lr  00000070fe7ef0d0  sp  0000007fcb516500  pc  00000070fe7e4b6c  pst 0000000000001000
+09-01 20:00:39.736 F/DEBUG   (19083): 2 total frames
+09-01 20:00:39.736 F/DEBUG   (19083): backtrace:
+09-01 20:00:39.736 F/DEBUG   (19083):       #00 pc 00000000001dfb6c  /system/lib64/libstagefright.so (ABGRToUVJRow_NEON.cfi+28) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:00:39.737 F/DEBUG   (19083):       #01 pc 00000000001ea0cc  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:00:39.744 E/tombstoned(  660): Tombstone written to: tombstone_07
+09-01 20:00:39.760 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_07 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:00:47.827 W/ActivityManager( 1816): Process ProcessRecord{7ddcea5 19067:com.ss.android.ugc.aweme/u0a281} failed to attach
+09-01 20:00:47.853 I/ActivityManager( 1816): Killing 19067:com.ss.android.ugc.aweme/u0a281 (adj -10000): start timeout
+09-01 20:05:34.926 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 19821
+09-01 20:05:35.008 I/ActivityManager( 1816): Start proc 19842:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:06:08.841 F/libc    (19842): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 22108 (Looper-V2), pid 19842 (droid.ugc.aweme)
+09-01 20:06:09.079 I/crash_dump64(22126): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:06:09.079 I/tombstoned(  660): received crash request for pid 22108
+09-01 20:06:09.080 I/crash_dump64(22126): performing dump of process 19842 (target tid = 22108)
+09-01 20:06:09.312 I/crash_dump64(22126): type=1400 audit(0.0:354832): avc:  denied  { getattr } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/task_schedule_config_repo_2/task_schedule_config_repo_2.blk" dev="dm-56" ino=48445 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:06:09.388 I/crash_dump64(22126): type=1400 audit(0.0:354838): avc:  denied  { read } for  name="data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:06:09.388 I/crash_dump64(22126): type=1400 audit(0.0:354839): avc:  denied  { open } for  path="/data/resource-cache/data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:06:09.388 I/crash_dump64(22126): type=1400 audit(0.0:354840): avc:  denied  { getattr } for  path="/data/resource-cache/data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:06:09.388 I/crash_dump64(22126): type=1400 audit(0.0:354841): avc:  denied  { map } for  path="/data/resource-cache/data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:06:09.388 I/crash_dump64(22126): type=1400 audit(0.0:354842): avc:  denied  { read } for  name="framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:06:09.401 F/DEBUG   (22126): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:06:09.401 F/DEBUG   (22126): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:06:09.401 F/DEBUG   (22126): Revision: 'MP1.0'
+09-01 20:06:09.401 F/DEBUG   (22126): ABI: 'arm64'
+09-01 20:06:09.401 F/DEBUG   (22126): Timestamp: 2026-09-01 20:06:09.113580008+0800
+09-01 20:06:09.401 F/DEBUG   (22126): Process uptime: 36s
+09-01 20:06:09.401 F/DEBUG   (22126): Cmdline: com.ss.android.ugc.aweme
+09-01 20:06:09.401 F/DEBUG   (22126): pid: 19842, tid: 22108, name: Looper-V2  >>> com.ss.android.ugc.aweme <<<
+09-01 20:06:09.401 F/DEBUG   (22126): uid: 10281
+09-01 20:06:09.401 F/DEBUG   (22126): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:06:09.401 F/DEBUG   (22126): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 20:06:09.401 F/DEBUG   (22126): Cause: null pointer dereference
+09-01 20:06:09.401 F/DEBUG   (22126):     x0  0000006fecafcc20  x1  0000006cd8596df0  x2  0000000000000034  x3  0000000000000010
+09-01 20:06:09.401 F/DEBUG   (22126):     x4  0000000000000000  x5  0000006cd8596df6  x6  00000000736c6166  x7  0000006cd8596d40
+09-01 20:06:09.401 F/DEBUG   (22126):     x8  0000000000000030  x9  0200006fecafcc20  x10 000000007d12e3b8  x11 0000000000034000
+09-01 20:06:09.401 F/DEBUG   (22126):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 20:06:09.401 F/DEBUG   (22126):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 0000006cc91e4000  x19 0000006cd8596f78
+09-01 20:06:09.401 F/DEBUG   (22126):     x20 0000006cd8596df0  x21 0000000000000034  x22 0000006fecafcc20  x23 0000000000000034
+09-01 20:06:09.401 F/DEBUG   (22126):     x24 0000006cd8596fc0  x25 0000006cd8596df0  x26 0000006cd8596f70  x27 0000000000000000
+09-01 20:06:09.401 F/DEBUG   (22126):     x28 0000006cd8598a40  x29 0000006cd8596d80
+09-01 20:06:09.401 F/DEBUG   (22126):     lr  00000070fe7a85c0  sp  0000006cd8596d80  pc  00000070fe7ef180  pst 0000000000001000
+09-01 20:06:09.401 F/DEBUG   (22126): 28 total frames
+09-01 20:06:09.401 F/DEBUG   (22126): backtrace:
+09-01 20:06:09.401 F/DEBUG   (22126):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:09.401 F/DEBUG   (22126):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:09.401 F/DEBUG   (22126):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:09.401 F/DEBUG   (22126):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:09.401 F/DEBUG   (22126):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:09.401 F/DEBUG   (22126):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:09.401 F/DEBUG   (22126):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:06:09.401 F/DEBUG   (22126):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:06:09.401 F/DEBUG   (22126):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:06:09.401 F/DEBUG   (22126):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:06:09.401 F/DEBUG   (22126):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 20:06:09.401 F/DEBUG   (22126):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 20:06:09.401 F/DEBUG   (22126):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 20:06:09.401 F/DEBUG   (22126):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:06:09.401 F/DEBUG   (22126):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:06:09.401 F/DEBUG   (22126):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:06:09.401 F/DEBUG   (22126):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #17 pc 00000000001a27bc  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #18 pc 00000000001a0018  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #19 pc 000000000019eb0c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:09.401 F/DEBUG   (22126):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:06:09.401 F/DEBUG   (22126):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:06:09.448 E/tombstoned(  660): Tombstone written to: tombstone_08
+09-01 20:06:09.575 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 19842) has died: fg  TOP 
+09-01 20:06:09.630 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_08 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:06:13.861 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 20:06:13.868 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 20:06:17.685 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 22191
+09-01 20:06:17.825 I/ActivityManager( 1816): Start proc 22204:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:06:27.325 I/ActivityManager( 1816): Start proc 23810:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i32 for  {com.ss.android.ugc.aweme/org.chromium.content.app.SandboxedProcessService0:0}
+09-01 20:06:30.100 I/ActivityManager( 1816): Start proc 24172:com.ss.android.ugc.aweme:smp/u0a281 for service {com.ss.android.ugc.aweme/com.bytedance.sdk.account.sync.AuthenticatorService}
+09-01 20:06:31.909 I/ActivityManager( 1816): Process PhantomProcessRecord {f1f423c 24132:22204:com.ss.android.ugc.aweme/u0a281} died
+09-01 20:06:33.456 F/libc    (22204): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 24443 (Looper-V2), pid 22204 (droid.ugc.aweme)
+09-01 20:06:33.769 I/crash_dump64(24788): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:06:33.769 I/tombstoned(  660): received crash request for pid 24443
+09-01 20:06:33.770 I/crash_dump64(24788): performing dump of process 22204 (target tid = 24443)
+09-01 20:06:33.814 F/libc    (22204): Crash due to signal: failed to wait for crash_dump helper: No child processes
+09-01 20:06:34.352 F/DEBUG   (24788): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:06:34.352 F/DEBUG   (24788): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:06:34.352 F/DEBUG   (24788): Revision: 'MP1.0'
+09-01 20:06:34.352 F/DEBUG   (24788): ABI: 'arm64'
+09-01 20:06:34.352 F/DEBUG   (24788): Timestamp: 2026-09-01 20:06:33.819215192+0800
+09-01 20:06:34.352 F/DEBUG   (24788): Process uptime: 17s
+09-01 20:06:34.352 F/DEBUG   (24788): Cmdline: com.ss.android.ugc.aweme
+09-01 20:06:34.352 F/DEBUG   (24788): pid: 22204, tid: 24443, name: Looper-V2  >>> com.ss.android.ugc.aweme <<<
+09-01 20:06:34.352 F/DEBUG   (24788): uid: 10281
+09-01 20:06:34.352 F/DEBUG   (24788): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:06:34.352 F/DEBUG   (24788): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 20:06:34.352 F/DEBUG   (24788): Cause: null pointer dereference
+09-01 20:06:34.352 F/DEBUG   (24788):     x0  0000006fecb48bc0  x1  0000006786c70df0  x2  0000000000000034  x3  0000000000000010
+09-01 20:06:34.352 F/DEBUG   (24788):     x4  0000000000000000  x5  0000006786c70df6  x6  00000000736c6166  x7  0000006786c70d40
+09-01 20:06:34.352 F/DEBUG   (24788):     x8  0000000000000030  x9  0200006fecb48bc0  x10 0000000019871bc5  x11 0000000000034000
+09-01 20:06:34.352 F/DEBUG   (24788):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 20:06:34.352 F/DEBUG   (24788):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 0000006772d70000  x19 0000006786c70f78
+09-01 20:06:34.352 F/DEBUG   (24788):     x20 0000006786c70df0  x21 0000000000000034  x22 0000006fecb48bc0  x23 0000000000000034
+09-01 20:06:34.352 F/DEBUG   (24788):     x24 0000006786c70fc0  x25 0000006786c70df0  x26 0000006786c70f70  x27 0000000000000000
+09-01 20:06:34.352 F/DEBUG   (24788):     x28 0000006786c72a40  x29 0000006786c70d80
+09-01 20:06:34.352 F/DEBUG   (24788):     lr  00000070fe7a85c0  sp  0000006786c70d80  pc  00000070fe7ef180  pst 0000000000001000
+09-01 20:06:34.352 F/DEBUG   (24788): 28 total frames
+09-01 20:06:34.352 F/DEBUG   (24788): backtrace:
+09-01 20:06:34.352 F/DEBUG   (24788):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:34.352 F/DEBUG   (24788):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:34.352 F/DEBUG   (24788):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:34.352 F/DEBUG   (24788):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:34.352 F/DEBUG   (24788):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:34.352 F/DEBUG   (24788):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:06:34.352 F/DEBUG   (24788):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:06:34.352 F/DEBUG   (24788):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:06:34.352 F/DEBUG   (24788):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:06:34.352 F/DEBUG   (24788):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:06:34.352 F/DEBUG   (24788):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 20:06:34.352 F/DEBUG   (24788):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 20:06:34.352 F/DEBUG   (24788):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 20:06:34.352 F/DEBUG   (24788):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:06:34.352 F/DEBUG   (24788):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:06:34.352 F/DEBUG   (24788):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:06:34.352 F/DEBUG   (24788):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.352 F/DEBUG   (24788):       #17 pc 00000000001a27bc  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.352 F/DEBUG   (24788):       #18 pc 00000000001a0018  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.352 F/DEBUG   (24788):       #19 pc 000000000019eb0c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.352 F/DEBUG   (24788):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.352 F/DEBUG   (24788):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.353 F/DEBUG   (24788):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.353 F/DEBUG   (24788):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.353 F/DEBUG   (24788):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.353 F/DEBUG   (24788):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:06:34.353 F/DEBUG   (24788):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:06:34.353 F/DEBUG   (24788):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:06:34.476 E/tombstoned(  660): Tombstone written to: tombstone_09
+09-01 20:06:34.497 I/ActivityManager( 1816): Showing crash dialog for package com.ss.android.ugc.aweme u0
+09-01 20:06:34.638 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_09 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:06:34.667 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 22204) has died: fg  TOP 
+09-01 20:06:34.671 W/ActivityManager( 1816): Scheduling restart of crashed service com.ss.android.ugc.aweme/com.bytedance.common.process.service.CrossProcessServiceForMain in 1000ms for connection
+09-01 20:06:34.701 W/ActivityManager( 1816): Ignoring remove of inactive process: ProcessRecord{84a17e 0:com.ss.android.ugc.aweme/u0a281}
+09-01 20:06:35.721 I/ActivityManager( 1816): Start proc 24875:com.ss.android.ugc.aweme/u0a281 for service {com.ss.android.ugc.aweme/com.bytedance.common.process.service.CrossProcessServiceForMain}
+09-01 20:06:46.342 D/ActivityManager( 1816): freezing 24172 com.ss.android.ugc.aweme:smp
+09-01 20:06:46.346 D/ActivityManager( 1816): freezing 24875 com.ss.android.ugc.aweme
+09-01 20:07:31.373 I/tombstoned(  660): registered intercept for pid 1352 and type kDebuggerdJavaBacktrace
+09-01 20:07:31.933 I/tombstoned(  660): received crash request for pid 1352
+09-01 20:07:31.933 I/tombstoned(  660): found intercept fd 512 for pid 1352 and type kDebuggerdJavaBacktrace
+09-01 20:07:31.933 I/ndroid.calendar( 1352): Wrote stack traces to tombstoned
+09-01 20:07:31.934 W/tombstoned(  660): skipping tombstone file creation due to intercept
+09-01 20:13:08.874 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 20:13:08.908 I/ActivityManager( 1816): Killing 24875:com.ss.android.ugc.aweme/u0a281 (adj 905): stop com.ss.android.ugc.aweme due to clear data
+09-01 20:13:08.919 D/ActivityManager( 1816): sync unfroze 24172 com.ss.android.ugc.aweme:smp for 5
+09-01 20:13:08.921 I/ActivityManager( 1816): Killing 24172:com.ss.android.ugc.aweme:smp/u0a281 (adj 0): stop com.ss.android.ugc.aweme due to clear data
+09-01 20:13:08.954 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 20:13:09.097 V/ActivityManager( 1816): Got obituary of 24172:com.ss.android.ugc.aweme:smp
+09-01 20:13:09.219 V/ActivityManager( 1816): Got obituary of 24875:com.ss.android.ugc.aweme
+09-01 20:13:11.751 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 26741
+09-01 20:13:11.843 I/ActivityManager( 1816): Start proc 26753:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:13:13.629 F/libc    (26753): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 26753 (main), pid 26753 (main)
+09-01 20:13:13.681 I/crash_dump64(26786): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:13:13.682 I/tombstoned(  660): received crash request for pid 26753
+09-01 20:13:13.682 I/crash_dump64(26786): performing dump of process 26753 (target tid = 26753)
+09-01 20:13:13.692 F/libc    (26753): Crash due to signal: failed to wait for crash_dump helper: No child processes
+09-01 20:13:13.753 F/DEBUG   (26786): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:13:13.753 F/DEBUG   (26786): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:13:13.753 F/DEBUG   (26786): Revision: 'MP1.0'
+09-01 20:13:13.753 F/DEBUG   (26786): ABI: 'arm64'
+09-01 20:13:13.753 F/DEBUG   (26786): Timestamp: 2026-09-01 20:13:13.688247370+0800
+09-01 20:13:13.753 F/DEBUG   (26786): Process uptime: 3s
+09-01 20:13:13.753 F/DEBUG   (26786): Cmdline: zygote64
+09-01 20:13:13.753 F/DEBUG   (26786): pid: 26753, tid: 26753, name: main  >>> zygote64 <<<
+09-01 20:13:13.753 F/DEBUG   (26786): uid: 10281
+09-01 20:13:13.753 F/DEBUG   (26786): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:13:13.753 F/DEBUG   (26786): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000000
+09-01 20:13:13.753 F/DEBUG   (26786): Cause: null pointer dereference
+09-01 20:13:13.753 F/DEBUG   (26786):     x0  0000000000000000  x1  0000000000006881  x2  0000000000000013  x3  0000000000000000
+09-01 20:13:13.753 F/DEBUG   (26786):     x4  0000000000000010  x5  0000000000000010  x6  0000000000000010  x7  7f7f7f7f7f7f7f7f
+09-01 20:13:13.753 F/DEBUG   (26786):     x8  0000000000006881  x9  0000000000003d5f  x10 0000000000000030  x11 0000000029d5578d
+09-01 20:13:13.753 F/DEBUG   (26786):     x12 0000000000019002  x13 000000007fffffff  x14 00000000004f580a  x15 0000006fd0b3fe35
+09-01 20:13:13.753 F/DEBUG   (26786):     x16 00000070fe7feee8  x17 00000070fe7e90a8  x18 000000711814c000  x19 0000000000000000
+09-01 20:13:13.753 F/DEBUG   (26786):     x20 00000070fe7eff38  x21 00000070fe7ef000  x22 00000070fe7eff38  x23 00000071182f33a0
+09-01 20:13:13.753 F/DEBUG   (26786):     x24 b400006fdca77950  x25 00000070f489a513  x26 0000000000000000  x27 0000000000000000
+09-01 20:13:13.753 F/DEBUG   (26786):     x28 0000007fcb51b8b0  x29 0000007fcb516510
+09-01 20:13:13.753 F/DEBUG   (26786):     lr  00000070fe7ef0d0  sp  0000007fcb516500  pc  00000070fe7e4b6c  pst 0000000000001000
+09-01 20:13:13.753 F/DEBUG   (26786): 2 total frames
+09-01 20:13:13.753 F/DEBUG   (26786): backtrace:
+09-01 20:13:13.753 F/DEBUG   (26786):       #00 pc 00000000001dfb6c  /system/lib64/libstagefright.so (ABGRToUVJRow_NEON.cfi+28) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:13:13.753 F/DEBUG   (26786):       #01 pc 00000000001ea0cc  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:13:13.760 E/tombstoned(  660): Tombstone written to: tombstone_10
+09-01 20:13:13.778 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_10 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:13:21.843 W/ActivityManager( 1816): Process ProcessRecord{f8fde95 26753:com.ss.android.ugc.aweme/u0a281} failed to attach
+09-01 20:13:21.893 I/ActivityManager( 1816): Killing 26753:com.ss.android.ugc.aweme/u0a281 (adj -10000): start timeout
+09-01 20:13:26.124 F/libc    (26859): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0 in tid 26859 (main), pid 26859 (main)
+09-01 20:13:26.305 I/crash_dump64(26863): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:13:26.305 I/tombstoned(  660): received crash request for pid 26859
+09-01 20:13:26.318 I/crash_dump64(26863): performing dump of process 26859 (target tid = 26859)
+09-01 20:13:26.452 I/crash_dump64(26863): type=1400 audit(0.0:363319): avc:  denied  { read } for  name="framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.android.calllogbackup
+09-01 20:13:26.452 I/crash_dump64(26863): type=1400 audit(0.0:363320): avc:  denied  { open } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.android.calllogbackup
+09-01 20:13:26.452 I/crash_dump64(26863): type=1400 audit(0.0:363321): avc:  denied  { getattr } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.android.calllogbackup
+09-01 20:13:26.452 I/crash_dump64(26863): type=1400 audit(0.0:363322): avc:  denied  { map } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.android.calllogbackup
+09-01 20:13:26.456 I/crash_dump64(26863): type=1400 audit(0.0:363323): avc:  denied  { read } for  name="product@overlay@PixelConfigOverlay2021.apk@idmap" dev="dm-56" ino=564 scontext=u:r:crash_dump:s0:c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.android.calllogbackup
+09-01 20:13:26.464 F/DEBUG   (26863): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:13:26.464 F/DEBUG   (26863): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:13:26.464 F/DEBUG   (26863): Revision: 'MP1.0'
+09-01 20:13:26.464 F/DEBUG   (26863): ABI: 'arm64'
+09-01 20:13:26.464 F/DEBUG   (26863): Timestamp: 2026-09-01 20:13:26.351951885+0800
+09-01 20:13:26.464 F/DEBUG   (26863): Process uptime: 1s
+09-01 20:13:26.464 F/DEBUG   (26863): Cmdline: zygote64
+09-01 20:13:26.464 F/DEBUG   (26863): pid: 26859, tid: 26859, name: main  >>> zygote64 <<<
+09-01 20:13:26.464 F/DEBUG   (26863): uid: 10075
+09-01 20:13:26.464 F/DEBUG   (26863): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:13:26.464 F/DEBUG   (26863): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000000
+09-01 20:13:26.464 F/DEBUG   (26863): Cause: null pointer dereference
+09-01 20:13:26.464 F/DEBUG   (26863):     x0  0000000000000000  x1  00000000000068eb  x2  0000000000000013  x3  0000000000000000
+09-01 20:13:26.464 F/DEBUG   (26863):     x4  0000000000000010  x5  0000000000000010  x6  0000000000000010  x7  7f7f7f7f7f7f7f7f
+09-01 20:13:26.464 F/DEBUG   (26863):     x8  00000000000068eb  x9  0000000000003d5f  x10 0000000000000030  x11 00000000070c09c1
+09-01 20:13:26.464 F/DEBUG   (26863):     x12 0000000000016002  x13 000000007fffffff  x14 00000000004f6972  x15 0000006fe59a38b3
+09-01 20:13:26.464 F/DEBUG   (26863):     x16 00000070fe7feee8  x17 00000070fe7e90a8  x18 000000711814c000  x19 0000000000000000
+09-01 20:13:26.464 F/DEBUG   (26863):     x20 00000070fe7eff38  x21 00000070fe7ef000  x22 00000070fe7eff38  x23 00000071182f33a0
+09-01 20:13:26.464 F/DEBUG   (26863):     x24 0000007fcb5167c1  x25 00000070f489a513  x26 0000000000000000  x27 0000000000000000
+09-01 20:13:26.464 F/DEBUG   (26863):     x28 0000007fcb51b8b0  x29 0000007fcb516510
+09-01 20:13:26.464 F/DEBUG   (26863):     lr  00000070fe7ef0d0  sp  0000007fcb516500  pc  00000070fe7e4b6c  pst 0000000000001000
+09-01 20:13:26.464 F/DEBUG   (26863): 2 total frames
+09-01 20:13:26.464 F/DEBUG   (26863): backtrace:
+09-01 20:13:26.464 F/DEBUG   (26863):       #00 pc 00000000001dfb6c  /system/lib64/libstagefright.so (ABGRToUVJRow_NEON.cfi+28) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:13:26.464 F/DEBUG   (26863):       #01 pc 00000000001ea0cc  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:13:26.474 E/tombstoned(  660): Tombstone written to: tombstone_11
+09-01 20:13:26.497 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_11 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:13:59.731 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: clear data
+09-01 20:13:59.739 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=-1: clearApplicationUserData
+09-01 20:15:10.707 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 27397
+09-01 20:15:10.806 I/ActivityManager( 1816): Start proc 27412:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:15:56.681 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 28030
+09-01 20:15:56.685 I/ActivityManager( 1816): Killing 27412:com.ss.android.ugc.aweme/u0a281 (adj 0): stop com.ss.android.ugc.aweme due to from pid 28030
+09-01 20:15:56.794 W/ActivityManager( 1816): ProcessRecord{37cb12b 0:com.ss.android.ugc.aweme/u0a281} is attached to a previous process 27412
+09-01 20:15:56.827 V/ActivityManager( 1816): Got obituary of 27412:com.ss.android.ugc.aweme
+09-01 20:15:56.850 I/ActivityManager( 1816): Start proc 28048:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:15:57.387 I/ActivityManager( 1816): Start proc 28361:com.ss.android.ugc.aweme:push/u0a281 for service {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.process.KeepPushLaunchService}
+09-01 20:16:43.986 I/ActivityManager( 1816): Start proc 30147:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i34 for  {com.ss.android.ugc.aweme/org.chromium.content.app.SandboxedProcessService0:0}
+09-01 20:17:28.965 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 2723
+09-01 20:17:28.971 I/ActivityManager( 1816): Killing 28361:com.ss.android.ugc.aweme:push/u0a281 (adj 100): stop com.ss.android.ugc.aweme due to from pid 2723
+09-01 20:17:28.979 I/ActivityManager( 1816): Killing 28048:com.ss.android.ugc.aweme/u0a281 (adj 0): stop com.ss.android.ugc.aweme due to from pid 2723
+09-01 20:17:29.076 W/ActivityManager( 1816): ProcessRecord{846d5b0 0:com.ss.android.ugc.aweme/u0a281} is attached to a previous process 28048
+09-01 20:17:29.081 W/ActivityManager( 1816): ProcessRecord{846d5b0 0:com.ss.android.ugc.aweme/u0a281} is attached to a previous process 28048
+09-01 20:17:29.081 W/ActivityManager( 1816): ProcessRecord{846d5b0 0:com.ss.android.ugc.aweme/u0a281} is attached to a previous process 28048
+09-01 20:17:29.145 V/ActivityManager( 1816): Got obituary of 28048:com.ss.android.ugc.aweme
+09-01 20:17:29.151 V/ActivityManager( 1816): Got obituary of 28361:com.ss.android.ugc.aweme:push
+09-01 20:17:29.166 I/ActivityManager( 1816): Start proc 2818:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:17:32.622 F/libc    ( 2818): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 3604 (Looper-V2), pid 2818 (droid.ugc.aweme)
+09-01 20:17:32.774 I/crash_dump64( 3660): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:17:32.774 I/tombstoned(  660): received crash request for pid 3604
+09-01 20:17:32.775 I/crash_dump64( 3660): performing dump of process 2818 (target tid = 3604)
+09-01 20:17:32.984 I/crash_dump64( 3660): type=1400 audit(0.0:366310): avc:  denied  { getattr } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47678 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:17:32.984 I/crash_dump64( 3660): type=1400 audit(0.0:366311): avc:  denied  { map } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47678 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:17:32.996 I/crash_dump64( 3660): type=1400 audit(0.0:366312): avc:  denied  { read } for  name="libwebviewchromium64.relro" dev="dm-56" ino=62480 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:shared_relro_file:s0:c13,c260,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:17:32.996 I/crash_dump64( 3660): type=1400 audit(0.0:366313): avc:  denied  { open } for  path="/data/misc/shared_relro/libwebviewchromium64.relro" dev="dm-56" ino=62480 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:shared_relro_file:s0:c13,c260,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:17:33.079 F/DEBUG   ( 3660): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:17:33.079 F/DEBUG   ( 3660): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:17:33.079 F/DEBUG   ( 3660): Revision: 'MP1.0'
+09-01 20:17:33.079 F/DEBUG   ( 3660): ABI: 'arm64'
+09-01 20:17:33.079 F/DEBUG   ( 3660): Timestamp: 2026-09-01 20:17:32.803588968+0800
+09-01 20:17:33.079 F/DEBUG   ( 3660): Process uptime: 4s
+09-01 20:17:33.079 F/DEBUG   ( 3660): Cmdline: com.ss.android.ugc.aweme
+09-01 20:17:33.079 F/DEBUG   ( 3660): pid: 2818, tid: 3604, name: Looper-V2  >>> com.ss.android.ugc.aweme <<<
+09-01 20:17:33.079 F/DEBUG   ( 3660): uid: 10281
+09-01 20:17:33.079 F/DEBUG   ( 3660): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:17:33.079 F/DEBUG   ( 3660): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 20:17:33.079 F/DEBUG   ( 3660): Cause: null pointer dereference
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x0  0000006fecaf3030  x1  0000006c1ad27df0  x2  0000000000000034  x3  0000000000000010
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x4  0000000000000000  x5  0000006c1ad27df6  x6  00000000736c6166  x7  0000006c1ad27d40
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x8  0000000000000030  x9  0200006fecaf3030  x10 00000000d2dffbf4  x11 0000000000034000
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 0000006c19950000  x19 0000006c1ad27f78
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x20 0000006c1ad27df0  x21 0000000000000034  x22 0000006fecaf3030  x23 0000000000000034
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x24 0000006c1ad27fc0  x25 0000006c1ad27df0  x26 0000006c1ad27f70  x27 0000000000000000
+09-01 20:17:33.079 F/DEBUG   ( 3660):     x28 0000006c1ad29a40  x29 0000006c1ad27d80
+09-01 20:17:33.079 F/DEBUG   ( 3660):     lr  00000070fe7a85c0  sp  0000006c1ad27d80  pc  00000070fe7ef180  pst 0000000000001000
+09-01 20:17:33.079 F/DEBUG   ( 3660): 28 total frames
+09-01 20:17:33.079 F/DEBUG   ( 3660): backtrace:
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:17:33.079 F/DEBUG   ( 3660):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #17 pc 00000000001a27bc  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #18 pc 00000000001a0018  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #19 pc 000000000019eb0c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:17:33.080 F/DEBUG   ( 3660):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:17:33.118 E/tombstoned(  660): Tombstone written to: tombstone_12
+09-01 20:17:33.231 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_12 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:17:33.250 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 2818) has died: fg  TOP 
+09-01 20:20:14.622 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 4368
+09-01 20:20:14.711 I/ActivityManager( 1816): Start proc 4389:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:20:17.858 F/libc    ( 4389): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 4806 (Looper-V1), pid 4389 (droid.ugc.aweme)
+09-01 20:20:18.040 I/crash_dump64( 4865): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:20:18.041 I/tombstoned(  660): received crash request for pid 4806
+09-01 20:20:18.042 I/crash_dump64( 4865): performing dump of process 4389 (target tid = 4806)
+09-01 20:20:18.252 I/crash_dump64( 4865): type=1400 audit(0.0:368523): avc:  denied  { getattr } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47678 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:20:18.338 F/DEBUG   ( 4865): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:20:18.338 F/DEBUG   ( 4865): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:20:18.338 F/DEBUG   ( 4865): Revision: 'MP1.0'
+09-01 20:20:18.338 F/DEBUG   ( 4865): ABI: 'arm64'
+09-01 20:20:18.338 F/DEBUG   ( 4865): Timestamp: 2026-09-01 20:20:18.087705910+0800
+09-01 20:20:18.338 F/DEBUG   ( 4865): Process uptime: 4s
+09-01 20:20:18.338 F/DEBUG   ( 4865): Cmdline: com.ss.android.ugc.aweme
+09-01 20:20:18.338 F/DEBUG   ( 4865): pid: 4389, tid: 4806, name: Looper-V1  >>> com.ss.android.ugc.aweme <<<
+09-01 20:20:18.338 F/DEBUG   ( 4865): uid: 10281
+09-01 20:20:18.338 F/DEBUG   ( 4865): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:20:18.338 F/DEBUG   ( 4865): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 20:20:18.338 F/DEBUG   ( 4865): Cause: null pointer dereference
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x0  0000006feca82790  x1  0000006c1d930df0  x2  0000000000000034  x3  0000000000000010
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x4  0000000000000000  x5  0000006c1d930df6  x6  00000000736c6166  x7  0000006c1d930d40
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x8  0000000000000030  x9  0200006feca82790  x10 00000000b19833d6  x11 0000000000034000
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 0000006c1c8cc000  x19 0000006c1d930f78
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x20 0000006c1d930df0  x21 0000000000000034  x22 0000006feca82790  x23 0000000000000034
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x24 0000006c1d930fc0  x25 0000006c1d930df0  x26 0000006c1d930f70  x27 0000000000000000
+09-01 20:20:18.338 F/DEBUG   ( 4865):     x28 0000006c1d932a40  x29 0000006c1d930d80
+09-01 20:20:18.338 F/DEBUG   ( 4865):     lr  00000070fe7a85c0  sp  0000006c1d930d80  pc  00000070fe7ef180  pst 0000000000001000
+09-01 20:20:18.338 F/DEBUG   ( 4865): 28 total frames
+09-01 20:20:18.338 F/DEBUG   ( 4865): backtrace:
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #17 pc 00000000001a27bc  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #18 pc 00000000001a0018  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #19 pc 000000000019eb0c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:20:18.338 F/DEBUG   ( 4865):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:20:18.375 E/tombstoned(  660): Tombstone written to: tombstone_13
+09-01 20:20:18.477 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_13 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:20:18.534 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 4389) has died: fg  TOP 
+09-01 20:21:37.399 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 5878
+09-01 20:21:46.988 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 5969
+09-01 20:21:47.086 I/ActivityManager( 1816): Start proc 5982:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:21:50.224 F/libc    ( 5982): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 6487 (Looper-V1), pid 5982 (droid.ugc.aweme)
+09-01 20:21:50.437 I/crash_dump64( 6532): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:21:50.437 I/tombstoned(  660): received crash request for pid 6487
+09-01 20:21:50.438 I/crash_dump64( 6532): performing dump of process 5982 (target tid = 6487)
+09-01 20:21:50.644 I/crash_dump64( 6532): type=1400 audit(0.0:369282): avc:  denied  { getattr } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47678 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:21:50.644 I/crash_dump64( 6532): type=1400 audit(0.0:369283): avc:  denied  { map } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47678 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:21:50.731 F/DEBUG   ( 6532): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:21:50.732 F/DEBUG   ( 6532): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:21:50.732 F/DEBUG   ( 6532): Revision: 'MP1.0'
+09-01 20:21:50.732 F/DEBUG   ( 6532): ABI: 'arm64'
+09-01 20:21:50.732 F/DEBUG   ( 6532): Timestamp: 2026-09-01 20:21:50.479432233+0800
+09-01 20:21:50.732 F/DEBUG   ( 6532): Process uptime: 5s
+09-01 20:21:50.732 F/DEBUG   ( 6532): Cmdline: com.ss.android.ugc.aweme
+09-01 20:21:50.732 F/DEBUG   ( 6532): pid: 5982, tid: 6487, name: Looper-V1  >>> com.ss.android.ugc.aweme <<<
+09-01 20:21:50.732 F/DEBUG   ( 6532): uid: 10281
+09-01 20:21:50.732 F/DEBUG   ( 6532): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:21:50.732 F/DEBUG   ( 6532): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 20:21:50.732 F/DEBUG   ( 6532): Cause: null pointer dereference
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x0  0000006feca7eaf0  x1  0000006c20847df0  x2  0000000000000034  x3  0000000000000010
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x4  0000000000000000  x5  0000006c20847df6  x6  00000000736c6166  x7  0000006c20847d40
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x8  0000000000000030  x9  0200006feca7eaf0  x10 00000000b4b816e0  x11 0000000000034000
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 0000006c20534000  x19 0000006c20847f78
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x20 0000006c20847df0  x21 0000000000000034  x22 0000006feca7eaf0  x23 0000000000000034
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x24 0000006c20847fc0  x25 0000006c20847df0  x26 0000006c20847f70  x27 0000000000000000
+09-01 20:21:50.732 F/DEBUG   ( 6532):     x28 0000006c20849a40  x29 0000006c20847d80
+09-01 20:21:50.732 F/DEBUG   ( 6532):     lr  00000070fe7a85c0  sp  0000006c20847d80  pc  00000070fe7ef180  pst 0000000000001000
+09-01 20:21:50.732 F/DEBUG   ( 6532): 28 total frames
+09-01 20:21:50.732 F/DEBUG   ( 6532): backtrace:
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #17 pc 00000000001a27bc  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #18 pc 00000000001a0018  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #19 pc 000000000019eb0c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:21:50.732 F/DEBUG   ( 6532):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:21:50.770 E/tombstoned(  660): Tombstone written to: tombstone_14
+09-01 20:21:50.780 I/ActivityManager( 1816): Showing crash dialog for package com.ss.android.ugc.aweme u0
+09-01 20:21:50.869 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_14 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:21:50.877 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 5982) has died: fg  TOP 
+09-01 20:21:50.893 W/ActivityManager( 1816): Ignoring remove of inactive process: ProcessRecord{815050b 0:com.ss.android.ugc.aweme/u0a281}
+09-01 20:22:02.470 I/KPModuleViewModel(17110): load cost: 2, modules: [KPMInfo(type=KPM, name=wxshadow, event=, args=(null), version=1.0.0, license=GPL v2, author=wxshadow, description=W^X Shadow Memory - Hidden Breakpoint Mechanism), KPMInfo(type=KPM, name=kpm-hide-so, event=, args=(null), version=1.2.0, license=GPL v2, author=wwb, description=Hide selected shared object mappings and threads from procfs), KPMInfo(type=KPM, name=sigsend-probe, event=, args=(null), version=1.0.0, license=GPL v2, author=dyidre, description=Observe SIGSEGV sender syscall context)]
+09-01 20:23:31.015 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 7404
+09-01 20:23:31.096 I/ActivityManager( 1816): Start proc 7420:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 20:23:34.406 F/libc    ( 7420): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x34 in tid 7737 (Looper-V1), pid 7420 (droid.ugc.aweme)
+09-01 20:23:34.598 I/crash_dump64( 7819): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 20:23:34.598 I/tombstoned(  660): received crash request for pid 7737
+09-01 20:23:34.599 I/crash_dump64( 7819): performing dump of process 7420 (target tid = 7737)
+09-01 20:23:34.816 I/crash_dump64( 7819): type=1400 audit(0.0:370780): avc:  denied  { getattr } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47678 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:23:34.816 I/crash_dump64( 7819): type=1400 audit(0.0:370781): avc:  denied  { map } for  path="/data/data/com.ss.android.ugc.aweme/files/keva/repo/ttlive_sdk_shared_pref_cache_v2/ttlive_sdk_shared_pref_cache_v2.blk" dev="dm-56" ino=47678 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:app_data_file:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:23:34.892 I/crash_dump64( 7819): type=1400 audit(0.0:370786): avc:  denied  { read } for  name="data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:23:34.892 I/crash_dump64( 7819): type=1400 audit(0.0:370787): avc:  denied  { open } for  path="/data/resource-cache/data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:23:34.892 I/crash_dump64( 7819): type=1400 audit(0.0:370788): avc:  denied  { getattr } for  path="/data/resource-cache/data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:23:34.892 I/crash_dump64( 7819): type=1400 audit(0.0:370789): avc:  denied  { map } for  path="/data/resource-cache/data@resource-cache@com.android.systemui-dynamic-HPKK.frro@idmap" dev="dm-56" ino=3648 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:23:34.896 I/crash_dump64( 7819): type=1400 audit(0.0:370790): avc:  denied  { read } for  name="framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 20:23:34.905 F/DEBUG   ( 7819): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 20:23:34.905 F/DEBUG   ( 7819): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 20:23:34.905 F/DEBUG   ( 7819): Revision: 'MP1.0'
+09-01 20:23:34.905 F/DEBUG   ( 7819): ABI: 'arm64'
+09-01 20:23:34.905 F/DEBUG   ( 7819): Timestamp: 2026-09-01 20:23:34.647085523+0800
+09-01 20:23:34.905 F/DEBUG   ( 7819): Process uptime: 4s
+09-01 20:23:34.905 F/DEBUG   ( 7819): Cmdline: com.ss.android.ugc.aweme
+09-01 20:23:34.905 F/DEBUG   ( 7819): pid: 7420, tid: 7737, name: Looper-V1  >>> com.ss.android.ugc.aweme <<<
+09-01 20:23:34.905 F/DEBUG   ( 7819): uid: 10281
+09-01 20:23:34.905 F/DEBUG   ( 7819): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 20:23:34.905 F/DEBUG   ( 7819): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000000000000034
+09-01 20:23:34.905 F/DEBUG   ( 7819): Cause: null pointer dereference
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x0  0000006fecb1b670  x1  0000006c1eb12df0  x2  0000000000000034  x3  0000000000000010
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x4  0000000000000000  x5  0000006c1eb12df6  x6  00000000736c6166  x7  0000006c1eb12d40
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x8  0000000000000030  x9  0200006fecb1b670  x10 00000000f0bb9eda  x11 0000000000034000
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x12 0000000000050005  x13 0000000000000004  x14 ffffffffffffffff  x15 0000000000000038
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x16 00000070ecbc06e8  x17 00000070fb48b880  x18 0000006c1ddd8000  x19 0000006c1eb12f78
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x20 0000006c1eb12df0  x21 0000000000000034  x22 0000006fecb1b670  x23 0000000000000034
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x24 0000006c1eb12fc0  x25 0000006c1eb12df0  x26 0000006c1eb12f70  x27 0000000000000000
+09-01 20:23:34.905 F/DEBUG   ( 7819):     x28 0000006c1eb14a40  x29 0000006c1eb12d80
+09-01 20:23:34.905 F/DEBUG   ( 7819):     lr  00000070fe7a85c0  sp  0000006c1eb12d80  pc  00000070fe7ef180  pst 0000000000001000
+09-01 20:23:34.905 F/DEBUG   ( 7819): 28 total frames
+09-01 20:23:34.905 F/DEBUG   ( 7819): backtrace:
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #00 pc 00000000001ea180  /system/lib64/libstagefright.so (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #01 pc 00000000001a35bc  /system/lib64/libstagefright.so (void std::__1::vector<int, std::__1::allocator<int>>::__assign_with_size[abi:nn190000]<int const*, int const*>(int const*, int const*, long)+188) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #02 pc 00000000001a3310  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::Configuration()+160) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #03 pc 00000000001a14b8  /system/lib64/libstagefright.so (android::VideoRenderQualityTracker::Configuration::getFromServerConfigurableFlags(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> (*)(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>> const&)) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #04 pc 0000000000131800  /system/lib64/libstagefright.so (android::MediaCodec::MediaCodec(android::sp<android::ALooper> const&, int, unsigned int, std::__1::function<android::sp<android::CodecBase> (android::AString const&, char const*)>, std::__1::function<int (android::AString const&, android::sp<android::MediaCodecInfo>*)>)+832) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #05 pc 00000000001523a8  /system/lib64/libstagefright.so (android::MediaCodec::CreateByComponentName(android::sp<android::ALooper> const&, android::AString const&, int*, int, unsigned int) (.cfi)+104) (BuildId: da3a953e1b8e081c690b76abe5210f3e)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #06 pc 000000000004a6a4  /system/lib64/libmedia_jni.so (android::JMediaCodec::JMediaCodec(_JNIEnv*, _jobject*, char const*, bool, bool, int, int)+580) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #07 pc 00000000000587cc  /system/lib64/libmedia_jni.so (android_media_MediaCodec_native_setup(_JNIEnv*, _jobject*, _jstring*, unsigned char, unsigned char, int, int)+156) (BuildId: cbdbac340ef346220c5e65af6ae77c8b)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #08 pc 00000000001e0d4c  /system/framework/arm64/boot-framework.oat (art_jni_trampoline+124) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #09 pc 00000000004a626c  /system/framework/arm64/boot-framework.oat (android.media.MediaCodec.<init>+1116) (BuildId: 6eea124bb8cf71b21cf96c82c4e18b45dc2f384d)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #10 pc 00000000041030f0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (X.1FUd.LIZ+208)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #11 pc 000000000415e3a8  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.com_ss_ttm_player_AJMediaCodec__createByCodecName$___twin___+856)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #12 pc 00000000041622e0  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/oat/arm64/base.odex (com.ss.ttm.player.AJMediaCodec.createByCodecName+64)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #13 pc 000000000036d574  /apex/com.android.art/lib64/libart.so (art_quick_invoke_stub+612) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #14 pc 000000000036be04  /apex/com.android.art/lib64/libart.so (art::JValue art::InvokeVirtualOrInterfaceWithVarArgs<art::ArtMethod*>(art::ScopedObjectAccessAlreadyRunnable const&, _jobject*, art::ArtMethod*, std::__va_list)+812) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #15 pc 0000000000743984  /apex/com.android.art/lib64/libart.so (art::JNI<false>::CallIntMethodV(_JNIEnv*, _jobject*, _jmethodID*, std::__va_list)+192) (BuildId: c35c9ebf7bb06435e4b31977d87bd5d5)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #16 pc 00000000000b1768  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #17 pc 00000000001a27bc  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #18 pc 00000000001a0018  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #19 pc 000000000019eb0c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #20 pc 00000000001f1d74  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #21 pc 0000000000132894  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #22 pc 000000000013696c  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #23 pc 0000000000097594  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #24 pc 00000000000a3534  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #25 pc 00000000000a3c20  /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libttmplayer.so (BuildId: 3b99408d343796e9fd63a36515e5902659ad8aec)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #26 pc 000000000006f584  /apex/com.android.runtime/lib64/bionic/libc.so (__pthread_start(void*)+180) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:23:34.905 F/DEBUG   ( 7819):       #27 pc 0000000000061610  /apex/com.android.runtime/lib64/bionic/libc.so (__start_thread+64) (BuildId: f0cc3fe16b52af6fc8d4e5b18105de09)
+09-01 20:23:34.944 E/tombstoned(  660): Tombstone written to: tombstone_15
+09-01 20:23:35.037 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_15 to DropBox (SYSTEM_TOMBSTONE)
+09-01 20:23:35.090 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 7420) has died: fg  TOP 

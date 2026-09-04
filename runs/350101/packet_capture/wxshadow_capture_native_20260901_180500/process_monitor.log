@@ -1,0 +1,244 @@
+# target process monitor
+# package=com.ss.android.ugc.aweme interval=1s
+# started_at=2026-09-01 18:05:01
+[2026-09-01 18:05:01] pids=<none>
+[2026-09-01 18:05:03] pids=<none>
+[2026-09-01 18:05:05] pids=8901
+  ps: u0_a281       8901   882   39179128 928116 0                   0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	S (sleeping)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	  940944 kB
+  status[8901]: VmRSS:	  940944 kB
+  status[8901]: Threads:	231
+[2026-09-01 18:05:05] EVENT first_seen pids=8901
+[2026-09-01 18:05:07] pids=8901
+  ps: u0_a281       8901   882   39786000 959012 0                   0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1045948 kB
+  status[8901]: VmRSS:	  959240 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:09] pids=8901
+  ps: u0_a281       8901   882   39899084 1027128 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1045948 kB
+  status[8901]: VmRSS:	 1027492 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:11] pids=8901
+  ps: u0_a281       8901   882   39969316 1029956 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1045948 kB
+  status[8901]: VmRSS:	 1027876 kB
+  status[8901]: Threads:	257
+[2026-09-01 18:05:13] pids=8901
+  ps: u0_a281       8901   882   39990884 1039088 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1055464 kB
+  status[8901]: VmRSS:	 1038988 kB
+  status[8901]: Threads:	258
+[2026-09-01 18:05:15] pids=8901
+  ps: u0_a281       8901   882   39957516 1055356 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1057908 kB
+  status[8901]: VmRSS:	 1055368 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:17] pids=8901
+  ps: u0_a281       8901   882   40031288 1062288 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1065052 kB
+  status[8901]: VmRSS:	 1065052 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:19] pids=8901
+  ps: u0_a281       8901   882   39961660 1059756 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1060500 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:22] pids=8901
+  ps: u0_a281       8901   882   39958864 1060788 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1060788 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:24] pids=8901
+  ps: u0_a281       8901   882   39958864 1061484 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1061612 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:27] pids=8901
+  ps: u0_a281       8901   882   39957524 1058916 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1058916 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:29] pids=8901
+  ps: u0_a281       8901   882   39957524 1058928 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1058928 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:31] pids=8901
+  ps: u0_a281       8901   882   39957524 1058928 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1058936 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:33] pids=8901
+  ps: u0_a281       8901   882   39957524 1059084 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1059084 kB
+  status[8901]: Threads:	256
+[2026-09-01 18:05:35] pids=8901
+  ps: u0_a281       8901   882   39905700 1064312 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1064312 kB
+  status[8901]: Threads:	253
+[2026-09-01 18:05:37] pids=8901
+  ps: u0_a281       8901   882   39905700 1064312 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1064312 kB
+  status[8901]: Threads:	253
+[2026-09-01 18:05:39] pids=8901
+  ps: u0_a281       8901   882   39905724 1064724 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1064736 kB
+  status[8901]: Threads:	252
+[2026-09-01 18:05:41] pids=8901
+  ps: u0_a281       8901   882   39835788 1065176 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1065176 kB
+  status[8901]: Threads:	249
+[2026-09-01 18:05:43] pids=8901
+  ps: u0_a281       8901   882   39835788 1065304 0                  0 R com.ss.android.ugc.aweme
+  status[8901]: Name:	droid.ugc.aweme
+  status[8901]: State:	R (running)
+  status[8901]: Tgid:	8901
+  status[8901]: Pid:	8901
+  status[8901]: PPid:	882
+  status[8901]: TracerPid:	0
+  status[8901]: VmHWM:	 1076904 kB
+  status[8901]: VmRSS:	 1065304 kB
+  status[8901]: Threads:	249
+[2026-09-01 18:05:45] pids=<none>
+[2026-09-01 18:05:45] EVENT pid_change old=8901 new=<none>
+[2026-09-01 18:05:45] EVENT disappeared
+[2026-09-01 18:05:47] pids=<none>
+[2026-09-01 18:05:47] EVENT disappeared
+[2026-09-01 18:05:49] pids=<none>
+[2026-09-01 18:05:49] EVENT disappeared
+[2026-09-01 18:05:50] pids=<none>
+[2026-09-01 18:05:50] EVENT disappeared
+[2026-09-01 18:05:52] pids=<none>
+[2026-09-01 18:05:52] EVENT disappeared
+[2026-09-01 18:05:54] pids=<none>
+[2026-09-01 18:05:54] EVENT disappeared
+[2026-09-01 18:05:56] pids=<none>
+[2026-09-01 18:05:56] EVENT disappeared
+[2026-09-01 18:05:57] pids=<none>
+[2026-09-01 18:05:57] EVENT disappeared
+[2026-09-01 18:05:59] pids=<none>
+[2026-09-01 18:05:59] EVENT disappeared
+[2026-09-01 18:06:01] pids=<none>
+[2026-09-01 18:06:01] EVENT disappeared
+[2026-09-01 18:06:03] pids=<none>
+[2026-09-01 18:06:03] EVENT disappeared
+[2026-09-01 18:06:04] pids=<none>
+[2026-09-01 18:06:04] EVENT disappeared
+[2026-09-01 18:06:06] pids=<none>
+[2026-09-01 18:06:06] EVENT disappeared
+[2026-09-01 18:06:08] pids=<none>
+[2026-09-01 18:06:08] EVENT disappeared

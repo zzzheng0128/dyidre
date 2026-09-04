@@ -1,0 +1,61 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在修补 SELinux 策略...
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=869)...
+[1m[33m [!][0m 诊断模式: 跳过 zymbiote setArgV0 指针 hook，强制 setcontext-only 阻塞
+[1m[33m [!][0m 诊断模式: setcontext-only 阻塞已启用
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=869)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=22105, ppid=869, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 22105 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 22105 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 22105，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 60s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/rfpkt350_fullbody_fullbody_hostbridge2_20260901_223900.js
+[1m[34m [*][0m 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[1m[34m [*][0m 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [module] libart.so range: 0x78adbb4000-0x78ae7b7000, path: Some("/apex/com.android.art/lib64/libart.so")
+[1m[35m [agent][0m [JS] [fast] ART callee-save suspend method via setCalleeSaveMethod+runtimeInitSequence: method=0x6f9df4e0, runtime_off=0x28, set_base=0x0, init_seq=0x28
+[1m[35m [agent][0m [JS] [hook_engine] [hook] WARNING: both X16 and X17 written by relocated code, X17 may be clobbered
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 22105...
+[1m[32m [✓][0m 子进程 22105 已恢复运行
+[1m[34m [*][0m RF_RESTORE_ZYGOTE_AFTER_CHILD_RESUME=1，spawn 子进程恢复后立即还原 zygote patch
+[1m[34m [*][0m 正在还原 zygote 869 的 patch...
+[1m[32m [✓][0m Zygote 869 patch 已还原
+[1m[34m [*][0m spawn 已恢复，检测到 Java 操作，启动 Java worker
+[1m[35m [agent][0m [java worker] starting
+[1m[35m [agent][0m [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=648
+[1m[35m [agent][0m [JS] [java worker] helper class loaded
+[1m[35m [agent][0m [JS] [java worker] nativeLoop registered
+[1m[35m [agent][0m [JS] [java worker] thread object created
+[1m[35m [agent][0m [JS] [java worker] calling Thread.start
+[1m[35m [agent][0m [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[1m[35m [agent][0m [java worker] ready
+  [2m输入 help 查看命令，exit 退出[0m
+rustfrida> [1m[35m [agent][0m [JS] [rfpkt350] java stealth wxshadow before=1 after=1
+[1m[35m [agent][0m [JS] [rfpkt350] java ready device_id=rf-com.ss.android.ugc.aweme-22105 process=com.ss.android.ugc.aweme filterAll=true captureBodies=true task=fullbody_hostbridge2_20260901_223900
+[1m[35m [agent][0m [JS] [hook_engine] [hook] WARNING: both X16 and X17 written by relocated code, X17 may be clobbered
+[1m[35m [agent][0m [JS] [rfpkt350] install J.N failed: InternalError: registered native entry hook failed: target=0x70ce2010, hook=0x70ce2010
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetFixedModeOutputStream.write hook
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetInputStream.read hook captureResponseBody=false
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.setRequestMethod fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.addRequestProperty fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.setRequestProperty fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.getOutputStream fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.disconnect hook
+[1m[35m [agent][0m [JS] [rfpkt350] native install base=0x7708b00000
+[1m[35m [agent][0m [JS] [rfpkt350] hooked libmetasec_ml.so+0x14dbf4 @0x7708c4dbf4 stealth=wxshadow

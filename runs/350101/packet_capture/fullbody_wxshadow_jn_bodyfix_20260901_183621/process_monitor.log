@@ -1,0 +1,491 @@
+# target process monitor
+# package=com.ss.android.ugc.aweme interval=1s
+# started_at=2026-09-01 18:36:22
+[2026-09-01 18:36:22] pids=<none>
+  main_pid=<none> first_main_pid=<none>
+[2026-09-01 18:36:24] pids=<none>
+  main_pid=<none> first_main_pid=<none>
+[2026-09-01 18:36:26] EVENT main_first_seen pid=888
+[2026-09-01 18:36:26] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   39250120 936576 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	  956312 kB
+  status[888]: VmRSS:	  952316 kB
+  status[888]: Threads:	229
+[2026-09-01 18:36:26] EVENT first_seen pids=888
+[2026-09-01 18:36:28] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   40055404 981996 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1009424 kB
+  status[888]: VmRSS:	 1006932 kB
+  status[888]: Threads:	265
+[2026-09-01 18:36:30] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   40221736 1085624 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1085892 kB
+  status[888]: VmRSS:	 1082808 kB
+  status[888]: Threads:	265
+[2026-09-01 18:36:32] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   40473844 1160228 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1163764 kB
+  status[888]: VmRSS:	 1080712 kB
+  status[888]: Threads:	271
+[2026-09-01 18:36:34] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   40458340 1109396 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1163764 kB
+  status[888]: VmRSS:	 1122816 kB
+  status[888]: Threads:	276
+[2026-09-01 18:36:36] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   41350940 1293100 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1297608 kB
+  status[888]: VmRSS:	 1297608 kB
+  status[888]: Threads:	320
+[2026-09-01 18:36:38] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   41388548 1155500 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1352056 kB
+  status[888]: VmRSS:	 1155492 kB
+  status[888]: Threads:	317
+[2026-09-01 18:36:40] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   41436160 1174312 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1352056 kB
+  status[888]: VmRSS:	 1183096 kB
+  status[888]: Threads:	322
+[2026-09-01 18:36:42] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   41421272 1221960 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1352056 kB
+  status[888]: VmRSS:	 1222756 kB
+  status[888]: Threads:	320
+[2026-09-01 18:36:44] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   41509464 1240784 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1352056 kB
+  status[888]: VmRSS:	 1244900 kB
+  status[888]: Threads:	324
+[2026-09-01 18:36:46] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   41840100 1305844 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1352056 kB
+  status[888]: VmRSS:	 1306220 kB
+  status[888]: Threads:	333
+[2026-09-01 18:36:49] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   41929344 1319140 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1352056 kB
+  status[888]: VmRSS:	 1340000 kB
+  status[888]: Threads:	363
+[2026-09-01 18:36:51] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42340068 1359732 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1360256 kB
+  status[888]: VmRSS:	 1359740 kB
+  status[888]: Threads:	359
+[2026-09-01 18:36:53] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42367776 1365460 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	R (running)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1369700 kB
+  status[888]: VmRSS:	 1369700 kB
+  status[888]: Threads:	361
+[2026-09-01 18:36:55] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42367844 1374884 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1415176 kB
+  status[888]: VmRSS:	 1373108 kB
+  status[888]: Threads:	363
+[2026-09-01 18:36:57] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42261692 1299544 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1415176 kB
+  status[888]: VmRSS:	 1340336 kB
+  status[888]: Threads:	352
+[2026-09-01 18:36:59] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42296192 1410200 0                  0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1415176 kB
+  status[888]: VmRSS:	 1411640 kB
+  status[888]: Threads:	354
+[2026-09-01 18:37:01] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42316908 1425548 0                  0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1436228 kB
+  status[888]: VmRSS:	 1436228 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:03] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42341664 1456800 0                  0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1457392 kB
+  status[888]: VmRSS:	 1457392 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:05] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42332616 1466160 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	R (running)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1467024 kB
+  status[888]: VmRSS:	 1466364 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:07] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42328688 1370232 futex_wait_queue   0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1498828 kB
+  status[888]: VmRSS:	 1367604 kB
+  status[888]: Threads:	354
+[2026-09-01 18:37:10] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42389820 1375956 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1498828 kB
+  status[888]: VmRSS:	 1378004 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:12] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42411288 1403992 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1498828 kB
+  status[888]: VmRSS:	 1416400 kB
+  status[888]: Threads:	356
+[2026-09-01 18:37:14] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42427040 1426964 0                  0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	R (running)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1498828 kB
+  status[888]: VmRSS:	 1430484 kB
+  status[888]: Threads:	357
+[2026-09-01 18:37:16] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42427060 1468768 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	R (running)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1498828 kB
+  status[888]: VmRSS:	 1469404 kB
+  status[888]: Threads:	357
+[2026-09-01 18:37:18] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42504748 1550352 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1553108 kB
+  status[888]: VmRSS:	 1553108 kB
+  status[888]: Threads:	357
+[2026-09-01 18:37:20] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42462100 1538532 0                  0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	R (running)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1552624 kB
+  status[888]: VmRSS:	 1539516 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:22] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42458636 1540492 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	R (running)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1552624 kB
+  status[888]: VmRSS:	 1541896 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:24] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42466220 1543404 0                  0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1552624 kB
+  status[888]: VmRSS:	 1543696 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:26] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42448236 1544716 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	R (running)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1552624 kB
+  status[888]: VmRSS:	 1538232 kB
+  status[888]: Threads:	355
+[2026-09-01 18:37:29] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42461968 1555452 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1558176 kB
+  status[888]: VmRSS:	 1555872 kB
+  status[888]: Threads:	356
+[2026-09-01 18:37:31] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42462060 1556776 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1558176 kB
+  status[888]: VmRSS:	 1557108 kB
+  status[888]: Threads:	356
+[2026-09-01 18:37:33] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42535728 1558564 0                  0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1590116 kB
+  status[888]: VmRSS:	 1479168 kB
+  status[888]: Threads:	360
+[2026-09-01 18:37:35] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42633124 1491152 0                  0 R com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1590116 kB
+  status[888]: VmRSS:	 1492280 kB
+  status[888]: Threads:	360
+[2026-09-01 18:37:37] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42808620 1521424 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1590116 kB
+  status[888]: VmRSS:	 1522132 kB
+  status[888]: Threads:	366
+[2026-09-01 18:37:40] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42828068 1523684 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1590116 kB
+  status[888]: VmRSS:	 1523564 kB
+  status[888]: Threads:	366
+[2026-09-01 18:37:42] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42845648 1524676 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1590116 kB
+  status[888]: VmRSS:	 1524676 kB
+  status[888]: Threads:	367
+[2026-09-01 18:37:44] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42845648 1525528 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1590116 kB
+  status[888]: VmRSS:	 1525800 kB
+  status[888]: Threads:	367
+[2026-09-01 18:37:46] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42854420 1525168 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	S (sleeping)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: VmHWM:	 1590116 kB
+  status[888]: VmRSS:	 1525624 kB
+  status[888]: Threads:	370
+[2026-09-01 18:37:48] pids=888
+  main_pid=888 first_main_pid=888
+  ps: u0_a281        888   882   42876864 1527776 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[888]: Name:	droid.ugc.aweme
+  status[888]: State:	Z (zombie)
+  status[888]: Tgid:	888
+  status[888]: Pid:	888
+  status[888]: PPid:	882
+  status[888]: TracerPid:	0
+  status[888]: Threads:	2
+[2026-09-01 18:37:51] pids=<none>
+  main_pid=<none> first_main_pid=888
+[2026-09-01 18:37:51] EVENT pid_change old=888 new=<none>
+[2026-09-01 18:37:51] EVENT disappeared

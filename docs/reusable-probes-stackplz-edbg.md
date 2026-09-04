@@ -1,8 +1,8 @@
-# Frida/RF JS、stackplz、eDBG 复用手册
+# Frida/RF JS、eCapture、stackplz、eDBG 复用手册
 
 这份文档的目标很简单：后续升级 `libmetasec_ml.so` 时，优先复用统一 probe，不再复制一堆半成品 JS。
 
-350101 当前唯一用户入口：
+350101 当前 RF 用户入口：
 
 ```text
 probes/350101/metasec_probe_350101.js
@@ -15,12 +15,13 @@ probes/350101/run_metasec_probe_350101.sh
 tools/runtime_payloads/
 ```
 
-第一次接手先把 `rustfrida` 推到手机，再运行本页里的 runner；KPM 和 embed so 的用途见 `tools/README.md`。
+第一次接手先看 `tools/README.md`。网络抓包用 `ecapture`，VM/JNI/结构体采证用 `rustfrida`，KPM 和 embed so 只在低痕或 RF 启动链路调试时使用。
 
 ## 一句话分工
 
 | 工具 | 最适合回答的问题 | 不适合做什么 |
 |---|---|---|
+| eCapture | 网络 TLS 明文、HTTP/2 path/host/header、真实响应 | `libmetasec_ml.so` 内部结构体/VM/slot 追踪 |
 | rustFrida / Frida JS | 入参是什么、指针指向什么、哪个 header 被写出、JNI 返回了什么 | 长时间大范围逐指令 trace |
 | GumTrace mode | 某个入口真实走过哪些 PC、VM handler/dispatch 路径是否一致 | 结构字段命名和环境补齐 |
 | stackplz | 少数地址的硬件断点、寄存器、调用栈采样 | 大块内存 dump、复杂脚本逻辑 |
@@ -30,7 +31,8 @@ tools/runtime_payloads/
 正确姿势：
 
 ```text
-RF/Frida mode 找地址和值
+eCapture 先确认网络明文
+  -> RF/Frida mode 找地址和值
   -> stackplz/eDBG 盯“谁调用/谁写”
   -> unidbg 固定复现
   -> dyidre 写报告和 C oracle
@@ -64,6 +66,55 @@ RF/Frida mode 找地址和值
 - 新版本保留旧版本目录，复制后改 offset。
 - RF inline hook 不适合密集挂基本块内部相邻指令；`branch` 默认跳过这类深度点。要追单条分支或字段写入，用 stackplz/eDBG 硬断点/watch。
 
+## eCapture TLS 明文
+
+网络抓包优先用 eCapture。它不走 RF，也不会加载 `metasec_probe_350101.js`。
+
+350101：
+
+```bash
+# 先手动打开抖音，确认页面正常后再采集；默认 START_APP=0。
+probes/350101/run_ecapture_tls_350101.sh text 60 req01_ecap
+```
+
+脚本会做这些事：
+
+1. 推送 `tools/runtime_payloads/ecapture` 到 `/data/local/tmp/ecapture`；
+2. 找 `com.ss.android.ugc.aweme` 的 pid；
+3. 从 `/proc/<pid>/maps` 找真实 mapped `libttboringssl.so`；
+4. 启动 `ecapture tls -m text --libssl <mapped-so> --pid <pid>`；
+5. 采集结束后拉回 console/runtime/events，并生成 `ecapture_summary.md/json`。
+
+注意：
+
+- eCapture 这里只做“不侵入抓样本数据”，不修改证书校验、不注入 JS。
+- 采集窗口里要触发业务请求；如果只看到 `TLS_READ/TLS_WRITE` 小帧，没有 path/host/X-*，通常只是 HTTP/2 控制帧。
+- raw log 可能包含 token/cookie/设备标识，公开提交前先脱敏。
+
+输出目录：
+
+```text
+runs/350101/ecapture/<tag>/
+```
+
+如果要换 BoringSSL bytecode：
+
+```bash
+ECAPTURE_SSL_VERSION=boringssl_a_14 probes/350101/run_ecapture_tls_350101.sh text 60 req01_ecap_a14
+```
+
+如果要保存 pcap：
+
+```bash
+probes/350101/run_ecapture_tls_350101.sh pcap 60 req01_pcap
+```
+
+什么时候退回 RF `ssl` mode：
+
+- eCapture 因内核/BTF/BPF 限制起不来；
+- maps 里 `libttboringssl.so` 是 zip 内路径，uprobe 挂不上；
+- 需要同步看 custom verify 回调、Cronet 加载时序、`SSL_write/read` 调用栈。
+
 ## 统一 runner
 
 Host 上运行：
@@ -80,6 +131,7 @@ probes/350101/run_metasec_probe_350101.sh counter-one 60 req01_count
 probes/350101/run_metasec_probe_350101.sh true-env 90 req01_env
 probes/350101/run_metasec_probe_350101.sh jnitrace 180 jni01
 probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
+probes/350101/run_ecapture_tls_350101.sh text 60 req01_ecap
 ```
 
 输出自动归档：
@@ -89,6 +141,7 @@ probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
 | `true-env` | `runs/350101/true_env_xmedusa/<tag>/` |
 | `jnitrace` | `runs/350101/jnitrace/<tag>/` |
 | `gum-exevm` / `gum-http` | `runs/350101/gumtrace/<tag>/` |
+| eCapture runner | `runs/350101/ecapture/<tag>/` |
 | `artcheck` | `runs/350101/maps_artmethod/<tag>/` |
 | `stackplz-bridge` | `runs/350101/edbg_stackplz/<tag>/` |
 | 其他 | `runs/350101/entrydump/<tag>/` |

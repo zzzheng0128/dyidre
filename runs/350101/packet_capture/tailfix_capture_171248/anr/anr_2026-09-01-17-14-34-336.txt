@@ -1,0 +1,289 @@
+Subject: Broadcast of Intent { act=android.accounts.LOGIN_ACCOUNTS_CHANGED flg=0x5000010 cmp=com.google.android.googlequicksearchbox/com.google.apps.tiktok.account.data.device.DeviceAccountsChangedReceiver_Receiver }
+RssHwmKb: 334876
+RssKb: 275092
+RssAnonKb: 96608
+RssShmemKb: 2648
+VmSwapKb: 472
+
+
+--- CriticalEventLog ---
+capacity: 20
+events <
+  timestamp_ms: 1788254010103
+  anr <
+    pid: 463
+    process: "com.google.android.calendar"
+    process_class: 2
+    subject: "Broadcast of Intent { act=android.accounts.LOGIN_ACCOUNTS_CHANGED flg=0x5000010 cmp=com.google.android.calendar/com.google.calendar.v2a.shared.sync.impl.android.accounts.AccountsBroadcastReceiver }"
+    uid: 10205
+  >
+>
+events <
+  timestamp_ms: 1788254053973
+  anr <
+    pid: 1328
+    process: "com.ss.android.ugc.aweme"
+    process_class: 1
+    subject: "Input dispatching timed out (76a76a7 com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity is not responding. Waited 5001ms for MotionEvent)."
+    uid: 10281
+  >
+>
+timestamp_ms: 1788254074335
+window_ms: 300000
+
+----- dumping pid: 27552 at 8796639
+proc 27552
+context binder
+  thread 30107: l 00 need_return 0 tr 0
+    outgoing transaction 1429175: 0000000000000000 from 27552:30107 to 2508:2525 code 6 flags 12 pri 0:131 r1 elapsed 13985ms
+    transaction complete
+  node 1253689: ub400006fdca78580 cb400006eeca51a30 pri 0:139 hs 1 hw 1 ls 1 lw 0 is 1 iw 1 tr 1 proc 1816
+  buffer 1433063: 0 size 3664:0:0 active
+  pending transaction 1433063: 0000000000000000 from 1816:1868 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 60ms node 1253689 size 3664:0 offset 0
+libdebuggerd_client: failed to read status response from tombstoned: timeout reached?
+
+----- Waiting Channels: pid 27552 at 2026-09-01 17:14:18.807078473+0800 -----
+Cmd line: com.google.android.googlequicksearchbox:search
+
+sysTid=27552     do_freezer_trap
+sysTid=27553     do_freezer_trap
+sysTid=27554     do_freezer_trap
+sysTid=27555     do_freezer_trap
+sysTid=27556     do_freezer_trap
+sysTid=27557     do_freezer_trap
+sysTid=27558     do_freezer_trap
+sysTid=27559     do_freezer_trap
+sysTid=27560     do_freezer_trap
+sysTid=27561     do_freezer_trap
+sysTid=27562     do_freezer_trap
+sysTid=27564     do_freezer_trap
+sysTid=27568     do_freezer_trap
+sysTid=27569     do_freezer_trap
+sysTid=27570     do_freezer_trap
+sysTid=27571     do_freezer_trap
+sysTid=27572     do_freezer_trap
+sysTid=27574     do_freezer_trap
+sysTid=27576     do_freezer_trap
+sysTid=27577     do_freezer_trap
+sysTid=27578     do_freezer_trap
+sysTid=27579     do_freezer_trap
+sysTid=27580     do_freezer_trap
+sysTid=27581     do_freezer_trap
+sysTid=27582     do_freezer_trap
+sysTid=27583     do_freezer_trap
+sysTid=27585     do_freezer_trap
+sysTid=27586     do_freezer_trap
+sysTid=27587     do_freezer_trap
+sysTid=27588     do_freezer_trap
+sysTid=27589     do_freezer_trap
+sysTid=27590     do_freezer_trap
+sysTid=27591     do_freezer_trap
+sysTid=27592     do_freezer_trap
+sysTid=27593     do_freezer_trap
+sysTid=27594     do_freezer_trap
+sysTid=27596     do_freezer_trap
+sysTid=27611     do_freezer_trap
+sysTid=27613     do_freezer_trap
+sysTid=27615     do_freezer_trap
+sysTid=27616     do_freezer_trap
+sysTid=27617     do_freezer_trap
+sysTid=27627     do_freezer_trap
+sysTid=27628     do_freezer_trap
+sysTid=27629     do_freezer_trap
+sysTid=27630     do_freezer_trap
+sysTid=27631     do_freezer_trap
+sysTid=27632     do_freezer_trap
+sysTid=27633     do_freezer_trap
+sysTid=27686     do_freezer_trap
+sysTid=27687     do_freezer_trap
+sysTid=27688     do_freezer_trap
+sysTid=27694     do_freezer_trap
+sysTid=27695     do_freezer_trap
+sysTid=27697     do_freezer_trap
+sysTid=27699     do_freezer_trap
+sysTid=27703     do_freezer_trap
+sysTid=27705     do_freezer_trap
+sysTid=27706     do_freezer_trap
+sysTid=27707     do_freezer_trap
+sysTid=27708     do_freezer_trap
+sysTid=27709     do_freezer_trap
+sysTid=27710     do_freezer_trap
+sysTid=27711     do_freezer_trap
+sysTid=27842     do_freezer_trap
+sysTid=28075     do_freezer_trap
+sysTid=28400     do_freezer_trap
+sysTid=28401     do_freezer_trap
+sysTid=28824     do_freezer_trap
+sysTid=29597     do_freezer_trap
+sysTid=29598     do_freezer_trap
+sysTid=29599     do_freezer_trap
+sysTid=29600     do_freezer_trap
+sysTid=30107     do_freezer_trap
+sysTid=30112     do_freezer_trap
+sysTid=32500     do_freezer_trap
+sysTid=509       do_freezer_trap
+sysTid=513       do_freezer_trap
+sysTid=514       do_freezer_trap
+sysTid=1154      do_freezer_trap
+sysTid=1211      do_freezer_trap
+
+----- end 27552 -----
+
+proc 27552
+context binder
+  thread 30107: l 00 need_return 0 tr 0
+    transaction complete
+    pending transaction 1434423: 0000000000000000 from 2508:2525 to 27552:30107 code 0 flags 0 pri 0:131 r0 elapsed 4032ms size 8:0 offset ffffffffffffba40
+  node 1253689: ub400006fdca78580 cb400006eeca51a30 pri 0:139 hs 1 hw 1 ls 4 lw 0 is 1 iw 1 tr 1 proc 1816
+    pending async transaction 1433087: 0000000000000000 from 1816:4438 to 27552:0 code c flags 11 pri 0:120 r0 elapsed 9886ms node 1253689 size 448:8 offset fffffffffffff1a8
+    pending async transaction 1433088: 0000000000000000 from 1816:4438 to 27552:0 code 4 flags 11 pri 0:120 r0 elapsed 9886ms node 1253689 size 108:8 offset ffffffffffffefe0
+    pending async transaction 1433089: 0000000000000000 from 1816:4438 to 27552:0 code 29 flags 11 pri 0:120 r0 elapsed 9886ms node 1253689 size 84:0 offset ffffffffffffef68
+  node 1345162: ub400006fdca89260 cb400006eeca71650 pri 0:139 hs 1 hw 1 ls 1 lw 0 is 1 iw 1 tr 1 proc 3037
+  node 1276382: ub400006fdca90910 cb400006eeca9bf50 pri 0:139 hs 1 hw 1 ls 3 lw 0 is 1 iw 1 tr 1 proc 1816
+    pending async transaction 1434154: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 5528ms node 1276382 size 1156:0 offset ffffffffffffbec8
+    pending async transaction 1434840: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 2440ms node 1276382 size 1156:0 offset ffffffffffffa458
+  node 1276317: ub400006fdca91b10 cb400006eeca9b650 pri 0:139 hs 1 hw 1 ls 6 lw 0 is 1 iw 1 tr 1 proc 1816
+    pending async transaction 1433406: 0000000000000000 from 1816:2069 to 27552:0 code 3 flags 11 pri 0:120 r0 elapsed 8635ms node 1276317 size 484:8 offset ffffffffffffed20
+    pending async transaction 1434014: 0000000000000000 from 1816:2069 to 27552:0 code 3 flags 11 pri 0:120 r0 elapsed 5548ms node 1276317 size 484:8 offset ffffffffffffd4a8
+    pending async transaction 1434015: 0000000000000000 from 1816:2069 to 27552:0 code 3 flags 11 pri 0:120 r0 elapsed 5548ms node 1276317 size 484:8 offset ffffffffffffd2b8
+    pending async transaction 1434734: 0000000000000000 from 1816:2069 to 27552:0 code 3 flags 11 pri 0:120 r0 elapsed 2455ms node 1276317 size 484:8 offset ffffffffffffba38
+    pending async transaction 1434737: 0000000000000000 from 1816:2069 to 27552:0 code 3 flags 11 pri 0:120 r0 elapsed 2455ms node 1276317 size 484:8 offset ffffffffffffb848
+  node 1256746: ub400006fdcac1a50 cb400006eeca72a90 pri 0:139 hs 1 hw 1 ls 3 lw 0 is 1 iw 1 tr 1 proc 1816
+    pending async transaction 1434152: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 5528ms node 1256746 size 1156:0 offset ffffffffffffc7c8
+    pending async transaction 1434838: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 2441ms node 1256746 size 1156:0 offset ffffffffffffad58
+  node 1255072: ub400006fdcac3100 cb400006eeca6cfd0 pri 0:139 hs 1 hw 1 ls 3 lw 0 is 1 iw 1 tr 1 proc 1816
+    pending async transaction 1434150: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 5529ms node 1255072 size 1156:0 offset ffffffffffffd0c8
+    pending async transaction 1434836: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 2441ms node 1255072 size 1156:0 offset ffffffffffffb658
+  node 1255090: ub400006fdcac34c0 cb400006eeca6cdf0 pri 0:139 hs 1 hw 1 ls 3 lw 0 is 1 iw 1 tr 1 proc 1816
+    pending async transaction 1434151: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 5529ms node 1255090 size 1144:0 offset ffffffffffffcc40
+    pending async transaction 1434837: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 2441ms node 1255090 size 1144:0 offset ffffffffffffb1d0
+  node 1256759: ub400006fdcaca570 cb400006eeca725b0 pri 0:139 hs 1 hw 1 ls 3 lw 0 is 1 iw 1 tr 1 proc 1816
+    pending async transaction 1434153: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 5528ms node 1256759 size 1144:0 offset ffffffffffffc340
+    pending async transaction 1434839: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 2441ms node 1256759 size 1144:0 offset ffffffffffffa8d0
+  buffer 1433063: 0 size 3664:0:0 active
+  buffer 1433085: e50 size 4:0:0 active
+  buffer 1433087: e58 size 448:8:0 active
+  buffer 1433088: 1020 size 108:8:0 active
+  buffer 1433089: 1098 size 84:0:0 active
+  buffer 1433403: 10f0 size 484:8:0 active
+  buffer 1433406: 12e0 size 484:8:0 active
+  buffer 1433525: 14d0 size 1156:0:0 active
+  buffer 1433530: 1958 size 1144:0:0 active
+  buffer 1433534: 1dd0 size 1156:0:0 active
+  buffer 1433536: 2258 size 1144:0:0 active
+  buffer 1433538: 26d0 size 1156:0:0 active
+  buffer 1434014: 2b58 size 484:8:0 active
+  buffer 1434015: 2d48 size 484:8:0 active
+  buffer 1434150: 2f38 size 1156:0:0 active
+  buffer 1434151: 33c0 size 1144:0:0 active
+  buffer 1434152: 3838 size 1156:0:0 active
+  buffer 1434153: 3cc0 size 1144:0:0 active
+  buffer 1434154: 4138 size 1156:0:0 active
+  buffer 1434423: 45c0 size 8:0:0 active
+  buffer 1434734: 45c8 size 484:8:0 active
+  buffer 1434737: 47b8 size 484:8:0 active
+  buffer 1434836: 49a8 size 1156:0:0 active
+  buffer 1434837: 4e30 size 1144:0:0 active
+  buffer 1434838: 52a8 size 1156:0:0 active
+  buffer 1434839: 5730 size 1144:0:0 active
+  buffer 1434840: 5ba8 size 1156:0:0 active
+  pending transaction 1433063: 0000000000000000 from 1816:1868 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 10110ms node 1253689 size 3664:0 offset 0
+  pending transaction 1433085: 0000000000000000 from 3037:3608 to 27552:0 code 2 flags 11 pri 0:120 r0 elapsed 9887ms node 1345162 size 4:0 offset fffffffffffff1b0
+  pending transaction 1433403: 0000000000000000 from 1816:2069 to 27552:0 code 3 flags 11 pri 0:120 r0 elapsed 8636ms node 1276317 size 484:8 offset ffffffffffffef10
+  pending transaction 1433525: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 8621ms node 1255072 size 1156:0 offset ffffffffffffeb30
+  pending transaction 1433530: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 8621ms node 1255090 size 1144:0 offset ffffffffffffe6a8
+  pending transaction 1433534: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 8621ms node 1256746 size 1156:0 offset ffffffffffffe230
+  pending transaction 1433536: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 8621ms node 1256759 size 1144:0 offset ffffffffffffdda8
+  pending transaction 1433538: 0000000000000000 from 1816:2044 to 27552:0 code 1 flags 11 pri 0:120 r0 elapsed 8621ms node 1276382 size 1156:0 offset ffffffffffffd930
+libdebuggerd_client: failed to read status response from tombstoned: Try again
+
+----- Waiting Channels: pid 27552 at 2026-09-01 17:14:28.880745795+0800 -----
+Cmd line: com.google.android.googlequicksearchbox:search
+
+sysTid=27552     do_freezer_trap
+sysTid=27553     do_freezer_trap
+sysTid=27554     do_freezer_trap
+sysTid=27555     do_freezer_trap
+sysTid=27556     do_freezer_trap
+sysTid=27557     do_freezer_trap
+sysTid=27558     do_freezer_trap
+sysTid=27559     do_freezer_trap
+sysTid=27560     do_freezer_trap
+sysTid=27561     do_freezer_trap
+sysTid=27562     do_freezer_trap
+sysTid=27564     do_freezer_trap
+sysTid=27568     do_freezer_trap
+sysTid=27569     do_freezer_trap
+sysTid=27570     do_freezer_trap
+sysTid=27571     do_freezer_trap
+sysTid=27572     do_freezer_trap
+sysTid=27574     do_freezer_trap
+sysTid=27576     do_freezer_trap
+sysTid=27577     do_freezer_trap
+sysTid=27578     do_freezer_trap
+sysTid=27579     do_freezer_trap
+sysTid=27580     do_freezer_trap
+sysTid=27581     do_freezer_trap
+sysTid=27582     do_freezer_trap
+sysTid=27583     do_freezer_trap
+sysTid=27585     do_freezer_trap
+sysTid=27586     do_freezer_trap
+sysTid=27587     do_freezer_trap
+sysTid=27588     do_freezer_trap
+sysTid=27589     do_freezer_trap
+sysTid=27590     do_freezer_trap
+sysTid=27591     do_freezer_trap
+sysTid=27592     do_freezer_trap
+sysTid=27593     do_freezer_trap
+sysTid=27594     do_freezer_trap
+sysTid=27596     do_freezer_trap
+sysTid=27611     do_freezer_trap
+sysTid=27613     do_freezer_trap
+sysTid=27615     do_freezer_trap
+sysTid=27616     do_freezer_trap
+sysTid=27617     do_freezer_trap
+sysTid=27627     do_freezer_trap
+sysTid=27628     do_freezer_trap
+sysTid=27629     do_freezer_trap
+sysTid=27630     do_freezer_trap
+sysTid=27631     do_freezer_trap
+sysTid=27632     do_freezer_trap
+sysTid=27633     do_freezer_trap
+sysTid=27686     do_freezer_trap
+sysTid=27687     do_freezer_trap
+sysTid=27688     do_freezer_trap
+sysTid=27694     do_freezer_trap
+sysTid=27695     do_freezer_trap
+sysTid=27697     do_freezer_trap
+sysTid=27699     do_freezer_trap
+sysTid=27703     do_freezer_trap
+sysTid=27705     do_freezer_trap
+sysTid=27706     do_freezer_trap
+sysTid=27707     do_freezer_trap
+sysTid=27708     do_freezer_trap
+sysTid=27709     do_freezer_trap
+sysTid=27710     do_freezer_trap
+sysTid=27711     do_freezer_trap
+sysTid=27842     do_freezer_trap
+sysTid=28075     do_freezer_trap
+sysTid=28400     do_freezer_trap
+sysTid=28401     do_freezer_trap
+sysTid=28824     do_freezer_trap
+sysTid=29597     do_freezer_trap
+sysTid=29598     do_freezer_trap
+sysTid=29599     do_freezer_trap
+sysTid=29600     do_freezer_trap
+sysTid=30107     do_freezer_trap
+sysTid=30112     do_freezer_trap
+sysTid=32500     do_freezer_trap
+sysTid=509       do_freezer_trap
+sysTid=513       do_freezer_trap
+sysTid=514       do_freezer_trap
+sysTid=1154      do_freezer_trap
+sysTid=1211      do_freezer_trap
+
+----- end 27552 -----
+
+DurationsV5: 8796638,0,0,15600,4,0,0,0,1,0,0,0,1,0,0,1,12159,0,2,0,4,1,0,0,0
+
+----- dumping ended at 8812243

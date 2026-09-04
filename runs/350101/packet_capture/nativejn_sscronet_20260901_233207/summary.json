@@ -1,0 +1,9 @@
+{
+  "run_dir": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/nativejn_sscronet_20260901_233207",
+  "remote_js": "/data/local/tmp/rfpkt350_fullbody_nativejn_sscronet_20260901_233207.js",
+  "seconds": 75,
+  "packet_b64": 42,
+  "uploaded": 42,
+  "upload_failed": 0,
+  "process_rc": 0
+}

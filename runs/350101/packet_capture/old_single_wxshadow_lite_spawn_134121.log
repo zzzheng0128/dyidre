@@ -1,0 +1,90 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=887)...
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=887)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=5723, ppid=887, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 5723 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 5723 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 5747，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 10s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/metasec_jnitrace_spawn_early_wxshadow_lite.js
+[1m[34m [*][0m 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[1m[34m [*][0m 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x744e5f5e30
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x744e5f5e30 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x744e5f5e30，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282283 Java.setStealth(WXSHADOW) ok, native stealth=1
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282283 install target=libmetasec_ml.so
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282283 libart.so base=0x7197fa5000
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x71986df520
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x71986df520 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x71986df520，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282285 hook FindClass[6] @ 0x71986df520 failed via fixed-libart-offset: InternalError: hook_attach: wxshadow prctl failed: kernel may not support shadow pages
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x71985bd9bc
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x71985bd9bc errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x71985bd9bc，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282286 hook GetStaticMethodID[113] @ 0x71985bd9bc failed via fixed-libart-offset: InternalError: hook_attach: wxshadow prctl failed: kernel may not support shadow pages
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x71985bab78
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x71985bab78 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x71985bab78，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282288 hook RegisterNatives[215] @ 0x71985bab78 failed via fixed-libart-offset: InternalError: hook_attach: wxshadow prctl failed: kernel may not support shadow pages
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x7198851e98
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x7198851e98 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x7198851e98，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282289 hook NewStringUTF[167] @ 0x7198851e98 failed via fixed-libart-offset: InternalError: hook_attach: wxshadow prctl failed: kernel may not support shadow pages
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x71986dcde4
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x71986dcde4 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x71986dcde4，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282291 hook GetStringUTFChars[169] @ 0x71986dcde4 failed via fixed-libart-offset: InternalError: hook_attach: wxshadow prctl failed: kernel may not support shadow pages
+[1m[35m [agent][0m [JS] [metasec-jni-wxshadow-lite] 1788241282291 installed
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 5723...
+[1m[32m [✓][0m 子进程 5723 已恢复运行
+[1m[34m [*][0m spawn 已恢复，启动 Java worker 作为后续 Java 操作执行线程
+[1m[35m [agent][0m [java worker] starting
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x744e5f5e30
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x744e5f5e30 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x744e5f5e30，拒绝降级 mprotect[0m
+  [2m输入 help 查看命令，exit 退出[0m
+rustfrida> [1m[33m [!][0m Java worker 启动失败，后续 Java 操作需要重新初始化 worker: Java worker 初始化失败: java worker start failed: Java executor loop hook is not installed
+[1m[34m [*][0m 退出交互模式
+[1m[34m [*][0m 已发送 shutdown，等待 agent 主动断开连接...
+[1m[35m [agent][0m [agent] 收到 shutdown，开始退出清理
+[1m[35m [agent][0m [agent] [quickjs] cleanup start (managed-safe unload) (+0ms, total 0ms)
+[1m[35m [agent][0m [agent] [quickjs] phase0 stop_java_worker (+0ms, total 0ms)
+[1m[35m [agent][0m [JS] [module] libart.so range: 0x7197fa5000-0x7198ba8000, path: Some("/apex/com.android.art/lib64/libart.so")
+[1m[35m [agent][0m [agent] [quickjs] phase1 cut_java_hooks (+53ms, total 54ms)
+[1m[35m [agent][0m [agent] [quickjs] phase1 cut_native_hooks (+0ms, total 54ms)
+[1m[35m [agent][0m [agent] [quickjs] phase1 cut_art_controller_routing (+0ms, total 54ms)
+[1m[35m [agent][0m [JS] [drain] start, callback_in_flight=0, exec_in_flight=0
+[1m[35m [agent][0m [JS] [drain] done, callback_in_flight=0, exec_in_flight=0 after 0ms (1 rounds)
+[1m[35m [agent][0m [agent] [quickjs] phase2 drain_thunk_in_flight (+0ms, total 54ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 cut_art_controller_walkstack_guards (+0ms, total 54ms)
+[1m[35m [agent][0m [agent] [recompiler] release_all: snapshot 0 recomp range(s) for caller-side munmap (release_ok=0 fail=0)
+[1m[35m [agent][0m [agent] [quickjs] phase3 release_all_recomp (+0ms, total 54ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 free_art_controller_state (+0ms, total 54ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 free_java_hooks (+0ms, total 55ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 free_native_hooks (+0ms, total 55ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 shutdown_qbdi_helper (+0ms, total 55ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 detach_jni_thread (+0ms, total 55ms)
+[1m[35m [agent][0m [agent] [quickjs] phase3 cleanup_engine (+0ms, total 56ms)
+[1m[35m [agent][0m [agent] [quickjs] cleanup done (managed-safe unload, executable pools retained, walkstack guards removed, total 56ms)
+[1m[35m [agent][0m [agent] 退出清理完成，准备关闭 socket
+[1m[32m [✓][0m 成功附加到进程 5747，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[34m [*][0m 正在还原 zygote 887 的 patch...
+[1m[32m [✓][0m Zygote 887 patch 已还原

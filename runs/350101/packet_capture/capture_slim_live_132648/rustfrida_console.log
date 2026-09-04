@@ -1,0 +1,63 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=887)...
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=887)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=27789, ppid=887, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 27789 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 27789 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 27796，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 10s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/metasec_probe_350101_packet-capture_capture_slim_live_132648.js
+[1m[34m [*][0m 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [packet350] java stealth disabled for packet hooks
+[1m[35m [agent][0m [JS] [module] libart.so range: 0x7197fa5000-0x7198ba8000, path: Some("/apex/com.android.art/lib64/libart.so")
+[1m[35m [agent][0m [JS] [fast] ART callee-save suspend method via setCalleeSaveMethod+runtimeInitSequence: method=0x712574e0, runtime_off=0x28, set_base=0x0, init_seq=0x28
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 27789...
+[1m[32m [✓][0m 子进程 27789 已恢复运行
+[1m[34m [*][0m spawn 已恢复，启动 Java worker 作为后续 Java 操作执行线程
+[1m[35m [agent][0m [java worker] starting
+[1m[35m [agent][0m [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=616
+[1m[35m [agent][0m [JS] [java worker] helper class loaded
+[1m[35m [agent][0m [JS] [java worker] nativeLoop registered
+[1m[35m [agent][0m [JS] [java worker] thread object created
+[1m[35m [agent][0m [JS] [java worker] calling Thread.start
+[1m[35m [agent][0m [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[1m[35m [agent][0m [java worker] ready
+  [2m输入 help 查看命令，exit 退出[0m
+rustfrida> [1m[35m [agent][0m [JS] [packet350] java ready uploadUrl=http://127.0.0.1:8891/up/dy/packets device_id=rf-com.ss.android.ugc.aweme-27789 process=com.ss.android.ugc.aweme
+[1m[35m [agent][0m [JS] [hook_engine] [hook] WARNING: both X16 and X17 written by relocated code, X17 may be clobbered
+[1m[35m [agent][0m [JS] [packet350] hook J.N failed: InternalError: registered native entry hook failed: target=0x7255a010, hook=0x7255a010
+[1m[35m [agent][0m [JS] [packet350] hooked CronetFixedModeOutputStream.write
+[1m[35m [agent][0m [JS] [packet350] hooked CronetInputStream.read
+[1m[35m [agent][0m [JS] [packet350] hooked CronetHttpURLConnection.setRequestMethod
+[1m[35m [agent][0m [JS] [packet350] hooked CronetHttpURLConnection.addRequestProperty
+[1m[35m [agent][0m [JS] [packet350] hooked CronetHttpURLConnection.setRequestProperty
+[1m[35m [agent][0m [JS] [packet350] hooked CronetHttpURLConnection.getOutputStream
+[1m[35m [agent][0m [JS] [packet350] hooked CronetHttpURLConnection.getInputStream
+[1m[35m [agent][0m [JS] [packet350] hooked CronetHttpURLConnection.disconnect
+[1m[34m [*][0m 退出交互模式
+[1m[34m [*][0m 已发送 shutdown，等待 agent 主动断开连接...
+[1m[35m [agent][0m [agent] 收到 shutdown，开始退出清理
+[1m[35m [agent][0m [agent] [quickjs] cleanup start (managed-safe unload) (+0ms, total 0ms)
+[1m[35m [agent][0m [agent] [quickjs] phase0 stop_java_worker_timeout (+801ms, total 801ms)
+[1m[35m [agent][0m [agent] [quickjs] Java worker native loop still running; skip managed-safe unload to avoid unmapping agent code
+[1m[35m [agent][0m [agent] [quickjs] cleanup detach_jni_thread (+0ms, total 801ms)
+[1m[35m [agent][0m [agent] agent 保持驻留：已切断 hook 入口，等待目标进程退出，避免 loader 卸载 agent 本体
+[1m[33m [!][0m agent 清理等待超过 1s，已返回交互；目标内资源保留，跳过 loader 残留清理
+[1m[34m [*][0m 正在还原 zygote 887 的 patch...
+[1m[32m [✓][0m Zygote 887 patch 已还原

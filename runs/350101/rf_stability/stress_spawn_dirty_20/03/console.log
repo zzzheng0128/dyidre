@@ -1,0 +1,19 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn-only 诊断: 只启动并恢复 com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在修补 SELinux 策略...
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=869)...
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=869)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=9219, ppid=869, package=com.ss.android.ugc.aweme
+[1m[36m [→][0m 正在恢复子进程 9219...
+[1m[32m [✓][0m 子进程 9219 已恢复运行
+[1m[32m [✓][0m RF_DIAG_SPAWN_ONLY: 进程 9219 存活 5s
+[1m[34m [*][0m 正在还原 zygote 869 的 patch...
+[1m[32m [✓][0m Zygote 869 patch 已还原

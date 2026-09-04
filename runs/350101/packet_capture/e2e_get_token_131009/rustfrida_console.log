@@ -1,0 +1,74 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=887)...
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=887)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=24069, ppid=887, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 24069 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 24069 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 24081，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 10s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/metasec_probe_350101_packet-capture_e2e_get_token_131009.js
+[1m[34m [*][0m 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[1m[34m [*][0m 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [metasec-probe350] loaded version=350101 selected="packet-capture"
+[1m[35m [agent][0m [JS] [metasec-probe350] install mode=packet-capture source=metasec_probe_350101.js#packet-capture
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x744e5f5e30
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x744e5f5e30 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x744e5f5e30，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [module] libart.so range: 0x7197fa5000-0x7198ba8000, path: Some("/apex/com.android.art/lib64/libart.so")
+[1m[35m [agent][0m [JS] [fast] ART callee-save suspend method via setCalleeSaveMethod+runtimeInitSequence: method=0x712574e0, runtime_off=0x28, set_base=0x0, init_seq=0x28
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x7255a030
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x7255a030 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x7255a030，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x7255a060
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x7255a060 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x7255a060，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x7255a050
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x7255a050 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x7255a050，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x71984eec58
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x71984eec58 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x71984eec58，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x719843d91c
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x719843d91c errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x719843d91c，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x719859ce90
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x719859ce90 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x719859ce90，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x744e5f5e30
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x744e5f5e30 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x744e5f5e30，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed (errno=22), trying PMD split + COW for addr=0x72b41d10
+[1m[35m [agent][0m [JS] [hook_engine] wxshadow PATCH failed after COW: addr=0x72b41d10 errno=22
+[1m[35m [agent][0m [JS] [hook_engine] [31m[STEALTH] wxshadow 失败 0x72b41d10，拒绝降级 mprotect[0m
+[1m[35m [agent][0m [JS] [Java.ready] gate hook install failed: InternalError: hook_install_art_router failed
+[1m[31m [✗][0m pre-resume Java 脚本执行失败: InternalError: hook_install_art_router failed
+at hook (native)
+    at set (<java_boot>:1041:26)
+    at set (<java_boot>:1284:32)
+    at <anonymous> (<java_boot>:1509:56)
+    at <anonymous> (<java_boot>:1590:38)
+    at installJavaHooks (metasec_probe_350101_packet-capture_e2e_get_token_131009.js:5634:35)
+    at <anonymous> (metasec_probe_350101_packet-capture_e2e_get_token_131009.js:5707:21)
+    at __dyidre_mode_packet_capture (metasec_probe_350101_packet-capture_e2e_get_token_131009.js:5710:3)
+    at installMode (metasec_probe_350101_packet-capture_e2e_get_token_131009.js:5789:31)
+    at installMany (metasec_probe_350101_packet-capture_e2e_get_token_131009.js:5797:18)
+    at <anonymous> (metasec_probe_350101_packet-capture_e2e_get_token_131009.js:5855:16)
+    at <eval> (metasec_probe_350101_packet-capture_e2e_get_token_131009.js:5856:3)
+[1m[34m [*][0m 正在终止 1 个未放行的子进程...
+[1m[34m [*][0m 正在还原 zygote 887 的 patch...
+[1m[32m [✓][0m Zygote 887 patch 已还原

@@ -7,6 +7,7 @@
 | 路径 | 作用 |
 |---|---|
 | `runtime_payloads/rustfrida` | 设备侧 rustFrida 可执行文件，负责 spawn/attach、加载统一 JS、提供 RPC。 |
+| `runtime_payloads/ecapture` | 设备侧 eCapture Android arm64 静态二进制，负责旁路抓 `SSL_read/SSL_write` 明文，不注入目标进程。 |
 | `runtime_payloads/wxshadow.kpm` | wxshadow KPM，配合无痕/低痕 Java hook 场景使用。需要设备内核/APatch 环境支持。 |
 | `runtime_payloads/hide-so.kpm` | hide-so KPM，用于隐藏/收敛 maps 里的注入痕迹，按需加载。 |
 | `runtime_payloads/embed1.so`、`embed2.so`、`embed3.so` | rustFrida/zygote/embed 相关 payload。一般不直接手动加载，除非调 RF 自身启动链路。 |
@@ -24,6 +25,13 @@ tools/runtime_payloads/README.md
 ```bash
 adb push tools/runtime_payloads/rustfrida /data/local/tmp/rustfrida
 adb shell "su -c 'chmod 755 /data/local/tmp/rustfrida'"
+```
+
+eCapture 通常由 runner 自动推送；手工部署时：
+
+```bash
+adb push tools/runtime_payloads/ecapture /data/local/tmp/ecapture
+adb shell "su -c 'chmod 755 /data/local/tmp/ecapture'"
 ```
 
 如果要测试 wxshadow/hide-so：
@@ -60,6 +68,9 @@ probes/350101/run_metasec_probe_350101.sh jnitrace 180 jni01
 
 # GumTrace：只在需要 raw PC / VM handler 时短跑。
 probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
+
+# eCapture：网络 TLS 明文基准，不注入目标进程。
+probes/350101/run_ecapture_tls_350101.sh text 60 req01_ecap
 ```
 
 输出会进入：
@@ -75,7 +86,8 @@ runs/<version>/<run_kind>/<tag>/
 复用方式：
 
 ```text
-rustFrida/Frida JS 先定位 module base、offset、buffer 指针
+eCapture 先拿网络明文基准
+  -> rustFrida/Frida JS 定位 module base、offset、buffer 指针
   -> stackplz 或 eDBG 对少量地址下 hbreak/watch/rwatch
   -> 把 regs/stack/memory dump 放到 runs/<version>/edbg_stackplz/<run_id>/
   -> 用结果补 unidbg stub、IDA 结构体和 C oracle

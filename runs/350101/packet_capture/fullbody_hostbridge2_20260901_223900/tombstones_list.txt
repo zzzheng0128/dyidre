@@ -1,0 +1,20 @@
+total 48996
+-rw-rw-r-- 1 tombstoned system  903011 2026-09-01 22:39 tombstone_20
+-rw-rw-r-- 1 tombstoned system  605826 2026-09-01 22:39 tombstone_20.pb
+-rw-rw-r-- 1 tombstoned system 3192269 2026-09-01 20:28 tombstone_19
+-rw-rw-r-- 1 tombstoned system 2325442 2026-09-01 20:28 tombstone_19.pb
+-rw-rw-r-- 1 tombstoned system  275155 2026-09-01 20:26 tombstone_18
+-rw-rw-r-- 1 tombstoned system  164722 2026-09-01 20:26 tombstone_18.pb
+-rw-rw-r-- 1 tombstoned system  276401 2026-09-01 20:26 tombstone_17
+-rw-rw-r-- 1 tombstoned system  165029 2026-09-01 20:26 tombstone_17.pb
+-rw-rw-r-- 1 tombstoned system  283572 2026-09-01 20:26 tombstone_16
+-rw-rw-r-- 1 tombstoned system  167849 2026-09-01 20:26 tombstone_16.pb
+-rw-rw-r-- 1 tombstoned system 1704673 2026-09-01 20:23 tombstone_15
+-rw-rw-r-- 1 tombstoned system 1195886 2026-09-01 20:23 tombstone_15.pb
+-rw-rw-r-- 1 tombstoned system 1691405 2026-09-01 20:21 tombstone_14
+-rw-rw-r-- 1 tombstoned system 1173309 2026-09-01 20:21 tombstone_14.pb
+-rw-rw-r-- 1 tombstoned system 1700220 2026-09-01 20:20 tombstone_13
+-rw-rw-r-- 1 tombstoned system 1194449 2026-09-01 20:20 tombstone_13.pb
+-rw-rw-r-- 1 tombstoned system 1641173 2026-09-01 20:17 tombstone_12
+-rw-rw-r-- 1 tombstoned system 1133742 2026-09-01 20:17 tombstone_12.pb
+-rw-rw-r-- 1 tombstoned system  275392 2026-09-01 20:13 tombstone_11

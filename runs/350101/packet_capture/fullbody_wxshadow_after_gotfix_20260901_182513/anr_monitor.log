@@ -1,0 +1,3 @@
+# anr/dialog monitor
+# package=com.ss.android.ugc.aweme interval=1s ui_dump_interval=3s
+# started_at=2026-09-01 18:25:14

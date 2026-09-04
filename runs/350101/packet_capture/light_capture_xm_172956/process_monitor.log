@@ -1,0 +1,596 @@
+# target process monitor
+# package=com.ss.android.ugc.aweme interval=1s
+# started_at=2026-09-01 17:29:58
+[2026-09-01 17:29:58] pids=<none>
+[2026-09-01 17:29:59] pids=<none>
+[2026-09-01 17:30:01] pids=15010
+  ps: u0_a281      15010   882   39219052 957188 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	S (sleeping)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	  974248 kB
+  status[15010]: VmRSS:	  971996 kB
+  status[15010]: Threads:	234
+[2026-09-01 17:30:01] EVENT first_seen pids=15010
+[2026-09-01 17:30:03] pids=15010
+  ps: u0_a281      15010   882   39587588 909880 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	S (sleeping)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	  995272 kB
+  status[15010]: VmRSS:	  928660 kB
+  status[15010]: Threads:	253
+[2026-09-01 17:30:05] pids=15010
+  ps: u0_a281      15010   882   40171732 1020356 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	S (sleeping)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1042256 kB
+  status[15010]: VmRSS:	 1034400 kB
+  status[15010]: Threads:	264
+[2026-09-01 17:30:07] pids=15010
+  ps: u0_a281      15010   882   40265832 1023480 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	S (sleeping)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1386532 kB
+  status[15010]: VmRSS:	 1026272 kB
+  status[15010]: Threads:	265
+[2026-09-01 17:30:09] pids=15010
+  ps: u0_a281      15010   882   40729280 1247152 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1386532 kB
+  status[15010]: VmRSS:	 1261820 kB
+  status[15010]: Threads:	275
+[2026-09-01 17:30:11] pids=15010
+  ps: u0_a281      15010   882   40921212 1251352 do_epoll_wait      0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	S (sleeping)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1444300 kB
+  status[15010]: VmRSS:	 1255640 kB
+  status[15010]: Threads:	281
+[2026-09-01 17:30:13] pids=15010
+  ps: u0_a281      15010   882   41059180 1377720 0                  0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	S (sleeping)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1444300 kB
+  status[15010]: VmRSS:	 1377984 kB
+  status[15010]: Threads:	287
+[2026-09-01 17:30:16] pids=15010
+  ps: u0_a281      15010   882   41136252 1427468 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1444300 kB
+  status[15010]: VmRSS:	 1422052 kB
+  status[15010]: Threads:	288
+[2026-09-01 17:30:18] pids=15010
+  ps: u0_a281      15010   882   41142916 1483028 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	S (sleeping)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1484832 kB
+  status[15010]: VmRSS:	 1483836 kB
+  status[15010]: Threads:	290
+[2026-09-01 17:30:20] pids=15010
+  ps: u0_a281      15010   882   41445528 1403284 0                  0 S com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1417416 kB
+  status[15010]: Threads:	320
+[2026-09-01 17:30:23] pids=15010
+  ps: u0_a281      15010   882   41821676 1415060 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1415060 kB
+  status[15010]: Threads:	326
+[2026-09-01 17:30:25] pids=15010
+  ps: u0_a281      15010   882   41823308 1415708 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1417756 kB
+  status[15010]: Threads:	326
+[2026-09-01 17:30:27] pids=15010
+  ps: u0_a281      15010   882   41909792 1432928 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1425588 kB
+  status[15010]: Threads:	326
+[2026-09-01 17:30:30] pids=15010
+  ps: u0_a281      15010   882   41779504 1369600 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1369744 kB
+  status[15010]: Threads:	323
+[2026-09-01 17:30:32] pids=15010
+  ps: u0_a281      15010   882   41985724 1390208 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1389528 kB
+  status[15010]: Threads:	340
+[2026-09-01 17:30:35] pids=15010
+  ps: u0_a281      15010   882   42065892 1321368 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1319044 kB
+  status[15010]: Threads:	340
+[2026-09-01 17:30:37] pids=15010
+  ps: u0_a281      15010   882   42129412 1378516 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1378288 kB
+  status[15010]: Threads:	343
+[2026-09-01 17:30:40] pids=15010
+  ps: u0_a281      15010   882   42128572 1390824 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1390380 kB
+  status[15010]: Threads:	343
+[2026-09-01 17:30:42] pids=15010
+  ps: u0_a281      15010   882   42116212 1391464 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1391464 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:30:45] pids=15010
+  ps: u0_a281      15010   882   42109076 1391964 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1391972 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:30:48] pids=15010
+  ps: u0_a281      15010   882   42107592 1390260 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1390260 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:30:50] pids=15010
+  ps: u0_a281      15010   882   42107592 1390712 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1394888 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:30:52] pids=15010
+  ps: u0_a281      15010   882   42113284 1396832 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1394792 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:30:54] pids=15010
+  ps: u0_a281      15010   882   42108832 1394560 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1394560 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:30:56] pids=15010
+  ps: u0_a281      15010   882   42107372 1394900 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1394900 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:30:58] pids=15010
+  ps: u0_a281      15010   882   42107392 1394868 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1394868 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:31:00] pids=15010
+  ps: u0_a281      15010   882   42108984 1395092 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1395364 kB
+  status[15010]: Threads:	342
+[2026-09-01 17:31:02] pids=15010
+  ps: u0_a281      15010   882   42090376 1396464 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1396464 kB
+  status[15010]: Threads:	341
+[2026-09-01 17:31:04] pids=15010
+  ps: u0_a281      15010   882   42090376 1391192 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1391676 kB
+  status[15010]: Threads:	341
+[2026-09-01 17:31:06] pids=15010
+  ps: u0_a281      15010   882   42090376 1391636 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1392800 kB
+  status[15010]: Threads:	341
+[2026-09-01 17:31:08] pids=15010
+  ps: u0_a281      15010   882   42144840 1427980 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1428040 kB
+  status[15010]: Threads:	341
+[2026-09-01 17:31:11] pids=15010
+  ps: u0_a281      15010   882   42073420 1429248 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1429248 kB
+  status[15010]: Threads:	337
+[2026-09-01 17:31:13] pids=15010
+  ps: u0_a281      15010   882   42107572 1434624 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1434624 kB
+  status[15010]: Threads:	338
+[2026-09-01 17:31:15] pids=15010
+  ps: u0_a281      15010   882   42128496 1437540 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1437540 kB
+  status[15010]: Threads:	339
+[2026-09-01 17:31:17] pids=15010
+  ps: u0_a281      15010   882   42125532 1437912 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1438380 kB
+  status[15010]: Threads:	339
+[2026-09-01 17:31:19] pids=15010
+  ps: u0_a281      15010   882   42125672 1438440 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1438412 kB
+  status[15010]: Threads:	339
+[2026-09-01 17:31:21] pids=15010
+  ps: u0_a281      15010   882   42073220 1438576 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1439092 kB
+  status[15010]: Threads:	336
+[2026-09-01 17:31:23] pids=15010
+  ps: u0_a281      15010   882   42184796 1460032 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1459136 kB
+  status[15010]: Threads:	338
+[2026-09-01 17:31:25] pids=15010
+  ps: u0_a281      15010   882   42269336 1461692 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1461624 kB
+  status[15010]: Threads:	343
+[2026-09-01 17:31:27] pids=15010
+  ps: u0_a281      15010   882   42234368 1461680 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1461940 kB
+  status[15010]: Threads:	341
+[2026-09-01 17:31:29] pids=15010
+  ps: u0_a281      15010   882   42244776 1464692 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1462920 kB
+  status[15010]: Threads:	341
+[2026-09-01 17:31:31] pids=15010
+  ps: u0_a281      15010   882   42216896 1463788 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1463788 kB
+  status[15010]: Threads:	340
+[2026-09-01 17:31:34] pids=15010
+  ps: u0_a281      15010   882   42216896 1464148 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1464148 kB
+  status[15010]: Threads:	340
+[2026-09-01 17:31:36] pids=15010
+  ps: u0_a281      15010   882   42216896 1464132 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1464396 kB
+  status[15010]: Threads:	340
+[2026-09-01 17:31:38] pids=15010
+  ps: u0_a281      15010   882   42219588 1464380 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1464380 kB
+  status[15010]: Threads:	340
+[2026-09-01 17:31:40] pids=15010
+  ps: u0_a281      15010   882   42199104 1464616 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1464616 kB
+  status[15010]: Threads:	339
+[2026-09-01 17:31:43] pids=15010
+  ps: u0_a281      15010   882   42184420 1468060 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1465476 kB
+  status[15010]: Threads:	337
+[2026-09-01 17:31:45] pids=15010
+  ps: u0_a281      15010   882   42168420 1465552 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1465552 kB
+  status[15010]: Threads:	337
+[2026-09-01 17:31:47] pids=15010
+  ps: u0_a281      15010   882   42166936 1465820 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1465820 kB
+  status[15010]: Threads:	337
+[2026-09-01 17:31:50] pids=15010
+  ps: u0_a281      15010   882   42167216 1468552 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1468552 kB
+  status[15010]: Threads:	337
+[2026-09-01 17:31:52] pids=15010
+  ps: u0_a281      15010   882   42160232 1469964 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1469968 kB
+  status[15010]: Threads:	336
+[2026-09-01 17:31:55] pids=15010
+  ps: u0_a281      15010   882   42076940 1469988 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1469988 kB
+  status[15010]: Threads:	332
+[2026-09-01 17:31:57] pids=15010
+  ps: u0_a281      15010   882   42076940 1470080 0                  0 R com.ss.android.ugc.aweme
+  status[15010]: Name:	droid.ugc.aweme
+  status[15010]: State:	R (running)
+  status[15010]: Tgid:	15010
+  status[15010]: Pid:	15010
+  status[15010]: PPid:	882
+  status[15010]: TracerPid:	0
+  status[15010]: VmHWM:	 1504304 kB
+  status[15010]: VmRSS:	 1470344 kB
+  status[15010]: Threads:	332
+[2026-09-01 17:32:00] pids=<none>
+[2026-09-01 17:32:00] EVENT pid_change old=15010 new=<none>
+[2026-09-01 17:32:00] EVENT disappeared
+[2026-09-01 17:32:02] pids=<none>
+[2026-09-01 17:32:02] EVENT disappeared
+[2026-09-01 17:32:05] pids=<none>
+[2026-09-01 17:32:05] EVENT disappeared

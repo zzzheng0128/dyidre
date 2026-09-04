@@ -11,6 +11,7 @@ git lfs pull
 | 文件 | 大小 | SHA-256 | 用途 |
 |---|---:|---|---|
 | `rustfrida` | 13,850,248 | `6e8f15d59c77c4db793cc85caab0e390c743e00dadf753f5881d4a28229ed91a` | 设备侧 RF 主程序，`probes/*/run_metasec_probe_*.sh` 默认调用 `/data/local/tmp/rustfrida`。 |
+| `ecapture` | 31,665,928 | `05aa5bc84b44c90a30e7609bfd149fa1c7b97796376e8f9197d76fcc2dc9aeb9` | 设备侧 eCapture Android arm64 静态二进制，用于 eBPF uprobe 抓 `SSL_read/SSL_write` 明文；350101 默认入口是 `probes/350101/run_ecapture_tls_350101.sh`。 |
 | `wxshadow.kpm` | 157,200 | `05999fa2d37a91dce30e9accb1e5c72f4d8d106b165ec1b5915244775d2d97a1` | wxshadow 内核侧辅助模块，配合低痕 Java hook / ArtMethod 相关采集。 |
 | `hide-so.kpm` | 114,848 | `60e1fc39f32d0d6d8b4dcf2e9a8cf04f7fd3bdee899914d53e115c08134b9d3d` | maps 隐藏/收敛辅助模块，排查注入检测面时使用。 |
 | `embed1.so` | 10,392 | `2d54faae3e8aba7683cb09a332a27ac05e5273d8182d4b17ebec13671967ae84` | rustFrida embed payload，调 RF 启动链路时保留。 |
@@ -37,6 +38,14 @@ adb push tools/runtime_payloads/rustfrida /data/local/tmp/rustfrida
 adb shell "su -c 'chmod 755 /data/local/tmp/rustfrida'"
 ```
 
+eCapture 按需推送。通常不需要手工推，`probes/350101/run_ecapture_tls_350101.sh`
+会自动推送并 chmod：
+
+```bash
+adb push tools/runtime_payloads/ecapture /data/local/tmp/ecapture
+adb shell "su -c 'chmod 755 /data/local/tmp/ecapture'"
+```
+
 KPM 按需推送：
 
 ```bash
@@ -49,6 +58,7 @@ adb push tools/runtime_payloads/hide-so.kpm /data/local/tmp/hide-so.kpm
 只在下面几种情况替换：
 
 - rustFrida 自身修复了 spawn/attach/RPC/inline hook 稳定性；
+- eCapture 升级了 Android/BoringSSL/eBPF 兼容性，或者当前 Pixel/Android 版本无法加载 bytecode；
 - KPM 适配了新内核或修复加载失败；
 - embed payload 和 RF 主程序版本不匹配；
 - 真机采集报告明确证明旧 payload 会影响 maps、ArtMethod、线程或 header 值。

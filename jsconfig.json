@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "checkJs": false,
+    "allowJs": true,
+    "types": ["frida-gum"]
+  },
+  "include": [
+    "probes/**/*.js"
+  ],
+  "exclude": [
+    "runs/**",
+    "node_modules/**"
+  ]
+}

@@ -1,0 +1,1173 @@
+# target process monitor
+# package=com.ss.android.ugc.aweme interval=1s
+# started_at=2026-09-01 17:12:49
+[2026-09-01 17:12:49] pids=<none>
+[2026-09-01 17:12:51] pids=<none>
+[2026-09-01 17:12:53] pids=1328
+  ps: u0_a281       1328   882   38975148 926208 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	  948320 kB
+  status[1328]: VmRSS:	  944376 kB
+  status[1328]: Threads:	226
+[2026-09-01 17:12:53] EVENT first_seen pids=1328
+[2026-09-01 17:12:55] pids=1328
+  ps: u0_a281       1328   882   39925180 984180 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1063112 kB
+  status[1328]: VmRSS:	  992620 kB
+  status[1328]: Threads:	265
+[2026-09-01 17:12:56] pids=1328
+  ps: u0_a281       1328   882   40054540 1061728 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1066796 kB
+  status[1328]: VmRSS:	 1066796 kB
+  status[1328]: Threads:	266
+[2026-09-01 17:12:58] pids=1328
+  ps: u0_a281       1328   882   40263300 1125392 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1132624 kB
+  status[1328]: VmRSS:	 1129724 kB
+  status[1328]: Threads:	272
+[2026-09-01 17:13:00] pids=1328
+  ps: u0_a281       1328   882   40298176 1162712 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1180952 kB
+  status[1328]: VmRSS:	 1178004 kB
+  status[1328]: Threads:	273
+[2026-09-01 17:13:02] pids=1328
+  ps: u0_a281       1328   882   40693248 1254216 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1353976 kB
+  status[1328]: VmRSS:	 1278572 kB
+  status[1328]: Threads:	288
+[2026-09-01 17:13:04] pids=1328
+  ps: u0_a281       1328   882   40924752 1348920 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1368056 kB
+  status[1328]: VmRSS:	 1368056 kB
+  status[1328]: Threads:	297
+[2026-09-01 17:13:06] pids=1328
+  ps: u0_a281       1328   882   41201956 1415832 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1419932 kB
+  status[1328]: VmRSS:	 1416056 kB
+  status[1328]: Threads:	306
+[2026-09-01 17:13:08] pids=1328
+  ps: u0_a281       1328   882   41153404 1496592 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	D (disk sleep)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1500156 kB
+  status[1328]: VmRSS:	 1479520 kB
+  status[1328]: Threads:	304
+[2026-09-01 17:13:10] pids=1328
+  ps: u0_a281       1328   882   41188672 1372760 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1553408 kB
+  status[1328]: VmRSS:	 1373680 kB
+  status[1328]: Threads:	306
+[2026-09-01 17:13:11] pids=1328
+  ps: u0_a281       1328   882   41272060 1441084 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1553408 kB
+  status[1328]: VmRSS:	 1439896 kB
+  status[1328]: Threads:	306
+[2026-09-01 17:13:13] pids=1328
+  ps: u0_a281       1328   882   41374768 1504720 do_epoll_wait      0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1553408 kB
+  status[1328]: VmRSS:	 1536396 kB
+  status[1328]: Threads:	308
+[2026-09-01 17:13:15] pids=1328
+  ps: u0_a281       1328   882   41614824 1348192 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1385376 kB
+  status[1328]: Threads:	322
+[2026-09-01 17:13:17] pids=1328
+  ps: u0_a281       1328   882   41620564 1411108 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1397780 kB
+  status[1328]: Threads:	332
+[2026-09-01 17:13:20] pids=1328
+  ps: u0_a281       1328   882   41667072 1415960 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1416308 kB
+  status[1328]: Threads:	326
+[2026-09-01 17:13:22] pids=1328
+  ps: u0_a281       1328   882   41617660 1421780 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1422280 kB
+  status[1328]: Threads:	323
+[2026-09-01 17:13:24] pids=1328
+  ps: u0_a281       1328   882   41602328 1442212 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1442172 kB
+  status[1328]: Threads:	322
+[2026-09-01 17:13:26] pids=1328
+  ps: u0_a281       1328   882   41593744 1443116 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1442760 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:28] pids=1328 4023
+  ps: u0_a281       1328   882   41587800 1443864 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  ps: u0_a281       4023   882   18303804 324852 0                   0 R com.ss.android.ugc.aweme:smp
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1443964 kB
+  status[1328]: Threads:	321
+  status[4023]: Name:	van.gogh
+  status[4023]: State:	S (sleeping)
+  status[4023]: Tgid:	4023
+  status[4023]: Pid:	4023
+  status[4023]: PPid:	882
+  status[4023]: TracerPid:	0
+  status[4023]: VmHWM:	  407408 kB
+  status[4023]: VmRSS:	  407408 kB
+  status[4023]: Threads:	89
+[2026-09-01 17:13:28] EVENT pid_change old=1328 new=1328 4023
+[2026-09-01 17:13:30] pids=1328
+  ps: u0_a281       1328   882   41600732 1447168 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1447632 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:30] EVENT pid_change old=1328 4023 new=1328
+[2026-09-01 17:13:32] pids=1328
+  ps: u0_a281       1328   882   41596808 1456444 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1456672 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:34] pids=1328
+  ps: u0_a281       1328   882   41596952 1458540 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1458784 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:35] pids=1328
+  ps: u0_a281       1328   882   41596952 1459280 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1459264 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:37] pids=1328
+  ps: u0_a281       1328   882   41604716 1461900 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1461948 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:39] pids=1328
+  ps: u0_a281       1328   882   41601740 1461396 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1461252 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:41] pids=1328
+  ps: u0_a281       1328   882   41588480 1464916 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1463440 kB
+  status[1328]: Threads:	320
+[2026-09-01 17:13:43] pids=1328
+  ps: u0_a281       1328   882   41483136 1459280 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1426216 kB
+  status[1328]: Threads:	320
+[2026-09-01 17:13:45] pids=1328
+  ps: u0_a281       1328   882   41490032 1397784 do_epoll_wait      0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1398024 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:13:47] pids=1328
+  ps: u0_a281       1328   882   41491120 1381560 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1369276 kB
+  status[1328]: Threads:	322
+[2026-09-01 17:13:49] pids=1328
+  ps: u0_a281       1328   882   41473432 1370448 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1370664 kB
+  status[1328]: Threads:	322
+[2026-09-01 17:13:51] pids=1328
+  ps: u0_a281       1328   882   41419484 1371616 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1371744 kB
+  status[1328]: Threads:	319
+[2026-09-01 17:13:53] pids=1328
+  ps: u0_a281       1328   882   41355252 1390924 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1378484 kB
+  status[1328]: Threads:	313
+[2026-09-01 17:13:55] pids=1328
+  ps: u0_a281       1328   882   41330084 1378924 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1378924 kB
+  status[1328]: Threads:	312
+[2026-09-01 17:13:57] pids=1328
+  ps: u0_a281       1328   882   41330084 1378924 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1378924 kB
+  status[1328]: Threads:	311
+[2026-09-01 17:13:59] pids=1328
+  ps: u0_a281       1328   882   41410600 1398780 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1398808 kB
+  status[1328]: Threads:	316
+[2026-09-01 17:14:00] pids=1328
+  ps: u0_a281       1328   882   41421360 1397456 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1404620 kB
+  status[1328]: Threads:	318
+[2026-09-01 17:14:02] pids=1328
+  ps: u0_a281       1328   882   41405548 1263716 0                  0 R com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1263604 kB
+  status[1328]: Threads:	317
+[2026-09-01 17:14:04] pids=1328
+  ps: u0_a281       1328   882   41494844 1266872 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	R (running)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1267464 kB
+  status[1328]: Threads:	325
+[2026-09-01 17:14:06] pids=1328
+  ps: u0_a281       1328   882   41511820 1244964 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1244832 kB
+  status[1328]: Threads:	326
+[2026-09-01 17:14:08] pids=1328
+  ps: u0_a281       1328   882   41494336 1246484 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1246484 kB
+  status[1328]: Threads:	325
+[2026-09-01 17:14:10] pids=1328
+  ps: u0_a281       1328   882   41493544 1246708 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1246708 kB
+  status[1328]: Threads:	325
+[2026-09-01 17:14:12] pids=1328
+  ps: u0_a281       1328   882   41493544 1247492 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1247360 kB
+  status[1328]: Threads:	325
+[2026-09-01 17:14:14] pids=1328
+  ps: u0_a281       1328   882   41666020 1278640 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1262188 kB
+  status[1328]: Threads:	326
+[2026-09-01 17:14:16] pids=1328
+  ps: u0_a281       1328   882   41514776 1258496 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1257436 kB
+  status[1328]: Threads:	326
+[2026-09-01 17:14:18] pids=1328
+  ps: u0_a281       1328   882   41514776 1254512 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1254512 kB
+  status[1328]: Threads:	326
+[2026-09-01 17:14:20] pids=1328
+  ps: u0_a281       1328   882   41514776 1255252 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1255720 kB
+  status[1328]: Threads:	326
+[2026-09-01 17:14:22] pids=1328
+  ps: u0_a281       1328   882   41532056 1256652 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1257284 kB
+  status[1328]: Threads:	327
+[2026-09-01 17:14:24] pids=1328
+  ps: u0_a281       1328   882   41532208 1259652 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1249164 kB
+  status[1328]: Threads:	327
+[2026-09-01 17:14:26] pids=1328
+  ps: u0_a281       1328   882   41523000 1250372 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1250372 kB
+  status[1328]: Threads:	327
+[2026-09-01 17:14:28] pids=1328
+  ps: u0_a281       1328   882   41540496 1250516 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1250384 kB
+  status[1328]: Threads:	328
+[2026-09-01 17:14:30] pids=1328
+  ps: u0_a281       1328   882   41505528 1250436 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1250436 kB
+  status[1328]: Threads:	326
+[2026-09-01 17:14:31] pids=1328
+  ps: u0_a281       1328   882   41505528 1250340 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1251188 kB
+  status[1328]: Threads:	327
+[2026-09-01 17:14:33] pids=1328
+  ps: u0_a281       1328   882   41470648 1251056 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1251056 kB
+  status[1328]: Threads:	324
+[2026-09-01 17:14:35] pids=1328
+  ps: u0_a281       1328   882   41422772 1251128 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1251128 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:14:37] pids=1328
+  ps: u0_a281       1328   882   41420636 1251348 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1251348 kB
+  status[1328]: Threads:	321
+[2026-09-01 17:14:39] pids=1328
+  ps: u0_a281       1328   882   41438132 1251468 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1251468 kB
+  status[1328]: Threads:	322
+[2026-09-01 17:14:41] pids=1328
+  ps: u0_a281       1328   882   41628384 1259016 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1258988 kB
+  status[1328]: Threads:	333
+[2026-09-01 17:14:43] pids=1328
+  ps: u0_a281       1328   882   41665920 1260112 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1260000 kB
+  status[1328]: Threads:	335
+[2026-09-01 17:14:45] pids=1328
+  ps: u0_a281       1328   882   41669016 1268428 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1262536 kB
+  status[1328]: Threads:	335
+[2026-09-01 17:14:47] pids=1328
+  ps: u0_a281       1328   882   41660988 1263328 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1263328 kB
+  status[1328]: Threads:	335
+[2026-09-01 17:14:49] pids=1328
+  ps: u0_a281       1328   882   41660988 1262844 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1262844 kB
+  status[1328]: Threads:	335
+[2026-09-01 17:14:51] pids=1328
+  ps: u0_a281       1328   882   41660988 1262844 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1262844 kB
+  status[1328]: Threads:	335
+[2026-09-01 17:14:53] pids=1328
+  ps: u0_a281       1328   882   41660988 1263512 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1263796 kB
+  status[1328]: Threads:	335
+[2026-09-01 17:14:55] pids=1328
+  ps: u0_a281       1328   882   41714616 1267356 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1266508 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:14:57] pids=1328
+  ps: u0_a281       1328   882   41714616 1266376 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1266376 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:14:58] pids=1328
+  ps: u0_a281       1328   882   41751732 1269140 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1269172 kB
+  status[1328]: Threads:	340
+[2026-09-01 17:15:00] pids=1328
+  ps: u0_a281       1328   882   41751736 1269480 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1269444 kB
+  status[1328]: Threads:	340
+[2026-09-01 17:15:02] pids=1328
+  ps: u0_a281       1328   882   41741620 1269832 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1269832 kB
+  status[1328]: Threads:	340
+[2026-09-01 17:15:04] pids=1328
+  ps: u0_a281       1328   882   41734252 1269724 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1269724 kB
+  status[1328]: Threads:	339
+[2026-09-01 17:15:06] pids=1328
+  ps: u0_a281       1328   882   41734332 1270332 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1270588 kB
+  status[1328]: Threads:	339
+[2026-09-01 17:15:08] pids=1328
+  ps: u0_a281       1328   882   41769424 1273208 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1273208 kB
+  status[1328]: Threads:	341
+[2026-09-01 17:15:10] pids=1328
+  ps: u0_a281       1328   882   41788564 1275512 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1275512 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:12] pids=1328
+  ps: u0_a281       1328   882   41788564 1274916 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1274916 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:14] pids=1328
+  ps: u0_a281       1328   882   41786672 1276032 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1275964 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:16] pids=1328
+  ps: u0_a281       1328   882   41786672 1276228 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1276228 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:18] pids=1328
+  ps: u0_a281       1328   882   41786672 1276228 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1276908 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:20] pids=1328
+  ps: u0_a281       1328   882   41786672 1276840 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1276840 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:22] pids=1328
+  ps: u0_a281       1328   882   41788864 1280308 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280308 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:24] pids=1328
+  ps: u0_a281       1328   882   41787568 1280556 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280556 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:26] pids=1328
+  ps: u0_a281       1328   882   41787568 1280152 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280152 kB
+  status[1328]: Threads:	342
+[2026-09-01 17:15:28] pids=1328
+  ps: u0_a281       1328   882   41822540 1280184 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280204 kB
+  status[1328]: Threads:	344
+[2026-09-01 17:15:29] pids=1328
+  ps: u0_a281       1328   882   41822304 1280384 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280384 kB
+  status[1328]: Threads:	344
+[2026-09-01 17:15:31] pids=1328
+  ps: u0_a281       1328   882   41822324 1280640 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280648 kB
+  status[1328]: Threads:	344
+[2026-09-01 17:15:33] pids=1328
+  ps: u0_a281       1328   882   41822324 1280660 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280660 kB
+  status[1328]: Threads:	344
+[2026-09-01 17:15:35] pids=1328
+  ps: u0_a281       1328   882   41822324 1280972 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280972 kB
+  status[1328]: Threads:	344
+[2026-09-01 17:15:37] pids=1328
+  ps: u0_a281       1328   882   41822324 1280924 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1280924 kB
+  status[1328]: Threads:	344
+[2026-09-01 17:15:39] pids=1328
+  ps: u0_a281       1328   882   41734904 1281348 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1281348 kB
+  status[1328]: Threads:	339
+[2026-09-01 17:15:41] pids=1328
+  ps: u0_a281       1328   882   41717420 1281612 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1281600 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:15:43] pids=1328
+  ps: u0_a281       1328   882   41717420 1281692 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1281692 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:15:45] pids=1328
+  ps: u0_a281       1328   882   41687620 1282476 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1282516 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:15:47] pids=1328
+  ps: u0_a281       1328   882   41717420 1282644 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1282644 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:15:49] pids=1328
+  ps: u0_a281       1328   882   41717432 1282656 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1282668 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:15:50] pids=1328
+  ps: u0_a281       1328   882   41717432 1283048 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1283048 kB
+  status[1328]: Threads:	338
+[2026-09-01 17:15:52] pids=1328
+  ps: u0_a281       1328   882   41682464 1283116 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1283216 kB
+  status[1328]: Threads:	336
+[2026-09-01 17:15:54] pids=1328
+  ps: u0_a281       1328   882   41682472 1283864 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1283864 kB
+  status[1328]: Threads:	336
+[2026-09-01 17:15:56] pids=1328
+  ps: u0_a281       1328   882   41682472 1283968 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1283968 kB
+  status[1328]: Threads:	336
+[2026-09-01 17:15:58] pids=1328
+  ps: u0_a281       1328   882   41647504 1283984 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1283992 kB
+  status[1328]: Threads:	334
+[2026-09-01 17:16:00] pids=1328
+  ps: u0_a281       1328   882   41630020 1283916 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1283916 kB
+  status[1328]: Threads:	333
+[2026-09-01 17:16:02] pids=1328
+  ps: u0_a281       1328   882   41630020 1284820 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1284820 kB
+  status[1328]: Threads:	333
+[2026-09-01 17:16:04] pids=1328
+  ps: u0_a281       1328   882   41630020 1284992 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1284992 kB
+  status[1328]: Threads:	333
+[2026-09-01 17:16:06] pids=1328
+  ps: u0_a281       1328   882   41630020 1285012 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1285012 kB
+  status[1328]: Threads:	333
+[2026-09-01 17:16:08] pids=1328
+  ps: u0_a281       1328   882   41612504 1285040 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1285040 kB
+  status[1328]: Threads:	332
+[2026-09-01 17:16:10] pids=1328
+  ps: u0_a281       1328   882   41612504 1285340 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1285396 kB
+  status[1328]: Threads:	331
+[2026-09-01 17:16:11] pids=1328
+  ps: u0_a281       1328   882   41584904 1285900 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1286164 kB
+  status[1328]: Threads:	331
+[2026-09-01 17:16:13] pids=1328
+  ps: u0_a281       1328   882   41595020 1286172 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[1328]: Name:	droid.ugc.aweme
+  status[1328]: State:	S (sleeping)
+  status[1328]: Tgid:	1328
+  status[1328]: Pid:	1328
+  status[1328]: PPid:	882
+  status[1328]: TracerPid:	0
+  status[1328]: VmHWM:	 1652376 kB
+  status[1328]: VmRSS:	 1286172 kB
+  status[1328]: Threads:	331

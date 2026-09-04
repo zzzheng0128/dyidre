@@ -82,10 +82,15 @@
 - `managed_vm_decode_sourcework_350101/managed_vm_decode_summary.md`：把分散在多次 unidbg dump 的 F18..F54 source-work 程序合并成一个 decode 总表；四套 outer/adapter/block-loop/scheduler family 都是 complete，全部 unknown 0。
 - `managed_vm_decode_adapters_350101/managed_vm_decode_summary.md`：F22/F23/F31/F39/F47/F48 adapter/block-loop body decode；全部 unknown 0。
 - `managed_vm_decode_roundfamilies_350101/managed_vm_decode_summary.md`：F24/F25/F26/F27/F28/F29/F33/F41/F49/F50/F51/F52/F53/F54 round-family body decode；全部 unknown 0。
+- `managed_vm_decode_f3_f14_350101/managed_vm_decode_summary.md`：补齐此前未分类的 F3/F4/F6/F9/F10/F11/F14；七个 descriptor 均为 `kind=1` managed bytecode，解码均为 unknown 0。
+- `managed_vm_runtime_350101/`：0x18-record managed VM 的严格可执行 runtime；新增的 F3..F14 覆盖报告均为 `supported_records == records`。`0x5c` 间接 PC 必须由调用方提供 token-to-record 映射；`0x5e` 也显式区分主模块 CF table 与 child-module program table，后者没有 bridge 时严格抛错而非误调 CF。
+- `cf63_second_module_f22_recovered_350101.md` / `cf63_cf64_child_module_boundary_350101.md` / `cf75_child_module_boundary_350101.md`：三个 child-module 证据边界。CF63/F22 已有精确纯函数实现；CF64/F1 和 CF75/F6 已确认有共享 frame/raw-memory/隐藏 slot4 副作用，因此刻意维持 opaque。CF64 的 F1（2,345 records）和 direct F2--F21 bodies 已静态导出，修正了旧 `0x5e` 的 F25/F26 错位解释，但 child-native/transitive object effect 未闭合；CF75 的 F0--F7 可达 bytecode 已静态解码完毕（1,210 records），但 CF15、source alias、20-byte 尾部和目标对象生命周期仍未闭合，不能因此升级为实现。
 - `source_work_static_tables_350101.md`：F36/F44 的静态 256-byte permutation table 定位；从二级表基址 `module.base+0x29f890` 派生出 `+0x484/+0x585` 两个窗口。
 - `f12_medusa_subpack_recovered_350101.c`：把嵌套 F12 的 sub-work bit-pack 核心还原成 C oracle；当前大长度路径为 `dst_limit=0x2af,count=31,phase=0,dst+=8,src++`，31 条 `ST64` old/new 向量当前 `failures=0`。
 - `f12_bitpack_oracle_350101.md`：由 `f8-watch` 的 31 次 `ST64` old/new 自动反推出 F12 source stream 的验证表；后续升级版本可用 skill 脚本 `metasec_f12_bitpack_oracle.py` 复跑。
 - `vm_lift_1f7860/native_vmp_1f7860_recovered.c`：把 `0x124DD4 -> exeVMInner_350(vmCode=0x1F7860)` 还原成 mssdk material 构造伪 C。
+- `vm_generic_350101/`：native `exeVMInner_350` 的可复用、严格模式运行时；与 trace decoder 共用指令解码。当前 `0x1F7860` 的 1,132 条真实 32-bit 取指均有证据支持；未知顶层 opcode 或未知 `0x11` selector 仍严格失败。wrapper-ABI manifest 只接受三个同时闭合静态栈布局和 entry 证据的 `entry/vmCode/LR` 对，并由 exact SO size/SHA-256 与完整 `PC/LR/SP/X0..X4` 离线验证进一步收窄；不会把旧 `z/ws` 的 `VM_XMEDUSA` ABI 混入 350.101，也不会模拟 bridge 或 pParam 副作用。
+- `vm_generic_350101/opcode_recovery_350101.md`：generic native VMP runtime 的 handler 级证据表；包括 `0x11` 八个已验证 selector、完整的当前 trace 覆盖边界，以及 `0x16` 是普通 ST32、`0x1a` 不使用 common imm16 的校正。
 
 ## 可复用 skill
 

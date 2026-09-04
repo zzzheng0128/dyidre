@@ -1,0 +1,9 @@
+{
+  "run_dir": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/fullbody_audit_nojn_native_20260901_224751",
+  "remote_js": "/data/local/tmp/rfpkt350_fullbody_fullbody_audit_nojn_native_20260901_224751.js",
+  "seconds": 180,
+  "packet_b64": 14,
+  "uploaded": 14,
+  "upload_failed": 0,
+  "process_rc": -2
+}

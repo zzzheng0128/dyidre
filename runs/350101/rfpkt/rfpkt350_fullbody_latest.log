@@ -1,0 +1,61 @@
+
+ ╔══════════════════════════════════════╗
+ ║        rustFrida v0.1.0             ║
+ ║    ARM64 Dynamic Instrumentation    ║
+ ╚══════════════════════════════════════╝
+
+[*] Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[*] 找到 1 个新 zygote 进程
+[→] 正在注入 zymbiote 到 zygote64 (pid=882)...
+[!] boot heap 中未命中 setArgV0 指针，回退扫描 67 个 ART 相关 RW private 区域
+[!] ART 相关 RW private 区域未命中 setArgV0 指针，继续扫描 24 个 ART 相关可读区域
+[!] 未在 boot heap、ART 相关 RW private 或 ART 相关可读区域中找到 setArgV0 指针 (0x70f49e2c00)，切换降级模式
+[!] 降级为 setcontext-only 阻塞（Android 版本兼容路径）
+[✓] Zymbiote 注入成功: zygote64 (pid=882)
+[*] 正在启动应用 com.ss.android.ugc.aweme...
+[*] 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[✓] 收到 spawn hello: pid=30865, ppid=882, package=com.ss.android.ugc.aweme
+[*] 正在向子进程 30865 注入 agent...
+[*] 正在附加到进程 PID: 30865 (Frida-style bootstrapper)
+[✓] 成功附加到进程 30865，等待 SIGSTOP...
+[✓] 进程已停止，可以操作寄存器
+[✓] bootstrapper 完成: libc API 已解析
+[✓] 已分离目标进程
+[✓] Loader: agent 加载成功
+[*] 等待 agent 连接... (最长 60s)
+[✓] Agent 已连接
+[*] 子进程暂停中，准备加载脚本
+[*] 加载脚本: /data/local/tmp/url_jn_packet_fullbody_350101.js
+[*] 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[*] 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[agent] [JS] [module] libart.so range: 0x6e5a0d8000-0x6e5acdb000, path: Some("/apex/com.android.art/lib64/libart.so")
+[agent] [JS] [fast] ART callee-save suspend method via setCalleeSaveMethod+runtimeInitSequence: method=0x6f86a4e0, runtime_off=0x28, set_base=0x0, init_seq=0x28
+[agent] [JS] [hook_engine] [hook] WARNING: both X16 and X17 written by relocated code, X17 may be clobbered
+[→] 正在恢复子进程 30865...
+[✓] 子进程 30865 已恢复运行
+[*] RF_RESTORE_ZYGOTE_AFTER_CHILD_RESUME=1，spawn 子进程恢复后立即还原 zygote patch
+[*] 正在还原 zygote 882 的 patch...
+[✓] Zygote 882 patch 已还原
+[*] spawn 已恢复，检测到 Java 操作，启动 Java worker
+[agent] [java worker] starting
+[agent] [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=648
+[agent] [JS] [java worker] helper class loaded
+[agent] [JS] [java worker] nativeLoop registered
+[agent] [JS] [java worker] thread object created
+[agent] [JS] [java worker] calling Thread.start
+[agent] [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[agent] [java worker] ready
+[agent] [JS] [rfpkt350] java stealth wxshadow before=1 after=1
+[agent] [JS] [rfpkt350] java ready uploadUrl=http://127.0.0.1:8891/up/dy/packets device_id=rf-com.ss.android.ugc.aweme-30865 process=com.ss.android.ugc.aweme filterAll=true captureBodies=true
+[agent] [JS] [rfpkt350] installed J.N URL/method/header hooks
+[agent] [JS] [rfpkt350] installed CronetFixedModeOutputStream.write hook
+[agent] [JS] [rfpkt350] installed CronetInputStream.read hook captureResponseBody=false
+[agent] [JS] [rfpkt350] installed CronetHttpURLConnection.disconnect hook
+[agent] [JS] [rfpkt350] native install base=0x6cbc0cb000
+[agent] [JS] [rfpkt350] hooked libmetasec_ml.so+0x14dbf4 @0x6cbc218bf4 stealth=wxshadow
+[agent] [JS] [rfpkt350] start flusher failed: TypeError: not a function
+[agent] [JS] [rfpkt350] create count=1 ptr=480445320624 url=https://vcs.zijieapi.com/vc/setting?app_name=aweme&version_name=35.1.0&app_version=35.1.0&channel=vivo_1128_64&sdk_version=4.0.1.cn&version_code=350101&device_platform=android&lang=zh&aid=1128
+[agent] [JS] [rfpkt350] create count=2 ptr=480445348704 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2069)
+[agent] [JS] [rfpkt350] create count=3 ptr=480445395360 url=https://aweme.snssdk.com/aweme/v1/addiction/info/?scene_type=cold_boot&elder_mode=0&klink_egdi=AAJW65azzLkl_QO_86_3lSn42PDWrmHin1Cj0jJByDDmPN0WWCGXaRx-&iid=3313280560987770&device_id=4087336283154583&ac=wifi&channel=vivo...(871)
+[agent] [JS] [rfpkt350] body chunk count=1 total_bytes=42 url=https://security.snssdk.com/api/plugin/config/v3/?hotfix_abi=2&sdk_version=0.0.4-rc.49&hotfix_type=reparo&channel=vivo_1128_64&klink_egdi=AAJW65azzLkl_QO_86_3lSn42PDWrmHin1Cj0jJByDDmPN0WWCGXaRx-&iid=3313280560987770&devi...(893)
+[agent] [JS] [rfpkt350] body chunk count=2 total_bytes=207 url=https://jsb.snssdk.com/src/server/v2/package

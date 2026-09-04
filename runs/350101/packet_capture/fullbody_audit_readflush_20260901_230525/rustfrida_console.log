@@ -1,0 +1,79 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在修补 SELinux 策略...
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=869)...
+[1m[33m [!][0m 诊断模式: 跳过 zymbiote setArgV0 指针 hook，强制 setcontext-only 阻塞
+[1m[33m [!][0m 诊断模式: setcontext-only 阻塞已启用
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=869)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=9652, ppid=869, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 9652 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 9652 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 9652，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 60s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/rfpkt350_fullbody_fullbody_audit_readflush_20260901_230525.js
+[1m[34m [*][0m 脚本声明 Java.setStealth(1)，预配置到 artinit/jsinit 之前
+[1m[34m [*][0m 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [module] libart.so range: 0x78adbb4000-0x78ae7b7000, path: Some("/apex/com.android.art/lib64/libart.so")
+[1m[35m [agent][0m [JS] [fast] ART callee-save suspend method via setCalleeSaveMethod+runtimeInitSequence: method=0x6f9df4e0, runtime_off=0x28, set_base=0x0, init_seq=0x28
+[1m[35m [agent][0m [JS] [hook_engine] [hook] WARNING: both X16 and X17 written by relocated code, X17 may be clobbered
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 9652...
+[1m[32m [✓][0m 子进程 9652 已恢复运行
+[1m[34m [*][0m RF_RESTORE_ZYGOTE_AFTER_CHILD_RESUME=1，spawn 子进程恢复后立即还原 zygote patch
+[1m[34m [*][0m 正在还原 zygote 869 的 patch...
+[1m[32m [✓][0m Zygote 869 patch 已还原
+[1m[34m [*][0m spawn 已恢复，检测到 Java 操作，启动 Java worker
+[1m[35m [agent][0m [java worker] starting
+[1m[35m [agent][0m [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=648
+[1m[35m [agent][0m [JS] [java worker] helper class loaded
+[1m[35m [agent][0m [JS] [java worker] nativeLoop registered
+[1m[35m [agent][0m [JS] [java worker] thread object created
+[1m[35m [agent][0m [JS] [java worker] calling Thread.start
+[1m[35m [agent][0m [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[1m[35m [agent][0m [java worker] ready
+  [2m输入 help 查看命令，exit 退出[0m
+rustfrida> [1m[35m [agent][0m [JS] [rfpkt350] java stealth wxshadow before=1 after=1
+[1m[35m [agent][0m [JS] [rfpkt350] java ready device_id=rf-com.ss.android.ugc.aweme-9652 process=com.ss.android.ugc.aweme filterAll=true captureBodies=true task=fullbody_audit_readflush_20260901_230525
+[1m[35m [agent][0m [JS] [rfpkt350] skip J.N hooks hookJN=false
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetFixedModeOutputStream.write hook
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetInputStream.read hook captureResponseBody=false
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.setRequestMethod fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.addRequestProperty fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.setRequestProperty fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.getOutputStream fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.getInputStream fallback
+[1m[35m [agent][0m [JS] [rfpkt350] installed CronetHttpURLConnection.disconnect hook
+[1m[35m [agent][0m [JS] [rfpkt350] native install base=0x770ba49000
+[1m[35m [agent][0m [JS] [rfpkt350] hooked libmetasec_ml.so+0x14dbf4 @0x770bb96bf4 stealth=wxshadow
+[1m[35m [agent][0m [JS] [rfpkt350] conn bind#1 key=conn:122202891 reason=setRequestMethod url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestMethod#1 matched=1 method=POST url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#1 matched=1 key=Cookie value_len=405 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#2 matched=1 key=x-tt-dt value_len=151 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#3 matched=1 key=activity_now_client value_len=13 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#4 matched=1 key=x-is-hit-mate value_len=1 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#5 matched=1 key=X-SS-REQ-TICKET value_len=13 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#6 matched=1 key=x-vc-bdturing-sdk-version value_len=8 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#7 matched=1 key=Content-Type value_len=31 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#8 matched=1 key=X-SS-STUB value_len=32 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] conn bind#2 key=conn:176479233 reason=setRequestMethod url=https://aweme.snssdk.com/hwm/v1/wm_img?klink_egdi=AAL6F2JRRmTyRcmhfWO8fpeIax20xWdbnFyoOkbHLTA1hgY6i5yr6vS9&iid=3313280560987770&device_id=4087336283154583&ac=wifi&channel=vivo_1128_64&aid=1128&app_name=aweme&version_code...(826)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestMethod#2 matched=1 method=GET url=https://aweme.snssdk.com/hwm/v1/wm_img?klink_egdi=AAL6F2JRRmTyRcmhfWO8fpeIax20xWdbnFyoOkbHLTA1hgY6i5yr6vS9&iid=3313280560987770&device_id=4087336283154583&ac=wifi&channel=vivo_1128_64&aid=1128&app_name=aweme&version_code...(826)
+[1m[35m [agent][0m [JS] [rfpkt350] conn addRequestProperty#1 matched=1 key=x-ttnet-bypass-to value_len=2 url=https://aweme.snssdk.com/hwm/v1/wm_img?klink_egdi=AAL6F2JRRmTyRcmhfWO8fpeIax20xWdbnFyoOkbHLTA1hgY6i5yr6vS9&iid=3313280560987770&device_id=4087336283154583&ac=wifi&channel=vivo_1128_64&aid=1128&app_name=aweme&version_code...(826)
+[1m[35m [agent][0m [JS] [rfpkt350] conn setRequestProperty#10 matched=1 key=activity_now_client value_len=13 url=https://aweme.snssdk.com/hwm/v1/wm_img?klink_egdi=AAL6F2JRRmTyRcmhfWO8fpeIax20xWdbnFyoOkbHLTA1hgY6i5yr6vS9&iid=3313280560987770&device_id=4087336283154583&ac=wifi&channel=vivo_1128_64&aid=1128&app_name=aweme&version_code...(826)
+[1m[35m [agent][0m [JS] [rfpkt350] fields CronetHttpURLConnection=mAuthCertPassword,mAuthCertUsername,mCookieHandler,mCronetEngine,mDisconnected,mException,mHasResponseHeadersOrCompleted,mInputStream,mInputStreamBufferSize,mMessageLoop,mOnRedirectCalled,mOutputStream,mOutputStreamBufferSize,mRequest,mRequestCookieSource,mRequestFinishedInfo,mRequestFlag,mRequestHeaders,mRequestLog,mRequestLogCountDownLatch,mRequestPriority,mRequestTimeout,mRequestTypeFlags,mResponseHeadersList,mResponseHeadersMap,mResponseInfo,mSocketConnectTimeout,mSocketReadTimeout,mSocketWriteTimeout,mThrottleNetSpeed,mTrafficStatsTag,mTrafficStatsTagSet,mTrafficStatsUid,mTrafficStatsUidSet,TAG,chunkLength,fixedContentLength,fixedContentLengthLong,instanceFollowRedirects,method,responseCode,responseMessage,DEFAULT_CHUNK_SIZE,HTTP_ACCEPTED,HTTP_BAD_GATEWAY,HTTP_BAD_METHOD,HTTP_BAD_REQU...(1625)
+[1m[35m [agent][0m [JS] [rfpkt350] conn getOutputStream#1 matched=1 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] write write#1 len=886 off=0 matched=1 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)
+[1m[35m [agent][0m [JS] [rfpkt350] body chunk count=1 total_bytes=886 url=https://aweme.snssdk.com/aweme/v2/feed/?type=0&max_cursor=0&min_cursor=0&count=6&volume=0.0&pull_type=0&need_relieve_aweme=0&filter_warn=0&req_from=enter_auto&is_cold_start=1&address_book_access=2&gps_access=2&cached_ite...(2023)

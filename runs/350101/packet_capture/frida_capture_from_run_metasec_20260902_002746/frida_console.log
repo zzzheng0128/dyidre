@@ -1,0 +1,20 @@
+     ____
+    / _  |   Frida 17.17.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   Prefer a GUI? Luma is the official Frida app, with a live REPL,
+   . . . .   persistent sessions & collaboration. https://luma.frida.re/
+   . . . .
+   . . . .   Connected to Pixel 6 (id=18201FDF6002GR)
+Attaching...
+[rfpkt350] java stealth unavailable, running stock Frida Java API
+[rfpkt350] java ready device_id=ad75af8e4e9fbe0b process=com.ss.android.ugc.aweme filterAll=true captureBodies=true task=frida_capture_from_run_metasec_20260902_002746
+[rfpkt350] skip libsscronet native J.N hooks hookNativeJN=false
+[rfpkt350] skip J.N hooks hookJN=false
+Failed to load script: the connection is closed
+
+Thank you for using Frida!

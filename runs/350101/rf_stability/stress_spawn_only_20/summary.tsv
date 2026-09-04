@@ -1,0 +1,15 @@
+01	rc=0	alive=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/01.console:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/01.rf.log:1	restored=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/01.rf.log:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/01.console:1	bad=
+02	rc=0	alive=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/02.console:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/02.rf.log:1	restored=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/02.console:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/02.rf.log:1	bad=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/02.logcat:8
+03	rc=0	alive=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/03.console:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/03.rf.log:1	restored=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/03.console:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/03.rf.log:1	bad=
+04	rc=0	alive=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/04.rf.log:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/04.console:1	restored=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/04.console:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/04.rf.log:1	bad=
+05	rc=0	alive=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/05.console:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/05.rf.log:1	restored=/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/05.rf.log:1
+/Users/freeman/project/douyin/dyidre/runs/350101/rf_stability/stress_spawn_only_20/05.console:1	bad=

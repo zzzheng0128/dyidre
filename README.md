@@ -6,7 +6,7 @@
 dyidre = DouYin ID Reverse Engineering
 ```
 
-这里不直接替代 `unidbg`、`IDA`、`rustFrida`、`eDBG`。它的角色是把这些工具产生的证据、脚本、结构体、VM decode、C 还原代码串在一起，形成可复跑的版本升级流程。
+这里不直接替代 `unidbg`、`IDA`、`rustFrida`、`eCapture`、`eDBG`。它的角色是把这些工具产生的证据、脚本、结构体、VM decode、C 还原代码串在一起，形成可复跑的版本升级流程。
 
 路径说明：GitHub 仓库根目录就是 `dyidre`，本文档默认所有路径都从仓库根目录开始写。若在包含 `dyidre/`、`unidbg/` 等同级目录的总工作区执行命令，给路径加上 `dyidre/` 前缀即可。
 
@@ -49,7 +49,7 @@ dyidre = DouYin ID Reverse Engineering
    docs/toolchain.md
    ```
 
-   Frida/RF JS、stackplz、eDBG 的复用手册：
+   Frida/RF JS、eCapture、stackplz、eDBG 的复用手册：
 
    ```text
    docs/reusable-probes-stackplz-edbg.md
@@ -62,7 +62,7 @@ dyidre = DouYin ID Reverse Engineering
    tools/runtime_payloads/README.md
    ```
 
-   这里放已经验证过、后续版本可复用的 `rustfrida`、`wxshadow.kpm`、`hide-so.kpm`、`embed*.so`。新版本升级时先复用这些工具，不要重新从聊天记录里找散落文件。
+   这里放已经验证过、后续版本可复用的 `rustfrida`、`ecapture`、`wxshadow.kpm`、`hide-so.kpm`、`embed*.so`。新版本升级时先复用这些工具，不要重新从聊天记录里找散落文件。
 
 7. 提交前检查：
 
@@ -103,11 +103,11 @@ versions/350101/c_recovery_suite_350101.md
 | 路径 | 作用 | 保留策略 |
 |---|---|---|
 | `versions/350101` | 当前 350101 主证据目录：结构体、VM、CF、X-header、C oracle、报告 | 后续新版本也放 `versions/<version>` |
-| `runs/350101/` | 350101 真机采集批次，按采集类型和时间戳分层 | 新版本放 `runs/<version>/...` |
-| `probes/350101/` | 350101 真机采集脚本：rustFrida/GumTrace/jnitrace/stackplz runner | 新版本复制到 `probes/<version>/` 后改 offset |
+| `runs/350101/` | 350101 真机证据；网络样本唯一入口是 `mitm/latest/`，其它类型各保留一份正式基准 | 新版本放 `runs/<version>/...` |
+| `probes/350101/` | 350101 真机采集脚本：eCapture、rustFrida、GumTrace、jnitrace、stackplz runner | 新版本复制到 `probes/<version>/` 后改 offset |
 | `probes/common/` | 与版本无关的辅助脚本，例如弹窗处理 | 可跨版本复用 |
 | `materials/` | 每个版本的 `.apk/.so/.i64` 本体和材料 manifest | 提交前必须同步本体并更新 manifest |
-| `tools/` | 设备侧可复用工具和 payload：rustFrida、KPM、embed so | 用 Git LFS 提交；升级版本直接复用 |
+| `tools/` | 设备侧可复用工具和 payload：rustFrida、eCapture、KPM、embed so | 用 Git LFS 提交；升级版本直接复用 |
 | `scripts/` | 本地后处理/索引脚本 | 保留，可复跑 |
 | `skills/` | 本目录内使用过的分析脚本；部分已沉淀到个人 skill | 保留脚本源码 |
 | `runs/350101/true_env_xmedusa/` | 真机环境采集快照，`latest -> 20260831_214509` 是当前对齐来源 | 只保留当前基准批次 |
@@ -125,8 +125,8 @@ versions/350101/c_recovery_suite_350101.md
 典型流向：
 
 ```text
-rustFrida/eDBG/stackplz 真机采证
-  -> dyidre 保存 entrydump / trace / jnitrace / 环境快照
+eCapture/rustFrida/eDBG/stackplz 真机采证
+  -> dyidre 保存网络明文 / entrydump / trace / jnitrace / 环境快照
   -> unidbg 固定 s1/s2 + rootfs + 时间/随机/pid/tid
   -> unidbg 输出 one-request count / X-header / managed dump
   -> dyidre 产出结构体、VM decode、C oracle
@@ -173,6 +173,39 @@ probes/350101/run_metasec_probe_350101.sh jnitrace 180 jni01
 probes/350101/run_metasec_probe_350101.sh gum-exevm 90 gum4cc10
 ```
 
+## 和 eCapture 的配合
+
+eCapture 现在是网络 TLS 明文抓包主方案。它不注入 App，也不走 `metasec_probe_350101.js` 的 RF `ssl` mode；它的价值是先拿到真实请求的 path、host、HTTP/2 header、响应和最终 X-* header，作为后续 `s1/s2`、unidbg、IDA 分析的外部基准。
+
+推荐命令：
+
+```bash
+probes/350101/run_ecapture_tls_350101.sh text 60 req01_ecap
+```
+
+输出目录：
+
+```text
+runs/350101/ecapture/<tag>/
+```
+
+重点看：
+
+```text
+ecapture_command.txt
+ecapture_console.log
+ecapture_events.log
+ecapture_summary.md
+```
+
+pcap/keylog 解不开时，不要直接判断“没包”。先看这份排障记录：
+
+```text
+docs/ecapture-boringssl-offset-troubleshooting.md
+```
+
+如果目标只是“这条请求最终发了什么 header / 服务端回了什么”，优先用 eCapture；如果目标是“`s1/s2` 从哪来、VM slot 怎么写、JNI 环境项是什么、结构体字段谁写的”，再回到 rustFrida、unidbg、IDA、stackplz/eDBG。
+
 ## 和 eDBG / stackplz 的配合
 
 eDBG/stackplz 不是日常主线，而是“真机难点辅助工具”：
@@ -209,7 +242,7 @@ IDA 是最终静态落点，但不能反过来当唯一真相。
 - 顶层目录统一成 `dyidre`，公开文档使用仓库内相对路径；
 - 两个 1GB 级 GumTrace raw log 移到 `_archive/large_raw_traces/`；
 - 设备启动/APatch 镜像移到 `_archive/device_boot_images/`；
-- rustFrida/kpm/embed payload 已从历史归档提升到 `tools/runtime_payloads/`，正式随仓库保存；
+- rustFrida/eCapture/kpm/embed payload 已从历史归档提升到 `tools/runtime_payloads/`，正式随仓库保存；
 - `__pycache__`、`.last_*`、`current_*_ts.txt` 等可再生瞬态文件移到 `_archive/deleted_reproducible_20260831/`。
 
 没直接物理删除大证据，因为这些 trace 以后定位“为什么当时判断成这样”还可能救命。确认不需要后，再删 `_archive/large_raw_traces/` 即可释放约 2.1G。

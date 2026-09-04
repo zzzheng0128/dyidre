@@ -1,0 +1,17 @@
+     ____
+    / _  |   Frida 17.17.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   Prefer a GUI? Luma is the official Frida app, with a live REPL,
+   . . . .   persistent sessions & collaboration. https://luma.frida.re/
+   . . . .
+   . . . .   Connected to Pixel 6 (id=18201FDF6002GR)
+Attaching...
+[rfpkt350-noop] loaded pid=12641
+[rfpkt350-noop] java ready
+[Pixel 6::PID::12641 ]-> 
+Thank you for using Frida!

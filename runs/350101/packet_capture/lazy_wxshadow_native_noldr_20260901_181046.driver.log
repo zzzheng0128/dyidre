@@ -1,0 +1,79 @@
+[metasec-probe-runner] mode=packet-capture seconds=120 tag=lazy_wxshadow_native_noldr_20260901_181046
+[metasec-probe-runner] out=/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/lazy_wxshadow_native_noldr_20260901_181046
+/var/folders/bg/hg01ysdd12z8fnrn6h3n7v5w0000gn/T//metasec_probe_350101_packet-capture.poUY3I.js: 1 file pushed, 0 skipped. 126.7 MB/s (17259 bytes in 0.000s)
+[metasec-probe-runner] adb reverse tcp:8891 -> tcp:8891
+[metasec-probe-runner] packet upload url=http://127.0.0.1:8891/up/dy/packets
+[metasec-probe-runner] force-stop com.ss.android.ugc.aweme
+[metasec-probe-runner] confirmed stopped: com.ss.android.ugc.aweme
+[metasec-probe-runner] logcat monitor: /Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/lazy_wxshadow_native_noldr_20260901_181046/logcat_live.txt
+[metasec-probe-runner] dmesg monitor: /Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/lazy_wxshadow_native_noldr_20260901_181046/dmesg_live.txt
+[metasec-probe-runner] process monitor: /Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/lazy_wxshadow_native_noldr_20260901_181046/process_monitor.log
+/var/folders/bg/hg01ysdd12z8fnrn6h3n7v5w0000gn/T//metasec_probe_350101_packet-capture_bootstrap.X12Fse.js: 1 file pushed, 0 skipped. 1.5 MB/s (154 bytes in 0.000s)
+[metasec-probe-runner] packet lazy spawn: stealth=wxshadow kind=native-noop delay=15s
+[metasec-probe-runner] bootstrap=/data/local/tmp/metasec_probe_350101_packet-capture_lazy_wxshadow_native_noldr_20260901_181046_bootstrap.js
+[metasec-probe-runner] waiting 15s after spawn/resume before loading capture runtime
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=882)...
+[1m[33m [!][0m boot heap 中未命中 setArgV0 指针，回退扫描 67 个 ART 相关 RW private 区域
+[1m[33m [!][0m ART 相关 RW private 区域未命中 setArgV0 指针，继续扫描 24 个 ART 相关可读区域
+[1m[33m [!][0m 未在 boot heap、ART 相关 RW private 或 ART 相关可读区域中找到 setArgV0 指针 (0x70f49e2c00)，切换降级模式
+[1m[33m [!][0m 降级为 setcontext-only 阻塞（Android 版本兼容路径）
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=882)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=13640, ppid=882, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 13640 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 13640 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 13640，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 60s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/metasec_probe_350101_packet-capture_lazy_wxshadow_native_noldr_20260901_181046_bootstrap.js
+[1m[34m [*][0m 脚本发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [packet350-bootstrap] native-only noop; capture runtime waits for host reload after resume
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 13640...
+[1m[32m [✓][0m 子进程 13640 已恢复运行
+[1m[34m [*][0m RF_RESTORE_ZYGOTE_AFTER_CHILD_RESUME=1，spawn 子进程恢复后立即还原 zygote patch
+[1m[34m [*][0m 正在还原 zygote 882 的 patch...
+[1m[32m [✓][0m Zygote 882 patch 已还原
+[1m[33m [!][0m RF_POST_RESUME_JAVA_WORKER_MODE=skip，跳过 spawn 恢复后的 Java worker 启动
+  [2m输入 help 查看命令，exit 退出[0m
+rustfrida> [metasec-probe-runner] monitor: com.ss.android.ugc.aweme pids=13640
+[metasec-probe-runner] reload single capture runtime from device file
+[metasec-probe-runner] collecting for 120s
+[1m[34m [*][0m 重载脚本: /data/local/tmp/metasec_probe_350101_packet-capture_lazy_wxshadow_native_noldr_20260901_181046.js
+[1m[35m [agent][0m [agent] [quickjs-soft] soft cleanup start (+0ms, total 0ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase0 pause_art_controller_reload (+0ms, total 0ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase1 cut_java_hooks (+0ms, total 0ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase1 cut_native_hooks (+0ms, total 0ms)
+[1m[35m [agent][0m [JS] [drain] start, callback_in_flight=0, exec_in_flight=0
+[1m[35m [agent][0m [JS] [drain] done, callback_in_flight=0, exec_in_flight=0 after 0ms (1 rounds)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase2 drain_thunk_in_flight (+0ms, total 1ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase3 free_java_hooks (+0ms, total 1ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase3 free_native_hooks (+0ms, total 1ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase3 resume_art_controller_reload (+0ms, total 1ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase3 detach_jni_thread (+0ms, total 1ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] phase3 cleanup_engine (+1ms, total 2ms)
+[1m[35m [agent][0m [agent] [quickjs-soft] soft cleanup done (total 3ms) — art_controller + pool + recomp 保留
+[1m[34m [*][0m 脚本发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [packet350n] install native-only stealth=wxshadow watchLoader=false base=0x6cc602a000
+[1m[35m [agent][0m [JS] [packet350n] hooked libmetasec_ml.so+0x14dbf4 @0x6cc6177bf4 mode=wxshadow
+[32m=> undefined[0m
+rustfrida> [metasec-probe-runner] monitor: com.ss.android.ugc.aweme pid change old=13640 new=<none>
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[1m[34m [*][0m 退出交互模式
+[1m[34m [*][0m 已发送 shutdown，等待 agent 主动断开连接...
+[1m[31m [✗][0m [#0] stream 写入失败: Broken pipe (os error 32)
+[metasec-probe-runner] done: /Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/lazy_wxshadow_native_noldr_20260901_181046

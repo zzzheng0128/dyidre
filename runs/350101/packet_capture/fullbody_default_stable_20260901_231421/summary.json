@@ -1,0 +1,9 @@
+{
+  "run_dir": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/fullbody_default_stable_20260901_231421",
+  "remote_js": "/data/local/tmp/rfpkt350_fullbody_fullbody_default_stable_20260901_231421.js",
+  "seconds": 45,
+  "packet_b64": 98,
+  "uploaded": 98,
+  "upload_failed": 0,
+  "process_rc": 0
+}

@@ -1,0 +1,57 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn-only 诊断: 只启动并恢复 com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在修补 SELinux 策略...
+[1m[36m [→][0m 当前 SELinux domain: magisk
+[1m[36m [→][0m 策略大小: 1014493 bytes
+[1m[36m [→][0m SELinux 策略版本: 30, MLS: true
+[1m[36m [→][0m 解析 5 个 commons
+[1m[36m [→][0m 解析 107 个 classes
+[1m[36m [→][0m 解析 2784 个 types
+[1m[36m [→][0m avtab: 55321 条目, offset 0x27565
+[1m[36m [→][0m avtab 范围: 0x27565..0xD0751 (692716 bytes)
+[1m[36m [→][0m 规则变更: 新增 0, 修改 0
+[1m[36m [→][0m 所有规则已存在，无需修补
+[1m[36m [→][0m Zymbiote socket 名称: rustfrida-zymbiote-962a85da8f015e43973d35a94808b09e
+[1m[36m [→][0m 跳过 32 位进程 zygote (pid=870)
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=869)...
+[1m[36m [→][0m Payload 写入位置: 0x7b61dee000 (backing: /system/lib64/libstagefright.so +0x1ea000)
+[1m[36m [→][0m libc.so 基址: 0x7b51904000, 路径: /apex/com.android.runtime/lib64/bionic/libc.so
+[1m[36m [→][0m libc 函数地址已解析
+[1m[36m [→][0m setArgV0 地址: 0x7b41efac00
+[1m[36m [→][0m selinux_android_setcontext 地址: 0x7b4a870a40
+[1m[36m [→][0m ZymbioteContext: ctx_base=0xee8, payload_len=0xfd0
+[1m[36m [→][0m build_payload: prop_remap=0 (PROP_PROFILE_DIR=None)
+[1m[36m [→][0m Payload 构建完成: 4048 bytes
+[1m[36m [→][0m 搜索 4 个 boot heap 区域查找 setArgV0 指针
+[1m[33m [!][0m setArgV0 指针已被替换（already patched），slot at 0x705f30d8
+[1m[36m [→][0m setArgV0 指针位置: 0x705f30d8 (原始值 0x7b41efac00) [already patched]
+[1m[36m [→][0m payload 写入范围: [0x7b61dee000,0x7b61deefd0) len=4048 vma=[0x7b61c97000,0x7b61def000) perms=r-xp page_size=0x1000
+[1m[36m [→][0m payload backup: using backing file because zygote already patched
+[1m[36m [→][0m Payload 写入完成
+[1m[36m [→][0m setArgV0 指针已替换: 0x7b41efac00 → 0x7b61dee10c
+[1m[36m [→][0m setcontext GOT 已替换: 0x7b41fdf5f8
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=869)
+[1m[36m [→][0m 主进程解析: com.ss.android.ugc.aweme 使用默认包进程
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[36m [→][0m 正在停止应用 com.ss.android.ugc.aweme...
+[1m[36m [→][0m Launch activity: com.ss.android.ugc.aweme/.splash.SplashActivity
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[36m [→][0m Zymbiote hello: pid=8198, ppid=869, package=com.ss.android.ugc.aweme
+[1m[32m [✓][0m 收到 spawn hello: pid=8198, ppid=869, package=com.ss.android.ugc.aweme
+[1m[36m [→][0m 正在恢复子进程 8198...
+[1m[36m [→][0m 等待子进程 8198 关闭 socket...
+[1m[36m [→][0m 等待子进程 8198 SIGSTOP...
+[1m[36m [→][0m 子进程 8198 已停止
+[1m[36m [→][0m 还原子进程 8198 payload at 0x7b61dee000 (4048 bytes)
+[1m[36m [→][0m 还原子进程 8198 setArgV0 指针 at 0x705f30d8
+[1m[36m [→][0m 还原子进程 8198 setcontext GOT at 0x7b41fdf5f8
+[1m[32m [✓][0m 子进程 8198 已恢复运行
+[1m[32m [✓][0m RF_DIAG_SPAWN_ONLY: 进程 8198 存活 3s
+[1m[34m [*][0m 正在还原 zygote 869 的 patch...
+[1m[32m [✓][0m Zygote 869 patch 已还原

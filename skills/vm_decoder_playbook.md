@@ -107,6 +107,7 @@ blindly.  The `z/ws/vm64.cpp` interpreter and the focused
 | `0x00` | `LD16S` | `dst = *(int16_t *)(src+simm16)` |
 | `0x02` | `LD64` | `dst = *(uint64_t *)(src+simm16)` |
 | `0x08` | `LD8S` | `dst = *(int8_t *)(src+simm16)` |
+| `0x0b` | `ST32_MASKED_L` | 350.101 `+0x5685c`: alignment-dependent masked word store, not legacy `ST64` |
 | `0x0d` / `0x28` | `ADD64_IMM` | `dst = src+simm16` |
 | `0x0e` | `ST8` | `*(src+simm16)=dst.u8` |
 | `0x14` | `ST16` | `*(src+simm16)=dst.u16` |
@@ -114,12 +115,14 @@ blindly.  The `z/ws/vm64.cpp` interpreter and the focused
 | `0x1a` / `0x0f` / `0x2d` | conditional VM-PC control | branch decision writes next VM pc state |
 | `0x21` | `LD8U` | `dst = *(uint8_t *)(src+simm16)` |
 | `0x2b` | `LD32S` | `dst = *(int32_t *)(src+simm16)` |
+| `0x2e` | `ST32_MASKED_R` | 350.101 `+0x565e0`: alignment-dependent masked word store, not legacy `LD32` |
 | `0x30` | `LD16U` | important correction: not store |
 | `0x33` | `LD32U` | `dst = *(uint32_t *)(src+simm16)` |
 | `0x36` | `ST32` | `*(src+simm16)=dst.u32` |
 | `0x38` | `XOR_IMM` | `dst = src ^ imm16` |
 | `0x3b` | `ST64` | `*(src+simm16)=dst.u64` |
-| `0x3e` | `OR_IMM` | `dst = src | imm16` |
+| `0x13` | `ST64_MASKED_L` | 350.101 `+0x55fd4`: complementary alignment-dependent masked qword store |
+| `0x3e` | `ST64_MASKED_R` | 350.101 `+0x55d20`: alignment-dependent masked qword store, not legacy `OR_IMM` |
 | `0x11` | `CALL_IMM_LINK31` | VM call/jump, saves `v31 = pc+8` |
 
 Current decoder implementing this subset:

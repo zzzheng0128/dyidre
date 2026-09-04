@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import html
+import os
 import re
 import subprocess
 import time
@@ -70,8 +71,9 @@ def run(cmd, timeout=8):
     return p.stdout
 
 
-def adb(args, serial):
-    cmd = ["/Users/freeman/Library/Android/sdk/platform-tools/adb"]
+def adb(args, serial, adb_path):
+    # 组合采集流程传入同一个 adb，避免 SDK 路径变化导致弹窗处理失效。
+    cmd = [adb_path]
     if serial:
         cmd += ["-s", serial]
     cmd += args
@@ -88,9 +90,9 @@ def parse_bounds(bounds):
     return (x1, y1, x2, y2, (x1 + x2) // 2, (y1 + y2) // 2)
 
 
-def get_nodes(serial):
-    adb(["shell", "uiautomator", "dump", "/sdcard/window.xml"], serial)
-    xml = adb(["shell", "cat", "/sdcard/window.xml"], serial)
+def get_nodes(serial, adb_path):
+    adb(["shell", "uiautomator", "dump", "/sdcard/window.xml"], serial, adb_path)
+    xml = adb(["shell", "cat", "/sdcard/window.xml"], serial, adb_path)
     start = xml.find("<?xml")
     if start > 0:
         xml = xml[start:]
@@ -173,14 +175,19 @@ def pick_node(nodes, page_text):
     return None, None
 
 
-def do_swipe(serial):
+def do_swipe(serial, adb_path):
     # Pixel 6 portrait: upward feed swipe.
-    adb(["shell", "input", "swipe", "540", "1900", "540", "650", "450"], serial)
+    adb(["shell", "input", "swipe", "540", "1900", "540", "650", "450"], serial, adb_path)
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--serial", default="18201FDF6002GR")
+    ap.add_argument("--serial", default=os.environ.get("SERIAL", "18201FDF6002GR"))
+    ap.add_argument(
+        "--adb",
+        default=os.environ.get("ADB", "/Users/freeman/Library/Android/sdk/platform-tools/adb"),
+        help="adb 可执行文件路径；默认读取 ADB 环境变量",
+    )
     ap.add_argument("--duration", type=int, default=180)
     ap.add_argument("--interval", type=float, default=0.8)
     ap.add_argument("--swipe-after", type=int, default=0)
@@ -198,11 +205,11 @@ def main():
         now = time.time()
         if next_swipe is not None and now >= next_swipe:
             print(f"[auto-skip] swipe up at +{int(now - start)}s")
-            do_swipe(args.serial)
+            do_swipe(args.serial, args.adb)
             next_swipe = now + args.swipe_interval
 
         try:
-            nodes, page_text = get_nodes(args.serial)
+            nodes, page_text = get_nodes(args.serial, args.adb)
             node, reason = pick_node(nodes, page_text)
             if node is not None:
                 x, y = node["xy"]
@@ -210,7 +217,7 @@ def main():
                 key = f"{reason}:{label}:{node['bounds']}"
                 seen[key] = seen.get(key, 0) + 1
                 print(f"[auto-skip] tap {reason} ({x},{y}) label={label!r} rid={node['rid']!r} count={seen[key]}")
-                adb(["shell", "input", "tap", str(x), str(y)], args.serial)
+                adb(["shell", "input", "tap", str(x), str(y)], args.serial, args.adb)
                 if reason == "privacy-agree" and agree_time is None:
                     agree_time = time.time()
                     if args.swipe_after > 0:

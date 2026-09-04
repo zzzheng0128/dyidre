@@ -1,0 +1,85 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=887)...
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=887)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=29094, ppid=887, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 29094 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 29094 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 29101，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 10s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/metasec_probe_350101_ssl_ssl_01.js
+[1m[34m [*][0m 检测到 pre-resume Java 脚本，先发送到 raw clone TLS JS worker 执行
+[1m[35m [agent][0m [JS] [metasec-probe350] loaded version=350101 selected="ssl"
+[1m[35m [agent][0m [JS] [metasec-probe350] install mode=ssl source=metasec_probe_350101.js#ssl
+[1m[35m [agent][0m [JS] [metassl] watch loader android_dlopen_ext @0x742dba8100
+[1m[35m [agent][0m [JS] [metassl] watch loader dlopen @0x742dba8020
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 29094...
+[1m[32m [✓][0m 子进程 29094 已恢复运行
+[1m[34m [*][0m spawn 已恢复，启动 Java worker 作为后续 Java 操作执行线程
+[1m[35m [agent][0m [java worker] starting
+[1m[35m [agent][0m [JS] [module] libart.so range: 0x7197fa5000-0x7198ba8000, path: Some("/apex/com.android.art/lib64/libart.so")
+[1m[35m [agent][0m [JS] [java worker] generated dex class=rustfrida.JavaWorker1 size=616
+[1m[35m [agent][0m [JS] [java worker] helper class loaded
+[1m[35m [agent][0m [JS] [java worker] nativeLoop registered
+[1m[35m [agent][0m [JS] [java worker] thread object created
+[1m[35m [agent][0m [JS] [java worker] calling Thread.start
+[1m[35m [agent][0m [JS] [java worker] started ART-managed worker class=rustfrida.JavaWorker1
+[1m[35m [agent][0m [java worker] ready
+  [2m输入 help 查看命令，exit 退出[0m
+[1m[35m [agent][0m [JS] [metassl] android_dlopen_ext loaded /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libsscronet.so
+[1m[35m [agent][0m [JS] [metassl] replace libttboringssl.so!SSL_CTX_set_custom_verify @0x7007755fb0 path=rf-js-replace
+[1m[35m [agent][0m [JS] [metassl] replace libttboringssl.so!SSL_set_custom_verify @0x7007755fbc path=rf-js-replace
+[1m[35m [agent][0m [JS] [metassl] keylog skipped: NativeCallback is not available in this JS runtime
+[1m[35m [agent][0m [JS] [metassl] android_dlopen_ext loaded /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libttcrypto.so
+[1m[35m [agent][0m [JS] [metassl] android_dlopen_ext loaded /data/app/~~GJKKQPtkpHqhegsADfD9mQ==/com.ss.android.ugc.aweme-vsHSySl5UaKL1lfqkWR0ag==/lib/arm64/libttboringssl.so
+[1m[35m [agent][0m [JS] [metassl] SSL_CTX_set_custom_verify ctx/ssl=0x71eb04dc38 mode=0x1 cb=0x7003be4cfc path=rf-js-replace hit=1
+[1m[35m [agent][0m [JS] [metassl] custom verify callback hooked 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify path=rf-js-replace
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] SSL_CTX_set_custom_verify ctx/ssl=0x71eb05e5d8 mode=0x1 cb=0x7003d2f888 path=rf-js-replace hit=2
+[1m[35m [agent][0m [JS] [metassl] custom verify callback hooked 0x7003d2f888 source=libttboringssl.so!SSL_CTX_set_custom_verify path=rf-js-replace
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=0 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] SSL_CTX_set_custom_verify ctx/ssl=0x71eb031d58 mode=0x1 cb=0x6fa45da7c0 path=rf-js-replace hit=3
+[1m[35m [agent][0m [JS] [metassl] custom verify callback hooked 0x6fa45da7c0 source=libttboringssl.so!SSL_CTX_set_custom_verify path=rf-js-replace
+[1m[35m [agent][0m [JS] [metassl] SSL_CTX_set_custom_verify ctx/ssl=0x71eb030a98 mode=0x1 cb=0x6fa45da7c0 path=rf-js-replace hit=4
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x6fa45da7c0 source=libttboringssl.so!SSL_CTX_set_custom_verify original=0 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x6fa45da7c0 source=libttboringssl.so!SSL_CTX_set_custom_verify original=0 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0
+[1m[35m [agent][0m [JS] [metassl] custom_verify_cb 0x7003be4cfc source=libttboringssl.so!SSL_CTX_set_custom_verify original=2 -> force 0

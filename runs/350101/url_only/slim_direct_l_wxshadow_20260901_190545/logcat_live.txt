@@ -1,0 +1,1202 @@
+--------- beginning of main
+09-01 19:05:46.105 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:46.108 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:46.130 D/DLObserver( 2139): onReceive(); android.intent.action.BATTERY_CHANGED
+09-01 19:05:46.130 D/DLObserver( 2139): plugged=1
+09-01 19:05:46.132 I/ReverseChargingControl( 2139): handleIntentForReverseCharging(): rtx=0 wlc=0 plgac=1 ac=1 acrtx=0 extra=1 this=com.google.android.systemui.reversecharging.ReverseChargingController@cde410c
+09-01 19:05:46.132 D/SystemEventDataSource( 2139): onReceive: intentAction
+--------- beginning of system
+09-01 19:05:46.135 D/PowerUI ( 2139): can't show warning due to - plugged: true status unknown: false
+09-01 19:05:46.136 D/GoogleBatteryDataSource( 2139): fetchDwellDefendStatus: CONNECTED
+09-01 19:05:46.137 D/GoogleBatteryDataSource( 2139): fetchTempDefendStatus: t_sum=4006145, time_sum=10498 t_avg=381 lst_v=4390781 lst_t=391 lst_u=15479, dt=0, t=0 e=1
+09-01 19:05:46.137 D/SystemEventDataSource( 2139): updatedEventData: SystemEventData(intentAction=android.intent.action.BATTERY_CHANGED, plugged=EventData(value=1), batteryScale=EventData(value=100), batteryLevel=EventData(value=100), chargingStatus=EventData(value=1), maxChargingCurrent=EventData(value=3000000), maxChargingVoltage=EventData(value=5000000), batteryStatus=EventData(value=5), halEventData=HalEventData(dockDefendStatus=EventData(value=-3), tempDefendEventData=EventData(value=false), dwellDefendEventData=EventData(value=false)), settingsEventData=SettingsEventData(dockDefenderBypass=EventData(value=0), chargingLimitSettings=EventData(value=0), dndState=EventData(value=false), airplaneState=EventData(value=false)), frameworkApiEventData=FrameworkApiEventData(batterySaverState=EventData(value=false), extremeBatterySaverState=EventData(value=false)))
+09-01 19:05:46.137 D/SystemEventDataSource( 2139): extra doesn't changed, no need to onEventSourceUpdate
+09-01 19:05:46.144 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=90.00 Hz, modePtr={id=1, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=true, force=false}
+09-01 19:05:46.146 D/PowerNotificationWarningsGoogleImpl( 2139): onReceive: android.intent.action.BATTERY_CHANGED
+09-01 19:05:46.146 D/IncompatibleChargerNotification( 2139): dispatchIntent: android.intent.action.BATTERY_CHANGED
+09-01 19:05:46.161 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+09-01 19:05:46.161 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+09-01 19:05:47.107 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:47.111 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:47.502 I/ActivityManager( 1816): Force stopping com.ss.android.ugc.aweme appid=10281 user=0: from pid 24605
+09-01 19:05:47.507 I/AppsFilter( 1816): interaction: PackageSetting{d3b9adc com.google.android.microdroid.empty_payload/10259} -> PackageSetting{1340e04 com.ss.android.ugc.aweme/10281} BLOCKED
+09-01 19:05:47.516 D/CarrierSvcBindHelper( 2434): onHandleForceStop: [com.ss.android.ugc.aweme]
+09-01 19:05:47.517 D/EuiccConnector( 2434): handleMessage: E msg.what=1
+09-01 19:05:47.519 D/CarrierSvcBindHelper( 2434): No carrier app for: 0
+09-01 19:05:47.519 D/EuiccConnector( 2434): processMsg: ConnectedState
+09-01 19:05:47.519 D/EuiccConnector( 2434): processMsg: DisconnectedState
+09-01 19:05:47.520 D/EuiccConnector( 2434): handleMessage: X
+09-01 19:05:47.585 W/ActivityTaskManager( 1816): callingPackage for (uid=0, pid=24612) has no WPC
+09-01 19:05:47.589 V/GrammaticalInflectionUtils( 1816): AttributionSource: android.content.AttributionSource@c05f661d does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-01 19:05:47.590 W/OptProp ( 1816): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES
+09-01 19:05:47.590 W/OptProp ( 1816): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_MIN_ASPECT_RATIO_OVERRIDE
+09-01 19:05:47.596 W/OptProp ( 1816): Cannot read opt property android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+09-01 19:05:47.597 I/BpBinder(  592): onLastStrongRef automatically unlinking death recipients: 
+09-01 19:05:47.601 I/ActivityTaskManager( 1816): START u0 {flg=0x10000000 cmp=com.ss.android.ugc.aweme/.splash.SplashActivity} with LAUNCH_SINGLE_TOP from uid 0 (BAL_ALLOW_ALLOWLISTED_UID) result code=0
+09-01 19:05:47.602 V/WindowManagerShell( 2139): Transition requested (#108): android.os.BinderProxy@3e89d06 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=252 effectiveUid=10281 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.ss.android.ugc.aweme/.splash.SplashActivity } baseActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} topActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} origActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity} realActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} numActivities=1 lastActiveTime=15485507 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@286dfc7} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{68619f4 com.ss.android.ugc.aweme.splash.SplashActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 692 - 804, 1772) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 108 }
+09-01 19:05:47.602 D/ShellSplitScreen( 2139): logExit: no-op, mLoggerSessionId is null
+09-01 19:05:47.608 I/AppsFilter( 1816): interaction: PackageSetting{d3b9adc com.google.android.microdroid.empty_payload/10259} -> PackageSetting{c0cf970 com.ss.android.ugc.aweme/10281} BLOCKED
+09-01 19:05:47.610 V/GrammaticalInflectionUtils( 1816): AttributionSource: android.content.AttributionSource@c05f661d does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+09-01 19:05:47.612 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:05:47.614 D/CoreBackPreview( 1816): Window{b9f3922 u0 Splash Screen com.ss.android.ugc.aweme}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3fd922b, mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+09-01 19:05:47.614 D/ForegroundUtils( 3053): Foreground UID status:
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10153 is in foreground: true
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10155 is in foreground: true
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10169 is in foreground: false
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10221 is in foreground: false
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10234 is in foreground: true
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10264 is in foreground: false
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10272 is in foreground: true
+09-01 19:05:47.614 D/ForegroundUtils( 3053): UID: 10278 is in foreground: true
+09-01 19:05:47.616 I/BpBinder(  592): onLastStrongRef automatically unlinking death recipients: 
+09-01 19:05:47.627 V/WindowManagerShell( 2139): onTransitionReady(transaction=7799660617369)
+09-01 19:05:47.627 V/WindowManagerShell( 2139): onTransitionReady (#108) android.os.BinderProxy@3e89d06: {id=108 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-01 19:05:47.627 V/WindowManagerShell( 2139):         {m=OPEN f=NONE leash=Surface(name=Task=252)/@0xc17e9db sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+09-01 19:05:47.627 V/WindowManagerShell( 2139):         {m=TO_BACK f=NONE leash=Surface(name=Task=213)/@0x9d17c78 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}
+09-01 19:05:47.627 V/WindowManagerShell( 2139):     ]}
+09-01 19:05:47.627 V/WindowManagerShell( 2139): Playing animation for (#108) android.os.BinderProxy@3e89d06@0
+09-01 19:05:47.627 V/ShellRecents( 2139): RecentsTransitionHandler.startAnimation: no controller found
+09-01 19:05:47.627 V/WindowManagerShell( 2139): Transition doesn't have explicit remote, search filters for match for {id=108 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=252)/@0xc17e9db sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=TO_BACK f=NONE leash=Surface(name=Task=213)/@0x9d17c78 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}]}
+09-01 19:05:47.628 V/WindowManagerShell( 2139):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@1a40de6 windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4fa2f27, appThread = android.app.IApplicationThread$Stub$Proxy@80e25d4, debugName = overlayBackTransition }}
+09-01 19:05:47.628 V/WindowManagerShell( 2139):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@384e37d, appThread = android.app.IApplicationThread$Stub$Proxy@c932272, debugName = LauncherToDream }}
+09-01 19:05:47.628 V/WindowManagerShell( 2139):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@55096c3, appThread = android.app.IApplicationThread$Stub$Proxy@f11cb40, debugName = QuickstepLaunchHome }}
+09-01 19:05:47.628 V/WindowManagerShell( 2139):  Delegate animation for (#108) to null
+09-01 19:05:47.628 V/WindowManagerShell( 2139): start default transition animation, info = {id=108 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=252)/@0xc17e9db sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=TO_BACK f=NONE leash=Surface(name=Task=213)/@0x9d17c78 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}]}
+09-01 19:05:47.628 V/WindowManagerShell( 2139): loadAnimation: anim=android.view.animation.AnimationSet@4dde824 animAttr=0x9 type=OPEN isEntrance=false
+09-01 19:05:47.628 V/WindowManagerShell( 2139): loadAnimation: anim=android.view.animation.AnimationSet@f4df542 animAttr=0x8 type=OPEN isEntrance=true
+09-01 19:05:47.628 D/Zygote  (  882): Forked child process 24616
+09-01 19:05:47.629 V/WindowManagerShell( 2139):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@614ace3
+09-01 19:05:47.629 I/ActivityManager( 1816): Start proc 24616:com.ss.android.ugc.aweme/u0a281 for next-top-activity {com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity}
+09-01 19:05:47.633 I/libc    (24616): SetHeapTaggingLevel: tag level set to 0
+09-01 19:05:47.638 V/WindowManager( 1816): Sent Transition (#108) createdAt=09-01 19:05:47.591 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=252 effectiveUid=10281 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.ss.android.ugc.aweme/.splash.SplashActivity } baseActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} topActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} origActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity} realActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} numActivities=1 lastActiveTime=15485507 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1c99ea0 Task{d31996 #252 type=standard A=10281:com.ss.android.ugc.aweme}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 128 - 0, 0) topActivityInfo=ActivityInfo{a3a661e com.ss.android.ugc.aweme.splash.SplashActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false lastNonFullscreenBounds=Rect(276, 692 - 804, 1772) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 108 }
+09-01 19:05:47.638 V/WindowManager( 1816):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+09-01 19:05:47.638 V/WindowManager( 1816):     info={id=108 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-01 19:05:47.638 V/WindowManager( 1816):         {WCT{RemoteToken{1c99ea0 Task{d31996 #252 type=standard A=10281:com.ss.android.ugc.aweme}}} m=OPEN f=NONE leash=Surface(name=Task=252)/@0xe62e55d sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+09-01 19:05:47.638 V/WindowManager( 1816):         {WCT{RemoteToken{ba2cc8 Task{b68b150 #213 type=standard A=10278:me.bmax.apatch}}} m=TO_BACK f=NONE leash=Surface(name=Task=213)/@0xa71f6ba sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}
+09-01 19:05:47.638 V/WindowManager( 1816):     ]}
+09-01 19:05:47.640 E/hwc-display(  594): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+09-01 19:05:47.640 W/UserManagerService( 1816): Requested status bar icon for non-badged user 0
+09-01 19:05:47.695 E/hwc-display(  594): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=2 error(-22)
+09-01 19:05:48.109 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:48.112 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:48.134 V/WindowManagerShell( 2139): Transition animation finished (aborted=false), notifying core (#108) android.os.BinderProxy@3e89d06@0
+09-01 19:05:48.135 V/WindowManager( 1816): Finish Transition (#108): created at 09-01 19:05:47.591 collect-started=0.143ms request-sent=9.634ms started=18.521ms ready=34.45ms sent=35.437ms finished=543.455ms
+09-01 19:05:48.136 V/WindowManagerShell( 2139): Track 0 became idle
+09-01 19:05:48.136 V/WindowManagerShell( 2139): All active transition animations finished
+09-01 19:05:48.136 D/VRI[MainActivity](17110): visibilityChanged oldVisibility=true newVisibility=false
+09-01 19:05:48.136 W/UserManagerService( 1816): Requested status bar icon for non-badged user 0
+09-01 19:05:48.136 W/UserManagerService( 1816): Requested status bar icon for non-badged user 0
+09-01 19:05:48.626 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU:39.544 raw data: VIRTUAL-QI-GNSS:38067.2 VIRTUAL-QI-QUIET:39544 VIRTUAL-QUIET-BATT:35387.5 VIRTUAL-SKIN:39544 VIRTUAL-SKIN-CPU:39544 VIRTUAL-USB2-DISP:-14519 battery:39000 disp_therm:-26428 gnss_tcxo_therm:42281 qi_therm:43426 quiet_therm:38250 usb_pwr_therm2:38628 
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU power_budget=1635.87 err=1.456 s_power=800 time_elapsed_ms=7013 p=582.399 i=253.47 d=0 compensation=0 budget transient=0 control target=3
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 30.72 mW)(S2M_VDD_CPUCL2: 2.83 mW)(S3M_VDD_CPUCL1: 9.46 mW)
+09-01 19:05:48.629 I/pixel-thermal( 1838): quiet_therm:38.25 raw data: quiet_therm:38250 
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN:39.544 raw data: VIRTUAL-SKIN:39544 
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-HINT:39.544 raw data: VIRTUAL-SKIN:39544 VIRTUAL-SKIN-HINT:39544 
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE:39.4737 raw data: VIRTUAL-QI-BATT:39473.7 VIRTUAL-QI-GNSS:38067.2 VIRTUAL-QUIET-BATT:35387.5 VIRTUAL-SKIN-CHARGE:39473.7 VIRTUAL-USB2-DISP:-14519 battery:39000 qi_therm:43426 
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's fcc binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 479.349
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's wlc_fcc binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 479.349
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's dc_icl binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 479.349
+09-01 19:05:48.629 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU:39.544 raw data: VIRTUAL-SKIN:39544 VIRTUAL-SKIN-CPU-GPU:39544 
+09-01 19:05:48.630 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU power_budget=2747.57 err=5.456 s_power=800 time_elapsed_ms=7013 p=1636.8 i=310.776 d=0 compensation=0 budget transient=0 control target=3
+09-01 19:05:48.630 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 30.72 mW)(S2M_VDD_CPUCL2: 2.83 mW)(S3M_VDD_CPUCL1: 9.46 mW)(S2S_VDD_G3D: 1.56 mW)
+09-01 19:05:48.630 I/pixel-thermal( 1838): cellular-emergency:39.544 raw data: VIRTUAL-SKIN:39544 cellular-emergency:39544 
+09-01 19:05:48.756 I/wwb-loader(24616): type=1400 audit(0.0:295774): avc:  denied  { read write } for  path=2F6D656D66643A7777625F736F202864656C6574656429 dev="tmpfs" ino=16367 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:tmpfs:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:48.756 I/wwb-loader(24616): type=1400 audit(0.0:295775): avc:  denied  { map } for  path=2F6D656D66643A7777625F736F202864656C6574656429 dev="tmpfs" ino=16367 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:tmpfs:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:48.756 I/wwb-loader(24616): type=1400 audit(0.0:295776): avc:  denied  { execute } for  path=2F6D656D66643A7777625F736F202864656C6574656429 dev="tmpfs" ino=16367 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:tmpfs:s0:c25,c257,c512,c768 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:48.783 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:48.783 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:48.783 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:48.783 I/WifiHAL (  956): Creating message to get link statistics; iface = 47
+09-01 19:05:48.912 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:05:48.912 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:05:48.914 D/IwlanNetworkService( 2758): onCapabilitiesChanged: 102
+09-01 19:05:48.914 D/IwlanDataService( 2758): onCapabilitiesChanged: 102 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: "free52", BSSID: d4:53:2a:01:2f:4b, MAC: b6:73:b4:36:4d:81, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -48, Link speed: 816Mbps, Tx Link speed: 816Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"free52"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -48 OwnerUid: 1000 AdminUids: [1000] SSID: "free52" UnderlyingNetworks: Null]
+09-01 19:05:48.914 D/IwlanDataService( 2758): Network 102 connected using transport WIFI
+09-01 19:05:48.915 I/BugleRcsEngine( 3050): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[12bb6c57-0d5d]>Handler" thread_id=51 ]
+09-01 19:05:48.915 D/SHANNON_RCS( 2373): 2357 [0][PROX][TELE] onCapabilitiesChanged, Network: 102, NetworkCapabilities: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -48, Link speed: 816Mbps, Tx Link speed: 816Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -48 UnderlyingNetworks: Null] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:05:48.915 D/DeviceStateHelper( 3770): Wifi freq: 5745
+09-01 19:05:48.916 I/BugleRcsEngine( 3050): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=45 ]
+09-01 19:05:48.917 W/SHANNON_IMS( 2400): 2399 [CONN] NetworkSpecifier and TransportInfo are not valid (DefaultNetworkCallback%updateSubscriptionId:121)
+09-01 19:05:48.917 I/SHANNON_IMS( 2400): 2400 [CONN] network:102 WIFI connected, subId: -1 [SLID:0] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:05:48.918 I/WifiSignalInfo( 3770): onCapabilitiesChanged: rssi:-48
+09-01 19:05:48.919 D/CHRE    (  904): @ 15481.736: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x2 msgType 112 payload size 14
+09-01 19:05:48.919 I/CHRE    (  904): @ 15481.736: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+09-01 19:05:48.919 I/CHRE    (  904): @ 15481.736: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+09-01 19:05:48.919 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:05:48.921 I/MagicTether( 2508): (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+09-01 19:05:48.921 I/MagicTether( 2508): (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+09-01 19:05:48.922 D/WM-NetworkStateTracker(19285): Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -48, Link speed: 816Mbps, Tx Link speed: 816Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -48 UnderlyingNetworks: Null]
+09-01 19:05:48.922 I/NullBinder( 2508): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+09-01 19:05:48.922 W/.gms.persistent( 2508): Large reply transaction of 1056768 bytes, interface descriptor , code 1
+09-01 19:05:48.922 D/ConnectivityService( 1816): NetReassign [no changes] [c 0] [a 0] [i 1]
+09-01 19:05:48.923 I/MagicTether( 2508): [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+09-01 19:05:48.923 I/MagicTether( 2508): [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+09-01 19:05:48.923 I/MagicTether( 2508): (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+09-01 19:05:48.923 I/MagicTether( 2508): (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:05:48.925 I/MagicTether( 2508): [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+09-01 19:05:48.925 I/MagicTether( 2508): [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:05:48.925 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:48.925 I/MagicTether( 2508): [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+09-01 19:05:48.980 I/wwb-js  (24616): type=1400 audit(0.0:295777): avc:  denied  { write } for  dev="tmpfs" ino=1039 scontext=u:r:untrusted_app:s0:c25,c257,c512,c768 tcontext=u:object_r:zygote_tmpfs:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:49.111 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:49.113 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:49.651 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+09-01 19:05:49.666 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(36) test(0)
+09-01 19:05:49.666 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(36)
+09-01 19:05:49.678 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:49.678 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:49.678 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:50.113 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:50.115 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:51.114 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:51.117 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:51.270 I/droid.ugc.aweme(24616): Using CollectorTypeCMC GC.
+09-01 19:05:51.273 E/droid.ugc.aweme(24616): Not starting debugger since process cannot load the jdwp agent.
+09-01 19:05:51.285 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:05:51.285 D/ForegroundUtils( 3053): Foreground UID status:
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10153 is in foreground: true
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10155 is in foreground: true
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10169 is in foreground: false
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10221 is in foreground: false
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10234 is in foreground: true
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10264 is in foreground: false
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10272 is in foreground: true
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10278 is in foreground: true
+09-01 19:05:51.285 D/ForegroundUtils( 3053): UID: 10281 is in foreground: true
+09-01 19:05:51.286 W/droid.ugc.aweme(24616): Could not get odex filename for Anonymous-DexFile@3012121791: Dex location Anonymous-DexFile@3012121791 has no directory.
+09-01 19:05:51.287 D/CompatChangeReporter(24616): Compat change id reported: 242716250; UID 10281; state: ENABLED
+09-01 19:05:51.291 D/ApplicationLoaders(24616): Returning zygote-cached class loader: /system/framework/org.apache.http.legacy.jar
+--------- beginning of crash
+09-01 19:05:51.308 F/libc    (24616): Fatal signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x6e2bbd91a0 in tid 24630 (rf-art-refresh), pid 24616 (droid.ugc.aweme)
+09-01 19:05:51.360 I/crash_dump64(24648): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+09-01 19:05:51.361 I/tombstoned(  660): received crash request for pid 24630
+09-01 19:05:51.362 I/crash_dump64(24648): performing dump of process 24616 (target tid = 24630)
+09-01 19:05:51.393 D/ImpulseConnection( 2301): timeout didn't happen: com.google.android.apps.turbo
+09-01 19:05:51.416 D/TemperatureStateSource( 2301): sequence=1442 actualDelay=10001
+09-01 19:05:51.417 D/TemperatureStateSource( 2301): Reading temperature: sequence=1443
+09-01 19:05:51.418 I/pixel-thermal( 1838): VIRTUAL-SKIN:39.4538 raw data: VIRTUAL-QI-GNSS:37906.5 VIRTUAL-QI-QUIET:39453.8 VIRTUAL-QUIET-BATT:35243.5 VIRTUAL-SKIN:39453.8 VIRTUAL-USB2-DISP:-14529.8 battery:39000 disp_therm:-26428 gnss_tcxo_therm:42120 qi_therm:43266 quiet_therm:38183 usb_pwr_therm2:38561 
+09-01 19:05:51.419 D/TemperatureStateSource( 2301): getDeviceTemperatures: sequence=1443 deviceTemperatureType=3 temperatureSource=0 temperatures=[39.45375]
+09-01 19:05:51.419 D/BusinessScope( 2301): Enqueuing the block
+09-01 19:05:51.419 D/TemperatureStateSource( 2301): sequence=1443 waitTime=10000
+09-01 19:05:51.419 D/BusinessScope( 2301): Start running the #2928 block
+09-01 19:05:51.420 I/pixel-thermal( 1838): VIRTUAL-SKIN:39.4538 raw data: VIRTUAL-SKIN:39453.8 
+09-01 19:05:51.420 I/TemperatureStateSource( 2301): temperature was set
+09-01 19:05:51.420 D/BusinessScope( 2301): Enqueuing the block
+09-01 19:05:51.420 D/ImpulseStateSource( 2301): Notify clients: 1463
+09-01 19:05:51.420 D/BusinessScope( 2301): Finish running the #2928 block
+09-01 19:05:51.421 D/BusinessScope( 2301): Start running the #2929 block
+09-01 19:05:51.421 D/BusinessScope( 2301): Finish running the #2929 block
+09-01 19:05:51.431 D/nativeloader(24616): Configuring clns-7 for other apk /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/base.apk. target_sdk_version=34, uses_libraries=libOpenCL.so:libOpenCL-pixel.so, library_path=/data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64:/data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.ss.android.ugc.aweme
+09-01 19:05:51.440 V/GraphicsEnvironment(24616): Currently set values for:
+09-01 19:05:51.440 V/GraphicsEnvironment(24616):   angle_gl_driver_selection_pkgs=[com.android.angle, com.linecorp.b612.android, com.campmobile.snow, com.google.android.apps.tachyon]
+09-01 19:05:51.440 V/GraphicsEnvironment(24616):   angle_gl_driver_selection_values=[angle, native, native, native]
+09-01 19:05:51.440 V/GraphicsEnvironment(24616): com.ss.android.ugc.aweme is not listed in per-application setting
+09-01 19:05:51.440 V/GraphicsEnvironment(24616): Neither updatable production driver nor prerelease driver is supported.
+09-01 19:05:51.441 D/nativeloader(24616): Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+09-01 19:05:51.446 I/art_sym (24616): Init libart.so handle: 0x6fecaa7040
+09-01 19:05:51.446 D/nativeloader(24616): Load /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libjato.so using ns clns-7 from class loader (caller=/data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/base.apk!classes4.dex): ok
+09-01 19:05:51.452 D/CompatChangeReporter( 1816): Compat change id reported: 161145287; UID 10281; state: ENABLED
+09-01 19:05:51.459 D/nativeloader(24616): Load /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libc++_shared.so using ns clns-7 from class loader (caller=/data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/base.apk!classes16.dex): ok
+09-01 19:05:51.460 D/nativeloader(24616): Load /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libkeva.so using ns clns-7 from class loader (caller=/data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/base.apk!classes16.dex): ok
+09-01 19:05:51.463 I/KEVA.NATIVE(24616): alog init successed
+09-01 19:05:51.468 I/crash_dump64(24648): type=1400 audit(0.0:295778): avc:  denied  { read } for  name="framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:51.468 I/crash_dump64(24648): type=1400 audit(0.0:295779): avc:  denied  { open } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:51.468 I/crash_dump64(24648): type=1400 audit(0.0:295780): avc:  denied  { getattr } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:51.468 I/crash_dump64(24648): type=1400 audit(0.0:295781): avc:  denied  { map } for  path="/vendor/overlay/framework-res__oriole__auto_generated_rro_vendor.apk" dev="dm-13" ino=2573 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:vendor_overlay_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:51.468 I/crash_dump64(24648): type=1400 audit(0.0:295782): avc:  denied  { read } for  name="product@overlay@PixelConfigOverlay2021.apk@idmap" dev="dm-56" ino=564 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:51.468 I/crash_dump64(24648): type=1400 audit(0.0:295783): avc:  denied  { open } for  path="/data/resource-cache/product@overlay@PixelConfigOverlay2021.apk@idmap" dev="dm-56" ino=564 scontext=u:r:crash_dump:s0:c25,c257,c512,c768 tcontext=u:object_r:resourcecache_data_file:s0 tclass=file permissive=1 app=com.ss.android.ugc.aweme
+09-01 19:05:51.477 F/DEBUG   (24648): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-01 19:05:51.477 F/DEBUG   (24648): Build fingerprint: 'google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys'
+09-01 19:05:51.477 F/DEBUG   (24648): Revision: 'MP1.0'
+09-01 19:05:51.477 F/DEBUG   (24648): ABI: 'arm64'
+09-01 19:05:51.477 F/DEBUG   (24648): Timestamp: 2026-09-01 19:05:51.376216343+0800
+09-01 19:05:51.477 F/DEBUG   (24648): Process uptime: 5s
+09-01 19:05:51.477 F/DEBUG   (24648): Cmdline: com.ss.android.ugc.aweme
+09-01 19:05:51.477 F/DEBUG   (24648): pid: 24616, tid: 24630, name: rf-art-refresh  >>> com.ss.android.ugc.aweme <<<
+09-01 19:05:51.477 F/DEBUG   (24648): uid: 10281
+09-01 19:05:51.477 F/DEBUG   (24648): tagged_addr_ctrl: 0000000000000001 (PR_TAGGED_ADDR_ENABLE)
+09-01 19:05:51.477 F/DEBUG   (24648): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0x0000006e2bbd91a0
+09-01 19:05:51.477 F/DEBUG   (24648):     x0  0000000000000000  x1  0000000000000000  x2  0000000000000000  x3  0000000000000000
+09-01 19:05:51.477 F/DEBUG   (24648):     x4  0000000000000000  x5  0000000000000020  x6  00000000000000e8  x7  0000000000000062
+09-01 19:05:51.477 F/DEBUG   (24648):     x8  0000000000000080  x9  0000006f2ca6f260  x10 0000006f2ca742d0  x11 0000000000000000
+09-01 19:05:51.477 F/DEBUG   (24648):     x12 0000000000005050  x13 0000006f2ca742d0  x14 0000006e2ba09130  x15 0000000000001680
+09-01 19:05:51.477 F/DEBUG   (24648):     x16 0000006e2bdcb9f0  x17 00000071168f2bbc  x18 000000711814c000  x19 00000000704036d8
+09-01 19:05:51.477 F/DEBUG   (24648):     x20 0000000000000018  x21 0000006e2bdcd0f8  x22 0000006fdca754f8  x23 00000000704036d8
+09-01 19:05:51.477 F/DEBUG   (24648):     x24 0000000000000001  x25 0000006e2ba0e2d0  x26 0000006e9ca6d3d0  x27 0000006e2ba0e560
+09-01 19:05:51.477 F/DEBUG   (24648):     x28 0000006e2bdb29dc  x29 0000006e2b810fb0
+09-01 19:05:51.477 F/DEBUG   (24648):     lr  0000006e2bbca00c  sp  0000006e2b810fa0  pc  0000006e2bbd91a0  pst 0000000060001000
+09-01 19:05:51.477 F/DEBUG   (24648): 2 total frames
+09-01 19:05:51.477 F/DEBUG   (24648): backtrace:
+09-01 19:05:51.477 F/DEBUG   (24648):       #00 pc 0000006e2bbd91a0  <unknown>
+09-01 19:05:51.477 F/DEBUG   (24648):       #01 pc 0000006e2bbca00c  <unknown>
+09-01 19:05:51.479 D/nativeloader(24616): Load /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libflipped.so using ns clns-7 from class loader (caller=/data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/base.apk!classes16.dex): ok
+09-01 19:05:51.479 E/flipped (24616): init succeeded.
+09-01 19:05:51.480 E/flipped (24616): Attach current thread 0
+09-01 19:05:51.480 E/flipped (24616): Detach current thread 0
+09-01 19:05:51.481 E/flipped (24616): Attach current thread 0
+09-01 19:05:51.481 E/flipped (24616): Detach current thread 0
+09-01 19:05:51.485 E/tombstoned(  660): Tombstone written to: tombstone_04
+09-01 19:05:51.487 D/nativeloader(24616): Load /data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/lib/arm64/libsonicjson.so using ns clns-7 from class loader (caller=/data/app/~~na7dq0QJPM3TlOgWfFFaKg==/com.ss.android.ugc.aweme-sWxsoc19sPwX3CppMH73Qg==/base.apk!classes16.dex): ok
+09-01 19:05:51.488 I/DropBoxManagerService( 1816): add tag=data_app_native_crash isTagEnabled=true flags=0x2
+09-01 19:05:51.491 I/DropBoxManagerService( 1816): add tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS isTagEnabled=true flags=0x4
+09-01 19:05:51.512 I/BootReceiver( 1816): Copying /data/tombstones/tombstone_04 to DropBox (SYSTEM_TOMBSTONE)
+09-01 19:05:51.512 I/DropBoxManagerService( 1816): add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+09-01 19:05:51.516 I/ActivityManager( 1816): Process com.ss.android.ugc.aweme (pid 24616) has died: fg  TOP 
+09-01 19:05:51.516 I/libprocessgroup( 1816): Removed cgroup /sys/fs/cgroup/uid_10281/pid_24616
+09-01 19:05:51.516 W/ActivityTaskManager( 1816): ProcessRecord{22684e9 24616:com.ss.android.ugc.aweme/u0a281} is removed with pending start ActivityRecord{161706161 u0 com.ss.android.ugc.aweme/.splash.SplashActivity t252}
+09-01 19:05:51.517 I/Zygote  (  882): Process 24616 exited due to signal 11 (Segmentation fault)
+09-01 19:05:51.517 V/WindowManagerShell( 2139): Transition requested (#109): android.os.BinderProxy@6c8ea9a TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=252 effectiveUid=10281 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.ss.android.ugc.aweme/.splash.SplashActivity } baseActivity=null topActivity=null origActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity} realActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} numActivities=0 lastActiveTime=15485507 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@822ffcb} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 692 - 804, 1772) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 109 }
+09-01 19:05:51.518 I/BpBinder(  592): onLastStrongRef automatically unlinking death recipients: 
+09-01 19:05:51.519 D/VRI[MainActivity](17110): visibilityChanged oldVisibility=false newVisibility=true
+09-01 19:05:51.521 D/ForegroundUtils( 3053): UID: 10281 deleted.
+09-01 19:05:51.521 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=90.00 Hz, modePtr={id=1, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=true, force=false}
+09-01 19:05:51.522 D/DisplayManagerService( 1816): Drop pending events for gone uid 10281
+09-01 19:05:51.523 D/InetDiagMessage( 1816): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-01 19:05:51.524 D/InetDiagMessage( 1816): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-01 19:05:51.524 D/InetDiagMessage( 1816): Destroyed live tcp sockets for uids={10281} in 2ms
+09-01 19:05:51.525 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:05:51.525 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:05:51.525 D/InetDiagMessage( 1816): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET, states=14
+09-01 19:05:51.526 W/UsageStatsService( 1816): Unexpected activity event reported! (com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity event : 23 instanceId : 196200727)
+09-01 19:05:51.526 D/InetDiagMessage( 1816): Destroyed 0 sockets, proto=IPPROTO_TCP, family=AF_INET6, states=14
+09-01 19:05:51.526 D/InetDiagMessage( 1816): Destroyed live tcp sockets for uids={20281} in 2ms
+09-01 19:05:51.528 I/BpBinder(  592): onLastStrongRef automatically unlinking death recipients: 
+09-01 19:05:51.528 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+09-01 19:05:51.528 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+09-01 19:05:51.546 V/WindowManagerShell( 2139): onTransitionReady(transaction=7799660617384)
+09-01 19:05:51.546 V/WindowManagerShell( 2139): onTransitionReady (#109) android.os.BinderProxy@6c8ea9a: {id=109 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-01 19:05:51.546 V/WindowManagerShell( 2139):         {m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=213)/@0x2d8f3a8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+09-01 19:05:51.546 V/WindowManagerShell( 2139):         {m=CLOSE f=NONE leash=Surface(name=Task=252)/@0xc8d1ec1 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}
+09-01 19:05:51.546 V/WindowManagerShell( 2139):     ]}
+09-01 19:05:51.546 V/WindowManagerShell( 2139): Playing animation for (#109) android.os.BinderProxy@6c8ea9a@0
+09-01 19:05:51.546 V/ShellRecents( 2139): RecentsTransitionHandler.startAnimation: no controller found
+09-01 19:05:51.546 V/WindowManagerShell( 2139): Transition doesn't have explicit remote, search filters for match for {id=109 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=213)/@0x2d8f3a8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=CLOSE f=NONE leash=Surface(name=Task=252)/@0xc8d1ec1 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}]}
+09-01 19:05:51.546 V/WindowManagerShell( 2139):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=undefined independent=true modes=[CLOSE,TO_BACK] flags=IN_TASK_WITH_EMBEDDED_ACTIVITY mustBeTask=false order=ANY topActivity=null launchCookie=null taskFragmentToken=android.os.BinderProxy@1a40de6 windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@4fa2f27, appThread = android.app.IApplicationThread$Stub$Proxy@80e25d4, debugName = overlayBackTransition }}
+09-01 19:05:51.546 V/WindowManagerShell( 2139):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x0 checks=[{atype=dream independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{atype=home independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@384e37d, appThread = android.app.IApplicationThread$Stub$Proxy@c932272, debugName = LauncherToDream }}
+09-01 19:05:51.546 V/WindowManagerShell( 2139):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100 checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP topActivity=ComponentInfo{com.google.android.apps.nexuslauncher/com.google.android.apps.nexuslauncher.NexusLauncherActivity} launchCookie=null windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE mustBeTask=true order=ANY topActivity=null launchCookie=null customAnim=true windowingMode=undefined}]} RemoteTransition { remoteTransition = android.window.IRemoteTransition$Stub$Proxy@55096c3, appThread = android.app.IApplicationThread$Stub$Proxy@f11cb40, debugName = QuickstepLaunchHome }}
+09-01 19:05:51.547 V/WindowManagerShell( 2139):  Delegate animation for (#109) to null
+09-01 19:05:51.547 V/WindowManagerShell( 2139): start default transition animation, info = {id=109 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=213)/@0x2d8f3a8 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},{m=CLOSE f=NONE leash=Surface(name=Task=252)/@0xc8d1ec1 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}]}
+09-01 19:05:51.547 V/WindowManagerShell( 2139): loadAnimation: anim=android.view.animation.AnimationSet@d9da254 animAttr=0xb type=CLOSE isEntrance=false
+09-01 19:05:51.547 V/WindowManagerShell( 2139): loadAnimation: anim=android.view.animation.AnimationSet@e5232f2 animAttr=0xa type=CLOSE isEntrance=true
+09-01 19:05:51.548 V/WindowManagerShell( 2139):  animated by com.android.wm.shell.transition.DefaultTransitionHandler@614ace3
+09-01 19:05:51.552 V/WindowManager( 1816): Sent Transition (#109) createdAt=09-01 19:05:51.516 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=252 effectiveUid=10281 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.ss.android.ugc.aweme/.splash.SplashActivity } baseActivity=null topActivity=null origActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.splash.SplashActivity} realActivity=ComponentInfo{com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity} numActivities=0 lastActiveTime=15485507 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{1c99ea0 Task{d31996 #252 type=standard A=10281:com.ss.android.ugc.aweme}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=true lastNonFullscreenBounds=Rect(276, 692 - 804, 1772) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9 topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo { topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1 topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo { freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null, displayChange = null, flags = 0, debugId = 109 }
+09-01 19:05:51.552 V/WindowManager( 1816):     startWCT=WindowContainerTransaction { changes= {} hops= [] errorCallbackToken=null taskFragmentOrganizer=null }
+09-01 19:05:51.552 V/WindowManager( 1816):     info={id=109 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+09-01 19:05:51.552 V/WindowManager( 1816):         {WCT{RemoteToken{ba2cc8 Task{b68b150 #213 type=standard A=10278:me.bmax.apatch}}} m=TO_FRONT f=MOVE_TO_TOP leash=Surface(name=Task=213)/@0xa71f6ba sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1},
+09-01 19:05:51.552 V/WindowManager( 1816):         {WCT{RemoteToken{1c99ea0 Task{d31996 #252 type=standard A=10281:com.ss.android.ugc.aweme}}} m=CLOSE f=NONE leash=Surface(name=Task=252)/@0xe62e55d sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) epz=Point(1080, 2400) d=0 taskParent=-1}
+09-01 19:05:51.552 V/WindowManager( 1816):     ]}
+09-01 19:05:51.554 W/UserManagerService( 1816): Requested status bar icon for non-badged user 0
+09-01 19:05:51.562 E/hwc-display(  594): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+09-01 19:05:51.571 I/ImeTracker( 1816): me.bmax.apatch:53f7c65c: onRequestHide at ORIGIN_SERVER reason HIDE_SAME_WINDOW_FOCUSED_WITHOUT_EDITOR fromUser false
+09-01 19:05:51.572 D/InsetsController(17110): hide(ime(), fromIme=false)
+09-01 19:05:51.572 I/ImeTracker(17110): me.bmax.apatch:53f7c65c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+09-01 19:05:51.573 I/GoogleInputMethodService( 4320): GoogleInputMethodService.onFinishInput():3095 
+09-01 19:05:51.574 I/GoogleInputMethodService( 4320): GoogleInputMethodService.updateDeviceLockedStatus():2167 repeatCheckTimes = 0, locked = false
+09-01 19:05:51.574 I/GoogleInputMethodService( 4320): GoogleInputMethodService.onStartInput():1911 onStartInput(EditorInfo{EditorInfo{packageName=me.bmax.apatch, inputType=0, inputTypeString=NULL, enableLearning=false, autoCorrection=false, autoComplete=false, imeOptions=0, privateImeOptions=null, actionName=UNSPECIFIED, actionLabel=null, initialSelStart=-1, initialSelEnd=-1, initialCapsMode=0, label=null, fieldId=0, fieldName=null, extras=null, hintText=null, hintLocales=[]}}, false)
+09-01 19:05:51.574 I/GoogleInputMethodService( 4320): GoogleInputMethodService.updateDeviceLockedStatus():2167 repeatCheckTimes = 1, locked = false
+09-01 19:05:51.574 I/AndroidIME( 4320): InputBundleManager.loadActiveInputBundleId():450 loadActiveInputBundleId: und-Latn-x-password-ascii, password_ascii
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): EmojiCompatManager.getEmojiCompatIfLoaded():342 EmojiCompat.init() was never called.
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): java.lang.IllegalStateException: EmojiCompat is not initialized. Please call EmojiCompat.init() first
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at asl.p(PG:6)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at awk.b(PG:13)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at jgi.b(PG:2)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at jgi.c(PG:4)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at jgi.f(PG:3)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at jzg.onStartInput(PG:468)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.inputmethodservice.InputMethodService.doStartInput(InputMethodService.java:3491)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.inputmethodservice.InputMethodService$InputMethodImpl.startInput(InputMethodService.java:878)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.inputmethodservice.InputMethodService$InputMethodImpl.dispatchStartInput(InputMethodService.java:907)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.inputmethodservice.IInputMethodWrapper.executeMessage(IInputMethodWrapper.java:201)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at com.android.internal.os.HandlerCaller$MyHandler.handleMessage(HandlerCaller.java:44)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.os.Handler.dispatchMessage(Handler.java:109)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.os.Looper.loopOnce(Looper.java:232)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.os.Looper.loop(Looper.java:317)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at android.app.ActivityThread.main(ActivityThread.java:8934)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at java.lang.reflect.Method.invoke(Native Method)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:591)
+09-01 19:05:51.574 I/EmojiCompatManager( 4320): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:911)
+09-01 19:05:51.575 W/PackageConfigPersister( 1816): App-specific configuration not found for packageName: me.bmax.apatch and userId: 0
+09-01 19:05:51.579 W/WindowOnBackDispatcher( 2139): sendCancelIfRunning: isInProgress=false callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@fe4e160
+09-01 19:05:51.580 D/CoreBackPreview( 1816): Window{b9f3922 u0 Splash Screen com.ss.android.ugc.aweme EXITING}: Setting back callback null
+09-01 19:05:51.618 E/hwc-display(  594): [PrimaryDisplay] resetColorMappingInfoForClientComp:: resetColorMappingInfo() idx=1 error(-22)
+09-01 19:05:51.912 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:51.913 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:51.913 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:51.913 I/WifiHAL (  956): Creating message to get link statistics; iface = 47
+09-01 19:05:52.010 D/ConnectivityService( 1816): NetReassign [no changes] [c 1] [a 1] [i 3]
+09-01 19:05:52.068 V/WindowManagerShell( 2139): Transition animation finished (aborted=false), notifying core (#109) android.os.BinderProxy@6c8ea9a@0
+09-01 19:05:52.070 V/WindowManager( 1816): Finish Transition (#109): created at 09-01 19:05:51.516 collect-started=0.082ms request-sent=0.182ms started=4.348ms ready=4.33ms sent=28.745ms finished=552.808ms
+09-01 19:05:52.075 V/WindowManagerShell( 2139): Track 0 became idle
+09-01 19:05:52.075 V/WindowManagerShell( 2139): All active transition animations finished
+09-01 19:05:52.076 D/RecentsView( 2616): onTaskRemoved: 252, not handling task stack changes
+09-01 19:05:52.076 D/RecentsView( 2616): onTaskRemoved: 252, not handling task stack changes
+09-01 19:05:52.076 W/UserManagerService( 1816): Requested status bar icon for non-badged user 0
+09-01 19:05:52.078 W/UserManagerService( 1816): Requested status bar icon for non-badged user 0
+09-01 19:05:52.116 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:52.118 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:52.332 I/pixel-thermal( 1838): usb_pwr_therm2:38.561 raw data: usb_pwr_therm2:38561 
+09-01 19:05:52.338 I/pixel-thermal( 1838): VIRTUAL-USB-THROTTLING:1 raw data: USB2-MINUS-QI:-4705 USB2-MINUS-USB:-67 VIRTUAL-USB-THROTTLING:1 qi_therm:43266 usb_pwr_therm:38628 usb_pwr_therm2:38561 
+09-01 19:05:52.339 I/pixel-thermal( 1838): VIRTUAL-USB-UI:1 raw data: USB2-MINUS-QI:-4705 USB2-MINUS-USB:-67 VIRTUAL-USB-UI:1 usb_pwr_therm2:38561 
+09-01 19:05:52.508 W/Auth    ( 2508): [ChimeraGetToken] Failed to get com.google accounts with features [service_googleone] [CONTEXT service_id=153 ]
+09-01 19:05:52.508 W/Auth    ( 2508): android.accounts.OperationCanceledException
+09-01 19:05:52.508 W/Auth    ( 2508): 	at android.accounts.AccountManager$Future2Task.internalGetResult(AccountManager.java:2606)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at android.accounts.AccountManager$Future2Task.getResult(AccountManager.java:2618)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at yio.c(:com.google.android.gms@254334035@25.43.34 (260400-827649125):106)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at yio.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):119)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):72)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1406)
+09-01 19:05:52.508 W/Auth    ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:05:52.518 E/MDD     (19285): GddFileGroupPopulator: GDD Sync failed for corpus: GDD_AGSA_APA_CONTACT, configuration: GddAgsaApaContact
+09-01 19:05:52.518 E/MDD     (19285): dzch: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+09-01 19:05:52.518 E/MDD     (19285): 	at dzcf.a(PG:28)
+09-01 19:05:52.518 E/MDD     (19285): 	at dztw.apply(PG:328)
+09-01 19:05:52.518 E/MDD     (19285): 	at fhpy.apply(PG:13)
+09-01 19:05:52.518 E/MDD     (19285): 	at frym.e(PG:3)
+09-01 19:05:52.518 E/MDD     (19285): 	at fryo.run(PG:130)
+09-01 19:05:52.518 E/MDD     (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.518 E/MDD     (19285): 	at fqpl.run(PG:50)
+09-01 19:05:52.518 E/MDD     (19285): 	at doqn.run(PG:14)
+09-01 19:05:52.518 E/MDD     (19285): 	at java.lang.Thread.run(Thread.java:1012)
+09-01 19:05:52.518 E/MDD     (19285): 	at dosa.run(PG:74)
+09-01 19:05:52.518 E/MDD     (19285): Caused by: java.io.IOException: Receive null result from service call.
+09-01 19:05:52.518 E/MDD     (19285): 	at czpu.a(PG:114)
+09-01 19:05:52.518 E/MDD     (19285): 	at czqa.n(PG:50)
+09-01 19:05:52.518 E/MDD     (19285): 	at czqa.q(PG:105)
+09-01 19:05:52.518 E/MDD     (19285): 	at czqc.g(PG:3)
+09-01 19:05:52.518 E/MDD     (19285): 	at ffsz.a(PG:45)
+09-01 19:05:52.518 E/MDD     (19285): 	at fhpx.a(PG:13)
+09-01 19:05:52.518 E/MDD     (19285): 	at fscs.a(PG:3)
+09-01 19:05:52.518 E/MDD     (19285): 	at fsbu.run(PG:19)
+09-01 19:05:52.518 E/MDD     (19285): 	at fscu.run(PG:5)
+09-01 19:05:52.518 E/MDD     (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.518 E/MDD     (19285): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+09-01 19:05:52.518 E/MDD     (19285): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+09-01 19:05:52.518 E/MDD     (19285): 	at doqg.run(PG:16)
+09-01 19:05:52.518 E/MDD     (19285): 	... 2 more
+09-01 19:05:52.519 E/fryx    (19285): Got more than one input Future failure. Logging failures after the first
+09-01 19:05:52.519 E/fryx    (19285): dzch: refresh failed [GDD_INVALID_AUTH_TOKEN]
+09-01 19:05:52.519 E/fryx    (19285): 	at dzcf.a(PG:28)
+09-01 19:05:52.519 E/fryx    (19285): 	at dztw.apply(PG:328)
+09-01 19:05:52.519 E/fryx    (19285): 	at fhpy.apply(PG:13)
+09-01 19:05:52.519 E/fryx    (19285): 	at frym.e(PG:3)
+09-01 19:05:52.519 E/fryx    (19285): 	at fryo.run(PG:130)
+09-01 19:05:52.519 E/fryx    (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.519 E/fryx    (19285): 	at fqpl.run(PG:50)
+09-01 19:05:52.519 E/fryx    (19285): 	at doqn.run(PG:14)
+09-01 19:05:52.519 E/fryx    (19285): 	at java.lang.Thread.run(Thread.java:1012)
+09-01 19:05:52.519 E/fryx    (19285): 	at dosa.run(PG:74)
+09-01 19:05:52.519 E/fryx    (19285): Caused by: android.accounts.NetworkErrorException: Can't get auth token.
+09-01 19:05:52.519 E/fryx    (19285): 	at fhei.apply(PG:9)
+09-01 19:05:52.519 E/fryx    (19285): 	at fhpy.apply(PG:13)
+09-01 19:05:52.519 E/fryx    (19285): 	at frym.e(PG:3)
+09-01 19:05:52.519 E/fryx    (19285): 	at fryo.run(PG:130)
+09-01 19:05:52.519 E/fryx    (19285): 	at fsaj.execute(PG:1)
+09-01 19:05:52.519 E/fryx    (19285): 	at fryp.h(PG:1)
+09-01 19:05:52.519 E/fryx    (19285): 	at fryp.l(PG:95)
+09-01 19:05:52.519 E/fryx    (19285): 	at fryp.p(PG:29)
+09-01 19:05:52.519 E/fryx    (19285): 	at frys.f(PG:3)
+09-01 19:05:52.519 E/fryx    (19285): 	at fryu.run(PG:44)
+09-01 19:05:52.519 E/fryx    (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.519 E/fryx    (19285): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+09-01 19:05:52.519 E/fryx    (19285): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+09-01 19:05:52.519 E/fryx    (19285): 	at doqg.run(PG:16)
+09-01 19:05:52.519 E/fryx    (19285): 	... 2 more
+09-01 19:05:52.519 E/fryx    (19285): Caused by: java.io.IOException: NetworkError
+09-01 19:05:52.519 E/fryx    (19285): 	at czqa.j(PG:205)
+09-01 19:05:52.519 E/fryx    (19285): 	at czqa.o(PG:62)
+09-01 19:05:52.519 E/fryx    (19285): 	at czpw.a(PG:80)
+09-01 19:05:52.519 E/fryx    (19285): 	at czqa.n(PG:50)
+09-01 19:05:52.519 E/fryx    (19285): 	at czqa.r(PG:118)
+09-01 19:05:52.519 E/fryx    (19285): 	at czqc.c(PG:3)
+09-01 19:05:52.519 E/fryx    (19285): 	at fhej.apply(PG:83)
+09-01 19:05:52.519 E/fryx    (19285): 	at fhpy.apply(PG:13)
+09-01 19:05:52.519 E/fryx    (19285): 	at frys.e(PG:3)
+09-01 19:05:52.519 E/fryx    (19285): 	at fryu.run(PG:38)
+09-01 19:05:52.519 E/fryx    (19285): 	... 6 more
+09-01 19:05:52.520 E/fryx    (19285): Got more than one input Future failure. Logging failures after the first
+09-01 19:05:52.520 E/fryx    (19285): dzch: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+09-01 19:05:52.520 E/fryx    (19285): 	at dzcf.a(PG:28)
+09-01 19:05:52.520 E/fryx    (19285): 	at dztw.apply(PG:328)
+09-01 19:05:52.520 E/fryx    (19285): 	at fhpy.apply(PG:13)
+09-01 19:05:52.520 E/fryx    (19285): 	at frym.e(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at fryo.run(PG:130)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at fqpl.run(PG:50)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqn.run(PG:14)
+09-01 19:05:52.520 E/fryx    (19285): 	at java.lang.Thread.run(Thread.java:1012)
+09-01 19:05:52.520 E/fryx    (19285): 	at dosa.run(PG:74)
+09-01 19:05:52.520 E/fryx    (19285): Caused by: java.io.IOException: Receive null result from service call.
+09-01 19:05:52.520 E/fryx    (19285): 	at czpu.a(PG:114)
+09-01 19:05:52.520 E/fryx    (19285): 	at czqa.n(PG:50)
+09-01 19:05:52.520 E/fryx    (19285): 	at czqa.q(PG:105)
+09-01 19:05:52.520 E/fryx    (19285): 	at czqc.g(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at ffsz.a(PG:45)
+09-01 19:05:52.520 E/fryx    (19285): 	at fhpx.a(PG:13)
+09-01 19:05:52.520 E/fryx    (19285): 	at fscs.a(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at fsbu.run(PG:19)
+09-01 19:05:52.520 E/fryx    (19285): 	at fscu.run(PG:5)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+09-01 19:05:52.520 E/fryx    (19285): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqg.run(PG:16)
+09-01 19:05:52.520 E/fryx    (19285): 	... 2 more
+09-01 19:05:52.520 E/fryx    (19285): Got more than one input Future failure. Logging failures after the first
+09-01 19:05:52.520 E/fryx    (19285): dzch: refresh failed [GDD_FAIL_IN_SYNC_RUNNER_PUBLIC]
+09-01 19:05:52.520 E/fryx    (19285): 	at dzcf.a(PG:28)
+09-01 19:05:52.520 E/fryx    (19285): 	at dztw.apply(PG:328)
+09-01 19:05:52.520 E/fryx    (19285): 	at fhpy.apply(PG:13)
+09-01 19:05:52.520 E/fryx    (19285): 	at frym.e(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at fryo.run(PG:130)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at fqpl.run(PG:50)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqn.run(PG:14)
+09-01 19:05:52.520 E/fryx    (19285): 	at java.lang.Thread.run(Thread.java:1012)
+09-01 19:05:52.520 E/fryx    (19285): 	at dosa.run(PG:74)
+09-01 19:05:52.520 E/fryx    (19285): Caused by: java.io.IOException: Receive null result from service call.
+09-01 19:05:52.520 E/fryx    (19285): 	at czpu.a(PG:114)
+09-01 19:05:52.520 E/fryx    (19285): 	at czqa.n(PG:50)
+09-01 19:05:52.520 E/fryx    (19285): 	at czqa.q(PG:105)
+09-01 19:05:52.520 E/fryx    (19285): 	at czqc.g(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at ffsz.a(PG:45)
+09-01 19:05:52.520 E/fryx    (19285): 	at fhpx.a(PG:13)
+09-01 19:05:52.520 E/fryx    (19285): 	at fscs.a(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at fsbu.run(PG:19)
+09-01 19:05:52.520 E/fryx    (19285): 	at fscu.run(PG:5)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqv.run(PG:3)
+09-01 19:05:52.520 E/fryx    (19285): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+09-01 19:05:52.520 E/fryx    (19285): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+09-01 19:05:52.520 E/fryx    (19285): 	at doqg.run(PG:16)
+09-01 19:05:52.520 E/fryx    (19285): 	... 2 more
+09-01 19:05:53.118 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:53.124 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:53.549 E/android.hardware.power.stats-service.pixel(  917): Failed to read uid_time_in_state for attribution, return default EnergyConsumer
+09-01 19:05:53.586 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+09-01 19:05:53.600 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(36) test(0)
+09-01 19:05:53.600 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(36)
+09-01 19:05:54.124 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:54.133 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:54.443 D/RILClient( 1206): [OemClient]IND: (clientId = 0, msgId = 2015, dataLength = 148, channel = 0)
+09-01 19:05:54.444 D/RILClient(  973): [OemClient]IND: (clientId = 6, msgId = 2015, dataLength = 148, channel = 0)
+09-01 19:05:54.458 D/IwlanNetworkService$IwlanNetworkServiceHandler( 2758): msg.what = EVENT_NETWORK_REGISTRATION_INFO_REQUEST
+09-01 19:05:54.468 D/IwlanNetworkService$IwlanNetworkServiceHandler[0]( 2758): : reg state REGISTRATION_STATE_HOME
+09-01 19:05:54.481 D/RILClient( 1206): [OemClient]IND: (clientId = 0, msgId = 3005, dataLength = 24, channel = 0)
+09-01 19:05:54.482 D/RILClient(  973): [OemClient]IND: (clientId = 6, msgId = 3005, dataLength = 24, channel = 0)
+09-01 19:05:54.490 I/SHANNON_IMS( 2400): 2404 [NETW] #:PURP:# UNSOL {RILC_UNSOL_IMS_SUPPORT_SERVICE} : VoPS : 1  EMC : 0  SIM_IDX : 0  RAT : 14  REG_STATE : 1  CELL_ID : 22052609  LAC/TAC : 10031  PLMN : 46000  (NetworkAdaptor$AdaptorChannel%onMessage:306)
+09-01 19:05:54.491 I/SHANNON_IMS( 2400): 2405 [CONN] #:ORNG:# supportService [VoPS : 1/ EMC : 0/ RAT_INFO : 14/ REG_STATE : 1/ CELL_ID : 22052609/ LAC-TAC Info : 10031/ PLMN : 46000]  [SLID:0 ] (ImsConnectivityMgr$RegistrationListener%supportService:2888)
+09-01 19:05:54.539 D/GlobalActionsDialogLite( 2139): Service changed before actions created
+09-01 19:05:54.539 D/GlobalActionsDialogLite( 2139): Service changed before actions created
+09-01 19:05:54.547 D/StateService( 3770): Country ISO: cn
+09-01 19:05:54.547 D/ConnectivityMonitorStateMachine( 3770): [onServiceStateChanged] {subId=1} ServiceState= {mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=38950, duplexMode()=2, mCellBandwidths=[20000], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=PS transportType=WLAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=IWLAN rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=**** rRplmn= isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=null voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA,MMS] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 16 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false mLteAttachResultType = 0 mLteAttachExtraInfo = 0 LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=CMCC, mOperatorAlphaShortRaw=CMCC, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false, mIsUsingNonTerrestrialNetwork=false}, vops=true
+09-01 19:05:54.548 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1320 android.content.Context.sendBroadcastMultiplePermissions:2542 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4160 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 
+09-01 19:05:54.548 D/ConnectivityMonitorStateMachine( 3770): [onServiceStateChanged] {subId=1} sendMessage(SERVICE_STATE_CHANGED) id=e986104e-eb56-4521-beab-750cb7f03d14
+09-01 19:05:54.549 D/ConnectivityEventWriter( 3770): Event filtered: SERVICE_STATE_CHANGED
+09-01 19:05:54.550 D/ConnectivityMonitorStateMachine( 3770): [Default] {subId=1} processMessage(SERVICE_STATE_CHANGED) CMMessage{id=e986104e-eb56-4521-beab-750cb7f03d14, obj={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=38950, duplexMode()=2, mCellBandwidths=[20000], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=PS transportType=WLAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=IWLAN rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=**** rRplmn= isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=null voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA,MMS] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 16 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false mLteAttachResultType = 0 mLteAttachExtraInfo = 0 LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=CMCC, mOperatorAlphaShortRaw=CMCC, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false, mIsUsingNonTerrestrialNetwork=false}, timestamp=2026-09-01T11:05:54.548Z}
+09-01 19:05:54.550 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4165 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:05:54.554 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4174 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:05:54.555 I/SHANNON_IMS( 2400): 2413 [PROX] onReceive: intent= [Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 (has extras) }] (ConnectivityBroadcastReceiver%onReceive:91)
+09-01 19:05:54.557 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4180 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:05:54.558 D/ServiceStateProvider( 2434): subId=1
+09-01 19:05:54.560 D/ActivityManager( 1816): sync unfroze 2948 com.google.android.cellbroadcastreceiver for 3
+09-01 19:05:54.569 I/Telephony( 2434): TelecomAccountRegistry$TelecomAccountTelephonyCallback: TelecomAccountRegistry: onServiceStateChanged: newState=0, mServiceState=0
+09-01 19:05:54.570 D/CellBroadcastReceiver( 2948): onReceive Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+09-01 19:05:54.571 D/CellBroadcastReceiver( 2948): onServiceStateChanged, ss: 0
+09-01 19:05:54.571 D/CellBroadcastReceiver( 2948): networkOperator: 46000
+09-01 19:05:54.571 D/CellBroadcastReceiver( 2948): update supported roaming operator as 
+09-01 19:05:54.574 I/Telephony( 2434): isRttCurrentlySupported -- regular acct, hasVoiceAvailability: false
+09-01 19:05:54.574 I/Telephony( 2434):  isRttSupported: false
+09-01 19:05:54.574 I/Telephony( 2434):  alwaysAllowWhileRoaming: false
+09-01 19:05:54.574 I/Telephony( 2434):  isRoaming: false
+09-01 19:05:54.574 I/Telephony( 2434):  isOnWfc: false
+09-01 19:05:54.700 I/SHANNON_IMS( 2400): 2417 [CALL] isEmcAvailable for false (ImsCallManager%isEmcAvailable:1525)
+09-01 19:05:55.008 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:55.009 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:55.009 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:55.010 I/WifiHAL (  956): Creating message to get link statistics; iface = 47
+09-01 19:05:55.132 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:55.140 E/IPCThreadState(  956): binder thread pool (1 threads) starved for 130 ms
+09-01 19:05:55.142 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:55.180 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:05:55.194 D/IwlanNetworkService( 2758): onCapabilitiesChanged: 102
+09-01 19:05:55.195 D/IwlanDataService( 2758): onCapabilitiesChanged: 102 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: "free52", BSSID: d4:53:2a:01:2f:4b, MAC: b6:73:b4:36:4d:81, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 864Mbps, Tx Link speed: 864Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"free52"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 OwnerUid: 1000 AdminUids: [1000] SSID: "free52" UnderlyingNetworks: Null]
+09-01 19:05:55.195 D/IwlanDataService( 2758): Network 102 connected using transport WIFI
+09-01 19:05:55.197 D/SHANNON_RCS( 2373): 2358 [0][PROX][TELE] onCapabilitiesChanged, Network: 102, NetworkCapabilities: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 864Mbps, Tx Link speed: 864Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:05:55.199 D/DeviceStateHelper( 3770): Wifi freq: 5745
+09-01 19:05:55.199 I/BugleRcsEngine( 3050): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=45 ]
+09-01 19:05:55.201 W/SHANNON_IMS( 2400): 2418 [CONN] NetworkSpecifier and TransportInfo are not valid (DefaultNetworkCallback%updateSubscriptionId:121)
+09-01 19:05:55.201 I/SHANNON_IMS( 2400): 2420 [CONN] network:102 WIFI connected, subId: -1 [SLID:0] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:05:55.202 I/BugleRcsEngine( 3050): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[12bb6c57-0d5d]>Handler" thread_id=51 ]
+09-01 19:05:55.202 D/CHRE    (  904): @ 15488.018: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x2 msgType 112 payload size 14
+09-01 19:05:55.202 I/CHRE    (  904): @ 15488.018: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+09-01 19:05:55.202 I/CHRE    (  904): @ 15488.019: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+09-01 19:05:55.203 I/WifiSignalInfo( 3770): onCapabilitiesChanged: rssi:-45
+09-01 19:05:55.204 D/GRIL-S  ( 2345): [1416]> SET_PREFERRED_CAMERA_FREQ_1_5[1537760, 1548000]
+09-01 19:05:55.205 D/GRIL-S  ( 2345): [1416]< SET_PREFERRED_CAMERA_FREQ_1_5 
+09-01 19:05:55.205 D/WM-NetworkStateTracker(19285): Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 864Mbps, Tx Link speed: 864Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null]
+09-01 19:05:55.205 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:05:55.206 D/ConnectivityService( 1816): NetReassign [no changes] [c 0] [a 1] [i 0]
+09-01 19:05:55.207 I/NullBinder( 2508): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+09-01 19:05:55.207 W/.gms.persistent( 2508): Large reply transaction of 1056768 bytes, interface descriptor , code 1
+09-01 19:05:55.207 D/GRIL-S  ( 2345): [1417]> SET_PREFERRED_CAMERA_FREQ_1_5[694270, 706560]
+09-01 19:05:55.208 D/GRIL-S  ( 2345): [1417]< SET_PREFERRED_CAMERA_FREQ_1_5 
+09-01 19:05:55.209 I/MagicTether( 2508): (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+09-01 19:05:55.209 I/MagicTether( 2508): (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+09-01 19:05:55.209 I/MagicTether( 2508): [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+09-01 19:05:55.210 I/MagicTether( 2508): [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+09-01 19:05:55.210 I/MagicTether( 2508): (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+09-01 19:05:55.210 D/GRIL-S  ( 2345): [1418]> SET_PREFERRED_DISPLAY_FREQ_1_4[1100000, 1120000]
+09-01 19:05:55.210 I/MagicTether( 2508): (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+09-01 19:05:55.211 D/GRIL-S  ( 2345): [1418]< SET_PREFERRED_DISPLAY_FREQ_1_4 
+09-01 19:05:55.215 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:05:55.215 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:55.215 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:05:55.215 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:05:55.215 I/MagicTether( 2508): [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+09-01 19:05:55.215 I/MagicTether( 2508): [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+09-01 19:05:55.216 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:05:55.216 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:55.216 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:05:55.216 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:05:55.216 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:55.216 I/MagicTether( 2508): [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+09-01 19:05:55.643 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU:39.4538 raw data: VIRTUAL-QI-GNSS:37906.5 VIRTUAL-QI-QUIET:39453.8 VIRTUAL-QUIET-BATT:35243.5 VIRTUAL-SKIN:39453.8 VIRTUAL-SKIN-CPU:39453.8 VIRTUAL-USB2-DISP:-14529.8 battery:39000 disp_therm:-26428 gnss_tcxo_therm:42120 qi_therm:43266 quiet_therm:38183 usb_pwr_therm2:38561 
+09-01 19:05:55.648 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU power_budget=1671.97 err=1.54625 s_power=800 time_elapsed_ms=7012 p=618.5 i=253.47 d=0 compensation=0 budget transient=0 control target=3
+09-01 19:05:55.649 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 225.62 mW)(S3M_VDD_CPUCL1: 48.30 mW)(S2M_VDD_CPUCL2: 919.16 mW)
+09-01 19:05:55.649 I/pixel-thermal( 1838): quiet_therm:38.183 raw data: quiet_therm:38183 
+09-01 19:05:55.650 I/pixel-thermal( 1838): VIRTUAL-SKIN:39.4538 raw data: VIRTUAL-SKIN:39453.8 
+09-01 19:05:55.651 I/pixel-thermal( 1838): VIRTUAL-SKIN-HINT:39.4538 raw data: VIRTUAL-SKIN:39453.8 VIRTUAL-SKIN-HINT:39453.8 
+09-01 19:05:55.651 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE:39.4385 raw data: VIRTUAL-QI-BATT:39438.5 VIRTUAL-QI-GNSS:37906.5 VIRTUAL-QUIET-BATT:35243.5 VIRTUAL-SKIN-CHARGE:39438.5 VIRTUAL-USB2-DISP:-14529.8 battery:39000 qi_therm:43266 
+09-01 19:05:55.651 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's fcc binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 523.825
+09-01 19:05:55.651 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's wlc_fcc binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 523.825
+09-01 19:05:55.651 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's dc_icl binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 523.825
+09-01 19:05:55.652 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU:39.4538 raw data: VIRTUAL-SKIN:39453.8 VIRTUAL-SKIN-CPU-GPU:39453.8 
+09-01 19:05:55.652 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU power_budget=2774.65 err=5.54625 s_power=800 time_elapsed_ms=7012 p=1663.87 i=310.776 d=0 compensation=0 budget transient=0 control target=3
+09-01 19:05:55.652 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 225.62 mW)(S3M_VDD_CPUCL1: 48.30 mW)(S2S_VDD_G3D: 74.04 mW)(S2M_VDD_CPUCL2: 919.16 mW)
+09-01 19:05:55.653 I/pixel-thermal( 1838): cellular-emergency:39.4538 raw data: VIRTUAL-SKIN:39453.8 cellular-emergency:39453.8 
+09-01 19:05:55.655 I/pixel-thermal( 1838): Successfully update cdev wlc_fcc sysfs to 2
+09-01 19:05:55.656 I/pixel-thermal( 1838): Successfully update cdev fcc sysfs to 3
+09-01 19:05:55.660 W/pixelstats-vendor( 3145): Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot be implemented. serviceName: android.frameworks.stats.IStats/default
+09-01 19:05:55.688 D/DLObserver( 2139): onReceive(); android.intent.action.BATTERY_CHANGED
+09-01 19:05:55.688 D/DLObserver( 2139): plugged=1
+09-01 19:05:55.692 I/ReverseChargingControl( 2139): handleIntentForReverseCharging(): rtx=0 wlc=0 plgac=1 ac=1 acrtx=0 extra=1 this=com.google.android.systemui.reversecharging.ReverseChargingController@cde410c
+09-01 19:05:55.692 D/SystemEventDataSource( 2139): onReceive: intentAction
+09-01 19:05:55.694 D/PowerUI ( 2139): can't show warning due to - plugged: true status unknown: false
+09-01 19:05:55.697 D/PowerNotificationWarningsGoogleImpl( 2139): onReceive: android.intent.action.BATTERY_CHANGED
+09-01 19:05:55.697 W/SHANNON_IMS( 2400): 2422 [CONN] Timer IMS_SUPPORT_SERVICE_TIMER expired (ConnectionTimer$ConnectionTimerTask%run:76)
+09-01 19:05:55.697 D/IncompatibleChargerNotification( 2139): dispatchIntent: android.intent.action.BATTERY_CHANGED
+09-01 19:05:55.698 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=90.00 Hz, modePtr={id=1, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=true, force=false}
+09-01 19:05:55.700 D/GoogleBatteryDataSource( 2139): fetchDwellDefendStatus: CONNECTED
+09-01 19:05:55.701 D/GoogleBatteryDataSource( 2139): fetchTempDefendStatus: t_sum=4011605, time_sum=10512 t_avg=381 lst_v=4390468 lst_t=390 lst_u=15493, dt=0, t=0 e=1
+09-01 19:05:55.701 D/SystemEventDataSource( 2139): updatedEventData: SystemEventData(intentAction=android.intent.action.BATTERY_CHANGED, plugged=EventData(value=1), batteryScale=EventData(value=100), batteryLevel=EventData(value=100), chargingStatus=EventData(value=1), maxChargingCurrent=EventData(value=3000000), maxChargingVoltage=EventData(value=5000000), batteryStatus=EventData(value=5), halEventData=HalEventData(dockDefendStatus=EventData(value=-3), tempDefendEventData=EventData(value=false), dwellDefendEventData=EventData(value=false)), settingsEventData=SettingsEventData(dockDefenderBypass=EventData(value=0), chargingLimitSettings=EventData(value=0), dndState=EventData(value=false), airplaneState=EventData(value=false)), frameworkApiEventData=FrameworkApiEventData(batterySaverState=EventData(value=false), extremeBatterySaverState=EventData(value=false)))
+09-01 19:05:55.701 D/SystemEventDataSource( 2139): extra doesn't changed, no need to onEventSourceUpdate
+09-01 19:05:55.714 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+09-01 19:05:55.714 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+09-01 19:05:55.925 D/TrafficStats( 2919): tagSocket(5) with statsTag=0x8003, statsUid=-1
+09-01 19:05:56.073 D/RILClient( 1206): [OemClient]IND: (clientId = 0, msgId = 2015, dataLength = 148, channel = 0)
+09-01 19:05:56.073 D/RILClient(  973): [OemClient]IND: (clientId = 6, msgId = 2015, dataLength = 148, channel = 0)
+09-01 19:05:56.078 D/IwlanNetworkService$IwlanNetworkServiceHandler( 2758): msg.what = EVENT_NETWORK_REGISTRATION_INFO_REQUEST
+09-01 19:05:56.082 D/IwlanNetworkService$IwlanNetworkServiceHandler[0]( 2758): : reg state REGISTRATION_STATE_HOME
+09-01 19:05:56.097 D/RILClient( 1206): [OemClient]IND: (clientId = 0, msgId = 3005, dataLength = 24, channel = 0)
+09-01 19:05:56.097 D/RILClient(  973): [OemClient]IND: (clientId = 6, msgId = 3005, dataLength = 24, channel = 0)
+09-01 19:05:56.099 I/SHANNON_IMS( 2400): 2426 [NETW] #:PURP:# UNSOL {RILC_UNSOL_IMS_SUPPORT_SERVICE} : VoPS : 1  EMC : 0  SIM_IDX : 0  RAT : 14  REG_STATE : 1  CELL_ID : 53272715  LAC/TAC : 10031  PLMN : 46000  (NetworkAdaptor$AdaptorChannel%onMessage:306)
+09-01 19:05:56.099 I/SHANNON_IMS( 2400): 2427 [CONN] #:ORNG:# supportService [VoPS : 1/ EMC : 0/ RAT_INFO : 14/ REG_STATE : 1/ CELL_ID : 53272715/ LAC-TAC Info : 10031/ PLMN : 46000]  [SLID:0 ] (ImsConnectivityMgr$RegistrationListener%supportService:2888)
+09-01 19:05:56.100 I/SHANNON_IMS( 2400): 2429 [CONN] update Cell Location Info, slotId: 0 [com.shannon.imsservice.conn.ImsConnectivityMgr$RegistrationListener@33b1995] (ImsConnectivityMgr$RegistrationListener%updateCellLocation:2959)
+09-01 19:05:56.106 D/ActivityManager( 1816): sync unfroze 3989 .ShannonImsService for 7
+09-01 19:05:56.107 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:05:56.125 D/GlobalActionsDialogLite( 2139): Service changed before actions created
+09-01 19:05:56.125 D/GlobalActionsDialogLite( 2139): Service changed before actions created
+09-01 19:05:56.130 D/StateService( 3770): Country ISO: cn
+09-01 19:05:56.131 D/ConnectivityMonitorStateMachine( 3770): [onServiceStateChanged] {subId=1} ServiceState= {mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=3590, duplexMode()=1, mCellBandwidths=[10000], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=PS transportType=WLAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=IWLAN rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=**** rRplmn= isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=null voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA,MMS] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 16 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false mLteAttachResultType = 0 mLteAttachExtraInfo = 0 LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=CMCC, mOperatorAlphaShortRaw=CMCC, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false, mIsUsingNonTerrestrialNetwork=false}, vops=true
+09-01 19:05:56.132 D/ConnectivityMonitorStateMachine( 3770): [onServiceStateChanged] {subId=1} sendMessage(SERVICE_STATE_CHANGED) id=48cd81d7-086b-4eec-bb76-35ee3c447b8b
+09-01 19:05:56.132 D/ConnectivityMonitorStateMachine( 3770): [Default] {subId=1} processMessage(SERVICE_STATE_CHANGED) CMMessage{id=48cd81d7-086b-4eec-bb76-35ee3c447b8b, obj={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=3590, duplexMode()=1, mCellBandwidths=[10000], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=PS transportType=WLAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=IWLAN rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=**** rRplmn= isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=null voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA,MMS] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 16 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false mLteAttachResultType = 0 mLteAttachExtraInfo = 0 LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=CMCC, mOperatorAlphaShortRaw=CMCC, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false, mIsUsingNonTerrestrialNetwork=false}, timestamp=2026-09-01T11:05:56.132Z}
+09-01 19:05:56.132 D/ConnectivityEventWriter( 3770): Event filtered: SERVICE_STATE_CHANGED
+09-01 19:05:56.133 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1320 android.content.Context.sendBroadcastMultiplePermissions:2542 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4160 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 
+09-01 19:05:56.135 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4165 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:05:56.136 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4174 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:05:56.137 I/SHANNON_IMS( 2400): 2442 [PROX] onReceive: intent= [Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 (has extras) }] (ConnectivityBroadcastReceiver%onReceive:91)
+09-01 19:05:56.138 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4180 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:05:56.138 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:56.139 D/ServiceStateProvider( 2434): subId=1
+09-01 19:05:56.140 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:56.144 D/CellBroadcastReceiver( 2948): onReceive Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+09-01 19:05:56.145 D/CellBroadcastReceiver( 2948): onServiceStateChanged, ss: 0
+09-01 19:05:56.145 D/CellBroadcastReceiver( 2948): networkOperator: 46000
+09-01 19:05:56.145 D/CellBroadcastReceiver( 2948): update supported roaming operator as 
+09-01 19:05:56.148 I/Telephony( 2434): TelecomAccountRegistry$TelecomAccountTelephonyCallback: TelecomAccountRegistry: onServiceStateChanged: newState=0, mServiceState=0
+09-01 19:05:56.149 I/Telephony( 2434): isRttCurrentlySupported -- regular acct, hasVoiceAvailability: false
+09-01 19:05:56.149 I/Telephony( 2434):  isRttSupported: false
+09-01 19:05:56.149 I/Telephony( 2434):  alwaysAllowWhileRoaming: false
+09-01 19:05:56.149 I/Telephony( 2434):  isRoaming: false
+09-01 19:05:56.149 I/Telephony( 2434):  isOnWfc: false
+09-01 19:05:56.184 I/bcot    ( 3037): (REDACTED) getHotwordActive::active query: %s, watch: %s, devices connected: %s
+09-01 19:05:56.196 D/GRIL-S  ( 2345): [1419]> SET_PREFERRED_CAMERA_FREQ_1_5[1537760, 1548000]
+09-01 19:05:56.197 D/GRIL-S  ( 2345): [1419]< SET_PREFERRED_CAMERA_FREQ_1_5 
+09-01 19:05:56.198 D/GRIL-S  ( 2345): [1420]> SET_PREFERRED_CAMERA_FREQ_1_5[694270, 706560]
+09-01 19:05:56.199 D/GRIL-S  ( 2345): [1420]< SET_PREFERRED_CAMERA_FREQ_1_5 
+09-01 19:05:56.200 D/GRIL-S  ( 2345): [1421]> SET_PREFERRED_DISPLAY_FREQ_1_4[1120000]
+09-01 19:05:56.200 D/GRIL-S  ( 2345): [1421]< SET_PREFERRED_DISPLAY_FREQ_1_4 
+09-01 19:05:56.307 I/SHANNON_IMS( 2400): 2446 [CALL] isEmcAvailable for false (ImsCallManager%isEmcAvailable:1525)
+09-01 19:05:57.140 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:57.147 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:57.201 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+09-01 19:05:57.208 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(36) test(0)
+09-01 19:05:57.208 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(36)
+09-01 19:05:57.307 W/SHANNON_IMS( 2400): 2447 [CONN] Timer IMS_SUPPORT_SERVICE_TIMER expired (ConnectionTimer$ConnectionTimerTask%run:76)
+09-01 19:05:57.750 I/WPKTRT  ( 1170): process_address_event: 2409:8a55:10a1:c7b0:b473:b4ff:fe36:4d81 added to wlan0
+09-01 19:05:57.750 I/WPKTRT  ( 1170): process_address_event: 2409:8a55:10a1:c7b0:7dac:34d8:2740:e4ce added to wlan0
+09-01 19:05:57.753 D/ApfFilter( 2225): (wlan0): Ignoring RA RA fe80::d653:2aff:fe01:2f4a -> ff02::1 1800s 2409:8a55:10a1:c7b0::/64 4294967295s/4294967295s DNS 200s fe80::d653:2aff:fe01:2f4a  which matches RA fe80::d653:2aff:fe01:2f4a -> ff02::1 1800s 2409:8a55:10a1:c7b0::/64 4294967295s/4294967295s DNS 200s fe80::d653:2aff:fe01:2f4a 
+09-01 19:05:58.147 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:58.156 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:58.187 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:58.189 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:58.190 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:58.192 I/WifiHAL (  956): Creating message to get link statistics; iface = 47
+09-01 19:05:58.320 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:05:58.322 D/IwlanNetworkService( 2758): onCapabilitiesChanged: 102
+09-01 19:05:58.322 D/IwlanDataService( 2758): onCapabilitiesChanged: 102 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: "free52", BSSID: d4:53:2a:01:2f:4b, MAC: b6:73:b4:36:4d:81, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 907Mbps, Tx Link speed: 907Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"free52"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 OwnerUid: 1000 AdminUids: [1000] SSID: "free52" UnderlyingNetworks: Null]
+09-01 19:05:58.322 D/IwlanDataService( 2758): Network 102 connected using transport WIFI
+09-01 19:05:58.327 D/DeviceStateHelper( 3770): Wifi freq: 5745
+09-01 19:05:58.327 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:05:58.331 W/SHANNON_IMS( 2400): 2452 [CONN] NetworkSpecifier and TransportInfo are not valid (DefaultNetworkCallback%updateSubscriptionId:121)
+09-01 19:05:58.332 I/SHANNON_IMS( 2400): 2453 [CONN] network:102 WIFI connected, subId: -1 [SLID:0] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:05:58.327 D/SHANNON_RCS( 2373): 2359 [0][PROX][TELE] onCapabilitiesChanged, Network: 102, NetworkCapabilities: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 907Mbps, Tx Link speed: 907Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:05:58.333 I/WifiSignalInfo( 3770): onCapabilitiesChanged: rssi:-45
+09-01 19:05:58.334 I/BugleRcsEngine( 3050): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=45 ]
+09-01 19:05:58.334 I/BugleRcsEngine( 3050): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[12bb6c57-0d5d]>Handler" thread_id=51 ]
+09-01 19:05:58.337 I/MagicTether( 2508): (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+09-01 19:05:58.337 I/MagicTether( 2508): (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+09-01 19:05:58.338 I/MagicTether( 2508): [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+09-01 19:05:58.338 I/MagicTether( 2508): [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+09-01 19:05:58.338 I/MagicTether( 2508): (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+09-01 19:05:58.338 D/WM-NetworkStateTracker(19285): Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -45, Link speed: 907Mbps, Tx Link speed: 907Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -45 UnderlyingNetworks: Null]
+09-01 19:05:58.339 I/MagicTether( 2508): (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+09-01 19:05:58.341 D/CHRE    (  904): @ 15491.158: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x2 msgType 112 payload size 14
+09-01 19:05:58.341 I/CHRE    (  904): @ 15491.158: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+09-01 19:05:58.341 I/CHRE    (  904): @ 15491.158: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+09-01 19:05:58.344 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:05:58.344 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:58.344 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:05:58.344 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:05:58.344 I/MagicTether( 2508): [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+09-01 19:05:58.344 I/MagicTether( 2508): [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+09-01 19:05:58.345 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:05:58.345 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:58.345 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:05:58.345 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:05:58.345 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:05:58.345 I/MagicTether( 2508): [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+09-01 19:05:58.347 D/ConnectivityService( 1816): NetReassign [no changes] [c 1] [a 2] [i 4]
+09-01 19:05:58.352 I/NullBinder( 2508): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+09-01 19:05:58.352 W/.gms.persistent( 2508): Large reply transaction of 1056768 bytes, interface descriptor , code 1
+09-01 19:05:59.154 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:05:59.163 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:05:59.357 I/pixel-thermal( 1838): usb_pwr_therm2:38.584 raw data: usb_pwr_therm2:38584 
+09-01 19:05:59.364 I/pixel-thermal( 1838): VIRTUAL-USB-THROTTLING:1 raw data: USB2-MINUS-QI:-5002 USB2-MINUS-USB:-89 VIRTUAL-USB-THROTTLING:1 qi_therm:43586 usb_pwr_therm:38673 usb_pwr_therm2:38584 
+09-01 19:05:59.364 I/pixel-thermal( 1838): VIRTUAL-USB-UI:1 raw data: USB2-MINUS-QI:-5002 USB2-MINUS-USB:-89 VIRTUAL-USB-UI:1 usb_pwr_therm2:38584 
+09-01 19:05:59.693 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:59.694 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:05:59.697 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:00.037 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=90.00 Hz, modePtr={id=1, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=true, force=false}
+09-01 19:06:00.049 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+09-01 19:06:00.049 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+09-01 19:06:00.163 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:06:00.169 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:06:00.839 E/AuthPII ( 2508): [RequestTokenManager] getToken() -> NETWORK_ERROR. App: com.google.android.gms, Service: oauth2:https://www.googleapis.com/auth/gcm
+09-01 19:06:00.839 E/AuthPII ( 2508): bcer: Error when calling server using GmsNetworkStack.
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1543)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyb.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):537)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):141)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at yio.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):153)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):72)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:00.839 E/AuthPII ( 2508): Caused by: bcer: Error requesting token.
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):212)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	... 12 more
+09-01 19:06:00.839 E/AuthPII ( 2508): Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 709528 nanoseconds delay) for grdh@c7d834[status=PENDING, info=[inputFuture=[grdh@52f165d[status=PENDING, info=[inputFuture=[kix@6cb0bd2[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[aedc@87a34a3]]]], function=[aeyc@12443a0]]]
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at grde.v(:com.google.android.gms@254334035@25.43.34 (260400-827649125):371)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):197)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	... 13 more
+09-01 19:06:00.839 E/AuthPII ( 2508): Message is Error when calling server using GmsNetworkStack.
+09-01 19:06:00.839 E/AuthPII ( 2508): bcer: Error when calling server using GmsNetworkStack.
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1543)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyb.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):537)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):141)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at yio.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):153)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):72)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:00.839 E/AuthPII ( 2508): Caused by: bcer: Error requesting token.
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):212)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	... 12 more
+09-01 19:06:00.839 E/AuthPII ( 2508): Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 709528 nanoseconds delay) for grdh@c7d834[status=PENDING, info=[inputFuture=[grdh@52f165d[status=PENDING, info=[inputFuture=[kix@6cb0bd2[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[aedc@87a34a3]]]], function=[aeyc@12443a0]]]
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at grde.v(:com.google.android.gms@254334035@25.43.34 (260400-827649125):371)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):197)
+09-01 19:06:00.839 E/AuthPII ( 2508): 	... 13 more
+09-01 19:06:00.840 I/Auth    ( 2508): (REDACTED) [GetToken] GetToken failed for app=%s with non recoverable status code: %s 
+09-01 19:06:00.841 W/Auth    ( 2508): [ChimeraGetToken] exception while trying to fetch auth tokens for app=com.google.android.gsf, scope=oauth2:https://www.googleapis.com/auth/gcm [CONTEXT service_id=153 ]
+09-01 19:06:00.841 W/Auth    ( 2508): aexw: GetToken failed with status code: NetworkError
+09-01 19:06:00.841 W/Auth    ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):345)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at yio.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):153)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):72)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:00.841 W/Auth    ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:00.842 W/Auth    ( 3136): [GoogleAuthUtil] [GoogleAuthUtil] error status:NETWORK_ERROR with method:getTokenWithDetails
+09-01 19:06:00.846 I/GCM-GMS ( 3136): Failed to subscribe to group.
+09-01 19:06:00.846 I/GCM-GMS ( 3136): java.io.IOException: NetworkError
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at aebb.l(:com.google.android.gms@254334035@25.43.34 (260400-827649125):106)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at aeav.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):122)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at aebb.m(:com.google.android.gms@254334035@25.43.34 (260400-827649125):34)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at aebb.o(:com.google.android.gms@254334035@25.43.34 (260400-827649125):64)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at aebb.h(:com.google.android.gms@254334035@25.43.34 (260400-827649125):4)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at aeps.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):42)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at aeps.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):6)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at bvaj.c(:com.google.android.gms@254334035@25.43.34 (260400-827649125):228)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at com.google.android.gms.gcm.gmsproc.GcmInGmsTaskChimeraService.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):286)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at covh.call(:com.google.android.gms@254334035@25.43.34 (260400-827649125):30)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at bdkw.c(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at bdkw.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):73)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at bdqn.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):8)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): 	at java.lang.Thread.run(Thread.java:1012)
+09-01 19:06:00.846 I/GCM-GMS ( 3136): Groups upload failed
+09-01 19:06:00.854 I/NetworkScheduler.Stats( 2508): (REDACTED) Task %s/%s finished executing. cause:%s result: %s elapsed_millis: %s uptime_millis: %s exec_start_elapsed_seconds: %s
+09-01 19:06:01.169 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:06:01.179 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:06:01.328 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:01.329 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:01.330 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:01.331 I/WifiHAL (  956): Creating message to get link statistics; iface = 47
+09-01 19:06:01.408 D/ImpulseConnection( 2301): timeout didn't happen: com.google.android.apps.turbo
+09-01 19:06:01.420 D/TemperatureStateSource( 2301): sequence=1443 actualDelay=10002
+09-01 19:06:01.422 D/TemperatureStateSource( 2301): Reading temperature: sequence=1444
+09-01 19:06:01.438 I/pixel-thermal( 1838): VIRTUAL-SKIN:39.5503 raw data: VIRTUAL-QI-GNSS:38158.2 VIRTUAL-QI-QUIET:39550.2 VIRTUAL-QUIET-BATT:35290.8 VIRTUAL-SKIN:39550.2 VIRTUAL-USB2-DISP:-14526.1 battery:39000 disp_therm:-26428 gnss_tcxo_therm:42349 qi_therm:43586 quiet_therm:38205 usb_pwr_therm2:38584 
+09-01 19:06:01.440 D/TemperatureStateSource( 2301): getDeviceTemperatures: sequence=1444 deviceTemperatureType=3 temperatureSource=0 temperatures=[39.55025]
+09-01 19:06:01.440 D/BusinessScope( 2301): Enqueuing the block
+09-01 19:06:01.440 D/TemperatureStateSource( 2301): sequence=1444 waitTime=10000
+09-01 19:06:01.440 D/BusinessScope( 2301): Start running the #2930 block
+09-01 19:06:01.441 D/BusinessScope( 2301): Enqueuing the block
+09-01 19:06:01.441 D/ImpulseStateSource( 2301): Notify clients: 1464
+09-01 19:06:01.441 D/BusinessScope( 2301): Finish running the #2930 block
+09-01 19:06:01.442 D/BusinessScope( 2301): Start running the #2931 block
+09-01 19:06:01.445 D/BusinessScope( 2301): Finish running the #2931 block
+09-01 19:06:01.445 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:06:01.447 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:06:01.449 D/IwlanNetworkService( 2758): onCapabilitiesChanged: 102
+09-01 19:06:01.449 D/IwlanDataService( 2758): onCapabilitiesChanged: 102 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: "free52", BSSID: d4:53:2a:01:2f:4b, MAC: b6:73:b4:36:4d:81, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -46, Link speed: 680Mbps, Tx Link speed: 680Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"free52"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -46 OwnerUid: 1000 AdminUids: [1000] SSID: "free52" UnderlyingNetworks: Null]
+09-01 19:06:01.449 D/IwlanDataService( 2758): Network 102 connected using transport WIFI
+09-01 19:06:01.451 D/SHANNON_RCS( 2373): 2360 [0][PROX][TELE] onCapabilitiesChanged, Network: 102, NetworkCapabilities: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -46, Link speed: 680Mbps, Tx Link speed: 680Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -46 UnderlyingNetworks: Null] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:06:01.453 I/BugleRcsEngine( 3050): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[12bb6c57-0d5d]>Handler" thread_id=51 ]
+09-01 19:06:01.454 I/BugleRcsEngine( 3050): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=45 ]
+09-01 19:06:01.455 D/DeviceStateHelper( 3770): Wifi freq: 5745
+09-01 19:06:01.455 W/SHANNON_IMS( 2400): 2456 [CONN] NetworkSpecifier and TransportInfo are not valid (DefaultNetworkCallback%updateSubscriptionId:121)
+09-01 19:06:01.456 I/SHANNON_IMS( 2400): 2457 [CONN] network:102 WIFI connected, subId: -1 [SLID:0] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:06:01.463 D/BackgroundInstallControlService( 1816): Package event received: 0
+09-01 19:06:01.471 I/WifiSignalInfo( 3770): onCapabilitiesChanged: rssi:-46
+09-01 19:06:01.474 D/WM-NetworkStateTracker(19285): Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -46, Link speed: 680Mbps, Tx Link speed: 680Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1200Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -46 UnderlyingNetworks: Null]
+09-01 19:06:01.476 I/MagicTether( 2508): (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+09-01 19:06:01.476 D/ConnectivityService( 1816): NetReassign [no changes] [c 1] [a 0] [i 1]
+09-01 19:06:01.476 I/MagicTether( 2508): (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+09-01 19:06:01.476 I/MagicTether( 2508): [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+09-01 19:06:01.476 I/MagicTether( 2508): [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+09-01 19:06:01.477 D/CHRE    (  904): @ 15494.294: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x2 msgType 112 payload size 14
+09-01 19:06:01.477 I/CHRE    (  904): @ 15494.294: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+09-01 19:06:01.477 I/CHRE    (  904): @ 15494.294: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+09-01 19:06:01.478 I/MagicTether( 2508): (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+09-01 19:06:01.478 I/MagicTether( 2508): (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+09-01 19:06:01.480 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:06:01.480 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:06:01.480 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:06:01.480 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:06:01.480 I/MagicTether( 2508): [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+09-01 19:06:01.480 I/MagicTether( 2508): [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+09-01 19:06:01.480 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:06:01.480 I/NullBinder( 2508): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+09-01 19:06:01.480 W/.gms.persistent( 2508): Large reply transaction of 1056768 bytes, interface descriptor , code 1
+09-01 19:06:01.480 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:06:01.480 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:06:01.481 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:06:01.481 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:06:01.481 I/MagicTether( 2508): [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+09-01 19:06:01.512 E/AuthPII ( 2508): [RequestTokenManager] getToken() -> NETWORK_ERROR. App: com.google.android.gms, Service: oauth2:https://www.googleapis.com/auth/webhistory
+09-01 19:06:01.512 E/AuthPII ( 2508): bcer: Error when calling server using GmsNetworkStack.
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1543)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at aeyb.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):537)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):141)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at yio.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):153)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):72)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:01.512 E/AuthPII ( 2508): Caused by: bcer: Error requesting token.
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):212)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	... 12 more
+09-01 19:06:01.512 E/AuthPII ( 2508): Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 647435 nanoseconds delay) for grdh@72bb664[status=PENDING, info=[inputFuture=[grdh@48750cd[status=PENDING, info=[inputFuture=[kix@3ca0d82[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[aedc@1b18c93]]]], function=[aeyc@e1fd4d0]]]
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at grde.v(:com.google.android.gms@254334035@25.43.34 (260400-827649125):371)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):197)
+09-01 19:06:01.512 E/AuthPII ( 2508): 	... 13 more
+09-01 19:06:01.513 E/AuthPII ( 2508): Message is Error when calling server using GmsNetworkStack.
+09-01 19:06:01.513 E/AuthPII ( 2508): bcer: Error when calling server using GmsNetworkStack.
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1543)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at aeyb.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):537)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):141)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at yio.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):153)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):72)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:01.513 E/AuthPII ( 2508): Caused by: bcer: Error requesting token.
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):212)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	... 12 more
+09-01 19:06:01.513 E/AuthPII ( 2508): Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 647435 nanoseconds delay) for grdh@72bb664[status=PENDING, info=[inputFuture=[grdh@48750cd[status=PENDING, info=[inputFuture=[kix@3ca0d82[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[aedc@1b18c93]]]], function=[aeyc@e1fd4d0]]]
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at grde.v(:com.google.android.gms@254334035@25.43.34 (260400-827649125):371)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):197)
+09-01 19:06:01.513 E/AuthPII ( 2508): 	... 13 more
+09-01 19:06:01.513 I/Auth    ( 2508): (REDACTED) [GetToken] GetToken failed for app=%s with non recoverable status code: %s 
+09-01 19:06:01.513 W/Auth    ( 2508): [ChimeraGetToken] exception while trying to fetch auth tokens for app=com.google.android.gsf, scope=oauth2:https://www.googleapis.com/auth/webhistory [CONTEXT service_id=153 ]
+09-01 19:06:01.513 W/Auth    ( 2508): aexw: GetToken failed with status code: NetworkError
+09-01 19:06:01.513 W/Auth    ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):345)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at yio.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):153)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):72)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:01.513 W/Auth    ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:01.514 W/Auth    ( 3136): [GoogleAuthUtil] [GoogleAuthUtil] error status:NETWORK_ERROR with method:getTokenWithDetails
+09-01 19:06:01.541 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+09-01 19:06:01.547 W/AsyncOperation( 3136): operation=SyncActivityControlsSettingsInternalOperation, opStatusCode=7 [CONTEXT service_id=220 ]
+09-01 19:06:01.547 W/AsyncOperation( 3136): OperationException[Status{statusCode=Downloading settings failed!, resolution=null}]
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at fecz.f(:com.google.android.gms@254334035@25.43.34 (260400-827649125):192)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at cnfk.fx(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at cnfo.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):118)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gitt.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):19)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at bdkw.c(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at bdkw.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):73)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at bdqn.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):8)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at java.lang.Thread.run(Thread.java:1012)
+09-01 19:06:01.547 W/AsyncOperation( 3136): Caused by: igfx: UNAUTHENTICATED
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at ihak.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):167)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at hkqx.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):68)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at fehm.n(:com.google.android.gms@254334035@25.43.34 (260400-827649125):352)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at fehm.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):24)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at fecy.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):9)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at fppr.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):3)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at fppy.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):158)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gitp.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):13)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at grdg.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):3)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at grdi.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):38)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	... 6 more
+09-01 19:06:01.547 W/AsyncOperation( 3136): Caused by: java.io.IOException: NetworkError
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at aebb.l(:com.google.android.gms@254334035@25.43.34 (260400-827649125):106)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at aeav.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):122)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at aebb.m(:com.google.android.gms@254334035@25.43.34 (260400-827649125):34)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at aebb.o(:com.google.android.gms@254334035@25.43.34 (260400-827649125):64)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gunm.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):22)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gunm.c(:com.google.android.gms@254334035@25.43.34 (260400-827649125):64)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gunj.call(:com.google.android.gms@254334035@25.43.34 (260400-827649125):8)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gunm.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):59)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gumj.call(:com.google.android.gms@254334035@25.43.34 (260400-827649125):25)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at gitq.call(:com.google.android.gms@254334035@25.43.34 (260400-827649125):13)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+09-01 19:06:01.547 W/AsyncOperation( 3136): 	... 6 more
+09-01 19:06:01.548 W/FacsCacheGmsModule( 3136): Operation 'SyncActivityControlsSettingsInternalOperation' failed with status '7'!
+09-01 19:06:01.550 W/AsyncOperation( 2508): operation=GetActivityControlsSettingsOperation, opStatusCode=7 [CONTEXT service_id=202 ]
+09-01 19:06:01.550 W/AsyncOperation( 2508): OperationException[Status{statusCode=Internal sync API failure!, resolution=null}]
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at fecc.h(:com.google.android.gms@254334035@25.43.34 (260400-827649125):27)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at feck.f(:com.google.android.gms@254334035@25.43.34 (260400-827649125):128)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at cnfk.fx(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at cnfo.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):118)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at gitt.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):19)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at bdkw.c(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at bdkw.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):73)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:644)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at bdqn.run(:com.google.android.gms@254334035@25.43.34 (260400-827649125):8)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at java.lang.Thread.run(Thread.java:1012)
+09-01 19:06:01.550 W/AsyncOperation( 2508): Caused by: bbrm: 7: Downloading settings failed!
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at bcou.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):15)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at bbxr.c(:com.google.android.gms@254334035@25.43.34 (260400-827649125):11)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at bmfn.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at bmge.dispatchTransaction(:com.google.android.gms@254334035@25.43.34 (260400-827649125):51)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at buem.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at xqs.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):23)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:01.550 W/AsyncOperation( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:01.551 W/FacsCacheGmsModule( 2508): Operation 'GetActivityControlsSettingsOperation' failed with status '7'!
+09-01 19:06:01.553 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(36) test(0)
+09-01 19:06:01.553 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(36)
+09-01 19:06:01.558 I/FacsCacheGmsModule( 2508): (REDACTED) Received 'getActivityControlsSettings' request from package '%s', instance id '%s', version '%d'...
+09-01 19:06:01.558 I/FacsCacheGmsModule( 2508): Operation 'getActivityControlsSettings' dispatched!
+09-01 19:06:01.558 I/FacsCacheGmsModule( 2508): (REDACTED) Executing operation '%s'...
+09-01 19:06:01.559 I/FacsCacheGmsModule( 2508): (REDACTED) Forwarding operation '%s' to internal FACS API...
+09-01 19:06:01.561 I/FacsCacheGmsModule( 3136): Receiving API connection to internal FACS API...
+09-01 19:06:01.562 I/FacsCacheGmsModule( 3136): API connection successful!
+09-01 19:06:01.563 I/FacsCacheGmsModule( 3136): (REDACTED) Received 'syncActivityControlsSettingsInternal' (forced: %b) request...
+09-01 19:06:01.565 I/FacsCacheGmsModule( 3136): Operation 'syncActivityControlsSettingsInternal' dispatched!
+09-01 19:06:01.566 I/FacsCacheGmsModule( 3136): (REDACTED) Executing operation '%s'...
+09-01 19:06:01.566 I/FacsCacheGmsModule( 3136): (REDACTED) Operation '%s' performing sync (type: '%s')...
+09-01 19:06:02.064 I/SHANNON_IMS( 2400): 2458 [PROX] Received onSignalStrengthsChanged [CellSignalStrengthLte: rssi=-73 rsrp=-101 rsrq=-7 rssnr=-6 cqiTableIndex=1 cqi=14 ta=7 level=3 parametersUseForLevel=0] [SLID:0 APM:false] (ImsConnectivityProxyListener$ImsPhoneStateListener%onSignalStrengthsChanged:413)
+09-01 19:06:02.067 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=90.00 Hz, modePtr={id=1, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=true, force=false}
+09-01 19:06:02.084 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+09-01 19:06:02.084 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+09-01 19:06:02.177 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:06:02.183 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:06:02.303 D/TcpSocketTracker/102( 2225): data stall suspected, uids: {10163, 10173}
+09-01 19:06:02.304 D/ConnectivityService( 1816): Data stall detected with methods: 2
+09-01 19:06:02.308 D/NetworkMonitor/102( 2225): isDataStall: result=2, tcp packets received=0, latest tcp fail rate=86, consecutive dns timeout count=0
+09-01 19:06:02.308 D/NetworkMonitor/102( 2225): Suspecting data stall, reevaluate
+09-01 19:06:02.315 D/TrafficStats( 2225): tagSocket(98) with statsTag=0xffffff81, statsUid=-1
+09-01 19:06:02.315 D/TrafficStats( 2225): tagSocket(109) with statsTag=0xffffff81, statsUid=-1
+09-01 19:06:02.319 D/TrafficStats( 2225): tagSocket(98) with statsTag=0xffffff81, statsUid=-1
+09-01 19:06:02.319 D/TrafficStats( 2225): tagSocket(143) with statsTag=0xffffff81, statsUid=-1
+09-01 19:06:02.327 D/TrafficStats( 2225): tagSocket(98) with statsTag=0xffffffff, statsUid=-1
+09-01 19:06:02.330 D/TrafficStats( 2225): tagSocket(98) with statsTag=0xffffffff, statsUid=-1
+09-01 19:06:02.330 D/NetworkMonitor/102( 2225): PROBE_DNS connectivitycheck.gstatic.cn 15ms OK 120.233.71.235
+09-01 19:06:02.333 D/NetworkMonitor/102( 2225): PROBE_DNS connectivitycheck.gstatic.cn 18ms OK 120.233.71.235
+09-01 19:06:02.337 D/TrafficStats( 2225): tagSocket(98) with statsTag=0xffffff81, statsUid=-1
+09-01 19:06:02.338 D/TrafficStats( 2225): tagSocket(109) with statsTag=0xffffff81, statsUid=-1
+09-01 19:06:02.430 D/NetworkMonitor/102( 2225): PROBE_HTTP http://connectivitycheck.gstatic.cn/generate_204 time=98ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Tue, 01 Sep 2026 11:06:02 GMT], X-Android-Received-Millis=[1788260762429], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1788260762370]}
+09-01 19:06:02.482 D/NetworkMonitor/102( 2225): PROBE_HTTPS https://connectivitycheck.gstatic.cn/generate_204 time=147ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Tue, 01 Sep 2026 11:06:02 GMT], X-Android-Received-Millis=[1788260762480], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1788260762415]}
+09-01 19:06:02.484 D/NetworkMonitor/102( 2225): isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=171ms
+09-01 19:06:02.487 D/ConnectivityService( 1816): [102 WIFI] validation passed
+09-01 19:06:02.651 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU:39.5503 raw data: VIRTUAL-SKIN:39550.2 VIRTUAL-SKIN-CPU:39550.2 
+09-01 19:06:02.656 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU power_budget=1633.37 err=1.44975 s_power=800 time_elapsed_ms=7013 p=579.9 i=253.47 d=-0 compensation=0 budget transient=0 control target=3
+09-01 19:06:02.657 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 54.53 mW)(S2M_VDD_CPUCL2: 3.89 mW)(S3M_VDD_CPUCL1: 12.45 mW)
+09-01 19:06:02.657 I/pixel-thermal( 1838): quiet_therm:38.205 raw data: quiet_therm:38205 
+09-01 19:06:02.657 I/pixel-thermal( 1838): VIRTUAL-SKIN:39.5503 raw data: VIRTUAL-SKIN:39550.2 
+09-01 19:06:02.658 I/pixel-thermal( 1838): VIRTUAL-SKIN-HINT:39.5503 raw data: VIRTUAL-SKIN:39550.2 VIRTUAL-SKIN-HINT:39550.2 
+09-01 19:06:02.659 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE:39.5089 raw data: VIRTUAL-QI-BATT:39508.9 VIRTUAL-QI-GNSS:38158.2 VIRTUAL-QUIET-BATT:35290.8 VIRTUAL-SKIN-CHARGE:39508.9 VIRTUAL-USB2-DISP:-14526.1 battery:39000 qi_therm:43586 
+09-01 19:06:02.659 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's fcc binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 523.825
+09-01 19:06:02.659 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's wlc_fcc binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 523.825
+09-01 19:06:02.659 I/pixel-thermal( 1838): VIRTUAL-SKIN-CHARGE's dc_icl binded power rail PARTIAL_SYSTEM_POWER: power threshold = 500, avg power = 523.825
+09-01 19:06:02.660 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU:39.5503 raw data: VIRTUAL-SKIN:39550.2 VIRTUAL-SKIN-CPU-GPU:39550.2 
+09-01 19:06:02.660 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU power_budget=2745.7 err=5.44975 s_power=800 time_elapsed_ms=7013 p=1634.92 i=310.776 d=-0 compensation=0 budget transient=0 control target=3
+09-01 19:06:02.660 I/pixel-thermal( 1838): VIRTUAL-SKIN-CPU-GPU binded power rails: (S4M_VDD_CPUCL0: 54.53 mW)(S2M_VDD_CPUCL2: 3.89 mW)(S3M_VDD_CPUCL1: 12.45 mW)(S2S_VDD_G3D: 1.84 mW)
+09-01 19:06:02.661 I/pixel-thermal( 1838): cellular-emergency:39.5503 raw data: VIRTUAL-SKIN:39550.2 cellular-emergency:39550.2 
+09-01 19:06:03.182 D/RILClient( 1206): [OemClient]IND: (clientId = 0, msgId = 2015, dataLength = 148, channel = 0)
+09-01 19:06:03.182 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:06:03.183 D/RILClient(  973): [OemClient]IND: (clientId = 6, msgId = 2015, dataLength = 148, channel = 0)
+09-01 19:06:03.192 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:06:03.202 D/IwlanNetworkService$IwlanNetworkServiceHandler( 2758): msg.what = EVENT_NETWORK_REGISTRATION_INFO_REQUEST
+09-01 19:06:03.219 D/IwlanNetworkService$IwlanNetworkServiceHandler[0]( 2758): : reg state REGISTRATION_STATE_HOME
+09-01 19:06:03.232 D/RILClient( 1206): [OemClient]IND: (clientId = 0, msgId = 3005, dataLength = 24, channel = 0)
+09-01 19:06:03.233 D/RILClient(  973): [OemClient]IND: (clientId = 6, msgId = 3005, dataLength = 24, channel = 0)
+09-01 19:06:03.240 I/SHANNON_IMS( 2400): 2461 [NETW] #:PURP:# UNSOL {RILC_UNSOL_IMS_SUPPORT_SERVICE} : VoPS : 1  EMC : 0  SIM_IDX : 0  RAT : 14  REG_STATE : 1  CELL_ID : 44825089  LAC/TAC : 10031  PLMN : 46000  (NetworkAdaptor$AdaptorChannel%onMessage:306)
+09-01 19:06:03.241 I/SHANNON_IMS( 2400): 2462 [CONN] #:ORNG:# supportService [VoPS : 1/ EMC : 0/ RAT_INFO : 14/ REG_STATE : 1/ CELL_ID : 44825089/ LAC-TAC Info : 10031/ PLMN : 46000]  [SLID:0 ] (ImsConnectivityMgr$RegistrationListener%supportService:2888)
+09-01 19:06:03.314 D/GlobalActionsDialogLite( 2139): Service changed before actions created
+09-01 19:06:03.314 D/GlobalActionsDialogLite( 2139): Service changed before actions created
+09-01 19:06:03.331 D/StateService( 3770): Country ISO: cn
+09-01 19:06:03.332 D/ConnectivityMonitorStateMachine( 3770): [onServiceStateChanged] {subId=1} ServiceState= {mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=39148, duplexMode()=2, mCellBandwidths=[10000], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=PS transportType=WLAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=IWLAN rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=**** rRplmn= isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=null voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA,MMS] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 16 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false mLteAttachResultType = 0 mLteAttachExtraInfo = 0 LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=CMCC, mOperatorAlphaShortRaw=CMCC, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false, mIsUsingNonTerrestrialNetwork=false}, vops=true
+09-01 19:06:03.334 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1320 android.content.Context.sendBroadcastMultiplePermissions:2542 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4160 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 
+09-01 19:06:03.334 D/ConnectivityMonitorStateMachine( 3770): [onServiceStateChanged] {subId=1} sendMessage(SERVICE_STATE_CHANGED) id=5ff6e244-b92f-48fb-935c-2c457b1c2ded
+09-01 19:06:03.335 D/ConnectivityMonitorStateMachine( 3770): [Default] {subId=1} processMessage(SERVICE_STATE_CHANGED) CMMessage{id=5ff6e244-b92f-48fb-935c-2c457b1c2ded, obj={mVoiceRegState=0(IN_SERVICE), mDataRegState=0(IN_SERVICE), mChannelNumber=39148, duplexMode()=2, mCellBandwidths=[10000], mOperatorAlphaLong=null, mOperatorAlphaShort=null, isManualNetworkSelection=false(automatic), getRilVoiceRadioTechnology=14(LTE), getRilDataRadioTechnology=14(LTE), mCssIndicator=unsupported, mNetworkId=-1, mSystemId=-1, mCdmaRoamingIndicator=-1, mCdmaDefaultRoamingIndicator=-1, mIsEmergencyOnly=false, isUsingCarrierAggregation=false, mArfcnRsrpBoost=0, mNetworkRegistrationInfos=[NetworkRegistrationInfo{ domain=PS transportType=WLAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=IWLAN rejectCause=0 emergencyEnabled=false availableServices=[DATA] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=null nrState=**** rRplmn= isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=CS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[VOICE,SMS,VIDEO] cellIdentity=null voiceSpecificInfo=VoiceSpecificRegistrationInfo { mCssSupported=false mRoamingIndicator=0 mSystemIsInPrl=0 mDefaultRoamingIndicator=0} dataSpecificInfo=null nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}, NetworkRegistrationInfo{ domain=PS transportType=WWAN registrationState=HOME networkRegistrationState=HOME roamingType=NOT_ROAMING accessNetworkTechnology=LTE rejectCause=0 emergencyEnabled=false availableServices=[DATA,MMS] cellIdentity=null voiceSpecificInfo=null dataSpecificInfo=android.telephony.DataSpecificRegistrationInfo :{ maxDataCalls = 16 isDcNrRestricted = false isNrAvailable = false isEnDcAvailable = false mLteAttachResultType = 0 mLteAttachExtraInfo = 0 LteVopsSupportInfo :  mVopsSupport = 2 mEmcBearerSupport = 3 } nrState=**** rRplmn=46000 isUsingCarrierAggregation=false isNonTerrestrialNetwork=TERRESTRIAL}], mNrFrequencyRange=0, mOperatorAlphaLongRaw=CMCC, mOperatorAlphaShortRaw=CMCC, mIsDataRoamingFromRegistration=false, mIsIwlanPreferred=false, mIsUsingNonTerrestrialNetwork=false}, timestamp=2026-09-01T11:06:03.334Z}
+09-01 19:06:03.336 D/ConnectivityEventWriter( 3770): Event filtered: SERVICE_STATE_CHANGED
+09-01 19:06:03.338 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4165 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:06:03.341 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4174 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:06:03.343 I/SHANNON_IMS( 2400): 2470 [PROX] onReceive: intent= [Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 (has extras) }] (ConnectivityBroadcastReceiver%onReceive:91)
+09-01 19:06:03.343 W/ContextImpl( 1816): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcastMultiplePermissions:1353 com.android.server.TelephonyRegistry.broadcastServiceStateChanged:4180 com.android.server.TelephonyRegistry.notifyServiceStateForPhoneId:1848 com.android.internal.telephony.ITelephonyRegistry$Stub.onTransact:613 android.os.Binder.execTransactInternal:1406 
+09-01 19:06:03.346 D/ServiceStateProvider( 2434): subId=1
+09-01 19:06:03.362 D/CellBroadcastReceiver( 2948): onReceive Intent { act=android.intent.action.SERVICE_STATE flg=0x1000010 cmp=com.google.android.cellbroadcastreceiver/com.android.cellbroadcastreceiver.CellBroadcastReceiver (has extras) }
+09-01 19:06:03.363 D/CellBroadcastReceiver( 2948): onServiceStateChanged, ss: 0
+09-01 19:06:03.363 D/CellBroadcastReceiver( 2948): networkOperator: 46000
+09-01 19:06:03.364 D/CellBroadcastReceiver( 2948): update supported roaming operator as 
+09-01 19:06:03.364 I/Telephony( 2434): TelecomAccountRegistry$TelecomAccountTelephonyCallback: TelecomAccountRegistry: onServiceStateChanged: newState=0, mServiceState=0
+09-01 19:06:03.373 I/Telephony( 2434): isRttCurrentlySupported -- regular acct, hasVoiceAvailability: false
+09-01 19:06:03.373 I/Telephony( 2434):  isRttSupported: false
+09-01 19:06:03.373 I/Telephony( 2434):  alwaysAllowWhileRoaming: false
+09-01 19:06:03.373 I/Telephony( 2434):  isRoaming: false
+09-01 19:06:03.373 I/Telephony( 2434):  isOnWfc: false
+09-01 19:06:03.454 I/SHANNON_IMS( 2400): 2474 [CALL] isEmcAvailable for false (ImsCallManager%isEmcAvailable:1525)
+09-01 19:06:03.572 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=60.00 Hz, modePtr={id=0, vsyncRate=60.00 Hz, peakRefreshRate=60.00 Hz}}, emitEvent=false, force=false}
+09-01 19:06:03.587 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(36) test(0)
+09-01 19:06:03.587 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(36)
+09-01 19:06:04.191 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:06:04.200 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:06:04.449 W/SHANNON_IMS( 2400): 2475 [CONN] Timer IMS_SUPPORT_SERVICE_TIMER expired (ConnectionTimer$ConnectionTimerTask%run:76)
+09-01 19:06:04.459 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:04.461 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:04.461 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:04.463 I/WifiHAL (  956): Creating message to get link statistics; iface = 47
+09-01 19:06:04.594 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:06:04.594 W/JobService(19285): onNetworkChanged() not implemented in androidx.work.impl.background.systemjob.SystemJobService. Must override in a subclass.
+09-01 19:06:04.595 D/IwlanDataService( 2758): onCapabilitiesChanged: 102 [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: "free52", BSSID: d4:53:2a:01:2f:4b, MAC: b6:73:b4:36:4d:81, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -47, Link speed: 720Mbps, Tx Link speed: 720Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: 0, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: 1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none>"free52"wpa2-pskMLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -47 OwnerUid: 1000 AdminUids: [1000] SSID: "free52" UnderlyingNetworks: Null]
+09-01 19:06:04.595 D/IwlanDataService( 2758): Network 102 connected using transport WIFI
+09-01 19:06:04.599 D/SHANNON_RCS( 2373): 2361 [0][PROX][TELE] onCapabilitiesChanged, Network: 102, NetworkCapabilities: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -47, Link speed: 720Mbps, Tx Link speed: 720Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -47 UnderlyingNetworks: Null] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:06:04.599 W/SHANNON_IMS( 2400): 2478 [CONN] NetworkSpecifier and TransportInfo are not valid (DefaultNetworkCallback%updateSubscriptionId:121)
+09-01 19:06:04.599 I/BugleRcsEngine( 3050): Connected state: [1], networkType: [WIFI] [CONTEXT thread_id=45 ]
+09-01 19:06:04.599 I/SHANNON_IMS( 2400): 2479 [CONN] network:102 WIFI connected, subId: -1 [SLID:0] (DefaultNetworkCallback%onCapabilitiesChanged:76)
+09-01 19:06:04.600 D/IwlanNetworkService( 2758): onCapabilitiesChanged: 102
+09-01 19:06:04.600 I/BugleRcsEngine( 3050): handleMessage processing message:[NOTIFY_UPTIME_IGNORE_STATE_CHANGED] with [non-null]:RcsEngineImpl reference [CONTEXT log_prefix="RcsEngineImpl[DUAL_REG]:[12bb6c57-0d5d]>Handler" thread_id=51 ]
+09-01 19:06:04.601 D/DeviceStateHelper( 3770): Wifi freq: 5745
+09-01 19:06:04.604 I/WifiSignalInfo( 3770): onCapabilitiesChanged: rssi:-47
+09-01 19:06:04.606 D/CHRE    (  904): @ 15497.421: Parsed nanoapp message from host: app ID 0x476f6f676c00100b endpoint 0x2 msgType 112 payload size 14
+09-01 19:06:04.606 I/CHRE    (  904): @ 15497.422: [NanoMinion] received MSG Type 0x70, Version 1, 10 bytes
+09-01 19:06:04.606 I/MagicTether( 2508): (REDACTED) [ActiveNetworkTracker] setActiveNetwork: %s
+09-01 19:06:04.606 I/MagicTether( 2508): (REDACTED) [TetherService] onActiveNetworkChanged: network=%s isLost=%s
+09-01 19:06:04.606 I/CHRE    (  904): @ 15497.423: [AR] context-signal: has_bt=0, bt=0, has_wifi=1, wifi=1
+09-01 19:06:04.607 I/MagicTether( 2508): [WifiConnectionHandler] Ignoring getWifiConfigurationByNetworkId when checking connected state [CONTEXT service_id=276 ]
+09-01 19:06:04.607 I/MagicTether( 2508): [WifiConnectionHandler] No networkId set, can't be connected. [CONTEXT service_id=276 ]
+09-01 19:06:04.607 I/MagicTether( 2508): (REDACTED) [TetherService] TRANSPORT_CELLULAR [%s], TRANSPORT_ETHERNET [%s], TRANSPORT_WIFI [%s]
+09-01 19:06:04.609 D/WM-NetworkStateTracker(19285): Network capabilities changed: [ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED LinkUpBandwidth>=19668Kbps LinkDnBandwidth>=71175Kbps TransportInfo: <SSID: <unknown ssid>, BSSID: 02:00:00:00:00:00, MAC: 02:00:00:00:00:00, IP: /192.168.31.240, Security type: 2, Supplicant state: COMPLETED, Wi-Fi standard: 11ax, RSSI: -47, Link speed: 720Mbps, Tx Link speed: 720Mbps, Max Supported Tx Link speed: 1200Mbps, Rx Link speed: 1080Mbps, Max Supported Rx Link speed: 1200Mbps, Frequency: 5745MHz, Net ID: -1, Metered hint: false, score: 60, isUsable: true, CarrierMerged: false, SubscriptionId: -1, IsPrimary: -1, Trusted: true, Restricted: false, Ephemeral: false, OEM paid: false, OEM private: false, OSU AP: false, FQDN: <none>, Provider friendly name: <none>, Requesting package name: <none><none>MLO Information: , Is TID-To-Link negotiation supported by the AP: false, AP MLD Address: <none>, AP MLO Link Id: <none>, AP MLO Affiliated links: <none>, Vendor Data: <none>> SignalStrength: -47 UnderlyingNetworks: Null]
+09-01 19:06:04.609 D/GRIL-S  ( 2345): [1422]> SET_PREFERRED_CAMERA_FREQ_1_5[1537760, 1548000]
+09-01 19:06:04.609 D/GRIL-S  ( 2345): [1422]< SET_PREFERRED_CAMERA_FREQ_1_5 
+09-01 19:06:04.610 I/MagicTether( 2508): (REDACTED) [TetherService] setRoles hasActiveNetworkConnection=%s canActiveNetworkBeTethered=%s isConnectedToInstantTether=%s isWifiEnabled=%s isHosting=%s
+09-01 19:06:04.611 D/GRIL-S  ( 2345): [1423]> SET_PREFERRED_CAMERA_FREQ_1_5[694270, 706560]
+09-01 19:06:04.611 D/GRIL-S  ( 2345): [1423]< SET_PREFERRED_CAMERA_FREQ_1_5 
+09-01 19:06:04.612 D/GRIL-S  ( 2345): [1424]> SET_PREFERRED_DISPLAY_FREQ_1_4[1100000, 1120000]
+09-01 19:06:04.612 D/GRIL-S  ( 2345): [1424]< SET_PREFERRED_DISPLAY_FREQ_1_4 
+09-01 19:06:04.613 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:06:04.613 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:06:04.613 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:06:04.613 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyClientRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:06:04.613 I/MagicTether( 2508): [TetherService] Stopping Nearby client role [CONTEXT service_id=276 ]
+09-01 19:06:04.613 I/MagicTether( 2508): [ClientTetherRole] Client role already stopped [CONTEXT service_id=276 ]
+09-01 19:06:04.614 I/MagicTether( 2508): (REDACTED) [LaunchUtils] Instant Wifi for status account: name: %s | type: %s | isLaunched: %s
+09-01 19:06:04.614 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:06:04.614 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantWifiEnabled=%s
+09-01 19:06:04.614 I/MagicTether( 2508): (REDACTED) [TetherService] startNearbyHostRole: start: %s isInstantHotspotEnabled: %s isInstantWifiEnabled: %s
+09-01 19:06:04.614 I/MagicTether( 2508): (REDACTED) [TidepoolFeatureStatusManager] isInstantHotspotEnabled=%s
+09-01 19:06:04.614 I/MagicTether( 2508): [HostTetherRole] Nearby host role already started [CONTEXT service_id=276 ]
+09-01 19:06:04.616 I/NullBinder( 2508): NullBinder for android.net.action.RECOMMEND_NETWORKS triggering remote TransactionTooLargeException due to Service without Chimera impl, calling uid: 1000, calling pid: 0
+09-01 19:06:04.616 W/.gms.persistent( 2508): Large reply transaction of 1056768 bytes, interface descriptor , code 1
+09-01 19:06:04.617 D/ConnectivityService( 1816): NetReassign [no changes] [c 2] [a 2] [i 3]
+09-01 19:06:04.769 E/AuthPII ( 2508): [RequestTokenManager] getToken() -> NETWORK_ERROR. App: com.google.android.googlequicksearchbox, Service: oauth2:https://www.googleapis.com/auth/googlenow
+09-01 19:06:04.769 E/AuthPII ( 2508): bcer: Error when calling server using GmsNetworkStack.
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1543)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at aeyb.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):537)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):141)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at aeri.getAuthToken(:com.google.android.gms@254334035@25.43.34 (260400-827649125):412)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at android.accounts.AbstractAccountAuthenticator$Transport.getAuthToken(AbstractAccountAuthenticator.java:248)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:254)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:04.769 E/AuthPII ( 2508): Caused by: bcer: Error requesting token.
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):212)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	... 12 more
+09-01 19:06:04.769 E/AuthPII ( 2508): Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 795181 nanoseconds delay) for grdh@b1b8094[status=PENDING, info=[inputFuture=[grdh@25b073d[status=PENDING, info=[inputFuture=[kix@324db32[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[aedc@c26c083]]]], function=[aeyc@37a1200]]]
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at grde.v(:com.google.android.gms@254334035@25.43.34 (260400-827649125):371)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):197)
+09-01 19:06:04.769 E/AuthPII ( 2508): 	... 13 more
+09-01 19:06:04.770 E/AuthPII ( 2508): Message is Error when calling server using GmsNetworkStack.
+09-01 19:06:04.770 E/AuthPII ( 2508): bcer: Error when calling server using GmsNetworkStack.
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):1543)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at aeyb.a(:com.google.android.gms@254334035@25.43.34 (260400-827649125):537)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):141)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at aeri.getAuthToken(:com.google.android.gms@254334035@25.43.34 (260400-827649125):412)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at android.accounts.AbstractAccountAuthenticator$Transport.getAuthToken(AbstractAccountAuthenticator.java:248)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:254)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:04.770 E/AuthPII ( 2508): Caused by: bcer: Error requesting token.
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):212)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at aeyd.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):50)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	... 12 more
+09-01 19:06:04.770 E/AuthPII ( 2508): Caused by: java.util.concurrent.TimeoutException: Waited 30 seconds (plus 795181 nanoseconds delay) for grdh@b1b8094[status=PENDING, info=[inputFuture=[grdh@25b073d[status=PENDING, info=[inputFuture=[kix@324db32[status=PENDING, info=[tag=[GmsUrlRequestImpl.startWithFuture()]]]], function=[aedc@c26c083]]]], function=[aeyc@37a1200]]]
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at grde.v(:com.google.android.gms@254334035@25.43.34 (260400-827649125):371)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	at aeyd.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):197)
+09-01 19:06:04.770 E/AuthPII ( 2508): 	... 13 more
+09-01 19:06:04.770 I/Auth    ( 2508): (REDACTED) [GetToken] GetToken failed for app=%s with non recoverable status code: %s 
+09-01 19:06:04.771 W/Auth    ( 2508): [ChimeraGetToken] exception while trying to fetch auth tokens for app=com.google.android.gsf, scope=oauth2:https://www.googleapis.com/auth/googlenow [CONTEXT service_id=153 ]
+09-01 19:06:04.771 W/Auth    ( 2508): aexw: GetToken failed with status code: NetworkError
+09-01 19:06:04.771 W/Auth    ( 2508): 	at aeya.b(:com.google.android.gms@254334035@25.43.34 (260400-827649125):345)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at yio.d(:com.google.android.gms@254334035@25.43.34 (260400-827649125):620)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at aeri.getAuthToken(:com.google.android.gms@254334035@25.43.34 (260400-827649125):412)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at android.accounts.AbstractAccountAuthenticator$Transport.getAuthToken(AbstractAccountAuthenticator.java:248)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:254)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at cfiw.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):10)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at android.os.Binder.transact(Binder.java:1258)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at bufa.onTransact(:com.google.android.gms@254334035@25.43.34 (260400-827649125):161)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at android.os.Binder.execTransactInternal(Binder.java:1411)
+09-01 19:06:04.771 W/Auth    ( 2508): 	at android.os.Binder.execTransact(Binder.java:1350)
+09-01 19:06:04.771 W/GLSActivity( 2508): [GmsAccountAuthenticatorImpl] error status while fetching token:NetworkError
+09-01 19:06:05.198 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:06:05.207 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)
+09-01 19:06:05.781 I/WifiHAL (  956): Creating message to get link statistics; iface = 47
+09-01 19:06:05.871 D/EuiccConnector( 2434): handleMessage: E msg.what=3
+09-01 19:06:05.871 D/EuiccConnector( 2434): processMsg: ConnectedState
+09-01 19:06:05.878 I/EuiccGoogle( 2919): [2] EuiccServiceImpl.onDestroy: onDestroy: EuiccService on destroy.
+09-01 19:06:05.890 D/EuiccConnector( 2434): transitionTo: destState=AvailableState
+09-01 19:06:05.890 D/EuiccConnector( 2434): handleMessage: new destination call exit/enter
+09-01 19:06:05.890 D/EuiccConnector( 2434): setupTempStateStackWithStatesToEnter: X mTempStateStackCount=2,curStateInfo: null
+09-01 19:06:05.891 D/EuiccConnector( 2434): invokeExitMethods: ConnectedState
+09-01 19:06:05.891 D/EuiccConnector( 2434): invokeExitMethods: DisconnectedState
+09-01 19:06:05.891 D/EuiccConnector( 2434): moveTempStackToStateStack: i=1,j=0
+09-01 19:06:05.891 D/EuiccConnector( 2434): moveTempStackToStateStack: i=0,j=1
+09-01 19:06:05.891 D/EuiccConnector( 2434): moveTempStackToStateStack: X mStateStackTop=1,startingIndex=0,Top=AvailableState
+09-01 19:06:05.891 D/EuiccConnector( 2434): invokeEnterMethods: UnavailableState
+09-01 19:06:05.891 D/EuiccConnector( 2434): invokeEnterMethods: AvailableState
+09-01 19:06:05.892 D/EuiccConnector( 2434): handleMessage: X
+09-01 19:06:05.916 I/SHANNON_IMS( 2400): 2482 [PROX] Received onSignalStrengthsChanged [CellSignalStrengthLte: rssi=-75 rsrp=-96 rsrq=-7 rssnr=11 cqiTableIndex=1 cqi=14 ta=7 level=4 parametersUseForLevel=0] [SLID:0 APM:false] (ImsConnectivityProxyListener$ImsPhoneStateListener%onSignalStrengthsChanged:413)
+09-01 19:06:05.918 D/DisplayModeController(  592): setDesiredMode 4619827677550801152 {mode={fps=90.00 Hz, modePtr={id=1, vsyncRate=90.00 Hz, peakRefreshRate=90.00 Hz}}, emitEvent=true, force=false}
+09-01 19:06:05.925 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:05.927 W/BestClock( 1816): java.time.DateTimeException: No network time available
+09-01 19:06:05.935 D/hwc-display(  594): setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+09-01 19:06:05.935 I/hwc-display(  594): [PrimaryDisplay] setActiveConfigWithConstraints: config(37)
+09-01 19:06:05.940 D/TrafficStats( 2919): tagSocket(5) with statsTag=0x8003, statsUid=-1
+09-01 19:06:06.206 W/ServiceManagerCppClient( 1816): Waited one second for android.hardware.biometrics.fingerprint.IFingerprint/default (is service started? Number of threads started in the threadpool: 32. Are binder threads started and available?)
+09-01 19:06:06.214 W/libc    (  528): Unable to set property "ctl.interface_start" to "aidl/android.hardware.biometrics.fingerprint.IFingerprint/default": PROP_ERROR_HANDLE_CONTROL_MESSAGE (0x20)

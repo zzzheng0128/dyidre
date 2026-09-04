@@ -1,0 +1,4 @@
+[gum-exevm-350101] standalone loaded; vmCodeOffset=0x1f7860
+[gum-exevm-350101] waiting for libmetasec_ml.so
+[gum-exevm-350101] base=0x789652e000 size=0x2c9000 exeVMInner=0x789657ac10 target_vm_code=0x1f7860 raw_gumtrace=true structured_points=false
+[vm35] {"event":"VM_ENTER","run":1,"tid":30735,"seq":0,"module":"libmetasec_ml.so","module_base":"0x789652e000","code_ptr":"0x7896725860","code_offset":"0x1f7860","x1":"0x78cfdc5370","x2":"0x789679d2e0","x3":"0x789679d300","x4":"0x78cfdc5390","lr":"0x7896652e34"}

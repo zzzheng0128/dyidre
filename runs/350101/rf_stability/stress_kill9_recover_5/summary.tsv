@@ -1,0 +1,6 @@
+01	pre_clean=0	pre_recover=0	ready=0	after_kill_dirty=1	recover_rc=0	post_clean=0	stale_seen=1	restored=1	bad=0
+02	pre_clean=0	pre_recover=0	ready=0	after_kill_dirty=1	recover_rc=0	post_clean=0	stale_seen=1	restored=1	bad=0
+03	pre_clean=0	pre_recover=0	ready=0	after_kill_dirty=1	recover_rc=0	post_clean=0	stale_seen=1	restored=1	bad=0
+04	pre_clean=0	pre_recover=0	ready=0	after_kill_dirty=1	recover_rc=0	post_clean=0	stale_seen=1	restored=1	bad=0
+05	pre_clean=0	pre_recover=0	ready=0	after_kill_dirty=1	recover_rc=0	post_clean=0	stale_seen=1	restored=1	bad=0
+final_clean=0

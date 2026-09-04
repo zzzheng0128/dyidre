@@ -9,8 +9,13 @@ _archive/**
 !_archive/
 !_archive/README.md
 
-# smoke_* 是脚本自测输出，可重新生成；真正基准 run 保留在非 smoke 目录。
-runs/**/smoke_*/
+# smoke/dry/regression 是本地分析或脚本自测输出，可重新生成；真正基准 run 保留在
+# 非这些目录中。允许 smoke、smoke_*、dry、dry_*、regression_* 等命名，避免临时
+# 结果误提交。固定功能的正式结果由 runner 写入 latest/，不依赖这些忽略规则。
+runs/**/smoke*/
+runs/**/dry*/
+runs/**/.dry*/
+runs/**/regression*/
 
 # 进程号/临时状态文件。
 *.pid

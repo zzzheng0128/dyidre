@@ -1,0 +1,12 @@
+{
+  "run_dir": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/frida_capture_from_run_metasec_norestart_20260902_002925",
+  "engine": "frida",
+  "frida_attach": true,
+  "runtime_js": "/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/frida_capture_from_run_metasec_norestart_20260902_002925/runtime_url_jn_packet_fullbody_350101.js",
+  "remote_js": "",
+  "seconds": 90,
+  "packet_b64": 62,
+  "uploaded": 62,
+  "upload_failed": 0,
+  "process_rc": 0
+}

@@ -1,0 +1,191 @@
+# target process monitor
+# package=com.ss.android.ugc.aweme interval=1s
+# started_at=2026-09-01 17:38:19
+[2026-09-01 17:38:19] pids=<none>
+[2026-09-01 17:38:20] pids=<none>
+[2026-09-01 17:38:22] pids=18966
+  ps: u0_a281      18966   882   39069148 1002376 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1004168 kB
+  status[18966]: VmRSS:	 1000892 kB
+  status[18966]: Threads:	228
+[2026-09-01 17:38:22] EVENT first_seen pids=18966
+[2026-09-01 17:38:24] pids=18966
+  ps: u0_a281      18966   882   39680152 1015240 0                  0 R com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1035368 kB
+  status[18966]: VmRSS:	 1018736 kB
+  status[18966]: Threads:	252
+[2026-09-01 17:38:26] pids=18966
+  ps: u0_a281      18966   882   39765176 1104124 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1104388 kB
+  status[18966]: VmRSS:	 1099160 kB
+  status[18966]: Threads:	252
+[2026-09-01 17:38:28] pids=18966
+  ps: u0_a281      18966   882   40012908 1167188 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1167188 kB
+  status[18966]: VmRSS:	 1167188 kB
+  status[18966]: Threads:	257
+[2026-09-01 17:38:30] pids=18966
+  ps: u0_a281      18966   882   40034028 1086812 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1195936 kB
+  status[18966]: VmRSS:	 1088084 kB
+  status[18966]: Threads:	258
+[2026-09-01 17:38:32] pids=18966
+  ps: u0_a281      18966   882   40808612 1276132 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1276132 kB
+  status[18966]: VmRSS:	 1276132 kB
+  status[18966]: Threads:	300
+[2026-09-01 17:38:34] pids=18966
+  ps: u0_a281      18966   882   40929400 1333956 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1347948 kB
+  status[18966]: VmRSS:	 1304568 kB
+  status[18966]: Threads:	301
+[2026-09-01 17:38:36] pids=18966
+  ps: u0_a281      18966   882   40919964 1178576 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1347948 kB
+  status[18966]: VmRSS:	 1179032 kB
+  status[18966]: Threads:	301
+[2026-09-01 17:38:37] pids=18966
+  ps: u0_a281      18966   882   40939656 1186632 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1347948 kB
+  status[18966]: VmRSS:	 1187868 kB
+  status[18966]: Threads:	302
+[2026-09-01 17:38:39] pids=18966
+  ps: u0_a281      18966   882   40941660 1225124 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[18966]: Name:	droid.ugc.aweme
+  status[18966]: State:	S (sleeping)
+  status[18966]: Tgid:	18966
+  status[18966]: Pid:	18966
+  status[18966]: PPid:	882
+  status[18966]: TracerPid:	0
+  status[18966]: VmHWM:	 1347948 kB
+  status[18966]: VmRSS:	 1225368 kB
+  status[18966]: Threads:	302
+[2026-09-01 17:38:41] pids=<none>
+[2026-09-01 17:38:41] EVENT pid_change old=18966 new=<none>
+[2026-09-01 17:38:41] EVENT disappeared
+[2026-09-01 17:38:43] pids=<none>
+[2026-09-01 17:38:43] EVENT disappeared
+[2026-09-01 17:38:44] pids=<none>
+[2026-09-01 17:38:44] EVENT disappeared
+[2026-09-01 17:38:46] pids=<none>
+[2026-09-01 17:38:46] EVENT disappeared
+[2026-09-01 17:38:48] pids=<none>
+[2026-09-01 17:38:48] EVENT disappeared
+[2026-09-01 17:38:49] pids=<none>
+[2026-09-01 17:38:49] EVENT disappeared
+[2026-09-01 17:38:51] pids=<none>
+[2026-09-01 17:38:51] EVENT disappeared
+[2026-09-01 17:38:52] pids=<none>
+[2026-09-01 17:38:52] EVENT disappeared
+[2026-09-01 17:38:54] pids=<none>
+[2026-09-01 17:38:54] EVENT disappeared
+[2026-09-01 17:38:56] pids=<none>
+[2026-09-01 17:38:56] EVENT disappeared
+[2026-09-01 17:38:57] pids=<none>
+[2026-09-01 17:38:57] EVENT disappeared
+[2026-09-01 17:38:59] pids=<none>
+[2026-09-01 17:38:59] EVENT disappeared
+[2026-09-01 17:39:01] pids=<none>
+[2026-09-01 17:39:01] EVENT disappeared
+[2026-09-01 17:39:02] pids=<none>
+[2026-09-01 17:39:02] EVENT disappeared
+[2026-09-01 17:39:04] pids=<none>
+[2026-09-01 17:39:04] EVENT disappeared
+[2026-09-01 17:39:06] pids=<none>
+[2026-09-01 17:39:06] EVENT disappeared
+[2026-09-01 17:39:07] pids=<none>
+[2026-09-01 17:39:07] EVENT disappeared
+[2026-09-01 17:39:09] pids=<none>
+[2026-09-01 17:39:09] EVENT disappeared
+[2026-09-01 17:39:10] pids=<none>
+[2026-09-01 17:39:10] EVENT disappeared
+[2026-09-01 17:39:12] pids=<none>
+[2026-09-01 17:39:12] EVENT disappeared
+[2026-09-01 17:39:14] pids=<none>
+[2026-09-01 17:39:14] EVENT disappeared
+[2026-09-01 17:39:15] pids=<none>
+[2026-09-01 17:39:15] EVENT disappeared
+[2026-09-01 17:39:17] pids=<none>
+[2026-09-01 17:39:17] EVENT disappeared
+[2026-09-01 17:39:19] pids=<none>
+[2026-09-01 17:39:19] EVENT disappeared
+[2026-09-01 17:39:20] pids=<none>
+[2026-09-01 17:39:20] EVENT disappeared
+[2026-09-01 17:39:22] pids=<none>
+[2026-09-01 17:39:22] EVENT disappeared
+[2026-09-01 17:39:23] pids=<none>
+[2026-09-01 17:39:23] EVENT disappeared
+[2026-09-01 17:39:25] pids=<none>
+[2026-09-01 17:39:25] EVENT disappeared
+[2026-09-01 17:39:27] pids=<none>
+[2026-09-01 17:39:27] EVENT disappeared
+[2026-09-01 17:39:28] pids=<none>
+[2026-09-01 17:39:28] EVENT disappeared
+[2026-09-01 17:39:30] pids=<none>
+[2026-09-01 17:39:30] EVENT disappeared
+[2026-09-01 17:39:32] pids=<none>
+[2026-09-01 17:39:32] EVENT disappeared
+[2026-09-01 17:39:33] pids=<none>
+[2026-09-01 17:39:33] EVENT disappeared
+[2026-09-01 17:39:35] pids=<none>
+[2026-09-01 17:39:35] EVENT disappeared
+[2026-09-01 17:39:36] pids=<none>
+[2026-09-01 17:39:36] EVENT disappeared
+[2026-09-01 17:39:38] pids=<none>
+[2026-09-01 17:39:38] EVENT disappeared
+[2026-09-01 17:39:40] pids=<none>
+[2026-09-01 17:39:40] EVENT disappeared

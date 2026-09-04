@@ -1,0 +1,66 @@
+[metasec-probe-runner] mode=packet-capture seconds=300 tag=wxshadow_capture_native_20260901_180500
+[metasec-probe-runner] out=/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/wxshadow_capture_native_20260901_180500
+/var/folders/bg/hg01ysdd12z8fnrn6h3n7v5w0000gn/T//metasec_probe_350101_packet-capture.nGxYdX.js: 1 file pushed, 0 skipped. 217.7 MB/s (16721 bytes in 0.000s)
+[metasec-probe-runner] adb reverse tcp:8891 -> tcp:8891
+[metasec-probe-runner] packet upload url=http://127.0.0.1:8891/up/dy/packets
+[metasec-probe-runner] force-stop com.ss.android.ugc.aweme
+[metasec-probe-runner] confirmed stopped: com.ss.android.ugc.aweme
+[metasec-probe-runner] logcat monitor: /Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/wxshadow_capture_native_20260901_180500/logcat_live.txt
+[metasec-probe-runner] dmesg monitor: /Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/wxshadow_capture_native_20260901_180500/dmesg_live.txt
+[metasec-probe-runner] process monitor: /Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/wxshadow_capture_native_20260901_180500/process_monitor.log
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=882)...
+[1m[33m [!][0m boot heap 中未命中 setArgV0 指针，回退扫描 67 个 ART 相关 RW private 区域
+[1m[33m [!][0m ART 相关 RW private 区域未命中 setArgV0 指针，继续扫描 24 个 ART 相关可读区域
+[1m[33m [!][0m 未在 boot heap、ART 相关 RW private 或 ART 相关可读区域中找到 setArgV0 指针 (0x70f49e2c00)，切换降级模式
+[1m[33m [!][0m 降级为 setcontext-only 阻塞（Android 版本兼容路径）
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=882)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[32m [✓][0m 收到 spawn hello: pid=8901, ppid=882, package=com.ss.android.ugc.aweme
+[1m[34m [*][0m 正在向子进程 8901 注入 agent...
+[1m[34m [*][0m 正在附加到进程 PID: 8901 (Frida-style bootstrapper)
+[1m[32m [✓][0m 成功附加到进程 8901，等待 SIGSTOP...
+[1m[32m [✓][0m 进程已停止，可以操作寄存器
+[1m[32m [✓][0m bootstrapper 完成: libc API 已解析
+[1m[32m [✓][0m 已分离目标进程
+[1m[32m [✓][0m Loader: agent 加载成功
+[1m[34m [*][0m 等待 agent 连接... (最长 60s)
+[1m[32m [✓][0m Agent 已连接
+[1m[34m [*][0m 子进程暂停中，准备加载脚本
+[1m[34m [*][0m 加载脚本: /data/local/tmp/metasec_probe_350101_packet-capture_wxshadow_capture_native_20260901_180500.js
+[1m[34m [*][0m 脚本发送到 raw clone TLS JS worker 执行
+[32m=> undefined[0m
+[1m[36m [→][0m 正在恢复子进程 8901...
+[1m[32m [✓][0m 子进程 8901 已恢复运行
+[1m[34m [*][0m spawn 已恢复，未检测到 Java 操作，Java worker 延迟到首次 Java API 时启动
+  [2m输入 help 查看命令，exit 退出[0m
+rustfrida> [metasec-probe-runner] monitor: com.ss.android.ugc.aweme pids=8901
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme pid change old=8901 new=<none>
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[metasec-probe-runner] monitor: com.ss.android.ugc.aweme disappeared
+[1m[34m [*][0m 退出交互模式
+[1m[34m [*][0m 已发送 shutdown，等待 agent 主动断开连接...
+[1m[34m [*][0m 正在还原 zygote 882 的 patch...
+Terminated 
+[1m[31m [✗][0m [#0] stream 写入失败: Broken pipe (os error 32)
+[1m[32m [✓][0m Zygote 882 patch 已还原

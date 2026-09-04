@@ -1,0 +1,24 @@
+run=/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/diag_spawn_only_tailfix_170947
+rf_sha=dbd3dd6ec7367762782e07950efd8992e11e42492f95587b1d7f673f1471dd70  /data/local/tmp/rustfrida
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn-only 诊断: 只启动并恢复 com.ss.android.ugc.aweme
+[1m[36m [→][0m SELinux permissive，跳过策略修补
+[1m[36m [→][0m Zymbiote socket 名称: rustfrida-zymbiote-edf815f60631800f1c0c8723dde8b50c
+[1m[36m [→][0m 跳过 32 位进程 zygote (pid=883)
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=882)...
+[1m[36m [→][0m Payload 写入位置: 0x70fe7ef000 (backing: /system/lib64/libstagefright.so +0x1ea000)
+[1m[36m [→][0m libc.so 基址: 0x70fb446000, 路径: /apex/com.android.runtime/lib64/bionic/libc.so
+[1m[36m [→][0m libc 函数地址已解析
+[1m[36m [→][0m setArgV0 地址: 0x70f49e2c00
+[1m[36m [→][0m selinux_android_setcontext 地址: 0x7112eefa40
+[1m[36m [→][0m ZymbioteContext: ctx_base=0xf38, payload_len=0x1020
+[1m[36m [→][0m build_payload: prop_remap=0 (PROP_PROFILE_DIR=None)
+[1m[36m [→][0m Payload 构建完成: 4128 bytes
+[1m[31m [✗][0m Zymbiote 注入 zygote64 (pid=882) 失败: payload 大小 (4128 bytes) 超过页面大小 (4096 bytes)
+[1m[31m [✗][0m Spawn-only 诊断失败: 所有 zygote 进程注入失败

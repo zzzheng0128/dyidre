@@ -1,0 +1,16 @@
+[04:48:48.636] HTTP(S) proxy listening at *:8080.
+[04:48:52.026][192.168.31.240:34580] client connect
+[04:48:52.026][192.168.31.240:34582] client connect
+[04:48:55.025][192.168.31.240:55376] client connect
+[04:49:02.035][192.168.31.240:34580] client disconnect
+[04:49:02.036][192.168.31.240:34580] error establishing server connection: client disconnected
+192.168.31.240:34580: GET http://connectivitycheck.gstatic.cn/generate_204
+ << client disconnected
+[04:49:02.039][192.168.31.240:34582] client disconnect
+[04:49:02.039][192.168.31.240:34582] error establishing server connection: client disconnected
+192.168.31.240:34582: CONNECT connectivitycheck.gstatic.cn:443
+                   << 502 Bad Gateway 207b
+[04:49:05.036][192.168.31.240:55376] client disconnect
+[04:49:05.037][192.168.31.240:55376] error establishing server connection: client disconnected
+192.168.31.240:55376: GET http://www.googleapis.cn/generate_204
+ << client disconnected

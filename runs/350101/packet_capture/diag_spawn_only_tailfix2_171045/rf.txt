@@ -1,0 +1,56 @@
+run=/Users/freeman/project/douyin/dyidre/runs/350101/packet_capture/diag_spawn_only_tailfix2_171045
+rf_sha=178790b680b265c76d3b766ff0fbecec9570885cca7b16dc52e9481f610eca04  /data/local/tmp/rustfrida
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn-only 诊断: 只启动并恢复 com.ss.android.ugc.aweme
+[1m[36m [→][0m SELinux permissive，跳过策略修补
+[1m[36m [→][0m Zymbiote socket 名称: rustfrida-zymbiote-82590384427dabcc79ad157a6427a5a6
+[1m[36m [→][0m 跳过 32 位进程 zygote (pid=883)
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=882)...
+[1m[36m [→][0m Payload 写入位置: 0x70fe7ef000 (backing: /system/lib64/libstagefright.so +0x1ea000)
+[1m[36m [→][0m libc.so 基址: 0x70fb446000, 路径: /apex/com.android.runtime/lib64/bionic/libc.so
+[1m[36m [→][0m libc 函数地址已解析
+[1m[36m [→][0m setArgV0 地址: 0x70f49e2c00
+[1m[36m [→][0m selinux_android_setcontext 地址: 0x7112eefa40
+[1m[36m [→][0m ZymbioteContext: ctx_base=0xee8, payload_len=0xfd0
+[1m[36m [→][0m build_payload: prop_remap=0 (PROP_PROFILE_DIR=None)
+[1m[36m [→][0m Payload 构建完成: 4048 bytes
+[1m[36m [→][0m 搜索 4 个 boot heap 区域查找 setArgV0 指针
+[1m[33m [!][0m boot heap 中未命中 setArgV0 指针，回退扫描 67 个 ART 相关 RW private 区域
+[1m[33m [!][0m ART 相关 RW private 区域未命中 setArgV0 指针，继续扫描 24 个 ART 相关可读区域
+[1m[33m [!][0m 未在 boot heap、ART 相关 RW private 或 ART 相关可读区域中找到 setArgV0 指针 (0x70f49e2c00)，切换降级模式
+[1m[33m [!][0m 降级为 setcontext-only 阻塞（Android 版本兼容路径）
+[1m[36m [→][0m payload 写入范围: [0x70fe7ef000,0x70fe7effd0) len=4048 vma=[0x70fe698000,0x70fe7f0000) perms=r-xp page_size=0x1000
+[1m[36m [→][0m Payload 写入完成
+[1m[36m [→][0m setcontext GOT 已替换: 0x70f4ac75f8
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=882)
+[1m[36m [→][0m 主进程解析: com.ss.android.ugc.aweme 使用默认包进程
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[36m [→][0m 正在停止应用 com.ss.android.ugc.aweme...
+[1m[36m [→][0m Launch activity: com.ss.android.ugc.aweme/.splash.SplashActivity
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[36m [→][0m Zymbiote hello: pid=31017, ppid=882, package=com.ss.android.ugc.aweme
+[1m[32m [✓][0m 收到 spawn hello: pid=31017, ppid=882, package=com.ss.android.ugc.aweme
+[1m[36m [→][0m 正在恢复子进程 31017...
+[1m[36m [→][0m 等待子进程 31017 关闭 socket...
+[1m[36m [→][0m 等待子进程 31017 SIGSTOP...
+[1m[36m [→][0m 子进程 31017 已停止
+[1m[36m [→][0m 还原子进程 31017 payload at 0x70fe7ef000 (4048 bytes)
+[1m[36m [→][0m 还原子进程 31017 setcontext GOT at 0x70f4ac75f8
+[1m[32m [✓][0m 子进程 31017 已恢复运行
+[1m[36m [→][0m Zymbiote hello: pid=31177, ppid=882, package=com.google.android.calendar
+[1m[36m [→][0m 未找到 com.google.android.calendar 的 spawn 请求，放行 pid=31177
+[1m[36m [→][0m 还原子进程 31177 payload at 0x70fe7ef000 (4048 bytes)
+[1m[36m [→][0m 还原子进程 31177 setcontext GOT at 0x70f4ac75f8
+[1m[36m [→][0m Zymbiote hello: pid=31211, ppid=882, package=com.google.android.odad
+[1m[36m [→][0m 未找到 com.google.android.odad 的 spawn 请求，放行 pid=31211
+[1m[36m [→][0m 还原子进程 31211 payload at 0x70fe7ef000 (4048 bytes)
+[1m[36m [→][0m 还原子进程 31211 setcontext GOT at 0x70f4ac75f8
+[1m[32m [✓][0m RF_DIAG_SPAWN_ONLY: 进程 31017 存活 25s
+[1m[34m [*][0m 正在还原 zygote 882 的 patch...
+[1m[32m [✓][0m Zygote 882 patch 已还原

@@ -1,0 +1,10 @@
+pid=869
+map=7b61c97000-7b61def000 r-xp 00093000 fe:0a 2881                           /system/lib64/libstagefright.so
+base=0x7b61dee000
+fileoff=0x1ea000
+len=4048
+mem_fnv=4f01425305bd63f0
+file_fnv=3cb34b8b30b2adbb
+dirty=1
+mem_head=fd7bbba908000090f90b00f9f85f02a9fd030091f65703a9f603012a08a547f9
+file_head=700000f0114247f910023a9120021fd6700000f0114647f910223a9120021fd6

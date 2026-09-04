@@ -1,0 +1,22 @@
+
+ [1m[36m╔══════════════════════════════════════╗[0m
+ [1m[36m║[0m  [1m      rustFrida v0.1.0             [0m[1m[36m║[0m
+ [1m[36m║[0m  [2m  ARM64 Dynamic Instrumentation    [0m[1m[36m║[0m
+ [1m[36m╚══════════════════════════════════════╝[0m
+
+[1m[34m [*][0m Spawn 模式: 准备注入 com.ss.android.ugc.aweme
+[1m[34m [*][0m 找到 1 个新 zygote 进程
+[1m[36m [→][0m 正在注入 zymbiote 到 zygote64 (pid=882)...
+[1m[33m [!][0m boot heap 中未命中 setArgV0 指针，回退扫描 481 个 RW private 区域
+[1m[33m [!][0m RW private 区域未命中 setArgV0 指针，继续扫描 1268 个其余可读区域
+[1m[33m [!][0m 多个 setArgV0 候选中优先选择 libandroid_runtime.so 内的 slot: 0x70f4abdd48
+[1m[32m [✓][0m Zymbiote 注入成功: zygote64 (pid=882)
+[1m[34m [*][0m 正在启动应用 com.ss.android.ugc.aweme...
+[1m[34m [*][0m 等待进程 com.ss.android.ugc.aweme 启动... (最长 20s)
+[1m[31m [✗][0m Spawn 注入失败: 等待进程 com.ss.android.ugc.aweme 启动超时 (20s)，请检查:
+  1. 包名是否正确
+  2. 应用是否已安装
+  3. Zygote 是否已被正确 patch
+  4. 未发现目标包相关进程
+[1m[34m [*][0m 正在还原 zygote 882 的 patch...
+[1m[32m [✓][0m Zygote 882 patch 已还原

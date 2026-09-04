@@ -1,0 +1,809 @@
+# target process monitor
+# package=com.ss.android.ugc.aweme interval=1s
+# started_at=2026-09-01 18:19:34
+[2026-09-01 18:19:34] pids=<none>
+[2026-09-01 18:19:36] pids=<none>
+[2026-09-01 18:19:38] pids=17085
+  ps: u0_a281      17085   882   39010576 938360 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	droid.ugc.aweme
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	  936660 kB
+  status[17085]: VmRSS:	  935304 kB
+  status[17085]: Threads:	232
+[2026-09-01 18:19:38] EVENT first_seen pids=17085
+[2026-09-01 18:19:40] pids=17085
+  ps: u0_a281      17085   882   39746336 973336 do_epoll_wait       0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	droid.ugc.aweme
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1057128 kB
+  status[17085]: VmRSS:	  973312 kB
+  status[17085]: Threads:	264
+[2026-09-01 18:19:41] pids=17085
+  ps: u0_a281      17085   882   41231892 1297676 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1366744 kB
+  status[17085]: VmRSS:	 1295732 kB
+  status[17085]: Threads:	317
+[2026-09-01 18:19:44] pids=17085
+  ps: u0_a281      17085   882   41416508 1350692 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1366744 kB
+  status[17085]: VmRSS:	 1359728 kB
+  status[17085]: Threads:	320
+[2026-09-01 18:19:46] pids=17085
+  ps: u0_a281      17085   882   41764096 1386984 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1388172 kB
+  status[17085]: VmRSS:	 1387656 kB
+  status[17085]: Threads:	337
+[2026-09-01 18:19:48] pids=17085
+  ps: u0_a281      17085   882   41953412 1398740 0                  0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1520372 kB
+  status[17085]: VmRSS:	 1446868 kB
+  status[17085]: Threads:	350
+[2026-09-01 18:19:50] pids=17085
+  ps: u0_a281      17085   882   41972228 1465064 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1520372 kB
+  status[17085]: VmRSS:	 1472120 kB
+  status[17085]: Threads:	351
+[2026-09-01 18:19:52] pids=17085
+  ps: u0_a281      17085   882   41976300 1517024 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1520372 kB
+  status[17085]: VmRSS:	 1513440 kB
+  status[17085]: Threads:	351
+[2026-09-01 18:19:53] pids=17085
+  ps: u0_a281      17085   882   42030496 1382592 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1378976 kB
+  status[17085]: Threads:	354
+[2026-09-01 18:19:55] pids=17085
+  ps: u0_a281      17085   882   42083504 1414384 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1414640 kB
+  status[17085]: Threads:	356
+[2026-09-01 18:19:57] pids=17085
+  ps: u0_a281      17085   882   41990760 1420288 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1420288 kB
+  status[17085]: Threads:	352
+[2026-09-01 18:19:59] pids=17085
+  ps: u0_a281      17085   882   42436252 1471436 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1484740 kB
+  status[17085]: Threads:	376
+[2026-09-01 18:20:01] pids=17085
+  ps: u0_a281      17085   882   42451768 1491636 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1492672 kB
+  status[17085]: Threads:	382
+[2026-09-01 18:20:03] pids=17085
+  ps: u0_a281      17085   882   42436992 1505552 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1505816 kB
+  status[17085]: Threads:	375
+[2026-09-01 18:20:05] pids=17085
+  ps: u0_a281      17085   882   42454524 1510364 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1510640 kB
+  status[17085]: Threads:	376
+[2026-09-01 18:20:07] pids=17085
+  ps: u0_a281      17085   882   42420512 1517724 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1528760 kB
+  status[17085]: VmRSS:	 1517724 kB
+  status[17085]: Threads:	374
+[2026-09-01 18:20:09] pids=17085
+  ps: u0_a281      17085   882   42400084 1452808 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1562452 kB
+  status[17085]: VmRSS:	 1453080 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:11] pids=17085
+  ps: u0_a281      17085   882   42453700 1511480 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1562452 kB
+  status[17085]: VmRSS:	 1510212 kB
+  status[17085]: Threads:	372
+[2026-09-01 18:20:13] pids=17085
+  ps: u0_a281      17085   882   42503916 1524808 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1562452 kB
+  status[17085]: VmRSS:	 1527584 kB
+  status[17085]: Threads:	372
+[2026-09-01 18:20:15] pids=17085
+  ps: u0_a281      17085   882   42529316 1509492 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1495416 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:17] pids=17085
+  ps: u0_a281      17085   882   42531824 1521084 0                  0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1522252 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:19] pids=17085
+  ps: u0_a281      17085   882   42530576 1537308 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1537492 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:21] pids=17085
+  ps: u0_a281      17085   882   42531164 1541508 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1541616 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:23] pids=17085
+  ps: u0_a281      17085   882   42535104 1541280 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1541280 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:25] pids=17085
+  ps: u0_a281      17085   882   42534896 1542324 do_epoll_wait      0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1542324 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:27] pids=17085
+  ps: u0_a281      17085   882   42536116 1545736 futex_wait_queue   0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1545736 kB
+  status[17085]: Threads:	373
+[2026-09-01 18:20:29] pids=17085
+  ps: u0_a281      17085   882   42501064 1546116 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1546376 kB
+  status[17085]: Threads:	371
+[2026-09-01 18:20:31] pids=17085
+  ps: u0_a281      17085   882   42501064 1546252 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1546252 kB
+  status[17085]: Threads:	371
+[2026-09-01 18:20:33] pids=17085
+  ps: u0_a281      17085   882   42501064 1547036 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1547036 kB
+  status[17085]: Threads:	371
+[2026-09-01 18:20:35] pids=17085
+  ps: u0_a281      17085   882   42501064 1546860 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1546860 kB
+  status[17085]: Threads:	371
+[2026-09-01 18:20:37] pids=17085
+  ps: u0_a281      17085   882   42501064 1550828 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1550828 kB
+  status[17085]: Threads:	371
+[2026-09-01 18:20:39] pids=17085
+  ps: u0_a281      17085   882   42497312 1550284 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1550284 kB
+  status[17085]: Threads:	371
+[2026-09-01 18:20:41] pids=17085
+  ps: u0_a281      17085   882   42497312 1551740 0                  0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1551740 kB
+  status[17085]: Threads:	371
+[2026-09-01 18:20:43] pids=17085
+  ps: u0_a281      17085   882   42479828 1552280 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1552280 kB
+  status[17085]: Threads:	370
+[2026-09-01 18:20:45] pids=17085
+  ps: u0_a281      17085   882   42392408 1551592 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1551592 kB
+  status[17085]: Threads:	365
+[2026-09-01 18:20:47] pids=17085
+  ps: u0_a281      17085   882   42307192 1557940 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1594460 kB
+  status[17085]: VmRSS:	 1558104 kB
+  status[17085]: Threads:	360
+[2026-09-01 18:20:49] pids=17085
+  ps: u0_a281      17085   882   42344108 1595780 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1595976 kB
+  status[17085]: VmRSS:	 1595856 kB
+  status[17085]: Threads:	362
+[2026-09-01 18:20:51] pids=17085
+  ps: u0_a281      17085   882   42343876 1595948 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1597308 kB
+  status[17085]: VmRSS:	 1597004 kB
+  status[17085]: Threads:	362
+[2026-09-01 18:20:53] pids=17085
+  ps: u0_a281      17085   882   42326360 1597164 0                  0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1601100 kB
+  status[17085]: VmRSS:	 1597164 kB
+  status[17085]: Threads:	361
+[2026-09-01 18:20:55] pids=17085
+  ps: u0_a281      17085   882   42326360 1598868 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1601100 kB
+  status[17085]: VmRSS:	 1599064 kB
+  status[17085]: Threads:	361
+[2026-09-01 18:20:57] pids=17085
+  ps: u0_a281      17085   882   42326360 1600188 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1604176 kB
+  status[17085]: VmRSS:	 1600188 kB
+  status[17085]: Threads:	361
+[2026-09-01 18:20:59] pids=17085
+  ps: u0_a281      17085   882   42309016 1600060 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1604176 kB
+  status[17085]: VmRSS:	 1600060 kB
+  status[17085]: Threads:	360
+[2026-09-01 18:21:01] pids=17085
+  ps: u0_a281      17085   882   42308884 1601312 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1604176 kB
+  status[17085]: VmRSS:	 1599264 kB
+  status[17085]: Threads:	360
+[2026-09-01 18:21:03] pids=17085
+  ps: u0_a281      17085   882   42309992 1602708 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1607800 kB
+  status[17085]: VmRSS:	 1602708 kB
+  status[17085]: Threads:	360
+[2026-09-01 18:21:05] pids=17085
+  ps: u0_a281      17085   882   42309512 1603188 do_epoll_wait      0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1607800 kB
+  status[17085]: VmRSS:	 1603188 kB
+  status[17085]: Threads:	360
+[2026-09-01 18:21:07] pids=17085
+  ps: u0_a281      17085   882   42309512 1603416 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1607800 kB
+  status[17085]: VmRSS:	 1603416 kB
+  status[17085]: Threads:	360
+[2026-09-01 18:21:09] pids=17085
+  ps: u0_a281      17085   882   42309512 1604304 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1607800 kB
+  status[17085]: VmRSS:	 1604304 kB
+  status[17085]: Threads:	360
+[2026-09-01 18:21:11] pids=17085
+  ps: u0_a281      17085   882   42257060 1606872 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1608956 kB
+  status[17085]: VmRSS:	 1602776 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:13] pids=17085
+  ps: u0_a281      17085   882   42257060 1605140 0                  0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1608956 kB
+  status[17085]: VmRSS:	 1605104 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:15] pids=17085
+  ps: u0_a281      17085   882   42257060 1605672 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1608956 kB
+  status[17085]: VmRSS:	 1605672 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:17] pids=17085
+  ps: u0_a281      17085   882   42239544 1606216 futex_wait_queue   0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1608956 kB
+  status[17085]: VmRSS:	 1606216 kB
+  status[17085]: Threads:	356
+[2026-09-01 18:21:19] pids=17085
+  ps: u0_a281      17085   882   42239544 1610832 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1610760 kB
+  status[17085]: VmRSS:	 1606736 kB
+  status[17085]: Threads:	356
+[2026-09-01 18:21:21] pids=17085
+  ps: u0_a281      17085   882   42222060 1607828 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1611800 kB
+  status[17085]: VmRSS:	 1605552 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:22] pids=17085
+  ps: u0_a281      17085   882   42222060 1607868 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1611800 kB
+  status[17085]: VmRSS:	 1607868 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:24] pids=17085
+  ps: u0_a281      17085   882   42222060 1608728 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1611800 kB
+  status[17085]: VmRSS:	 1608728 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:26] pids=17085
+  ps: u0_a281      17085   882   42222060 1608180 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1611800 kB
+  status[17085]: VmRSS:	 1608180 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:28] pids=17085
+  ps: u0_a281      17085   882   42222060 1610696 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1611800 kB
+  status[17085]: VmRSS:	 1610696 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:30] pids=17085
+  ps: u0_a281      17085   882   42222060 1610900 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1611800 kB
+  status[17085]: VmRSS:	 1610900 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:32] pids=17085
+  ps: u0_a281      17085   882   42222060 1611540 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1611800 kB
+  status[17085]: VmRSS:	 1611540 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:34] pids=17085
+  ps: u0_a281      17085   882   42222060 1611996 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1612256 kB
+  status[17085]: VmRSS:	 1612256 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:36] pids=17085
+  ps: u0_a281      17085   882   42223084 1611332 do_epoll_wait      0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1613380 kB
+  status[17085]: VmRSS:	 1613380 kB
+  status[17085]: Threads:	355
+[2026-09-01 18:21:38] pids=17085
+  ps: u0_a281      17085   882   42242248 1617296 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1617732 kB
+  status[17085]: VmRSS:	 1617296 kB
+  status[17085]: Threads:	356
+[2026-09-01 18:21:40] pids=17085
+  ps: u0_a281      17085   882   42242248 1617904 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1621644 kB
+  status[17085]: VmRSS:	 1617928 kB
+  status[17085]: Threads:	356
+[2026-09-01 18:21:42] pids=17085
+  ps: u0_a281      17085   882   42262272 1619936 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1625044 kB
+  status[17085]: VmRSS:	 1619936 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:44] pids=17085
+  ps: u0_a281      17085   882   42262272 1619240 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1625044 kB
+  status[17085]: VmRSS:	 1623336 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:46] pids=17085
+  ps: u0_a281      17085   882   42259800 1621900 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1625044 kB
+  status[17085]: VmRSS:	 1617576 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:48] pids=17085
+  ps: u0_a281      17085   882   42259800 1620764 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1625044 kB
+  status[17085]: VmRSS:	 1620764 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:50] pids=17085
+  ps: u0_a281      17085   882   42259800 1621524 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1625044 kB
+  status[17085]: VmRSS:	 1621732 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:52] pids=17085
+  ps: u0_a281      17085   882   42259800 1622048 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1626144 kB
+  status[17085]: VmRSS:	 1626144 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:54] pids=17085
+  ps: u0_a281      17085   882   42259800 1623076 0                  0 R com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1625044 kB
+  status[17085]: VmRSS:	 1623132 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:56] pids=17085
+  ps: u0_a281      17085   882   42259800 1623516 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1627228 kB
+  status[17085]: VmRSS:	 1621184 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:21:58] pids=17085
+  ps: u0_a281      17085   882   42259952 1623652 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	R (running)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1627228 kB
+  status[17085]: VmRSS:	 1623732 kB
+  status[17085]: Threads:	357
+[2026-09-01 18:22:00] pids=17085
+  ps: u0_a281      17085   882   42259952 1624124 do_epoll_wait      0 S com.ss.android.ugc.aweme
+  status[17085]: Name:	main
+  status[17085]: State:	S (sleeping)
+  status[17085]: Tgid:	17085
+  status[17085]: Pid:	17085
+  status[17085]: PPid:	882
+  status[17085]: TracerPid:	0
+  status[17085]: VmHWM:	 1627228 kB
+  status[17085]: VmRSS:	 1624124 kB
+  status[17085]: Threads:	357
