@@ -283,6 +283,19 @@ typedef struct MetaSecManagedCallArg350 {
     unsigned char pad_5d[3];
 } MetaSecManagedCallArg350;
 
+typedef struct MetaSecXArgusProtoWire92_350 {
+    unsigned char wire[0x92];
+} MetaSecXArgusProtoWire92_350;
+
+typedef struct MetaSecXMedusaFinalPack2C8_350 {
+    unsigned char mutated_mini[0x14];
+    unsigned char fixed_pair[0x02];
+    unsigned char zero_byte;
+    unsigned char one_byte;
+    unsigned char marker_byte;
+    unsigned char mutated_subpack[0x2af];
+} MetaSecXMedusaFinalPack2C8_350;
+
 typedef struct MetaSecArgusTailPack24_350 {
     unsigned char digest_or_material20[0x20];
     unsigned char dyn4[0x04];
@@ -505,7 +518,7 @@ FUNCTION_TYPES = [
     ),
     (
         0x154328,
-        "ManagedModule350 *__fastcall managedModuleBuild_350(void *encoded_blob, unsigned int encoded_size, void *scratch, unsigned int scratch_flags, ManagedNativeBinding350 *cf_table, unsigned int cf_count, ManagedNativeBinding350 *program_table, unsigned int program_count, void *decode_key)",
+        "ManagedModule350 *__fastcall managedModuleBuild_350(void *encoded_blob, unsigned int encoded_size, void *scratch, unsigned int scratch_flags, ManagedNativeBinding350 *cf_table, unsigned int cf_count, ManagedNativeBinding350 *g_table, unsigned int g_count, void *decode_key)",
     ),
     (
         0x154364,
@@ -589,7 +602,7 @@ FUNCTION_TYPES = [
     ),
     (
         0x158F48,
-        "void __usercall managedModuleDecodeBuild_350(void *encoded_blob@<X0>, unsigned __int64 encoded_size@<X1>, void *scratch@<X2>, unsigned int scratch_flags@<W3>, ManagedNativeBinding350 *cf_table@<X4>, unsigned int cf_count@<W5>, ManagedNativeBinding350 *program_table@<X6>, unsigned int program_count@<W7>, ManagedModule350 **out_module@<X8>, void *decode_key)",
+        "void __usercall managedModuleDecodeBuild_350(void *encoded_blob@<X0>, unsigned __int64 encoded_size@<X1>, void *scratch@<X2>, unsigned int scratch_flags@<W3>, ManagedNativeBinding350 *cf_table@<X4>, unsigned int cf_count@<W5>, ManagedNativeBinding350 *g_table@<X6>, unsigned int g_count@<W7>, ManagedModule350 **out_module@<X8>, void *decode_key)",
     ),
     (
         0x16D520,
@@ -942,9 +955,9 @@ STATIC_COMMENTS = {
     0x16D4FC: "[x-header350] stage2 writes args->out_str using seed; this is the second early-sign material.\n【中文】stage2 第二段输出：按 seed 格式化写 args->out_str，是另一段早期签名材料。",
     0x1702B8: "[managed-runtime] Initializes the large signing managed module: registers CF0..CF101 helpers and exports F0..F54 program handles.\n【中文】初始化签名 managed module 大表：注册 CF0..CF101 helper，并导出 F0..F54 program 句柄。",
     0x17157C: "[flow350] F4 managed wrapper: passes one byte/flag into slot4, invokes sign F4, then reads return slot2.\n【中文】签名 F4 小包装：把一个 byte/flag 放进 slot4，调用 F4 program，然后读取 slot2 作为返回值。",
-    0x1715F8: "[flow350] managed/native signing dispatcher wrapper A; arg_pack fields not promoted yet.\n【中文】签名 managed wrapper A：调用 F5 program；arg_pack 字段暂不强拆。",
+    0x1715F8: "[struct-recovery] X-Argus uses the shared MetaSecManagedCallArg350 full-call ABI (known 0x60 prefix); this F5 bridge forwards its pointer through managed-frame slot4. MetaSecXArgusProtoWire92_350 is only an observed protobuf-wire payload view, not a native fixed C layout.\n【中文】X-Argus 与 F8 共用 0x60 调用包；此 F5 bridge 放入 frame slot4。ProtoWire92 仅是当前观测到的 wire 视图，不能当作目标内存里的定长 C 对象。",
     0x171648: "[flow350] managed/native signing dispatcher wrapper B; arg_pack fields not promoted yet.\n【中文】签名 managed wrapper B：调用 F7 program；arg_pack 字段暂不强拆。",
-    0x171698: "[flow350] final managed signing builder before X-* header tree emission.\n【中文】最终签名 managed builder：调用 F8 program，靠近最终 X-* header 写入/输出。",
+    0x171698: "[struct-recovery] X-Medusa shares MetaSecManagedCallArg350 (known 0x60 prefix); this F8 bridge places the pointer in managed-frame slot20, not slot4. MetaSecXMedusaFinalPack2C8_350 describes only the final decoded output buffer, not a call-argument extension.\n【中文】X-Medusa 复用同一 0x60 调用包；F8 bridge 使用 frame slot20，而非 slot4。FinalPack2C8 只描述最终输出字节布局，不能推成调用包的 +0x60 字段。",
     0x1716F4: "[managed-runtime] managedSignPostEmitF13_350 invokes g_managedProg_sign_F13_350 with slot4=arg_pack.\n【中文】managed sign F13 后处理入口：把 arg_pack 放入 slot4，执行 g_managedProg_sign_F13_350。",
     0x1718DC: "[managed-runtime] Shared stack-canary epilogue/check thunk used by signing wrappers. Keep prototype conservative because Hex-Rays loses the tail-call context.\n【中文】签名 wrapper 共用的栈保护检查/尾部 thunk；Hex-Rays 会丢上下文，原型不要强行写死。",
     0x1718E8: "[managed-runtime] Tail thunk: set frame slot4 from preserved X21.\n【中文】尾调用小 thunk：把保存寄存器 X21 写入 frame slot4。",

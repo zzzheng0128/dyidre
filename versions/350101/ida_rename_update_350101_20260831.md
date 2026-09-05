@@ -234,3 +234,20 @@ The remaining `sub_16D9DC..sub_16E474` functions are flattened micro-blocks
 inside `sm3Compress64_flattenedBlocks_350`, not CF/F entries. They should be
 renamed only if we later split the SM3 flattened control-flow graph into named
 round helpers.
+
+## 2026-09-05 G-table naming and X-Argus/X-Medusa call-pack boundary
+
+The same `dyidre/materials/350101/libmetasec_ml.so.i64` IDB was saved after
+these evidence-bounded updates:
+
+| address | IDA name / annotation scope |
+|---:|---|
+| `0x154328` | `managedModuleBuild_350` prototype: last binding pair renamed `program_table/program_count` -> `g_table/g_count`, matching the module-local `G` import-binding ledger (80/80 registration/import ABI closed) |
+| `0x158F48` | `managedModuleDecodeBuild_350` prototype: same `g_table/g_count` rename (X6/W7 usercall args) |
+| `0x1715F8` | F5/X-Argus bridge comment: X-Argus shares the `MetaSecManagedCallArg350` 0x60 full-call ABI via frame slot4; `MetaSecXArgusProtoWire92_350` documented as observed protobuf-wire view only, not a native fixed C layout |
+| `0x171698` | F8/X-Medusa bridge comment: same shared 0x60 call pack via frame slot20 (not slot4); `MetaSecXMedusaFinalPack2C8_350` documented as final decoded output buffer layout only, not a call-argument extension |
+
+Two new Local Types were imported: `MetaSecXArgusProtoWire92_350` (0x92 wire
+bytes) and `MetaSecXMedusaFinalPack2C8_350` (0x2c8 final pack). Both are
+deliberately annotated as observed byte-layout views; they must not be
+promoted to call-pack struct fields without runtime write evidence.

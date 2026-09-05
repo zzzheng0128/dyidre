@@ -198,7 +198,7 @@ CF16 CF13 CF37 CF08 CF05 CF100 CF38 CF30 CF29 CF37 CF08 CF11x2 CF38 CF05 CF48 CF
 | CF30 | `0x16f14c` | catMemBlock4(dst?=slot5, arg=slot6, src?=slot4) |
 | CF31 | `0x16f19c` | protobuf-style serialized-size pass: message slot4 -> exact byte count slot2; same helper as CF90 |
 | CF32 | `0x16f1c8` | construct/format MEM_BLOCK with fill byte + len: sub_10B510(slot4, slot5, slot6) |
-| CF33 | `0x16f218` | protobuf-style write pass: message slot4 + writable buffer slot5 -> bytes written/final cursor slot2; same helper as CF91 |
+| CF33 | `0x16f218` | protobuf-style write pass: message slot4 + writable buffer slot5 -> bytes written/cursor offset slot2; same helper as CF91 |
 | CF34 | `0x16f264` | base64DecodeMemBlockToRef_350(slot5); slot4 appears receiver/unused |
 | CF35 | `0x16f29c` | hidden slot4 REF_MEM_BLOCK output: native-VMP material selected by exact bytes/length of slot6 MEM_BLOCK; slot5 opaque VMP context; miss clears slot4, slot2 preserved |
 | CF36 | `0x16f2ec` | raw XOR-8 in place: byte buffer slot4, signed low32(slot5) length, key `0x2025D8` -> slot2 aliases slot4 |
@@ -225,7 +225,7 @@ CF16 CF13 CF37 CF08 CF05 CF100 CF38 CF30 CF29 CF37 CF08 CF11x2 CF38 CF05 CF48 CF
 | CF61 | `0x16f998` | SM3 wrapper: `sm3OneShot_F15InitUpdateFinal_350(slot4, slot5, slot6)` -> slot2=0 |
 | CF62 | `0x16f9f8` | shared-ref clone: slot4=dst, slot5=src; increments source control block; wrapper does not write slot2 (see `cf62_cf68_cf70_recovered_350101.md`) |
 | CF63 | `0x16fa34` | second-module F22 pure MEM_BLOCK recurrence: reads signed length/body from outer slot4, makes no write/import call, then wrapper zero-extends low32(child slot2) to outer slot2. Exact recurrence and vectors: `cf63_second_module_f22_recovered_350101.md`. |
-| CF64 | `0x16fa60` | unresolved second-module F1 adapter: outer slot4/5/low32(slot6)/slot7 become child slots19/0/10/27 before `qword_2C5268`; outer slot2 is untouched. F1 is fully decoded (2,345 records) and its 40 same-frame `0x5e` dispatches resolve to child CF1/2/3/4/10/5/7/6/8 plus F2, F3×12, F19, F4..F18, F21, F20—not primary CFs and not the former erroneous F25/F26 shorthand. Direct raw stores and unclosed child-native/transitive effects make a standalone bridge/no-op invalid. See `cf63_cf64_child_module_boundary_350101.md`. |
+| CF64 | `0x16fa60` | unresolved second-module F1 adapter: outer slot4/5/low32(slot6)/slot7 become child slots19/0/10/27 before `qword_2C5268`; outer slot2 is untouched. F1 is fully decoded (2,345 records) and its 40 same-frame `0x5e` dispatches resolve to child CF1/2/3/4/10/5/7/6/8 plus F2, F3×12, F19, F4..F18, F21, F20—not primary CFs and not the former erroneous F25/F26 shorthand. Child-native slot ABI/local direct effects are separately closed, but outer-object alias and cross-call object effects remain unresolved; direct raw stores therefore still make a standalone bridge/no-op invalid. See `cf63_cf64_child_module_boundary_350101.md` and `cf64_child_native_abi_350101.md`. |
 | CF65 | `0x16facc` | raw context flag: `slot2 = *(uint32_t *)(slot4 + 0xE8) & 1` (see `cf65_context_flag_recovered_350101.md`) |
 | CF66 | `0x16faf8` | `CLOCK_REALTIME` current time in seconds: `currentTimeMillis / 1000` -> slot2 (see `cf66_cf89_time_recovered_350101.md`) |
 | CF67 | `0x16fb1c` | hidden slot4 REF destination; locked copy of slot5 context REF at `+0xb0`; no slot2 write |
@@ -235,7 +235,7 @@ CF16 CF13 CF37 CF08 CF05 CF100 CF38 CF30 CF29 CF37 CF08 CF11x2 CF38 CF05 CF48 CF
 | CF71 | `0x16fbd4` | `pthread_self()` equivalent: no slot arguments; calls `getTpidrEl0_350 @ 0xd9674`, whose return `X0` equals `TPIDR_EL0`, then writes it to slot2. Focused Unicorn2 F8 trace: `0xe4fff700`. |
 | CF72 | `0x16fbf8` | acquire-load 32-bit SO global at helper `0x13E044` -> zero-extended slot2 (replay must supply captured value) |
 | CF73 | `0x16fc1c` | locked raw context read: helper `0x15064C` returns unmodified qword at slot4 `+0x40` through slot2 |
-| CF75 | `0x16fc94` | unresolved independent `0x2BA250` child-module F6 adapter: hidden slot4/slot5/slot6&1 become child s4/s5/s6; outer slot2 is untouched. F6 directly clears the hidden slot4 target, then takes distinct CF10/CF13 ref-assignment paths. Nested F0--F7 bytecode is now statically decoded (1,210 records): F3 emits local-result bytes `0..15`; F4/F5/F0 directly modify bit 2/bit 5 of byte 16. F0/F2/F7 have no direct source-body store, but CF15/aliases, result tail, and target ownership remain unclosed. Its `0x5e` is module-program dispatch, not universally CF dispatch; keep opaque. See `cf75_child_module_boundary_350101.md`. |
+| CF75 | `0x16fc94` | unresolved independent `0x2BA250` child-module F6 adapter: hidden slot4/slot5/slot6&1 become child s4/s5/s6; outer slot2 is untouched. F6 directly clears the hidden slot4 target, then takes distinct CF10/CF13 target-directed paths whose object/ownership semantics remain unclosed. Nested F0--F7 bytecode is now statically decoded (1,210 records): F3 emits local-result bytes `0..15`; F4/F5/F0 directly modify bit 2/bit 5 of byte 16. F0/F2/F7 have no direct source-body store, but CF15/aliases, result tail, and target ownership remain unclosed. Its `0x5e` is module-program dispatch, not universally CF dispatch; keep opaque. See `cf75_child_module_boundary_350101.md`. |
 | CF78 | `0x16fd2c` | hidden slot4 `REF_ID_ITEM_WRAP` output: parse NUL-terminated raw C-string slot5 into a fresh ordered ID_ITEM tree; NULL/parse fail => new empty object root; slot2 preserved |
 | CF79 | `0x16fd64` | cJSON_AddNumberToObject_double(obj=slot4, key=slot5, value=managedFrameGetSlotDouble_350(slot2)) -> slot2 bool |
 | CF80 | `0x16fdc0` | read 32-bit native global at helper `0xA28BC` -> slot2 (replay must supply value; see `cf80_cf81_globals_recovered_350101.md`) |
@@ -248,7 +248,7 @@ CF16 CF13 CF37 CF08 CF05 CF100 CF38 CF30 CF29 CF37 CF08 CF11x2 CF38 CF05 CF48 CF
 | CF88 | `0x16ff8c` | unformatted cJSON print: reads `*(void **)(slot5+8)`, calls `0x123DE8 -> 0x10CBF8(flag=0)`, then assigns the resulting shared string to slot4; wrapper does not write slot2 |
 | CF89 | `0x16ffc4` | `CLOCK_REALTIME` current time in milliseconds -> slot2 (see `cf66_cf89_time_recovered_350101.md`) |
 | CF90 | `0x16ffe8` | protobuf-style serialized-size pass: message slot4 -> exact byte count slot2; aliases CF31 through `0x11615C` |
-| CF91 | `0x170014` | protobuf-style write pass: message slot4 + writable buffer slot5 -> bytes written/final cursor slot2; aliases CF33 through `0x1165B8` |
+| CF91 | `0x170014` | protobuf-style write pass: message slot4 + writable buffer slot5 -> bytes written/cursor offset slot2; aliases CF33 through `0x1165B8` |
 | CF92 | `0x170060` | conditional lock-guard release: update object vtable; if `*(uint32_t *)(slot4+0x10) == 0`, unlock mutex reached through `slot4+0x08`; no slot2 write |
 | CF93 | `0x170078` | shared-ref release of slot4; wrapper does not write slot2 (see `cf93_ref_release_recovered_350101.md`) |
 | CF94 | `0x170090` | write TLS-derived pointer to `*(void **)slot4` through `0x1305E4`; no slot2 write (replay must supply matching TLS pointer) |

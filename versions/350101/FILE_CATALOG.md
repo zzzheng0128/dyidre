@@ -41,13 +41,13 @@ versions/350101
 
 | 分类 | 数量 |
 |---|---:|
-| managed VM decode 统计 | 141 |
-| managed VM decoded asm | 124 |
-| managed VM linear C | 124 |
-| 分析报告 | 25 |
-| 机器可读证据 | 23 |
+| managed VM decode 统计 | 206 |
+| managed VM decoded asm | 187 |
+| managed VM linear C | 187 |
+| 分析报告 | 34 |
+| 机器可读证据 | 24 |
 | 请求向量 | 23 |
-| managed VM decode 目录 | 17 |
+| managed VM decode 目录 | 19 |
 | source-work 报告 | 11 |
 | 二进制向量 | 11 |
 | 路径 diff 报告 | 10 |
@@ -77,6 +77,7 @@ versions/350101
 | CF 语义 | 1 |
 | HTTP 总流程 | 1 |
 | IDA 落库 | 1 |
+| SO 总流程 | 1 |
 | SO 身份 | 1 |
 | X-header C oracle | 1 |
 | X-header 算法 | 1 |
@@ -106,8 +107,8 @@ versions/350101
 
 | path | size | 分类 | 怎么来 | 生成脚本/流程 | 后续用途 |
 |---|---:|---|---|---|---|
-| `FILE_CATALOG.md` | 106.3K | 交接清单 | 目录扫描生成 | scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
-| `README.md` | 25.3K | 入口文档 | 人工整理 | 手工维护 | 接手 350101 先读，快速知道当前结论和核心文件。 |
+| `FILE_CATALOG.md` | 172.5K | 交接清单 | 目录扫描生成 | scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
+| `README.md` | 29.6K | 入口文档 | 人工整理 | 手工维护 | 接手 350101 先读，快速知道当前结论和核心文件。 |
 | `algorithm_validation_350101.md` | 6.1K | 算法验收 | C oracle + unidbg deterministic replay | run_recovered_c_oracles_350101.sh + unidbg baseline | 提交前确认算法是否仍然 byte-exact。 |
 | `analysis_trajectory_350101.md` | 10.0K | 分析轨迹 | 350101 实际分析过程沉淀 | 人工维护 | 后续升级版本复制成 analysis_trajectory_<version>.md，逐项替换证据。 |
 | `build_signed_http_headers_350_recovered.c` | 15.3K | HTTP 总流程 | IDA 反编译 + trace 证据人工 lift | 人工维护 | 从请求到 X-header 写出的主流程伪 C。 |
@@ -132,17 +133,21 @@ versions/350101
 | `cf61_sm3_recovered_350101.c` | 10.2K | C oracle | VM/CF/算法人工还原 | 人工维护 | byte-exact 验证具体算法片段。 |
 | `cf61_sm3_recovered_350101.md` | 3.2K | CF 恢复报告 | CF trace + IDA + oracle | 人工整理 | 说明 CF helper 的算法身份和验证向量。 |
 | `cf62_cf68_cf70_recovered_350101.md` | 908 | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
-| `cf63_cf64_child_module_boundary_350101.md` | 5.9K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `cf63_cf64_child_module_boundary_350101.md` | 12.3K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `cf63_second_module_f22_recovered_350101.md` | 1.7K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `cf64_alias_probe_350101.md` | 6.1K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `cf64_child_native_abi_350101.md` | 9.2K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `cf64_child_opcode_recovery_350101.md` | 2.7K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `cf65_context_flag_recovered_350101.md` | 553 | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `cf66_cf89_time_recovered_350101.md` | 745 | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
-| `cf75_child_module_boundary_350101.md` | 8.5K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `cf75_child_module_boundary_350101.md` | 11.2K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `cf80_cf81_globals_recovered_350101.md` | 610 | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `cf93_ref_release_recovered_350101.md` | 424 | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
-| `cf_string_decode_and_proto_serializer_350101.md` | 13.7K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `cf_string_decode_and_proto_serializer_350101.md` | 14.6K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `deterministic_350101_x_medusa_raw.bin` | 709 | 二进制向量 | 从 trace/log 提取的 raw pack、CF 输入或 header bytes | metasec_*_report.py / true-env / 人工提取 | C oracle 的 byte-exact 测试向量。 |
 | `deterministic_replay_350101.md` | 7.1K | 确定性复现 | 固定时间/随机/env 的 unidbg replay | run_sign6_350101_deterministic.sh | 验证同一输入每次输出一致。 |
 | `deterministic_verify_350101.latest.md` | 3.2K | 确定性验收 | 最近一次 deterministic verify 结果 | verify_unidbg_deterministic_350101.py | 快速查看当前 baseline 是否对齐。 |
+| `dycompare_schema_boundary_350101.md` | 5.1K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `edbg_assist_plan_350101.md` | 11.0K | eDBG/stackplz | 硬断点/watch 辅助方案 | 人工整理 | RF 太吵时用 eDBG/stackplz 精确追字段写入。 |
 | `environment_inputs_350101.md` | 9.4K | 环境输入 | true-env/jnitrace/unidbg stub 汇总 | 人工整理 | 区分算法常量和真机环境值，避免把 fixed env 当算法。 |
 | `exeVMInner_x_headers_350101.md` | 21.1K | native VMP | GumTrace + IDA wrapper 分析 | gum-exevm/native-vmp probe + 人工整理 | 说明 0x4CC10 在 X-header 里的角色和 vmCode 分布。 |
@@ -171,7 +176,10 @@ versions/350101
 | `f8_x_medusa_mutation_watch_350101.md` | 13.2K | X-Medusa 报告 | F8/F12/source-work/watch/oracle | true-env/f8-watch/metasec_f12_bitpack_oracle.py + 人工整理 | 恢复 X-Medusa final pack 和 source-work。 |
 | `fixed_s1_s2_signer_350101.md` | 5.1K | 固定请求 signer | C fixed signer 验证说明 | 人工整理 | 说明只输入 s1/s2 + fixed env 生成完整 header 的验收口径。 |
 | `flat_dispatch_350101.md` | 6.7K | 控制流混淆 | IDA/GumTrace 分析 | 人工整理 | 识别 flattened dispatcher，避免误判成算法主线。 |
-| `ida_rename_update_350101_20260831.md` | 13.8K | IDA 落库 | IDA rename/prototype/comment 记录 | skills/ida_apply_metasec_struct_evidence.py + ida-pro-mcp | 说明哪些名字/中文注释已经写回 IDA。 |
+| `g_binding_ledger_350101.md` | 15.6K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `g_linkage_and_relocation_static_audit_350101.md` | 5.6K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `guard_branch_influence_plan_350101.md` | 4.1K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `ida_rename_update_350101_20260831.md` | 15.1K | IDA 落库 | IDA rename/prototype/comment 记录 | skills/ida_apply_metasec_struct_evidence.py + ida-pro-mcp | 说明哪些名字/中文注释已经写回 IDA。 |
 | `instr_diff_350101/` | - | 指令路径 diff 目录 | 真机 GumTrace/instrseq 与 unidbg instrseq 对比 | skills/metasec_instrseq_diff.py | 判断 raw PC 差异是否影响算法主线。 |
 | `instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md` | 8.9K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
 | `instr_diff_350101/managed_blr_target_diff_350101_req01.md` | 3.3K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
@@ -186,9 +194,10 @@ versions/350101
 | `instr_diff_350101/true_vs_unidbg_fixedtime_149cbc_firstdiff.md` | 11.4K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
 | `instr_diff_350101/unidbg350101_req01_managed_blr_seq.tsv` | 97.0K | 路径序列 | 真机/unidbg 指令或 BLR/CF 序列 | GumTrace/unidbg trace 后处理 | 给 diff 报告提供原始序列。 |
 | `instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md` | 5.2K | 路径 diff 报告 | 真机 vs unidbg 指令/语义路径对比 | skills/metasec_instrseq_diff.py + 人工整理 | 确认差异是否只是 helper 级别。 |
-| `integrity_guard_ida_350101.md` | 14.2K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `integrity_guard_ida_350101.md` | 18.7K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `interface_ledger_350101.json` | 7.0K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `managed_cf_recovered_350.c` | 26.7K | CF C lift | 高价值 CF helper 伪 C | 人工维护 | 把 VM callback 原语变成可读 C。 |
-| `managed_cf_semantics_350101.md` | 32.9K | CF 语义 | CF trace + IDA 分析 | 人工整理 | 说明 CFxx helper 各自做什么。 |
+| `managed_cf_semantics_350101.md` | 33.1K | CF 语义 | CF trace + IDA 分析 | 人工整理 | 说明 CFxx helper 各自做什么。 |
 | `managed_cf_table_sign_350101.md` | 4.5K | CF 表 | sign module CF 注册表抽取 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py | 新版本快速对齐 CF index/name/callsite。 |
 | `managed_cf_trace_summary.json` | 9.8K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `managed_sign_cf_table_350101.md` | 4.4K | CF 表 | sign module CF 注册表抽取 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_cf_table_probe.py | unidbg focused probe 的 callsite 来源。 |
@@ -242,9 +251,9 @@ versions/350101
 | `managed_vm_decode_cf64_reachable_350101/F11_350101_F11_0x609400_0x498.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F11_350101_F11_0x609400_0x498.decoded.stats.md` | 703 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F11_350101_F11_0x609400_0x498.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
-| `managed_vm_decode_cf64_reachable_350101/F12_350101_F12_0x787000_0x4a28.decoded.asm` | 58.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_reachable_350101/F12_350101_F12_0x787000_0x4a28.decoded.asm` | 59.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F12_350101_F12_0x787000_0x4a28.decoded.stats.md` | 2.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_cf64_reachable_350101/F12_350101_F12_0x787000_0x4a28.linear.c` | 91.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_reachable_350101/F12_350101_F12_0x787000_0x4a28.linear.c` | 91.4K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F13_350101_F13_0x6da000_0x2e68.decoded.asm` | 48.7K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F13_350101_F13_0x6da000_0x2e68.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F13_350101_F13_0x6da000_0x2e68.linear.c` | 72.4K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -253,16 +262,16 @@ versions/350101
 | `managed_vm_decode_cf64_reachable_350101/F14_350101_F14_0x609900_0x498.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F15_350101_F15_0x78c000_0x4ae8.decoded.asm` | 59.5K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F15_350101_F15_0x78c000_0x4ae8.decoded.stats.md` | 2.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_cf64_reachable_350101/F15_350101_F15_0x78c000_0x4ae8.linear.c` | 92.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_reachable_350101/F15_350101_F15_0x78c000_0x4ae8.linear.c` | 92.1K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F16_350101_F16_0x6dd000_0x2d48.decoded.asm` | 47.7K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F16_350101_F16_0x6dd000_0x2d48.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F16_350101_F16_0x6dd000_0x2d48.linear.c` | 70.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F17_350101_F17_0x609e00_0x498.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F17_350101_F17_0x609e00_0x498.decoded.stats.md` | 703 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F17_350101_F17_0x609e00_0x498.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
-| `managed_vm_decode_cf64_reachable_350101/F18_350101_F18_0x791000_0x4a70.decoded.asm` | 59.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_reachable_350101/F18_350101_F18_0x791000_0x4a70.decoded.asm` | 59.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F18_350101_F18_0x791000_0x4a70.decoded.stats.md` | 2.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_cf64_reachable_350101/F18_350101_F18_0x791000_0x4a70.linear.c` | 91.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_reachable_350101/F18_350101_F18_0x791000_0x4a70.linear.c` | 91.6K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F19_350101_F19_0x757000_0x3168.decoded.asm` | 40.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F19_350101_F19_0x757000_0x3168.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F19_350101_F19_0x757000_0x3168.linear.c` | 66.6K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -275,9 +284,9 @@ versions/350101
 | `managed_vm_decode_cf64_reachable_350101/F21_350101_F21_0x60a300_0x438.decoded.asm` | 3.6K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F21_350101_F21_0x60a300_0x438.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F21_350101_F21_0x60a300_0x438.linear.c` | 5.6K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
-| `managed_vm_decode_cf64_reachable_350101/F2_350101_F2_0x6fb000_0x4b60.decoded.asm` | 59.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_reachable_350101/F2_350101_F2_0x6fb000_0x4b60.decoded.asm` | 59.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F2_350101_F2_0x6fb000_0x4b60.decoded.stats.md` | 2.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_cf64_reachable_350101/F2_350101_F2_0x6fb000_0x4b60.linear.c` | 92.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_reachable_350101/F2_350101_F2_0x6fb000_0x4b60.linear.c` | 92.7K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F3_350101_F3_0x750000_0xd8.decoded.asm` | 963 | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F3_350101_F3_0x750000_0xd8.decoded.stats.md` | 348 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F3_350101_F3_0x750000_0xd8.linear.c` | 1.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
@@ -289,18 +298,211 @@ versions/350101
 | `managed_vm_decode_cf64_reachable_350101/F5_350101_F5_0x608a00_0x498.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F6_350101_F6_0x77a000_0x4aa0.decoded.asm` | 59.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F6_350101_F6_0x77a000_0x4aa0.decoded.stats.md` | 2.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_cf64_reachable_350101/F6_350101_F6_0x77a000_0x4aa0.linear.c` | 91.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_reachable_350101/F6_350101_F6_0x77a000_0x4aa0.linear.c` | 92.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F7_350101_F7_0x75a800_0x3168.decoded.asm` | 40.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F7_350101_F7_0x75a800_0x3168.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F7_350101_F7_0x75a800_0x3168.linear.c` | 66.4K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/F8_350101_F8_0x608f00_0x498.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F8_350101_F8_0x608f00_0x498.decoded.stats.md` | 702 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_cf64_reachable_350101/F8_350101_F8_0x608f00_0x498.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
-| `managed_vm_decode_cf64_reachable_350101/F9_350101_F9_0x782000_0x4a70.decoded.asm` | 59.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_reachable_350101/F9_350101_F9_0x782000_0x4a70.decoded.asm` | 59.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_cf64_reachable_350101/F9_350101_F9_0x782000_0x4a70.decoded.stats.md` | 2.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
-| `managed_vm_decode_cf64_reachable_350101/F9_350101_F9_0x782000_0x4a70.linear.c` | 91.4K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_reachable_350101/F9_350101_F9_0x782000_0x4a70.linear.c` | 91.6K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
 | `managed_vm_decode_cf64_reachable_350101/coverage_F1_program_table_350101.json` | 610 | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
-| `managed_vm_decode_cf64_reachable_350101/managed_vm_decode_summary.md` | 8.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_reachable_350101/managed_vm_decode_summary.md` | 7.7K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F23_350101_F23_0x5ca000_0xfc0.decoded.asm` | 14.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F23_350101_F23_0x5ca000_0xfc0.decoded.stats.md` | 912 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F23_350101_F23_0x5ca000_0xfc0.linear.c` | 22.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F24_350101_F24_0x5cb000_0xfc0.decoded.asm` | 14.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F24_350101_F24_0x5cb000_0xfc0.decoded.stats.md` | 912 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F24_350101_F24_0x5cb000_0xfc0.linear.c` | 22.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F25_350101_F25_0x5cc000_0xfc0.decoded.asm` | 14.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F25_350101_F25_0x5cc000_0xfc0.decoded.stats.md` | 912 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F25_350101_F25_0x5cc000_0xfc0.linear.c` | 22.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F26_350101_F26_0x5cd000_0xfc0.decoded.asm` | 14.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F26_350101_F26_0x5cd000_0xfc0.decoded.stats.md` | 912 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F26_350101_F26_0x5cd000_0xfc0.linear.c` | 22.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F27_350101_F27_0x5ce000_0xfc0.decoded.asm` | 14.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F27_350101_F27_0x5ce000_0xfc0.decoded.stats.md` | 912 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F27_350101_F27_0x5ce000_0xfc0.linear.c` | 22.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F28_350101_F28_0x5cf000_0xfc0.decoded.asm` | 14.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F28_350101_F28_0x5cf000_0xfc0.decoded.stats.md` | 912 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F28_350101_F28_0x5cf000_0xfc0.linear.c` | 22.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F41_350101_F41_0x5e3000_0x3c0.decoded.asm` | 3.3K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F41_350101_F41_0x5e3000_0x3c0.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F41_350101_F41_0x5e3000_0x3c0.linear.c` | 5.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F42_350101_F42_0x61aa00_0x948.decoded.asm` | 8.5K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F42_350101_F42_0x61aa00_0x948.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F42_350101_F42_0x61aa00_0x948.linear.c` | 12.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F43_350101_F43_0x61b400_0x840.decoded.asm` | 7.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F43_350101_F43_0x61b400_0x840.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F43_350101_F43_0x61b400_0x840.linear.c` | 11.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F44_350101_F44_0x5e1200_0x1f8.decoded.asm` | 2.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F44_350101_F44_0x5e1200_0x1f8.decoded.stats.md` | 740 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F44_350101_F44_0x5e1200_0x1f8.linear.c` | 3.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F46_350101_F46_0x60ad00_0x4b0.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F46_350101_F46_0x60ad00_0x4b0.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F46_350101_F46_0x60ad00_0x4b0.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F47_350101_F47_0x62b700_0x6d8.decoded.asm` | 5.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F47_350101_F47_0x62b700_0x6d8.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F47_350101_F47_0x62b700_0x6d8.linear.c` | 9.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F48_350101_F48_0x652400_0x10b0.decoded.asm` | 13.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F48_350101_F48_0x652400_0x10b0.decoded.stats.md` | 1.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F48_350101_F48_0x652400_0x10b0.linear.c` | 21.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F50_350101_F50_0x5e3400_0x3c0.decoded.asm` | 3.4K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F50_350101_F50_0x5e3400_0x3c0.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F50_350101_F50_0x5e3400_0x3c0.linear.c` | 5.1K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F51_350101_F51_0x61be00_0x948.decoded.asm` | 8.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F51_350101_F51_0x61be00_0x948.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F51_350101_F51_0x61be00_0x948.linear.c` | 12.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F52_350101_F52_0x61c800_0x840.decoded.asm` | 7.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F52_350101_F52_0x61c800_0x840.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F52_350101_F52_0x61c800_0x840.linear.c` | 11.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F54_350101_F54_0x60b200_0x4b0.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F54_350101_F54_0x60b200_0x4b0.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F54_350101_F54_0x60b200_0x4b0.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F55_350101_F55_0x62be00_0x6d8.decoded.asm` | 5.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F55_350101_F55_0x62be00_0x6d8.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F55_350101_F55_0x62be00_0x6d8.linear.c` | 9.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F56_350101_F56_0x653800_0x10c8.decoded.asm` | 13.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F56_350101_F56_0x653800_0x10c8.decoded.stats.md` | 1.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F56_350101_F56_0x653800_0x10c8.linear.c` | 22.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F58_350101_F58_0x5e3800_0x3c0.decoded.asm` | 3.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F58_350101_F58_0x5e3800_0x3c0.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F58_350101_F58_0x5e3800_0x3c0.linear.c` | 4.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F59_350101_F59_0x61d200_0x948.decoded.asm` | 8.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F59_350101_F59_0x61d200_0x948.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F59_350101_F59_0x61d200_0x948.linear.c` | 12.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F60_350101_F60_0x61dc00_0x840.decoded.asm` | 7.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F60_350101_F60_0x61dc00_0x840.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F60_350101_F60_0x61dc00_0x840.linear.c` | 11.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F62_350101_F62_0x60b700_0x4b0.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F62_350101_F62_0x60b700_0x4b0.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F62_350101_F62_0x60b700_0x4b0.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F63_350101_F63_0x62c500_0x6d8.decoded.asm` | 5.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F63_350101_F63_0x62c500_0x6d8.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F63_350101_F63_0x62c500_0x6d8.linear.c` | 9.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F64_350101_F64_0x654c00_0x10c8.decoded.asm` | 13.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F64_350101_F64_0x654c00_0x10c8.decoded.stats.md` | 1.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F64_350101_F64_0x654c00_0x10c8.linear.c` | 21.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F66_350101_F66_0x5e3c00_0x3c0.decoded.asm` | 3.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F66_350101_F66_0x5e3c00_0x3c0.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F66_350101_F66_0x5e3c00_0x3c0.linear.c` | 4.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F67_350101_F67_0x61e600_0x948.decoded.asm` | 8.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F67_350101_F67_0x61e600_0x948.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F67_350101_F67_0x61e600_0x948.linear.c` | 12.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F68_350101_F68_0x61f000_0x840.decoded.asm` | 7.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F68_350101_F68_0x61f000_0x840.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F68_350101_F68_0x61f000_0x840.linear.c` | 11.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F70_350101_F70_0x60bc00_0x4b0.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F70_350101_F70_0x60bc00_0x4b0.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F70_350101_F70_0x60bc00_0x4b0.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F71_350101_F71_0x62cc00_0x6d8.decoded.asm` | 5.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F71_350101_F71_0x62cc00_0x6d8.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F71_350101_F71_0x62cc00_0x6d8.linear.c` | 9.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F72_350101_F72_0x656000_0x10c8.decoded.asm` | 13.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F72_350101_F72_0x656000_0x10c8.decoded.stats.md` | 1.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F72_350101_F72_0x656000_0x10c8.linear.c` | 22.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F74_350101_F74_0x5e4000_0x3c0.decoded.asm` | 3.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F74_350101_F74_0x5e4000_0x3c0.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F74_350101_F74_0x5e4000_0x3c0.linear.c` | 4.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F75_350101_F75_0x61fa00_0x948.decoded.asm` | 8.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F75_350101_F75_0x61fa00_0x948.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F75_350101_F75_0x61fa00_0x948.linear.c` | 12.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F76_350101_F76_0x620400_0x840.decoded.asm` | 7.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F76_350101_F76_0x620400_0x840.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F76_350101_F76_0x620400_0x840.linear.c` | 11.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F78_350101_F78_0x60c100_0x4b0.decoded.asm` | 4.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F78_350101_F78_0x60c100_0x4b0.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F78_350101_F78_0x60c100_0x4b0.linear.c` | 6.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F79_350101_F79_0x62d300_0x6d8.decoded.asm` | 5.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F79_350101_F79_0x62d300_0x6d8.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F79_350101_F79_0x62d300_0x6d8.linear.c` | 9.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F80_350101_F80_0x657400_0x10c8.decoded.asm` | 13.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F80_350101_F80_0x657400_0x10c8.decoded.stats.md` | 1.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F80_350101_F80_0x657400_0x10c8.linear.c` | 21.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F82_350101_F82_0x5e4400_0x3c0.decoded.asm` | 3.2K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F82_350101_F82_0x5e4400_0x3c0.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F82_350101_F82_0x5e4400_0x3c0.linear.c` | 4.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F83_350101_F83_0x620e00_0x948.decoded.asm` | 8.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F83_350101_F83_0x620e00_0x948.decoded.stats.md` | 1.3K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F83_350101_F83_0x620e00_0x948.linear.c` | 12.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F84_350101_F84_0x621800_0x840.decoded.asm` | 7.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F84_350101_F84_0x621800_0x840.decoded.stats.md` | 1.2K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_secondhop_20260904/F84_350101_F84_0x621800_0x840.linear.c` | 11.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_secondhop_20260904/managed_vm_decode_summary.md` | 12.9K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F29_350101_F29_0x6a7800_0x14d0.decoded.asm` | 20.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F29_350101_F29_0x6a7800_0x14d0.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F29_350101_F29_0x6a7800_0x14d0.linear.c` | 29.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F30_350101_F30_0x613a80_0x330.decoded.asm` | 2.7K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F30_350101_F30_0x613a80_0x330.decoded.stats.md` | 567 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F30_350101_F30_0x613a80_0x330.linear.c` | 4.4K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F31_350101_F31_0x6a9000_0x14d0.decoded.asm` | 16.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F31_350101_F31_0x6a9000_0x14d0.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F31_350101_F31_0x6a9000_0x14d0.linear.c` | 26.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F32_350101_F32_0x613e00_0x330.decoded.asm` | 2.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F32_350101_F32_0x613e00_0x330.decoded.stats.md` | 580 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F32_350101_F32_0x613e00_0x330.linear.c` | 4.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F33_350101_F33_0x6aa800_0x14d0.decoded.asm` | 16.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F33_350101_F33_0x6aa800_0x14d0.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F33_350101_F33_0x6aa800_0x14d0.linear.c` | 26.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F34_350101_F34_0x614180_0x330.decoded.asm` | 2.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F34_350101_F34_0x614180_0x330.decoded.stats.md` | 580 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F34_350101_F34_0x614180_0x330.linear.c` | 4.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F35_350101_F35_0x6ac000_0x14d0.decoded.asm` | 16.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F35_350101_F35_0x6ac000_0x14d0.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F35_350101_F35_0x6ac000_0x14d0.linear.c` | 26.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F36_350101_F36_0x614500_0x330.decoded.asm` | 2.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F36_350101_F36_0x614500_0x330.decoded.stats.md` | 578 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F36_350101_F36_0x614500_0x330.linear.c` | 4.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F37_350101_F37_0x6ad800_0x14d0.decoded.asm` | 16.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F37_350101_F37_0x6ad800_0x14d0.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F37_350101_F37_0x6ad800_0x14d0.linear.c` | 26.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F38_350101_F38_0x614880_0x330.decoded.asm` | 2.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F38_350101_F38_0x614880_0x330.decoded.stats.md` | 579 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F38_350101_F38_0x614880_0x330.linear.c` | 4.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F39_350101_F39_0x79b000_0x14d0.decoded.asm` | 16.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F39_350101_F39_0x79b000_0x14d0.decoded.stats.md` | 1.5K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F39_350101_F39_0x79b000_0x14d0.linear.c` | 26.2K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F40_350101_F40_0x614c00_0x330.decoded.asm` | 2.7K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F40_350101_F40_0x614c00_0x330.decoded.stats.md` | 566 | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F40_350101_F40_0x614c00_0x330.linear.c` | 4.3K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F45_350101_F45_0x7aa000_0x5fe8.decoded.asm` | 74.8K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F45_350101_F45_0x7aa000_0x5fe8.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F45_350101_F45_0x7aa000_0x5fe8.linear.c` | 115.9K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F49_350101_F49_0x7b0000_0x7158.decoded.asm` | 90.4K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F49_350101_F49_0x7b0000_0x7158.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F49_350101_F49_0x7b0000_0x7158.linear.c` | 146.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F53_350101_F53_0x7b8000_0x5e20.decoded.asm` | 73.4K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F53_350101_F53_0x7b8000_0x5e20.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F53_350101_F53_0x7b8000_0x5e20.linear.c` | 114.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F57_350101_F57_0x7c2000_0x70f8.decoded.asm` | 90.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F57_350101_F57_0x7c2000_0x70f8.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F57_350101_F57_0x7c2000_0x70f8.linear.c` | 146.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F61_350101_F61_0x7ca000_0x5ec8.decoded.asm` | 74.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F61_350101_F61_0x7ca000_0x5ec8.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F61_350101_F61_0x7ca000_0x5ec8.linear.c` | 115.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F65_350101_F65_0x7d0000_0x70e0.decoded.asm` | 90.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F65_350101_F65_0x7d0000_0x70e0.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F65_350101_F65_0x7d0000_0x70e0.linear.c` | 145.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F69_350101_F69_0x7d8000_0x5fa0.decoded.asm` | 74.6K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F69_350101_F69_0x7d8000_0x5fa0.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F69_350101_F69_0x7d8000_0x5fa0.linear.c` | 115.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F73_350101_F73_0x7de000_0x7158.decoded.asm` | 90.4K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F73_350101_F73_0x7de000_0x7158.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F73_350101_F73_0x7de000_0x7158.linear.c` | 146.5K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F77_350101_F77_0x7e6000_0x5ec8.decoded.asm` | 73.9K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F77_350101_F77_0x7e6000_0x5ec8.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F77_350101_F77_0x7e6000_0x5ec8.linear.c` | 114.7K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F81_350101_F81_0x7ec000_0x7170.decoded.asm` | 90.6K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F81_350101_F81_0x7ec000_0x7170.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F81_350101_F81_0x7ec000_0x7170.linear.c` | 146.8K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F85_350101_F85_0x7f4000_0x5ef8.decoded.asm` | 74.1K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F85_350101_F85_0x7f4000_0x5ef8.decoded.stats.md` | 1.1K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/F85_350101_F85_0x7f4000_0x5ef8.linear.c` | 115.0K | managed VM linear C | decoded asm 线性提升 | metasec_managed_vm_decoder.py | 作为人工 lift/C oracle 的中间层。 |
+| `managed_vm_decode_cf64_thirdhop_20260905/managed_vm_decode_summary.md` | 8.7K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
 | `managed_vm_decode_child_f0_350101/` | - | managed VM decode 目录 | managed program dump 解码结果 | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_managed_vm_decoder.py | 升级时对照 F 程序 opcode/linear.c/unknown 统计。 |
 | `managed_vm_decode_child_f0_350101/F0_350101_F0_0x648000_0xa38.decoded.asm` | 11.0K | managed VM decoded asm | managed bytecode dump 解码 | metasec_managed_vm_decoder.py | 看原始 VM 指令序列。 |
 | `managed_vm_decode_child_f0_350101/F0_350101_F0_0x648000_0xa38.decoded.stats.md` | 1.6K | managed VM decode 统计 | decoder 统计 | metasec_managed_vm_decoder.py | 确认 unknown opcode 是否为 0，升级时先看这个。 |
@@ -628,7 +830,7 @@ versions/350101
 | `metasec_350101_recovered_c_suite.c` | 7.3K | C oracle suite | 统一测试入口 | 人工维护 | 把各 CF/header oracle 串起来做回归。 |
 | `metasec_ctx350_draft.h` | 5.0K | 结构体 | 动态证据 + IDA 静态访问人工合并 | 人工维护 | 导入 IDA/对照新版本 ctx 布局。 |
 | `metasec_so_identity.md` | 709 | SO 身份 | 原始 SO hash/build-id/string anchors | ~/.codex/skills/metasec-so-recognizer/scripts/metasec_so_probe.py | 确认分析结论对应哪份 SO；升级版本第一步对照它。 |
-| `metasec_structs_350_all.h` | 56.2K | 结构体 | 334 旧结构 + 350101 动态证据修正 | 人工维护 | 当前结构总快照，IDA Local Types 和 unidbg 注释参考。 |
+| `metasec_structs_350_all.h` | 57.3K | 结构体 | 334 旧结构 + 350101 动态证据修正 | 人工维护 | 当前结构总快照，IDA Local Types 和 unidbg 注释参考。 |
 | `multi_request_compare_350101/` | - | 请求对比目录 | 真机 counter + unidbg one/multi request 对比 | counter-one/counter-multi probe + unidbg baseline | 判断单请求/多请求路径是否稳定。 |
 | `multi_request_compare_350101/README.md` | 5.9K | 请求对比证据 | 真机请求与 unidbg 请求对比 | counter probe + unidbg baseline | 定位路径/值差异是否随请求变化。 |
 | `multi_request_compare_350101/true_device_metamulti_8req_20260831_121946.json` | 161.7K | 请求对比证据 | 真机请求与 unidbg 请求对比 | counter probe + unidbg baseline | 定位路径/值差异是否随请求变化。 |
@@ -658,6 +860,7 @@ versions/350101
 | `run_recovered_c_oracles_350101.sh` | 3.9K | C oracle runner | 统一编译/运行脚本 | 人工维护 | 提交前跑它确认 C 还原没坏。 |
 | `run_sign6_350101_deterministic.sh` | 1.0K | runner 脚本 | 人工整理 | shell | 一键复跑对应验证或 unidbg 场景。 |
 | `run_sign6_350101_trueenv_214509.sh` | 2.0K | runner 脚本 | 人工整理 | shell | 一键复跑对应验证或 unidbg 场景。 |
+| `so_runtime_flow_350101.md` | 20.9K | SO 总流程 | 350101 静态、真机、unidbg、C oracle 和 IDA 证据汇总 | 人工维护 | 按地址、入参、出参、副作用和最终用途总览 SO；升级版本时复制并逐项重新验证。 |
 | `source_work_f23_family_exact_350101.md` | 5.2K | source-work 报告 | managed VM source-work family trace/lift | metasec_workarea_timeline.py + decoder + 人工整理 | 恢复 F18/F19/F20/F21 family 和嵌套变换。 |
 | `source_work_family_compare_350101.md` | 6.8K | source-work 报告 | managed VM source-work family trace/lift | metasec_workarea_timeline.py + decoder + 人工整理 | 恢复 F18/F19/F20/F21 family 和嵌套变换。 |
 | `source_work_key_schedule_family_350101.md` | 3.5K | source-work 报告 | managed VM source-work family trace/lift | metasec_workarea_timeline.py + decoder + 人工整理 | 恢复 F18/F19/F20/F21 family 和嵌套变换。 |
@@ -667,6 +870,8 @@ versions/350101
 | `source_work_vectors_350101.md` | 6.0K | source-work 报告 | managed VM source-work family trace/lift | metasec_workarea_timeline.py + decoder + 人工整理 | 恢复 F18/F19/F20/F21 family 和嵌套变换。 |
 | `stackplz_rf_rpc_bridge_350101.md` | 4.2K | eDBG/stackplz | RF RPC + stackplz bridge 实测记录 | stackplz-bridge probe | 后续按 module+offset 下硬断点的模板。 |
 | `summary.json` | 99.1K | 结构证据 | entrydump/read-write trace 聚合 | skills/metasec_struct_infer.py | 机器可读结构证据，供结构提升、IDA 注释和后续脚本复用。 |
+| `token_report_field_map_350101.md` | 9.5K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `token_report_implementation_xrefs_350101.md` | 6.6K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `true_device_branch_probe_350101_latest.json` | 980 | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `true_device_one_request_count_350101_latest.json` | 4.2K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `true_env_sync_350101_214509.md` | 7.5K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
@@ -679,12 +884,12 @@ versions/350101
 | `unidbg_env_fill_350101.md` | 6.6K | unidbg 环境 | JNI/MS.b/.msdata/rootfs 补齐过程 | 人工整理 + unidbg 日志 | 新版本 unidbg 跑不通时先看这里补环境。 |
 | `verify_unidbg_deterministic_350101.py` | 4.7K | 后处理脚本 | 人工整理 | python | 解析日志或验证 deterministic baseline。 |
 | `vm_generic_350101/` | - | 目录 | 人工/脚本生成 | 见目录内 README 或上级报告 | 承载同类证据或中间产物。 |
-| `vm_generic_350101/README.md` | 10.9K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `vm_generic_350101/README.md` | 12.1K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `vm_generic_350101/coverage_1f7860.json` | 27.2K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `vm_generic_350101/coverage_static_1ec670.json` | 5.8K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `vm_generic_350101/coverage_static_1ecaf0.json` | 5.8K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `vm_generic_350101/native_vmp_runtime.py` | 90.9K | 后处理脚本 | 人工整理 | python | 解析日志或验证 deterministic baseline。 |
-| `vm_generic_350101/opcode_recovery_350101.md` | 11.7K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `vm_generic_350101/opcode_recovery_350101.md` | 13.1K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `vm_generic_350101/vmp_entry_analysis_process_350101.md` | 10.6K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `vm_generic_350101/vmp_entry_summary_350101.json` | 2.3K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `vm_lift_1f7860/` | - | native VMP lift 目录 | GumTrace 切片 + native VMP 人工 lift | gum-exevm/native-vmp probe + 人工整理 | 追 vmCode=0x1f7860 的输入输出和 C lift。 |
@@ -703,7 +908,7 @@ versions/350101
 | `x_argus_pack_350101_cf44_input.bin` | 194 | 二进制向量 | 从 trace/log 提取的 raw pack、CF 输入或 header bytes | metasec_*_report.py / true-env / 人工提取 | C oracle 的 byte-exact 测试向量。 |
 | `x_headers_algorithms_350101.c` | 39.9K | X-header C oracle | 算法还原代码 | 人工维护 | 固定输入下生成/验证各 X-* header 的 C 实现。 |
 | `x_headers_algorithms_350101.md` | 7.4K | X-header 算法 | 各 CF/VM/C oracle 汇总 | 人工整理 | 按 header 口径看算法还原进度。 |
-| `x_headers_generation_350101.md` | 21.0K | X-header 链路 | TreeMap put/xheader probe + IDA 路径 | 人工整理 | 看每个 X-* header 在哪里生成、哪里写出。 |
+| `x_headers_generation_350101.md` | 21.5K | X-header 链路 | TreeMap put/xheader probe + IDA 路径 | 人工整理 | 看每个 X-* header 在哪里生成、哪里写出。 |
 | `x_medusa_pack_350101.md` | 4.5K | X-Medusa 报告 | F8/F12/source-work/watch/oracle | true-env/f8-watch/metasec_f12_bitpack_oracle.py + 人工整理 | 恢复 X-Medusa final pack 和 source-work。 |
 | `x_medusa_pack_350101_cf44_input.bin` | 712 | 二进制向量 | 从 trace/log 提取的 raw pack、CF 输入或 header bytes | metasec_*_report.py / true-env / 人工提取 | C oracle 的 byte-exact 测试向量。 |
 

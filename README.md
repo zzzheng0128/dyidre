@@ -29,6 +29,13 @@ dyidre = DouYin ID Reverse Engineering
 
    这是 350101 的主分析目录。
 
+   需要快速查地址、入参、出参和用途时，直接打开：
+
+   ```text
+   versions/350101/interface_ledger_350101.json
+   versions/350101/so_runtime_flow_350101.md
+   ```
+
 3. 再看版本目录规范：
 
    ```text

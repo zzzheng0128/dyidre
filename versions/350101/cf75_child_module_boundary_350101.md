@@ -27,6 +27,9 @@ outer.s2         -> unchanged
 ```
 
 F6 immediately saves those values as `s16/s18/s17`, respectively.
+The wrapper never copies child `s2` back to the outer frame. This must not be
+shortened to "child s2 is unchanged": F6 record `0x44` sets its own `s2` to
+`s16` (the target) before return, while the outer `s2` still remains unchanged.
 
 ## `0x5e` call meaning
 
@@ -53,12 +56,12 @@ record `0x12` invokes child F0 rather than CF17.  The 78-record F6 body has
 | `0x1e` | `0x0a` | CF7 | local cleanup |
 | `0x2d` | `0x0b` | CF9 | local MEM_BLOCK init |
 | `0x31` | `0x0c` | CF8 | bytes-to-hex/ref object |
-| `0x34` | `0x0d` | CF10 | clone/add-ref to target |
+| `0x34` | `0x0d` | CF10 | target-directed binding path |
 | `0x36` | `0x0e` | CF11 | local ref release |
 | `0x38` | `0x0a` | CF7 | local cleanup |
 | `0x3b` | `0x0f` | CF12 | allocate `0x18` object |
 | `0x40` | `0x0b` | CF9 | write 20-byte local result |
-| `0x43` | `0x10` | CF13 | set/add-ref to target |
+| `0x43` | `0x10` | CF13 | target-directed binding path |
 
 ## Observable side-effect boundary
 
@@ -88,15 +91,38 @@ records 0x26..0x27:
 
 It then branches on the incoming low flag:
 
-- flag `1`: encodes F0's 20-byte local result into a block/ref and uses CF10
-  to clone/add-ref it into the `s16` target;
+- flag `1`: encodes F0's 20-byte local result into a block/ref and reaches the
+  child CF9/CF8/CF10 target-directed binding path;
 - flag `0`: CF12 allocates a `0x18` object, CF9 writes the same 20-byte result,
-  then CF13 assigns/add-refs it to `s16`.
+  then reaches the child CF12/CF9/CF13 target-directed binding path.
 
 F6's CF5 call is separate from the F0 result-byte updates documented below;
 the present static boundary does not conflate it with F0's bit-2/bit-5
-operations.  The two F6 ownership branches have different object shapes even
-though they both mutate the target.
+operations. The two routes are statically distinct, but their object shapes,
+ownership and final target contents remain unresolved.
+
+### Static provenance matrix
+
+This matrix records only direct bytecode facts. A row that reaches a child
+binding remains a boundary until that binding's object and alias effects are
+independently established; child table indices must not inherit the similarly
+numbered primary-module CF meanings.
+
+| surface | direct bytecode fact | may-effect / unresolved boundary |
+|---|---|---|
+| outer `s2` / child `s2` | outer `s2` is not copied from the child; F6 record `0x44` sets child `s2 = s16` before return | any interpretation of child `s2` beyond that target identity |
+| outer `s6 & 1` / child `s6` | the low bit selects one of two target-directed paths; no direct outer `s6` writeback is established | path-local object shape, ownership and conditional result |
+| target `s16 = outer.s4` | records `0x26..0x27` zero `target+0x08` then `target+0x00`, before the flag branch | old-reference release, refcount/destructor behavior, failure handling, and the assigned object's ownership |
+| source body | F6 reads `s18+0x10` and `s18+0x0c` only to pass body pointer and signed length to F0; F6 has no direct store through the body pointer | F2 passes the saved source to child CF15, so source aliasing/mutation cannot be excluded |
+| F0 local work result `output[0..15]` | F3 performs sixteen direct byte stores through the supplied output pointer | this is not outer `s2` or a proven final target payload; relation to source/state remains separate |
+| F0 local work result `output[16]` | F4/F5 directly clear/set bit 2 after their CF15 call; F0 later directly clears and conditionally sets bit 5 | CF15 may affect the other bits before those overlays |
+| F0 local work result `output[17..19]` | no direct store is established in F0/F4/F5 | CF15 or an aliasing/native effect may supply or alter these bytes; they cannot be treated as zero or unchanged |
+| F7 | its `s5` input is used for loads, while its non-stack stores target F2-local state | this rules out only a direct F7 bytecode store to source/output, not an indirect/native alias effect |
+
+For the two destination paths, the flag-1 route reaches child CF9/CF8/CF10
+and the flag-0 route reaches child CF12/CF9/CF13. The clear-before-path
+ordering and these two distinct routes are static facts; their concrete object
+shapes, ownership and lifetimes are not.
 
 ## Recovered F0 chain and bounded output facts
 
@@ -180,7 +206,7 @@ preserve the following pre/post state:
   unchanged;
 - the target at `s16 + 0x00/+0x08` before the proven clear, after assignment,
   and after any cleanup, with enough ref/object identity information to
-  distinguish the CF10 and CF13 ownership paths;
+  distinguish the CF10 and CF13 target-directed paths and establish ownership;
 - the source `MEM_BLOCK` body pointer, signed length, and raw byte range (or
   hash plus captured bytes) before and after child F0, so absence of a direct
   F6 store is not mistaken for proof that F0 leaves it unchanged;
@@ -199,6 +225,7 @@ for both flag paths can promote CF75 from the explicit opaque boundary.
 CF75 cannot safely be a no-op, a slot2 scalar return, or a bytes-only helper.
 A future standalone implementation must recover the unresolved result tail
 and CF15 effects, demonstrate source behavior, reproduce both destination
-ownership paths, and preserve the initial clear-before-assignment lifetime.
+target-directed paths while establishing their ownership behavior, and preserve
+the initial clear-before-assignment lifetime.
 Until then it stays unimplemented and may only be routed through an explicit
 trace/recovery `OpaqueCfBackend350` handler.

@@ -11,3 +11,5 @@ tools/runtime_payloads/rustfrida filter=lfs diff=lfs merge=lfs -text
 tools/runtime_payloads/ecapture filter=lfs diff=lfs merge=lfs -text
 tools/runtime_payloads/*.so filter=lfs diff=lfs merge=lfs -text
 tools/runtime_payloads/*.kpm filter=lfs diff=lfs merge=lfs -text
+runs/350101/fresh_trace/stack_writes.log filter=lfs diff=lfs merge=lfs -text
+rusda-server-17.15.0-android-arm64 filter=lfs diff=lfs merge=lfs -text

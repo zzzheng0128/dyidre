@@ -11,6 +11,31 @@
 2. 运行读写 trace：哪个 PC 读/写了哪个 offset，宽度是多少。
 3. 静态汇编/IDA：这个 PC 真实在做什么，比如复制、引用计数、锁、虚调用。
 
+## 签名证据总览（从这里读）
+
+`so_runtime_flow_350101.md` 是本版本唯一的全链路总入口：它把初始化、JNI/HTTP 边界、
+managed VM、native VMP、环境/完整性状态、输出封装和证据等级放在同一条生命周期中。它是
+架构与证据地图，不是可独立调用的签名规范。
+
+建议按下面顺序阅读：
+
+1. [样本身份](metasec_so_identity.md) 与 [分析轨迹](analysis_trajectory_350101.md)：先固定
+   样本和版本口径。
+2. [总流程台账](so_runtime_flow_350101.md) 与 [输出生成边界](x_headers_generation_350101.md)：
+   看输入、阶段、输出容器和失败传播。
+3. [managed VM 启动](managed_vm_boot_350101.md)、[恢复边界](managed_vm_recovery_350101.md)、
+   [程序流程](managed_vm_program_lift_350101.md)、[CF 语义](managed_cf_semantics_350101.md) 与
+   [G 绑定台账](g_binding_ledger_350101.md)：区分 module-local 的 CF/F/G 表及其已证实边界。
+4. [环境输入](environment_inputs_350101.md)、[完整性/风险链](integrity_guard_ida_350101.md) 与
+   [验证记录](algorithm_validation_350101.md)：区分材料来源、状态副作用和固定基线验证。
+5. [CF63/CF64 child 边界](cf63_cf64_child_module_boundary_350101.md)、
+   [CF75 child 边界](cf75_child_module_boundary_350101.md) 及
+   [native VMP 台账](vm_generic_350101/README.md)：将未闭合或刻意保持 opaque 的路径与主链分开。
+
+阅读时以 `S/D/V/P` 证据等级为准：固定输入/环境下的 `V` 只证明对应基线的一致性，不能
+外推为跨设备、跨环境或跨版本的通用结论。总览不收录请求原文、密钥、包字节、地址或运行时
+采集步骤；这些原始材料只应留在受控证据中。
+
 ## 分析 37xx 时怎么复用这里
 
 这个目录不是单纯的 350101 存档，而是后续版本升级的“基准答案 + 证据模板”。
@@ -31,6 +56,13 @@
 ## 文件
 
 - `FILE_CATALOG.md`：本目录文件来源/生成脚本/后续用途清单；由 `dyidre/scripts/generate_version_file_catalog.py 350101` 生成，提交前如果新增/移动文件可以重跑。
+- `so_runtime_flow_350101.md`：350.101 整个 SO 的总流程台账；按 RVA 统一记录 `.init_array`、JNI、HTTP、managed VM、native VMP、完整性链的入参、出参、状态副作用、最终用途与证据等级。后续版本优先复制这份表再逐项替换地址和证据。
+- `interface_ledger_350101.json`：机器可读的接口台账；固定记录 `RVA / caller / 入参 / 出参 / 副作用 / 最终用途 / 证据 / 参考文档`，适合新版本复制后逐条对齐。
+- `guard_branch_influence_plan_350101.md`：boot/guard 异常参数的单变量实验矩阵，记录 guard/risk/settings/report 写集及后续分支影响；仅用于离线或只读验证。
+- `token_report_field_map_350101.md`：从 `dycompare` 的 `get_token`/`report` 分析文本提取的字段、来源、类型、用途及与 350.101 guard/HTTP/F8 的对应关系；真实值已脱敏。
+- `dycompare_schema_boundary_350101.md`：历史文本、`klog.proto` 注释与 350.101 之间的 schema/provenance 边界审计；明确哪些标签、类型和跨版本对应仍不能提升为 ABI 结论。
+- `token_report_implementation_xrefs_350101.md`：历史兼容参考，**不作为 350/351 升级依据**；升级时以 IDA 数据库和下方 locator 为准。
+- `ida_token_report_field_locator.py`：直接在当前 IDA 数据库中按字段字符串 xref、函数名和已有 Local Types 找 token/report 候选；默认只读输出，适合后续版本升级复用。
 - `analysis_trajectory_350101.md`：350101 实际走通的分析轨迹；记录 SO 身份、入口、真机采证、unidbg 复现、VM/CF、结构体、IDA 落库之间的证据链。后续升级版本时优先复制它作为新版本轨迹。
 - `summary.json`：机器可读证据。
 - `x0_evidence.md`：按 offset 聚合后的证据表。
@@ -47,6 +79,8 @@
 - `cf48_short_transform_lift_350101.md` / `cf48_f17_recovered_350101.c`：CF48/CF49/CF44 短头链路的 lift 和 standalone oracle；覆盖 `key32 -> ARX schedule -> managed F17 34-round block transform -> prefix4||out32 -> base64`，F7/X-Ladon 与 F13/X-Helios 两组 runtime 向量当前 `failures=0`。
 - `managed_vm_program_lift_350101.md`：把已 decode 的 managed bytecode 程序提升成业务流程说明；区分直接产出 header 的 `F5/F7/F8/F13` 和嵌套 transform 的 `F12/F18/F19/F20/F21/F22/F23/F30/F31/F32/F39/F40/F47/F48/...`。
 - `managed_sign_cf_table_350101.md`：从 `0x1702B8 initManagedSignModuleLarge_350` 静态抽出的 `CF0..CF101` 注册表；用于快速生成 unidbg focused probe 的 callsites。
+- `g_binding_ledger_350101.md`：四个 managed module 的 `G` import-binding 台账；区分 `G/CF/F` 三张表，现已闭合 80/80 registration/import ABI 与 80/80 G data-symbol reference，并记录 second F1、child F0 对各自三个 8-byte package slot 的窄读证据；不把未证实的 BSS/静态地址误命名为业务字段。
+- `g_linkage_and_relocation_static_audit_350101.md`：以 module-local `G` 命名空间、builder link、import、symbol、pool slot、relocation 与 F body 为链的静态交叉审计；明确区分已闭合的链接/引用关系与仍未知的运行时语义。
 - `x_argus_pack_350101.md`：F5/X-Argus 的 byte-exact pack 报告；证明 `CF44(src_len=0xc2)` 输入做 base64 后逐字节等于最终 `X-Argus`。
 - `f5_x_argus_pack_lift_350101.md`：F5/X-Argus 尾部拼包 lift；自动验证 `0x20+4->0x24 -> 0x44 -> 0xa8 -> 0xb1 -> 0xb3 -> 0xc2` 的 CF30 concat 链，最终 `base64(0xc2 pack) == X-Argus`。
 - `f5_argus_cf41_cf42_cf43_static_350101.md`：F5/X-Argus 尾部 `CF41/CF42/CF43` 静态剥离记录；`CF41` 已验证为 SIMON128/256 + PKCS#7，`CF42` 已精确到 little-endian u16 MEM_BLOCK，`CF43` 当前 F5 样本 mode type=1 且验证为 AES-128-CBC + PKCS#7。
@@ -84,7 +118,7 @@
 - `managed_vm_decode_roundfamilies_350101/managed_vm_decode_summary.md`：F24/F25/F26/F27/F28/F29/F33/F41/F49/F50/F51/F52/F53/F54 round-family body decode；全部 unknown 0。
 - `managed_vm_decode_f3_f14_350101/managed_vm_decode_summary.md`：补齐此前未分类的 F3/F4/F6/F9/F10/F11/F14；七个 descriptor 均为 `kind=1` managed bytecode，解码均为 unknown 0。
 - `managed_vm_runtime_350101/`：0x18-record managed VM 的严格可执行 runtime；新增的 F3..F14 覆盖报告均为 `supported_records == records`。`0x5c` 间接 PC 必须由调用方提供 token-to-record 映射；`0x5e` 也显式区分主模块 CF table 与 child-module program table，后者没有 bridge 时严格抛错而非误调 CF。
-- `cf63_second_module_f22_recovered_350101.md` / `cf63_cf64_child_module_boundary_350101.md` / `cf75_child_module_boundary_350101.md`：三个 child-module 证据边界。CF63/F22 已有精确纯函数实现；CF64/F1 和 CF75/F6 已确认有共享 frame/raw-memory/隐藏 slot4 副作用，因此刻意维持 opaque。CF64 的 F1（2,345 records）和 direct F2--F21 bodies 已静态导出，修正了旧 `0x5e` 的 F25/F26 错位解释，但 child-native/transitive object effect 未闭合；CF75 的 F0--F7 可达 bytecode 已静态解码完毕（1,210 records），但 CF15、source alias、20-byte 尾部和目标对象生命周期仍未闭合，不能因此升级为实现。
+- `cf63_second_module_f22_recovered_350101.md` / `cf63_cf64_child_module_boundary_350101.md` / `cf64_child_native_abi_350101.md` / `cf64_alias_probe_350101.md` / `cf75_child_module_boundary_350101.md`：三个 child-module 证据边界。CF63/F22 已有精确纯函数实现；CF64/F1 的 child-frame/raw-memory 与 outer-object alias 边界仍未闭合，CF75/F6 则有已证实的 hidden-slot4 target 写入与两条 target-directed path；两者均刻意维持 opaque。CF64 的 84 个可达 F body（28,076 records）已机械解码完毕，`0x0d..0x16` child-native ABI 也已静态闭合；已有一条严格 CF64-origin 的 `0x0e` pre/post trace（4-byte forward copy、`s2=dst`）。新 `cf64_alias_probe_350101.md` 为 F1 直调 F2/F19/F13 的 kind-1 pre/post 采集器；一次 local baseline 只验证了 CF64→F1 scope，未命中三个目标，故仍未闭合跨 F2/F19/F13 的对象别名。其余 helper 的动态覆盖和 outer pointee 写入仍待 trace，不因此升级为实现。CF75 的 F6 本体为 78 records；其 F0 可达的七个 nested body（F0/F1/F2/F3/F4/F5/F7）已静态解码完毕（合计 1,210 records），但 CF15、source alias、20-byte 尾部和目标对象生命周期仍未闭合，不能因此升级为实现。
 - `source_work_static_tables_350101.md`：F36/F44 的静态 256-byte permutation table 定位；从二级表基址 `module.base+0x29f890` 派生出 `+0x484/+0x585` 两个窗口。
 - `f12_medusa_subpack_recovered_350101.c`：把嵌套 F12 的 sub-work bit-pack 核心还原成 C oracle；当前大长度路径为 `dst_limit=0x2af,count=31,phase=0,dst+=8,src++`，31 条 `ST64` old/new 向量当前 `failures=0`。
 - `f12_bitpack_oracle_350101.md`：由 `f8-watch` 的 31 次 `ST64` old/new 自动反推出 F12 source stream 的验证表；后续升级版本可用 skill 脚本 `metasec_f12_bitpack_oracle.py` 复跑。

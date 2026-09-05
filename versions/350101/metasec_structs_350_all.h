@@ -1026,14 +1026,16 @@ typedef struct MetaSecManagedCallArg350 {
      *   0x14A38C -> managedSignBuildA_350/F5 -> X-Argus
      *   0x14A4E0 -> managedSignBuildFinal_350/F8 -> X-Medusa/final material
      *
-     * The wrappers only put this pointer into managed frame slot4. The managed
-     * program then reads this pack through CF/native helpers, writes generated
-     * key/value C strings into out_key/out_value, and the outer function copies
-     * those strings into MEM_BLOCKs before treeMapPut.
+     * F5 puts this pointer into managed-frame slot4; F8 puts the same-layout
+     * pointer into slot20. The managed program then reads this pack through
+     * CF/native helpers, writes generated key/value C strings into
+     * out_key/out_value, and the outer function copies those strings into
+     * MEM_BLOCKs before treeMapPut.
      *
      * Evidence:
      *   - 0x14A358..0x14A388 and 0x14A4A0..0x14A4DC store these exact offsets.
-     *   - 0x1715F8/0x171698 call managedThunkSetSlot4FromX19_350.
+     *   - 0x1715F8 forwards X19 through the slot4 thunk; 0x171698 uses the
+     *     generic frame setter for slot20.
      *   - origin-aware treeMapPut probe maps F5/F7/F8 outputs to X-* headers.
      *   - managed CF post-return trace proves:
      *       F5/CF98 writes "X-Argus" and value len 0x104-class;
@@ -1055,6 +1057,29 @@ typedef struct MetaSecManagedCallArg350 {
     uint8_t final_flag;              /* +0x5c: only set before F8 path */
     uint8_t pad_5d[3];               /* +0x5d */
 } MetaSecManagedCallArg350;          /* observed size >= 0x60 */
+
+typedef struct MetaSecXArgusProtoWire92_350 {
+    /*
+     * Current observed CF41 plaintext payload. This is protobuf wire data,
+     * not a fixed native C object: field sizes and offsets can vary with
+     * optional values. Keep it as an opaque, sample-scoped byte view.
+     */
+    uint8_t wire[0x92];               /* observed length 0x92 */
+} MetaSecXArgusProtoWire92_350;
+
+typedef struct MetaSecXMedusaFinalPack2C8_350 {
+    /*
+     * Final decoded output-buffer layout observed before its outer encoding.
+     * It is not the F8 call ABI, and the last array remains opaque because
+     * its content is produced by managed/native work areas.
+     */
+    uint8_t mutated_mini[0x14];       /* +0x00 */
+    uint8_t fixed_pair[0x02];         /* +0x14 */
+    uint8_t zero_byte;                /* +0x16 */
+    uint8_t one_byte;                 /* +0x17 */
+    uint8_t marker_byte;              /* +0x18 */
+    uint8_t mutated_subpack[0x2af];   /* +0x19 */
+} MetaSecXMedusaFinalPack2C8_350;     /* observed size 0x2c8 */
 
 typedef struct MetaSecArgusTailPack24_350 {
     /*

@@ -69,7 +69,7 @@
 ## 重要更正
 
 - `0x15AFFC` 已更名为 `deleteCompositeVectorState_350`。函数只调用内部析构，再 `free(object)`；没有 ptrace syscall，也没有关闭调试的行为。旧名 `ptrace_disable` 属于误标。
-- “检测到风险”不等于“当场退出”。当前链路多数把结果写入 risk object、report/tree、mask 或 guard 位，随后由签名/策略流程消费。只有具体调用点证明控制流终止时，才能标成 kill/abort。
+- “检测到风险”不等于“当场退出”。当前链路多数把结果写入 risk object、report/tree、mask 或 guard 位；是否再被 header、签名或策略流程读取仍未闭合。只有具体调用点证明控制流终止时，才能标成 kill/abort。
 - `runMetaIntegrityXorVM_350` 与 `runMetaPackageCheckVM_350` 只按已证明的包装层职责命名；内部 VMP opcode 语义仍需静态 handler 与动态 trace 双证据逐项恢复。
 
 ## package-check VMP 的新增边界证据
@@ -99,9 +99,12 @@ exeVMInner(
 ELF program header 证明首个 `PT_LOAD` 为 `file_off=0, vaddr=0`，覆盖到 `0x25EA20`，因此 `0x1EA850` 在本样本中可直接映射到同值文件偏移。真机日志已经观测到相邻的下一 VM 入口 `0x1EC4D0`；在候选区间 `[0x1EA850,0x1EC4D0)` 中：
 
 - 共 `0x1C80` 字节、1824 个 32 位 word；末尾 `0x1EC4CC` 为全零 word。
-- 1807 个 word 已落入当前 runtime 有实现的 opcode/二级 selector，17 个尚未实现。
-- 未实现集合为 top-level `0x00/0x06/0x09/0x3D`，以及 `op=0x11` 的 selector `0x0D/0x20/0x21`。
-- `0x00` 只出现在末尾零 word；这与程序尾部哨兵相符，但尚不能仅凭静态扫描定义其 handler 语义。
+- 1807 个 word 已落入当前 runtime 有实现的 opcode/二级 selector；另 17 个仍未加入
+  runtime，但已完成 exact-image dispatch→handler 与物理字段的静态归属。
+- 后者覆盖四类顶层 handler 与三个 `op=0x11` selector family；其中一个 selector 有
+  编码分叉，而本候选只出现其中一个正常分支，不能泛化为整个 selector 已实现。
+- 末尾全零 word 已有 handler family 的静态归属，但它作为程序尾部哨兵还是可执行指令仍
+  没有动态可达性证据。
 
 这组结果强烈支持该候选区间主要是 VM 指令流，但仍只是**语法覆盖率**，不是执行可达性证明。尤其 `auxA/auxB` 的表项外观不能直接当作 native 函数指针；其解码方式必须从对应 handler 或该入口的动态 trace 得出。
 
@@ -114,9 +117,59 @@ PYTHONDONTWRITEBYTECODE=1 python3 \
   dyidre/materials/350101/libmetasec_ml.so
 ```
 
-该校验先固定整份 SO 的 size/SHA-256，再固定 callsite、span 边界、code SHA-256、1824 个 word 的 selector-gated 覆盖率、17 个未实现项分布和末尾零 word；它不会执行 `exeVMInner`，不会构造 `pParam`，也不会模拟 bridge 或推导 guard 字段写入。
+该校验先固定整份 SO 的 size/SHA-256，再固定 callsite、span 边界、code SHA-256、1824 个 word 的 selector-gated **runtime** 覆盖率、17 个尚未执行化项分布和末尾零 word；它不会执行 `exeVMInner`，不会构造 `pParam`，也不会模拟 bridge 或推导 guard 字段写入。
 
 当前真正缺的不是“再扫一遍所有 word”，而是用 `vm_code_off=0x1EA850` 收一条执行 trace，记录每次 VM load/store 的有效地址。只有当有效地址落入本次 native `guard` 对象 `[guard, guard+0x88)`，才能把 `+0x40/+0x68..+0x7C/+0x80` 的写入者和具体 opcode 闭合。
+
+## guard 的直接 native 写入—消费—发布矩阵
+
+本表只收录当前静态材料能闭合的**直接 native** 数据流；“发布”最高只到
+settings、风险项或 JSON/report/post tree，不表示网络序列化、header 或签名输入。
+
+| 字段/状态 | 直接 native 写入 | 直接读取/发布 | 当前边界 |
+|---|---|---|---|
+| `observed_machine_id` | 初始化哨兵与 ELF machine 检测 | linker 分类与 JSON/report tree | 闭合到 report，不延伸到签名 |
+| `image_end` | 映像边界推导 | 范围校验/失败分支 | 无直接 report/settings 发布 |
+| `signal_loop_failed` | signal-loop 失败路径 | 风险项组装 | 闭合到风险项容器 |
+| `linker_callback_state` | 初始化保存 resolver 结果 | 格式化与 linker 归属分类 | 闭合到 JSON/report tree |
+| `first_check_time`、link-verify 两字段 | 仅构造期默认写入已证实 | JSON/report 或风险项条件 | 非初始化写入者未闭合 |
+| `integrity_risk_bits` | 初始化；完整性发布例程的 ordinary-native 读改写置“已执行”标记 | 两个 VMP wrapper 返回后，将当前标量按值发布到 settings | VMP 的其他位效果及下游消费未知 |
+| 四个 setting/package 状态槽 | 初始化默认写入 | 初始化 settings 写入 | 后续直接 reader/重发布未闭合 |
+| `expected_image_xor`、`image_check_length` | 映像边界推导 | 仅到 VMP wrapper 的 guard 参数边界 | 不能称为 VMP 字段级 reader |
+| `image_base` | 构造期默认写入；已审计的 ordinary-native 链未见非默认写入 | 映像范围下界校验 | 其他 alias 或 VMP 写入仍未闭合 |
+
+相邻的 signal 状态全局也有一条独立的直接链：signal 检查/handler 写入，report helper
+读取并放入 JSON，再挂入 post tree。它不是 guard 内字段，不能与上表混为同一对象。
+
+对 `image_base` 的上述限定仅覆盖已审计的 guard 分配/初始化、monitor 与映像边界推导这条
+ordinary-native 链：构造器将 `image_base/image_end` 成对置于默认态，之后前者作为范围下界被
+读取，而边界推导直接写入的是 `image_end` 与完整性输入。名称含有 “getBase” 的 VMP wrapper
+仅把 guard 指针交给 VM 并从独立返回槽取值，wrapper 自身未见对 `image_base` 的直接 store；它
+应保留为未闭合 VMP 边界，不能据此断言全局不存在其他 alias 或 VMP 写入。
+
+setting setter 保存的是标量值副本，而不是 guard 字段地址。因此 guard 后续变化不会自动
+同步到 settings；必须看到新的 setter 调用才能称为重新发布。两个 VMP wrapper 虽接收
+guard，但目前不能据此归因任何字段级读写、写入值或到签名/策略的因果。
+
+前三个 guard 初始化 setting key 也可由另一种布局不同的对象写入。因此 key 名相同不能
+证明 guard slot 的重发布、对象 alias 或值传播；当前只有第四个 key 的静态 xref 仍限于
+guard 构造期发布。
+
+### 静态 consumer 审计
+
+现有静态调用链可把 guard 发布闭合到 settings、risk/report 与 post tree，但没有建立到
+**direct header-output** 的 edge：report 链形成并处理独立的 `POST_TREE`，而 HTTP 的直接
+header 输出链形成并经 hidden out-ref 返回独立的 `TREE_MAP`。两条链复用通用 tree/settings
+setter 只能证明容器实现复用，不能证明对象 alias 或数据流。
+
+HTTP 内层确有一次通用 settings 读取，但该 selector 尚未与任一 guard 发布项完成同一性
+关联；其返回值不作为 header tree 写入、最终输出引用或 CRLF 封装的参数。header 输出返回
+点与 report/post serializer 的已见静态 caller 集也不重合。因此当前结论只能是“未建立
+direct edge”，而不是对所有间接/vtable 路径作全局不存在断言。尤其不能把该结论扩大成
+“HTTP 从不使用 `POST_TREE`”：已见一个 HTTP 邻接辅助 VMP 分支会临时构造该容器，但尚未建立
+它到 CRLF header 输出、report VMP handoff 或通用 wire write pair 的连接。后一个 size/write
+pair 是通用 descriptor-wire 例程，而不是 report 专属 serializer；其经 VMP/callback 的间接
+进入可能性仍是未知边界。
 
 ## `.init_array` 链的阅读方式
 
@@ -135,7 +188,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 \
        -> JNIEnv 函数表扫描
        -> ART method / Java debug 扫描
        -> TracerPid、线程名、root 路径、maps 等风险项
-       -> 写入 report/tree/mask，影响后续风险材料与策略分支
+       -> 写入 report/tree/mask；是否被 header、签名或策略消费未闭合
 ```
 
 ## 证据等级

@@ -71,6 +71,12 @@ IMPORTANT: dict[str, FileMeta] = {
         "人工维护",
         "后续升级版本复制成 analysis_trajectory_<version>.md，逐项替换证据。",
     ),
+    "so_runtime_flow_350101.md": FileMeta(
+        "SO 总流程",
+        "350101 静态、真机、unidbg、C oracle 和 IDA 证据汇总",
+        "人工维护",
+        "按地址、入参、出参、副作用和最终用途总览 SO；升级版本时复制并逐项重新验证。",
+    ),
     "summary.json": FileMeta(
         "结构证据",
         "entrydump/read-write trace 聚合",

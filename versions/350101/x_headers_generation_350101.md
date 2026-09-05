@@ -299,8 +299,15 @@ Managed wrappers:
 
 - `0x1715F8 managedSignBuildA_350`: slot4=`full_pack`, invokes `F5`
 - `0x171648 managedSignBuildB_350`: slot4=`short_pack`, invokes `F7`
-- `0x171698 managedSignBuildFinal_350`: slot4=`full_pack`, invokes `F8`
+- `0x171698 managedSignBuildFinal_350`: slot20=`full_pack`, invokes `F8`
 - `0x1716F4 managedSignPostEmitF13_350`: slot4=`short_pack`, invokes `F13`
+
+F5/X-Argus 与 F8/X-Medusa 共用 `MetaSecManagedCallArg350` 的已闭合 `0x60`
+调用包前缀；F8 的 slot20 与 `final_flag` 是调用约定差异，不构成 `+0x60` 的结构扩展。
+因此旧 `HTTP_SIG_XArgus` / `HTTP_SIG_XMedusa` 只保留为历史命名线索，不能施加到本版本
+F5/F8。作为输出材料视图，`MetaSecXArgusProtoWire92_350` 仅表示当前观测到的 protobuf
+wire payload，`MetaSecXMedusaFinalPack2C8_350` 仅表示最终 decoded buffer；二者都不是
+managed wrapper 的参数类型。
 
 The managed program writes generated C strings into `arg_pack->out_key` and
 `arg_pack->out_value`. Outer code then copies those strings and inserts them:

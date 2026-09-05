@@ -120,9 +120,11 @@ PYTHONDONTWRITEBYTECODE=1 python3 \
 
 This first pins the complete SO to the known 350.101 size/SHA-256 and then
 checks the callsite-bounded `0x1ea850..0x1ec4d0` span: code hash, 1,824 words,
-1,807 implemented selector-gated words, the 17 unsupported-word breakdown,
-and the zero terminal word at `0x1ec4cc`. Its machine-readable report keeps
-the generic static-span rows and adds an explicit evidence boundary.
+1,807 runtime-implemented selector-gated words, the 17 runtime-unsupported
+word breakdown, and the zero terminal word at `0x1ec4cc`. Those 17 words now
+have static dispatch/field attribution, but remain deliberately outside the
+executable runtime; its machine-readable report therefore preserves the
+runtime-coverage boundary.
 
 It is intentionally absent from `KNOWN_NATIVE_VMP_WRAPPERS_350`: static
 callsite provenance does not close a wrapper stack/pParam layout, result ABI,
@@ -169,6 +171,19 @@ module-relative offsets; it fails closed for an unknown entry triple.
 pointer, stack offset, or result shape. Neither executes bytecode, emulates
 `funBridge`, or supplies material/output values. The entry-only pairs
 `0x1f6670/0x11999c` and `0x201800/0x12acf8` deliberately remain unresolved.
+
+### Entry-only 的静态 wrapper 形状（不是 ABI）
+
+这两组只能作为 entry provenance 保存，不能加入 closed wrapper manifest：
+
+| 组 | 已证实的静态参数准备 | 明确未知 |
+|---|---|---|
+| 八次入口组 | managed-frame adapter 依次取两个 frame slot，放入两个局部参数字；wrapper 准备转发 thunk、栈内 anchor、保存返回链接与两张固定数据表 | 无独立 code span、取指/控制边、返回寄存器消费、managed return-slot 写入或输出容器 |
+| 单次入口组 | wrapper 先复制输入块、建立对象引用、初始化锁/标志，再以对象及其持有引用组成两个局部参数字，并准备同类 thunk/anchor/返回链接与数据表 | 无独立 code span、VMP 字段副作用、out-ref、返回类型、cache/config 语义或所有权结论 |
+
+两个 thunk 只证明“动态 target 加一个实参”的转发形状，不证明实际 target、完整参数个数、
+回调行为或返回类型。即使已有入口事件，也不应把这两组标成可调用 ABI、已恢复 VMP 或已
+闭合输出。
 
 The offsets are now explicitly bound to the one local sample identified in
 `../metasec_so_identity.md`: `size=0x2bb410` and SHA-256

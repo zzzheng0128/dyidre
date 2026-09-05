@@ -200,8 +200,8 @@ L_002e:
     S[2] = (uint8_t)((uint32_t)S[10] >> (S[1] & 31));
 
 L_002f:
-    /* +0x00468 op=0x17 04 0a 0a 00 OP_17: raw operands=04 0a 0a 00 imm16=10 q1=0 */
-    /* unknown opcode */
+    /* +0x00468 op=0x17 04 0a 0a 00 SHL32_VAR: s10 = (int32_t)((uint32_t)s10 << ((uint32_t)s4 & 31)) */
+    S[10] = (int32_t)((uint32_t)S[10] << ((uint32_t)S[4] & 31));
 
 L_0030:
     /* +0x00480 op=0x84 10 09 09 14 ADD64: s9 = s16 + s9 */
@@ -368,8 +368,8 @@ L_0058:
     S[2] = (uint8_t)((uint32_t)S[8] >> (S[1] & 31));
 
 L_0059:
-    /* +0x00858 op=0x17 04 08 08 07 OP_17: raw operands=04 08 08 07 imm16=1800 q1=0 */
-    /* unknown opcode */
+    /* +0x00858 op=0x17 04 08 08 07 SHL32_VAR: s8 = (int32_t)((uint32_t)s8 << ((uint32_t)s4 & 31)) */
+    S[8] = (int32_t)((uint32_t)S[8] << ((uint32_t)S[4] & 31));
 
 L_005a:
     /* +0x00870 op=0x85 13 13 01 00 ADD64_IMM16: s19 = s19 +0x1 */
@@ -1772,8 +1772,8 @@ L_01b7:
     S[2] = (uint8_t)((uint32_t)S[7] >> (S[1] & 31));
 
 L_01b8:
-    /* +0x02940 op=0x17 04 07 07 00 OP_17: raw operands=04 07 07 00 imm16=7 q1=0 */
-    /* unknown opcode */
+    /* +0x02940 op=0x17 04 07 07 00 SHL32_VAR: s7 = (int32_t)((uint32_t)s7 << ((uint32_t)s4 & 31)) */
+    S[7] = (int32_t)((uint32_t)S[7] << ((uint32_t)S[4] & 31));
 
 L_01b9:
     /* +0x02958 op=0xb3 01 08 01 01 AND64: s1 = s1 & s8 */

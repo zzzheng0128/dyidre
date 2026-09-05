@@ -75,7 +75,7 @@ The two apparent pairs are aliases of one native serializer pair:
 | CF | wrapper | thunk | shared implementation | ABI |
 |---|---:|---:|---:|---|
 | CF31 | `0x16F19C` | `j_postDataCalcLen @ 0x172234` | `postDataCalcLen @ 0x11615C` | `slot4 -> slot2` serialized byte count |
-| CF33 | `0x16F218` | `j_postDataWriteBuf @ 0x172238` | `postDataWriteBuf @ 0x1165B8` | `slot4, slot5 -> slot2` bytes written/final cursor |
+| CF33 | `0x16F218` | `j_postDataWriteBuf @ 0x172238` | `postDataWriteBuf @ 0x1165B8` | `slot4, slot5 -> slot2` bytes written / cursor offset |
 | CF90 | `0x16FFE8` | `j_postDataCalcLen_0 @ 0x1722A4` | `postDataCalcLen @ 0x11615C` | same as CF31 |
 | CF91 | `0x170014` | `j_postDataWriteBuf_0 @ 0x1722A8` | `postDataWriteBuf @ 0x1165B8` | same as CF33 |
 
@@ -87,6 +87,14 @@ writes `field_number << 3 | wire_type`, and emits the corresponding varint,
 fixed32/fixed64, length-delimited, packed, or recursive nested-message bytes.
 That is a protobuf-wire-compatible dynamic-message serializer, not a generic
 opaque "post-data" callback or a recovered official `.proto` schema.
+
+At the native wrapper boundary, the size aliases pass only the message in
+`X0`, while the write aliases pass `X0=message` and `X1=raw destination`;
+`X8` is not a hidden output argument. The writer has no capacity argument.
+Its returned `X0` is the accumulated byte count (equivalently, an offset from
+the supplied destination), not an end pointer. The F5/F8 schema gates
+described below are host-model safeguards, not restrictions imposed by this
+shared native descriptor walker.
 
 The following layout boundary is directly visible in both engines and is the
 right starting point for any later host model:
@@ -183,9 +191,18 @@ resizes a MEM_BLOCK to that length, records `src_len=len`, and passes the raw
 body pointer to `writeBuf(msg, body.mem)`. Neither write wrapper nor
 `0x1165B8` receives a capacity argument or performs a capacity check; slot5
 is a raw writable `uint8_t *`, and the caller must reserve at least the
-preceding size-pass result. The observed return equals the size pass, making
-slot2 the final cursor/number of bytes written. If the message changes between
-the two calls, this implementation provides no independent protection.
+preceding size-pass result. The observed return equals the size pass, so slot2
+carries the byte count (or relative cursor offset), not an end pointer. If the
+message changes between the two calls, this implementation provides no
+independent protection.
+
+### Trace provenance
+
+The current checkout retains the derived trace summary and fixed-vector hash
+checkpoints used here, but not the original `cfargs`/`cfpost` raw logs
+referenced by earlier analysis. Consequently the dynamic observations above
+are archival evidence, not a claim that their raw event stream can be
+independently replayed from this checkout.
 
 CF31/CF33 belong to the F5 Argus route and CF90/CF91 to the F8 Medusa route.
 Thus both pairs are relevant to complete request signing.

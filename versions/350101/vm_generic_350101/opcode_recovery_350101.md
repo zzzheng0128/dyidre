@@ -173,6 +173,31 @@ frequency. In particular, stack/input pages can yield changing words at the
 same address and must fail stable-image construction rather than be promoted
 to VM code.
 
+## Package-check candidate: static handler mapping only
+
+The caller-bounded package-check candidate has a separate evidence status. Its
+17 words that remain unsupported by the portable runtime now all map through
+the exact-image dispatch tables to seven static handler families: four memory
+read forms, one ordering barrier, one conditional register move, and one
+selector with two encoding-dependent normal paths.
+
+This closes only dispatch and physical-field attribution for those observed
+words. One of the secondary-selector forms has two native branches, while the
+candidate contains only one branch form; it must not be generalized to the
+entire selector. None of the seven families is added to the reusable runtime:
+there is no dynamic reachability, virtual-register/memory delta, guard-field
+effect, or regression evidence for this candidate. The executable coverage
+therefore remains **1807/1824**, despite complete static handler mapping of
+the 17 remaining words.
+
+More precisely, that secondary handler selects its two static CFG arms from
+an instruction-encoding discriminator. Every instance of the selector in the
+caller-bounded candidate has the same encoding form; the complementary form
+does not occur in this static word stream. This establishes only that an
+alternate encoding arm exists but is not represented by the candidate bytes.
+It does not assert whether either arm executes in a call, nor any register,
+memory, or guard effect.
+
 ## Latest local generic-VM trace coverage
 
 With VM page `0x6ffbcb6000` explicitly supplied, the latest local

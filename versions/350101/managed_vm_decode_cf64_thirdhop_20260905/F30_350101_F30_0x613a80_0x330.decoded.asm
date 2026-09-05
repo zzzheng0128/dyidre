@@ -1,0 +1,39 @@
+; MetaSec managed bytecode decode: F30
+; source: /Users/freeman/project/douyin/unidbg/unidbg-android/target/managed_program_dumps_350101_cf64_thirdhop_bodies_20260905/350101_F30_0x613a80_0x330.bin
+; records: 34  record_size=0x18
+; slot base: qword slots=frame->buf+0x8100, f32=+0x8200, f64=+0x8280
+
+0000  +0x00000  op=85  04 02 38 00  ADD64_IMM16      s2 = s4 +0x38
+0001  +0x00018  op=85  05 03 38 00  ADD64_IMM16      s3 = s5 +0x38
+0002  +0x00030  op=85  00 04 00 00  ADD64_IMM16      s4 = s0 +0x0
+0003  +0x00048  op=85  00 05 00 08  ADD64_IMM16      s5 = s0 +0x800
+0004  +0x00060  op=ae  04 05 1c 00  BR_EQ64          if (s4 == s5) goto record +33
+0005  +0x00078  op=84  02 04 06 14  ADD64            s6 = s2 + s4
+0006  +0x00090  op=84  03 04 01 14  ADD64            s1 = s3 + s4
+0007  +0x000a8  op=85  04 04 40 00  ADD64_IMM16      s4 = s4 +0x40
+0008  +0x000c0  op=58  06 07 c8 ff  LD64             s7 = *(uint64_t *)(s6 -0x38)
+0009  +0x000d8  op=73  01 07 07 11  ROR64_IMM        s7 = ror64(s7, 17)
+000a  +0x000f0  op=25  01 07 d0 ff  ST64             *(s1 -0x30) = s7
+000b  +0x00108  op=58  06 07 d0 ff  LD64             s7 = *(uint64_t *)(s6 -0x30)
+000c  +0x00120  op=73  11 07 07 11  ROR64_IMM        s7 = ror64(s7, 17)
+000d  +0x00138  op=25  01 07 f0 ff  ST64             *(s1 -0x10) = s7
+000e  +0x00150  op=58  06 07 d8 ff  LD64             s7 = *(uint64_t *)(s6 -0x28)
+000f  +0x00168  op=73  13 07 07 11  ROR64_IMM        s7 = ror64(s7, 17)
+0010  +0x00180  op=25  01 07 c8 ff  ST64             *(s1 -0x38) = s7
+0011  +0x00198  op=58  06 07 e0 ff  LD64             s7 = *(uint64_t *)(s6 -0x20)
+0012  +0x001b0  op=73  11 07 07 11  ROR64_IMM        s7 = ror64(s7, 17)
+0013  +0x001c8  op=25  01 07 e0 ff  ST64             *(s1 -0x20) = s7
+0014  +0x001e0  op=58  06 07 e8 ff  LD64             s7 = *(uint64_t *)(s6 -0x18)
+0015  +0x001f8  op=73  11 07 07 11  ROR64_IMM        s7 = ror64(s7, 17)
+0016  +0x00210  op=25  01 07 00 00  ST64             *(s1 +0x0) = s7
+0017  +0x00228  op=58  06 07 f0 ff  LD64             s7 = *(uint64_t *)(s6 -0x10)
+0018  +0x00240  op=73  11 07 07 11  ROR64_IMM        s7 = ror64(s7, 17)
+0019  +0x00258  op=25  01 07 d8 ff  ST64             *(s1 -0x28) = s7
+001a  +0x00270  op=58  06 07 f8 ff  LD64             s7 = *(uint64_t *)(s6 -0x8)
+001b  +0x00288  op=73  13 07 07 11  ROR64_IMM        s7 = ror64(s7, 17)
+001c  +0x002a0  op=25  01 07 e8 ff  ST64             *(s1 -0x18) = s7
+001d  +0x002b8  op=58  06 06 00 00  LD64             s6 = *(uint64_t *)(s6 +0x0)
+001e  +0x002d0  op=73  01 06 06 11  ROR64_IMM        s6 = ror64(s6, 17)
+001f  +0x002e8  op=25  01 06 f8 ff  ST64             *(s1 -0x8) = s6
+0020  +0x00300  op=a7  04 05 e4 ff  BR_NE64          if (s4 != s5) goto record +5
+0021  +0x00318  op=5b  1f 00 00 00  RET              return/leave with s31

@@ -50,7 +50,7 @@
 002c  +0x00420  op=33  01 0c 01 00  OR_IMM16         s12 = s1 | 0x1
 002d  +0x00438  op=a7  0d 00 fc ff  BR_NE64          if (s13 != s0) goto record +42
 002e  +0x00450  op=0d  02 0a 01 11  BYTE_FROM_U32_SHIFT s2 = (uint8_t)((uint32_t)s10 >> (s1 & 31))
-002f  +0x00468  op=17  04 0a 0a 07  OP_17            raw operands=04 0a 0a 07 imm16=1802 q1=0
+002f  +0x00468  op=17  04 0a 0a 07  SHL32_VAR        s10 = (int32_t)((uint32_t)s10 << ((uint32_t)s4 & 31))
 0030  +0x00480  op=84  10 09 09 14  ADD64            s9 = s16 + s9
 0031  +0x00498  op=85  05 05 01 00  ADD64_IMM16      s5 = s5 +0x1
 0032  +0x004b0  op=b3  0b 01 01 01  AND64            s1 = s11 & s1
@@ -92,7 +92,7 @@
 0056  +0x00810  op=33  01 0a 01 00  OR_IMM16         s10 = s1 | 0x1
 0057  +0x00828  op=a7  0b 00 fc ff  BR_NE64          if (s11 != s0) goto record +84
 0058  +0x00840  op=0d  02 08 01 01  BYTE_FROM_U32_SHIFT s2 = (uint8_t)((uint32_t)s8 >> (s1 & 31))
-0059  +0x00858  op=17  04 08 08 00  OP_17            raw operands=04 08 08 00 imm16=8 q1=0
+0059  +0x00858  op=17  04 08 08 00  SHL32_VAR        s8 = (int32_t)((uint32_t)s8 << ((uint32_t)s4 & 31))
 005a  +0x00870  op=85  13 13 01 00  ADD64_IMM16      s19 = s19 +0x1
 005b  +0x00888  op=84  17 07 07 14  ADD64            s7 = s23 + s7
 005c  +0x008a0  op=b3  09 01 01 01  AND64            s1 = s9 & s1
@@ -451,7 +451,7 @@
 01bd  +0x029b8  op=33  01 09 01 00  OR_IMM16         s9 = s1 | 0x1
 01be  +0x029d0  op=a7  0a 00 fc ff  BR_NE64          if (s10 != s0) goto record +443
 01bf  +0x029e8  op=0d  02 07 01 11  BYTE_FROM_U32_SHIFT s2 = (uint8_t)((uint32_t)s7 >> (s1 & 31))
-01c0  +0x02a00  op=17  04 07 07 00  OP_17            raw operands=04 07 07 00 imm16=7 q1=0
+01c0  +0x02a00  op=17  04 07 07 00  SHL32_VAR        s7 = (int32_t)((uint32_t)s7 << ((uint32_t)s4 & 31))
 01c1  +0x02a18  op=b3  01 08 01 01  AND64            s1 = s1 & s8
 01c2  +0x02a30  op=36  09 00 08 01  NOR64            s8 = ~(s9 | s0)
 01c3  +0x02a48  op=b3  07 08 07 01  AND64            s7 = s7 & s8
