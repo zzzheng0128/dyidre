@@ -242,6 +242,23 @@ IDA 是最终静态落点，但不能反过来当唯一真相。
 3. `skills/ida_apply_metasec_struct_evidence.py` 或 ida-pro-mcp 把名称、原型、中文注释写回 IDA；
 4. 不确定的字段保持 `field_xxx`，不要为了好看硬命名。
 
+### 一键补回 proto / JSON 名称（350.101）
+
+在 IDA 9.3 打开匹配的数据库后，用 **File → Script file…** 运行
+[ida_apply_proto_json_names_350101.py](skills/ida_apply_proto_json_names_350101.py)。
+脚本独立包含 10 个已核实的新名称及已有的 u32 varint 名称，不依赖临时报告。
+
+- 核对 IDB 输入 SHA-256、架构、磁盘 SO（存在时）以及目标入口字节；不匹配时拒绝修改。
+- 只补空名/默认 `sub_xxx`，保留已有人工名称；重复执行会跳过已完成项。
+- 不修改类型、原型、注释、字节或函数边界；不处理共享代码主体 `0x10CAAC`。
+- 有实际改名时，在当前 IDB 同级的 `proto_json_name_restore/run_*/` 保存 `before.json` 和 `result.json`，并保存当前 IDB；没有变化时不重复写文件。名称记录不替代完整数据库备份。
+- 可用 `runpy.run_path(脚本路径)["restore_names"](dry_run=True)` 只预览，或传 `save=False` 由外层统一保存。需在 IDA 主线程执行。
+
+总恢复入口 [ida_rehydrate_350101_9_3.py](skills/ida_rehydrate_350101_9_3.py)
+也已接入这一补名步骤，并在运行旧恢复步骤前核对目标身份。总入口还会执行原有
+类型/CF/注释恢复，仅用于匹配且 imagebase 为 0 的新库；现有库只补 proto/JSON 时，
+应运行上面的独立脚本。
+
 ## 清理原则
 
 已经做过的清理：

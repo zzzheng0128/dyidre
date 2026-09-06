@@ -1,0 +1,251 @@
+Possible file format: ELF64 for ARM64 (Shared object) (/Applications/IDA Professional 9.3.app/Contents/MacOS/loaders/elf.dylib)
+
+  bytes   pages size description
+--------- ----- ---- --------------------------------------------
+ 11452416  1398 8192 allocating memory for b-tree...
+ 11452416  1398 8192 allocating memory for virtual array...
+   262144    32 8192 allocating memory for name pointers...
+-----------------------------------------------------------------
+ 23166976            total memory allocated
+
+Loading processor module /Applications/IDA Professional 9.3.app/Contents/MacOS/procs/arm.dylib for ARM...OK
+Autoanalysis subsystem has been initialized.
+Loading file '/Users/freeman/project/douyin/dyidre/materials/350101_rehydrated_durable_9_3_20260907/libmetasec_ml.so' into database...
+Detected file format: ELF64 for ARM64 (Shared object)
+Assuming __fastcall calling convention by default
+  0. Creating a new segment  (0000000000000000-000000000025EA20) ... ... OK
+  1. Creating a new segment  (0000000000260190-00000000002C8200) ... ... OK
+Assuming __fastcall calling convention by default
+Type library 'gnulnx_arm64' loaded. Applying types...
+Types applied to 0 names.
+  2. Creating a new segment  (0000000000032E30-0000000000033C20) ... ... OK
+  3. Creating a new segment  (0000000000033C20-000000000025EA20) ... ... OK
+  4. Creating a new segment  (0000000000033C20-00000000001DD858) ... ... OK
+     Deleting segment        (00000000001DD858-000000000025EA20) ...
+  4. Creating a new segment  (00000000001DD858-000000000025EA20) ... ... OK
+  5. Creating a new segment  (00000000001DD860-000000000020B169) ... ... OK
+  6. Creating a new segment  (000000000020B169-000000000025EA20) ... ... OK
+  7. Creating a new segment  (0000000000259B28-000000000025E988) ... ... OK
+  8. Creating a new segment  (000000000025E988-000000000025EA20) ... ... OK
+  9. Creating a new segment  (0000000000260190-0000000000260530) ... ... OK
+     Deleting segment        (0000000000260530-00000000002C8200) ...
+  9. Creating a new segment  (0000000000260530-00000000002C8200) ... ... OK
+ 10. Creating a new segment  (0000000000260530-0000000000260540) ... ... OK
+     Deleting segment        (0000000000260540-00000000002C8200) ...
+ 10. Creating a new segment  (0000000000260540-00000000002C8200) ... ... OK
+ 11. Creating a new segment  (0000000000260540-000000000027C178) ... ... OK
+     Deleting segment        (000000000027C178-00000000002C8200) ...
+ 11. Creating a new segment  (000000000027C178-00000000002C8200) ... ... OK
+ 12. Creating a new segment  (000000000027C398-000000000027CFF8) ... ... OK
+ 13. Creating a new segment  (000000000027CFF8-00000000002C8200) ... ... OK
+ 14. Creating a new segment  (000000000027D000-00000000002BBD70) ... ... OK
+ 15. Creating a new segment  (00000000002BBD70-00000000002C8200) ... ... OK
+     Deleting segment        (00000000002BBD70-00000000002C8200) ...
+ 15. Creating a new segment  (00000000002BBD70-00000000002C8200) ... ... OK
+ 16. Creating a new segment  (00000000002C8200-00000000002C88F8) ... ... OK
+Type library 'android_arm64' loaded. Applying types...
+Types applied to 12 names.
+Processing relocations...
+Patching PLT...
+Flushing buffers, please wait...ok
+File '/Users/freeman/project/douyin/dyidre/materials/350101_rehydrated_durable_9_3_20260907/libmetasec_ml.so' has been successfully loaded into the database.
+Flushing buffers, please wait...ok
+Hex-Rays Decompiler plugin has been loaded (v9.3.0.251224)
+  The hotkeys are F5: decompile, Ctrl-F5: decompile all.
+
+  Please check the Edit/Plugins menu for more information.
+Hex-rays version 9.3.0.251224 has been detected, gooMBA plugin ready to use
+[MCP] Plugin loaded, server will start automatically
+Using type parser: legacy
+IDA is analysing the input file...
+You may start to explore the input file right now.
+[rehydrate-350101] applying ida_apply_metasec_struct_evidence.py
+imported/updated metasec draft local types, parser result=20
+failed to add function copyRefWithLock_350 at 0x149c20-0x149ca8
+failed to add function buildSignedHttpHeadersInner_350 at 0x149ca8-0x14a77c
+failed to add function buildSignedHttpHeadersCallback_350 at 0x14dbf4-0x14ddc8
+failed to add function metasec350_http_dispatcher_alt_14e888 at 0x14e888-0x14eae4
+failed to add function metasec350_http_dispatcher_14ebb4 at 0x14ebb4-0x14ee28
+failed to add function parseCrlfPairsToTree_350 at 0x14ef30-0x14f094
+failed to add function treeMapToCrlfString_350 at 0x14f098-0x14f220
+failed to add function parseCrlfPairsToTree2_350 at 0x14f22c-0x14f390
+failed to add function treeMapToCrlfString2_350 at 0x14f394-0x14f51c
+failed to add function initManagedHttpModule_350 at 0x14cebc-0x14d130
+failed to add function managedHttpF0Wrapper_350 at 0x14d130-0x14d1d8
+failed to add function managedHttpF1Wrapper_350 at 0x14d1d8-0x14d264
+failed to add function newMemBlock24_350 at 0x14d264-0x14d26c
+failed to add function newMemBlock24_loadOutputMapX22_350 at 0x14d284-0x14d290
+failed to add function prepareManagedSignPackTail_350 at 0x14d2b8-0x14d2e0
+failed to add function copyOutValueStringToX28MemBlock_350 at 0x14d2e8-0x14d2f4
+failed to add function copyOutKeyStringToX27MemBlock_350 at 0x14d2f4-0x14d300
+failed to add function treeMapPut_X22_X27_X28_350 at 0x14d290-0x14d2a0
+failed to add function treeMapPut_X22_X23_X24_350 at 0x14d300-0x14d310
+failed to add function httpThunkStackCanaryCheck_350 at 0x14d310-0x14d31c
+failed to add function prepareManagedSignPackCommon_350 at 0x14d370-0x14d388
+failed to add function copyRuntimeHeaderKey2_saveItemX22_350 at 0x14d394-0x14d3a4
+failed to add function queryInputTreeByRuntimeHeaderKey1_350 at 0x14d40c-0x14d418
+failed to add function queryInputTreeByRuntimeHeaderKey2_350 at 0x14d418-0x14d424
+failed to add function returnHeaderTreeViaX8_350 at 0x14d424-0x14d42c
+failed to add function copyPackFirstMemBlockToStackKey48_350 at 0x14d42c-0x14d438
+failed to add function copyStringToMemBlock_saveX24_350 at 0x14d44c-0x14d454
+failed to add function transformStackMemBlock60ToPackC0_350 at 0x14d454-0x14d460
+failed to add function copyStringToX27MemBlock_350 at 0x14d49c-0x14d4a8
+failed to add function copyRuntimeHeaderKey1ToStack48_350 at 0x14d4b4-0x14d4c0
+failed to add function freeStackMemBlock48_saveX22_350 at 0x14d4c8-0x14d4d4
+failed to add function copyStackMemBlock48ToX28_350 at 0x14d4d4-0x14d4e0
+failed to add function base64PackC0ToStackMemBlock48_350 at 0x14d4e0-0x14d4ec
+failed to add function nativeVmpBuildMssdkMaterial_350 at 0x124dd4-0x124e34
+failed to add function nativeVmpMaterialBridgeThunk_350 at 0x129b24-0x129b30
+failed to add function treeMapPutDoubleValue_350 at 0x120e00-0x120e60
+failed to add function newTreeKV_350 at 0x11fbdc-0x11fc2c
+failed to add function treeMapPut_350 at 0x11fc30-0x11fd40
+failed to add function formatAllocString_350 at 0x139ab0-0x139b24
+failed to add function managedModuleBuild_350 at 0x154328-0x154364
+failed to add function managedModuleFindProgram_350 at 0x154364-0x154454
+failed to add function managedProgramInvoke_350 at 0x154454-0x154468
+failed to add function managedProgramInvokeCore_350 at 0x154468-0x1544ec
+failed to add function managedFrameAcquire_350 at 0x1545a8-0x154648
+failed to add function managedFrameRelease_350 at 0x154648-0x154780
+failed to add function managedFrameGetSlot_350 at 0x1547c0-0x1547d4
+failed to add function managedFrameSetSlot_350 at 0x1547d4-0x1547e8
+failed to add function managedStringIndexMapFind_350 at 0x15485c-0x154c24
+failed to add function managedBytecodeRun_350 at 0x1555a4-0x158460
+failed to add function managedModuleDecodeBuild_350 at 0x158f48-0x15910c
+failed to add function shortHeaderTransform32_flattened_CF48_350 at 0x16ccd8-0x16ce40
+failed to add function sm3OneShot_F15InitUpdateFinal_350 at 0x16d520-0x16d5a0
+failed to add function sm3Update_64byteBlocks_350 at 0x16d5a0-0x16d680
+failed to add function sm3Final_padLenEmit32_350 at 0x16d680-0x16d86c
+failed to add function cf48_transformTextWithF17Blocks_350 at 0x16e794-0x16e8fc
+failed to add function cf48_seedScheduleARX_16E8FC_350 at 0x16e8fc-0x16ea30
+failed to add function metasec350_registry_find_type at 0x1261b0-0x126298
+failed to add function metasec350_shared_ref_assign at 0x47908-0x479c4
+failed to add function metasec350_shared_ref_reset_assign at 0x47c1c-0x47cc0
+failed to add function metasec350_shared_ref_release at 0x4abd4-0x4ac28
+failed to add function metasec350_varint_write_u32 at 0x117eb8-0x117f3c
+failed to add function signStage1_makeStubPieces_350 at 0x16d204-0x16d454
+failed to add function signStage2_makeKeyPieces_350 at 0x16d454-0x16d58c
+failed to add function cf48_shortHeaderTransform32_slot4_text_slot5_out_slot6_key_350 at 0x16f660-0x16f6b0
+failed to add function cf49_buildShortHeaderPack36_slot4_prefix_slot5_xform_ret2_350 at 0x16f6b0-0x16f6fc
+failed to add function cf61_sm3Digest_slot4_input_slot5_len_slot6_out32_350 at 0x16f998-0x16f9f8
+failed to add function initManagedSignModuleLarge_350 at 0x1702b8-0x17157c
+failed to add function managedSignDigestStateInitF15_350 at 0x171794-0x1717f4
+failed to add function managedSignBlockWrapperF16_350 at 0x1717f4-0x17184c
+failed to add function managedSignBlockTransformF17_350 at 0x17184c-0x1718a4
+failed to add function managedSignBuildF4Flag_350 at 0x17157c-0x1715f8
+failed to add function managedSignBuildA_350 at 0x1715f8-0x171648
+failed to add function managedSignBuildB_350 at 0x171648-0x171698
+failed to add function managedSignBuildFinal_350 at 0x171698-0x1716f4
+failed to add function managedSignPostEmitF13_350 at 0x1716f4-0x171744
+failed to add function managedThunkStackCanaryCheck_350 at 0x1718dc-0x1718e8
+failed to add function managedThunkSetSlot4FromX21_350 at 0x1718e8-0x1718f8
+failed to add function managedThunkSetSlot6FromX19_350 at 0x1718f8-0x171908
+failed to add function managedThunkSetSlot5FromX20_350 at 0x171908-0x171918
+failed to add function managedThunkAcquireFrameWithCanary_350 at 0x171918-0x171920
+failed to add function managedThunkSetSlot4FromX19_350 at 0x171920-0x171930
+failed to add function managedThunkReleaseFrameFromX20_350 at 0x17196c-0x171974
+failed to add function managedFrameGetReturnSlot2_350 at 0x1719f0-0x1719f8
+applied 29 extra metasec names
+parse function type returned false at 0x4cc10: void __fastcall exeVMInner_350(unsigned int *vmCode, unsigned __int64 param_window, unsigned int *vmData1, unsigned int *vmData2, VmParam64_350 *vmParam)
+parse function type returned false at 0x124dd4: void __usercall nativeVmpBuildMssdkMaterial_350(REF_MEM_BLOCK *block_a@<X0>, REF_MEM_BLOCK *block_b@<X1>, void *extra_ref@<X2>, REF_OBJ *out_ref@<X8>)
+parse function type returned false at 0x12564c: int __fastcall selectValueFromNativeVmpMaterial_350(REF_MEM_BLOCK *dst, void *source_struct, MEM_BLOCK *selector_key, void *extra_ref)
+parse function type returned false at 0x149ca8: __int64 __fastcall buildSignedHttpHeadersInner_350(MetaSecCtx350 *ctx, REF_JSON_LIST *json_list, REF_MEM_BLOCK *url, REF_MEM_BLOCK *x_ss_stub, int type, REF_TREE_MAP *tree_map)
+parse function type returned false at 0x14dbf4: __int64 __fastcall buildSignedHttpHeadersCallback_350(const char *url, const char *headers_crlf)
+parse function type returned false at 0x1261b0: void *__fastcall registry_find_type_350(COOKIE_RISK_ITEMS *registry, int type)
+parse function type returned false at 0x11fbdc: TREE_KV *__fastcall newTreeKV_350(void *key, void *value)
+parse function type returned false at 0x11fc30: __int64 __fastcall treeMapPut_350(TREE_MAP *map, void *key, void *value)
+parse function type returned false at 0x14ef30: __int64 __fastcall parseCrlfPairsToTree_350(TREE_MAP **out_tree, const char *text)
+parse function type returned false at 0x14f22c: __int64 __fastcall parseCrlfPairsToTree2_350(TREE_MAP **out_tree, const char *text)
+parse function type returned false at 0x14f098: char *__fastcall treeMapToCrlfString_350(void *unused, TREE_MAP **tree)
+parse function type returned false at 0x14f394: char *__fastcall treeMapToCrlfString2_350(void *unused, TREE_MAP **tree)
+parse function type returned false at 0x139ab0: __int64 __fastcall formatAllocString_350(char **out, const char *fmt, ...)
+parse function type returned false at 0x154328: ManagedModule350 *__fastcall managedModuleBuild_350(void *encoded_blob, unsigned int encoded_size, void *scratch, unsigned int scratch_flags, ManagedNativeBinding350 *cf_table, unsigned int cf_count, ManagedNativeBinding350 *g_table, unsigned int g_count, void *decode_key)
+parse function type returned false at 0x154364: ManagedProgram350 *__fastcall managedModuleFindProgram_350(ManagedModule350 *module, const char *program_name)
+parse function type returned false at 0x14cebc: ManagedProgram350 *__fastcall initManagedHttpModule_350(void)
+parse function type returned false at 0x14d130: __int64 __usercall managedHttpF0Wrapper_350@<X0>(unsigned __int64 arg1@<X0>, unsigned int type_or_flag@<W1>, unsigned __int64 scratch_or_arg0@<X8>)
+parse function type returned false at 0x14d1d8: __int64 __usercall managedHttpF1Wrapper_350@<X0>(unsigned int type_or_flag@<W0>, unsigned __int64 scratch_or_arg0@<X8>)
+parse function type returned false at 0x14d264: MEM_BLOCK *__fastcall newMemBlock24_350(void)
+parse function type returned false at 0x14d284: MEM_BLOCK *__fastcall newMemBlock24_loadOutputMapX22_350(void)
+parse function type returned false at 0x14d2b8: MetaSecManagedShortCallArg350 *__fastcall prepareManagedSignPackTail_350(void)
+parse function type returned false at 0x14d2e8: MEM_BLOCK *__fastcall copyOutValueStringToX28MemBlock_350(MEM_BLOCK *value_block)
+parse function type returned false at 0x14d2f4: MEM_BLOCK *__fastcall copyOutKeyStringToX27MemBlock_350(MEM_BLOCK *key_block)
+parse function type returned false at 0x14d290: TREE_KV *__usercall treeMapPut_X22_X27_X28_350@<X0>(TREE_MAP *map@<X22>, void *key@<X27>, void *value@<X28>)
+parse function type returned false at 0x14d300: TREE_KV *__usercall treeMapPut_X22_X23_X24_350@<X0>(TREE_MAP *map@<X22>, void *key@<X23>, void *value@<X24>)
+parse function type returned false at 0x120e00: TREE_KV *__fastcall treeMapPutDoubleValue_350(TREE_MAP *map, MEM_BLOCK *key, double value)
+parse function type returned false at 0x1545a8: ManagedFrame350 *__fastcall managedFrameAcquire_350(ManagedFrame350 *frame)
+parse function type returned false at 0x154648: void __fastcall managedFrameRelease_350(ManagedFrame350 *frame)
+parse function type returned false at 0x1547c0: unsigned __int64 __fastcall managedFrameGetSlot_350(ManagedFrame350 *frame, int slot)
+parse function type returned false at 0x1547d4: ManagedFrame350 *__fastcall managedFrameSetSlot_350(ManagedFrame350 *frame, int slot, unsigned __int64 value)
+parse function type returned false at 0x154454: void __fastcall managedProgramInvoke_350(ManagedProgram350 *program, ManagedFrame350 *frame)
+parse function type returned false at 0x154468: void __fastcall managedProgramInvokeCore_350(ManagedProgram350 *program, ManagedFrame350 *frame)
+parse function type returned false at 0x1555a4: void __fastcall managedBytecodeRun_350(ManagedProgramBody350 *body, ManagedFrame350 *frame)
+parse function type returned false at 0x15485c: void *__fastcall managedStringIndexMapFind_350(void *inline_map, void *sso_key, void *sentinel, void *out_key, void *scratch)
+parse function type returned false at 0x158f48: void __usercall managedModuleDecodeBuild_350(void *encoded_blob@<X0>, unsigned __int64 encoded_size@<X1>, void *scratch@<X2>, unsigned int scratch_flags@<W3>, ManagedNativeBinding350 *cf_table@<X4>, unsigned int cf_count@<W5>, ManagedNativeBinding350 *g_table@<X6>, unsigned int g_count@<W7>, ManagedModule350 **out_module@<X8>, void *decode_key)
+parse function type returned false at 0x16d520: int __fastcall sm3OneShot_F15InitUpdateFinal_350(const void *input, unsigned int input_len, unsigned char out_digest32[32])
+parse function type returned false at 0x16d5a0: int __fastcall sm3Update_64byteBlocks_350(void *sm3_state, const void *input, unsigned int input_len)
+parse function type returned false at 0x16d680: int __fastcall sm3Final_padLenEmit32_350(void *sm3_state, unsigned char out_digest32[32])
+parse function type returned false at 0x16d86c: void __fastcall sm3Compress_flattenedBlocks_350(void *sm3_state, const unsigned char block64[64])
+parse function type returned false at 0x16f43c: unsigned __int64 __fastcall cf41_argusTailSimon128256_slot4_input_slot5_out_slot6_key_350(ManagedFrame350 *frame)
+parse function type returned false at 0x16cb88: void __fastcall cf41_argusTailSimon128256_inner_350(MEM_BLOCK *input, MEM_BLOCK *out, MEM_BLOCK *key_material)
+parse function type returned false at 0x16e538: void __fastcall cf41_simon128_256_pkcs7_encrypt_16E538_350(const unsigned char *input, unsigned int input_len, unsigned char **out_ptr, unsigned int *out_len, const unsigned char key32[32])
+parse function type returned false at 0x16e678: void __fastcall cf41_simon128_256_expandKey_16E678_350(const unsigned char key32[32], unsigned char round_keys_72x8[0x240])
+parse function type returned false at 0x16f48c: unsigned __int64 __fastcall cf42_makeU16MemBlockLE_slot4_out_slot5_low16_350(ManagedFrame350 *frame)
+parse function type returned false at 0x16cc84: void __usercall makeU16MemBlockLE_16CC84_350(unsigned int value@<W0>, MEM_BLOCK *out@<X8>)
+parse function type returned false at 0x16f4c4: unsigned __int64 __fastcall cf43_argusTailAesModePkcs7Transform_slot4_out_slot5_body_slot6_key16_350(ManagedFrame350 *frame)
+parse function type returned false at 0x16fd64: unsigned __int64 __fastcall cf79_jsonAddNumber_slot4_json_slot5_key_slot2_double_350(ManagedFrame350 *frame)
+parse function type returned false at 0x11bf94: void __usercall cf43_argusTailAesModePkcs7Transform_inner_350(MEM_BLOCK *body@<X0>, MEM_BLOCK *key16@<X1>, MEM_BLOCK *iv_or_side@<X2>, void *mode_desc@<X3>, MEM_BLOCK *out@<X8>)
+parse function type returned false at 0x11cae0: __int64 __fastcall cf43_modeInitDispatcher_350(void *mode_desc, void *mode_ctx)
+parse function type returned false at 0x11cbb4: __int64 __fastcall cf43_modeProcessDispatcher_350(void *mode_desc, void *mode_ctx, void *input, void *output, unsigned int len)
+parse function type returned false at 0x106230: void __fastcall aesCbcInit_350(void *ctx, const unsigned char *key, unsigned int key_len, const unsigned char *iv)
+parse function type returned false at 0x10569c: int __fastcall aesSetEncryptKey_350(void *ctx, const unsigned char *key, unsigned int key_len)
+parse function type returned false at 0x105af0: void __fastcall aesEncryptBlock_350(const unsigned char input16[16], unsigned char output16[16], void *ctx)
+parse function type returned false at 0x105e54: void __fastcall aesDecryptBlock_350(const unsigned char input16[16], unsigned char output16[16], void *ctx)
+parse function type returned false at 0x1062a8: void __fastcall aesCbcEncrypt_350(void *ctx, const unsigned char *input, unsigned char *output, unsigned int len)
+parse function type returned false at 0x106458: void __fastcall aesCtrInit_350(void *ctx, const unsigned char *key, unsigned int key_len, const unsigned char *nonce_or_side)
+parse function type returned false at 0x1064d0: void __fastcall aesCtrProcess_350(void *ctx, const unsigned char *input, unsigned char *output, unsigned int len)
+parse function type returned false at 0x10667c: void __fastcall aesFeedbackInit_350(void *ctx, const unsigned char *key, unsigned int key_len, const unsigned char *side)
+parse function type returned false at 0x1066f4: void __fastcall aesFeedbackProcess_350(void *ctx, const unsigned char *input, unsigned char *output, unsigned int len)
+parse function type returned false at 0x16ccd8: unsigned __int64 __fastcall shortHeaderTransform32_flattened_CF48_350(MEM_BLOCK *formatted_text, MEM_BLOCK *out_transform32, MEM_BLOCK *key_material32)
+parse function type returned false at 0x16e794: unsigned __int64 __fastcall cf48_transformTextWithF17Blocks_350(const unsigned char *text, unsigned int text_len, unsigned char **out_ptr, unsigned int *out_len, const unsigned char key32[32])
+parse function type returned false at 0x16e8fc: void __fastcall cf48_seedScheduleARX_16E8FC_350(const unsigned char key32[32], unsigned __int64 schedule35[35])
+parse function type returned false at 0x16f660: unsigned __int64 __fastcall cf48_shortHeaderTransform32_slot4_text_slot5_out_slot6_key_350(ManagedFrame350 *frame)
+parse function type returned false at 0x16f6b0: unsigned __int64 __fastcall cf49_buildShortHeaderPack36_slot4_prefix_slot5_xform_ret2_350(ManagedFrame350 *frame)
+parse function type returned false at 0x17184c: void __fastcall managedSignBlockTransformF17_350(const unsigned __int64 schedule34[34], const unsigned char input16[16], unsigned char output16[16])
+parse function type returned false at 0x47c1c: MetaSecSharedRef350 *__fastcall setObjectAddRef_5(MetaSecSharedRef350 *dst, void *obj)
+parse function type returned false at 0x4abd4: void __fastcall shared_ref_release_350(MetaSecSharedRef350 *ref)
+parse function type returned false at 0x73fd8: __int64 __fastcall op2_fill_locked_350(COOKIE_RISK2 *op2, REF_OBJ *out_ref)
+parse function type returned false at 0x16d204: __int64 __fastcall signStage1_makeStubPieces_350(MetaSecSignStage1Args350 *args)
+parse function type returned false at 0x16d454: __int64 __fastcall signStage2_makeKeyPieces_350(MetaSecSignStage2Args350 *args)
+parse function type returned false at 0x16f998: unsigned __int64 __fastcall cf61_sm3Digest_slot4_input_slot5_len_slot6_out32_350(ManagedFrame350 *frame)
+parse function type returned false at 0x1702b8: ManagedProgram350 *__fastcall initManagedSignModuleLarge_350(void)
+parse function type returned false at 0x17157c: __int64 __fastcall managedSignBuildF4Flag_350(unsigned __int8 flag)
+parse function type returned false at 0x1715f8: __int64 __fastcall managedSignBuildA_350(MetaSecManagedCallArg350 *arg_pack)
+parse function type returned false at 0x171648: __int64 __fastcall managedSignBuildB_350(MetaSecManagedShortCallArg350 *arg_pack)
+parse function type returned false at 0x171698: __int64 __fastcall managedSignBuildFinal_350(MetaSecManagedCallArg350 *arg_pack)
+parse function type returned false at 0x1716f4: __int64 __fastcall managedSignPostEmitF13_350(MetaSecManagedShortCallArg350 *arg_pack)
+parse function type returned false at 0x1719f0: unsigned __int64 __fastcall managedFrameGetReturnSlot2_350(ManagedFrame350 *frame)
+applied 0/78 metasec function prototypes
+applied 59/59 metasec global types
+applied 232 static metasec flow comments
+applied 389 metasec struct evidence comments from /Users/freeman/project/douyin/dyidre/versions/350101/summary.json
+[rehydrate-350101] applying ida_apply_managed_cf_350101.py
+Propagating type information...
+Function argument information has been propagated
+The initial autoanalysis has been finished.
+[managed-cf-350101] preserve existing name at 0x16f43c: cf41_argusTailSimon128256_slot4_input_slot5_out_slot6_key_350
+[managed-cf-350101] preserve existing name at 0x16f48c: cf42_makeU16MemBlockLE_slot4_out_slot5_low16_350
+[managed-cf-350101] preserve existing name at 0x16f4c4: cf43_argusTailAesModePkcs7Transform_slot4_out_slot5_body_slot6_key16_350
+[managed-cf-350101] preserve existing name at 0x16f660: cf48_shortHeaderTransform32_slot4_text_slot5_out_slot6_key_350
+[managed-cf-350101] preserve existing name at 0x16f6b0: cf49_buildShortHeaderPack36_slot4_prefix_slot5_xform_ret2_350
+[managed-cf-350101] preserve existing name at 0x16f998: cf61_sm3Digest_slot4_input_slot5_len_slot6_out32_350
+[managed-cf-350101] preserve existing name at 0x16fd64: cf79_jsonAddNumber_slot4_json_slot5_key_slot2_double_350
+[managed-cf-350101] applied 102/102 wrapper comments, named 95, runtime replacements 100/102; imagebase=0x0
+Flushing buffers, please wait...ok
+[rehydrate-350101] saved /Users/freeman/project/douyin/dyidre/materials/350101_rehydrated_durable_9_3_20260907/libmetasec_ml.so.i64
+[MCP] Autostarting server...
+  Config: http://127.0.0.1:13338/config.html
+[MCP] Registered instance: libmetasec_ml.so (pid=60528, port=13338)
+  Discovery file: /Users/freeman/.idapro/mcp/instances/instance_13338.json
+-------------------------------------------------------------------------------
+Python 3.14.3 (main, Feb  3 2026, 15:32:20) [Clang 17.0.0 (clang-1700.6.3.2)] 
+IDAPython 64-bit v9.3.0 (c) The IDAPython Team <idapython@googlegroups.com>
+-------------------------------------------------------------------------------

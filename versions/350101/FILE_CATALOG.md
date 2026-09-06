@@ -107,7 +107,7 @@ versions/350101
 
 | path | size | 分类 | 怎么来 | 生成脚本/流程 | 后续用途 |
 |---|---:|---|---|---|---|
-| `FILE_CATALOG.md` | 173.1K | 交接清单 | 目录扫描生成 | scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
+| `FILE_CATALOG.md` | 173.5K | 交接清单 | 目录扫描生成 | scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
 | `README.md` | 29.9K | 入口文档 | 人工整理 | 手工维护 | 接手 350101 先读，快速知道当前结论和核心文件。 |
 | `algorithm_validation_350101.md` | 6.1K | 算法验收 | C oracle + unidbg deterministic replay | run_recovered_c_oracles_350101.sh + unidbg baseline | 提交前确认算法是否仍然 byte-exact。 |
 | `analysis_trajectory_350101.md` | 10.0K | 分析轨迹 | 350101 实际分析过程沉淀 | 人工维护 | 后续升级版本复制成 analysis_trajectory_<version>.md，逐项替换证据。 |

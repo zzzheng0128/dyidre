@@ -1,0 +1,95 @@
+{
+  "status": "prepared",
+  "identity": {
+    "sha256": "2416637ae9c5b0fe34cbd2cb4c09a29ee3b33ca416b344a3e999c3c95730cc76",
+    "input_path": "/Users/freeman/project/douyin/dyidre/metasec_350101/recovery_test2/libmetasec_ml.so",
+    "source_on_disk_verified": true,
+    "imagebase": 0,
+    "idb_path": "/Users/freeman/project/douyin/dyidre/metasec_350101/recovery_test2/libmetasec_ml.so.i64"
+  },
+  "rows": [
+    {
+      "rva": "0x116c10",
+      "ea": "0x116c10",
+      "old": "sub_116C10",
+      "new": "pb_message_unpack_by_descriptor",
+      "status": "pending"
+    },
+    {
+      "rva": "0x117e60",
+      "ea": "0x117e60",
+      "old": "sub_117E60",
+      "new": "pb_encode_int32_varint",
+      "status": "pending"
+    },
+    {
+      "rva": "0x117f3c",
+      "ea": "0x117f3c",
+      "old": "sub_117F3C",
+      "new": "pb_encode_sint64_zigzag",
+      "status": "pending"
+    },
+    {
+      "rva": "0x117ff8",
+      "ea": "0x117ff8",
+      "old": "sub_117FF8",
+      "new": "pb_decode_field_value",
+      "status": "pending"
+    },
+    {
+      "rva": "0x10c570",
+      "ea": "0x10c570",
+      "old": "sub_10C570",
+      "new": "json_node_allocate_zeroed",
+      "status": "pending"
+    },
+    {
+      "rva": "0x10c59c",
+      "ea": "0x10c59c",
+      "old": "sub_10C59C",
+      "new": "json_parse_value",
+      "status": "pending"
+    },
+    {
+      "rva": "0x10daa4",
+      "ea": "0x10daa4",
+      "old": "sub_10DAA4",
+      "new": "json_parse_string",
+      "status": "pending"
+    },
+    {
+      "rva": "0x10ca44",
+      "ea": "0x10ca44",
+      "old": "sub_10CA44",
+      "new": "json_skip_space",
+      "status": "pending"
+    },
+    {
+      "rva": "0x10c2b8",
+      "ea": "0x10c2b8",
+      "old": "sub_10C2B8",
+      "new": "json_delete_chain",
+      "status": "pending"
+    },
+    {
+      "rva": "0x10ccc8",
+      "ea": "0x10ccc8",
+      "old": "sub_10CCC8",
+      "new": "json_print_value",
+      "status": "pending"
+    },
+    {
+      "rva": "0x117eb8",
+      "ea": "0x117eb8",
+      "old": "metasec350_varint_write_u32",
+      "new": "metasec350_varint_write_u32",
+      "status": "already_present"
+    }
+  ],
+  "saved": false,
+  "counts": {
+    "pending": 10,
+    "already_present": 1
+  },
+  "audit_dir": "/Users/freeman/project/douyin/dyidre/metasec_350101/recovery_test2/proto_json_name_restore/run_41hee83d"
+}

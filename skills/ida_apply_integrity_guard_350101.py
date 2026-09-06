@@ -327,8 +327,10 @@ def _verify_version(base: int) -> None:
 
 
 def _declare_types() -> None:
+    # IDA 9.3 签名: parse_decls(til, input, printer, hti_flags)——printer 传 None，
+    # PT_SIL 是第 4 个 hti_flags 参数（旧三参写法在 9.3 直接 TypeError）。
     errors = ida_typeinf.parse_decls(
-        ida_typeinf.get_idati(), TYPE_DECLS, ida_typeinf.PT_SIL
+        ida_typeinf.get_idati(), TYPE_DECLS, None, ida_typeinf.PT_SIL
     )
     if errors:
         raise RuntimeError(f"local type declaration errors: {errors}")

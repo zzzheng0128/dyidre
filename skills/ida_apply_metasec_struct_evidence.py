@@ -176,6 +176,39 @@ FORCE_SPLIT_FUNCTION_STARTS = {
 }
 
 IDA_DECLS = r"""
+/*
+ * Self-contained recovery prerequisites.  The historical 350 database had
+ * these definitions inherited from an older TIL; a clean IDA 9 database does
+ * not.  Keep this set deliberately small: it only covers types referenced by
+ * the evidence-backed declarations below.
+ */
+typedef struct TREE_ITEM TREE_ITEM;
+typedef struct TREE_HEAD TREE_HEAD;
+typedef struct TREE_MAP TREE_MAP;
+typedef struct TREE_MAP_VT TREE_MAP_VT;
+typedef struct JSON_LIST JSON_LIST;
+
+typedef struct MEM_BLOCK_BODY {
+    int mem_len;
+    int src_len;
+    char *mem;
+} MEM_BLOCK_BODY;
+
+typedef struct MEM_BLOCK {
+    void *vtable;
+    MEM_BLOCK_BODY body;
+} MEM_BLOCK;
+
+typedef struct REF_MEM_BLOCK {
+    MEM_BLOCK *mem;
+    int *ref_count_ptr;
+} REF_MEM_BLOCK;
+
+typedef struct REF_TREE_MAP {
+    TREE_MAP *tree_map;
+    int *ref_count_ptr;
+} REF_TREE_MAP;
+
 typedef struct MetaSecSharedRef350 {
     void *obj;
     int *refcnt;
@@ -187,6 +220,31 @@ typedef struct TREE_KV {
     void *key;
     void *value;
 } TREE_KV;
+
+typedef struct TREE_ITEM {
+    int flag;
+    int flags;
+    TREE_ITEM *parent;
+    TREE_ITEM *child_10;
+    TREE_ITEM *child_18;
+    TREE_KV *kv;
+} TREE_ITEM;
+
+typedef struct TREE_HEAD {
+    TREE_ITEM *list_head;
+    __int64 count;
+    __int64 compare;
+    __int64 key_of_value;
+    void *data;
+} TREE_HEAD;
+
+typedef struct TREE_MAP {
+    TREE_MAP_VT *vtable;
+    void (*free_key)(void *);
+    void (*free_value)(void *);
+    int (*compare)(const void *, const void *);
+    TREE_HEAD *tree_head_ptr;
+} TREE_MAP;
 
 typedef struct VmParam64_350 {
     /*
@@ -779,10 +837,37 @@ FUNCTION_TYPES = [
 ]
 
 GLOBAL_TYPES = [
+    # Lazy static C string: 0x184F1C atomically initializes +0x00 before
+    # passing it to strlen; the same storage is consumed by the larger
+    # 0x190764 dispatcher.  The eight-byte extent is bounded by the adjacent
+    # ready word at +0x08, not inferred from its current contents.
+    (0x2C6000, "g_lazyDecodedCString_350", "char[8]"),
+    (0x2C6008, "g_lazyDecodedCStringReady_350", "unsigned int"),
     (0x2C4D40, "g_managedModule_http_350", "ManagedModule350 *"),
     (0x2C4D48, "g_managedProg_http_F0_350", "ManagedProgram350 *"),
     (0x2C4D50, "g_managedProg_http_F1_350", "ManagedProgram350 *"),
+    # Independent managed-module roots.  Only the individually evidenced
+    # program slots below are named; do not infer the remaining table extent
+    # from the distance to a neighbouring module.
+    (0x2C5258, "g_managedModule_second_350", "ManagedModule350 *"),
+    (0x2C5260, "g_managedProg_second_F0_350", "ManagedProgram350 *"),
+    (0x2C5268, "g_managedProg_second_F1_350", "ManagedProgram350 *"),
+    (0x2C5310, "g_managedProg_second_F22_350", "ManagedProgram350 *"),
+    (0x2C5AC8, "g_managedModule_child_350", "ManagedModule350 *"),
+    (0x2C5AD0, "g_managedProg_child_F0_350", "ManagedProgram350 *"),
+    (0x2C5B00, "g_managedProg_child_F6_350", "ManagedProgram350 *"),
     (0x2C58C8, "g_managedModule_sign_350", "ManagedModule350 *"),
+    # Integrity/startup globals: types only state storage width/shape; their
+    # semantic comments below retain the evidence boundary.
+    (0x2BBDF8, "g_globalLinkerInfoRef_350", "MetaSecSharedRef350"),
+    (0x2BBE80, "g_early_runtime_time_350", "unsigned __int64"),
+    (0x27DC98, "g_sig64_guard_state_350", "int"),
+    (0x27DDF0, "g_meta_check_len_350", "unsigned int"),
+    (0x27DDF4, "g_meta_expected_xor_350", "unsigned int"),
+    (0x2C0FB8, "g_cachedElfMachinePathPrimary_350", "void *"),
+    (0x2C0FC0, "g_cachedElfMachinePathFallback_350", "void *"),
+    (0x2C0E58, "g_signalProbeContextActive_350", "void *"),
+    (0x27EDF8, "g_httpSignSamplingCounter_350", "unsigned int"),
 ]
 
 for _managed_prog_idx in range(55):
@@ -794,7 +879,18 @@ for _managed_prog_idx in range(55):
         )
     )
 
+# Named, deliberately untyped roots.  These are program/table starts rather
+# than pointer variables, so applying a scalar or pointer type would be less
+# accurate than retaining IDA's existing byte/word representation.
+GLOBAL_NAMES_ONLY = [
+    (0x1EA850, "g_packageCheckVmProgram_350"),
+    (0x262800, "g_packageCheckVmAuxTableA_350"),
+    (0x262890, "g_packageCheckVmAuxTableB_350"),
+]
+
 STATIC_COMMENTS = {
+    0x184F30: "[global-recovery] Reads atomic g_lazyDecodedCStringReady_350; on first use it initializes g_lazyDecodedCString_350, then consumes it with strlen.\n【中文】全局恢复：原子读取字符串缓存 ready 标志；首次使用初始化静态 C 字符串缓存，随后传给 strlen。",
+    0x190784: "[global-recovery] Independent consumer of g_lazyDecodedCString_350; this is the second static-use site supporting the cache classification.\n【中文】全局恢复：静态字符串缓存的独立消费者，构成第二条静态证据。",
     0x4CC10: "[native-vmp350] exeVMInner_350: outer MetaSec native VM interpreter. X0=vmCode, X1=wrapper argument window, X2/X3=VM data pages, X4=VmParam64_350. Business meaning comes from the vmCode selected by the wrapper.\n【中文】外层 native VMP 解释器：X0 是 VM 程序入口/字节码地址，X1 是 wrapper 组好的参数窗口，X2/X3 是 VM 数据区，X4 是 VM 控制块；真正业务语义要看 wrapper 传进来的 vmCode。",
     0x124DD4: "[native-vmp350] nativeVmpBuildMssdkMaterial_350 wrapper. It builds a stack parameter window and calls exeVMInner_350 with vmCode=0x1F7860; result is returned through the caller out-ref.\n【中文】native VMP wrapper：把 out-ref、两个 MEM_BLOCK、extra ref 组进栈上参数窗口，然后以 vmCode=0x1F7860 调用 exeVMInner_350；VM 返回的是 ref-counted mssdk material 对象。",
     0x124E14: "[native-vmp350] vmCode selection for nativeVmpBuildMssdkMaterial_350: X0=base+0x1F7860, X1=SP parameter window, X2=0x26F2E0, X3=0x26F300, X4=VmParam64_350.\n【中文】这里确定 VM 程序号：X0 指向 base+0x1F7860，X1 指向当前栈参数窗口，X2/X3 是两块 VM 数据，X4 是 VmParam64_350；后面进入 exeVMInner_350。",
@@ -971,7 +1067,26 @@ STATIC_COMMENTS = {
     0x2C4D40: "[managed-runtime] HTTP managed module handle built by 0x14CEBC from the encoded blob at 0x27EFF0.\n【中文】HTTP managed module 句柄：由 0x14CEBC 从 0x27EFF0 的编码 blob 解码/构建出来。",
     0x2C4D48: "[managed-runtime] Program handle initialized from key F0 by 0x14CEBC; used by 0x14D130 HTTP wrapper path.\n【中文】HTTP managed program F0：由 0x14CEBC 初始化，0x14D130 调用。",
     0x2C4D50: "[managed-runtime] Program handle initialized from key F1 by 0x14CEBC; used by 0x14D1D8 error/alternate wrapper path.\n【中文】HTTP managed program F1：由 0x14CEBC 初始化，0x14D1D8 错误/备用路径调用。",
+    0x2C5258: "[managed-runtime] Independent managed-module handle built by 0x152B58; it is not interchangeable with the signing module.\n【中文】独立 managed module 句柄：由 0x152B58 构建；不能与签名模块混用。",
+    0x2C5260: "[managed-runtime] Documented F0 handle from the module rooted at 0x2C5258.\n【中文】0x2C5258 模块的已确认 F0 句柄。",
+    0x2C5268: "[managed-runtime] Documented F1 handle from the module rooted at 0x2C5258.\n【中文】0x2C5258 模块的已确认 F1 句柄。",
+    0x2C5310: "[managed-runtime] Documented F22 handle from the module rooted at 0x2C5258.\n【中文】0x2C5258 模块的已确认 F22 句柄。",
+    0x2C5AC8: "[managed-runtime] Independent child-module handle built by 0x171DDC.\n【中文】独立 child managed module 句柄：由 0x171DDC 构建。",
+    0x2C5AD0: "[managed-runtime] Documented F0 handle from the child module rooted at 0x2C5AC8.\n【中文】0x2C5AC8 child 模块的已确认 F0 句柄。",
+    0x2C5B00: "[managed-runtime] Documented F6 handle from the child module rooted at 0x2C5AC8.\n【中文】0x2C5AC8 child 模块的已确认 F6 句柄。",
     0x2C58C8: "[managed-runtime] Signing managed module handle built by 0x1702B8 from the encoded blob at 0x29FF20.\n【中文】签名 managed module 句柄：由 0x1702B8 从 0x29FF20 的编码 blob 解码/构建出来。",
+    0x1EA850: "[integrity-global] Package/environment-check VMP program start. This is VM bytecode/program data, not a native function pointer.\n【中文】完整性全局：package/environment check VMP 程序起点；这是 VM 字节码/程序数据，不是 native 函数指针。",
+    0x262800: "[integrity-global] Auxiliary table A supplied to the package-check VMP. Its entries are not proven native function pointers.\n【中文】完整性全局：传给 package-check VMP 的辅助表 A；表项尚不能认定为 native 函数指针。",
+    0x262890: "[integrity-global] Auxiliary table B supplied to the package-check VMP. Exact entry semantics remain unconfirmed.\n【中文】完整性全局：传给 package-check VMP 的辅助表 B；表项的精确语义仍未确认。",
+    0x2BBDF8: "[integrity-global] Process-level shared-ref root used by integrity/report paths; its held object is an integrity-guard candidate.\n【中文】完整性全局：完整性与报告链共用的进程级 shared-ref 根；其持有对象是 integrity guard 候选。",
+    0x2BBE80: "[integrity-global] Stores an early time baseline, then JNI_OnLoad rewrites it as elapsed time; it is not a counter.\n【中文】完整性全局：保存早期时间基准，JNI_OnLoad 后原地改写为 elapsed；不是计数器。",
+    0x27DC98: "[integrity-global] SIG64 guard state storage. Static writers/readers support values -1/1/3/1213; 0xDD878 publishes it to the JSON-report path.\n【中文】完整性全局：SIG64 guard 状态存储；静态路径支持 -1/1/3/1213，0xDD878 将其送入 JSON 报告链。",
+    0x27DDF0: "[integrity-global] Integrity VMP length input: 0xD8394 reads it and writes guard+0x28.\n【中文】完整性全局：完整性 VMP 长度输入；0xD8394 读取后写入 guard+0x28。",
+    0x27DDF4: "[integrity-global] Integrity VMP expected-XOR input: 0xD82E0 reads it and writes guard+0x20.\n【中文】完整性全局：完整性 VMP 期望 XOR 输入；0xD82E0 读取后写入 guard+0x20。",
+    0x2C0FB8: "[integrity-global] Lazy cache for the primary ELF-machine probe path, not the probe result.\n【中文】完整性全局：ELF machine 首选探测路径的惰性缓存，不是探测结果。",
+    0x2C0FC0: "[integrity-global] Lazy fallback cache used after the primary ELF-machine probe path fails.\n【中文】完整性全局：首选 ELF machine 探测路径失败后的备用惰性缓存。",
+    0x2C0E58: "[integrity-global] Signal-probe context/active storage participating in handler-context restoration; not a hit counter.\n【中文】完整性全局：参与 signal handler 上下文恢复的 context/active 存储；不是命中计数。",
+    0x27EDF8: "[integrity-global] HTTP-sign sampling counter: buildSignedHttpHeadersInner_350 reads/writes it and uses counter % 10 for sampling selection.\n【中文】完整性全局：HTTP 签名抽样计数；buildSignedHttpHeadersInner_350 读写它，并以 counter % 10 选择抽样窗口。",
     0x2C58F0: "[managed-runtime] Program handle initialized from key F4 by 0x1702B8; used by managedSignBuildF4Flag_350.\n【中文】签名 managed program F4：由 0x1702B8 初始化，managedSignBuildF4Flag_350 调用。",
     0x2C58F8: "[managed-runtime] Program handle initialized from key F5 by 0x1702B8; used by managedSignBuildA_350.\n【中文】签名 managed program F5：由 0x1702B8 初始化，managedSignBuildA_350 调用。",
     0x2C5908: "[managed-runtime] Program handle initialized from key F7 by 0x1702B8; used by managedSignBuildB_350.\n【中文】签名 managed program F7：由 0x1702B8 初始化，managedSignBuildB_350 调用。",
@@ -1116,6 +1231,15 @@ def _apply_important_names(base: int) -> None:
 
 
 def _try_apply_func_type(ea: int, decl: str) -> bool:
+    # idc.SetType resolves names through the database local-type library.  On
+    # IDA 9 this is more reliable than parse_decl(..., None, ...) for a clean
+    # database that has just imported our dependent structs.
+    try:
+        if idc.SetType(ea, decl):
+            return True
+    except Exception as exc:
+        ida_kernwin.msg(f"SetType function prototype failed at 0x{ea:x}: {exc}: {decl}\\n")
+
     tif = ida_typeinf.tinfo_t()
     try:
         ok = ida_typeinf.parse_decl(tif, None, decl, ida_typeinf.PT_SIL)
@@ -1156,6 +1280,8 @@ def _apply_global_types(base: int) -> None:
         ida_name.set_name(ea, name, ida_name.SN_NOCHECK | ida_name.SN_NOWARN)
         if idc.SetType(ea, ty):
             ok_count += 1
+    for off, name in GLOBAL_NAMES_ONLY:
+        ida_name.set_name(base + off, name, ida_name.SN_NOCHECK | ida_name.SN_NOWARN)
     ida_kernwin.msg(f"applied {ok_count}/{len(GLOBAL_TYPES)} metasec global types\n")
 
 

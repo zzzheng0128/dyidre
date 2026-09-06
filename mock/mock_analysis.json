@@ -1,0 +1,149 @@
+{
+ "strings": [
+  {
+   "caller": "0x1284",
+   "fn": "0x1544",
+   "ct": "8a62f3b8033f02d7c974aea4147105c7d6",
+   "pt": "/proc/self/status"
+  },
+  {
+   "caller": "0x1308",
+   "fn": "0x15fc",
+   "ct": "e152f08425d2b3dfd11a",
+   "pt": "TracerPid:"
+  },
+  {
+   "caller": "0x1048",
+   "fn": "0x14a8",
+   "ct": "ff4303d1fd7b0aa9fd830291f55b",
+   "pt": null
+  },
+  {
+   "caller": "0x10f4",
+   "fn": "0x14ec",
+   "ct": "c43f15e60df88c9a881d17aa0b",
+   "pt": "com/mock/Mock"
+  },
+  {
+   "caller": "0x116c",
+   "fn": "0x152c",
+   "ct": "c4",
+   "pt": "a"
+  },
+  {
+   "caller": "0x1180",
+   "fn": "0x1544",
+   "ct": "8d5bc89d2c7a10c4c43dedb60e775ee1d160e8b9072b3dd8c464e0f80c711fd58a5de3bd057305898c5eebb616715edec47ce6f82f721bd7c666ba",
+   "pt": "(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;"
+  },
+  {
+   "caller": "0x119c",
+   "fn": "0x15fc",
+   "ct": "d7",
+   "pt": "b"
+  },
+  {
+   "caller": "0x11ac",
+   "fn": "0x163c",
+   "ct": "1d",
+   "pt": "()Ljava/lang/String;"
+  },
+  {
+   "caller": "0x1284",
+   "fn": "0x1544",
+   "ct": "8a62f3b8033f02d7c974aea4147105c7d6",
+   "pt": "/proc/self/status"
+  },
+  {
+   "caller": "0x1308",
+   "fn": "0x15fc",
+   "ct": "e152f08425d2b3dfd11a",
+   "pt": "TracerPid:"
+  },
+  {
+   "caller": "0x15d8",
+   "fn": "0x14ec",
+   "ct": "cf3514a50fb78983c83d58a40ff484d1c9310ca016f2",
+   "pt": "hello from mock native"
+  },
+  {
+   "caller": "0x1284",
+   "fn": "0x1544",
+   "ct": "8a62f3b8033f02d7c974aea4147105c7d6",
+   "pt": "/proc/self/status"
+  },
+  {
+   "caller": "0x1308",
+   "fn": "0x15fc",
+   "ct": "e152f08425d2b3dfd11a",
+   "pt": "TracerPid:"
+  },
+  {
+   "caller": "0x1950",
+   "fn": "0x15fc",
+   "ct": "d84ff28c1fd387ddea56a0c970",
+   "pt": "mock_sdk_v1.0"
+  }
+ ],
+ "registration": {
+  "class": "com/mock/Mock",
+  "count": 2,
+  "methods": [
+   {
+    "name": "a",
+    "sig": "(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;",
+    "fnPtr": "0x1584"
+   },
+   {
+    "name": "b",
+    "sig": "()Ljava/lang/String;",
+    "fnPtr": "0x1670"
+   }
+  ],
+  "static_sites": [
+   "0x11cc"
+  ]
+ },
+ "jni_events": [
+  {
+   "fn": "GetEnv",
+   "version": "0x10006"
+  },
+  {
+   "fn": "FindClass",
+   "name": "com/mock/Mock"
+  },
+  {
+   "fn": "RegisterNatives",
+   "count": 2,
+   "methods": [
+    {
+     "name": "a",
+     "sig": "(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;",
+     "fnPtr": "0x1584"
+    },
+    {
+     "name": "b",
+     "sig": "()Ljava/lang/String;",
+     "fnPtr": "0x1670"
+    }
+   ]
+  },
+  {
+   "fn": "NewStringUTF",
+   "str": "hello from mock native"
+  },
+  {
+   "fn": "NewStringUTF",
+   "str": "mock_sdk_v1.0"
+  }
+ ],
+ "payload_dumps": [
+  {
+   "pc": "0x19b4",
+   "addr": "0x1904",
+   "len": 104,
+   "file": "payload_plaintext.bin"
+  }
+ ]
+}

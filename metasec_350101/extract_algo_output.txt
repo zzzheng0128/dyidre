@@ -1,0 +1,30 @@
+
+=== 0x12b904 ===
+  XOR-type: True
+  K len-independent (first 32): True
+  K[0:64] = a51071c75090e1b1a51071c75090e1b1a51071c75090e1b1a51071c75090e1b1a51071c75090e1b1a51071c75090e1b1a51071c75090e1b1a51071c75090e1b1
+  recipe: periodic keystream, period=8: a51071c75090e1b1
+
+=== 0x12bfa8 ===
+  XOR-type: True
+  K len-independent (first 32): True
+  K[0:64] = a51281d7601071b2a51281d7601071b2a51281d7601071b2a51281d7601071b2a51281d7601071b2a51281d7601071b2a51281d7601071b2a51281d7601071b2
+  recipe: periodic keystream, period=8: a51281d7601071b2
+
+=== 0x12c648 ===
+  XOR-type: True
+  K len-independent (first 32): True
+  K[0:64] = b52091e740a0e3b6b52091e740a0e3b6b52091e740a0e3b6b52091e740a0e3b6b52091e740a0e3b6b52091e740a0e3b6b52091e740a0e3b6b52091e740a0e3b6
+  recipe: periodic keystream, period=8: b52091e740a0e3b6
+
+=== 0x12c9a4 ===
+  XOR-type: True
+  K len-independent (first 32): True
+  K[0:64] = a75078c96097eff1a75078c96097eff1a75078c96097eff1a75078c96097eff1a75078c96097eff1a75078c96097eff1a75078c96097eff1a75078c96097eff1
+  recipe: periodic keystream, period=8: a75078c96097eff1
+
+=== 0x12cf90 ===
+  XOR-type: True
+  K len-independent (first 32): True
+  K[0:64] = 351f7ff7909fe1b1351f7ff7909fe1b1351f7ff7909fe1b1351f7ff7909fe1b1351f7ff7909fe1b1351f7ff7909fe1b1351f7ff7909fe1b1351f7ff7909fe1b1
+  recipe: periodic keystream, period=8: 351f7ff7909fe1b1

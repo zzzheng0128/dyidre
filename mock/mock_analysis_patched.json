@@ -1,0 +1,25 @@
+{
+ "strings": [
+  {
+   "caller": "0x1280",
+   "fn": "0x1478",
+   "ct": "8a62f3b8033f02d7c974aea4147105c7d6",
+   "pt": "/proc/self/status"
+  },
+  {
+   "caller": "0x1304",
+   "fn": "0x1530",
+   "ct": "e152f08425d2b3dfd11a",
+   "pt": "TracerPid:"
+  },
+  {
+   "caller": "0x1044",
+   "fn": "0x13dc",
+   "ct": "ff4303d1fd7b0aa9fd83",
+   "pt": null
+  }
+ ],
+ "registration": null,
+ "jni_events": [],
+ "payload_dumps": []
+}

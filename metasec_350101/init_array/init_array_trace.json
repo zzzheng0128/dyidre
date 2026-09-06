@@ -1,0 +1,5923 @@
+[
+ {
+  "idx": 0,
+  "addr": "0x59294",
+  "imports": [
+   {
+    "name": "clock_gettime",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 1,
+  "addr": "0x14cebc",
+  "memops": 1977,
+  "imports": [
+   {
+    "name": "memcmp",
+    "detail": "n=7 a=6c696e6b696e67 b=6c696e6b696e67"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x400003d60,0x3000ffd98,0x3000ffa90)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x400003d60,0x3000ffd98,0x3000ffa90)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x400003d60,0x3000ffd98,0x3000ffa90)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434634 b=434636"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434636 b=434637"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434634 b=434637"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434633 b=434639"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x3000ffb00,0x3000ffb30,0x3000ffe60)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x400004b88,0x100260540,0x3000ffe60)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d656d637079 b=6d656d736574"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=26 a=5f5f73796e635f6c6f636b5f746573745f616e645f7365745f34 b=5f5f73796e635f6c6f636b5f746573745f616e645f7365745f38"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=22 a=5f5f73796e635f66657463685f616e645f6164645f32 b=5f5f73796e635f66657463685f616e645f6164645f38"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=22 a=5f5f73796e635f66657463685f616e645f7375625f32 b=5f5f73796e635f66657463685f616e645f7375625f38"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=22 a=5f5f73796e635f66657463685f616e645f7375625f38 b=5f5f73796e635f66657463685f616e645f616e645f34"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=22 a=5f5f73796e635f66657463685f616e645f7375625f32 b=5f5f73796e635f66657463685f616e645f616e645f34"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=22 a=5f5f73796e635f66657463685f616e645f616e645f34 b=5f5f73796e635f66657463685f616e645f7375625f38"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=22 a=5f5f73796e635f66657463685f616e645f7375625f38 b=5f5f73796e635f66657463685f616e645f7375625f32"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=5 a=666c6f6f72 b=726f756e64"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=22 a=5f5f73796e635f66657463685f616e645f6164645f38 b=5f5f73796e635f66657463685f616e645f6164645f32"
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434637 b=434637"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434638 b=434638"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434639 b=434639"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434635 b=434635"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463130 b=43463130"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434630 b=434630"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463131 b=43463131"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463132 b=43463132"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463135 b=43463135"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434634 b=434634"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434631 b=434631"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434636 b=434636"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463133 b=43463133"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463134 b=43463134"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434632 b=434632"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434633 b=434633"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=2 a=4730 b=4730"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x3000ff918,0x3000ffa68,0x400004f68)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 2,
+  "addr": "0x152b58",
+  "memops": 2843,
+  "imports": [
+   {
+    "name": "memcmp",
+    "detail": "n=7 a=6c696e6b696e67 b=6c696e6b696e67"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 3,
+  "addr": "0x1702b8",
+  "memops": 2954,
+  "imports": [
+   {
+    "name": "memcmp",
+    "detail": "n=7 a=6c696e6b696e67 b=6c696e6b696e67"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 4,
+  "addr": "0x171ddc",
+  "memops": 932,
+  "imports": [
+   {
+    "name": "memcmp",
+    "detail": "n=7 a=6c696e6b696e67 b=6c696e6b696e67"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434630 b=434632"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434632 b=434633"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434630 b=434633"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434633 b=434635"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434632 b=434635"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434630 b=434635"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434631 b=434637"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463130 b=43463136"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463134 b=43463134"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434630 b=434630"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434631 b=434631"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434632 b=434632"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463136 b=43463136"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463135 b=43463135"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434633 b=434633"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434634 b=434634"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434636 b=434636"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434635 b=434635"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434637 b=434637"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434639 b=434639"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=3 a=434638 b=434638"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463130 b=43463130"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463131 b=43463131"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463132 b=43463132"
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=43463133 b=43463133"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=2 a=4730 b=4730"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=2 a=4731 b=4731"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=2 a=4732 b=4732"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 5,
+  "addr": "0x33c20",
+  "memops": 83,
+  "imports": [
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x3,0x2,0x3000ffdb8)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x0,0x2,0x3000ffdb8)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_key_create",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_setspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_wrlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x40014a0f0,0x40014a3b0,0x40014a430)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutexattr_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutexattr_settype",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutexattr_destroy",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_once",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_wrlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_once",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_wrlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_once",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_wrlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_once",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_wrlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_once",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_wrlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_rwlock_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_getspecific",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutexattr_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutexattr_settype",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutexattr_destroy",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   }
+  ],
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "476f2091f1f68dee477a1c98e2fb",
+    "pt": "rp_fail_record"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 6,
+  "addr": "0x33dbc",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 7,
+  "addr": "0x33ef8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 8,
+  "addr": "0x34034",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "imports": [
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 9,
+  "addr": "0x341d8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 10,
+  "addr": "0x34314",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "imports": [
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 11,
+  "addr": "0x3447c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 12,
+  "addr": "0x345b8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 13,
+  "addr": "0x346f4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 14,
+  "addr": "0x34830",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 15,
+  "addr": "0x3496c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 16,
+  "addr": "0x34aa8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 17,
+  "addr": "0x34be4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 18,
+  "addr": "0x34d20",
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "727a0bbdf1e980e778",
+    "pt": "GetJavaVM"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d3938",
+    "pt": "()I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "727a0bb2fee9",
+    "pt": "GetEnv"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d3938",
+    "pt": "()I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "727a0bb4fff195d44d6b",
+    "pt": "GetContext"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d3938",
+    "pt": "()I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "667a1184ffedb0c4506a1aa8dfef84df",
+    "pt": "SensorQueue_Open"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d3938",
+    "pt": "()I"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "f6751fb43fe2b0c4c065149813fc8ec2c0",
+    "pt": "SensorQueue_Close"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8d5ba8",
+    "pt": "(I)"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "f677efa40f6220c7c067e488377118c6e37df39216751fc6",
+    "pt": "SensorQueue_WaitForEvent"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9d69f8ce29",
+    "pt": "(Ii)i"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "e645ff942fd2b2c3d055f4b812c582d2f056f48934d3",
+    "pt": "SensorQueue_ReadEvents"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "8f1931a049fe",
+    "pt": "(IIi)i"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "f43516ba0fe5be84c2251d9625f98e93cb352bac0ee48083",
+    "pt": "SensorQueue_EnableSensor"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1d5616def9",
+    "pt": "(Ii)i"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "667a1184ffedb0c4506a1aa8d4f692d057731aa4f5f192de47",
+    "pt": "SensorQueue_DisableSensor"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5918ee",
+    "pt": "(Ii)"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 19,
+  "addr": "0x34e68",
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "106c",
+    "pt": "%s"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "f94ff6",
+    "pt": "Log"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "8f39318049",
+    "pt": "(iII)"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a2c3507e0b92dffd8bd4566b",
+    "pt": "cJSON_CreateObject"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d3938",
+    "pt": "()I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a2c3507e0b92d1ed93d04c",
+    "pt": "cJSON_CreateArray"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d3938",
+    "pt": "()I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0b1d0476c1a",
+    "pt": "cJSON_Parse"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d59588e",
+    "pt": "(I)I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a5d4597a0b92",
+    "pt": "cJSON_Delete"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5958",
+    "pt": "(I)"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0b1c35c710b",
+    "pt": "cJSON_Print"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d59588e",
+    "pt": "(I)I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a2c3507e0b92d2f08edd",
+    "pt": "cJSON_CreateBool"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d79588e",
+    "pt": "(i)I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a2c3507e0b92deea8cd3506d",
+    "pt": "cJSON_CreateNumber"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d56588e",
+    "pt": "(F)I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a2c3507e0b92c3eb93d85b78",
+    "pt": "cJSON_CreateString"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d59588e",
+    "pt": "(I)I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a5c445731694f1eb84",
+    "pt": "cJSON_Duplicate"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5918ee19",
+    "pt": "(Ii)I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a8c27a7d1592f3eb",
+    "pt": "cJSON_IsObject"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5958ae",
+    "pt": "(I)i"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a6d441501d9df5fc95f8417a12",
+    "pt": "cJSON_GetObjectItem"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5938ee19",
+    "pt": "(II)I"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a5d4597a0b92d9eb84dc736d109adffd8bd4566b",
+    "pt": "cJSON_DeleteItemFromObject"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5938ee",
+    "pt": "(II)"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a0d551560b92fdcb8efe57751a94e4",
+    "pt": "cJSON_AddItemToObject"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d59388e79f9",
+    "pt": "(III)i"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a8c2746d0d96e9",
+    "pt": "cJSON_IsArray"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5958ae",
+    "pt": "(I)i"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "56552cb8dec0a0d551560b92fdcb8ef0476d1e8e",
+    "pt": "cJSON_AddItemToArray"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5938ee39",
+    "pt": "(II)i"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "586c2098e0fa8f",
+    "pt": "ms_open"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8d5918ae79f9",
+    "pt": "(Iii)i"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "d853ce842ccf90d3",
+    "pt": "ms_close"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "8f3951a0",
+    "pt": "(i)i"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "d853ce9525c187",
+    "pt": "ms_read"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "8f39318049fe",
+    "pt": "(iII)i"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "d853ce9032c997d3",
+    "pt": "ms_write"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "8f39318049de",
+    "pt": "(iII)I"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "d853ce9439d380d7d94c",
+    "pt": "ms_syscall"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "8f19318029dea6d8ee",
+    "pt": "(IIIIII)I"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 20,
+  "addr": "0x35140",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 21,
+  "addr": "0x3527c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 22,
+  "addr": "0x353b8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 23,
+  "addr": "0x354f4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 24,
+  "addr": "0x35630",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 25,
+  "addr": "0x3576c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 26,
+  "addr": "0x358a8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 27,
+  "addr": "0x359e4",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "476f2091f1f68dee477a1c98e2fb",
+    "pt": "rp_fail_record"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 28,
+  "addr": "0x35b80",
+  "memops": 6,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "467b16",
+    "pt": "sdi"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "c3641c",
+    "pt": "ftm"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 29,
+  "addr": "0x35d44",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 30,
+  "addr": "0x35e80",
+  "memops": 16,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "5e761693",
+    "pt": "kiid"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf92c8d66414aa7ffc8ed2ce6314b324f98fd6d63e15a5",
+    "pt": "/data/system/locksettings.db"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f02cbd666e4ba4f6502d7d761aea2137503decc61f5f9187d1d",
+    "pt": "/data/system/users/userlist.xml"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f90cfc654f48a6fc98dc5c141fd8b1fd386c5c649fe8933",
+    "pt": "/data/system/install_sessions"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b89c88d4241da44ff98a85d42419bd13",
+    "pt": "/data/system/netstats"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b092c8466b1a9abffb84c75c7c1aa8e0f08dd856761a84bee78cdd",
+    "pt": "/data/system/device_policies.xml"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b424f58c9ec76518ab34be91c3ca60",
+    "pt": "/system/build.prop"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f1cdbd671aea21375039d95",
+    "pt": "/data/misc/user/0"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53f58421d28799f44ef5952fc98799d141e5866fc38cdb9b41ff8332cf8ad29b4dfc94",
+    "pt": "/sdcard/Android/data/com.android.mms"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88231caa01e58bdee63e1cbb0ffe8bdec3310ca84ff4809c893717a607fb8adfc63e1cbb0ffe8bdfc03d0b",
+    "pt": "/sdcard/Android/data/com.google.android.gms"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c1b94f1ed859e74711b85fff6859e517e0b96bffc8edc1b7e1193e2f088d51b6c0684e4fa8cc45c",
+    "pt": "/sdcard/Android/data/com.android.systemui"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6315a431e2859ee47e15b53ff9859e8b7e1eaa35f488d0",
+    "pt": "/sdcard/Android/.nomedia"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 31,
+  "addr": "0x363e4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 32,
+  "addr": "0x36520",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 33,
+  "addr": "0x3665c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 34,
+  "addr": "0x36798",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 35,
+  "addr": "0x368d4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 36,
+  "addr": "0x36a10",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 37,
+  "addr": "0x36b4c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 38,
+  "addr": "0x36c88",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 39,
+  "addr": "0x36dc4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 40,
+  "addr": "0x36f00",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 41,
+  "addr": "0x3703c",
+  "memops": 8,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "476f2091f1f68dee477a1c98e2fb",
+    "pt": "rp_fail_record"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "586c0c93fbc093d846741e87e0c085d3",
+    "pt": "mssdk_riskapp_db"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "c861f2b30b4f02d7d166e8b907",
+    "pt": "mssdk_setting"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "d941e2931fd293e9c149fc82",
+    "pt": "last_rp_time"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 42,
+  "addr": "0x372d4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 43,
+  "addr": "0x37410",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "822347a503c886959a750bef10fb8e85c13f0aa45db29cd7c3350ea003f2b081cb310caf0fe582cc82235eba04fcb087c22245ec13b19c95cc0f0eac12c88c9ec33545ec15b18e81d70f0eac12aaca8281261dbb13fe809ff83317ad05aaca82813111ad5db29cd7d43413a004aaca8281230dab01fe8bcc82235ea009f3d2d4d4761ca004aaca8281321c9604fe8bcc82235eaa0cfe8a9fd30f0cb010f2d2d4d4760aac07fe809ff82401b905aaca82813d17ad05aaca9581360da50cc89a81c3310cac3fe18a83d43917a73ff48095c26d5dba",
+    "pt": "%s?lc_id=%s&platform=%s&device_platform=%s&sdk_ver=%s&sdk_ver_code=%u&app_ver=%s&version_code=%s&aid=%s&sdkid=%s&subaid=%s&iid=%s&did=%s&bd_did=%s&client_type=%s&region_type=%s&mode=%d&full_update_version_code=%s"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 44,
+  "addr": "0x3761c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 45,
+  "addr": "0x37758",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 46,
+  "addr": "0x37894",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 47,
+  "addr": "0x379d0",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 48,
+  "addr": "0x37b0c",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9b4de28133ff",
+    "pt": ".msfs_"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 49,
+  "addr": "0x37c9c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 50,
+  "addr": "0x37dd8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 51,
+  "addr": "0x37f14",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 52,
+  "addr": "0x38050",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 53,
+  "addr": "0x3818c",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "476f2091f1f68dee477a1c98e2fb",
+    "pt": "rp_fail_record"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 54,
+  "addr": "0x38328",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 55,
+  "addr": "0x38464",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 56,
+  "addr": "0x385a0",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "59761d96e2ebcfc25a",
+    "pt": "libart.so"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 57,
+  "addr": "0x38728",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 58,
+  "addr": "0x38864",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 59,
+  "addr": "0x389a0",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 60,
+  "addr": "0x38adc",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 61,
+  "addr": "0x38c18",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 62,
+  "addr": "0x38d54",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 63,
+  "addr": "0x38e90",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "586c0c93fbc093d846741e87e0c085d3",
+    "pt": "mssdk_riskapp_db"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 64,
+  "addr": "0x39018",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 65,
+  "addr": "0x39154",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 66,
+  "addr": "0x39290",
+  "memops": 10,
+  "strings": [
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be8832c7cdd7c054fe8d338e82c3c14ffb94",
+    "pt": "/data/data/org.autojs.autojs"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88b90d33157b00bb98584c23a11a7",
+    "pt": "/data/data/yk.juejin"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b085d0417e5094fff2cfd24c7517d9fdf083d8597a1e99faf680df",
+    "pt": "/data/data/com.cyjh.mobileanjian"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf85d0d1715ea43ffdcfd2dc7a19e93dff83d8c97510a93af980dfc07e",
+    "pt": "/data/data/com.cyjh.mobileanjianen"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f15d3d173aeb40f7d5fc6ca67e2bf136003dbd177afb60e7403ddcc76",
+    "pt": "/data/data/com.touchsprite.android"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be842fcdcdc2da55f28f33d091dfc145f489348e82d8d152fe8e24",
+    "pt": "/data/data/com.touchspriteent.android"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88b90d33157a705e3c190ce231da703f2c1a5c8251ba105fb9f94d5",
+    "pt": "/data/data/net.aisence.Touchelper"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b085d0417e5094fff2cfc55a6a1c9fbef980d84766",
+    "pt": "/data/data/com.touch.fairy"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf85d0d1715ea43ffdcfcbc1711fad39f18f9fdf7410a93af980df",
+    "pt": "/data/data/com.zdanjian.zdanjian"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f15d3d173aea4097d01dec07ae0a34e731ddbc679e4a5",
+    "pt": "/data/data/simplehat.clicker"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 67,
+  "addr": "0x3963c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 68,
+  "addr": "0x39778",
+  "memops": 46,
+  "strings": [
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dedf3211a74fe49a",
+    "pt": "/system/xbin/su"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e577611d8e3ea",
+    "pt": "/system/bin/su"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b424f58c9ec7791fe823f894d0c87502b2",
+    "pt": "/system/bin/shuamesu"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61f8a414751c9ddd70e8b94f7410d7c87defa415",
+    "pt": "/system/xbin/daemonsu"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e89434c58e99d749ffc822c490c3",
+    "pt": "/system/bin/bdsu"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dedf3211a74ff58b82d2",
+    "pt": "/system/xbin/bdsu"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0ad8f2f68f9e466a",
+    "pt": "/su/bin/su"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b424f58c9ec7791fe87ee394",
+    "pt": "/system/bin/.su"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61f8a414751c9ddd70e8b94f7b049cd667e5",
+    "pt": "/system/xbin/ku.sud"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e89434c58e99cd42f8896fc290c2de0fe292",
+    "pt": "/system/xbin/bstk/su"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dec53916e613e28b9e",
+    "pt": "/system/bin/sudo"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e577611d8e3ea95d4586f",
+    "pt": "/system/bin/sutemp"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6313ae3ebf92c4",
+    "pt": "/sbin/su"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f15d3d173aeb40f7d5fc6ca62ebb8087e06c78b7fe0b009631a",
+    "pt": "/data/data/com.topjohnwu.magisk"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e89434c58e99d450e1c82ccf8dd1d04ef4952fcf9798d450fa",
+    "pt": "/system/app/longeneroot.apk"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dec62008e633e29f94d5230db912f8c0a2d2201dbb13e29f83c87e19b90b",
+    "pt": "/system/app/Supersupro/Supersupro.apk"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e546f0fd8c3ea91d4476a0c92e2b0b2c4457a0d82e3fa939f546f14",
+    "pt": "/system/app/Superuser/Superuser.apk"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf85d0d1715ea43ffdcfdacc7e16b53fff959fce791fa025e384c3",
+    "pt": "/data/data/com.kingroot.kinguser"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f15d3d173aeb40f7d5fdfc07bfba24e7d0bc0ca7df5a30f7f1dc1",
+    "pt": "/data/data/com.meizu.mzroottools"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be842fcdcdd2d056f08336c18dd5d00ee3882fd480dada41fad5",
+    "pt": "/data/data/com.devadvance.rootcloak2"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88b90d33157aa0ffac180ce3817a64ee78a83ca3d1fbb",
+    "pt": "/data/data/com.qihoo.permmgr"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b085d0417e5094fff2cfc351310a84f5edd3c35a700b",
+    "pt": "/data/data/com.rd.user2root"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf85d0d1715ea43ffdcfd3c47915b27ef580c2dc621ea824",
+    "pt": "/data/data/com.baidu.easyroot"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f15d3d173aebf083e03ddca66",
+    "pt": "/data/data/hh.root"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be842fcdcdc5dd55f08a258e91d9da54f6822ec996c5",
+    "pt": "/data/data/com.shuame.rootgenius"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88b90d33157aa0ffac19cd33b56bc13f29dc3d53f17bd",
+    "pt": "/data/data/com.mtk.user2root"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c1d9efeb08cd052760c9ca6ab",
+    "pt": "/sbin/magisk64"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6313ae3ebf8cd0c27902ac38f985d4",
+    "pt": "/sbin/magiskhide"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61e3be0e3f1cd3c27bf2bc097e18c6",
+    "pt": "/sbin/magiskinit"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53f38e2e8fcddbd447f8942b",
+    "pt": "/sbin/.magisk"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88231caa01e58bdee63e1cbb0ffe8bdec3310ca84ff4809c892417b90af8879fd02556a401f08682cc",
+    "pt": "/sdcard/Android/data/com.topjohnwu.magisk"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b085d0417e5094fff2cfc55a6f1598f8f196c41b721e90f9ec8a",
+    "pt": "/data/data/com.topjohnwu.magisk"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7310a438f5ce9fc17902a632fc84eec87116ae23fb",
+    "pt": "/cache/.disable_magisk"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e4a14f7d10d5cc61eaf8097d16",
+    "pt": "/dev/magisk/img"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a42f8896f8e8ed7d249e28c",
+    "pt": "/bin/.magisk"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dec53916e60df68898d43b",
+    "pt": "/system/bin/magisk"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e577611d8fdfe86d846740f98fcf682c8",
+    "pt": "/system/bin/magiskpolicy"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7310a438f5cedcc47718b43bbe8ddec2",
+    "pt": "/cache/magisk.log"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f10d6c73decb6077902d9",
+    "pt": "/data/adb/magisk"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a4dff936fd686d8d14fe3c830c591c5dc53e5c82dc184dfc64b",
+    "pt": "/mnt/vendor/persist/magisk"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282decb391ae60cfe8d8bde3711ba0bb99c9e",
+    "pt": "/system/lib/libzygisk.so"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e59761dc1a4b08dd857650690f9ec8a9f4670",
+    "pt": "/system/lib64/libzygisk.so"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf8cd0c27902ac7ef191da",
+    "pt": "/data/magisk.apk"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f10d6c73deaa415",
+    "pt": "/data/adb/ksu"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f82d2d70ff09724",
+    "pt": "/data/adb/apd"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88e95c57f13b901e38c99",
+    "pt": "/data/adb/kpatch"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 69,
+  "addr": "0x3a6dc",
+  "memops": 35,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53f38e2e8fcddbd447f8942b8f8ed9d155fd82338f91dfc755ce8b33d08cc5d044",
+    "pt": "/sbin/.magisk/modules/riru_lsposed"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88231aa00eb8c19cc63711ba0bb8829ec32514ac13b89588c0390ba23ffb9c81c8231dad",
+    "pt": "/sbin/.magisk/modules/zygisk_lsposed"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c1d9efeb0cfdc54781684fbb08cde516a1392e3b093d8476a2092f4e791de467a1b",
+    "pt": "/sbin/.magisk/modules/riru_edxposed"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6313ae3ebfcfdcc47718b43bbf8cdec1651da223bf95d0cc7319ae",
+    "pt": "/sbin/.magisk/modules/taichi"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61e3be0e3f5fdfc475e8a40b3f1cddc167edb2133f05d3cc71e9be4d6a08d5cc61ea",
+    "pt": "/sbin/.magisk/modules/taichi-zygisk"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f82d2d70ffc8824d58fd3c60fe38e32d5bcdac650fe9425c4",
+    "pt": "/data/adb/modules/riru_lsposed"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88e95c57f15a604e28394d47f02b007fe9c9af83c0bb90fe48a95",
+    "pt": "/data/adb/modules/zygisk_lsposed"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b080d557301298f4ea8dd446300d9ee2eabed451670f98e3fa85",
+    "pt": "/data/adb/modules/riru_edxposed"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf80d5c73f1ca834e58dd4d63f05a639f389d8",
+    "pt": "/data/adb/modules/taichi"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f10d6c73decb804651dd7d63df5b6097319db8868f8b009631a",
+    "pt": "/data/adb/modules/taichi-zygisk"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f82d2d70ffd9430c4",
+    "pt": "/data/adb/lspd"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88e95c57f1dad18e7",
+    "pt": "/data/adb/edxp"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c1b94f1ed859e74711b85fff6859e517e0b96bff093d61b721a98e7fc80c51b7a1b8fe0f092d451311296fefe86d447",
+    "pt": "/sdcard/Android/data/org.meowcat.edxposed.manager"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6315a431e2859ee47e15b53ff9859ec8755fb035f992d9d03e14bf20",
+    "pt": "/sdcard/Android/me.weishu.exp"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61e5b40162159de47ce5a50f79159dca60e6f90c6301ddd677e5f90d711fd3c277f3",
+    "pt": "/sdcard/Android/org.lsposed.manager"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be8832c7cddbd04fe68421d4cdd3d158e18833c58798d841ff8627c591",
+    "pt": "/data/data/org.meowcat.edxposed.manager"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88b90d33157a405b99894ce2310bc4ef29781",
+    "pt": "/data/data/me.weishu.exp"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b085d0417e5098e2f8cfdd466f1084f5fbcfdc54711e90f5ed",
+    "pt": "/data/data/org.lsposed.manager"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b424f58c9ec7791fe831e091eed5621ea435e3929fca6218a0",
+    "pt": "/system/bin/app_process.orig"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61f8a414751c9ddd62eea405745fc2d77df1",
+    "pt": "/system/xposed.prop"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e89434c58e99d352f08a25d78cc4de0fc9972fd386d2f752f88327c5cddcd452",
+    "pt": "/system/framework/XposedBridge.jar"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282decb391ae60cfe8d89d73f0bac04c88e83d37e0ba6",
+    "pt": "/system/lib/libxposed_art.so"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e59761dd8fcf683c945700c92f4c080c341310c98bef18eee5a6d1690",
+    "pt": "/system/lib/libxposed_art.so.no_orig"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b424f58c9ec97913f164bf8dd8c76801a823f585eec46205e923ff",
+    "pt": "/system/lib64/libxposed_art.so"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61f8a414751c9dc97be3e1543f1ddbc76af1b8137515edc460f5f9137f5fdcca4deea50977",
+    "pt": "/system/lib64/libxposed_art.so.no_orig"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be83258e91d9d756bf862ec491d9dc44bf9f30cf90d3d10ef88933d482dad945e3",
+    "pt": "/data/data/de.robv.android.xposed.installer"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "ca3f1cbc0cf29cded5390abc3ffb9c81c8231dad",
+    "pt": "modules/riru_lsposed"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "58701b82fcfa929e4f66189ee3f4bedd466f1084f5fb",
+    "pt": "modules/zygisk_lsposed"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "c87f15b23cf5929ed77903b20ff585c9d57f02a234",
+    "pt": "modules/riru_edxposed"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "c87de5a20c75029dd173e8b40879",
+    "pt": "modules/taichi"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "d84ff5922cc59099c141f88428c9cecccc47f8942b",
+    "pt": "modules/taichi-zygisk"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 70,
+  "addr": "0x3b364",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 71,
+  "addr": "0x3b4a0",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 72,
+  "addr": "0x3b5dc",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 73,
+  "addr": "0x3b718",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 74,
+  "addr": "0x3b854",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 75,
+  "addr": "0x3b990",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 76,
+  "addr": "0x3bacc",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 77,
+  "addr": "0x3bc08",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 78,
+  "addr": "0x3bd44",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 79,
+  "addr": "0x3be80",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 80,
+  "addr": "0x3bfbc",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 81,
+  "addr": "0x3c0f8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 82,
+  "addr": "0x3c234",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 83,
+  "addr": "0x3c370",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 84,
+  "addr": "0x3c4ac",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 85,
+  "addr": "0x3c5e8",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 86,
+  "addr": "0x3c724",
+  "memops": 120,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "d53f56b158b99994d52311a60e",
+    "pt": "ro.x8.version"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "4770518fa8b194c45c7b",
+    "pt": "ro.x8.uuid"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d77f5fbf68be92c4d5601eb524cf85d4d34f10b438fd84dc",
+    "pt": "ro.x8.support_dev_ashmem"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d77dafa110781edcc03cf3b80d6010c6cd",
+    "pt": "ro.vphone.rompath"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "c74fbf9130c88cd8d00ee28823cb86c2c541e58f",
+    "pt": "ro.vphone.socketpath"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "d53f56bf10ff809fc27e08a20ef68294",
+    "pt": "ro.vphone.pkname"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "4770519cf5ed8fd459310b9ee4fe8f",
+    "pt": "ro.kernel.titan"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d77f5fbd3dbe97df",
+    "pt": "ro.zm.vn"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d37ff1a50f605fd3cb76f3b8097418d6",
+    "pt": "vmprop.androidid"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "c34de1952fd0cddfc5",
+    "pt": "vmprop.ip"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "d13d08bb0fe7c195c22627a813ff8294ca",
+    "pt": "vmprop.dev_ashmem"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "47705181fdf0929f46761287fcfa92c51b6d109a",
+    "pt": "ro.vmos.simplest.rom"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d77f5fb53be385da8b6614b523f98edf",
+    "pt": "ro.rksdk.version"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d77dafa50b3e17dec461e988057e10d0c977",
+    "pt": "ro.rk.flash_enable"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "c74fbf952b8e8bd2d849ce822ec181dad0",
+    "pt": "ro.rk.hdmi_enable"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "d53f56bf05f98b9ed57e0aa23fe48b9a",
+    "pt": "ro.vendor.rk_sdk"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "46660cd9e2f480d557310d98ffeb",
+    "pt": "sys.rkadb.root"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d3751fa33fe2cfd9d2735fa335e688d2c03e15ae23e08dd0dc3d41",
+    "pt": "vendor.hwc.device.display-0"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d377efb30f625fdad271afb3056618d1c03ce5be13601dd3dc3fb0",
+    "pt": "vendor.hwc.device.display-1"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "c345ff832fd2cddec243bf8325d68ad5d00ef58e33d08fd7cc0da3",
+    "pt": "vendor.hwc.device.display-2"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "d53f56ab15fe8395893419bd05b99a85c4",
+    "pt": "ro.build.date.utc"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "47705198f4f2cfd340761393befb80c550310a83f3",
+    "pt": "ro.odm.build.date.utc"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d77f5fb429e395d4c83e13b239fc859fc17105a27ee595d2",
+    "pt": "ro.system.build.date.utc"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d77dafa1057e15ddd73ce3a2097c159cc173f5b24e6505d1",
+    "pt": "ro.vendor.build.date.utc"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "c74fbf852fcf97dfd841f6826ec296dfd944bf8321d48698c054f2",
+    "pt": "ro.bootimage.build.date.utc"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "d53f56b912f88b84c42456ab15fe8395893419bd05b99a85c4",
+    "pt": "ro.product.build.date.utc"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6f0d98f3b092d459795085fff0959e1a7b1e83f1b085d0417e5094fff2cfd7046f1396e9fa939e07711b98e3b093de5a6b1984",
+    "pt": "/proc/self/root//data/data/com.f1player/2ndos/rootfs"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6849e833ff8fd7cc775eb53fff959fd57b16e932fc80d2ce7c18b424",
+    "pt": "/x8/config/root.pkg.blacklist"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a6ab9f8037f1fd4cc75aeb1157c1dedd37f",
+    "pt": "/x8/config/full_vm"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a58a9c930d28cc6",
+    "pt": "/x8.prop"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88200aa603b89c94cb3657bb0ff89bde883419bd01b88b90d33157aa0ffac1899f2a0be713f68195c53f00e652f98b9ed47f0aa60fe38982",
+    "pt": "/proc/self/root//data/data/com.x8zs.sandbox/2ndos/rootfs"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a691a99f4f0939e59761dc1a4b08dd8576b1683f1f1ccc35c735184ff",
+    "pt": "/vendor/lib64/libtitan-ril.so"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a791fae24be95d8d1711fe922f3",
+    "pt": "/init.titan.rc"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a67e4a1057e05d68b66e8a3017e5fc0c6",
+    "pt": "/ueventd.titan.rc"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a50e388238f90d3d946be952fcf97999a44f093218f87d7c141be842fcdcdc0c548fe8925c782d1d40ef78631d786d4",
+    "pt": "/proc/self/root//data/data/com.vphonegaga.faqweb"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88200aa603b89c94cb3657bb0ff89bde883419bd01b88b90d33157a00fb99b86c82911e612f88085c123",
+    "pt": "/proc/self/root//data/data/io.twoyi/rootfs"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6f0d98f3b092d459795085fff0959e1a7b1e83f1b085d0417e5094fff2cfd259701192befe8fd547701693befb94d059310c87f1fc849e4372",
+    "pt": "/proc/self/root//data/data/com.clone.android.dual.space/vm"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6003a833bf92d4c9765eb53fff959e8a7410b331bf85d0d1715ea43ffdcfd794601da629f5939e977e15a823bf93deca6417b4",
+    "pt": "/proc/self/root//data/data/com.f1player/2ndos/rootfs"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a6ab9f8037f1fd4cc75aea50f7f059cd579e6f9027c10d1ce7ee8a414",
+    "pt": "/x8/config/root.pkg.blacklist"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a58a9c823cf8dd0dc47be8135cc8fe9c34d",
+    "pt": "/x8/config/full_vm"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882840e710e58081",
+    "pt": "/x8.prop"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6f0d98f3b092d459795085fff0959e1a7b1e83f1b085d0417e5094fff2cfc90d650cd9e3fe8fd5577007d8a2f185de46300d98ffeb87c2",
+    "pt": "/proc/self/root//data/data/com.x8zs.sandbox/2ndos/rootfs"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6614a934ff939ec97913f164bf8dd8c76418b331feccc3cc7c5fb43f",
+    "pt": "/vendor/lib64/libtitan-ril.so"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a7befbe143e05dbd173eff91273",
+    "pt": "/init.titan.rc"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a55f49125ce97d29b54f89321cecdc4d6",
+    "pt": "/ueventd.titan.rc"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88200aa603b89c94cb3657bb0ff89bde883419bd01b88b90d33157aa0ffac187d73817a705f08e96c67e1ea811e08a93",
+    "pt": "/proc/self/root//data/data/com.vphonegaga.faqweb"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6f0d98f3b092d459795085fff0959e1a7b1e83f1b085d0417e509effb195c65a6616d8e2f08ec5536c",
+    "pt": "/proc/self/root//data/data/io.twoyi/rootfs"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6003a833bf92d4c9765eb53fff959e8a7410b331bf85d0d1715ea43ffdcfd2c97f1fa27ef18fd5d77f18a37ef494d0c93e02b731f3849ed37d",
+    "pt": "/proc/self/root//data/data/com.clone.android.dual.space/vm"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e4a14f7810dbc873aca5067917dd",
+    "pt": "/dev/haima-rfifo"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f4916fc882dfd841bc9026c985d9",
+    "pt": "/dev/haima-wfifo"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dec2241be608f6869cc67e19ae05f99bdfc3",
+    "pt": "/system/etc/haima.agent.d"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e577611d8e7ecccc2506d0992e2",
+    "pt": "/system/bin/ws-server"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b424f58c9ec46001e813fc8ec4c15c10b23ef389d4d7",
+    "pt": "/system/app/CloudLauncher"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61f8a414751c9dd560e8a14d7101c28a5feeb909641ec0e462f198255d",
+    "pt": "/system/priv-app/MonitorAppOEM"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e89434c58e99c552f8916dc193c69a72f48306c98dd1d052dd8635ce80ded052",
+    "pt": "/system/priv-app/RedFingerLauncher"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282ded72211bf4df69f8188021dad26fe8196c2223ea00cf2a290c9311fac12",
+    "pt": "/system/priv-app/RedFingerFileManager"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684bffd94c21a6f1396e4f98ec358301b92e6f682d446301698fef983ee477a1b91f9f186d447314f",
+    "pt": "/sys/bus/platform/devices/ionfb_redfinger.0"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b47ff484c7cc7314b47fe08dd0d1761eb53dbf88decb76139822f585d7cc7e16a222bed1",
+    "pt": "/sys/devices/platform/ionfb_redfinger.0"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61f8a44f731dd3d661aea5057417dbcb75e4a53f7310dfc060e0",
+    "pt": "/sys/class/redfinger_camera"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e8946fc38fd7c653be9525c485dfdb47f4951fc196d2dc4f",
+    "pt": "/sys/class/redfinger_audio"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba4ff38a87ce331dba4fe18683d32519a54fe58a95c13916ae05e5b090d23411a6",
+    "pt": "/sys/devices/virtual/redfinger_audio"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c1b94f1ed859e74711b85fff6859e517e0b96bff093d61b7e0f87e3ef8ec51b7e0f87e2eb82",
+    "pt": "/sdcard/Android/data/org.appspot.apprtc"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6315a431e2859ee47e15b53ff9859ec17105a67ff38edc8b7c1ea937f58fd48b7c16ab3ff380c5cc7f1fb4",
+    "pt": "/sdcard/Android/data/com.longene.lglocations"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61e5b40162159de47ce5a50f79159dc173f5b64f731edf8b7eeeb907751fd78b7ee6bb0f7310c6cc7def",
+    "pt": "/sdcard/Android/data/com.longene.lglocation"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53f58421d28799f44ef5952fc98799d141e5866fc38cdb9b4df880358e82d1d04ee5",
+    "pt": "/sdcard/Android/data/com.migu.agent"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88231caa01e58bdee63e1cbb0ffe8bdec3310ca84ff4809c893d11ae15b98c9ec9240aa60cfb8a83",
+    "pt": "/sdcard/Android/data/com.migu.controller"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c1b94f1ed859e74711b85fff6859e517e0b96bffc8edc1b6d1a93f6f68fd6506d519afff188c55a6d",
+    "pt": "/sdcard/Android/data/com.redfinger.monitor"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6315a431e2859ee47e15b53ff9859ec17105a67ff38edc8b6214a336f98fd6c0625fa139fc84dcc47e10a035e2",
+    "pt": "/sdcard/Android/data/com.redfinger.filemanager"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f15d3d173aeb812775fd3d562f2a70f645fd3d562f3a303",
+    "pt": "/data/data/org.appspot.apprtc"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be842fcdcddada4ef6822ec5cddad24cfe8421d48ad9db53",
+    "pt": "/data/data/com.longene.lglocations"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "883419bd01b88b90d33157aa0ffac19dc83e1fac0ef2c19dc03c17aa01e3869ec9",
+    "pt": "/data/data/com.longene.lglocation"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1e83f1b085d0417e5094fff2cfdc5c780ad9f1f884df41",
+    "pt": "/data/data/com.migu.agent"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7410b331bf85d0d1715ea43ffdcfdccc7704e933ff8fc5d77f1dab35e2",
+    "pt": "/data/data/com.migu.controller"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f15d3d173aeb40f7d5fc0c076e7be0e7714c08b7feeb909641ec0",
+    "pt": "/data/data/com.redfinger.monitor"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f87d7c141be842fcdcdc4d044f78e2ec786c49b46f88b25cd82d8d447f495",
+    "pt": "/data/data/com.redfinger.filemanager"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dec2241be610f29d9cce230ba00ff99cdeca3f16ab0fefc189ca3c",
+    "pt": "/system/etc/permissions/monbox.xml"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "54711d98e8b288df5c6b5184f8",
+    "pt": "anbox-init.sh"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a791fae24be89d8962647f77ee282",
+    "pt": "/init.hi3660.rc"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e0a3013f10dcc160eebe044f18dcc37dafb40f7e17",
+    "pt": "/data/android_info.conf"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f093218f8ed7d6",
+    "pt": "/data/mac"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88311baa14b88b9ec43b1dbb",
+    "pt": "/acct/docker"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684bff9929e56780d98e5efcedc50721085e9b085de56741a85",
+    "pt": "/sys/fs/cgroup/memory/docker"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7414b17ff391c4d67505e834ff82dac062",
+    "pt": "/dev/cpuset/docker"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a76e4a14f7301c7c666edf8047f12d9c060",
+    "pt": "/dev/cpuctl/docker"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a44f4916fcd86dbd647be832fc388d3c7",
+    "pt": "/dev/memcg/docker"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "88341dbf4ff49f84d4350ce60be28d948a200aa618eec0",
+    "pt": "/dev/cpuset/kube-proxy/"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a7b1a81bfec85d3",
+    "pt": "/dev/sdb"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a7414b17fe385d2",
+    "pt": "/dev/sdc"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a7ef9b44f7c09d1c361ae",
+    "pt": "/lxc/lxcfs/"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e89434c58e99d749ffc821ce87c4da49f5b834d480c6",
+    "pt": "/system/bin/android_ttcp"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dec53916e605f29f83c83d27bd0ff88382",
+    "pt": "/system/bin/eeprom_tools"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1a6c0684e4fa8c9e577611d8e6fca5d8466b0d9ef2ea95de47",
+    "pt": "/system/bin/vcDistributor"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "8a6308b424f58c9ec7791fe826f38dc4d66414b523cf92d4d76614b5",
+    "pt": "/system/bin/vclusters_server"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "8a61f8a414751c9dc77beff8096005d3c77ee4a43f6901",
+    "pt": "/system/bin/iptables_yp"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "9a53e89434c58e99d749ffc839d0bcdada47",
+    "pt": "/system/bin/yp_log"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "882301ba14f282dec53916e619e79d94ca3f0cac16fe8a86",
+    "pt": "/system/bin/ypremoteview"
+   }
+  ],
+  "strings_overflow": 20,
+  "ok": true
+ },
+ {
+  "idx": 87,
+  "addr": "0x400b0",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "062f4ece",
+    "pt": "3019"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 88,
+  "addr": "0x40238",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 89,
+  "addr": "0x40374",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 90,
+  "addr": "0x404b0",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 91,
+  "addr": "0x405ec",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 92,
+  "addr": "0x40728",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "476f2091f1f68dee477a1c98e2fb",
+    "pt": "rp_fail_record"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 93,
+  "addr": "0x129430",
+  "imports": [
+   {
+    "name": "strtol",
+    "detail": ""
+   }
+  ],
+  "svc": [
+   {
+    "nr": 4296186272,
+    "name": "?",
+    "pc": "0x129ec2",
+    "args": [
+     "0x3000fff80",
+     "0x3001000d9",
+     "0x100129a51",
+     "0x40014b1a0"
+    ]
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 94,
+  "addr": "0x408c4",
+  "memops": 7,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "944efe9333c59797",
+    "pt": "!notset!"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "863e17b905e582d0",
+    "pt": "!noperm!"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "146c149ee0be",
+    "pt": "!skip!"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 95,
+  "addr": "0x40aec",
+  "memops": 5,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "1b720c87cf",
+    "pt": ".msp_"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 96,
+  "addr": "0x40c74",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 97,
+  "addr": "0x40db0",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 98,
+  "addr": "0x40eec",
+  "memops": 1,
+  "imports": [
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_init",
+    "detail": ""
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 99,
+  "addr": "0x40f48",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 100,
+  "addr": "0x41084",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 101,
+  "addr": "0x411c0",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 102,
+  "addr": "0x412fc",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "imports": [
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 103,
+  "addr": "0x41480",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 104,
+  "addr": "0x415bc",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12cf90",
+    "ct": "6d322ca4bdccb5e477",
+    "pt": "X-SS-STUB"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "e65f3e8c19d5",
+    "pt": "COOKIE"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "fd3fc3934d533dfbe05cd5fa2b5528",
+    "pt": "X-BD-CLIENT-KEY"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "ed0dd3a36debaee5e3",
+    "pt": "X-BD-KMSV"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "ff7d358c34d6bcb4e47d358624d2",
+    "pt": "X-METASEC-MODE"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 105,
+  "addr": "0x41758",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 106,
+  "addr": "0x41894",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "imports": [
+   {
+    "name": "clock_gettime",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 107,
+  "addr": "0x419d8",
+  "memops": 6,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "ed0dd3a36de3affff06ec5ca0be5ba",
+    "pt": "X-BD-CLIENT-KEY"
+   },
+   {
+    "fn": "0x12c9a4",
+    "ct": "ff7d3a8d4ddca2a2f1",
+    "pt": "X-BD-KMSV"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 108,
+  "addr": "0x41ba4",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 109,
+  "addr": "0x41ce0",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 110,
+  "addr": "0x41e1c",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 111,
+  "addr": "0x41f58",
+  "memops": 4,
+  "strings": [
+   {
+    "fn": "0x12cf90",
+    "ct": "577b",
+    "pt": "bd"
+   },
+   {
+    "fn": "0x12b904",
+    "ct": "d32045e960a9cf8190",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12bfa8",
+    "ct": "d322b5f950295f8290",
+    "pt": "v04.09.05"
+   },
+   {
+    "fn": "0x12c648",
+    "ct": "840ea1",
+    "pt": "1.0"
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 112,
+  "addr": "0x42094",
+  "memops": 1,
+  "imports": [
+   {
+    "name": "memcmp",
+    "detail": "n=13 a=5f5f737461636b5f706f696e74 b=5f5f6d656d6f72795f62617365"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=13 a=5f5f6d656d6f72795f62617365 b=5f5f737461636b5f706f696e74"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=13 a=5f5f737461636b5f706f696e74 b=5f5f6d656d6f72795f62617365"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=12 a=5f5f737461636b5f706f696e b=5f5f7461626c655f62617365"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=12 a=5f5f7461626c655f62617365 b=5f5f737461636b5f706f696e"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=12 a=5f5f737461636b5f706f696e b=5f5f7461626c655f62617365"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=11 a=5f5f737461636b5f706f69 b=5f5f686561705f62617365"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=11 a=5f5f686561705f62617365 b=5f5f737461636b5f706f69"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=11 a=5f5f737461636b5f706f69 b=5f5f686561705f62617365"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=14 a=5f5f737461636b5f706f696e7465 b=5f5f7461626c655f626173653332"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=14 a=5f5f7461626c655f626173653332 b=5f5f737461636b5f706f696e7465"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=14 a=5f5f737461636b5f706f696e7465 b=5f5f7461626c655f626173653332"
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 113,
+  "addr": "0x42300",
+  "imports": [
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 114,
+  "addr": "0x42334",
+  "memops": 1,
+  "imports": [
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=6d616c6c b=66726565"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=66726565 b=6d616c6c"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=4 a=6d616c6c b=66726565"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=63616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=63616c6c6f63 b=6d616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=63616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=7265616c6c6f"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=7265616c6c6f b=6d616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=7265616c6c6f"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=6d656d616c69"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d656d616c69 b=6d616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=6d656d616c69"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=706f7369785f"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=706f7369785f b=6d616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=706f7369785f"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=76616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=76616c6c6f63 b=6d616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=76616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=7076616c6c6f"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=7076616c6c6f b=6d616c6c6f63"
+   },
+   {
+    "name": "memcmp",
+    "detail": "n=6 a=6d616c6c6f63 b=7076616c6c6f"
+   },
+   {
+    "name": "__cxa_atexit",
+    "detail": ""
+   }
+  ],
+  "ok": true
+ },
+ {
+  "idx": 115,
+  "addr": "0x423fc",
+  "imports": [
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x1002c6470,0x100260540,0x3000ffe58)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x1002c6470,0x100260540,0x3000ffe58)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "syscall",
+    "detail": "nr=178 args=(0x0,0x8,0x3000ffe58)"
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "newlocale",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_cond_broadcast",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_unlock",
+    "detail": ""
+   },
+   {
+    "name": "pthread_mutex_lock",
+    "detail": ""
+   }
+  ],
+  "imports_overflow": 59,
+  "ok": true
+ }
+]

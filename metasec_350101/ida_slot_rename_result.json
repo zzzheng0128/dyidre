@@ -1,0 +1,54 @@
+{
+ "stats": {
+  "paired": 2354,
+  "unpaired": 4,
+  "slots": 2347,
+  "rename_ok": 2240,
+  "skip_named": 2,
+  "conflict": 7
+ },
+ "conflicts": [
+  {
+   "slot": 2873960,
+   "keep": "ab+",
+   "drop": "w"
+  },
+  {
+   "slot": 2884888,
+   "keep": "GET_secure",
+   "drop": "GET_system"
+  },
+  {
+   "slot": 2884888,
+   "keep": "GET_secure",
+   "drop": "GET_global"
+  },
+  {
+   "slot": 2887944,
+   "keep": "adb",
+   "drop": "init.svc.adbd"
+  },
+  {
+   "slot": 2896024,
+   "keep": "prb_content_processing",
+   "drop": "prb_safetyNet"
+  },
+  {
+   "slot": 2896024,
+   "keep": "prb_content_processing",
+   "drop": "prb_dynIssuance"
+  },
+  {
+   "slot": 2896024,
+   "keep": "prb_content_processing",
+   "drop": "prb_neo_execution"
+  }
+ ],
+ "unpaired_sample": [
+  1160032,
+  1187196,
+  1382812,
+  1383464
+ ],
+ "unpaired_total": 4
+}
