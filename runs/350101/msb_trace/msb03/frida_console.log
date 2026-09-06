@@ -1,0 +1,21 @@
+     ____
+    / _  |   Frida 17.15.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Pixel 6 (id=18201FDF6002GR)
+Spawning `com.ss.android.ugc.aweme`...
+[metasec-msb] standalone loaded (Frida 17, stock/rusda)
+Spawned `com.ss.android.ugc.aweme`. Resuming main thread!
+[Pixel 6::com.ss.android.ugc.aweme ]-> [metasec-msb] 1788579851116 heartbeat t=2s libart=missing installed=false seq=0
+[metasec-msb] 1788579854116 heartbeat t=5s libart=missing installed=false seq=0
+[metasec-msb] 1788579859117 heartbeat t=10s libart=missing installed=false seq=0
+[metasec-msb] 1788579879117 heartbeat t=30s libart=missing installed=false seq=0
+exit
+
+Thank you for using Frida!

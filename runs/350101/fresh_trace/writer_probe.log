@@ -1,0 +1,3 @@
+[writer-probe] "X-Ar" appeared at 0xe4ffe980
+  first dirty block = 0x124ca290 (module+0x14a290)
+  last clean block  = 0x124ca280 (module+0x14a280)

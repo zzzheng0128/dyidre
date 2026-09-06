@@ -1,0 +1,578 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] Inspecting build with total of 7 modules
+[[1;34mINFO[m] Installing Central Publishing features
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] unidbg                                                             [pom]
+[[1;34mINFO[m] unidbg-api                                                         [jar]
+[[1;34mINFO[m] unidbg-dynarmic                                                    [jar]
+[[1;34mINFO[m] unidbg-hypervisor                                                  [jar]
+[[1;34mINFO[m] unidbg-kvm                                                         [jar]
+[[1;34mINFO[m] unidbg-unicorn2                                                    [jar]
+[[1;34mINFO[m] unidbg-android                                                     [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mcom.github.zhkl0228:unidbg[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding unidbg 0.9.10-SNAPSHOT                                    [1/7][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.github.zhkl0228:unidbg-api[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-api 0.9.10-SNAPSHOT                                [2/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mcom.github.zhkl0228:unidbg-dynarmic[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-dynarmic 0.9.10-SNAPSHOT                           [3/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 5 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36mcom.github.zhkl0228:unidbg-hypervisor[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-hypervisor 0.9.10-SNAPSHOT                         [4/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.github.zhkl0228:unidbg-kvm[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-kvm 0.9.10-SNAPSHOT                                [5/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mcom.github.zhkl0228:unidbg-unicorn2[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-unicorn2 0.9.10-SNAPSHOT                           [6/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 5 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/freeman/project/douyin/unidbg/backend/unicorn2/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36mcom.github.zhkl0228:unidbg-android[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-android 0.9.10-SNAPSHOT                            [7/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 39 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 29 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /Users/freeman/project/douyin/unidbg/unidbg-android/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.ss.android.ugc.aweme.Sign6_350101_FreshTrace
+[350101] rootfs=/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930
+[350101] backend=unicorn2
+[350101] metasecProfile=350101
+[350101] deterministic=true currentTimeMillis=1788148652047 elapsedRealtime=183397757 elapsedRealtimeNanos=183397757386512 randomSeed=0x350101
+[350101] threadDispatcher=disabled
+File opened 'stdin' with oflags=0x0 from null
+File opened 'stdout' with oflags=0x1 from null
+File opened 'stderr' with oflags=0x1 from null
+File opened '/dev/__properties__' with oflags=0x88000 from RX@0x12182854[libc.so]0x22854
+File closed '/dev/__properties__' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/stat' with oflags=0x80000 from RX@0x12182854[libc.so]0x22854
+Read 1871 bytes from '/proc/stat'
+Read 0 bytes from '/proc/stat'
+File closed '/proc/stat' from RX@0x1217ece4[libc.so]0x1ece4
+[350101] deterministic libc PRNG import hooks registered target=.*libmetasec_ml\.so$ seed=0x350101
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+File opened '/proc/self/maps' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 2072 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+Read 0 bytes from '/proc/self/maps'
+File closed '/proc/self/maps' from RX@0x1217ece4[libc.so]0x1ece4
+[350101] deterministic libc PRNG import hooks refreshed
+[350101][runtime-gate-force] install at 0xd952c value=0x0
+[350101][runtime-config-override] install at 0x14fad4 signv5_ctrl=0x1 d_signv5_ctrl=0x0
+JNIEnv->FindClass(com/bytedance/mobsec/metasec/ml/MS) was called from RX@0x124af608[libmetasec_ml.so]0x12f608
+JNIEnv->GetSuperClass(class com/bytedance/mobsec/metasec/ml/MS) was called from RX@0x124af624[libmetasec_ml.so]0x12f624
+JNIEnv->GetSuperClass(class ms/bd/c/i2) was called from RX@0x124af63c[libmetasec_ml.so]0x12f63c
+JNIEnv->RegisterNatives(ms/bd/c/y2, unidbg@0xe4fff520, 1) was called from RX@0x124af938[libmetasec_ml.so]0x12f938
+RegisterNative(ms/bd/c/y2, a(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;, RX@0x124afb84[libmetasec_ml.so]0x12fb84)
+JNIEnv->GetStaticMethodID(com/bytedance/mobsec/metasec/ml/MS.b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;) => 0x2f94ee13 was called from RX@0x124afa08[libmetasec_ml.so]0x12fa08
+[350101] loaded libmetasec_ml.so base=0x12380000 size=0x2c9000 apk=/Users/freeman/project/douyin/douyin_35_0_0/dy351_vivo.apk
+[fresh-trace] mem read/write watch installed (full range), dir=/Users/freeman/project/douyin/dyidre/runs/350101/fresh_trace/run_20260906_044712 maxEvents=20000
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->GetArrayLength(["http_callback", "4294842512", "ws_callback", "4294842528"] => 4) was called from RX@0x124b1530[libmetasec_ml.so]0x131530
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842512", "ws_callback", "4294842528"], 0) => "http_callback" was called from RX@0x124b1558[libmetasec_ml.so]0x131558
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842512", "ws_callback", "4294842528"], 1) => "4294842512" was called from RX@0x124b1578[libmetasec_ml.so]0x131578
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("http_callback", getBytes("utf-8") => [B@0x687474705f63616c6c6261636b) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x687474705f63616c6c6261636b => 13) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x687474705f63616c6c6261636b, 0, 13, RW@0x126bfe40) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("4294842512", getBytes("utf-8") => [B@0x34323934383432353132) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x34323934383432353132 => 10) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x34323934383432353132, 0, 10, RW@0x126bfe40) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842512", "ws_callback", "4294842528"], 2) => "ws_callback" was called from RX@0x124b1558[libmetasec_ml.so]0x131558
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842512", "ws_callback", "4294842528"], 3) => "4294842528" was called from RX@0x124b1578[libmetasec_ml.so]0x131578
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("ws_callback", getBytes("utf-8") => [B@0x77735f63616c6c6261636b) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x77735f63616c6c6261636b => 11) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x77735f63616c6c6261636b, 0, 11, RW@0x126bfe50) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("4294842528", getBytes("utf-8") => [B@0x34323934383432353238) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x34323934383432353238 => 10) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x34323934383432353238, 0, 10, RW@0x126bfe50) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x10003 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"/data/user/0/com.ss.android.ugc.aweme/files/.msdata">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x10003, 0x0, 0x0L, null, null) => "/data/user/0/com.ss.android.ugc.aweme/files/.msdata") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("/data/user/0/com.ss.android.ugc.aweme/files/.msdata", getBytes("utf-8") => [B@0x2f646174612f757365722f302f636f6d2e73732e616e64726f69642e7567632e6177656d652f66696c65732f2e6d7364617461) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x2f646174612f757365722f302f636f6d2e73732e616e64726f69642e7567632e6177656d652f66696c65732f2e6d7364617461 => 51) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x2f646174612f757365722f302f636f6d2e73732e616e64726f69642e7567632e6177656d652f66696c65732f2e6d7364617461, 0, 51, RW@0x126b02c0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+[04:47:44 906]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1403) - faccessat failed dirfd=-100, pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml//.msp_3dddca0f066cc2e65e67a784c3c1326a4a8c39e4, oflags=0x4, mode=0x0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x2000001 arg1=0x0 arg2=0x1283c9f0 str=null obj=null => null
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x2000001, 0x0, 0x1283c9f0L, null, null) => null) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x2000002 arg1=0x0 arg2=0x1283c9f0 str=null obj=null => null
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x2000002, 0x0, 0x1283c9f0L, null, null) => null) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+[350101] httpSignAddress=RX@0x124cdbf4[libmetasec_ml.so]0x14dbf4
+[350101] wsSignAddress=RX@0x124cddec[libmetasec_ml.so]0x14ddec
+JNIEnv->FindClass(java/lang/Integer) was called from RX@0x124b2630[libmetasec_ml.so]0x132630
+JNIEnv->GetStaticMethodID(java/lang/Integer.valueOf(I)Ljava/lang/Integer;) => 0x8f152ce2 was called from RX@0x124b26fc[libmetasec_ml.so]0x1326fc
+callStaticObjectMethodV java/lang/Integer->valueOf(I)Ljava/lang/Integer;
+JNIEnv->CallStaticObjectMethodV(class java/lang/Integer, valueOf(0x0) => java.lang.Integer@4000001a) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+[350101] initCallback ret=java.lang.Integer@4000001a
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("881d61", getBytes("utf-8") => [B@0x383831643631) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x383831643631 => 6) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x383831643631, 0, 6, RW@0x12357098) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->GetArrayLength([B@0x673751 => 3) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x673751, 0, 3, RW@0x12357948) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF(".ms") was called from RX@0x123dd73c[libmetasec_ml.so]0x5d73c
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("6e90ad", getBytes("utf-8") => [B@0x366539306164) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x366539306164 => 6) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x366539306164, 0, 6, RW@0x12357098) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->GetArrayLength([B@0x696a4e => 3) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x696a4e, 0, 3, RW@0x12357950) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF(".md") was called from RX@0x123dd73c[libmetasec_ml.so]0x5d73c
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewGlobalRef(android.content.Context@4000001c) was called from RX@0x123e0844[libmetasec_ml.so]0x60844
+JNIEnv->GetMethodID(android/content/Context.getPackageName()Ljava/lang/String;) => 0xf6590850 was called from RX@0x12459974[libmetasec_ml.so]0xd9974
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("["1128","","","bo95dJizD1WFcV03zOuLzN5Pn1sFtVa3szqiVQmflMJTNW0p0Kpqfw8D4i0zUlfrou4kuYt\/i0521YRygM83dwv\/wn3DD+TMJF+QFzW9wb8Qq2\/1B4jPMbObrDNdyMMukpAYqy1fLWtbLGVIPxsFsZegwQy5lsRX9h49PH\/Qx8MwgYvWvH7ZTFLV28LwTWZiljQyBPaBE+TsyumEu0Y+JRkeidHFEYcVs0yRoa+xC004hugQhdPupIt6dBiWA4phsB3fNJZjFTAKGE1lPB4gzt6Qf+FmlgZBbRvT8zekxTV2HZ5dUvSutB2\/0QpbHKAvWL4DRA==","v04.05.04.08-bugfix","","","","","","0","-1","810","","0",[],["tk_key","douyin"]]", getBytes("utf-8") => [B@c730b35) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@c730b35 => 432) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@c730b35, 0, 432, RW@0x12358e00) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+[04:47:45 047]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1403) - faccessat failed dirfd=-100, pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml//.msp_f0a3865870d476fd2019497ce810af59b1f3581b, oflags=0x4, mode=0x0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x1000000e arg1=0x0 arg2=0x0 str=null obj=null => java.lang.Long<"2">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000000e, 0x0, 0x0L, null, null) => java.lang.Long@4000002c) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->FindClass(java/lang/Long) was called from RX@0x124b1fe0[libmetasec_ml.so]0x131fe0
+JNIEnv->GetMethodID(java/lang/Long.longValue()J) => 0x44606195 was called from RX@0x124b2098[libmetasec_ml.so]0x132098
+JNIEnv->CallLongMethodV(java.lang.Long@4000002c, longValue() => 0x2L) was called from RX@0x124b216c[libmetasec_ml.so]0x13216c
+[04:47:45 108]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1403) - faccessat failed dirfd=-100, pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml//.mss_1f149f2d7f76b27fded4588b7ec7fb6dd577723d, oflags=0x4, mode=0x0
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 254 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' from RX@0x124b5948[libmetasec_ml.so]0x135948
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_6fcd8907538d237434167eb88c22ce2492e97161' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 8 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_6fcd8907538d237434167eb88c22ce2492e97161'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_6fcd8907538d237434167eb88c22ce2492e97161'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_6fcd8907538d237434167eb88c22ce2492e97161' from RX@0x124b5948[libmetasec_ml.so]0x135948
+JNIEnv->NewStringUTF("d8b674543fc0b023b69f6a3f5a0f287d458ea204") was called from RX@0x12422988[libmetasec_ml.so]0xa2988
+JNIEnv->NewStringUTF("1128-0-167774bf518c11948aa0784351ccf5a9") was called from RX@0x124229a0[libmetasec_ml.so]0xa29a0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b.msdata] hit repo=d8b674543fc0b023b69f6a3f5a0f287d458ea204 key=1128-0-167774bf518c11948aa0784351ccf5a9 file=/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_6fcd8907538d237434167eb88c22ce2492e97161 bytes=8 sha1=6fcd8907538d237434167eb88c22ce2492e97161
+[350101][MS.b] op=0x1000022 arg1=0x0 arg2=0x0 str=java.lang.String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java.lang.String<"1128-0-167774bf518c11948aa0784351ccf5a9"> => java.lang.String<"80dd151582403f5a">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000022, 0x0, 0x0L, "d8b674543fc0b023b69f6a3f5a0f287d458ea204", "1128-0-167774bf518c11948aa0784351ccf5a9") => "80dd151582403f5a") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("80dd151582403f5a", getBytes("utf-8") => [B@0x38306464313531353832343033663561) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x38306464313531353832343033663561 => 16) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x38306464313531353832343033663561, 0, 16, RW@0x126bffa0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 254 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' from RX@0x124b5948[libmetasec_ml.so]0x135948
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_18942e0a8835406640db421a854dc5eeb5cb2026' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 40 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_18942e0a8835406640db421a854dc5eeb5cb2026'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_18942e0a8835406640db421a854dc5eeb5cb2026'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_18942e0a8835406640db421a854dc5eeb5cb2026' from RX@0x124b5948[libmetasec_ml.so]0x135948
+JNIEnv->NewStringUTF("d8b674543fc0b023b69f6a3f5a0f287d458ea204") was called from RX@0x12422988[libmetasec_ml.so]0xa2988
+JNIEnv->NewStringUTF("1128-0-sdi") was called from RX@0x124229a0[libmetasec_ml.so]0xa29a0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b.msdata] hit repo=d8b674543fc0b023b69f6a3f5a0f287d458ea204 key=1128-0-sdi file=/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_18942e0a8835406640db421a854dc5eeb5cb2026 bytes=40 sha1=18942e0a8835406640db421a854dc5eeb5cb2026
+[350101][MS.b] op=0x1000022 arg1=0x0 arg2=0x0 str=java.lang.String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java.lang.String<"1128-0-sdi"> => java.lang.String<"3e6f72ab4da9565df60cdddada5bf30db6be0533a98597ddc0a3933193868405d1220440433ad8a8">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000022, 0x0, 0x0L, "d8b674543fc0b023b69f6a3f5a0f287d458ea204", "1128-0-sdi") => "3e6f72ab4da9565df60cdddada5bf30db6be0533a98597ddc0a3933193868405d1220440433ad8a8") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("3e6f72ab4da9565df60cdddada5bf30db6be0533a98597ddc0a3933193868405d1220440433ad8a8", getBytes("utf-8") => [B@702657cc) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@702657cc => 80) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@702657cc, 0, 80, RW@0x123633c0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->FindClass(java/lang/Boolean) was called from RX@0x124b2824[libmetasec_ml.so]0x132824
+JNIEnv->GetStaticMethodID(java/lang/Boolean.valueOf(Z)Ljava/lang/Boolean;) => 0x1d8c249f was called from RX@0x124b28f0[libmetasec_ml.so]0x1328f0
+callStaticObjectMethodV java/lang/Boolean->valueOf(Z)Ljava/lang/Boolean;
+JNIEnv->CallStaticObjectMethodV(class java/lang/Boolean, valueOf(true) => true) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+[350101] sdkConfig ret=true
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("1128", getBytes("utf-8") => [B@0x31313238) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x31313238 => 4) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x31313238, 0, 4, RW@0x12357bf0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->FindClass(java/lang/Long) was called from RX@0x124b1de8[libmetasec_ml.so]0x131de8
+JNIEnv->GetStaticMethodID(java/lang/Long.valueOf(J)Ljava/lang/Long;) => 0x1a324bff was called from RX@0x124b1ea4[libmetasec_ml.so]0x131ea4
+callStaticObjectMethodV java/lang/Long->valueOf(J)Ljava/lang/Long;
+JNIEnv->CallStaticObjectMethodV(class java/lang/Long, valueOf(0x12935000L) => java.lang.Long@4000003f) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+[350101] aid ret=java.lang.Long@4000003f
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("397365608203400", getBytes("utf-8") => [B@0x333937333635363038323033343030) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x333937333635363038323033343030 => 15) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x333937333635363038323033343030, 0, 15, RW@0x12374190) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_9b8ed9956d7e60469912dd239a0251f93cd1e80d' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 741 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_9b8ed9956d7e60469912dd239a0251f93cd1e80d'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_9b8ed9956d7e60469912dd239a0251f93cd1e80d'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_9b8ed9956d7e60469912dd239a0251f93cd1e80d' from RX@0x124b5948[libmetasec_ml.so]0x135948
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x1000001 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"/data/app/~~3imE9y9Uej2rhpgx1bMlhg==/com.ss.android.ugc.aweme-AYCj7pK2u8XFjiKUB2opWw==/base.apk">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000001, 0x0, 0x0L, null, null) => "/data/app/~~3imE9y9Uej2rhpgx1bMlhg==/com.ss.android.ugc.aweme-AYCj7pK2u8XFjiKUB2opWw==/base.apk") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("/data/app/~~3imE9y9Uej2rhpgx1bMlhg==/com.ss.android.ugc.aweme-AYCj7pK2u8XFjiKUB2opWw==/base.apk", getBytes("utf-8") => [B@40a4337a) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@40a4337a => 95) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@40a4337a, 0, 95, RW@0x1235f7e0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 254 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' from RX@0x124b5948[libmetasec_ml.so]0x135948
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_a2c1fbad8731da75423eb57599985db945e7c6da' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 8 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_a2c1fbad8731da75423eb57599985db945e7c6da'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_a2c1fbad8731da75423eb57599985db945e7c6da'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_a2c1fbad8731da75423eb57599985db945e7c6da' from RX@0x124b5948[libmetasec_ml.so]0x135948
+JNIEnv->NewStringUTF("d8b674543fc0b023b69f6a3f5a0f287d458ea204") was called from RX@0x12422988[libmetasec_ml.so]0xa2988
+JNIEnv->NewStringUTF("de9ecbeeb513c97d0be52260179ef0e8") was called from RX@0x124229a0[libmetasec_ml.so]0xa29a0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b.msdata] hit repo=d8b674543fc0b023b69f6a3f5a0f287d458ea204 key=de9ecbeeb513c97d0be52260179ef0e8 file=/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_a2c1fbad8731da75423eb57599985db945e7c6da bytes=8 sha1=a2c1fbad8731da75423eb57599985db945e7c6da
+[350101][MS.b] op=0x1000022 arg1=0x0 arg2=0x0 str=java.lang.String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java.lang.String<"de9ecbeeb513c97d0be52260179ef0e8"> => java.lang.String<"54712cc52d34c802">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000022, 0x0, 0x0L, "d8b674543fc0b023b69f6a3f5a0f287d458ea204", "de9ecbeeb513c97d0be52260179ef0e8") => "54712cc52d34c802") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("54712cc52d34c802", getBytes("utf-8") => [B@0x35343731326363353264333463383032) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x35343731326363353264333463383032 => 16) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x35343731326363353264333463383032, 0, 16, RW@0x123743d0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 254 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_092fde7a53a0274594af0984c7830fc0c13dc8bd' from RX@0x124b5948[libmetasec_ml.so]0x135948
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_2d380627968775a593c3e8b8d72b10a47c3cddbe' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 76 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_2d380627968775a593c3e8b8d72b10a47c3cddbe'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_2d380627968775a593c3e8b8d72b10a47c3cddbe'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_2d380627968775a593c3e8b8d72b10a47c3cddbe' from RX@0x124b5948[libmetasec_ml.so]0x135948
+JNIEnv->NewStringUTF("d8b674543fc0b023b69f6a3f5a0f287d458ea204") was called from RX@0x12422988[libmetasec_ml.so]0xa2988
+JNIEnv->NewStringUTF("ptmr") was called from RX@0x124229a0[libmetasec_ml.so]0xa29a0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b.msdata] hit repo=d8b674543fc0b023b69f6a3f5a0f287d458ea204 key=ptmr file=/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msf3_2d380627968775a593c3e8b8d72b10a47c3cddbe bytes=76 sha1=2d380627968775a593c3e8b8d72b10a47c3cddbe
+[350101][MS.b] op=0x1000022 arg1=0x0 arg2=0x0 str=java.lang.String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java.lang.String<"ptmr"> => java.lang.String<"19dcca07f67427bf557676541ee63ed352ffda3824cd8bfa4b6f1b5ac7b8911372c64dc67da84dca2b1e5851b031260479b1ba53f668a0c40d3321915a4b0f33d4c7f3b5c10dcc893e976203">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000022, 0x0, 0x0L, "d8b674543fc0b023b69f6a3f5a0f287d458ea204", "ptmr") => "19dcca07f67427bf557676541ee63ed352ffda3824cd8bfa4b6f1b5ac7b8911372c64dc67da84dca2b1e5851b031260479b1ba53f668a0c40d3321915a4b0f33d4c7f3b5c10dcc893e976203") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("19dcca07f67427bf557676541ee63ed352ffda3824cd8bfa4b6f1b5ac7b8911372c64dc67da84dca2b1e5851b031260479b1ba53f668a0c40d3321915a4b0f33d4c7f3b5c10dcc893e976203", getBytes("utf-8") => [B@6025e1b6) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@6025e1b6 => 152) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@6025e1b6, 0, 152, RW@0x1237a820) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+[04:47:45 815]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:743) - stat64 pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msfs_9893091c6eb67fa4460195bc94948f551762e3ff
+[04:47:45 829]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:743) - stat64 pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msfs_75610f50c9b2a9b44faebe93db38164294346517
+[04:47:45 839]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:743) - stat64 pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msfs_eaf803ae5ba6661956cfaa13d1bb4e39c3d66415
+[04:47:45 848]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:743) - stat64 pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msfs_826c9c892f6ab7c6ff16d37ffb1d64b53405cf95
+JNIEnv->GetMethodID(android/content/Context.getPackageName()Ljava/lang/String;) => 0xf6590850 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV(android.content.Context@4000001c, getPackageName() => "com.ss.android.ugc.aweme") was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("com.ss.android.ugc.aweme", getBytes("utf-8") => [B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65 => 24) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65, 0, 24, RW@0x123773a0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+File opened '/proc/self/cmdline' with oflags=0x0 errno is 2 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+[04:47:45 857]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1464) - openat dirfd=-100, pathname=/proc/self/cmdline, oflags=0x0, mode=0
+JNIEnv->GetMethodID(android/content/Context.getPackageName()Ljava/lang/String;) => 0xf6590850 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV(android.content.Context@4000001c, getPackageName() => "com.ss.android.ugc.aweme") was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("com.ss.android.ugc.aweme", getBytes("utf-8") => [B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65 => 24) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65, 0, 24, RW@0x123773c0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_2fc7f1452374b6e341d67717f032abbe0da0f4a6' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 71 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_2fc7f1452374b6e341d67717f032abbe0da0f4a6'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_2fc7f1452374b6e341d67717f032abbe0da0f4a6'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.mss_2fc7f1452374b6e341d67717f032abbe0da0f4a6' from RX@0x124b5948[libmetasec_ml.so]0x135948
+[350101][runtime-config-override] obj=0x1268d000 old.signv5=0x0 old.d_signv5=0x1 new.signv5=0x1 new.d_signv5=0x0
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811' with oflags=0x0 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+Read 117 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811' from RX@0x124b5948[libmetasec_ml.so]0x135948
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x10001 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"35.1.0">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x10001, 0x0, 0x0L, null, null) => "35.1.0") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x10002 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"com.ss.android.ugc.aweme">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x10002, 0x0, 0x0L, null, null) => "com.ss.android.ugc.aweme") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x10008 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"35.1.0">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x10008, 0x0, 0x0L, null, null) => "35.1.0") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("35.1.0", getBytes("utf-8") => [B@0x33352e312e30) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x33352e312e30 => 6) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x33352e312e30, 0, 6, RW@0x12357f78) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("35.1.0", getBytes("utf-8") => [B@0x33352e312e30) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x33352e312e30 => 6) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x33352e312e30, 0, 6, RW@0x12357f90) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("com.ss.android.ugc.aweme", getBytes("utf-8") => [B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65 => 24) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x636f6d2e73732e616e64726f69642e7567632e6177656d65, 0, 24, RW@0x123776e0) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF("{
+	"sdk_aid":	"3019",
+	"device_id":	"397365608203400",
+	"host_aid":	"1128",
+	"channel":	"",
+	"sdk_version":	"v04.09.05-ml-android",
+	"app_version":	"35.1.0",
+	"update_version_code":	"35.1.0",
+	"package_name":	"com.ss.android.ugc.aweme",
+	"configURLs":	["https://mon.snssdk.com/monitor/appmonitor/v2/settings", "https://monsetting.toutiao.com/monitor/appmonitor/v2/settings"],
+	"reportURLs":	["https://mon.snssdk.com/monitor/collect", "https://mon.toutiao.com/monitor/collect", "https://mon.toutiaocloud.com/monitor/collect", "https://mon.toutiaocloud.net/monitor/collect"],
+	"oversea":	false
+}") was called from RX@0x124ae900[libmetasec_ml.so]0x12e900
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x20001 arg1=0x0 arg2=0x0 str=java.lang.String<"{\n	"sdk_aid":	"3019",\n	"device_id":	"397365608203400",\n	"host_aid":	"1128",\n	"channel":	"",\n	"sdk_version":	"v04.09.05-ml-android",\n	"app_version":	"35.1.0",\n	"update_version_code"...<len=593>"> obj=null => java.lang.String<"OK">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x20001, 0x0, 0x0L, "{
+	"sdk_aid":	"3019",
+	"device_id":	"397365608203400",
+	"host_aid":	"1128",
+	"channel":	"",
+	"sdk_version":	"v04.09.05-ml-android",
+	"app_version":	"35.1.0",
+	"update_version_code":	"35.1.0",
+	"package_name":	"com.ss.android.ugc.aweme",
+	"configURLs":	["https://mon.snssdk.com/monitor/appmonitor/v2/settings", "https://monsetting.toutiao.com/monitor/appmonitor/v2/settings"],
+	"reportURLs":	["https://mon.snssdk.com/monitor/collect", "https://mon.toutiao.com/monitor/collect", "https://mon.toutiaocloud.com/monitor/collect", "https://mon.toutiaocloud.net/monitor/collect"],
+	"oversea":	false
+}", null) => "OK") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+[350101] deviceId ret=null
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("3247301440846819", getBytes("utf-8") => [B@0x33323437333031343430383436383139) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x33323437333031343430383436383139 => 16) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x33323437333031343430383436383139, 0, 16, RW@0x12374530) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+[350101] installId ret=null
+Find native function Java_ms_bd_c_y2_a => RX@0x124afb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("836482d2656977ff15663f05c6cb24bf4e14fdb6", getBytes("utf-8") => [B@0x38333634383264323635363937376666313536363366303563366362323462663465313466646236) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x38333634383264323635363937376666313536363366303563366362323462663465313466646236 => 40) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x38333634383264323635363937376666313536363366303563366362323462663465313466646236, 0, 40, RW@0x1293f700) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+[350101] sessionId ret=null
+JNIEnv->FindClass(java/lang/Thread) was called from RX@0x124d1ea0[libmetasec_ml.so]0x151ea0
+JNIEnv->GetStaticMethodID(java/lang/Thread.currentThread()Ljava/lang/Thread;) => 0xb11dab06 was called from RX@0x124d1f1c[libmetasec_ml.so]0x151f1c
+callStaticObjectMethodV java/lang/Thread->currentThread()Ljava/lang/Thread;
+JNIEnv->CallStaticObjectMethodV(class java/lang/Thread, currentThread() => java.lang.Thread@40000069) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->GetMethodID(java/lang/Thread.getStackTrace()[Ljava/lang/StackTraceElement;) => 0xb5a73646 was called from RX@0x124d2000[libmetasec_ml.so]0x152000
+JNIEnv->CallObjectMethodV(java.lang.Thread@40000069, getStackTrace() => [java.lang.StackTraceElement@4000006c, java.lang.StackTraceElement@4000006d]) was called from RX@0x1245b060[libmetasec_ml.so]0xdb060
+JNIEnv->GetArrayLength([java.lang.StackTraceElement@4000006c, java.lang.StackTraceElement@4000006d] => 2) was called from RX@0x124d2044[libmetasec_ml.so]0x152044
+JNIEnv->FindClass(java/lang/Thread) was called from RX@0x124b0c58[libmetasec_ml.so]0x130c58
+JNIEnv->GetStaticMethodID(java/lang/Thread.currentThread()Ljava/lang/Thread;) => 0xb11dab06 was called from RX@0x124b0c94[libmetasec_ml.so]0x130c94
+callStaticObjectMethodV java/lang/Thread->currentThread()Ljava/lang/Thread;
+JNIEnv->CallStaticObjectMethodV(class java/lang/Thread, currentThread() => java.lang.Thread@4000006f) was called from RX@0x124b0db8[libmetasec_ml.so]0x130db8
+JNIEnv->GetMethodID(java/lang/Thread.getStackTrace()[Ljava/lang/StackTraceElement;) => 0xb5a73646 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV(java.lang.Thread@4000006f, getStackTrace() => [java.lang.StackTraceElement@40000070, java.lang.StackTraceElement@40000071]) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([java.lang.StackTraceElement@40000070, java.lang.StackTraceElement@40000071] => 2) was called from RX@0x1240579c[libmetasec_ml.so]0x8579c
+File opened '/proc/self/cmdline' with oflags=0x0 errno is 2 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+[04:47:46 116]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1464) - openat dirfd=-100, pathname=/proc/self/cmdline, oflags=0x0, mode=0
+File opened '/proc/self/cmdline' with oflags=0x0 errno is 2 from RX@0x124b62ac[libmetasec_ml.so]0x1362ac
+[04:47:46 123]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1464) - openat dirfd=-100, pathname=/proc/self/cmdline, oflags=0x0, mode=0
+JNIEnv->GetStaticMethodID(com/bytedance/mobsec/metasec/ml/MS.a()V) => 0x4bfa55cc was called from RX@0x12459260[libmetasec_ml.so]0xd9260
+[350101][runtime-gate-force] 0xD952C x23=0x12641000 oldDynamic=0x1 oldGlobal=0x1 newDynamic=0x0 newGlobal=0x0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x1000011 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"35.1.0">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000011, 0x0, 0x0L, null, null) => "35.1.0") was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x124b1708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x124b1070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("35.1.0", getBytes("utf-8") => [B@0x33352e312e30) was called from RX@0x124b1194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x33352e312e30 => 6) was called from RX@0x124b18b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x33352e312e30, 0, 6, RW@0x123790d8) was called from RX@0x124b18f0[libmetasec_ml.so]0x1318f0
+File opened '/dev/urandom' with oflags=0x0 from RX@0x12182854[libc.so]0x22854
+Read 4096 bytes from '/dev/urandom'
+File closed '/dev/urandom' from RX@0x1217ece4[libc.so]0x1ece4
+JNIEnv->NewStringUTF("http_reqsign") was called from RX@0x124ae210[libmetasec_ml.so]0x12e210
+JNIEnv->FindClass(java/lang/String) was called from RX@0x124b0904[libmetasec_ml.so]0x130904
+JNIEnv->NewObjectArray([null, null, null] => 3) was called from RX@0x124b1ae4[libmetasec_ml.so]0x131ae4
+JNIEnv->NewStringUTF("{}") was called from RX@0x124b1b24[libmetasec_ml.so]0x131b24
+JNIEnv->SetObjectArrayElement([null, null, null], 0) => "{}" was called from RX@0x124b1b4c[libmetasec_ml.so]0x131b4c
+JNIEnv->NewStringUTF("{"consume_ML_DoHttpReqSignIT":0}") was called from RX@0x124b1b24[libmetasec_ml.so]0x131b24
+JNIEnv->SetObjectArrayElement(["{}", null, null], 1) => "{"consume_ML_DoHttpReqSignIT":0}" was called from RX@0x124b1b4c[libmetasec_ml.so]0x131b4c
+JNIEnv->NewStringUTF("{
+	"ApiAndParams":	"https://log0-misc-lf.amemv.com/service/2/app_log/?version_code=350100&device_platform=android&device_id=4087336283154583&aid=1128&iid=3313280560987770&tt_data=a"
+}") was called from RX@0x124b1b24[libmetasec_ml.so]0x131b24
+JNIEnv->SetObjectArrayElement(["{}", "{"consume_ML_DoHttpReqSignIT":0}", null], 2) => "{
+	"ApiAndParams":	"https://log0-misc-lf.amemv.com/service/2/app_log/?version_code=350100&device_platform=android&device_id=4087336283154583&aid=1128&iid=3313280560987770&tt_data=a"
+}" was called from RX@0x124b1b4c[libmetasec_ml.so]0x131b4c
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x20002 arg1=0x0 arg2=0x0 str=java.lang.String<"http_reqsign"> obj=ArrayObject<object[3]> => null
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x20002, 0x0, 0x0L, "http_reqsign", ["{}", "{"consume_ML_DoHttpReqSignIT":0}", "{
+	"ApiAndParams":	"https://log0-misc-lf.amemv.com/service/2/app_log/?version_code=350100&device_platform=android&device_id=4087336283154583&aid=1128&iid=3313280560987770&tt_data=a"
+}"]) => null) was called from RX@0x124b01f8[libmetasec_ml.so]0x1301f8
+[350101] metasec ret=0x12695600
+X-Argus
+rPuUag==
+X-Gorgon
+8404007e080074a992f35173abe86cf50cba2b7777d463ea40f2
+X-Helios
+mCYsIdWAgnGmqmfExII45WeIXpbRiE21VGwlubqQHfEAtdKz
+X-Khronos
+1788148652
+X-Ladon
+apT7rA==
+X-Medusa
+qfuUaoGw26Dljpkpk046Ro6WWDwKyAABzDV7aChOgQ8IGFjFIAzEt/7IzUV6qSKEliCZ0hoLD1BYWIwTUK5PFqC+QCypGMJ4/nv7m/UQRClaBZekIZ7NZiPB47PJskjbBCT6HtHVA9SdNpLswL65R21/azqP/yoeTbb+JNHFha1hmZxggx7SurQV0T7fhq/jaWboYvNRoytO8spe6EoTvTFj0HHVsFzyfIEfDUSi9gIPM0cIAGum+fZL0ixvSxzuUHukY1ZBAE7xGXSFXXbEotEs/MN6Oji6HN4QGcqN1NGNVV01cZEpQgKmDMmLlZhbLR+fWam/HeG5xZLiK+XjbUlLMMjYcCo77TCMT9vyFfc+QwPN9v5HZGpvrRpbQ7fUJaUrExhIIe13CyjWHAx8crNIItQdLhExw79rIoEAx57BvRTV4to4I1eM68N9f3+Au42yl11vWna+BjyEfxeh0K0fnq+FI3bTXJ43IwhH9a99yRvgpQXPrYw2QsCI9IGa7yjMXJ55aw5M+0PQDqpMMlPHDsv0Nls6nLsl9Orog4RpL9DHAUK56wt+aE0qONU9ic3ED5bnKvJrDSi0+AwmdWv1q9tmsCalrBLM7NIQJhFM+7T+thpL8sObgkPQRXN6EJ7xDDDtre9Q41DY1I5z91swJNRTHPZw7EEjgjwAFhCAFIaa8cjdooY7OAbqi9bGLIi/QAkGvZzovFBEleK1sgXfs3vBH6tAH9m7BTzj2c6X3/7U+I2TLaT2nNEYg7dcOuwaRMOomijUTSt7tBLeLAS42VD8TdAXXQbN9Y0vq+G739c6XpqyZP63r34WjsTNyiP3T8W50pZZbCS5rwo7uWbwzuOp9FLjRENSAaOdvrqtD2q1Y0GUr/tYfLbZ6vFIxxQaQQA1p2x907RFiBq6ed++d5D7xPN0b2Hv2RoouGBCBxhsSy121E55B37U6sTR20ObuIffvP5fj//+X4/3NEU=
+X-Soter
+AAEAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+[fresh-trace] done, string events=20000, logs in /Users/freeman/project/douyin/dyidre/runs/350101/fresh_trace/run_20260906_044712
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.997 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] unidbg 0.9.10-SNAPSHOT ............................. [1;32mSUCCESS[m [  0.028 s]
+[[1;34mINFO[m] unidbg-api ......................................... [1;32mSUCCESS[m [  0.273 s]
+[[1;34mINFO[m] unidbg-dynarmic .................................... [1;32mSUCCESS[m [  0.021 s]
+[[1;34mINFO[m] unidbg-hypervisor .................................. [1;32mSUCCESS[m [  0.016 s]
+[[1;34mINFO[m] unidbg-kvm ......................................... [1;32mSUCCESS[m [  0.015 s]
+[[1;34mINFO[m] unidbg-unicorn2 .................................... [1;32mSUCCESS[m [  0.013 s]
+[[1;34mINFO[m] unidbg-android 0.9.10-SNAPSHOT ..................... [1;32mSUCCESS[m [  4.223 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 4.762 s
+[[1;34mINFO[m] Finished at: 2026-09-06T04:47:47+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

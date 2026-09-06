@@ -1,0 +1,315 @@
+     ____
+    / _  |   Frida 17.15.0 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Pixel 6 (id=18201FDF6002GR)
+Spawning `com.ss.android.ugc.aweme`...
+[metasec-msb] 1788610476330 libart.so base=0x731d9da000
+[metasec-msb] 1788610476330 install target=libmetasec_ml.so
+[metasec-msb] 1788610476338 hook FindClass[6] @ 0x731e114520 via fixed-libart-offset stealth=off
+[metasec-msb] 1788610476347 hook GetStaticMethodID[113] @ 0x731dff29bc via fixed-libart-offset stealth=off
+[metasec-msb] 1788610476353 hook CallStaticObjectMethodV[115] @ 0x731de15038 via fixed-libart-offset stealth=off
+[metasec-msb] 1788610476358 hook CallStaticObjectMethodA[116] @ 0x731def8fa0 via fixed-libart-offset stealth=off
+[metasec-msb] 1788610476359 installed
+[metasec-msb] standalone loaded (Frida 17, stock/rusda)
+Spawned `com.ss.android.ugc.aweme`. Resuming main thread!
+[Pixel 6::com.ss.android.ugc.aweme ]-> [metasec-msb] 1788610476369 expand JNI table from env=0xb4000074511cea90 table=0x731e3f9520
+[metasec-msb] 1788610476770 MS.b jmethodID registered: com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object; = 0x5e6654e8
+[metasec-msb] 1788610476772 class cache string=0x3886 bytes=0x38a6
+[metasec-msb] 1788610476772 [350101][MS.b] op=0x00010003 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"/data/user/0/com.ss.android.ugc.aweme/files/.msdata"> ; seq=1 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476772 MSB_SUMMARY total=1 ops{0x00010003=1}
+[metasec-msb] 1788610476773 [350101][MS.b] op=0x02000001 arg1=0x00000000 arg2=0x74c1245b10 str=null obj=null => <obj 0x75d5aa6001> ; seq=2 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476773 [350101][MS.b] op=0x02000002 arg1=0x00000000 arg2=0x74c1245b10 str=null obj=null => <obj 0x75d5aa600d> ; seq=3 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476828 [350101][MS.b] op=0x1000000e arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x75d5aa6001> ; seq=4 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476830 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"1128-0-167774bf518c11948aa0784351ccf5a9"> => java/lang/String<"80dd151582403f5a"> ; seq=5 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476830 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"1128-0-sdi"> => java/lang/String<"3e6f72ab4da9565df60cdddada5bf30db6be0533a98597ddc0a3933193868405d1220440433ad8a8"> ; seq=6 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476838 [350101][MS.b] op=0x01000001 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"/data/app/~~3imE9y9Uej2rhpgx1bMlhg==/com.ss.android.ugc.aweme-AYCj7pK2u8XFjiKUB2opWw==/base.apk"> ; seq=8 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476840 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"de9ecbeeb513c97d0be52260179ef0e8"> => java/lang/String<"54712cc52d34c802"> ; seq=9 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476841 [350101][MS.b] op=0x0100001e arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=7 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476843 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"ptmr"> => java/lang/String<"19dcca07f67427bf557676541ee63ed352ffda3824cd8bfa4b6f1b5ac7b8911372c64dc67da84dca2b1e5851b031260479b1ba53f668a0c40d3321915a4b0f33d4c7f3b5c10dcc893e976203"> ; seq=10 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476844 [350101][MS.b] op=0x01000026 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<""> ; seq=11 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476845 [350101][MS.b] op=0x01000027 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=12 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476846 [350101][MS.b] op=0x00010001 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=13 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476846 [350101][MS.b] op=0x00010002 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"com.ss.android.ugc.aweme"> ; seq=14 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476850 [350101][MS.b] op=0x00010008 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=15 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610476857 [350101][MS.b] op=0x00020001 arg1=0x00000000 arg2=0x0 str=java/lang/String<"{\n	"sdk_aid":	"3019",\n	"device_id":	"4087336283154583",\n	"host_aid":	"1128",\n	"channel":	"",\n	"sdk_version":	"v04.09.05-ml-android",\n	"app_version":	"35.1.0",\n	"update_version_code":	"35.1.0",\n	"package_name":	"com.ss.android.ugc.aweme",\n	"configURLs":	["https...<len=594>"> obj=null => java/lang/String<"OK"> ; seq=16 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477027 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=17 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477028 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=18 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477032 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=19 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477033 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=20 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477035 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=21 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477036 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=22 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477038 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=23 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477039 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=24 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477041 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=25 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477042 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=26 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477043 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=27 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477044 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=28 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477046 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=29 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477047 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=30 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477048 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=31 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477049 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=32 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477051 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=33 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477052 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=34 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477064 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=35 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477065 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=36 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477067 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=37 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477068 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=38 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477182 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=39 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477183 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=40 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477249 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=41 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477251 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=42 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477307 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=43 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477308 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=44 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477336 [350101][MS.b] op=0x0100002c arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x75c010b201> ; seq=45 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477337 [350101][MS.b] op=0x01000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"Asia/Shanghai,8"> ; seq=46 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477337 [350101][MS.b] op=0x0100000a arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"zh_CN"> ; seq=47 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477343 [350101][MS.b] op=0x1000000a arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=49 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477344 [350101][MS.b] op=0x1000000b arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=50 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477348 [350101][MS.b] op=0x10000006 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"{"core":8,"pc":"","hw":"","max":"1803000","min":"300000","ft":"fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp"}"> ; seq=48 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477411 [350101][MS.b] op=0x01000012 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=51 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477459 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=52 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477466 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=53 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477690 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=54 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477692 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=55 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477756 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=56 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610477759 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=57 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610478362 heartbeat t=2s libart=ok installed=true seq=57
+[metasec-msb] 1788610479570 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=58 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610479576 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=59 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610479755 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=60 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610479762 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=61 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610480030 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=62 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610480039 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=63 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610480122 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=64 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610480129 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=65 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610481363 heartbeat t=5s libart=ok installed=true seq=65
+[metasec-msb] 1788610482281 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=66 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610482286 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=67 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610482327 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=68 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610482333 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=69 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610482342 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=70 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610482343 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=71 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610482356 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=72 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610482358 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=73 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610483501 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=74 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610483505 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=75 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610484861 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=76 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610484863 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=77 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610484971 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=78 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610484979 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=79 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610486362 heartbeat t=10s libart=ok installed=true seq=79
+[metasec-msb] 1788610486796 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=80 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610486802 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=81 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610486893 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=82 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610486896 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=83 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610486970 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=84 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610486973 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=85 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487115 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=86 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487119 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=87 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487332 [350101][MS.b] op=0x0100003a arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"155"> ; seq=88 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487333 [350101][MS.b] op=0x0100003b arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"4"> ; seq=89 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487335 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"sdk_start"> obj=<obj 0x75c010b20d> => null ; seq=90 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487343 [350101][MS.b] op=0x01000039 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35109900"> ; seq=91 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487344 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=92 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487345 [350101][MS.b] op=0x00010007 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=93 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487365 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=95 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487376 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=96 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487509 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=97 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487517 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=98 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487551 [350101][MS.b] op=0x00030001 arg1=0x00000000 arg2=0x0 str=java/lang/String<"https://mssdk.bytedance.com/pilvinen/v1/sseelfk/haku?lc_id=1588093228&aid=1128&app_id=1128&sdk_id=&sub_aid=&sdk_version=v04.09.05-ml-android&sdk_ver_code=67699968&app_version=35.1.0&os_platform=android&cpu_width=64&iid=3313280560987770&did=4087336283154583&bd_...<len=403>"> obj=<obj 0x72f58ada15> => <obj 0x72f58ada19> ; seq=94 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487900 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=99 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610487901 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=100 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610489012 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=101 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610489024 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=102 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610492325 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=103 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610492329 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=104 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610494562 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=105 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610494567 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=106 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610495585 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=107 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610495588 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=108 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610495759 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=109 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610495762 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=110 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610495992 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=111 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496001 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=112 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496108 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=113 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496119 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=114 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496399 [350101][MS.b] op=0x1000000f arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x75ce007601> ; seq=115 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496521 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=116 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496532 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=117 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496717 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=118 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496725 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=119 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496841 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=120 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610496848 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=121 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610497336 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=122 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610497347 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"http_reqsign"> obj=<obj 0x75bd67aa05> => null ; seq=123 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610497398 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"de9ecbeeb513c97d0be52260179ef0e8"> => java/lang/String<"54712cc52d34c802"> ; seq=124 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610497404 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=125 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610497611 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=126 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610497840 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=127 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610498903 [350101][MS.b] op=0x03000001 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=128 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610498907 [350101][MS.b] op=0x01000005 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"420"> ; seq=129 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499020 [350101][MS.b] op=0x10000001 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"1080*2400"> ; seq=130 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499040 [350101][MS.b] op=0x01000006 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"4614"> ; seq=131 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499043 [350101][MS.b] op=0x01000017 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"95"> ; seq=132 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499044 [350101][MS.b] op=0x0100001f arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada01> ; seq=133 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499046 [350101][MS.b] op=0x01000020 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada01> ; seq=134 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499049 [350101][MS.b] op=0x01000021 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada01> ; seq=135 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499053 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=137 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499067 [350101][MS.b] op=0x10000006 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"{"core":8,"pc":"","hw":"","max":"1803000","min":"300000","ft":"fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp"}"> ; seq=136 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499118 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=138 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499130 [350101][MS.b] op=0x01000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"Asia/Shanghai,8"> ; seq=139 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499132 [350101][MS.b] op=0x0100000a arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"zh_CN"> ; seq=140 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499147 [350101][MS.b] op=0x01000032 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"{"1":"Pixel 6","2":"google","3":"oriole","4":"15","5":"BP1A.250305.019","6":"oriole","7":"google\/oriole\/oriole:15\/BP1A.250305.019\/13003188:user\/release-keys"}"> ; seq=141 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499150 [350101][MS.b] op=0x01000033 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada05> ; seq=142 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499275 [350101][MS.b] op=0x01000002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"android"> obj=null => [B<byte[1484] hex=30 82 05 c8 30 82 03 b0 a0 03 02 01 02 02 14 1a 8a 97 bd 45 9d 36 90 48 d3 6e 8a 28 6e 91 15 64 00 18 dd 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 74 31 0b 30 09 06 03 55 04 06 13 02 55 ...> ; seq=143 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499323 [350101][MS.b] op=0x01000034 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"ARM|Mali-G78|OpenGL ES 3.2 v1.r51p0-00eac0.20897de31e8026c4063960e040e2e9ba"> ; seq=144 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499327 [350101][MS.b] op=0x01000035 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"1_LSM6DSR Accelerometer_STMicro|5_TMD3719 Ambient Light_AMS|9_Gravity Sensor_Google"> ; seq=145 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499350 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=146 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499827 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x0 str=null obj=<obj 0x72f58ada25> => null ; seq=147 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499830 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x1 str=null obj=<obj 0x72f58ada25> => java/lang/String<"google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys"> ; seq=148 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499834 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x1 str=null obj=<obj 0x72f58ada25> => java/lang/String<"Google"> ; seq=149 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499898 [350101][MS.b] op=0x10000001 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"1080*2400"> ; seq=150 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499922 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"risk_inspect"> obj=<obj 0x72f58ada09> => null ; seq=151 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499923 [350101][MS.b] op=0x01000010 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada09> ; seq=152 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499924 [350101][MS.b] op=0x01000012 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=153 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499929 [350101][MS.b] op=0x0100001c arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"["192.168.31.1","0.0.0.0"]"> ; seq=154 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499933 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"cb_value"> => java/lang/String<"093e857d604d0895"> ; seq=155 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610499954 [350101][MS.b] op=0x1000000c arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=156 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500046 [350101][MS.b] op=0x10000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"com.google.android.inputmethod.latin[<!>]com.google.android.tts"> ; seq=157 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500049 [350101][MS.b] op=0x1000000d arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"com.google.android.inputmethod.latin"> ; seq=158 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500070 [350101][MS.b] op=0x00010006 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<";ac6fdf5_20250714_5afdb178-609e-11f0-869a-d673e719a189"> ; seq=159 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500116 [350101][MS.b] op=0x0100001a arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"zh_CN"> ; seq=160 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500117 [350101][MS.b] op=0x01000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"Asia/Shanghai,8"> ; seq=161 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500119 [350101][MS.b] op=0x01000017 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"95"> ; seq=162 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500233 [350101][MS.b] op=0x0100001b arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<""> ; seq=163 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500234 [350101][MS.b] op=0x0100001c arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"["192.168.31.1","0.0.0.0"]"> ; seq=164 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500236 [350101][MS.b] op=0x0100001d arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x75c010b201> ; seq=165 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500388 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=166 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500390 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"ftm"> => java/lang/String<"bebbc6a220c34f9dc6f76358f11edfd6"> ; seq=167 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500400 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=168 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500401 [350101][MS.b] op=0x01000010 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x75c010b201> ; seq=169 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500415 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=171 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500560 [350101][MS.b] op=0x00030001 arg1=0x00000000 arg2=0x0 str=java/lang/String<"https://mssdk.bytedance.com/sdi/get_token?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&...<len=335>"> obj=<obj 0x75c010b215> => <obj 0x75c010b219> ; seq=170 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500563 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"secdeviceid"> obj=<obj 0x75c010b205> => null ; seq=172 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610500951 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=173 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610501563 [350101][MS.b] op=0x01000002 arg1=0x00000000 arg2=0x0 str=null obj=null => [B<byte[858] hex=30 82 03 56 30 82 02 3e a0 03 02 01 02 02 04 4e fe c9 6a 30 0d 06 09 2a 86 48 86 f7 0d 01 01 05 05 00 30 6d 31 0b 30 09 06 03 55 04 06 13 02 43 4e 31 10 30 0e 06 03 55 04 08 13 07 42 65 69 6a ...> ; seq=174 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610501861 [350101][MS.b] op=0x01000038 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada0d> ; seq=175 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610501937 [350101][MS.b] op=0x0100002b arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<""> ; seq=176 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610501944 [350101][MS.b] op=0x0100002e arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"[]"> ; seq=177 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610501975 [350101][MS.b] op=0x0100002d arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"0"> ; seq=178 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502068 [350101][MS.b] op=0x10000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"com.google.android.inputmethod.latin[<!>]com.google.android.tts"> ; seq=179 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502097 [350101][MS.b] op=0x01000036 arg1=0x00000000 arg2=0x0 str=java/lang/String<"luckydog_init"> obj=null => java/lang/String<"0"> ; seq=180 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502099 [350101][MS.b] op=0x01000013 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=181 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502100 [350101][MS.b] op=0x10000003 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"np"> ; seq=183 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502101 [350101][MS.b] op=0x10000002 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"np"> ; seq=184 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502105 [350101][MS.b] op=0x01000023 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204|1128-0-167774bf518c11948aa0784351ccf5a9"> obj=java/lang/String<"80dd151582403f5a"> => null ; seq=185 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502106 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"sdk_risk_report"> obj=<obj 0x72f58ada11> => null ; seq=186 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502109 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=187 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502110 [350101][MS.b] op=0x01000010 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada11> ; seq=188 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502155 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=190 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502368 [350101][MS.b] op=0x00030001 arg1=0x00000000 arg2=0x0 str=java/lang/String<"https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"> obj=<obj 0x72f58ada35> => <obj 0x72f58ada39> ; seq=189 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502372 [350101][MS.b] op=0x01000018 arg1=0x00000000 arg2=0x0 str=java/lang/String<"com.bytedance.shell.TTSECINFO"> obj=<obj 0x72f58ada09> => null ; seq=191 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502374 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"risk_inspect"> obj=<obj 0x72f58ada11> => null ; seq=192 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610502495 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=193 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610503114 [350101][MS.b] op=0x01000019 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=182 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610504345 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=194 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610505988 [350101][MS.b] op=0x03000001 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=195 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506045 [350101][MS.b] op=0x01000017 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"95"> ; seq=196 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506046 [350101][MS.b] op=0x0100001f arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada11> ; seq=197 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506048 [350101][MS.b] op=0x01000020 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada11> ; seq=198 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506050 [350101][MS.b] op=0x01000021 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada11> ; seq=199 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506068 [350101][MS.b] op=0x10000006 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"{"core":8,"pc":"","hw":"","max":"1803000","min":"300000","ft":"fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp"}"> ; seq=200 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506091 [350101][MS.b] op=0x01000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"Asia/Shanghai,8"> ; seq=201 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506091 [350101][MS.b] op=0x0100000a arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"zh_CN"> ; seq=202 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506095 [350101][MS.b] op=0x01000032 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"{"1":"Pixel 6","2":"google","3":"oriole","4":"15","5":"BP1A.250305.019","6":"oriole","7":"google\/oriole\/oriole:15\/BP1A.250305.019\/13003188:user\/release-keys"}"> ; seq=203 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506096 [350101][MS.b] op=0x01000033 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada09> ; seq=204 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506125 [350101][MS.b] op=0x01000002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"android"> obj=null => [B<byte[1484] hex=30 82 05 c8 30 82 03 b0 a0 03 02 01 02 02 14 1a 8a 97 bd 45 9d 36 90 48 d3 6e 8a 28 6e 91 15 64 00 18 dd 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 74 31 0b 30 09 06 03 55 04 06 13 02 55 ...> ; seq=205 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506161 [350101][MS.b] op=0x01000034 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"ARM|Mali-G78|OpenGL ES 3.2 v1.r51p0-00eac0.20897de31e8026c4063960e040e2e9ba"> ; seq=206 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506161 [350101][MS.b] op=0x01000035 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"1_LSM6DSR Accelerometer_STMicro|5_TMD3719 Ambient Light_AMS|9_Gravity Sensor_Google"> ; seq=207 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506378 heartbeat t=30s libart=ok installed=true seq=207
+[metasec-msb] 1788610506643 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x0 str=null obj=<obj 0x72f58ada3d> => null ; seq=208 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506645 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x1 str=null obj=<obj 0x72f58ada3d> => java/lang/String<"google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys"> ; seq=209 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506648 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x1 str=null obj=<obj 0x72f58ada3d> => java/lang/String<"Google"> ; seq=210 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506723 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"risk_inspect"> obj=<obj 0x72f58ada21> => null ; seq=211 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506724 [350101][MS.b] op=0x0100001c arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"["192.168.31.1","0.0.0.0"]"> ; seq=212 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506726 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"cb_value"> => java/lang/String<"093e857d604d0895"> ; seq=213 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506844 [350101][MS.b] op=0x01000026 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<""> ; seq=214 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506845 MSB_SUMMARY total=214 ops{0x01000011=61, 0x00020002=52, 0x01000022=8, 0x0100002f=6, 0x01000009=4, 0x0100000a=3, 0x10000006=3, 0x00030001=3, 0x01000017=3, 0x01000002=3, 0x01000010=3, 0x0100001c=3}
+[metasec-msb] 1788610506847 [350101][MS.b] op=0x01000027 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=215 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610506986 [350101][MS.b] op=0x01000038 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada29> ; seq=216 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507061 [350101][MS.b] op=0x0100002b arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<""> ; seq=217 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507064 [350101][MS.b] op=0x0100002e arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"[]"> ; seq=218 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507075 [350101][MS.b] op=0x0100002d arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"0"> ; seq=219 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507224 [350101][MS.b] op=0x10000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"com.google.android.inputmethod.latin[<!>]com.google.android.tts"> ; seq=220 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507271 [350101][MS.b] op=0x01000036 arg1=0x00000000 arg2=0x0 str=java/lang/String<"cold_start"> obj=null => java/lang/String<"0"> ; seq=221 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507274 [350101][MS.b] op=0x01000013 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"-0.21,0.58,9.66"> ; seq=222 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507277 [350101][MS.b] op=0x10000003 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"np"> ; seq=223 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507279 [350101][MS.b] op=0x10000002 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"np"> ; seq=224 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507283 [350101][MS.b] op=0x01000023 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204|1128-0-167774bf518c11948aa0784351ccf5a9"> obj=java/lang/String<"80dd151582403f5a"> => null ; seq=225 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507288 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=226 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507289 [350101][MS.b] op=0x01000010 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada29> ; seq=227 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507355 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=229 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507470 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=230 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507499 [350101][MS.b] op=0x00030001 arg1=0x00000000 arg2=0x0 str=java/lang/String<"https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"> obj=<obj 0x72f58ada4d> => <obj 0x72f58ada51> ; seq=228 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507501 [350101][MS.b] op=0x01000018 arg1=0x00000000 arg2=0x0 str=java/lang/String<"com.bytedance.shell.TTSECINFO"> obj=<obj 0x72f58ada25> => null ; seq=231 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507503 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"risk_inspect"> obj=<obj 0x72f58ada29> => null ; seq=232 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507503 [350101][MS.b] op=0x03000001 arg1=0x00000000 arg2=0x0 str=null obj=null => null ; seq=233 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507572 [350101][MS.b] op=0x01000017 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"95"> ; seq=234 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507573 [350101][MS.b] op=0x0100001f arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada29> ; seq=235 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507575 [350101][MS.b] op=0x01000020 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada29> ; seq=236 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507577 [350101][MS.b] op=0x01000021 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada29> ; seq=237 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507590 [350101][MS.b] op=0x10000006 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"{"core":8,"pc":"","hw":"","max":"1803000","min":"300000","ft":"fp asimd evtstrm aes pmull sha1 sha2 crc32 atomics fphp asimdhp cpuid asimdrdm lrcpc dcpop asimddp"}"> ; seq=238 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507609 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=239 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507656 [350101][MS.b] op=0x01000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"Asia/Shanghai,8"> ; seq=240 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507657 [350101][MS.b] op=0x0100000a arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"zh_CN"> ; seq=241 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507664 [350101][MS.b] op=0x01000032 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"{"1":"Pixel 6","2":"google","3":"oriole","4":"15","5":"BP1A.250305.019","6":"oriole","7":"google\/oriole\/oriole:15\/BP1A.250305.019\/13003188:user\/release-keys"}"> ; seq=242 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507666 [350101][MS.b] op=0x01000033 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada21> ; seq=243 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507716 [350101][MS.b] op=0x01000002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"android"> obj=null => [B<byte[1484] hex=30 82 05 c8 30 82 03 b0 a0 03 02 01 02 02 14 1a 8a 97 bd 45 9d 36 90 48 d3 6e 8a 28 6e 91 15 64 00 18 dd 30 0d 06 09 2a 86 48 86 f7 0d 01 01 0b 05 00 30 74 31 0b 30 09 06 03 55 04 06 13 02 55 ...> ; seq=244 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507747 [350101][MS.b] op=0x01000034 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"ARM|Mali-G78|OpenGL ES 3.2 v1.r51p0-00eac0.20897de31e8026c4063960e040e2e9ba"> ; seq=245 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610507748 [350101][MS.b] op=0x01000035 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"1_LSM6DSR Accelerometer_STMicro|5_TMD3719 Ambient Light_AMS|9_Gravity Sensor_Google"> ; seq=246 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508480 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x0 str=null obj=<obj 0x72f58ada51> => null ; seq=247 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508483 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x1 str=null obj=<obj 0x72f58ada51> => java/lang/String<"google/oriole/oriole:15/BP1A.250305.019/13003188:user/release-keys"> ; seq=248 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508485 [350101][MS.b] op=0x0100002f arg1=0x00000000 arg2=0x1 str=null obj=<obj 0x72f58ada51> => java/lang/String<"Google"> ; seq=249 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508578 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"risk_inspect"> obj=<obj 0x72f58ada25> => null ; seq=250 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508580 [350101][MS.b] op=0x0100001c arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"["192.168.31.1","0.0.0.0"]"> ; seq=251 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508581 [350101][MS.b] op=0x01000022 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204"> obj=java/lang/String<"cb_value"> => java/lang/String<"093e857d604d0895"> ; seq=252 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508840 [350101][MS.b] op=0x01000038 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada3d> ; seq=253 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508916 [350101][MS.b] op=0x0100002b arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<""> ; seq=254 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508920 [350101][MS.b] op=0x0100002e arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"[]"> ; seq=255 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610508951 [350101][MS.b] op=0x0100002d arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"0"> ; seq=256 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509111 [350101][MS.b] op=0x10000009 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"com.google.android.inputmethod.latin[<!>]com.google.android.tts"> ; seq=257 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509161 [350101][MS.b] op=0x01000036 arg1=0x00000000 arg2=0x0 str=java/lang/String<"caijing_initialization"> obj=null => java/lang/String<"0"> ; seq=258 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509163 [350101][MS.b] op=0x01000013 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"-0.21,0.58,9.66"> ; seq=259 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509165 [350101][MS.b] op=0x10000003 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"np"> ; seq=260 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509166 [350101][MS.b] op=0x10000002 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"np"> ; seq=261 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509169 [350101][MS.b] op=0x01000023 arg1=0x00000000 arg2=0x0 str=java/lang/String<"d8b674543fc0b023b69f6a3f5a0f287d458ea204|1128-0-167774bf518c11948aa0784351ccf5a9"> obj=java/lang/String<"80dd151582403f5a"> => null ; seq=262 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509173 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=263 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509174 [350101][MS.b] op=0x01000010 arg1=0x00000000 arg2=0x0 str=null obj=null => <obj 0x72f58ada25> ; seq=264 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509228 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=266 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509989 [350101][MS.b] op=0x00030001 arg1=0x00000000 arg2=0x0 str=java/lang/String<"https://mssdk.bytedance.com/ri/report?lc_id=1588093228&platform=android&device_platform=android&sdk_ver=v04.09.05-ml-android&sdk_ver_code=67699968&app_ver=35.1.0&version_code=350101&aid=1128&sdkid=&subaid=&iid=3313280560987770&did=4087336283154583&bd_did=&clie...<len=331>"> obj=<obj 0x72f58ada61> => <obj 0x72f58ada65> ; seq=265 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509992 [350101][MS.b] op=0x01000018 arg1=0x00000000 arg2=0x0 str=java/lang/String<"com.bytedance.shell.TTSECINFO"> obj=<obj 0x72f58ada39> => null ; seq=267 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610509994 [350101][MS.b] op=0x00020002 arg1=0x00000000 arg2=0x0 str=java/lang/String<"risk_inspect"> obj=<obj 0x72f58ada25> => null ; seq=268 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610510008 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=269 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610515608 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=270 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610516424 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=271 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610516483 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=272 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610516609 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=273 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610517368 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=274 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610517544 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=275 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610517593 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=276 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610520945 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=277 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610521052 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=278 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610522962 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=279 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610524067 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=280 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610526171 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=281 via=V caller=libmetasec_ml.so+0x1301f8
+[metasec-msb] 1788610527603 [350101][MS.b] op=0x01000011 arg1=0x00000000 arg2=0x0 str=null obj=null => java/lang/String<"35.1.0"> ; seq=282 via=V caller=libmetasec_ml.so+0x1301f8
+exit
+
+Thank you for using Frida!

@@ -44,8 +44,8 @@ versions/350101
 | managed VM decode 统计 | 206 |
 | managed VM decoded asm | 187 |
 | managed VM linear C | 187 |
-| 分析报告 | 34 |
-| 机器可读证据 | 24 |
+| 分析报告 | 35 |
+| 机器可读证据 | 25 |
 | 请求向量 | 23 |
 | managed VM decode 目录 | 19 |
 | source-work 报告 | 11 |
@@ -107,8 +107,8 @@ versions/350101
 
 | path | size | 分类 | 怎么来 | 生成脚本/流程 | 后续用途 |
 |---|---:|---|---|---|---|
-| `FILE_CATALOG.md` | 172.5K | 交接清单 | 目录扫描生成 | scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
-| `README.md` | 29.6K | 入口文档 | 人工整理 | 手工维护 | 接手 350101 先读，快速知道当前结论和核心文件。 |
+| `FILE_CATALOG.md` | 173.1K | 交接清单 | 目录扫描生成 | scripts/generate_version_file_catalog.py | 说明本目录文件来源、生成脚本和后续用途；提交前可重跑更新。 |
+| `README.md` | 29.9K | 入口文档 | 人工整理 | 手工维护 | 接手 350101 先读，快速知道当前结论和核心文件。 |
 | `algorithm_validation_350101.md` | 6.1K | 算法验收 | C oracle + unidbg deterministic replay | run_recovered_c_oracles_350101.sh + unidbg baseline | 提交前确认算法是否仍然 byte-exact。 |
 | `analysis_trajectory_350101.md` | 10.0K | 分析轨迹 | 350101 实际分析过程沉淀 | 人工维护 | 后续升级版本复制成 analysis_trajectory_<version>.md，逐项替换证据。 |
 | `build_signed_http_headers_350_recovered.c` | 15.3K | HTTP 总流程 | IDA 反编译 + trace 证据人工 lift | 人工维护 | 从请求到 X-header 写出的主流程伪 C。 |
@@ -855,7 +855,9 @@ versions/350101
 | `one_request_compare_350101/true_s1.txt` | 160 | 请求向量 | 真机单请求/多请求样本里的 s1/s2 | counter-one/counter-multi probe + 人工固化 | 升级版本时复跑同类请求，判断算法是否只对一条样本偶然成立。 |
 | `one_request_compare_350101/true_s2.txt` | 1.2K | 请求向量 | 真机单请求/多请求样本里的 s1/s2 | counter-one/counter-multi probe + 人工固化 | 升级版本时复跑同类请求，判断算法是否只对一条样本偶然成立。 |
 | `real_vs_unidbg_entry_shape.md` | 5.3K | 入口 ABI | 真机 entrydump + unidbg entrydump | skills/metasec_entrydump_compare.py | 确认 X0-X5/X8 参数形态一致，避免 unidbg 输入偏掉。 |
+| `recovery_log_inventory_350101.json` | 64.5K | 机器可读证据 | probe/unidbg/后处理脚本输出 | 对应 probe 或 scripts 后处理 | 给后续脚本、对比和报告复用。 |
 | `recovery_process_350101.md` | 20.7K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
+| `recovery_process_and_evidence_350101.md` | 21.0K | 分析报告 | 人工整理或脚本输出后人工修订 | 见报告正文命令/证据段 | 作为升级版本对照和交接说明。 |
 | `req01_app_log_s1s2_unidbg_sync_350101.md` | 3.5K | 请求基准 | 真机 request01 s1/s2 同步到 unidbg | 人工整理 + unidbg baseline | 说明固定请求怎么来的，后续算法验证都用这一组。 |
 | `run_recovered_c_oracles_350101.sh` | 3.9K | C oracle runner | 统一编译/运行脚本 | 人工维护 | 提交前跑它确认 C 还原没坏。 |
 | `run_sign6_350101_deterministic.sh` | 1.0K | runner 脚本 | 人工整理 | shell | 一键复跑对应验证或 unidbg 场景。 |

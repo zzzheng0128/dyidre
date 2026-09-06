@@ -1,0 +1,3 @@
+[header-scan] at buildSignedHttpHeadersInner_350 entry
+  stack[0xe4ffe980] at entry = f0 e9 ff e4 00 00 00 00 10 de 4a 12 00 00 00 00
+[header-scan] done

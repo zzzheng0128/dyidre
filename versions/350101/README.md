@@ -17,6 +17,10 @@
 managed VM、native VMP、环境/完整性状态、输出封装和证据等级放在同一条生命周期中。它是
 架构与证据地图，不是可独立调用的签名规范。
 
+研究过程与日志溯源另见[还原过程与日志证据索引](recovery_process_and_evidence_350101.md)
+及[逐文件日志清单](recovery_log_inventory_350101.json)：按阶段记录来源、产物、验证边界、
+原件存在性和已废弃结论；它们补充总流程台账，不替代架构主入口。
+
 建议按下面顺序阅读：
 
 1. [样本身份](metasec_so_identity.md) 与 [分析轨迹](analysis_trajectory_350101.md)：先固定

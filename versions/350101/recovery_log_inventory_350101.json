@@ -1,0 +1,1718 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-05",
+  "timezone": "Asia/Shanghai",
+  "path_base": "workspace_root",
+  "scope": "350101 核心分析文档的日志/序列引用，加明确区分的关联文件；不是全部历史工具访问记录。",
+  "method": "扫描 Markdown/JSON 中的文件引用，核对本地路径与文件大小；没有读取原始业务日志正文、重新采集、重跑算法或计算日志内容哈希。",
+  "caveats": [
+    "document_reference 仅表示文档出现该路径，不自动证明成功采集、实际消费或结论正确。",
+    "present 仅表示盘点时为普通文件，不证明内容完整、未变化或已验证。",
+    "not_found_at_recorded_path 不等于文件已删除，也不排除外部备份或改名副本。",
+    "related_artifact 与 present_only_not_proof_of_use 不计为已证实的历史使用。",
+    "references.line 是盘点时的行号；文档后续编辑可能移动。"
+  ],
+  "summary": {
+    "entries": 97,
+    "present": 51,
+    "not_found_at_recorded_path": 46,
+    "document_reference": 81,
+    "related_artifact": 4,
+    "present_only_not_proof_of_use": 12
+  },
+  "entries": [
+    {
+      "path": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350.log",
+      "kind": "gumtrace_instruction_trace",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true_vs_unidbg_149cbc_fuzzy.md",
+          "line": 3,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350.log"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true_vs_unidbg_149cbc_firstdiff.md",
+          "line": 3,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350.log"
+        },
+        {
+          "document": "dyidre/versions/350101/exeVMInner_x_headers_350101.md",
+          "line": 8,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350.log"
+        },
+        {
+          "document": "dyidre/versions/350101/exeVMInner_x_headers_350101.md",
+          "line": 35,
+          "reference": "gumtrace_getHttpHeadVerify_350.log"
+        },
+        {
+          "document": "dyidre/versions/350101/exeVMInner_x_headers_350101.md",
+          "line": 429,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350.log"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_vm_boot_350101.md",
+          "line": 330,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 1106408250
+    },
+    {
+      "path": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350101_full_once.log",
+      "kind": "gumtrace_instruction_trace",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true350101_req01_vs_unidbg_true_req01_fuzzy.md",
+          "line": 3,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350101_full_once.log"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true_vs_unidbg_fixedtime_149cbc_firstdiff.md",
+          "line": 3,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350101_full_once.log"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 7,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350101_full_once.log"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true350101_vs_unidbg_req01_fuzzy.md",
+          "line": 3,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350101_full_once.log"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true350101_req01_vs_unidbg_true_req01_full_fuzzy.md",
+          "line": 3,
+          "reference": "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350101_full_once.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/opcode_recovery_350101.md",
+          "line": 152,
+          "reference": "_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350101_full_once.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 1140445655
+    },
+    {
+      "path": "dyidre/runs/350101/entrydump/20260830_201913_wrapper/rf_gumtrace_entrydump_350101.log",
+      "kind": "entry_run_log",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 49550
+    },
+    {
+      "path": "dyidre/runs/350101/entrydump/20260830_201913_wrapper/rf_gumtrace_entrydump_350101.wrapper_entrydump.txt",
+      "kind": "entry_snapshot",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/README.md",
+          "line": 322,
+          "reference": "/Users/freeman/project/douyin/dyidre/runs/350101/entrydump/20260830_201913_wrapper/rf_gumtrace_entrydump_350101.wrapper_entrydump.txt"
+        },
+        {
+          "document": "dyidre/runs/350101/entrydump/README.md",
+          "line": 16,
+          "reference": "runs/350101/entrydump/20260830_201913_wrapper/rf_gumtrace_entrydump_350101.wrapper_entrydump.txt"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 38413
+    },
+    {
+      "path": "dyidre/runs/350101/gumtrace/latest/gumtrace_4cc10.log",
+      "kind": "gumtrace_instruction_trace",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/exeVMInner_x_headers_350101.md",
+          "line": 279,
+          "reference": "gumtrace_4cc10.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/opcode_recovery_350101.md",
+          "line": 104,
+          "reference": "gumtrace/latest/gumtrace_4cc10.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/opcode_recovery_350101.md",
+          "line": 204,
+          "reference": "gumtrace_4cc10.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/vmp_entry_analysis_process_350101.md",
+          "line": 121,
+          "reference": "runs/350101/gumtrace/latest/gumtrace_4cc10.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 2166726,
+      "notes": [
+        "latest 是可变路径；本轮未计算内容哈希，不据名称证明与历史文件内容相同。"
+      ]
+    },
+    {
+      "path": "dyidre/runs/350101/gumtrace/latest/rustfrida_console.log",
+      "kind": "runner_console",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 7043,
+      "notes": [
+        "latest 是可变路径；本轮未计算内容哈希，不据名称证明与历史文件内容相同。"
+      ]
+    },
+    {
+      "path": "dyidre/runs/350101/gumtrace/manual_20260904/frida_console.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 513
+    },
+    {
+      "path": "dyidre/runs/350101/jnitrace/20260830_180047_newstring/rf_newstring_350101_wxshadow_noperms_20260830_180047.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 62051
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/msb_long01/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/runs/350101/msb_trace/msb_long01/msb_diff.md",
+          "line": 3,
+          "reference": "runs/350101/msb_trace/msb_long01/frida_console.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 75024
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/msb01/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 412
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/msb02/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 629
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/msb03/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 951
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/msb04/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 18499
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/msb05/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 33580
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/scene_cold60/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/runs/350101/msb_trace/scenario_map_350101.md",
+          "line": 76,
+          "reference": "scene_cold60/frida_console.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 59598
+    },
+    {
+      "path": "dyidre/runs/350101/msb_trace/scene_idle240/frida_console.log",
+      "kind": "frida_callback_events",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/runs/350101/msb_trace/scenario_map_350101.md",
+          "line": 76,
+          "reference": "scene_idle240/frida_console.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 76130
+    },
+    {
+      "path": "dyidre/runs/350101/true_env_xmedusa/20260831_214509/rustfrida_console.log",
+      "kind": "runner_console",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/runs_manifest.json",
+          "line": 39,
+          "reference": "rustfrida_console.log"
+        },
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/README.md",
+          "line": 12,
+          "reference": "rustfrida_console.log"
+        },
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/README.md",
+          "line": 54,
+          "reference": "rustfrida_console.log"
+        },
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/RUNS.md",
+          "line": 20,
+          "reference": "rustfrida_console.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 46974
+    },
+    {
+      "path": "dyidre/runs/350101/true_env_xmedusa/20260831_214509/true_env_xmedusa_350101.log",
+      "kind": "device_environment_events",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/runs_manifest.json",
+          "line": 40,
+          "reference": "true_env_xmedusa_350101.log"
+        },
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/README.md",
+          "line": 13,
+          "reference": "true_env_xmedusa_350101.log"
+        },
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/README.md",
+          "line": 55,
+          "reference": "true_env_xmedusa_350101.log"
+        },
+        {
+          "document": "dyidre/runs/350101/true_env_xmedusa/20260831_214509/true_env_xmedusa_summary.json",
+          "line": 2,
+          "reference": "/Users/freeman/project/douyin/dyidre/runs/350101/true_env_xmedusa/20260831_214509/true_env_xmedusa_350101.log"
+        },
+        {
+          "document": "dyidre/versions/350101/true_env_sync_350101_214509.md",
+          "line": 9,
+          "reference": "dyidre/runs/350101/true_env_xmedusa/20260831_214509/true_env_xmedusa_350101.log"
+        },
+        {
+          "document": "dyidre/versions/350101/true_env_sync_350101_214509.md",
+          "line": 45,
+          "reference": "/data/user/0/com.ss.android.ugc.aweme/files/true_env_xmedusa_350101.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 37984
+    },
+    {
+      "path": "dyidre/versions/350101/c_recovery_suite_350101_det_after_fix.log",
+      "kind": "c_validation_output",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/FILE_CATALOG.md",
+          "line": 116,
+          "reference": "c_recovery_suite_350101_det_after_fix.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 5323
+    },
+    {
+      "path": "dyidre/versions/350101/c_recovery_suite_350101_run.log",
+      "kind": "c_validation_output",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/fixed_s1_s2_signer_350101.md",
+          "line": 137,
+          "reference": "dyidre/versions/350101/c_recovery_suite_350101_run.log"
+        },
+        {
+          "document": "dyidre/versions/350101/FILE_CATALOG.md",
+          "line": 117,
+          "reference": "c_recovery_suite_350101_run.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 5694
+    },
+    {
+      "path": "dyidre/versions/350101/c_recovery_suite_350101_validation_latest.log",
+      "kind": "c_validation_output",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/algorithm_validation_350101.md",
+          "line": 23,
+          "reference": "dyidre/versions/350101/c_recovery_suite_350101_validation_latest.log"
+        },
+        {
+          "document": "dyidre/versions/350101/algorithm_validation_350101.md",
+          "line": 29,
+          "reference": "dyidre/versions/350101/c_recovery_suite_350101_validation_latest.log"
+        },
+        {
+          "document": "dyidre/versions/350101/FILE_CATALOG.md",
+          "line": 118,
+          "reference": "c_recovery_suite_350101_validation_latest.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 5694
+    },
+    {
+      "path": "dyidre/versions/350101/vm_lift_1f7860/gumtrace_1f7860_slice.log",
+      "kind": "derived_trace_slice",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/FILE_CATALOG.md",
+          "line": 898,
+          "reference": "vm_lift_1f7860/gumtrace_1f7860_slice.log"
+        },
+        {
+          "document": "dyidre/versions/350101/exeVMInner_x_headers_350101.md",
+          "line": 421,
+          "reference": "dyidre/versions/350101/vm_lift_1f7860/gumtrace_1f7860_slice.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/opcode_recovery_350101.md",
+          "line": 213,
+          "reference": "vm_lift_1f7860/gumtrace_1f7860_slice.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/README.md",
+          "line": 24,
+          "reference": "dyidre/versions/350101/vm_lift_1f7860/gumtrace_1f7860_slice.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/coverage_1f7860.json",
+          "line": 3,
+          "reference": "dyidre/versions/350101/vm_lift_1f7860/gumtrace_1f7860_slice.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 36341496,
+      "derived_from": [
+        "dyidre/_archive/large_raw_traces/gumtrace_getHttpHeadVerify_350.log"
+      ]
+    },
+    {
+      "path": "dyidre/versions/350101/vmp_handler_log/vmp_entry_350101.log",
+      "kind": "stackplz_uprobe_entry_events",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/FILE_CATALOG.md",
+          "line": 901,
+          "reference": "vmp_handler_log/vmp_entry_350101.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/vmp_entry_analysis_process_350101.md",
+          "line": 45,
+          "reference": "dyidre/versions/350101/vmp_handler_log/vmp_entry_350101.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/vmp_entry_analysis_process_350101.md",
+          "line": 74,
+          "reference": "dyidre/vmp/vmp_entry_350101.log"
+        },
+        {
+          "document": "dyidre/versions/350101/vm_generic_350101/vmp_entry_summary_350101.json",
+          "line": 4,
+          "reference": "dyidre/versions/350101/vmp_handler_log/vmp_entry_350101.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 112269,
+      "historical_path": "dyidre/vmp/vmp_entry_350101.log"
+    },
+    {
+      "path": "unidbg/unidbg-android/target/mcp_trace_350101_full/gumtrace_getHttpHeadVerify_350.full.unique.seq",
+      "kind": "derived_instruction_sequence",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 12,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/gumtrace_getHttpHeadVerify_350.full.unique.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_vm_boot_350101.md",
+          "line": 337,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/gumtrace_getHttpHeadVerify_350.full.unique.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_trace_summary.json",
+          "line": 508,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/gumtrace_getHttpHeadVerify_350.full.unique.seq"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/mcp_trace_350101_full/unidbg_mcp_libmetasec_full.seq",
+      "kind": "instruction_sequence",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 10,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/unidbg_mcp_libmetasec_full.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_trace_summary.json",
+          "line": 140,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/unidbg_mcp_libmetasec_full.seq"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/mcp_trace_350101_full/unidbg_mcp_libmetasec_full.unique.seq",
+      "kind": "derived_instruction_sequence",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 11,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/unidbg_mcp_libmetasec_full.unique.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_vm_boot_350101.md",
+          "line": 334,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/unidbg_mcp_libmetasec_full.unique.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_trace_summary.json",
+          "line": 324,
+          "reference": "unidbg/unidbg-android/target/mcp_trace_350101_full/unidbg_mcp_libmetasec_full.unique.seq"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_algorithm_validation_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/algorithm_validation_350101.md",
+          "line": 171,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_algorithm_validation_20260831.log"
+        },
+        {
+          "document": "dyidre/versions/350101/algorithm_validation_350101.md",
+          "line": 183,
+          "reference": "sign6_350101_algorithm_validation_20260831.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_alignruntime_20260831_125333.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/README.md",
+          "line": 483,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_alignruntime_20260831_125333.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 87455
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_binding_idx_20260831_044207.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/f20_f21_source_work_transform_350101.md",
+          "line": 249,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_binding_idx_20260831_044207.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_callcf_f32family_20260831_045900.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_family_compare_350101.md",
+          "line": 21,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_callcf_f32family_20260831_045900.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f20_f40_source_work_timeline_350101.md",
+          "line": 3,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_callcf_f32family_20260831_045900.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cf43mode_20260831_072212.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/cf41_plain92_proto_350101.md",
+          "line": 11,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_20260831_072212.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f5_x_argus_pack_lift_cf43mode_350101.md",
+          "line": 3,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_20260831_072212.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cf43mode_ret_20260831_072406.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/f5_argus_cf41_cf42_cf43_static_350101.md",
+          "line": 155,
+          "reference": "sign6_350101_cf43mode_ret_20260831_072406.log"
+        },
+        {
+          "document": "dyidre/versions/350101/cf43_aes128_cbc_recovered_350101.md",
+          "line": 52,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_ret_20260831_072406.log"
+        },
+        {
+          "document": "dyidre/versions/350101/x_argus_medusa_material_350101.md",
+          "line": 198,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_ret_20260831_072406.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f5_x_argus_pack_lift_350101.md",
+          "line": 3,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_ret_20260831_072406.log"
+        },
+        {
+          "document": "dyidre/versions/350101/cf41_simon128_256_recovered_350101.md",
+          "line": 108,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_ret_20260831_072406.log"
+        },
+        {
+          "document": "dyidre/versions/350101/cf41_plain92_proto_350101.md",
+          "line": 10,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_ret_20260831_072406.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f5_x_argus_pack_lift_cf43mode_ret_350101.md",
+          "line": 3,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf43mode_ret_20260831_072406.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cf48_cf49_20260831_005155.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_argus_medusa_material_350101.md",
+          "line": 35,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf48_cf49_20260831_005155.log"
+        },
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 439,
+          "reference": "sign6_350101_cf48_cf49_20260831_005155.log"
+        },
+        {
+          "document": "dyidre/versions/350101/recovery_process_350101.md",
+          "line": 506,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf48_cf49_20260831_005155.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cf61_raw_20260831_063733.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/cf61_sm3_recovered_350101.md",
+          "line": 64,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf61_raw_20260831_063733.log"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 404,
+          "reference": "sign6_350101_cf61_raw_20260831_063733.log"
+        },
+        {
+          "document": "dyidre/versions/350101/recovery_process_350101.md",
+          "line": 400,
+          "reference": "sign6_350101_cf61_raw_20260831_063733.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cf71_args_post.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 57946
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cf71_tls_20260904.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/runs/350101/msb_trace/msb_long01/msb_diff.md",
+          "line": 4,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_cf71_tls_20260904.log"
+        },
+        {
+          "document": "dyidre/versions/350101/ida_rename_update_350101_20260831.md",
+          "line": 149,
+          "reference": "unidbg-android/target/sign6_350101_cf71_tls_20260904.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 57753
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cf79_doublebits_20260831_0045.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/managed_vm_program_lift_350101.md",
+          "line": 468,
+          "reference": "sign6_350101_cf79_doublebits_20260831_0045.log"
+        },
+        {
+          "document": "dyidre/versions/350101/x_argus_medusa_material_350101.md",
+          "line": 29,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf79_doublebits_20260831_0045.log"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 385,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf79_doublebits_20260831_0045.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f8_cf79_json_env_fields_350101.md",
+          "line": 10,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf79_doublebits_20260831_0045.log"
+        },
+        {
+          "document": "dyidre/versions/350101/recovery_process_350101.md",
+          "line": 479,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cf79_doublebits_20260831_0045.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cfargs_20260830_235936.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_argus_medusa_material_350101.md",
+          "line": 17,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cfargs_20260830_235936.log"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 13,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cfargs_20260830_235936.log"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 76,
+          "reference": "sign6_350101_cfargs_20260830_235936.log"
+        },
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 335,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cfargs_20260830_235936.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_cfpost_20260831_000758.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_argus_pack_350101.md",
+          "line": 3,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cfpost_20260831_000758.log"
+        },
+        {
+          "document": "dyidre/versions/350101/x_argus_medusa_material_350101.md",
+          "line": 23,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cfpost_20260831_000758.log"
+        },
+        {
+          "document": "dyidre/versions/350101/managed_cf_semantics_350101.md",
+          "line": 14,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cfpost_20260831_000758.log"
+        },
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 336,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_cfpost_20260831_000758.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_det_fixedpid_run1.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/deterministic_replay_350101.md",
+          "line": 43,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_det_fixedpid_run1.log"
+        },
+        {
+          "document": "dyidre/versions/350101/deterministic_replay_350101.md",
+          "line": 59,
+          "reference": "sign6_350101_det_fixedpid_run1.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_det_fixedpid_run2.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/deterministic_replay_350101.md",
+          "line": 44,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_det_fixedpid_run2.log"
+        },
+        {
+          "document": "dyidre/versions/350101/deterministic_replay_350101.md",
+          "line": 78,
+          "reference": "sign6_350101_det_fixedpid_run2.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_deterministic_cf_unicorn2_20260831_092213.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/fixed_s1_s2_signer_350101.md",
+          "line": 68,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_deterministic_cf_unicorn2_20260831_092213.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_deterministic_verify_run1.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/deterministic_verify_350101.latest.md",
+          "line": 3,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_deterministic_verify_run1.log"
+        },
+        {
+          "document": "dyidre/versions/350101/deterministic_verify_350101.latest.md",
+          "line": 21,
+          "reference": "sign6_350101_deterministic_verify_run1.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_deterministic_verify_run2.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/deterministic_verify_350101.latest.md",
+          "line": 4,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_deterministic_verify_run2.log"
+        },
+        {
+          "document": "dyidre/versions/350101/deterministic_verify_350101.latest.md",
+          "line": 40,
+          "reference": "sign6_350101_deterministic_verify_run2.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_f21_source_watch_20260831_042743.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/f8_x_medusa_mutation_watch_350101.md",
+          "line": 44,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_f21_source_watch_20260831_042743.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f20_f21_source_work_timeline_350101.md",
+          "line": 3,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_f21_source_watch_20260831_042743.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_f5_tailcf_20260831_065857.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_argus_medusa_material_350101.md",
+          "line": 150,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_f5_tailcf_20260831_065857.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_f8_rawcf_20260831_033000.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_argus_medusa_material_350101.md",
+          "line": 318,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_f8_rawcf_20260831_033000.log"
+        },
+        {
+          "document": "dyidre/versions/350101/x_medusa_pack_350101.md",
+          "line": 3,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_f8_rawcf_20260831_033000.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_f8_value_watch_20260831_212144.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md",
+          "line": 84,
+          "reference": "sign6_350101_f8_value_watch_20260831_212144.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 235716
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_f8_watch_interp_20260831_035639.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/managed_vm_decode_f12/managed_vm_decode_summary.md",
+          "line": 4,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_f8_watch_interp_20260831_035639.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f8_x_medusa_mutation_watch_350101.md",
+          "line": 43,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_f8_watch_interp_20260831_035639.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f8_x_medusa_mutation_watch_350101.md",
+          "line": 413,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_f8_watch_interp_20260831_035639.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f12_bitpack_oracle_350101.md",
+          "line": 1,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_f8_watch_interp_20260831_035639.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_msb_after_fix.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 37734
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_msb_long_revert.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "present_only_not_proof_of_use",
+      "references": [],
+      "availability": "present",
+      "byte_size": 62100
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_one_req_count_trueinput_20260831_115749.main.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/one_request_compare_350101/README.md",
+          "line": 15,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_one_req_count_trueinput_20260831_115749.main.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_program_f12_20260831_035801.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/f8_x_medusa_mutation_watch_350101.md",
+          "line": 45,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_program_f12_20260831_035801.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_program_f20_f40_43_46_20260831_042856.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/f8_x_medusa_mutation_watch_350101.md",
+          "line": 46,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_program_f20_f40_43_46_20260831_042856.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_req01_baseline.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/docs/unidbg-metasec-350101-analysis.md",
+          "line": 117,
+          "reference": "target/sign6_350101_req01_baseline.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 218008
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_rootfs_instrseq_unicorn2_20260831_143310.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "related_artifact",
+      "references": [],
+      "availability": "present",
+      "byte_size": 93768
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_rootfs_instrseq_unicorn2_20260831_143310.seq",
+      "kind": "instruction_sequence",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true_vs_unidbg_149cbc_fuzzy.md",
+          "line": 4,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_rootfs_instrseq_unicorn2_20260831_143310.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true_vs_unidbg_149cbc_firstdiff.md",
+          "line": 4,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_rootfs_instrseq_unicorn2_20260831_143310.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true350101_vs_unidbg_req01_fuzzy.md",
+          "line": 4,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_rootfs_instrseq_unicorn2_20260831_143310.seq"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 216268743
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_rootfs_pixel6_20260831_133047.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/README.md",
+          "line": 484,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_rootfs_pixel6_20260831_133047.log"
+        },
+        {
+          "document": "dyidre/versions/350101/unidbg_env_fill_350101.md",
+          "line": 116,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_rootfs_pixel6_20260831_133047.log"
+        },
+        {
+          "document": "dyidre/versions/350101/environment_inputs_350101.md",
+          "line": 180,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_rootfs_pixel6_20260831_133047.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 179063
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_rootfs_xheaders_20260831_133245.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 50,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_rootfs_xheaders_20260831_133245.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 235371
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_20260831_062402.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 22,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_20260831_062402.log"
+        },
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 37,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_20260831_062402.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_callcf_20260831_045638.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_family_compare_350101.md",
+          "line": 20,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_callcf_20260831_045638.log"
+        },
+        {
+          "document": "dyidre/versions/350101/f19_f32_source_work_timeline_350101.md",
+          "line": 3,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_sourcework_callcf_20260831_045638.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_01.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 23,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_01.log"
+        },
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 83,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_01.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_02.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 24,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_02.log"
+        },
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 60,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_02.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_03.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 25,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_03.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_04.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 26,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_04.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_05.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 27,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_05.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_06.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 28,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_06.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_07.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 29,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_07.log"
+        },
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 106,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_07.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_08.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/source_work_vectors_350101.md",
+          "line": 30,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_sourcework_sweep_08.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_stagepack_shortfix_20260830_234025.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 40,
+          "reference": "sign6_350101_stagepack_shortfix_20260830_234025.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_structtrace_clean_20260830_203122.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 39,
+          "reference": "sign6_350101_structtrace_clean_20260830_203122.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_structtrace_x0_1000_20260830_203159.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/README.md",
+          "line": 323,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_structtrace_x0_1000_20260830_203159.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_thread_clean_20260830_195236.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 38,
+          "reference": "sign6_350101_thread_clean_20260830_195236.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req_01_force_env_20260831_122044.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/multi_request_compare_350101/README.md",
+          "line": 117,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req_01_force_env_20260831_122044.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req_01_plain_env_20260831_122100.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/multi_request_compare_350101/README.md",
+          "line": 116,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req_01_plain_env_20260831_122100.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req_02_force_env_20260831_122047.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/multi_request_compare_350101/README.md",
+          "line": 118,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req_02_force_env_20260831_122047.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req_04_force_env_20260831_122049.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/multi_request_compare_350101/README.md",
+          "line": 119,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req_04_force_env_20260831_122049.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_app_log_aligned_dump_unicorn2_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/req01_app_log_s1s2_unidbg_sync_350101.md",
+          "line": 71,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_true_req01_app_log_aligned_dump_unicorn2_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 214117
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_blrwin_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 43,
+          "reference": "sign6_350101_true_req01_blrwin_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 118582,
+      "assessment": {
+        "status": "superseded_conclusion",
+        "reason": "旧 first-diff 判断已被后续报告明确废弃；文件存在不代表结论仍有效。",
+        "source": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+        "line": 43
+      }
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_branch_fixedtime_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 9,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_branch_fixedtime_20260831.log"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 206,
+          "reference": "target/sign6_350101_true_req01_branch_fixedtime_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 145555
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_branch450_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 10,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_branch450_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 143378
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_current_200k_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 11,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_current_200k_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 145191
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_current_200k_20260831.seq",
+      "kind": "instruction_sequence",
+      "reference_basis": "related_artifact",
+      "references": [],
+      "availability": "present",
+      "byte_size": 3468450
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_fixedtime_200k_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 12,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_fixedtime_200k_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 145987
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_fixedtime_200k_20260831.seq",
+      "kind": "instruction_sequence",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true_vs_unidbg_fixedtime_149cbc_firstdiff.md",
+          "line": 4,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_fixedtime_200k_20260831.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 13,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_fixedtime_200k_20260831.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 214,
+          "reference": "target/sign6_350101_true_req01_instrseq_fixedtime_200k_20260831.seq"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 3468450
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_unicorn2_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "related_artifact",
+      "references": [],
+      "availability": "present",
+      "byte_size": 92152
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_unicorn2_20260831.seq",
+      "kind": "instruction_sequence",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true350101_req01_vs_unidbg_true_req01_fuzzy.md",
+          "line": 4,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_unicorn2_20260831.seq"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 228574095
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_unicorn2_full_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "related_artifact",
+      "references": [],
+      "availability": "present",
+      "byte_size": 49202
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_unicorn2_full_20260831.seq",
+      "kind": "instruction_sequence",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/managed_blr_cf_target_diff_350101_req01_v2.md",
+          "line": 14,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_unicorn2_full_20260831.seq"
+        },
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/true350101_req01_vs_unidbg_true_req01_full_fuzzy.md",
+          "line": 4,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_true_req01_instrseq_unicorn2_full_20260831.seq"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 303423043
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_trueenv_214509_smoke.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/true_env_sync_350101_214509.md",
+          "line": 225,
+          "reference": "unidbg/unidbg-android/target/sign6_350101_trueenv_214509_smoke.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 63552
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_vmctx_20260831_023505.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/managed_vm_decode/managed_vm_decode_summary.md",
+          "line": 7,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_vmctx_20260831_023505.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_vmctx_f16_f17_f18_20260831_031044.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/managed_vm_decode_f16_f17_f18/managed_vm_decode_summary.md",
+          "line": 4,
+          "reference": "/Users/freeman/project/douyin/unidbg/unidbg-android/target/sign6_350101_vmctx_f16_f17_f18_20260831_031044.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_xhdr_origin_20260830_231600.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/x_headers_generation_350101.md",
+          "line": 408,
+          "reference": "unidbg-android/target/sign6_350101_xhdr_origin_20260830_231600.log"
+        }
+      ],
+      "availability": "not_found_at_recorded_path",
+      "byte_size": null
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_xmedusa_fixedpid_req01_run1_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md",
+          "line": 98,
+          "reference": "sign6_350101_xmedusa_fixedpid_req01_run1_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 55208
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_xmedusa_fixedpid_req01_run2_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md",
+          "line": 99,
+          "reference": "sign6_350101_xmedusa_fixedpid_req01_run2_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 55208
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_xmedusa_watch_req01_20260831_v2.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md",
+          "line": 86,
+          "reference": "sign6_350101_xmedusa_watch_req01_20260831_v2.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 63781
+    },
+    {
+      "path": "unidbg/unidbg-android/target/sign6_350101_xmedusa_watch_req01_20260831.log",
+      "kind": "unidbg_runtime_log",
+      "reference_basis": "document_reference",
+      "references": [
+        {
+          "document": "dyidre/versions/350101/instr_diff_350101/xmedusa_value_diff_fixedpid_350101_req01.md",
+          "line": 85,
+          "reference": "sign6_350101_xmedusa_watch_req01_20260831.log"
+        }
+      ],
+      "availability": "present",
+      "byte_size": 58985
+    }
+  ]
+}

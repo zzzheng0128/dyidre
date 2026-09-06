@@ -1,0 +1,2 @@
+{"magic_tag":"ss_app_log","message":"error data","server_time":1788609227}
+HTTP_CODE=200

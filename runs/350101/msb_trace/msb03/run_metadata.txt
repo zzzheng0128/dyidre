@@ -1,0 +1,12 @@
+# msb_trace run metadata
+tag=msb03
+package=com.ss.android.ugc.aweme
+date=2026-09-05 11:44:00 +0800
+host_frida=17.15.0
+rusda_remote=/data/local/tmp/rusda-server
+rusda_sha256=91d92a600df35c56f59987321009efa118cc305b11c25e8108ff93fff4f7761a
+probe_js=/Users/freeman/project/douyin/dyidre/probes/350101/frida/gum_msb_trace_350101.js
+probe_js_sha256=e9593337acf132be8f21b160b8f7e0020bd33447b39ed2d7e623474c0d379038
+device_model=Pixel 6
+device_build=BP1A.250305.019
+dyidre_git=addf41a

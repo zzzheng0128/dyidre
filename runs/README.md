@@ -34,3 +34,7 @@ dyidre/versions/<version>/...
 ```
 
 原则很简单：真机证据放 `runs/<version>`，分析结论放 `versions/<version>`，可复跑基准放 `unidbg/.../resources/metasec/<version>`。
+
+350101 的跨真机/unidbg 历史来源、派生产物和缺失原件，统一见
+[还原过程与日志证据索引](../versions/350101/recovery_process_and_evidence_350101.md)
+及[逐文件日志清单](../versions/350101/recovery_log_inventory_350101.json)。

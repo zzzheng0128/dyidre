@@ -1,0 +1,8 @@
+[metasec-msb] 1788579593860 install target=libmetasec_ml.so
+[metasec-msb] 1788579593860 libart base not found
+[metasec-msb] 1788579593861 libart base not found
+[metasec-msb] 1788579593861 libart base not found
+[metasec-msb] 1788579593861 libart base not found
+[metasec-msb] 1788579593861 installed
+[metasec-msb] standalone loaded (Frida 17, stock/rusda)
+Spawned `com.ss.android.ugc.aweme`. Resuming main thread!

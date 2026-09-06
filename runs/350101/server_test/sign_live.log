@@ -1,0 +1,389 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;34mINFO[m] Inspecting build with total of 7 modules
+[[1;34mINFO[m] Installing Central Publishing features
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] unidbg                                                             [pom]
+[[1;34mINFO[m] unidbg-api                                                         [jar]
+[[1;34mINFO[m] unidbg-dynarmic                                                    [jar]
+[[1;34mINFO[m] unidbg-hypervisor                                                  [jar]
+[[1;34mINFO[m] unidbg-kvm                                                         [jar]
+[[1;34mINFO[m] unidbg-unicorn2                                                    [jar]
+[[1;34mINFO[m] unidbg-android                                                     [jar]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------------< [0;36mcom.github.zhkl0228:unidbg[0;1m >---------------------[m
+[[1;34mINFO[m] [1mBuilding unidbg 0.9.10-SNAPSHOT                                    [1/7][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.github.zhkl0228:unidbg-api[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-api 0.9.10-SNAPSHOT                                [2/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-api[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mcom.github.zhkl0228:unidbg-dynarmic[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-dynarmic 0.9.10-SNAPSHOT                           [3/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 5 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-dynarmic[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m---------------< [0;36mcom.github.zhkl0228:unidbg-hypervisor[0;1m >----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-hypervisor 0.9.10-SNAPSHOT                         [4/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 2 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-hypervisor[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------------< [0;36mcom.github.zhkl0228:unidbg-kvm[0;1m >-------------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-kvm 0.9.10-SNAPSHOT                                [5/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-kvm[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------------< [0;36mcom.github.zhkl0228:unidbg-unicorn2[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-unicorn2 0.9.10-SNAPSHOT                           [6/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 5 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /Users/freeman/project/douyin/unidbg/backend/unicorn2/src/test/resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-unicorn2[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-----------------< [0;36mcom.github.zhkl0228:unidbg-android[0;1m >-----------------[m
+[[1;34mINFO[m] [1mBuilding unidbg-android 0.9.10-SNAPSHOT                            [7/7][m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:resources[m [1m(default-resources)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 39 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:compile[m [1m(default-compile)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:2.6:testResources[m [1m(default-testResources)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 29 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.11.0:testCompile[m [1m(default-testCompile)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.12.4:test[m [1m(default-test)[m @ [36munidbg-android[0;1m ---[m
+[[1;34mINFO[m] Surefire report directory: /Users/freeman/project/douyin/unidbg/unidbg-android/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.ss.android.ugc.aweme.Sign6_350101
+[350101] rootfs=/Users/freeman/project/douyin/unidbg/unidbg-android/target/rootfs_pixel6_350101_20260831_132930
+[350101] backend=unicorn2
+[350101] metasecProfile=350101
+[350101] threadDispatcher=disabled
+File opened 'stdin' with oflags=0x0 from null
+File opened 'stdout' with oflags=0x1 from null
+File opened 'stderr' with oflags=0x1 from null
+File opened '/dev/__properties__' with oflags=0x88000 from RX@0x12432854[libc.so]0x22854
+File closed '/dev/__properties__' from RX@0x1242ece4[libc.so]0x1ece4
+File opened '/proc/stat' with oflags=0x80000 from RX@0x12432854[libc.so]0x22854
+Read 1871 bytes from '/proc/stat'
+Read 0 bytes from '/proc/stat'
+File closed '/proc/stat' from RX@0x1242ece4[libc.so]0x1ece4
+[350101][runtime-gate-force] install at 0xd952c value=0x0
+[350101][runtime-config-override] install at 0x14fad4 signv5_ctrl=0x1 d_signv5_ctrl=0x0
+JNIEnv->FindClass(com/bytedance/mobsec/metasec/ml/MS) was called from RX@0x1212f608[libmetasec_ml.so]0x12f608
+JNIEnv->GetSuperClass(class com/bytedance/mobsec/metasec/ml/MS) was called from RX@0x1212f624[libmetasec_ml.so]0x12f624
+JNIEnv->GetSuperClass(class ms/bd/c/i2) was called from RX@0x1212f63c[libmetasec_ml.so]0x12f63c
+JNIEnv->RegisterNatives(ms/bd/c/y2, unidbg@0xe4fff520, 1) was called from RX@0x1212f938[libmetasec_ml.so]0x12f938
+RegisterNative(ms/bd/c/y2, a(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;, RX@0x1212fb84[libmetasec_ml.so]0x12fb84)
+JNIEnv->GetStaticMethodID(com/bytedance/mobsec/metasec/ml/MS.b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;) => 0x2f94ee13 was called from RX@0x1212fa08[libmetasec_ml.so]0x12fa08
+[350101] loaded libmetasec_ml.so base=0x12000000 size=0x2c9000 apk=/Users/freeman/project/douyin/douyin_35_0_0/dy351_vivo.apk
+[350101] repeat=0
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+JNIEnv->GetArrayLength(["http_callback", "4294842416", "ws_callback", "4294842432"] => 4) was called from RX@0x12131530[libmetasec_ml.so]0x131530
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842416", "ws_callback", "4294842432"], 0) => "http_callback" was called from RX@0x12131558[libmetasec_ml.so]0x131558
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842416", "ws_callback", "4294842432"], 1) => "4294842416" was called from RX@0x12131578[libmetasec_ml.so]0x131578
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("http_callback", getBytes("utf-8") => [B@0x687474705f63616c6c6261636b) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x687474705f63616c6c6261636b => 13) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x687474705f63616c6c6261636b, 0, 13, RW@0x1267ae30) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("4294842416", getBytes("utf-8") => [B@0x34323934383432343136) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x34323934383432343136 => 10) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x34323934383432343136, 0, 10, RW@0x1267ae30) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842416", "ws_callback", "4294842432"], 2) => "ws_callback" was called from RX@0x12131558[libmetasec_ml.so]0x131558
+JNIEnv->GetObjectArrayElement(["http_callback", "4294842416", "ws_callback", "4294842432"], 3) => "4294842432" was called from RX@0x12131578[libmetasec_ml.so]0x131578
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("ws_callback", getBytes("utf-8") => [B@0x77735f63616c6c6261636b) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x77735f63616c6c6261636b => 11) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x77735f63616c6c6261636b, 0, 11, RW@0x1267ae40) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("4294842432", getBytes("utf-8") => [B@0x34323934383432343332) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x34323934383432343332 => 10) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x34323934383432343332, 0, 10, RW@0x1267ae40) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x10003 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"/data/user/0/com.ss.android.ugc.aweme/files/.msdata">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x10003, 0x0, 0x0L, null, null) => "/data/user/0/com.ss.android.ugc.aweme/files/.msdata") was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("/data/user/0/com.ss.android.ugc.aweme/files/.msdata", getBytes("utf-8") => [B@0x2f646174612f757365722f302f636f6d2e73732e616e64726f69642e7567632e6177656d652f66696c65732f2e6d7364617461) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x2f646174612f757365722f302f636f6d2e73732e616e64726f69642e7567632e6177656d652f66696c65732f2e6d7364617461 => 51) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x2f646174612f757365722f302f636f6d2e73732e616e64726f69642e7567632e6177656d652f66696c65732f2e6d7364617461, 0, 51, RW@0x12629280) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+[19:53:28 759]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1403) - faccessat failed dirfd=-100, pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml//.msp_3dddca0f066cc2e65e67a784c3c1326a4a8c39e4, oflags=0x4, mode=0x0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x2000001 arg1=0x0 arg2=0x127fa9f0 str=null obj=null => null
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x2000001, 0x0, 0x127fa9f0L, null, null) => null) was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x2000002 arg1=0x0 arg2=0x127fa9f0 str=null obj=null => null
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x2000002, 0x0, 0x127fa9f0L, null, null) => null) was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+[350101] httpSignAddress=RX@0x1214dbf4[libmetasec_ml.so]0x14dbf4
+[350101] wsSignAddress=RX@0x1214ddec[libmetasec_ml.so]0x14ddec
+JNIEnv->FindClass(java/lang/Integer) was called from RX@0x12132630[libmetasec_ml.so]0x132630
+JNIEnv->GetStaticMethodID(java/lang/Integer.valueOf(I)Ljava/lang/Integer;) => 0x8f152ce2 was called from RX@0x121326fc[libmetasec_ml.so]0x1326fc
+callStaticObjectMethodV java/lang/Integer->valueOf(I)Ljava/lang/Integer;
+JNIEnv->CallStaticObjectMethodV(class java/lang/Integer, valueOf(0x0) => java.lang.Integer@77c2494c) was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+[350101] initCallback ret=java.lang.Integer@77c2494c
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("881d61", getBytes("utf-8") => [B@0x383831643631) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x383831643631 => 6) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x383831643631, 0, 6, RW@0x125d7040) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->GetArrayLength([B@0x673751 => 3) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x673751, 0, 3, RW@0x125d78f0) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF(".ms") was called from RX@0x1205d73c[libmetasec_ml.so]0x5d73c
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("6e90ad", getBytes("utf-8") => [B@0x366539306164) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x366539306164 => 6) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x366539306164, 0, 6, RW@0x125d7040) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->GetArrayLength([B@0x696a4e => 3) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x696a4e, 0, 3, RW@0x125d78f8) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->NewStringUTF(".md") was called from RX@0x1205d73c[libmetasec_ml.so]0x5d73c
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewGlobalRef(android.content.Context@1fa121e2) was called from RX@0x12060844[libmetasec_ml.so]0x60844
+JNIEnv->GetMethodID(android/content/Context.getPackageName()Ljava/lang/String;) => 0xf6590850 was called from RX@0x120d9974[libmetasec_ml.so]0xd9974
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("["1128","","","bo95dJizD1WFcV03zOuLzN5Pn1sFtVa3szqiVQmflMJTNW0p0Kpqfw8D4i0zUlfrou4kuYt\/i0521YRygM83dwv\/wn3DD+TMJF+QFzW9wb8Qq2\/1B4jPMbObrDNdyMMukpAYqy1fLWtbLGVIPxsFsZegwQy5lsRX9h49PH\/Qx8MwgYvWvH7ZTFLV28LwTWZiljQyBPaBE+TsyumEu0Y+JRkeidHFEYcVs0yRoa+xC004hugQhdPupIt6dBiWA4phsB3fNJZjFTAKGE1lPB4gzt6Qf+FmlgZBbRvT8zekxTV2HZ5dUvSutB2\/0QpbHKAvWL4DRA==","v04.05.04.08-bugfix","","","","","","0","-1","810","","0",[],["tk_key","douyin"]]", getBytes("utf-8") => [B@62ddbd7e) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@62ddbd7e => 432) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@62ddbd7e, 0, 432, RW@0x12872380) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+[19:53:28 782]  INFO [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:1403) - faccessat failed dirfd=-100, pathname=/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml//.msp_f0a3865870d476fd2019497ce810af59b1f3581b, oflags=0x4, mode=0x0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x1000000e arg1=0x0 arg2=0x0 str=null obj=null => java.lang.Integer<"2">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000000e, 0x0, 0x0L, null, null) => java.lang.Integer@6ed3ccb2) was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+JNIEnv->FindClass(java/lang/Long) was called from RX@0x12131fe0[libmetasec_ml.so]0x131fe0
+JNIEnv->GetMethodID(java/lang/Long.longValue()J) => 0x44606195 was called from RX@0x12132098[libmetasec_ml.so]0x132098
+[19:53:28 788]  WARN [com.github.unidbg.linux.ARM64SyscallHandler] (ARM64SyscallHandler:412) - handleInterrupt intno=2, NR=-130144, svcNumber=0x131, PC=unidbg@0xfffe03a4, LR=RX@0x1213216c[libmetasec_ml.so]0x13216c, syscall=null
+com.github.unidbg.arm.backend.BackendException
+	at com.github.unidbg.linux.android.dvm.DalvikVM64$50.handle(DalvikVM64.java:888)
+	at com.github.unidbg.linux.ARM64SyscallHandler.hook(ARM64SyscallHandler.java:119)
+	at com.github.unidbg.arm.backend.Unicorn2Backend.lambda$hook_add_new$4(Unicorn2Backend.java:239)
+	at com.github.unidbg.arm.backend.unicorn.Unicorn$NewHook.onInterrupt(Unicorn.java:109)
+	at com.github.unidbg.arm.backend.unicorn.Unicorn.emu_start(Native Method)
+	at com.github.unidbg.arm.backend.unicorn.Unicorn.emu_start(Unicorn.java:312)
+	at com.github.unidbg.arm.backend.Unicorn2Backend.emu_start(Unicorn2Backend.java:261)
+	at com.github.unidbg.AbstractEmulator.emulate(AbstractEmulator.java:382)
+	at com.github.unidbg.thread.BaseTask.continueRun(BaseTask.java:104)
+	at com.github.unidbg.thread.MainTask.dispatch(MainTask.java:17)
+	at com.github.unidbg.thread.UniThreadDispatcher.run(UniThreadDispatcher.java:211)
+	at com.github.unidbg.thread.UniThreadDispatcher.runMainForResult(UniThreadDispatcher.java:99)
+	at com.github.unidbg.AbstractEmulator.runMainForResult(AbstractEmulator.java:339)
+	at com.github.unidbg.arm.AbstractARM64Emulator.eFunc(AbstractARM64Emulator.java:262)
+	at com.github.unidbg.Module.emulateFunction(Module.java:170)
+	at com.github.unidbg.linux.android.dvm.DvmObject.callJniMethod(DvmObject.java:135)
+	at com.github.unidbg.linux.android.dvm.DvmClass.callStaticJniMethodObject(DvmClass.java:316)
+	at com.ss.android.ugc.aweme.Sign6MetaSecBase.initSdkState(Sign6MetaSecBase.java:6582)
+	at com.ss.android.ugc.aweme.Sign6MetaSecBase.signByCallback(Sign6MetaSecBase.java:6292)
+	at com.ss.android.ugc.aweme.Sign6_350101.testMetasec(Sign6_350101.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:242)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:137)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[19:53:28 789]  WARN [com.github.unidbg.AbstractEmulator] (AbstractEmulator:421) - emulate RX@0x1249f0fc[libc.so]0x8f0fc exception sp=unidbg@0xe4ffdbd0, msg=com.github.unidbg.arm.backend.BackendException, offset=3ms @ Runnable|Function64 address=0x1212fb84, arguments=[unidbg@0xfffe1640[libandroid.so]0x640, -1645895095, 67108865, 0, 0, 2125238280, null]
+[350101] sdkConfig ret=null
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("1128", getBytes("utf-8") => [B@0x31313238) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x31313238 => 4) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x31313238, 0, 4, RW@0x125d7900) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+[350101] aid ret=null
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+[350101] deviceId ret=null
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+[350101] installId ret=null
+Find native function Java_ms_bd_c_y2_a => RX@0x1212fb84[libmetasec_ml.so]0x12fb84
+[350101] sessionId ret=null
+JNIEnv->FindClass(java/lang/Thread) was called from RX@0x12151ea0[libmetasec_ml.so]0x151ea0
+JNIEnv->GetStaticMethodID(java/lang/Thread.currentThread()Ljava/lang/Thread;) => 0xb11dab06 was called from RX@0x12151f1c[libmetasec_ml.so]0x151f1c
+callStaticObjectMethodV java/lang/Thread->currentThread()Ljava/lang/Thread;
+JNIEnv->CallStaticObjectMethodV(class java/lang/Thread, currentThread() => java.lang.Thread@2a5c8d3f) was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+JNIEnv->GetMethodID(java/lang/Thread.getStackTrace()[Ljava/lang/StackTraceElement;) => 0xb5a73646 was called from RX@0x12152000[libmetasec_ml.so]0x152000
+JNIEnv->CallObjectMethodV(java.lang.Thread@2a5c8d3f, getStackTrace() => [java.lang.StackTraceElement@752325ad, java.lang.StackTraceElement@279fedbd]) was called from RX@0x120db060[libmetasec_ml.so]0xdb060
+JNIEnv->GetArrayLength([java.lang.StackTraceElement@752325ad, java.lang.StackTraceElement@279fedbd] => 2) was called from RX@0x12152044[libmetasec_ml.so]0x152044
+File opened '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811' with oflags=0x0 from RX@0x121362ac[libmetasec_ml.so]0x1362ac
+Read 117 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811'
+Read 0 bytes from '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811'
+File closed '/data/user/0/com.ss.android.ugc.aweme/files/.msdata/mssdk/ml/.msp_589c22335a381f122d129225f5c0ba3056ed5811' from RX@0x12135948[libmetasec_ml.so]0x135948
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x1000011 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"35.1.0">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000011, 0x0, 0x0L, null, null) => "35.1.0") was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("35.1.0", getBytes("utf-8") => [B@0x33352e312e30) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x33352e312e30 => 6) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x33352e312e30, 0, 6, RW@0x125d7bb8) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+JNIEnv->GetStaticMethodID(com/bytedance/mobsec/metasec/ml/MS.a()V) => 0x4bfa55cc was called from RX@0x120d9260[libmetasec_ml.so]0xd9260
+[350101][runtime-gate-force] 0xD952C x23=0x122c1000 oldDynamic=0x1 oldGlobal=0x1 newDynamic=0x0 newGlobal=0x0
+callStaticObjectMethodV com/bytedance/mobsec/metasec/ml/MS->b(IIJLjava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+[350101][MS.b] op=0x1000011 arg1=0x0 arg2=0x0 str=null obj=null => java.lang.String<"35.1.0">
+JNIEnv->CallStaticObjectMethodV(class com/bytedance/mobsec/metasec/ml/MS, b(0x1000011, 0x0, 0x0L, null, null) => "35.1.0") was called from RX@0x121301f8[libmetasec_ml.so]0x1301f8
+JNIEnv->NewStringUTF("utf-8") was called from RX@0x12131708[libmetasec_ml.so]0x131708
+JNIEnv->GetMethodID(java/lang/String.getBytes(Ljava/lang/String;)[B) => 0x318b4ca9 was called from RX@0x12131070[libmetasec_ml.so]0x131070
+JNIEnv->CallObjectMethodV("35.1.0", getBytes("utf-8") => [B@0x33352e312e30) was called from RX@0x12131194[libmetasec_ml.so]0x131194
+JNIEnv->GetArrayLength([B@0x33352e312e30 => 6) was called from RX@0x121318b0[libmetasec_ml.so]0x1318b0
+JNIEnv->GetByteArrayRegion([B@0x33352e312e30, 0, 6, RW@0x125d7bf0) was called from RX@0x121318f0[libmetasec_ml.so]0x1318f0
+File opened '/dev/urandom' with oflags=0x0 from RX@0x12432854[libc.so]0x22854
+Read 4096 bytes from '/dev/urandom'
+File closed '/dev/urandom' from RX@0x1242ece4[libc.so]0x1ece4
+[350101] metasec ret=0x1260d600
+X-Argus
+mjO5KRkkRCNSnTOx6bQtDXV/o6YCKy2cLG7bSWW1W5n1+1MDIacWAbrezr0kkKJyKRXX/3rj3+v4jK5JHmb7cEy6wsA+ugU3iEg5+p5oiQIw/kk9K/C1xWAm5mwaTmyY4aMPJV+U2Di9Nlnej2Hw6fF2tyhJfon1fOku3PrjuoqB17mfNOzmtmjhtabBk+Fz4mFQ84W039LnCantW+wgLZef
+X-Gorgon
+8404a0da00008559e8035beef95616dbefe16dcf29117bfaa061
+X-Helios
+nu8HNSofyJ96/IEneKfKZH155VEq/t0iXa8TJdTM3HutBHqt
+X-Khronos
+1788609209
+X-Ladon
++O5MMAhbAYOsAxPPvemHGvyssu9El+bjeIXMlxgX4qHCyngQ
+X-Medusa
+vAKcapRJ06Dwd5EphrcyRptvUDxRFQABsuZLLGNggQwIWNO+UWMAiAnR1lvxKUOTbF3jUh4qjRRTOS66d5YCo0GC4+zMcJHKUBYqolAz3vZ7O2tJL4zMjZ9k7/groUY1ZgWUcH6i+62daqu8O3D0Z965QtC/qq3eiPPTn2ZjJJfPIYBKB7fBGnXEfPmhumGdFS9u8n1z2oeYJZTiEkz/Ww6xraOUfFxCN66nFmROZX/flgbb8Wwiqq+upKgytzY4hXZJyb4xkTDbtp8n+nTwdS3RFiaGE6wWx8raCSTL/on/TaPDIMKtJBQRw/s17SjgJdijS40QJwcTxAsjDktHWRYwb+ZrFFsAbN/zm5ymtdl82in2MIgIt80+gSjeubbRlRmGv6LvOdCRqOElXAo26W8O3/CsOdMHkhTzdJmbvIgCBC8fJ8MNsZ6x+SK40chYDJCMoJU4quWXpQ3bS871mwMT0la2kB+EZT+mZYLV2TaQpxYJRTeGswB05pX18BmecIFq0dDDWV3YcvVdNCFDakb13BJqHFNo7L0gL4q/SN5GQx+Dkms7dT7+Jf9+XtjsZH2/G2H3oBfAFmWwDFfIE4UwHPOO46Ri5qskoGQWaEt0NJCnJq4Z2moNYatqw0nKomIMrZcUxowu96E2cPOJU27QOi9rn+fV7F5Ps2u0vz+WttddPH+BMt4byVZ//9hHq18vxThCYhW1ctNZARFpfB2xGlr/yWeK/xXlLOidEIVDZEqn9HjIYyiusmE/9P1SZqe9Ytrex4gPe5epFY2mRSDw5q57bhPRgvgXsnKontS003uwdfdbubew19A+G+psCO4uet3Vqjl6FqOBaG6/IEhETMesVf/4V1X/+Ff1WA==
+X-Neptune
+-11|50:51:59:20:21
+X-Soter
+AAEAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.738 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] unidbg 0.9.10-SNAPSHOT ............................. [1;32mSUCCESS[m [  0.028 s]
+[[1;34mINFO[m] unidbg-api ......................................... [1;32mSUCCESS[m [  0.255 s]
+[[1;34mINFO[m] unidbg-dynarmic .................................... [1;32mSUCCESS[m [  0.018 s]
+[[1;34mINFO[m] unidbg-hypervisor .................................. [1;32mSUCCESS[m [  0.015 s]
+[[1;34mINFO[m] unidbg-kvm ......................................... [1;32mSUCCESS[m [  0.013 s]
+[[1;34mINFO[m] unidbg-unicorn2 .................................... [1;32mSUCCESS[m [  0.014 s]
+[[1;34mINFO[m] unidbg-android 0.9.10-SNAPSHOT ..................... [1;32mSUCCESS[m [  1.946 s]
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;32mBUILD SUCCESS[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time: 2.469 s
+[[1;34mINFO[m] Finished at: 2026-09-05T19:53:29+08:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m

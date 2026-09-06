@@ -23,7 +23,7 @@ scripts/update_materials_manifest.sh --check --apk materials/350101/source.apk 3
 | role | path | size | mtime | sha256 |
 |---|---|---:|---|---|
 | raw SO | `materials/350101/libmetasec_ml.so` | 2864144 | 2025-10-16 13:45:07 +0800 | `2416637ae9c5b0fe34cbd2cb4c09a29ee3b33ca416b344a3e999c3c95730cc76` |
-| IDA i64 | `materials/350101/libmetasec_ml.so.i64` | 50610407 | 2026-09-05 08:51:13 +0800 | `9556cb056b76bd1ba2b3cdcc47f9d13f9330c3e4d44ad863381d94d2bcdb7be7` |
+| IDA i64 | `materials/350101/libmetasec_ml.so.i64` | 50667317 | 2026-09-06 22:02:07 +0800 | `20806d8d52e1c3f5308f48dab0181f6893f7d0bb226903a91440d41a82fff4c5` |
 | APK | `materials/350101/source.apk` | 313325639 | 2025-10-16 13:45:07 +0800 | `dda27904ade84d335591af62e09c6100c25bc66f3613a462e3a0874f33313a10` |
 
 ## SO 信息
