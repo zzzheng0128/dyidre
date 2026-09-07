@@ -122,7 +122,7 @@ UNIDBG_NOTES.md P1-2 指出的大多数模拟器的软肋）。
 ### 1. 字符串加密（真实方案，非近似）
 
 分析真 .so 时，对其 5 个解密函数（`0x12B904 / 0x12BFA8 / 0x12C648 / 0x12C9A4 / 0x12CF90`）
-做了黑盒选择明文提炼（`../metasec_350101/extract_algo.py`），穿透 MBA 混淆得到真实算法：
+做了黑盒选择明文提炼（`../metasec_350101_02/extract_algo.py`），穿透 MBA 混淆得到真实算法：
 
 ```
 每个变体均为周期 8 的 XOR 密钥流：  out[i] = in[i] ^ K[i % 8]
@@ -196,7 +196,7 @@ n_b(env, _):                                  # 按需解密、用完重加密
 ### 4. 反模拟检查（svc #0 + NZCV + brk 陷阱）
 
 对应真 .so init_array ctor[0]（`0x59294`）里实测的原版对抗块
-（分析见 `../metasec_350101/init_array/init_array_report.md`），`emu_check()` 内两个互补探针：
+（分析见 `../metasec_350101_02/init_array/init_array_report.md`），`emu_check()` 内两个互补探针：
 
 - **探针 A — NZCV 忠实性检查 + brk 反调试陷阱**（逐指令复刻真 .so `0x59394`）：
   `mrs` 保存 NZCV → `cmp xzr,xzr` 置 Z=1 → `msr NZCV` 清零（Z→0）→

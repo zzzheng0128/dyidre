@@ -39,7 +39,7 @@ Douyin 37.4.0 -> 370401
 当前 350101：
 
 ```text
-versions/350101/
+metasec_350101_01/
 materials/350101/source.apk
 materials/350101/libmetasec_ml.so
 materials/350101/libmetasec_ml.so.i64

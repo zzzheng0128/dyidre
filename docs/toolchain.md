@@ -188,8 +188,8 @@ RF JS 找到 module base / offset / buffer 地址
 相关文档：
 
 ```text
-versions/350101/edbg_assist_plan_350101.md
-versions/350101/stackplz_rf_rpc_bridge_350101.md
+metasec_350101_01/edbg_assist_plan_350101.md
+metasec_350101_01/stackplz_rf_rpc_bridge_350101.md
 ```
 
 ## 4. IDA：把证据变成可读工程
@@ -206,8 +206,8 @@ IDA 负责沉淀命名、原型、结构体和注释。
 
 ```text
 skills/ida_apply_metasec_struct_evidence.py
-versions/350101/metasec_structs_350_all.h
-versions/350101/ida_rename_update_350101_20260831.md
+metasec_350101_01/metasec_structs_350_all.h
+metasec_350101_01/ida_rename_update_350101_20260831.md
 ```
 
 ## 5. C oracle：算法验收
@@ -217,9 +217,9 @@ C oracle 是最终从“看懂”走向“还原”的验收层。
 当前关键入口：
 
 ```text
-versions/350101/run_recovered_c_oracles_350101.sh
-versions/350101/metasec_350101_fixed_signer.c
-versions/350101/x_headers_algorithms_350101.c
+metasec_350101_01/run_recovered_c_oracles_350101.sh
+metasec_350101_01/metasec_350101_fixed_signer.c
+metasec_350101_01/x_headers_algorithms_350101.c
 ```
 
 判断标准：

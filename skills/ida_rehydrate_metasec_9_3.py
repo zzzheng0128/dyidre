@@ -18,14 +18,14 @@
   默认另存 <输入>.i64（不碰现有库）；restore_all(save=False) 可不保存。
 
 维护（新增成果怎么同步）：
-  B 侧新增 → 重跑 metasec_350101/ida_dyidre_snapshot.py 更新快照；
-  350101 侧数据更新 → 直接改 versions/350101/ 下对应文件；
-  然后重跑 metasec_350101/build_rehydrate_unified.py 重新生成【本文件】。
+  B 侧新增 → 重跑 metasec_350101_02/ida_dyidre_snapshot.py 更新快照；
+  350101 侧数据更新 → 直接改 metasec_350101_01/ 下对应文件；
+  然后重跑 metasec_350101_02/build_rehydrate_unified.py 重新生成【本文件】。
   不要手改下面的 base64 数据块（生成物）。本文件取代旧的
   ida_rehydrate_350101_9_3.py / ida_rehydrate_full_9_3.py /
   ida_apply_dyidre_enrich_9_3.py 三份入口（2026-09-07 已删除，见 HANDOFF §5.1）。
 
-已验证：隔离目录全新建库端到端跑通（metasec_350101/recovery_test*）。
+已验证：隔离目录全新建库端到端跑通三轮（演练现场 recovery_test*/ 已于 2026-09-07 清理）。
 """
 
 from __future__ import annotations

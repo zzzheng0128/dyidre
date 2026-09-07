@@ -37,10 +37,10 @@ import idc
 
 
 SUMMARY_JSON = Path(
-    "/Users/freeman/project/douyin/dyidre/versions/350101/summary.json"
+    "/Users/freeman/project/douyin/dyidre/metasec_350101_01/summary.json"
 )
 STRUCT_HEADER = Path(
-    "/Users/freeman/project/douyin/dyidre/versions/350101/metasec_ctx350_draft.h"
+    "/Users/freeman/project/douyin/dyidre/metasec_350101_01/metasec_ctx350_draft.h"
 )
 COMMENT_TAG_PREFIX = "[metasec:"
 _CACHED_CFUNCS: dict[int, ida_hexrays.cfunc_t] = {}

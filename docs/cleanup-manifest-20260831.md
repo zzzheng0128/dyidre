@@ -17,7 +17,7 @@
    dyidre/docs/toolchain.md
    dyidre/docs/upgrade-runbook.md
    dyidre/docs/350101-file-catalog.md
-   dyidre/versions/350101/
+   dyidre/metasec_350101_01/
    ```
 
 4. 归档大文件：
@@ -89,7 +89,7 @@ dyidre/_archive/large_raw_traces/
 - 每个新版本只保留一个成功 true-env 批次；
 - 失败批次如果没有成为基准，直接删除，避免后续误用；
 - `unidbg/unidbg-android/target/` 只保留最新 baseline log，其他跑完即可删；
-- 不要删除 `versions/350101/` 里的 `.md/.c/.h/.json`，这些是算法还原证据链。
+- 不要删除 `metasec_350101_01/` 里的 `.md/.c/.h/.json`，这些是算法还原证据链。
 
 2026-09-01 又做了一次根目录整理，详见：
 

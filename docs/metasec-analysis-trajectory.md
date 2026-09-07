@@ -110,10 +110,10 @@ Java / HTTP 请求
 配套证据：
 
 ```text
-versions/350101/x_headers_generation_350101.md
-versions/350101/exeVMInner_x_headers_350101.md
-versions/350101/managed_vm_recovery_350101.md
-versions/350101/algorithm_validation_350101.md
+metasec_350101_01/x_headers_generation_350101.md
+metasec_350101_01/exeVMInner_x_headers_350101.md
+metasec_350101_01/managed_vm_recovery_350101.md
+metasec_350101_01/algorithm_validation_350101.md
 ```
 
 ## 现在实际有几层 VM
@@ -447,7 +447,7 @@ ctx+0x3c0..0x500 scratch/output buffer
 结构文件：
 
 ```text
-versions/350101/metasec_structs_350_all.h
+metasec_350101_01/metasec_structs_350_all.h
 ```
 
 命名规则：
@@ -571,10 +571,10 @@ fixed signer 与 unidbg deterministic baseline 完全一致
 350101 入口：
 
 ```text
-versions/350101/c_recovery_suite_350101.md
-versions/350101/run_recovered_c_oracles_350101.sh
-versions/350101/metasec_350101_fixed_signer.c
-versions/350101/x_headers_algorithms_350101.c
+metasec_350101_01/c_recovery_suite_350101.md
+metasec_350101_01/run_recovered_c_oracles_350101.sh
+metasec_350101_01/metasec_350101_fixed_signer.c
+metasec_350101_01/x_headers_algorithms_350101.c
 ```
 
 ## 第 12 步：IDA 落库
@@ -594,8 +594,8 @@ IDA 只落证据确定的东西。
 
 ```text
 skills/ida_apply_metasec_struct_evidence.py
-versions/350101/ida_rename_update_350101_20260831.md
-versions/350101/metasec_structs_350_all.h
+metasec_350101_01/ida_rename_update_350101_20260831.md
+metasec_350101_01/metasec_structs_350_all.h
 ```
 
 注释风格：

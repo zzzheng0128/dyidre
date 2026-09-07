@@ -122,7 +122,7 @@ scripts/metasec-350101-req01-baseline.sh
 至少检查：
 
 ```bash
-rg -n "TODO|MISS|FIXME" README.md docs versions/350101
+rg -n "TODO|MISS|FIXME" README.md docs metasec_350101_01
 ```
 
 有 TODO 可以保留，但必须是明确的待办，不要留下“这是什么文件”这种无上下文半成品。

@@ -3,7 +3,7 @@
 
 复刻 libmetasec_ml.so 的真实字符串加密方案。真 .so 的算法不是猜的，
 是对 5 个真实解密函数做黑盒选择明文提炼得到的
-（见 ../metasec_350101/extract_algo.py），并用 2,354 对真实
+（见 ../metasec_350101_02/extract_algo.py），并用 2,354 对真实
 密文/明文交叉验证 100% 吻合：
 
     每个变体 = 周期 8 的 XOR 密钥流:   out[i] = in[i] ^ K[i % 8]

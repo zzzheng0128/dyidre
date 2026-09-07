@@ -389,6 +389,6 @@ mkdir -p versions/370401
 历史细节见：
 
 ```text
-versions/350101/stackplz_rf_rpc_bridge_350101.md
-versions/350101/edbg_assist_plan_350101.md
+metasec_350101_01/stackplz_rf_rpc_bridge_350101.md
+metasec_350101_01/edbg_assist_plan_350101.md
 ```

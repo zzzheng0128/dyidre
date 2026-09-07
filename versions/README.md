@@ -5,14 +5,14 @@
 当前：
 
 ```text
-dyidre/versions/350101/
+dyidre/metasec_350101_01/
 ```
 
 后续新版本建议：
 
 ```text
 dyidre/versions/334000/
-dyidre/versions/350101/
+dyidre/metasec_350101_01/
 dyidre/versions/370401/
 ```
 

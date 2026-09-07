@@ -18,13 +18,13 @@ true_env_xmedusa/latest -> 20260831_214509
 相关入口：
 
 ```text
-dyidre/versions/350101/
+dyidre/metasec_350101_01/
 dyidre/docs/350101-file-catalog.md
 unidbg/unidbg-android/src/test/resources/metasec/350101/
 unidbg/scripts/metasec-350101-req01-baseline.sh
 ```
 
-其它类型的历史采集不作为日常入口；需要复核时再按 `versions/350101` 文档中的路径取证。
+其它类型的历史采集不作为日常入口；需要复核时再按 `metasec_350101_01` 文档中的路径取证。
 
 当前网络样本入口（唯一默认运行产物）：
 

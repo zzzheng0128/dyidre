@@ -24,7 +24,7 @@ dyidre = DouYin ID Reverse Engineering
 2. 再看 350101 主分析目录：
 
    ```text
-   versions/350101/
+   metasec_350101_01/
    ```
 
    这是 350101 的主分析目录。
@@ -32,8 +32,8 @@ dyidre = DouYin ID Reverse Engineering
    需要快速查地址、入参、出参和用途时，直接打开：
 
    ```text
-   versions/350101/interface_ledger_350101.json
-   versions/350101/so_runtime_flow_350101.md
+   metasec_350101_01/interface_ledger_350101.json
+   metasec_350101_01/so_runtime_flow_350101.md
    ```
 
 3. 再看版本目录规范：
@@ -95,21 +95,21 @@ dyidre = DouYin ID Reverse Engineering
 - unidbg 固定 pid/tid/time/random/rootfs 后，可以稳定复现一条请求；
 - `exeVMInner_4cc10` 调用次数和 vmCode/LR 分布与真机路径对齐；
 - `X-Argus / X-Gorgon / X-Khronos / X-Ladon / X-Medusa / X-Helios / X-Soter` 在 deterministic unidbg baseline 下可验；
-- C oracle 已沉淀到 `versions/350101`，用于算法级自测。
+- C oracle 已沉淀到 `metasec_350101_01`，用于算法级自测。
 
 真正的验收入口不是某个聊天结论，而是：
 
 ```text
 unidbg/scripts/metasec-350101-req01-baseline.sh
-versions/350101/algorithm_validation_350101.md
-versions/350101/c_recovery_suite_350101.md
+metasec_350101_01/algorithm_validation_350101.md
+metasec_350101_01/c_recovery_suite_350101.md
 ```
 
 ## 目录地图
 
 | 路径 | 作用 | 保留策略 |
 |---|---|---|
-| `versions/350101` | 当前 350101 主证据目录：结构体、VM、CF、X-header、C oracle、报告 | 后续新版本也放 `versions/<version>` |
+| `metasec_350101_01` | 当前 350101 主证据目录：结构体、VM、CF、X-header、C oracle、报告 | 后续新版本也放 `versions/<version>` |
 | `runs/350101/` | 350101 真机证据；网络样本唯一入口是 `mitm/latest/`，其它类型各保留一份正式基准 | 新版本放 `runs/<version>/...` |
 | `probes/350101/` | 350101 真机采集脚本：eCapture、rustFrida、GumTrace、jnitrace、stackplz runner | 新版本复制到 `probes/<version>/` 后改 offset |
 | `probes/common/` | 与版本无关的辅助脚本，例如弹窗处理 | 可跨版本复用 |
@@ -224,8 +224,8 @@ eDBG/stackplz 不是日常主线，而是“真机难点辅助工具”：
 当前相关证据和设计：
 
 ```text
-versions/350101/edbg_assist_plan_350101.md
-versions/350101/stackplz_rf_rpc_bridge_350101.md
+metasec_350101_01/edbg_assist_plan_350101.md
+metasec_350101_01/stackplz_rf_rpc_bridge_350101.md
 runs/350101/edbg_stackplz/20260831_stackplz/
 runs/350101/edbg_stackplz/20260831_stackplz_rf_rpc/
 runs/350101/edbg_stackplz/20260831_edbg_test/
@@ -238,7 +238,7 @@ IDA 是最终静态落点，但不能反过来当唯一真相。
 推荐顺序：
 
 1. `dyidre` 用真机/unidbg 证据确认函数意义；
-2. `versions/350101/metasec_structs_350_all.h` 和 `metasec_ctx350_draft.h` 生成结构体；
+2. `metasec_350101_01/metasec_structs_350_all.h` 和 `metasec_ctx350_draft.h` 生成结构体；
 3. `skills/ida_apply_metasec_struct_evidence.py` 或 ida-pro-mcp 把名称、原型、中文注释写回 IDA；
 4. 不确定的字段保持 `field_xxx`，不要为了好看硬命名。
 

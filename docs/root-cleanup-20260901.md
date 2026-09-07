@@ -13,7 +13,7 @@ dyidre/
   scripts/
   skills/
   versions/
-  versions/350101/
+  metasec_350101_01/
   materials/
   _archive/
 ```
@@ -24,7 +24,7 @@ dyidre/
 - `runs/`：真机采集证据；
 - `scripts/`：本地后处理/索引脚本；
 - `versions/`：每个版本的分析入口；
-- `versions/350101/`：当前 350101 主分析目录；原根目录 `struct_infer_350101_x0_v2/` 已迁入这里；
+- `metasec_350101_01/`：当前 350101 主分析目录；原根目录 `struct_infer_350101_x0_v2/` 已迁入这里；
 - `materials/`：每个版本的 APK/SO/i64 本体和 manifest；
 - `_archive/`：不作为日常入口的大文件或旧 payload。
 

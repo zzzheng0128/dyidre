@@ -2796,7 +2796,7 @@ function __dyidre_mode_native_vmp() {
 //   Verify whether real device execution of:
 //     0x12564C -> 0x124DD4 -> 0x4CC10(exeVMInner, vmCode=0x1F7860)
 //   produces the mssdk material object recovered in:
-//     versions/350101/vm_lift_1f7860/native_vmp_1f7860_recovered.c
+//     metasec_350101_01/vm_lift_1f7860/native_vmp_1f7860_recovered.c
 //
 // Run example:
 //   probes/350101/run_metasec_probe_350101.sh native-vmp 90 vmp01

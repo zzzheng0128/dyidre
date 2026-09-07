@@ -5,7 +5,7 @@
 ## 主目录
 
 ```text
-versions/350101/
+metasec_350101_01/
 ```
 
 这是当前 350101 的主工作目录。
@@ -13,7 +13,7 @@ versions/350101/
 更完整、可复跑的版本内文件清单已经沉淀到：
 
 ```text
-versions/350101/FILE_CATALOG.md
+metasec_350101_01/FILE_CATALOG.md
 ```
 
 更新命令：

@@ -71,7 +71,7 @@ python3 dyidre/scripts/extract_true_env_xmedusa.py \
 ```text
 unidbg/unidbg-android/src/test/resources/metasec/350101/baseline.properties
 unidbg/scripts/metasec-350101-req01-baseline.sh
-dyidre/versions/350101/true_env_sync_350101_214509.md
+dyidre/metasec_350101_01/true_env_sync_350101_214509.md
 ```
 
 如果新版本出现 `X-Medusa` 不一致，先照这个目录复制一套 `runs/<new_version>/true_env_xmedusa/<run_id>/`，再比较 F8 pack、lastF8、emit 三层。

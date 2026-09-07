@@ -14,9 +14,9 @@ observed offset into:
 Typical usage:
 
   python3 dyidre/skills/metasec_struct_promote.py \
-    --summary dyidre/versions/350101/summary.json \
+    --summary dyidre/metasec_350101_01/summary.json \
     --reg x0 \
-    --out dyidre/versions/350101/x0_promote_plan.md
+    --out dyidre/metasec_350101_01/x0_promote_plan.md
 """
 
 from __future__ import annotations

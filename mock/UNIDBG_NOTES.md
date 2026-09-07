@@ -1,7 +1,7 @@
 # UNIDBG_NOTES.md — 给 unidbg 的改进意见
 
 > 基于对 `libmetasec_ml.so`（抖音 metasec 安全库）的全量逆向实测
-> （`metasec_350101/init_array/`：116 个 init_array ctor 模拟报告）以及本项目
+> （`metasec_350101_02/init_array/`：116 个 init_array ctor 模拟报告）以及本项目
 > `libmock.so` 的攻防对抗实验（`analyze_mock.py`）写成。
 > 每条意见都标注了**实测依据**——即真实防护代码已经在这条缝隙上
 > 部署了检测，或攻击方已经在这条缝隙上完成了穿透。

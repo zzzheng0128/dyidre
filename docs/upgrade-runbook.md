@@ -166,8 +166,8 @@ python3 scripts/index_true_env_runs.py \
 当前 350101 的说明在：
 
 ```text
-versions/350101/unidbg_env_fill_350101.md
-versions/350101/environment_inputs_350101.md
+metasec_350101_01/unidbg_env_fill_350101.md
+metasec_350101_01/environment_inputs_350101.md
 ```
 
 ## 5. 给 unidbg 加版本 profile
